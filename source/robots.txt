@@ -1,2 +1,4 @@
 User-agent: *
-Disallow: /
+Disallow: /page/*/
+Disallow: /archives/*
+Host: https://theme-next.org
