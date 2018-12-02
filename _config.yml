@@ -1,0 +1,332 @@
+# ---------------------------------------------------------------
+# Hexo Configuration
+# ---------------------------------------------------------------
+title: NexT [Beta]
+
+keywords: "Hexo, NexT"
+
+language: en
+
+index_generator:
+  per_page: 4
+  order_by: -date
+
+archive_generator:
+  per_page: 3
+  yearly: true
+  monthly: true
+  daily: false
+
+category_generator:
+  per_page: 5
+
+tag_generator:
+   per_page: 5
+   enable_index_page: false
+
+#timezone: Europe/Moscow
+#timezone: +03:00 
+
+url: https://theme-next.org
+root: /
+permalink: :title/
+permalink_defaults:
+
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives/
+#archive_dir: /
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+
+skip_render:
+- 'robots.txt'
+
+new_post_name: :title.md # File name of new posts
+default_layout: post
+titlecase: false # Transform title into titlecase
+external_link: true # Open external links in new tab
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+highlight:
+  enable: true
+  line_number: false
+  auto_detect: false
+  tab_replace:
+
+default_category: uncategorized
+category_map:
+tag_map:
+
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+
+per_page: 5
+pagination_dir: page
+
+theme: next
+
+# Deployment
+## Docs: https://hexo.io/docs/deployment.html
+deploy:
+  type:
+
+server:
+  port: 4000
+
+marked:
+  # For preserve original quotes in code blocks.
+  smartypants: false
+  # For disable links in code blocks.
+  autolink: false
+
+kramed:
+  # For preserve original quotes in code blocks.
+  smartypants: false
+
+search:
+  path: search.xml
+  field: post
+
+symbols_count_time:
+  symbols: true
+  time: true
+  total_symbols: true
+  total_time: true
+
+# ---------------------------------------------------------------
+# NexT Configuration
+# ---------------------------------------------------------------
+
+theme_config:
+
+
+# ---------------------------------------------------------------
+# Theme Core Configuration Settings
+# ---------------------------------------------------------------
+
+  cache:
+    enable: true
+
+  custom_file_path:
+    styles: source/_data/styles.styl
+
+
+# ---------------------------------------------------------------
+# Site Information Settings
+# ---------------------------------------------------------------
+
+  footer:
+    since: 2014
+    icon:
+      name: heart
+      animated: true
+      color: "#808080"
+    copyright: NexT
+    # -------------------------------------------------------------
+    powered:
+      enable: true
+      version: true
+    theme:
+      enable: true
+      version: true
+
+  # Creative Commons 4.0 International License.
+  # https://creativecommons.org/share-your-work/licensing-types-examples/
+  # Available: by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | zero
+  creative_commons:
+    license: by-nc-sa
+    sidebar: true
+    post: true
+
+
+# ---------------------------------------------------------------
+# SEO Settings
+# ---------------------------------------------------------------
+
+  seo: true
+  index_with_subtitle: true
+  exturl: true
+
+
+# ---------------------------------------------------------------
+# Menu Settings
+# ---------------------------------------------------------------
+
+  menu:
+    News: / || bullhorn
+    Docs:
+      default: /docs/ || book
+      Getting Started:
+        default: /getting-started/ || flag
+        Installation: /installation/ || download
+        Deployment: /deployment/ || upload
+        Data Files: /data-files/ || wrench
+        Update from 5.x: /update-from-v5/ || retweet
+      Theme Settings: /theme-settings/ || star
+      Third Party Services:
+        default: /third-party-services/ || plug
+        Comments and Widgets: /comments-and-widgets/ || comments-o
+        Statistics and Analytics: /statistics-and-analytics/ || bar-chart
+        Content Sharing Services: /content-sharing-services/ || share-alt
+        Search Services: /search-services/ || search-plus
+        External Libraries: /external-libraries/ || sun-o
+        Math Equations: /math-equations/ || superscript
+      Tag Plugins:
+        default: /tag-plugins/ || rocket
+        Full Image: /full-image/ || picture-o
+        Note: /note/ || comment
+        Button: /button/ || square
+        ExtURL: /exturl/ || external-link-square
+        Label: /label/ || font
+        Tabs: /tabs/ || columns
+      Advanced Settings: /advanced-settings/ || cogs
+      FAQ's: /faqs/ || life-ring
+      Troubleshooting: /troubleshooting/ || bug
+    archives: /archives/ || archive
+    #sitemap: /sitemap.xml || sitemap
+    #commonweal: /404/ || heartbeat
+
+  menu_settings:
+    icons: true
+    badges: true
+
+
+# ---------------------------------------------------------------
+# Scheme Settings
+# ---------------------------------------------------------------
+
+  #scheme: Muse
+  #scheme: Mist
+  #scheme: Pisces
+  scheme: Gemini
+
+
+# ---------------------------------------------------------------
+# Sidebar Settings
+# ---------------------------------------------------------------
+
+  avatar:
+    url: /images/apple-touch-icon-next.png
+    rounded: true
+    opacity: 1
+    rotated: false
+
+  social:
+    GitHub: https://github.com/theme-next || github
+    E-Mail: mailto:support@theme-next.org || envelope
+
+    Gitter: https://gitter.im/theme-next || github-alt
+    Riot: https://riot.im/app/#/room/#NexT:matrix.org || bullhorn
+
+    Telegram [Chat]: https://t.me/joinchat/GUNHXA-vZkgSMuimL1VmMw || telegram
+    Telegram [News]: https://t.me/theme_next || telegram
+
+  social_icons:
+    enable: true
+    icons_only: true
+    transition: true
+
+  github_banner: https://github.com/theme-next/hexo-theme-next || Fork NexT on GitHub
+
+  toc:
+    enable: true
+    number: true
+    wrap: true
+
+  sidebar:
+    b2t: true
+    scrollpercent: true
+    onmobile: true
+
+
+# ---------------------------------------------------------------
+# Post Settings
+# ---------------------------------------------------------------
+
+  # Post edit
+  # Dependencies: https://github.com/hexojs/hexo-deployer-git
+  post_edit:
+    enable: true
+    url: https://github.com/theme-next/theme-next.org/_posts/tree/master/ # Link for view source.
+  # url: https://github.com/theme-next/theme-next.org/_posts/edit/master/ # Link for fork & edit.
+
+
+# ---------------------------------------------------------------
+# Misc Theme Settings
+# ---------------------------------------------------------------
+
+  mobile_layout_economy: true
+
+
+  # ---------------------------------------------------------------
+  # Third Party Services Settings
+  # ---------------------------------------------------------------
+
+  # Math Equations Render Support
+  math:
+    enable: true
+    per_page: true
+    engine: mathjax
+    mathjax:
+      cdn: //cdn.jsdelivr.net/npm/mathjax@2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+
+  # Disqus
+  disqus:
+    enable: false
+    shortname: theme-next
+    count: true
+    lazyload: true
+  # ---------------------------------------------------------------
+  local_search:
+    enable: false
+    trigger: auto
+    top_n_per_article: 1
+
+
+  # ---------------------------------------------------------------
+  # Tags Settings
+  # ---------------------------------------------------------------
+
+  note:
+    # Note tag style values:
+    #  - simple    bs-callout old alert style. Default.
+    #  - modern    bs-callout new (v2-v3) alert style.
+    #  - flat      flat callout style with background, like on Mozilla or StackOverflow.
+    #  - disabled  disable all CSS styles import of note tag.
+    style: simple
+    icons: true
+    border_radius: 0
+    # Offset lighter of background in % for modern and flat styles (modern: -12 | 12; flat: -18 | 6).
+    # Offset also applied to label tag variables. This option can work with disabled note tag.
+    light_bg_offset: -3
+
+  tabs:
+    enable: true
+    transition:
+      tabs: true
+      labels: true
+    border_radius: 0
+
+  motion:
+    enable: false
+    async: true
+    transition:
+      post_block: fadeIn
+      post_header: slideDownIn
+      post_body: slideDownIn
+      coll_header: slideLeftIn
+      # Only for Pisces | Gemini.
+      sidebar: slideUpIn
+
+  lazyload: true
+
+  symbols_count_time:
+    separated_meta: true
+    item_text_post: true
+    item_text_total: true
