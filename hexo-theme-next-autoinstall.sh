@@ -76,8 +76,7 @@ echo
 echo "=============================================================="
 echo " Cloning NexT website \"source\" branch & Creating symlinks..."
 echo "=============================================================="
-    git clone -b source --single-branch https://github.com/ivan-nginx/theme-next.org.git next-source
-    #git clone -b source --single-branch https://github.com/theme-next/theme-next.org.git next-source
+    git clone -b source --single-branch https://github.com/theme-next/theme-next.org.git next-source
     ln -s next-source/source source
     ln -s next-source/_config.yml _config.yml
 
