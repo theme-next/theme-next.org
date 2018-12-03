@@ -70,7 +70,8 @@ echo " Replacing default renderer & Installing needed plugins..."
 echo "=============================================================="
     npm un hexo-renderer-marked --save
     npm i hexo-renderer-kramed --save
-    npm install hexo-symbols-count-time --save
+    npm i hexo-deployer-git --save
+    npm i hexo-symbols-count-time --save
 
 echo
 echo "=============================================================="
@@ -78,7 +79,7 @@ echo " Cloning NexT website \"source\" branch & Creating symlinks..."
 echo "=============================================================="
     git clone -b source --single-branch https://github.com/theme-next/theme-next.org.git next-source
     ln -s next-source/source source
-    ln -s next-source/_config.yml _config.yml
+    ln -s source/../_config.yml _config.yml
 
 echo
 echo "=============================================================="

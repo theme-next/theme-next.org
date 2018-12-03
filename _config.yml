@@ -72,10 +72,11 @@ pagination_dir: page
 
 theme: next
 
-# Deployment
-## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  repo: https://github.com/theme-next/theme-next.org.git
+  branch: gh-pages
+  message: "Updated: {{ now('YYYY-MM-DD HH:mm:ss') }}"
 
 server:
   port: 4000
@@ -250,12 +251,9 @@ theme_config:
 # Post Settings
 # ---------------------------------------------------------------
 
-  # Post edit
-  # Dependencies: https://github.com/hexojs/hexo-deployer-git
   post_edit:
     enable: true
-    url: https://github.com/theme-next/theme-next.org/_posts/tree/master/ # Link for view source.
-  # url: https://github.com/theme-next/theme-next.org/_posts/edit/master/ # Link for fork & edit.
+    url: https://github.com/theme-next/theme-next.org/edit/source/source/_posts/
 
 
 # ---------------------------------------------------------------
