@@ -1,7 +1,7 @@
 # ---------------------------------------------------------------
 # Hexo Configuration
 # ---------------------------------------------------------------
-title: NexT [Beta]
+title: NexT
 
 keywords: "Hexo, NexT"
 
@@ -24,8 +24,7 @@ tag_generator:
    per_page: 5
    enable_index_page: false
 
-#timezone: Europe/Moscow
-#timezone: +03:00 
+timezone: UTC
 
 url: https://theme-next.org
 root: /
@@ -36,7 +35,6 @@ source_dir: source
 public_dir: public
 tag_dir: tags
 archive_dir: archives/
-#archive_dir: /
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
@@ -45,10 +43,10 @@ skip_render:
 - 'CNAME'
 - 'robots.txt'
 
-new_post_name: :title.md # File name of new posts
+new_post_name: :title.md
 default_layout: post
-titlecase: false # Transform title into titlecase
-external_link: true # Open external links in new tab
+titlecase: false
+external_link: true
 filename_case: 0
 render_drafts: false
 post_asset_folder: false
@@ -138,9 +136,6 @@ theme_config:
       enable: true
       version: true
 
-  # Creative Commons 4.0 International License.
-  # https://creativecommons.org/share-your-work/licensing-types-examples/
-  # Available: by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | zero
   creative_commons:
     license: by-nc-sa
     sidebar: true
@@ -267,7 +262,6 @@ theme_config:
   # Third Party Services Settings
   # ---------------------------------------------------------------
 
-  # Math Equations Render Support
   math:
     enable: true
     per_page: true
@@ -293,16 +287,9 @@ theme_config:
   # ---------------------------------------------------------------
 
   note:
-    # Note tag style values:
-    #  - simple    bs-callout old alert style. Default.
-    #  - modern    bs-callout new (v2-v3) alert style.
-    #  - flat      flat callout style with background, like on Mozilla or StackOverflow.
-    #  - disabled  disable all CSS styles import of note tag.
     style: simple
     icons: true
     border_radius: 0
-    # Offset lighter of background in % for modern and flat styles (modern: -12 | 12; flat: -18 | 6).
-    # Offset also applied to label tag variables. This option can work with disabled note tag.
     light_bg_offset: -3
 
   tabs:
