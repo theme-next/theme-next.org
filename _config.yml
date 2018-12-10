@@ -270,13 +270,17 @@ theme_config:
     mathjax:
       cdn: //cdn.jsdelivr.net/npm/mathjax@2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 
-  # Disqus
+  # Comments and Widgets
   disqus:
     enable: true
     shortname: theme-next
     count: true
     lazyload: true
-  # ---------------------------------------------------------------
+
+  # Statistics and Analytics
+  yandex_site_verification: 3ac9ae36ddebb425
+
+  # Search Services
   local_search:
     enable: false
     trigger: auto

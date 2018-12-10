@@ -53,7 +53,7 @@ Set the verification string of {% exturl Yandex Webmaster Tools https://webmaste
 
 {% tabs yandex-webmaster-tools %}
 <!-- tab Get Verification Code → -->
-Login to Yandex Webmaster Tools and go to verification methods and choose `HTML Tag`, you will get some code:
+Login to Yandex Webmaster Tools and go to verification methods and choose `Meta Tag`, you will get some code:
 {% code lang:html %}
 <meta name="yandex-verification" content="XXXXXXXXXXXXXXXXXXXXXXX" />
 {% endcode %}
