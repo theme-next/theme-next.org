@@ -1,6 +1,6 @@
-# ---------------------------------------------------------------
+# ===============================================================
 # Hexo Configuration
-# ---------------------------------------------------------------
+# ===============================================================
 title: NexT
 
 keywords: "Hexo, NexT"
@@ -94,14 +94,14 @@ search:
   field: post
 
 symbols_count_time:
-  symbols: true
-  time: true
-  total_symbols: true
-  total_time: true
+  symbols: false
+  time: false
+  total_symbols: false
+  total_time: false
 
-# ---------------------------------------------------------------
+# ===============================================================
 # NexT Configuration
-# ---------------------------------------------------------------
+# ===============================================================
 
 theme_config:
 
@@ -133,13 +133,14 @@ theme_config:
       enable: true
       version: true
     theme:
-      enable: true
-      version: true
+      enable: false
+      version: false
+    custom_text: Theme source code <a href="https://github.com/theme-next/hexo-theme-next" class="theme-link" rel="noopener" target="_blank">here</a><br>Website source code <a href="https://github.com/theme-next/theme-next.org" class="theme-link" rel="noopener" target="_blank">here</a>
 
   creative_commons:
     license: by-nc-sa
     sidebar: true
-    post: true
+    post: false
 
 
 # ---------------------------------------------------------------
@@ -148,7 +149,7 @@ theme_config:
 
   seo: true
   index_with_subtitle: true
-  exturl: true
+  exturl: false
 
 
 # ---------------------------------------------------------------
@@ -271,7 +272,7 @@ theme_config:
 
   # Disqus
   disqus:
-    enable: false
+    enable: true
     shortname: theme-next
     count: true
     lazyload: true
