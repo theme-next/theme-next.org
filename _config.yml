@@ -249,7 +249,7 @@ theme_config:
 
   post_edit:
     enable: true
-    url: https://github.com/theme-next/theme-next.org/edit/source/source/_posts/
+    url: https://github.com/theme-next/theme-next.org/edit/source/source/
 
 
 # ---------------------------------------------------------------
