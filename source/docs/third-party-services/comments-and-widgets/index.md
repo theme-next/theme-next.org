@@ -18,7 +18,7 @@ Disqus is a global comment system that improves discussion on websites and conne
       count: true
     ```
 
-### Facebook Comments
+### Facebook Comments and Likes
 
 The {% exturl Facebook comments plugin https://developers.facebook.com/docs/plugins/comments?locale=en_US %} lets people comment on content on your site using their Facebook account. People can choose to share their comment activity with their friends (and friends of their friends) on Facebook as well. The comments plugin also includes built-in moderation tools and social relevance ranking.
 
@@ -46,6 +46,60 @@ The {% exturl Facebook comments plugin https://developers.facebook.com/docs/plug
       width:        100%  # default width is 550px
       scheme:       light # default scheme is light (light or dark)
     ```
+
+### VKontakte Comments and Likes
+
+VKontakte offers flexible commentting tools that can be easily built into your website. This enables VK users to comment on your materials without having to register on your site.  
+
+{% tabs vkontakte_api %}
+<!-- tab Get API ID → -->
+Login to VKontakte Developers and {% exturl create apps https://vk.com/editapp?act=create %}. Go to the {% exturl Comments Widget https://vk.com/dev/Comments %}, you will get some code:
+{% code lang:html %}
+<script type="text/javascript">
+  VK.init({apiId: API_ID, onlyWidgets: true});
+</script>
+{% endcode %}
+<!-- endtab -->
+
+<!-- tab NexT Config -->
+
+You can enable it by editing values `vkontakte_api.enable` to `true`, and copy `API_ID` value of `apiId` key in {% label primary@theme config file %}.
+
+{% code lang:yml next/_config.yml %}
+vkontakte_api:
+  enable:       false
+  app_id:       API_ID #<app_id>
+  comments:     true
+  num_of_posts: 10
+{% endcode %}
+<!-- endtab -->
+{% endtabs %}
+
+With «Like» widget your visitors can express their attitude towards an article with one click or immediately share the link to it with their friends.  
+
+{% tabs vkontakte_api_like %}
+<!-- tab Get API ID → -->
+Login to VKontakte Developers and {% exturl create apps https://vk.com/editapp?act=create %}. Go to the {% exturl Like Widget https://vk.com/dev/Like %}, you will get some code:
+{% code lang:html %}
+<script type="text/javascript">
+  VK.init({apiId: API_ID, onlyWidgets: true});
+</script>
+{% endcode %}
+<!-- endtab -->
+
+<!-- tab NexT Config -->
+
+You can enable it by editing values `vkontakte_api.enable` to `true`, and copy `API_ID` value of `apiId` key in {% label primary@theme config file %}.
+
+{% code lang:yml next/_config.yml %}
+vkontakte_api:
+  enable:       false
+  app_id:       API_ID #<app_id>
+  like:         true
+  num_of_posts: 10
+{% endcode %}
+<!-- endtab -->
+{% endtabs %}
 
 ### LiveRe
 
@@ -141,60 +195,6 @@ Changyan is the industry's leading social commenting system, supporting both PC 
 {% note warning %}
 Please note that you should fill in the ICP record number of your website in time. If not, or the record information is not correct, the comment service will be stopped after 13 days. {% exturl Useful link http://changyan.kuaizhan.com/help/o-beian.html %}
 {% endnote %}
-
-### VKontakte Comments and Likes
-
-VKontakte offers flexible commentting tools that can be easily built into your website. This enables VK users to comment on your materials without having to register on your site.  
-
-{% tabs vkontakte_api %}
-<!-- tab Get API ID → -->
-Login to VKontakte Developers and {% exturl create apps https://vk.com/editapp?act=create %}. Go to the {% exturl Comments Widget https://vk.com/dev/Comments %}, you will get some code:
-{% code lang:html %}
-<script type="text/javascript">
-  VK.init({apiId: API_ID, onlyWidgets: true});
-</script>
-{% endcode %}
-<!-- endtab -->
-
-<!-- tab NexT Config -->
-
-You can enable it by editing values `vkontakte_api.enable` to `true`, and copy `API_ID` value of `apiId` key in {% label primary@theme config file %}.
-
-{% code lang:yml next/_config.yml %}
-vkontakte_api:
-  enable:       false
-  app_id:       API_ID #<app_id>
-  comments:     true
-  num_of_posts: 10
-{% endcode %}
-<!-- endtab -->
-{% endtabs %}
-
-With «Like» widget your visitors can express their attitude towards an article with one click or immediately share the link to it with their friends.  
-
-{% tabs vkontakte_api_like %}
-<!-- tab Get API ID → -->
-Login to VKontakte Developers and {% exturl create apps https://vk.com/editapp?act=create %}. Go to the {% exturl Like Widget https://vk.com/dev/Like %}, you will get some code:
-{% code lang:html %}
-<script type="text/javascript">
-  VK.init({apiId: API_ID, onlyWidgets: true});
-</script>
-{% endcode %}
-<!-- endtab -->
-
-<!-- tab NexT Config -->
-
-You can enable it by editing values `vkontakte_api.enable` to `true`, and copy `API_ID` value of `apiId` key in {% label primary@theme config file %}.
-
-{% code lang:yml next/_config.yml %}
-vkontakte_api:
-  enable:       false
-  app_id:       API_ID #<app_id>
-  like:         true
-  num_of_posts: 10
-{% endcode %}
-<!-- endtab -->
-{% endtabs %}
 
 ### Widgetpack Rating
 

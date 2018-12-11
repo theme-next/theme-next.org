@@ -1,5 +1,5 @@
 ---
-title: Tag plugins
+title: Tag Plugins
 description: NexT User Docs – NexT Supported Tags
 ---
 Tag Plugin is a way to make special style contents supported by Hexo. For example, we cannot show a image with custom size in standard Markdown. And then we can use tag plugins to solve it. {% exturl Hexo has a lot of tags https://hexo.io/docs/tag-plugins.html %} which can help user. And Hexo also have interfaces to themes which make themes able to create their own tags. Following tags is provided by NexT:
