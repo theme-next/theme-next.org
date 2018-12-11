@@ -1,6 +1,7 @@
-# ===============================================================
-# Hexo Configuration
-# ===============================================================
+#################################################################
+###################### Hexo Configuration #######################
+#################################################################
+
 title: NexT
 
 keywords: "Hexo, NexT"
@@ -99,16 +100,15 @@ symbols_count_time:
   total_symbols: false
   total_time: false
 
-# ===============================================================
-# NexT Configuration
-# ===============================================================
+#################################################################
+###################### NexT Configuration #######################
+#################################################################
 
 theme_config:
 
-
-# ---------------------------------------------------------------
-# Theme Core Configuration Settings
-# ---------------------------------------------------------------
+  # ============================================================= #
+  # ------------- Theme Core Configuration Settings ------------- #
+  # ============================================================= #
 
   cache:
     enable: true
@@ -117,9 +117,28 @@ theme_config:
     styles: source/_data/styles.styl
 
 
-# ---------------------------------------------------------------
-# Site Information Settings
-# ---------------------------------------------------------------
+  # ============================================================= #
+  # ----------------------- SEO Settings ------------------------ #
+  # ============================================================= #
+
+  seo: true
+  index_with_subtitle: true
+  exturl: true
+
+
+  # ============================================================= #
+  # ---------------------- Scheme Settings ---------------------- #
+  # ============================================================= #
+
+  #scheme: Muse
+  #scheme: Mist
+  #scheme: Pisces
+  scheme: Gemini
+
+
+  # ============================================================= #
+  # ----------------- Site Information Settings ----------------- #
+  # ============================================================= #
 
   footer:
     since: 2014
@@ -143,30 +162,25 @@ theme_config:
     post: false
 
 
-# ---------------------------------------------------------------
-# SEO Settings
-# ---------------------------------------------------------------
-
-  seo: true
-  index_with_subtitle: true
-  exturl: true
-
-
-# ---------------------------------------------------------------
-# Menu Settings
-# ---------------------------------------------------------------
+  # ============================================================= #
+  # ----------------------- Menu Settings ----------------------- #
+  # ============================================================= #
 
   menu:
     News: / || bullhorn
+
     Docs:
       default: /docs/ || book
+
       Getting Started:
         default: /getting-started/ || flag
         Installation: /installation/ || download
         Deployment: /deployment/ || upload
         Data Files: /data-files/ || wrench
         Update from 5.x: /update-from-v5/ || retweet
+
       Theme Settings: /theme-settings/ || star
+
       Third Party Services:
         default: /third-party-services/ || plug
         Comments and Widgets: /comments-and-widgets/ || comments-o
@@ -175,6 +189,7 @@ theme_config:
         Search Services: /search-services/ || search-plus
         External Libraries: /external-libraries/ || sun-o
         Math Equations: /math-equations/ || superscript
+
       Tag Plugins:
         default: /tag-plugins/ || rocket
         Full Image: /full-image/ || picture-o
@@ -183,6 +198,7 @@ theme_config:
         ExtURL: /exturl/ || external-link-square
         Label: /label/ || font
         Tabs: /tabs/ || columns
+
       Advanced Settings: /advanced-settings/ || cogs
       FAQ's: /faqs/ || life-ring
       Troubleshooting: /troubleshooting/ || bug
@@ -195,19 +211,9 @@ theme_config:
     badges: true
 
 
-# ---------------------------------------------------------------
-# Scheme Settings
-# ---------------------------------------------------------------
-
-  #scheme: Muse
-  #scheme: Mist
-  #scheme: Pisces
-  scheme: Gemini
-
-
-# ---------------------------------------------------------------
-# Sidebar Settings
-# ---------------------------------------------------------------
+  # ============================================================= #
+  # --------------------- Sidebar Settings ---------------------- #
+  # ============================================================= #
 
   avatar:
     url: /images/apple-touch-icon-next.png
@@ -243,25 +249,32 @@ theme_config:
     onmobile: true
 
 
-# ---------------------------------------------------------------
-# Post Settings
-# ---------------------------------------------------------------
+  # ============================================================= #
+  # ----------------------- Post Settings ----------------------- #
+  # ============================================================= #
+
+  symbols_count_time:
+    separated_meta: true
+    item_text_post: true
+    item_text_total: true
+    awl: 4
+    wpm: 275
 
   post_edit:
     enable: true
     url: https://github.com/theme-next/theme-next.org/edit/source/source/
 
 
-# ---------------------------------------------------------------
-# Misc Theme Settings
-# ---------------------------------------------------------------
+  # ============================================================= #
+  # -------------------- Misc Theme Settings -------------------- #
+  # ============================================================= #
 
   mobile_layout_economy: true
 
 
-  # ---------------------------------------------------------------
-  # Third Party Services Settings
-  # ---------------------------------------------------------------
+  # ============================================================= #
+  # --------------- Third Party Services Settings --------------- #
+  # ============================================================= #
 
   math:
     enable: true
@@ -270,39 +283,34 @@ theme_config:
     mathjax:
       cdn: //cdn.jsdelivr.net/npm/mathjax@2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 
-  # Comments and Widgets
+  # ------------------------------------------------------------- #
+  # ------------------- Comments and Widgets -------------------- #
+  # ------------------------------------------------------------- #
+
   disqus:
     enable: true
     shortname: theme-next
     count: true
     lazyload: true
 
-  # Statistics and Analytics
+  # ------------------------------------------------------------- #
+  # ----------------- Statistics and Analytics ------------------ #
+  # ------------------------------------------------------------- #
+
   yandex_site_verification: 3ac9ae36ddebb425
 
-  # Search Services
+  # ------------------------------------------------------------- #
+  # ---------------------- Search Services ---------------------- #
+  # ------------------------------------------------------------- #
+
   local_search:
     enable: false
     trigger: auto
     top_n_per_article: 1
 
-
-  # ---------------------------------------------------------------
-  # Tags Settings
-  # ---------------------------------------------------------------
-
-  note:
-    style: simple
-    icons: true
-    border_radius: 0
-    light_bg_offset: -3
-
-  tabs:
-    enable: true
-    transition:
-      tabs: true
-      labels: true
-    border_radius: 0
+  # ------------------------------------------------------------- #
+  # -------------------- External Libraries --------------------- #
+  # ------------------------------------------------------------- #
 
   motion:
     enable: false
@@ -317,7 +325,20 @@ theme_config:
 
   lazyload: true
 
-  symbols_count_time:
-    separated_meta: true
-    item_text_post: true
-    item_text_total: true
+
+  # ============================================================= #
+  # ------------------------ Tag Plugins ------------------------ #
+  # ============================================================= #
+
+  note:
+    style: simple
+    icons: true
+    border_radius: 0
+    light_bg_offset: -3
+
+  tabs:
+    enable: true
+    transition:
+      tabs: true
+      labels: true
+    border_radius: 0
