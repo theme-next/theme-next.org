@@ -132,9 +132,27 @@ script:
 
 <!-- tab Gitlab CI -->
 
-GitLab offers a continuous integration service. If you add a `.gitlab-ci.yml` file to the root directory of your repository, and configure your GitLab project to use a Runner, then each commit or push, triggers your CI pipeline. The `.gitlab-ci.yml` file tells the GitLab runner what to do. By default it runs a pipeline with three stages: build, test, and deploy. You don't need to use all three stages; stages with no jobs are simply ignored.
+GitLab offers a continuous integration service and pages service. If you add a `.gitlab-ci.yml` file to the root directory of your repository, and configure your GitLab project to use a Runner, then each commit or push, triggers your CI pipeline. The `.gitlab-ci.yml` file tells the GitLab runner what to do. By default it runs a pipeline with three stages: build, test, and deploy. You don't need to use all three stages; stages with no jobs are simply ignored. And at the end, your websites will be published on GitLab Host automatically.
 
 1. Add `.gitlab-ci.yml` to the root directory of your repository, and configure it.
+    {% code lang:yml hexo/.gitlab-ci.yml %}
+    image: node:8.11.2
+
+    pages:
+      cache:
+        paths:
+        - node_modules/
+
+      script:
+      - npm install hexo-cli -g
+      - npm install
+      - hexo deploy
+      artifacts:
+        paths:
+        - public
+      only:
+      - master
+    {% endcode %}
 2. Upload `scaffolds`, `source`, `themes`, `.gitignor`, `.gitlab-ci.yml`, `_config.yml`, and `package.json` to {% exturl your Gitlab repository https://gitlab.com/ %}.
     {% code lang:git %}
     $ git init
@@ -145,7 +163,9 @@ GitLab offers a continuous integration service. If you add a `.gitlab-ci.yml` fi
     $ git push -u origin master
     {% endcode %}
 
-There are two ways to configure `.gitlab-ci.yml`:
+Now, your static website is available at `https://yourname.gitlab.io/project` that is similar to GitHub. {% exturl More GitLab Pages config in here https://gitlab.com/help/user/project/pages/index.md %}.    
+
+Of course, you also can pulish static website on GitHub Page. There are two ways to configure `.gitlab-ci.yml`:
 
 {% subtabs Gitlab-CI-1 %}
 <!-- tab <code>HTTPS</code> -->
@@ -180,7 +200,7 @@ There are two ways to configure `.gitlab-ci.yml`:
       # - '[[ -f /.dockerenv ]] && echo "$SSH_SERVER_HOSTKEYS" > ~/.ssh/known_hosts'
       - apt-get update -qq && apt-get install -y -qq pandoc
 
-    image: node:6.10.2
+    image: node:8.11.2
 
     pages:
       cache:
@@ -251,7 +271,7 @@ Deploy key is a SSH key set in your repo to grant client read-only (as well as r
       # - '[[ -f /.dockerenv ]] && echo "$SSH_SERVER_HOSTKEYS" > ~/.ssh/known_hosts'
       - apt-get update -qq && apt-get install -y -qq pandoc
 
-    image: node:6.10.2
+    image: node:8.11.2
 
     pages:
       cache:
