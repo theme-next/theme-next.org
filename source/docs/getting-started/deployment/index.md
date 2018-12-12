@@ -132,7 +132,7 @@ script:
 
 <!-- tab Gitlab CI -->
 
-GitLab offers a continuous integration service and pages service that is similar to GitHub Pages. If you add a `.gitlab-ci.yml` file to the root directory of your repository, and configure your GitLab project to use a Runner, then each commit or push, triggers your CI pipeline. The `.gitlab-ci.yml` file tells the GitLab runner what to do. By default it runs a pipeline with three stages: build, test, and deploy. You don't need to use all three stages; stages with no jobs are simply ignored. And at the end, your websites will be published on GitLab Host.
+GitLab offers a continuous integration service and pages service. If you add a `.gitlab-ci.yml` file to the root directory of your repository, and configure your GitLab project to use a Runner, then each commit or push, triggers your CI pipeline. The `.gitlab-ci.yml` file tells the GitLab runner what to do. By default it runs a pipeline with three stages: build, test, and deploy. You don't need to use all three stages; stages with no jobs are simply ignored. And at the end, your websites will be published on GitLab Host automatically.
 
 1. Add `.gitlab-ci.yml` to the root directory of your repository, and configure it.
     {% code lang:yml hexo/.gitlab-ci.yml %}
