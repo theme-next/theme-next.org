@@ -21,7 +21,7 @@ search:
   path: search.xml
   field: post
   format: html
-    limit: 10000
+  limit: 10000
 {% endcode %}
 <!-- endtab -->
 
