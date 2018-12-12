@@ -741,10 +741,12 @@ More and more platform (WeChat public accounts, Weibo, Jianshu, Baidu Reward) su
 
    ```yml next/_config.yml
    # Reward
-   reward_comment: Donate comment here
-   wechatpay: /images/wechatpay.jpg
-   alipay: /images/alipay.jpg
-   bitcoin: /images/bitcoin.png
+   reward:
+     enable: true
+     comment: Donate comment here
+     wechatpay: /images/wechatpay.jpg
+     alipay: /images/alipay.jpg
+     bitcoin: /images/bitcoin.png
    ```
 
 ### WeChat Subscribing
