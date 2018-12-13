@@ -174,9 +174,6 @@ Now, your static website is available at `https://yourname.gitlab.io/project` th
 
 Of course, you also can pulish static website on GitHub Pages or others pages service. There are two ways to configure `.gitlab-ci.yml`:
 
-{% note danger %}Be aware that variables are not masked, and their values can be shown
-in the job logs if explicitly asked to do so. So make sure gitlab pipelines can only be viewed by yourself.{% endnote %}
-
 {% subtabs Gitlab-CI-1 %}
 <!-- tab <code>HTTPS</code> -->
 
@@ -262,6 +259,7 @@ Deploy key is a SSH key set in your repo to grant client read-only (as well as r
 <!-- endtab -->
 {% endsubtabs %}
 
+{% note danger %}Variables are not masked, and their values can be shown in the job logs if explicitly asked to do so. So make sure gitlab pipelines can only be viewed by yourself.{% endnote %}
 
 <!-- endtab -->
 
