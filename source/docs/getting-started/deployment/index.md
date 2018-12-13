@@ -138,14 +138,21 @@ GitLab offers a continuous integration service and pages service. If you add a `
     {% code lang:yml hexo/.gitlab-ci.yml %}
     image: node:8.11.2
 
+    before_script:
+      # Restore last modified time
+      - "git ls-files -z | while read -d '' path; do touch -d \"$(git log -1 --format=\"@%ct\" \"$path\")\" \"$path\"; done"
+
     pages:
+      stage: build
       cache:
         paths:
         - node_modules/
-
       script:
       - npm install hexo-cli -g
       - npm install
+      # NEXT NPM installation
+      - npm install hexo-symbols-count-time --save
+      - git clone https://github.com/theme-next/theme-next-pace themes/next/source/lib/pace
       - hexo deploy
       artifacts:
         paths:
@@ -165,69 +172,27 @@ GitLab offers a continuous integration service and pages service. If you add a `
 
 Now, your static website is available at `https://yourname.gitlab.io/project` that is similar to GitHub. {% exturl More GitLab Pages config in here https://gitlab.com/help/user/project/pages/index.md %}.    
 
-Of course, you also can pulish static website on GitHub Page. There are two ways to configure `.gitlab-ci.yml`:
+Of course, you also can pulish static website on GitHub Pages or others pages service. There are two ways to configure `.gitlab-ci.yml`:
 
 {% subtabs Gitlab-CI-1 %}
 <!-- tab <code>HTTPS</code> -->
 
 * Get the Access Token: Settings -> Developer settings -> Personal access token -> Generate new token. Set access rights according to the actual situation. It should be noted that the access token is only displayed once on this page, and it should be copied, otherwise it can only be regenerated.
-* Configure `.gitlab-ci.yml`:
-
+* Click `SETTINGS-CI/CD → Variables` in Gitlab, and defined access token as custom variable `GITHUB_ACCESS_TOKEN`. Or set `USERNAME` `PASSWORD` variable for coding repo.
+* Configure `.gitlab-ci.yml`: only add deploy stage at the end of this file
     {% code lang:yml hexo/.gitlab-ci.yml %}
-    before_script:
-      - export TZ='Asia/Shanghai'
-      - git config --global user.name "YOUR-USER-NAME"
-      - git config --global user.email "YOUR-EMAIL"
-      # Restore last modified time
-      - "git ls-files -z | while read -d '' path; do touch -d \"$(git log -1 --format=\"@%ct\" \"$path\")\" \"$path\"; done"
-      # Install ssh-agent if not already installed, it is required by Docker.
-      # (change apt-get to yum if you use a CentOS-based image)
-      - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
-      # Run ssh-agent (inside the build environment)
-      - eval $(ssh-agent -s)
-      # Add the SSH key stored in SSH_PRIVATE_KEY variable to the agent store
-      - ssh-add <(echo "$DEPLOY_PRIVATE_KEY")
-      # For Docker builds disable host key checking. Be aware that by adding that
-      # you are suspectible to man-in-the-middle attacks.
-      # WARNING: Use this only with the Docker executor, if you use it with shell
-      # you will overwrite your user's SSH config.
-      - mkdir -p ~/.ssh
-      - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
-      # In order to properly check the server's host key, assuming you created the
-      # SSH_SERVER_HOSTKEYS variable previously, uncomment the following two lines
-      # instead.
-      # - mkdir -p ~/.ssh
-      # - '[[ -f /.dockerenv ]] && echo "$SSH_SERVER_HOSTKEYS" > ~/.ssh/known_hosts'
-      - apt-get update -qq && apt-get install -y -qq pandoc
-
-    image: node:8.11.2
-
-    pages:
-      cache:
-        paths:
-        - node_modules/
+    github:
+      stage: deploy
       script:
-      - npm install hexo-cli -g
-      - npm install
-      # NEXT NPM installation
-      - npm install hexo-symbols-count-time --save
-      - git clone https://github.com/theme-next/theme-next-pace themes/next/source/lib/pace
-      # NEXT NPM installation
-      - ./node_modules/hexo/bin/hexo generate
       - cd ./public
       - git init
       - git config --global user.name "YOUR-USER-NAME"
       - git config --global user.email "YOUR-EMAIL"
-      - git config --global push.default simple
       - git add .
       - git commit -m "gitlab-auto-deploy"
-      - git push --force --quiet --set-upstream https://github_access_token@github.com/username/username.github.io.git master # replace github_access_token
+      - git push --force --quiet --set-upstream https://$GITHUB_ACCESS_TOKEN@github.com/username/username.github.io.git master # replace github_access_token
       # - git config http.postBuffer 524288000
-      # - git push --force --quiet --set-upstream https://username:password@git.coding.net/username/reponame.git master # replace username & password, please escape the password
-
-      artifacts:
-        paths:
-        - public
+      # - git push --force --quiet --set-upstream https://$USERNAME:$PASSWORD@git.coding.net/username/reponame.git master # replace username & password, please escape the password
       only:
       - master
     {% endcode %}
@@ -242,7 +207,7 @@ Deploy key is a SSH key set in your repo to grant client read-only (as well as r
     {% endcode %}
 
 * Click `SETTINGS-CI/CD → Variables` in Gitlab, copy the content of private key and defined it as custom variable `DEPLOY_PRIVATE_KEY`.
-* Configure `.gitlab-ci.yml`:
+* Configure `.gitlab-ci.yml`: only update script in `before_script`
 
     {% code lang:yml hexo/.gitlab-ci.yml %}
     before_script:
@@ -283,9 +248,6 @@ Deploy key is a SSH key set in your repo to grant client read-only (as well as r
       # NEXT NPM installation
       - npm install hexo-symbols-count-time --save
       - git clone https://github.com/theme-next/theme-next-pace themes/next/source/lib/pace
-      - hexo generate
-      - git config --global user.name "YOUR-USER-NAME"
-      - git config --global user.email "YOUR-EMAIL"
       - hexo deploy
 
       artifacts:
@@ -297,6 +259,7 @@ Deploy key is a SSH key set in your repo to grant client read-only (as well as r
 <!-- endtab -->
 {% endsubtabs %}
 
+{% note danger %}Variables are not masked, and their values can be shown in the job logs if explicitly asked to do so. So make sure gitlab pipelines can only be viewed by yourself.{% endnote %}
 
 <!-- endtab -->
 
