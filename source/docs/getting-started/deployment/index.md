@@ -138,11 +138,14 @@ GitLab offers a continuous integration service and pages service. If you add a `
     {% code lang:yml hexo/.gitlab-ci.yml %}
     image: node:8.11.2
 
+    before_script:
+      # Restore last modified time
+      - "git ls-files -z | while read -d '' path; do touch -d \"$(git log -1 --format=\"@%ct\" \"$path\")\" \"$path\"; done"
+
     pages:
       cache:
         paths:
         - node_modules/
-
       script:
       - npm install hexo-cli -g
       - npm install
