@@ -199,10 +199,11 @@ When `enable: true`, global setting is enabled. If `site_uv`, `site_pv`, `page_p
 When `site_uv: true`, it will show site UV in footer.
 `site_uv_header` and `site_uv_footer` is custom style words, and you can hide it by leaving it blank. You can also use font-awesome, it looks like `[site_uv_header]UV count[site_uv_footer]`.
 {% codeblock lang:yml next/_config.yml %}
-# View: Site visited by 12345 people.
-site_uv: true
-site_uv_header: Site visited by
-site_uv_footer: people.
+busuanzi_count:
+  # View: Site visited by 12345 people.
+  site_uv: true
+  site_uv_header: Site visited by
+  site_uv_footer: people.
 {% endcodeblock %}
 <!-- endtab -->
 
@@ -210,10 +211,11 @@ site_uv_footer: people.
 When `site_pv: true`, it will show site PV in footer.
 `site_pv_header` and `site_pv_footer` is custom style words, and you can hide it by leaving it blank, you can also use font-awesome, it looks like `[site_pv_header]PV count[site_pv_footer]`.
 {% codeblock lang:yml next/_config.yml %}
-# View: Site visited by 12345 times.
-site_pv: true
-site_pv_header: Site visited by
-site_pv_footer: times.
+busuanzi_count:
+  # View: Site visited by 12345 times.
+  site_pv: true
+  site_pv_header: Site visited by
+  site_pv_footer: times.
 {% endcodeblock %}
 <!-- endtab -->
 
@@ -221,10 +223,11 @@ site_pv_footer: times.
 When `page_pv: true`, it will show page PV under post title.
 `page_pv_header` and `page_pv_footer` is custom style words, and you can hide it by leaving it blank, you can also use font-awesome, it looks like `[page_pv_header]PV count[page_pv_footer]`.
 {% codeblock lang:yml next/_config.yml %}
-# View: Post read by 12345 times.
-page_pv: true
-page_pv_header: Post read by
-page_pv_footer: times.
+busuanzi_count:
+  # View: Post read by 12345 times.
+  page_pv: true
+  page_pv_header: Post read by
+  page_pv_footer: times.
 {% endcodeblock %}
 <!-- endtab -->
 {% endtabs %}
