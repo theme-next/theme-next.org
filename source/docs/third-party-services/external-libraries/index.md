@@ -485,12 +485,12 @@ $ git clone https://github.com/theme-next/theme-next-han source/lib/Han
 {% endcode %}
 
 {% note info %}
-If you want to use the CDN instead of clone this repo, then need to **set vendors** in {% label primary@theme config file %}, and pay attention to use **uppercase** `Han` rather than `han`:
+If you want to use the CDN instead of clone this repo, then need to **set vendors** in {% label primary@theme config file %}:
 {% code lang:yml next/_config.yml %}
 vendors:
   ...
   # https://github.com/ethantw/Han
-  Han: //cdnjs.cloudflare.com/ajax/libs/Han/3.3.0/han.min.css
+  han: //cdnjs.cloudflare.com/ajax/libs/Han/3.3.0/han.min.css
   ...
 {% endcode %}
 {% endnote %}
