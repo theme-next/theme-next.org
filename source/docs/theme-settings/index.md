@@ -1043,6 +1043,14 @@ toc:
 {% endcode %}
 <!-- endtab -->
 
+<!-- tab <code>max_depth</code> -->
+By default maximum heading depth of generated toc is 6. You can set it by editing values `toc.max_depth` to `another number` in {% label primary@theme config file %}.
+{% code lang:yml next/_config.yml %}
+toc:
+  max_depth: 3
+{% endcode %}
+<!-- endtab -->
+
 {% endtabs %}
 
 #### Sidebar Creative Commons
