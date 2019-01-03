@@ -15,7 +15,7 @@ math:
   enable: false
 
   # Default(true) will load mathjax/katex script on demand
-  # That is it only render those page who has 'mathjax: true' in Front Matter.
+  # That is it only render those page who has `mathjax: true` in Front Matter.
   # If you set it to false, it will load mathjax/katex srcipt EVERY PAGE.
   per_page: true
 
@@ -25,23 +25,26 @@ math:
   # hexo-rendering-pandoc (or hexo-renderer-kramed) needed to full MathJax support.
   mathjax:
     # Use 2.7.1 as default, jsdelivr as default CDN, works everywhere even in China
-    cdn: //cdn.jsdelivr.net/npm/mathjax@2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML
-    # For newMathJax CDN (cdnjs.cloudflare.com) with fallback to oldMathJax (cdn.mathjax.org).
-    #cdn: //cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
-    # For direct link to MathJax.js with CloudFlare CDN (cdnjs.cloudflare.com).
+    cdn: //cdn.jsdelivr.net/npm/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+    # For direct link to MathJax.js with CloudFlare CDN (cdnjs.cloudflare.com)
     #cdn: //cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML
-    # For automatic detect latest version link to MathJax.js and get from Bootcss.
-    #cdn: //cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML
 
-  # hexo-renderer-markdown-it-plus (or hexo-renderer-markdown-it with markdown-it-katex plugin)
-  # needed to full Katex support.
+    # See: https://mhchem.github.io/MathJax-mhchem/
+    #mhchem: //cdn.jsdelivr.net/npm/mathjax-mhchem@3
+    #mhchem: //cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.3.0
+
+  # hexo-renderer-markdown-it-plus (or hexo-renderer-markdown-it with markdown-it-katex plugin) needed to full Katex support.
   katex:
     # Use 0.7.1 as default, jsdelivr as default CDN, works everywhere even in China
     cdn: //cdn.jsdelivr.net/npm/katex@0.7.1/dist/katex.min.css
     # CDNJS, provided by cloudflare, maybe the best CDN, but not works in China
     #cdn: //cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css
-    # Bootcss, works great in China, but not so well in other region
-    #cdn: //cdn.bootcss.com/KaTeX/0.7.1/katex.min.css
+
+    copy_tex:
+      # See: https://github.com/KaTeX/KaTeX/tree/master/contrib/copy-tex
+      enable: false
+      copy_tex_js: //cdn.jsdelivr.net/npm/katex@0/dist/contrib/copy-tex.min.js
+      copy_tex_css: //cdn.jsdelivr.net/npm/katex@0/dist/contrib/copy-tex.min.css
 ```
 
 {% note danger %}
@@ -112,7 +115,7 @@ The reason that jsDelivr is chosen is because it is fast everywhere, and jsDeliv
 {% endnote %}
 
 {% note warning %}
-And we also provide other optional CDNs, including the famous {% exturl CDNJS https://cdnjs.com %} and the {% exturl Bootcss http://www.bootcdn.cn %} which has the quite high access speed in China.
+And we also provide other optional CDNs, including the famous {% exturl CDNJS https://cdnjs.com %}.
 For MathJax, we are currently using version 2.7.1.
 For KaTeX, due to the problem described above, we are now using version 0.7.1.
 {% endnote %}
@@ -262,6 +265,14 @@ We will continuously monitor the updates of corresponding renderers, if there is
 {% endnote %}
 <!-- endtab -->
 {% endtabs %}
+
+### Plugins
+
+NexT also integrates some plugins for MathJax and KaTeX. You can easily configure them by setting the CDN URLs.
+
+mhchem is a third-party extension for MathJax, it's a tool for writing beautiful chemical equations easily. More infomation: {% MathJax/mhchem Manual https://mhchem.github.io/MathJax-mhchem/ %}.
+
+Copy-tex extension for KaTeX modifes the copy/paste behavior in any browser supporting the Clipboard API so that, when selecting and copying whole KaTeX-rendered elements, the text content of the resulting clipboard renders KaTeX elements as their LaTeX source surrounded by specified delimiters. More infomation: {% Copy-tex extension https://github.com/KaTeX/KaTeX/tree/master/contrib/copy-tex %}.
 
 ### Examples
 
