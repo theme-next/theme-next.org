@@ -270,9 +270,9 @@ We will continuously monitor the updates of corresponding renderers, if there is
 
 NexT also integrates some plugins for MathJax and KaTeX. You can easily configure them by setting the CDN URLs.
 
-mhchem is a third-party extension for MathJax, it's a tool for writing beautiful chemical equations easily. More infomation: {% MathJax/mhchem Manual https://mhchem.github.io/MathJax-mhchem/ %}.
+mhchem is a third-party extension for MathJax, it's a tool for writing beautiful chemical equations easily. More infomation: {% exturl MathJax/mhchem Manual https://mhchem.github.io/MathJax-mhchem/ %}.
 
-Copy-tex extension for KaTeX modifes the copy/paste behavior in any browser supporting the Clipboard API so that, when selecting and copying whole KaTeX-rendered elements, the text content of the resulting clipboard renders KaTeX elements as their LaTeX source surrounded by specified delimiters. More infomation: {% Copy-tex extension https://github.com/KaTeX/KaTeX/tree/master/contrib/copy-tex %}.
+Copy-tex extension for KaTeX modifes the copy/paste behavior in any browser supporting the Clipboard API so that, when selecting and copying whole KaTeX-rendered elements, the text content of the resulting clipboard renders KaTeX elements as their LaTeX source surrounded by specified delimiters. More infomation: {% exturl Copy-tex extension https://github.com/KaTeX/KaTeX/tree/master/contrib/copy-tex %}.
 
 ### Examples
 
