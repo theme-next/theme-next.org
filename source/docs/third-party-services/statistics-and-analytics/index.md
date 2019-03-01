@@ -94,11 +94,14 @@ baidu_site_verification: XXXXXXXXXXXXXXXXXXXXXXX
 #### Google Analytics
 
 1. Create an account and log into {% exturl Google Analytics https://analytics.google.com %}. {% exturl More detailed documentation https://support.google.com/analytics/?hl=en#topic=3544906 %}
-2. Edit {% label primary@theme config file %} and change section `google_analytics` to your Google track ID. Google track ID always starts with `UA-`.
+2. Edit {% label primary@theme config file %} and fill `tracking_id` under  section `google_analytics` with your Google track ID. Google track ID always starts with `UA-`.
     ```yml next/_config.yml
     # Google Analytics
-    google_analytics: UA-XXXXXXXX-X
+    google_analytics:
+      tracking_id: UA-XXXXXXXX-X
+      localhost_ignored: true
     ```
+when field `localhost_ignore` is set to true, NexT will not send record to google analytics, as long as page request has "localhost" as its host name. This will prevent local debugging from polluting analytics. Set `localhost_ignore` to disable it.
 
 #### Azure Application Insights
 
