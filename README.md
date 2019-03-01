@@ -1,9 +1,7 @@
-[# NexT Theme Website
-
-NexT theme website source. You can see the generated files at [deploys](https://app.netlify.com/sites/theme-next/deploys) page.](# NexT Theme Website Source
+# NexT Theme Website Source
 
 [![home](https://img.shields.io/badge/Home-Gemini-blue.svg)](https://theme-next.org)
-[![Gemini Status](https://api.netlify.com/api/v1/badges/1d59e9ba-019f-4d9e-ac93-c73df98957c1/deploy-status)](https://app.netlify.com/sites/theme-next/deploys))
+[![Gemini Status](https://api.netlify.com/api/v1/badges/1d59e9ba-019f-4d9e-ac93-c73df98957c1/deploy-status)](https://app.netlify.com/sites/theme-next/deploys)
 
 ## Autoinstall Hexo & NexT & NexT website source
 
