@@ -70,10 +70,10 @@ echo
 echo "=============================================================="
 echo " Cloning and Updating NexT theme & Adding needed modules..."
 echo "=============================================================="
-    echo "${blue}NexT{norm}"
+    echo "${blue}${bold}NexT${norm}"
     git -C themes/next pull || git clone https://github.com/theme-next/hexo-theme-next themes/next
-    echo
-    echo "jquery-lazyload"
+    echo -e
+    echo "${yellow}jquery-lazyload${norm}"
     git -C themes/next/source/lib/jquery_lazyload pull || git clone https://github.com/theme-next/theme-next-jquery-lazyload themes/next/source/lib/jquery_lazyload
 
 echo
