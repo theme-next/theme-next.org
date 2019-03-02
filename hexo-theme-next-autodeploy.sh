@@ -70,8 +70,10 @@ echo
 echo "=============================================================="
 echo " Cloning NexT theme & Adding needed modules..."
 echo "=============================================================="
-    git clone https://github.com/theme-next/hexo-theme-next themes/next
-    git clone https://github.com/theme-next/theme-next-jquery-lazyload themes/next/source/lib/jquery_lazyload
+    #git clone https://github.com/theme-next/hexo-theme-next themes/next
+    #git clone https://github.com/theme-next/theme-next-jquery-lazyload themes/next/source/lib/jquery_lazyload
+    git submodule update --init https://github.com/theme-next/hexo-theme-next themes/next
+    ls -la
 
 echo
 echo "=============================================================="
@@ -86,12 +88,12 @@ echo
 echo "=============================================================="
 echo " Creating symlinks..."
 echo "=============================================================="
-    ln -s ../source source
-    ln -s ../_config.yml _config.yml
+    ln -sv ../source source
+    ln -sv ../_config.yml _config.yml
 
 echo
 echo "=============================================================="
 echo " Generating theme-next.org website..."
 echo "=============================================================="
-    hexo g
+    hexo clean && hexo g
 echo
