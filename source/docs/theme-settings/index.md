@@ -596,7 +596,7 @@ codeblock:
 <!-- endtab -->
 <!-- tab <code>style</code> -->
 With `style` option, you can change your copy button style.
-There are two style available currently: ``(default) and `flat`.
+There are two style available currently: `default`(Just leave it empty) and `flat`.
 
 {% code lang:yml hexo/_config.yml %}
 codeblock:
