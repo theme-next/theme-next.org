@@ -1,0 +1,6 @@
+[Settings]
+ID = "Theme-Next"
+
+[[redirects]]
+  from = "https://theme-next.netlify.com/*"
+  to = "https://theme-next.org/:splat"
