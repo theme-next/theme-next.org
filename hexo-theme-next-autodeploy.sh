@@ -68,13 +68,10 @@ echo "=============================================================="
 
 echo
 echo "=============================================================="
-echo " Cloning NexT theme & Adding needed modules..."
+echo " Cloning and Updating NexT theme & Adding needed modules..."
 echo "=============================================================="
-    #git clone https://github.com/theme-next/hexo-theme-next themes/next
+    git -C themes/next pull || git clone https://github.com/theme-next/hexo-theme-next themes/next
     #git clone https://github.com/theme-next/theme-next-jquery-lazyload themes/next/source/lib/jquery_lazyload
-    git submodule update --init --recursive https://github.com/theme-next/hexo-theme-next themes/next
-    cd themes
-    ls -la
 
 echo
 echo "=============================================================="
