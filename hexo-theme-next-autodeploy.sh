@@ -71,27 +71,27 @@ echo "=============================================================="
 echo " Cloning and Updating NexT theme & Adding needed modules..."
 echo "=============================================================="
     git -C themes/next pull || git clone https://github.com/theme-next/hexo-theme-next themes/next
-    #git clone https://github.com/theme-next/theme-next-jquery-lazyload themes/next/source/lib/jquery_lazyload
+    git clone https://github.com/theme-next/theme-next-jquery-lazyload themes/next/source/lib/jquery_lazyload
 
 echo
 echo "=============================================================="
 echo " Replacing default renderer & Installing needed plugins..."
 echo "=============================================================="
-    #npm un hexo-renderer-marked --save
-    #npm i hexo-renderer-kramed --save
-    #npm i hexo-deployer-git --save
-    #npm i hexo-symbols-count-time --save
+    npm un hexo-renderer-marked --save
+    npm i hexo-renderer-kramed --save
+    npm i hexo-deployer-git --save
+    npm i hexo-symbols-count-time --save
 
 echo
 echo "=============================================================="
 echo " Creating symlinks..."
 echo "=============================================================="
-    #ln -sv ../source source
-    #ln -sv ../_config.yml _config.yml
+    ln -sv ../source source
+    ln -sv ../_config.yml _config.yml
 
 echo
 echo "=============================================================="
 echo " Generating theme-next.org website..."
 echo "=============================================================="
-    #hexo clean && hexo g
+    hexo clean && hexo g
 echo
