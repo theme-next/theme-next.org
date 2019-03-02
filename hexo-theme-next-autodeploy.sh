@@ -79,21 +79,21 @@ echo
 echo "=============================================================="
 echo " Replacing default renderer & Installing needed plugins..."
 echo "=============================================================="
-    npm un hexo-renderer-marked --save
-    npm i hexo-renderer-kramed --save
-    npm i hexo-deployer-git --save
-    npm i hexo-symbols-count-time --save
+    #npm un hexo-renderer-marked --save
+    #npm i hexo-renderer-kramed --save
+    #npm i hexo-deployer-git --save
+    #npm i hexo-symbols-count-time --save
 
 echo
 echo "=============================================================="
 echo " Creating symlinks..."
 echo "=============================================================="
-    ln -sv ../source source
-    ln -sv ../_config.yml _config.yml
+    #ln -sv ../source source
+    #ln -sv ../_config.yml _config.yml
 
 echo
 echo "=============================================================="
 echo " Generating theme-next.org website..."
 echo "=============================================================="
-    hexo clean && hexo g
+    #hexo clean && hexo g
 echo
