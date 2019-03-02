@@ -72,8 +72,7 @@ echo " Cloning and Updating NexT theme & Adding needed modules..."
 echo "=============================================================="
     echo "${blue}NexT${norm}"
     git -C themes/next pull || git clone https://github.com/theme-next/hexo-theme-next themes/next
-    echo
-    echo
+
     echo "${yellow}jquery-lazyload${norm}"
     git -C themes/next/source/lib/jquery_lazyload pull || git clone https://github.com/theme-next/theme-next-jquery-lazyload themes/next/source/lib/jquery_lazyload
 
@@ -85,6 +84,8 @@ echo "=============================================================="
     npm i hexo-renderer-kramed --save
     npm i hexo-deployer-git --save
     npm i hexo-symbols-count-time --save
+    npm i hexo-generator-searchdb --save
+    npm i hexo-generator-feed --save
 
 echo
 echo "=============================================================="

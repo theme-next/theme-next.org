@@ -92,7 +92,7 @@ kramed:
 
 search:
   path: search.xml
-  field: post
+  field: all
 
 symbols_count_time:
   symbols: false
