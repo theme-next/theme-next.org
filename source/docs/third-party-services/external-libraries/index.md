@@ -284,7 +284,7 @@ fastclick: false
 
 ### Jquery Lazyload
 
-{% exturl Jquery Lazyload hhttps://github.com/tuupola/jquery_lazyload %} is a modern vanilla JavaScript version of the original Lazy Load plugin. Lazy Load delays loading of images in long web pages. Images outside of viewport will not be loaded before user scrolls to them. This is opposite of image preloading.
+{% exturl Jquery Lazyload https://github.com/tuupola/jquery_lazyload %} is a modern vanilla JavaScript version of the original Lazy Load plugin. Lazy Load delays loading of images in long web pages. Images outside of viewport will not be loaded before user scrolls to them. This is opposite of image preloading.
 
 {% tabs lazyload %}
 <!-- tab Installation → -->
@@ -316,6 +316,46 @@ After the plugin installed, you can enable it by editing values `lazyload` to `t
 # Added switch option for separated repo in 6.0.0.
 # Dependencies: https://github.com/theme-next/theme-next-fastclick
 lazyload: false
+{% endcode %}
+
+<!-- endtab -->
+{% endtabs %}
+
+### Quicklink
+
+{% exturl Quicklink https://github.com/GoogleChromeLabs/quicklink %} is a JavaScript plugin that faster subsequent page-loads by prefetching in-viewport links during idle time. Chrome, Firefox, Edge are supported without polyfills.
+
+{% tabs quicklink %}
+<!-- tab Installation → -->
+Change dir to NexT directory, and install module to `source/lib` directory.
+
+{% code lang:bash %}
+$ cd themes/next
+$ git clone https://github.com/theme-next/theme-next-quicklink source/lib/quicklink
+{% endcode %}
+
+{% note info %}
+If you want to use the CDN instead of clone this repo, then need to **set vendors** in {% label primary@theme config file %}:
+{% code lang:yml next/_config.yml %}
+vendors:
+  ...
+  # See: https://github.com/GoogleChromeLabs/quicklink
+  quicklink: //cdn.jsdelivr.net/npm/quicklink@1.0.0/dist/quicklink.umd.js
+  ...
+{% endcode %}
+{% endnote %}
+
+<!-- endtab -->
+
+<!-- tab NexT Config -->
+
+After the plugin installed, you can enable it by editing values `quicklink.enable` to `true` in {% label primary@theme config file %}.
+
+{% code lang:yml hexo/_config.yml %}
+...
+quicklink:
+  enable: false
+...
 {% endcode %}
 
 <!-- endtab -->
