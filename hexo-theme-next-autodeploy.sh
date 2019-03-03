@@ -94,15 +94,19 @@ echo "=============================================================="
     ln -sv ../source source
     ln -sv ../_config.yml _config.yml
 
-    #URL = "test.theme-next.org"
-    ls -la
-    cd ../ && ls -la
-    cd ../ && ls -la
-    cd ../ && ls -la
-    cd ../ && ls -la
+echo
+echo "=============================================================="
+echo " Generating main theme-next.org domain..."
+echo "=============================================================="
+    hexo clean && hexo g
 
 echo
 echo "=============================================================="
-echo " Generating theme-next.org website..."
+echo " Generating mist.theme-next.org subdomain..."
 echo "=============================================================="
+    hexo config url https://mist.theme-next.org
+    hexo config theme_config.scheme Mist
     hexo clean && hexo g
+    mv public schemes/mist
+
+    mv schemes public
