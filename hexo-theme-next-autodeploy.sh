@@ -116,16 +116,20 @@ echo "=============================================================="
 
 echo
 echo "=============================================================="
-echo " Moving all schemes to public directory..."
-echo "=============================================================="
-    mv -v schemes public
-
-echo
-echo "=============================================================="
 echo " Copying choosed scheme to main theme-next.org domain..."
 echo "=============================================================="
     hexo config url https://theme-next.org
     hexo config theme_config.scheme Gemini
     #hexo clean && hexo g
     cp -Rv schemes/gemini public
+    cd public && ls -la
+    cd ../
+
+echo
+echo "=============================================================="
+echo " Moving all schemes to public directory..."
+echo "=============================================================="
+    #cp -v schemes public
+    #rm -rf schemes
+    mv -v schemes public
     cd public && ls -la
