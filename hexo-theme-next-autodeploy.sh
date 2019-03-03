@@ -102,7 +102,12 @@ echo "=============================================================="
     hexo config theme_config.scheme Mist
     hexo clean && hexo g
     #mv public public/mist
-    mv public mist && mkdir public && mv mist public
+    mv -v public mist
+    mkdir -v public
+    mv -v mist public/mist
+    ls -la
+    cd public && ls -la
+    cd ../
 
 echo
 echo "=============================================================="
