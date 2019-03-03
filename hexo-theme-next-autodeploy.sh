@@ -133,3 +133,4 @@ echo "=============================================================="
     #rm -rf schemes
     mv -v schemes public
     cd public && ls -la
+    cd schemes && ls -la
