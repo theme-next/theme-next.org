@@ -742,6 +742,24 @@ related_posts:
 
 {% endtabs %}
 
+### Tagcloud
+
+By deafult, NexT has setted font color and size for tagcloud, if you want to customize them just follow below:
+
+Set needed values in  {% label primary@theme config file %}:
+
+   ```yml next/_config.yml
+   tagcloud:
+   # If true, font size and color can be customized
+   enable: true
+
+   # All values below are same as default, change them by yourself
+   min: 12 # min font size in px
+   max: 30 # max font size in px
+   start: '#ccc' # start color (hex, rgba, hsla or color keywords)
+   end: '#111' # end color (hex, rgba, hsla or color keywords)
+   ```
+
 ### Reward (Donate)
 
 More and more platform (WeChat public accounts, Weibo, Jianshu, Baidu Reward) supports reward (donate). To catch paid reading trends, we added reward feature, supports WeChat Pay, Alipay and Bitcoin. What you need is:
