@@ -101,7 +101,8 @@ echo "=============================================================="
     hexo config url https://mist.theme-next.org
     hexo config theme_config.scheme Mist
     hexo clean && hexo g
-    mv public public/mist
+    #mv public public/mist
+    mv public mist && mkdir public && mv mist public
 
 echo
 echo "=============================================================="
