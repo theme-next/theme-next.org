@@ -93,6 +93,7 @@ echo " Creating symlinks..."
 echo "=============================================================="
     ln -sv ../source source
     ln -sv ../_config.yml _config.yml
+    mkdir schemes
 
 echo
 echo "=============================================================="
@@ -111,12 +112,14 @@ echo "=============================================================="
     hexo config theme_config.scheme Gemini
     hexo clean && hexo g
     mv -v public schemes/gemini
+    cd schemes && ls -la && cd ../
 
 echo
 echo "=============================================================="
-echo " Generating main theme-next.org domain..."
+echo " Copying choosed scheme to main theme-next.org domain..."
 echo "=============================================================="
     hexo config url https://theme-next.org
     hexo config theme_config.scheme Gemini
     #hexo clean && hexo g
     cp -Rv schemes/gemini public
+    cd public && ls -la
