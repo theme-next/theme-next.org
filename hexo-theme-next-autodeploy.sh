@@ -100,3 +100,7 @@ echo " Generating theme-next.org website..."
 echo "=============================================================="
     hexo clean && hexo g
 echo
+    #URL = "test.theme-next.org"
+    ls -la
+    cd ../ && ls -la
+    cd ../ && ls -la
