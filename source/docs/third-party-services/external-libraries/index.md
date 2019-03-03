@@ -355,6 +355,12 @@ After the plugin installed, you can enable it by editing values `quicklink.enabl
 ...
 quicklink:
   enable: false
+  home: true
+  archive: true
+  delay: true
+  timeout: 3000
+  priority: true
+  ignores:
 ...
 {% endcode %}
 
