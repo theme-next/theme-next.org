@@ -93,7 +93,7 @@ echo " Creating symlinks..."
 echo "=============================================================="
     ln -sv ../source source
     ln -sv ../_config.yml _config.yml
-    mkdir schemes
+    mkdir -v schemes
 
 echo
 echo "=============================================================="
@@ -113,6 +113,12 @@ echo "=============================================================="
     hexo clean && hexo g
     mv -v public schemes/gemini
     cd schemes && ls -la && cd ../
+
+echo
+echo "=============================================================="
+echo " Moving all schemes to public directory..."
+echo "=============================================================="
+    mv -v schemes public
 
 echo
 echo "=============================================================="
