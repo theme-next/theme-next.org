@@ -6,3 +6,9 @@ ID = "Theme-Next"
   to = "https://theme-next.org/:splat"
   status = 301
   force = true
+
+[[redirects]]
+  from = "/mist/*"
+  to = "https://mist.theme-next.org/:splat"
+  status = 200
+  force = true
