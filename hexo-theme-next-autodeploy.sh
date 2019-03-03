@@ -101,13 +101,16 @@ echo "=============================================================="
     hexo config url https://mist.theme-next.org
     hexo config theme_config.scheme Mist
     hexo clean && hexo g
-    #mv public public/mist
-    mv -v public mist
-    mkdir -v public
-    mv -v mist public/mist
-    ls -la
-    cd public && ls -la
-    cd ../
+    mv -v public schemes/mist
+
+echo
+echo "=============================================================="
+echo " Generating gemini.theme-next.org subdomain..."
+echo "=============================================================="
+    hexo config url https://gemini.theme-next.org
+    hexo config theme_config.scheme Gemini
+    hexo clean && hexo g
+    mv -v public schemes/gemini
 
 echo
 echo "=============================================================="
@@ -115,4 +118,5 @@ echo " Generating main theme-next.org domain..."
 echo "=============================================================="
     hexo config url https://theme-next.org
     hexo config theme_config.scheme Gemini
-    hexo clean && hexo g
+    #hexo clean && hexo g
+    cp -Rv schemes/gemini public
