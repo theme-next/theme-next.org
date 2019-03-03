@@ -134,3 +134,4 @@ echo "=============================================================="
     mv -v schemes public
     cd public && ls -la
     cd schemes && ls -la
+    cd mist && ls -la
