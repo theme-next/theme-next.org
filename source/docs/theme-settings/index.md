@@ -744,7 +744,7 @@ related_posts:
 
 ### Tagcloud
 
-By deafult, NexT has setted font color and size for tagcloud, if you want to customize them just follow below:
+By default, NexT has setted font color and size for tagcloud, if you want to customize them just follow below:
 
 Set needed values in  {% label primary@theme config file %}:
 
