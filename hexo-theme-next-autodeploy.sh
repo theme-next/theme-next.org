@@ -100,7 +100,7 @@ echo "=============================================================="
 echo " Generating mist.theme-next.org subdomain..."
 echo "=============================================================="
     hexo config url https://mist.theme-next.org
-    hexo config root /
+    #hexo config root /
     hexo config theme_config.scheme Mist
     hexo clean && hexo g
     mv -v public schemes/mist
@@ -111,7 +111,7 @@ echo " Generating gemini.theme-next.org subdomain..."
 echo "=============================================================="
     hexo config url https://gemini.theme-next.org
     hexo config theme_config.scheme Gemini
-    hexo config root /schemes/gemini/
+    #hexo config root /schemes/gemini/
     hexo clean && hexo g
     mv -v public schemes/gemini
     cd schemes && ls -la && cd ../
@@ -122,7 +122,7 @@ echo " Copying choosed scheme to main theme-next.org domain..."
 echo "=============================================================="
     hexo config url https://theme-next.org
     hexo config theme_config.scheme Gemini
-    hexo config root /
+    #hexo config root /
     cp -R schemes/gemini public
     cd public && ls -la
     cd ../
