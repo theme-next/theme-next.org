@@ -5,7 +5,7 @@ description: NexT User Docs – NexT Supported Tags – Group Pictures
 
 ### Usage
 
-```md grouppicture.js
+```md group-picture.js
 {% grouppicture [group]-[layout] %}{% endgrouppicture %}
 {% gp [group]-[layout] %}{% endgp %}
 

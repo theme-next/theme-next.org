@@ -178,7 +178,11 @@ theme_config:
         Data Files: /data-files/ || wrench
         Update from 5.x: /update-from-v5/ || retweet
 
-      Theme Settings: /theme-settings/ || star
+      Theme Settings:
+        default: /theme-settings/ || star
+        ExtURL: /exturl/ || external-link-square
+        Custom Pages: /custom-pages/ || file
+        Posts: /posts/ || pencil-square-o
 
       Third Party Services:
         default: /third-party-services/ || plug
@@ -194,9 +198,11 @@ theme_config:
         Full Image: /full-image/ || picture-o
         Note: /note/ || comment
         Button: /button/ || square
-        ExtURL: /exturl/ || external-link-square
         Label: /label/ || font
         Tabs: /tabs/ || columns
+        Mermaid: /mermaid/ || tasks
+        Video: /video/ || video-camera
+        Group Pictures: /group-pictures/ || file-image-o
 
       Advanced Settings: /advanced-settings/ || cogs
       FAQ's: /faqs/ || life-ring

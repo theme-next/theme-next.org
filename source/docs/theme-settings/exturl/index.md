@@ -1,6 +1,6 @@
 ---
 title: External URL
-description: NexT User Docs – NexT Supported Tags – External URL
+description: NexT User Docs – Theme Settings – External URL
 ---
 External URL with BASE64 encrypt & decrypt which provide nonsense for search engines to `<a>` tags.
 
@@ -24,6 +24,8 @@ Just one setting must be turned on under the `Tags Settings` section in {% label
 ```yml next/_config.yml
 exturl: true
 ```
+
+**Below is the usage of `exturl` tag, which will no longer be supported.**
 
 ### Usage
 
