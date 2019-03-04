@@ -2,7 +2,7 @@
 ID = "Theme-Next"
 
 [[redirects]]
-  from = "https://theme-next.netlify.com/schemes/mist/*"
+  from = "/schemes/mist/*"
   to = "https://mist.theme-next.org/:splat"
   status = 200
   force = false
