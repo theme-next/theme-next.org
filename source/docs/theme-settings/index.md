@@ -629,29 +629,6 @@ Change the value of `highlight_theme` to choose the highlight style you like, fo
 # https://github.com/chriskempson/tomorrow-theme
 highlight_theme: night
 ```
-#### Post Copyright
-NexT supports the copyright declaration for your posts.
-
-{% tabs post_copyright %}
-<!-- tab <code>enable</code> -->
-You can enable it by editing values `post_copyright.enable` to `true` in {% label primary@theme config file %}.
-
-{% code lang:yml hexo/_config.yml %}
-post_copyright:
-  enable: false
-{% endcode %}
-<!-- endtab -->
-
-<!-- tab <code>license</code> -->
-You can also configure your custom license by editing values in `post_copyright.license` section in {% label primary@theme config file %}.
-
-{% code lang:yml hexo/_config.yml %}
-post_copyright:
-  license: <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a>
-{% endcode %}
-<!-- endtab -->
-
-{% endtabs %}
 
 #### Post Edit
 NexT supports the edit functionality of your posts.
