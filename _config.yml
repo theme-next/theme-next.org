@@ -41,7 +41,6 @@ code_dir: downloads/code
 i18n_dir: :lang
 
 skip_render:
-- 'CNAME'
 - 'robots.txt'
 
 new_post_name: :title.md

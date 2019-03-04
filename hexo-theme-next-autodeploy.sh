@@ -119,7 +119,7 @@ echo " Copying choosed scheme to main theme-next.org domain..."
 echo "=============================================================="
     hexo config url https://theme-next.org
     hexo config theme_config.scheme Gemini
-    cp -R schemes/gemini public
+    cp -vR schemes/gemini public
 
 echo
 echo "=============================================================="
@@ -128,7 +128,7 @@ echo "=============================================================="
     echo 'User-agent: *
 Disallow: /page/*/
 Disallow: /archives/*
-Host: https://theme-next.org' > public/robots.txt
+Host: https://theme-next.org' >&2 public/robots.txt
 
 echo
 echo "=============================================================="
