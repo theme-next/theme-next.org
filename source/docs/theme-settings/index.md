@@ -759,6 +759,20 @@ From NexT v7.0.2 you can customize them, just set related values in  {% label pr
      end: '#111' # end color (hex, rgba, hsla or color keywords)
    ```
 
+### Creative Commons
+
+NexT supports the display of {% exturl Creative Commons 4.0 International License http://creativecommons.org/ %} in sidebar and post including `by`, `by-nc`, `by-nc-nd`, `by-nc-sa`, `by-nd`, `by-sa`, `zero`. These licenses allow creators to communicate which rights they reserve, and which rights they waive for the benefit of recipients or other creators.
+
+You can configure it by editing values in `creative_commons` section in {% label primary@theme config file %}, for example:
+
+```yml next/_config.yml
+creative_commons:
+  license: by-nc-sa
+  sidebar: true
+  post: true
+  language: deed.zh
+```
+
 ### Reward (Donate)
 
 More and more platform (WeChat public accounts, Weibo, Jianshu, Baidu Reward) supports reward (donate). To catch paid reading trends, we added reward feature, supports WeChat Pay, Alipay and Bitcoin. What you need is:
@@ -1079,16 +1093,6 @@ toc:
 <!-- endtab -->
 
 {% endtabs %}
-
-#### Sidebar Creative Commons
-
-NexT supports the display of {% exturl Creative Commons 4.0 International License http://creativecommons.org/ %} including `by`, `by-nc`, `by-nc-nd`, `by-nc-sa`, `by-nd`, `by-sa`, `zero`. These licenses allow creators to communicate which rights they reserve, and which rights they waive for the benefit of recipients or other creators.
-
-You can configure it by editing values in `creative_commons` section in {% label primary@theme config file %}.
-
-```yml next/_config.yml
-creative_commons:
-```
 
 ### Site Footer Setting
 
