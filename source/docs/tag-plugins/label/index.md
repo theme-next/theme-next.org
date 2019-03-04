@@ -2,11 +2,6 @@
 title: Label
 description: NexT User Docs – NexT Supported Tags – Label
 ---
-### Settings
-
-```yml next/_config.yml
-label: true
-```
 
 ### Usage
 
