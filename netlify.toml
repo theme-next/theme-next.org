@@ -12,7 +12,7 @@ ID = "Theme-Next"
 [[redirects]]
   from = "https://mist.theme-next.org/*"
   to = "https://theme-next.org/schemes/mist/:splat"
-  status = 301
+  status = 200
   force = false
 
 #[[redirects]]
