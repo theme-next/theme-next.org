@@ -30,8 +30,8 @@ ID = "Theme-Next"
 
 
 [[redirects]]
-  from = "https://mist.theme-next.org/*"
-  to = "https://theme-next.org/schemes/mist/:splat"
+  from = "https://theme-next.org/schemes/mist/*"
+  to = "https://mist.theme-next.org/:splat"
   status = 200
   force = false
 
