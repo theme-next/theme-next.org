@@ -2,63 +2,37 @@
 ID = "Theme-Next"
 
 #[[redirects]]
-#  from = "/schemes/mist/*"
-#  to = "https://mist.theme-next.org/:splat"
+#  from = "https://mist.theme-next.org/*"
+#  to = "https://theme-next.netlify.com/schemes/mist/:splat"
 #  status = 200
-#  force = false
-
-  #https://mist.theme-next.org/* https://theme-next.org/:splat 301!
-
-
-
-#[[redirects]]
-#  from = "/schemes/mist/*"
-#  to = "https://mist.theme-next.org/:splat"
-#  status = 200
-#  force = false
+#  force = true
 
 #[[redirects]]
 #  from = "https://theme-next.netlify.com/schemes/mist/*"
-#  to = "https://mist.theme-next.netlify.com/:splat"
-#  status = 200
-#  force = false
-
-
-
-#[[redirects]]
-#  from = "https://theme-next.netlify.com/*"
-#  to = "https://theme-next.org/:splat"
+#  to = "https://mist.theme-next.org/:splat"
 #  status = 301
 #  force = true
 
 
 
 [[redirects]]
+  from = "https://theme-next.org/schemes/mist/*"
+  to = "https://mist.theme-next.org/:splat"
+  status = 301
+  force = false
+
+[[redirects]]
   from = "https://mist.theme-next.org/*"
-  to = "https://theme-next.netlify.com/schemes/mist/:splat"
+  to = "https://theme-next.org/schemes/mist/:splat"
   status = 200
   force = true
 
-#[[redirects]]
-#  from = "https://theme-next.org/schemes/mist/*"
-#  to = "https://mist.theme-next.org/:splat"
-#  status = 200
-#  force = false
 
-#[[redirects]]
-#  from = "https://theme-next.org/schemes/mist/*"
-#  to = "https://mist.theme-next.org/:splat"
-#  status = 200
-#  force = false
 
-#[[redirects]]
-#  from = "/schemes/mist/*"
-#  to = "https://mist.theme-next.org/:splat"
-#  status = 200
-#  force = false
 
-#[[redirects]]
-#  from = "/schemes/mist/*"
-#  to = "https://mist.theme-next.netlify.com/:splat"
-#  status = 200
-#  force = true
+
+[[redirects]]
+  from = "https://theme-next.netlify.com/*"
+  to = "https://theme-next.org/:splat"
+  status = 301
+  force = true
