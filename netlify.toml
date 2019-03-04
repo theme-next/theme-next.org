@@ -3,12 +3,6 @@ ID = "Theme-Next"
 
 #https://frontend.yoursite.com/login/* https://backend.yoursite.com/:splat 200
 
-[[redirects]]
-  from = "https://mist.theme-next.org/*"
-  to = "/schemes/mist/:splat"
-  status = 200
-  force = false
-
 #[[redirects]]
 #  from = "/schemes/mist/*"
 #  to = "https://mist.theme-next.org/:splat"
@@ -34,6 +28,12 @@ ID = "Theme-Next"
   status = 301
   force = true
 
+
+[[redirects]]
+  from = "https://mist.theme-next.org/*"
+  to = "https://theme-next.org/schemes/mist/:splat"
+  status = 200
+  force = false
 
 #[[redirects]]
 #  from = "https://theme-next.org/schemes/mist/*"
