@@ -14,7 +14,7 @@ ID = "Theme-Next"
 #  force = true
 
 [[redirects]]
-  from = "https://theme-next.netlify.com"
-  to = "https://theme-next.org"
+  from = "https://theme-next.netlify.com/*"
+  to = "https://theme-next.org/:splat"
   status = 200
   force = true
