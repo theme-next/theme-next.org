@@ -1,7 +1,11 @@
-# NexT Theme Website Source
+# NexT Theme Website Source [![Build Status](https://api.netlify.com/api/v1/badges/1d59e9ba-019f-4d9e-ac93-c73df98957c1/deploy-status)](https://app.netlify.com/sites/theme-next/deploys)
 
-[![home](https://img.shields.io/badge/Home-Gemini-blue.svg)](https://theme-next.org)
-[![Gemini Status](https://api.netlify.com/api/v1/badges/1d59e9ba-019f-4d9e-ac93-c73df98957c1/deploy-status)](https://app.netlify.com/sites/theme-next/deploys)
+## Schemes
+
+* :heart_decoration: [Muse](https://muse.theme-next.org)
+* :six_pointed_star: [Mist](https://mist.theme-next.org)
+* :pisces: [Pisces](https://pisces.theme-next.org)
+* :gemini: [Gemini](https://gemini.theme-next.org)
 
 ## Autoinstall Hexo & NexT & NexT Website Source on Localhost
 

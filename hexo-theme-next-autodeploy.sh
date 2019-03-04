@@ -94,6 +94,16 @@ echo "=============================================================="
     ln -sv ../source source
     ln -sv ../_config.yml _config.yml
     mkdir -v schemes
+    hexo config root /
+
+echo
+echo "=============================================================="
+echo " Generating test.theme-next.org subdomain..."
+echo "=============================================================="
+    hexo config url https://test.theme-next.org
+    hexo config theme_config.scheme Muse
+    hexo clean && hexo g
+    mv -v public schemes/test
 
 echo
 echo "=============================================================="
