@@ -100,7 +100,6 @@ echo "=============================================================="
 echo " Generating mist.theme-next.org subdomain..."
 echo "=============================================================="
     hexo config url https://mist.theme-next.org
-    #hexo config root /
     hexo config theme_config.scheme Mist
     hexo clean && hexo g
     mv -v public schemes/mist
@@ -111,10 +110,8 @@ echo " Generating gemini.theme-next.org subdomain..."
 echo "=============================================================="
     hexo config url https://gemini.theme-next.org
     hexo config theme_config.scheme Gemini
-    #hexo config root /schemes/gemini/
     hexo clean && hexo g
     mv -v public schemes/gemini
-    cd schemes && ls -la && cd ../
 
 echo
 echo "=============================================================="
@@ -122,18 +119,19 @@ echo " Copying choosed scheme to main theme-next.org domain..."
 echo "=============================================================="
     hexo config url https://theme-next.org
     hexo config theme_config.scheme Gemini
-    #hexo config root /
     cp -R schemes/gemini public
-    cd public && ls -la
-    cd ../
 
 echo
 echo "=============================================================="
-echo " Moving all schemes to public directory..."
+echo " Creating robots.txt for theme-next.org domain..."
 echo "=============================================================="
-    #cp -v schemes public
-    #rm -rf schemes
+    echo 'User-agent: *
+Disallow: /page/*/
+Disallow: /archives/*
+Host: https://theme-next.org' > public/robots.txt
+
+echo
+echo "=============================================================="
+echo " Moving all schemes to public directory and deploying site..."
+echo "=============================================================="
     mv -v schemes public
-    cd public && ls -la
-    cd schemes && ls -la
-    cd mist && ls -la
