@@ -9,11 +9,7 @@ ID = "Theme-Next"
 
   #https://mist.theme-next.org/* https://theme-next.org/:splat 301!
 
-[[redirects]]
-  from = "https://mist.theme-next.org/*"
-  to = "https://theme-next.org/schemes/mist/:splat"
-  status = 200
-  force = false
+
 
 #[[redirects]]
 #  from = "/schemes/mist/*"
@@ -34,6 +30,12 @@ ID = "Theme-Next"
   status = 301
   force = true
 
+
+[[redirects]]
+  from = "https://mist.theme-next.org/*"
+  to = "https://theme-next.org/schemes/mist/:splat"
+  status = 200
+  force = false
 
 #[[redirects]]
 #  from = "https://theme-next.org/schemes/mist/*"
