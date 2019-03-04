@@ -9,11 +9,12 @@ In any time you can extend needed functions by using third-party services suppor
 
 * [Disqus](/docs/third-party-services/comments-and-widgets/#Disqus)
 * [Facebook Comments](/docs/third-party-services/comments-and-widgets/#Facebook-Comments)
+* [VKontakte Comments and Likes](/docs/third-party-services/comments-and-widgets/#VKontakte-Comments-and-Likes)
+* [Gitalk](/docs/third-party-services/comments-and-widgets/#Gitalk)
 * [LiveRe](/docs/third-party-services/comments-and-widgets/#LiveRe)
+* [Valine](/docs/third-party-services/comments-and-widgets/#Valine)
 * [Gitment](/docs/third-party-services/comments-and-widgets/#Gitment)
 * [Changyan](/docs/third-party-services/comments-and-widgets/#Changyan)
-* [Valine](/docs/third-party-services/comments-and-widgets/#Valine)
-* [VKontakte Comments and Likes](/docs/third-party-services/comments-and-widgets/#VKontakte-Comments-and-Likes)
 * [Widgetpack Rating](/docs/third-party-services/comments-and-widgets/#Widgetpack-Rating)
 
 {% note info %}

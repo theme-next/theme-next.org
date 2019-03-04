@@ -101,6 +101,35 @@ vkontakte_api:
 <!-- endtab -->
 {% endtabs %}
 
+### Gitalk
+
+Gitalk is a modern comment component based on Github Issue and Preact.
+
+{% note info %}
+Gitalk can only use GitHub accounts for comments.
+{% endnote %}
+
+1. Click here to sign up for a {% exturl new OAuth Application https://github.com/settings/applications/new %}. Other content can be filled in at will, but be sure to fill in the correct callback URL (usually the domain name corresponding to the comment page). Then you will get a Client ID and a Client secret.
+2. Create a repository you want to store Gitalk comments in your GitHub.
+3. Set the value `enable` to `true`, add Client ID (`client_id`) and Client secret (`client_secret`) in step 1, add your Github username (`github_id` and `admin_user`) and the created repository name (`repo`) in step 2, and edit other configurations in `gitalk` section in the {% label primary@theme config file %} as following:
+
+    ```yml next/_config.yml
+    # Gitalk
+    # Demo: https://gitalk.github.io
+    gitalk:
+      enable: false
+      github_id:  # Github repo owner
+      repo:  # Repository name to store issues
+      client_id:  # Github Application Client ID
+      client_secret:  # Github Application Client Secret
+      admin_user:  # GitHub repo owner and collaborators, only these guys can initialize github issues
+      distraction_free_mode: true # Facebook-like distraction free mode
+      # Gitalk's display language depends on user's browser or system environment
+      # If you want everyone visiting your site to see a uniform language, you can set a force language value
+      # Available value: en, es-ES, fr, ru, zh-CN, zh-TW
+      language:
+    ```
+
 ### LiveRe
 
 LiveRe is a content platform based on social networking site reviews to help users communicate freely.
