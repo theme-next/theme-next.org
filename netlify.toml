@@ -1,19 +1,17 @@
 [Settings]
 ID = "Theme-Next"
 
-#https://frontend.yoursite.com/login/* https://backend.yoursite.com/:splat 200
+[[redirects]]
+  from = "/schemes/mist/*"
+  to = "https://mist.theme-next.org/:splat"
+  status = 200
+  force = false
 
 #[[redirects]]
 #  from = "/schemes/mist/*"
 #  to = "https://mist.theme-next.org/:splat"
 #  status = 200
 #  force = false
-
-[[redirects]]
-  from = "/schemes/mist/*"
-  to = "https://mist.theme-next.org/:splat"
-  status = 200
-  force = true
 
 #[[redirects]]
 #  from = "https://theme-next.netlify.com/schemes/mist/*"
