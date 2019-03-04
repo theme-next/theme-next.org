@@ -11,7 +11,7 @@ ID = "Theme-Next"
   from = "https://mist.theme-next.org/:splat"
   to = "/schemes/mist/*"
   status = 200
-  force = true
+  force = false
 
 #[[redirects]]
 #  from = "/schemes/mist/*"
