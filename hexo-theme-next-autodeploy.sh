@@ -21,6 +21,9 @@ C_OK_BOLD="$alignment ${green}[ ${bold} OK ${green} ]${norm}\n"
 C_NO="$alignment [ ${red} NO ${norm} ]\n"
 C_NO_BOLD="$alignment ${red}[ ${bold} NO ${red} ]${norm}\n"
 
+MULTILINE=$(ls -la \
+   -1)
+
 # Arguments.
 EXPECTED_ARGS=1
 
@@ -68,7 +71,7 @@ echo "=============================================================="
 
 echo
 echo "=============================================================="
-echo " Cloning and Updating NexT theme & Adding needed modules..."
+echo " Updating or Cloning NexT theme & Needed modules..."
 echo "=============================================================="
     echo "${blue}NexT${norm}"
     git -C themes/next pull || git clone https://github.com/theme-next/hexo-theme-next themes/next
@@ -94,15 +97,18 @@ echo "=============================================================="
     ln -sv ../source source
     ln -sv ../_config.yml _config.yml
     mkdir -v schemes
-    hexo config root /
 
 echo
 echo "=============================================================="
 echo " Generating test.theme-next.org subdomain..."
 echo "=============================================================="
     hexo config url https://test.theme-next.org
+    echo Setted url: `hexo config url`
+
     hexo config theme_config.scheme Muse
-    hexo clean && hexo g
+    echo Setted scheme: `hexo config theme_config.scheme`
+
+    hexo clean && hexo g --silent
     mv -v public schemes/test
 
 echo
@@ -110,8 +116,12 @@ echo "=============================================================="
 echo " Generating muse.theme-next.org subdomain..."
 echo "=============================================================="
     hexo config url https://muse.theme-next.org
+    echo Setted url: `hexo config url`
+
     hexo config theme_config.scheme Muse
-    hexo clean && hexo g
+    echo Setted scheme: `hexo config theme_config.scheme`
+
+    hexo clean && hexo g --silent
     mv -v public schemes/muse
 
 echo
@@ -119,8 +129,12 @@ echo "=============================================================="
 echo " Generating mist.theme-next.org subdomain..."
 echo "=============================================================="
     hexo config url https://mist.theme-next.org
+    echo Setted url: `hexo config url`
+
     hexo config theme_config.scheme Mist
-    hexo clean && hexo g
+    echo Setted scheme: `hexo config theme_config.scheme`
+
+    hexo clean && hexo g --silent
     mv -v public schemes/mist
 
 echo
@@ -128,8 +142,12 @@ echo "=============================================================="
 echo " Generating pisces.theme-next.org subdomain..."
 echo "=============================================================="
     hexo config url https://pisces.theme-next.org
+    echo Setted url: `hexo config url`
+
     hexo config theme_config.scheme Pisces
-    hexo clean && hexo g
+    echo Setted scheme: `hexo config theme_config.scheme`
+
+    hexo clean && hexo g --silent
     mv -v public schemes/pisces
 
 echo
@@ -137,8 +155,12 @@ echo "=============================================================="
 echo " Generating gemini.theme-next.org subdomain..."
 echo "=============================================================="
     hexo config url https://gemini.theme-next.org
+    echo Setted url: `hexo config url`
+
     hexo config theme_config.scheme Gemini
-    hexo clean && hexo g
+    echo Setted scheme: `hexo config theme_config.scheme`
+
+    hexo clean && hexo g --silent
     mv -v public schemes/gemini
 
 echo
@@ -146,7 +168,11 @@ echo "=============================================================="
 echo " Prepairing main theme-next.org domain..."
 echo "=============================================================="
     hexo config url https://theme-next.org
+    echo Setted url: `hexo config url`
+
     hexo config theme_config.scheme Gemini
+    echo Setted scheme: `hexo config theme_config.scheme`
+
     cp -R schemes/gemini public
 
     echo 'User-agent: *
@@ -160,4 +186,5 @@ echo
 echo "=============================================================="
 echo " Moving all schemes to public directory and deploying site..."
 echo "=============================================================="
-    mv -v schemes public
+    mv -v schemes public && cd public
+    echo "${green}Checking public directory structure:${norm} ${MULTILINE}"
