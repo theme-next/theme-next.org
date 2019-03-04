@@ -7,18 +7,32 @@ ID = "Theme-Next"
 #  status = 200
 #  force = true
 
+#[[redirects]]
+#  from = "https://theme-next.netlify.com/schemes/mist/*"
+#  to = "https://mist.theme-next.org/:splat"
+#  status = 301
+#  force = true
+
+
+
+[[redirects]]
+  from = "https://theme-next.org/schemes/mist/*"
+  to = "https://mist.theme-next.org/:splat"
+  status = 301
+  force = false
+
+[[redirects]]
+  from = "https://mist.theme-next.org/*"
+  to = "https://theme-next.org/schemes/mist/:splat"
+  status = 200
+  force = true
+
+
+
 
 
 [[redirects]]
   from = "https://theme-next.netlify.com/*"
   to = "https://theme-next.org/:splat"
   status = 301
-  force = true
-
-
-
-[[redirects]]
-  from = "https://mist.theme-next.org/*"
-  to = "https://theme-next.org/schemes/mist/:splat"
-  status = 200
   force = true

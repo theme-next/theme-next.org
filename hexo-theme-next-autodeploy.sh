@@ -124,7 +124,9 @@ echo "=============================================================="
     echo 'User-agent: *
 Disallow: /page/*/
 Disallow: /archives/*
-Host: https://theme-next.org' >&2 public/robots.txt
+Disallow: /schemes/*
+Host: https://theme-next.org' > public/robots.txt
+    cat public/robots.txt
 
 echo
 echo "=============================================================="
