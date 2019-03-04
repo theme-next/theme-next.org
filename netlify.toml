@@ -30,7 +30,7 @@ ID = "Theme-Next"
 [[redirects]]
   from = "https://theme-next.org/schemes/mist/*"
   to = "https://mist.theme-next.org/:splat"
-  status = 301
+  status = 200
   force = true
 
 #[[redirects]]
