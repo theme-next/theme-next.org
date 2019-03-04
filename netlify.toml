@@ -8,8 +8,8 @@ ID = "Theme-Next"
   force = true
 
 [[redirects]]
-  from = "https://mist.theme-next.org/:splat"
-  to = "/schemes/mist/*"
+  from = "/schemes/mist/*"
+  to = "https://mist.theme-next.org/:splat"
   status = 200
   force = true
 
