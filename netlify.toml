@@ -5,19 +5,19 @@ ID = "Theme-Next"
   from = "/schemes/mist/*"
   to = "https://mist.theme-next.org/:splat"
   status = 200
-  force = true
+  force = false
 
 [[redirects]]
   from = "https://theme-next.netlify.com/schemes/mist/*"
   to = "https://mist.theme-next.org/:splat"
   status = 200
-  force = true
+  force = false
 
 [[redirects]]
   from = "https://theme-next.netlify.com/schemes/mist/*"
   to = "https://mist.theme-next.netlify.com/:splat"
   status = 200
-  force = true
+  force = false
 
 [[redirects]]
   from = "https://theme-next.netlify.com/*"
