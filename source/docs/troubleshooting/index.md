@@ -65,7 +65,7 @@ When backtick code block(s) exists inside other tags (like `blockquote`, `note`,
 
 {% tabs backtick-code-block %}
 <!-- tab {% label success@Tagged Code Block %} -->
-Instead of {% exturl Backtick Code Block https://hexo.io/docs/tag-plugins.html#Backtick-Code-Block %} you also can use tagged {% exturl Code Block https://hexo.io/docs/tag-plugins.html#Code-Block %}.
+Instead of [Backtick Code Block](https://hexo.io/docs/tag-plugins.html#Backtick-Code-Block) you also can use tagged [Code Block](https://hexo.io/docs/tag-plugins.html#Code-Block).
 But in rare cases standard code block can obtain errors inside other tags.
 <!-- endtab -->
 
@@ -75,7 +75,7 @@ In this case you can't add code syntax highlighting.
 <!-- endtab -->
 
 <!-- tab Bugfix for Backtick -->
-Here is {% exturl pull with bugfix for use backtick code block inside tags https://github.com/hexojs/hexo/pull/2321 %} (from Dec 2016 still not merged).
+Here is [pull with bugfix for use backtick code block inside tags](https://github.com/hexojs/hexo/pull/2321) (from Dec 2016 still not merged).
 So, for this moment you can merge it manually, if you need to use backtick code block inside tags.
 
 {% note danger %}

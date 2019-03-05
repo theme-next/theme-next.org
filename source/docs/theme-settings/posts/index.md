@@ -31,7 +31,7 @@ It's a common need to show some part of article in home page and then give a lin
 
 {% tabs preamble %}
 <!-- tab <code>excerpt_description</code> -->
-If you have added `description` and set its value to your article summary in {% exturl front-matter https://hexo.io/docs/front-matter.html %}, NexT excerpts `description` as preamble text in homepage by default. Without `description`, the full contents would be the preamble text in homepage.
+If you have added `description` and set its value to your article summary in [front-matter](https://hexo.io/docs/front-matter.html), NexT excerpts `description` as preamble text in homepage by default. Without `description`, the full contents would be the preamble text in homepage.
 
 You can disable it by editing values `excerpt_description` to `false` in {% label primary@theme config file %}.
 
@@ -126,7 +126,7 @@ post_meta:
 
 #### Post Wordcount
 
-3rd-party plugin `{% exturl hexo-wordcount https://github.com/willin/hexo-wordcount %}` was replaced by `{% exturl hexo-symbols-count-time https://github.com/theme-next/hexo-symbols-count-time %}` in 6.x versions because `hexo-symbols-count-time` no have any external nodejs dependencies, no have {% exturl language filter https://github.com/willin/hexo-wordcount/issues/7 %} which causes better performance on speed at site generation.
+3rd-party plugin `[hexo-wordcount](https://github.com/willin/hexo-wordcount)` was replaced by `[hexo-symbols-count-time](https://github.com/theme-next/hexo-symbols-count-time)` in 6.x versions because `hexo-symbols-count-time` no have any external nodejs dependencies, no have [language filter](https://github.com/willin/hexo-wordcount/issues/7) which causes better performance on speed at site generation.
 
 {% tabs wordcount %}
 <!-- tab Installation → -->
@@ -205,7 +205,7 @@ symbols_count_time:
 <!-- endtab -->
 
 <!-- tab <code>awl</code> -->
-`awl` means the average Word Length (chars count in word). You can check this {% exturl here https://charactercounttool.com/ %}.
+`awl` means the average Word Length (chars count in word). You can check this [here](https://charactercounttool.com/).
 {% code lang:yml hexo/_config.yml %}
 symbols_count_time:
   awl: 4
@@ -213,7 +213,7 @@ symbols_count_time:
 <!-- endtab -->
 
 <!-- tab <code>wpm</code> -->
-`wpm` means the average words per minute. You can check this {% exturl here https://wordcounter.net/ %}.
+`wpm` means the average words per minute. You can check this [here](https://wordcounter.net/).
 {% code lang:yml hexo/_config.yml %}
 symbols_count_time:
   wpm: 275
@@ -277,7 +277,7 @@ codeblock:
 
 #### Code Highlight Theme
 
-NexT uses {% exturl Tomorrow Theme https://github.com/chriskempson/tomorrow-theme %} to support code highlight.
+NexT uses [Tomorrow Theme](https://github.com/chriskempson/tomorrow-theme) to support code highlight.
 Default style is white (`normal`) and there are 5 styles to choose:
 
 * `normal`
@@ -328,7 +328,7 @@ post_edit:
 
 #### Related popular posts (REDOCS)
 
-NexT supports the related posts functionality according to {% exturl hexo-related-popular-posts https://github.com/tea3/hexo-related-popular-posts %}.
+NexT supports the related posts functionality according to [hexo-related-popular-posts](https://github.com/tea3/hexo-related-popular-posts).
 
 {% tabs related_posts %}
 <!-- tab <code>enable</code> -->

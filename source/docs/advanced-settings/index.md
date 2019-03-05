@@ -11,11 +11,11 @@ You can set it to a proper CDN URL, which can make static assets (JavaScript Thi
 
 | Name               | Original Link                                                                          | NexT Internal Version |
 | ------------------ | -------------------------------------------------------------------------------------- | --------------------- |
-| jQuery             | {% exturl jquery.com http://jquery.com %}                                              | 2.1.3                 |
-| FontAwesome        | {% exturl fontawesome.io http://fontawesome.io %}                                      | 4.4.0                 |
-| VelocityJS         | {% exturl velocityjs.org http://velocityjs.org %}                                      | 1.2.1                 |
-| VelocityJS UI Pack | {% exturl velocityjs.org/#uiPack http://velocityjs.org/#uiPack %}                      | 1.2.1                 |
-| UAParser.js        | {% exturl faisalman.github.io/ua-parser-js https://faisalman.github.io/ua-parser-js %} | 0.7.9                 |
+| jQuery             | [jquery.com](http://jquery.com)                                              | 2.1.3                 |
+| FontAwesome        | [fontawesome.io](http://fontawesome.io)                                      | 4.4.0                 |
+| VelocityJS         | [velocityjs.org](http://velocityjs.org)                                      | 1.2.1                 |
+| VelocityJS UI Pack | [velocityjs.org/#uiPack](http://velocityjs.org/#uiPack)                      | 1.2.1                 |
+| UAParser.js        | [faisalman.github.io/ua-parser-js](https://faisalman.github.io/ua-parser-js) | 0.7.9                 |
 
 This feature located under `vendors` section in {% label primary@theme config file %}.
 `_internal: lib` is used to tell NexT where internal library is located and you shouldn't change this in most cases.

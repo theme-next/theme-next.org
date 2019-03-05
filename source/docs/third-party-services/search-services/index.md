@@ -45,11 +45,11 @@ local_search:
 
 ### Algolia Search
 
-NexT provides Algolia search plugin for index your hexo website content. What you should note here is that only turn on `enable` of `algolia_search` in {% label primary@theme config file %} cannot let you use the algolia search correctly, you need to install corresponding {% exturl Hexo Algolia https://github.com/oncletom/hexo-algolia %} plugin to seach your website with Algolia. Follow the steps described below to complete the installation of Algolia search.
+NexT provides Algolia search plugin for index your hexo website content. What you should note here is that only turn on `enable` of `algolia_search` in {% label primary@theme config file %} cannot let you use the algolia search correctly, you need to install corresponding [Hexo Algolia](https://github.com/oncletom/hexo-algolia) plugin to seach your website with Algolia. Follow the steps described below to complete the installation of Algolia search.
 
 {% tabs algolia-search %}
 <!-- tab Registration → -->
-Register at {% exturl Algolia https://www.algolia.com %}, you can log in directly using GitHub or Google Account. Upon Customer’s initial sign-up for an Account, Customer will have a free, fourteen (14) day evaluation period (the «Evaluation Period») for the Algolia Services commencing on the Effective Date, subject to the limitations on Algolia’s website. After that, Algolia offers a free, branded version for up to 10k records and 100k operations per month.
+Register at [Algolia](https://www.algolia.com), you can log in directly using GitHub or Google Account. Upon Customer’s initial sign-up for an Account, Customer will have a free, fourteen (14) day evaluation period (the «Evaluation Period») for the Algolia Services commencing on the Effective Date, subject to the limitations on Algolia’s website. After that, Algolia offers a free, branded version for up to 10k records and 100k operations per month.
 <!-- endtab -->
 
 <!-- tab Algolia Config → -->
@@ -75,7 +75,7 @@ algolia:
 <!-- endtab -->
 
 <!-- tab Algolia Module → -->
-1. Algolia requires users to upload their search index data either manually or via provided APIs. Install and configure {% exturl Hexo Algolia https://github.com/oncletom/hexo-algolia %} in your Hexo directory. This plugin will index your site and upload selected data to Algolia.
+1. Algolia requires users to upload their search index data either manually or via provided APIs. Install and configure [Hexo Algolia](https://github.com/oncletom/hexo-algolia) in your Hexo directory. This plugin will index your site and upload selected data to Algolia.
 
    {% code lang:bash %}
    $ cd hexo
@@ -133,8 +133,8 @@ algolia_search:
 {% note danger %}
 **Known Issues**
 
-1. The latest version of the {% exturl Hexo-Algolia https://github.com/oncletom/hexo-algolia %} plugin removes the content indexing feature, given Algolia's free account limitation.
-2. The {% exturl Hexo-Algoliasearch https://github.com/LouisBarranqueiro/hexo-algoliasearch %} plugin provides content indexing functionality, but requires the replacement of keywords in the NexT theme. The same problem exists with `Record Too Big` for Algolia's free account.
+1. The latest version of the [Hexo-Algolia](https://github.com/oncletom/hexo-algolia) plugin removes the content indexing feature, given Algolia's free account limitation.
+2. The [Hexo-Algoliasearch](https://github.com/LouisBarranqueiro/hexo-algoliasearch) plugin provides content indexing functionality, but requires the replacement of keywords in the NexT theme. The same problem exists with `Record Too Big` for Algolia's free account.
    - Replace all `applicationID` in `source/js/src/algolia-search.js` with `appId`
    - Replace all `applicationID` in `layout/_partials/head/head.swig` with `appId`
 {% endnote %}
@@ -143,7 +143,7 @@ algolia_search:
 
 {% tabs swiftype-search %}
 <!-- tab Sign up → -->
-Go to {% exturl Swiftype Sign Page https://swiftype.com/users/sign_up %} to sign up.
+Go to [Swiftype Sign Page](https://swiftype.com/users/sign_up) to sign up.
 ![Swiftype Sign up](/images/docs/swiftype-1.png)
 <!-- endtab -->
 

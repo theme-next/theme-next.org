@@ -6,7 +6,7 @@ description: NexT User Docs – Third-party Service Integration – Content Shar
 
 {% tabs addthis %}
 <!-- tab Sign Up → -->
-Sign up in {% exturl AddThis https://www.addthis.com %}. You can use Google/Facebook/Twitter to login.
+Sign up in [AddThis](https://www.addthis.com). You can use Google/Facebook/Twitter to login.
 <!-- endtab -->
 
 <!-- tab AddThis ID → -->
@@ -27,7 +27,7 @@ add_this_id: your_add_this_id
 {% tabs needmoreshare2 %}
 <!-- tab Adding Plugins → -->
 There are 2 variants to hook up NexT Need More Share plugin:
-* Local installation: Go to {% exturl «Dependencies» https://github.com/theme-next/theme-next-needmoreshare2 %} with installation instructions of this module.
+* Local installation: Go to [«Dependencies»](https://github.com/theme-next/theme-next-needmoreshare2) with installation instructions of this module.
     {% code lang:bash %}
     $ cd themes/next
     $ git clone https://github.com/theme-next/theme-next-needmoreshare2 source/lib/needsharebutton

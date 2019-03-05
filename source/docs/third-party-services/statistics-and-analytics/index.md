@@ -7,7 +7,7 @@ description: NexT User Docs – Third-party Service Integration – Statistics a
 
 #### Google Webmaster Tools
 
-Set the verification string of {% exturl Google Webmaster Tools https://www.google.com/webmasters/tools %} which is used in submitting sitemap.
+Set the verification string of [Google Webmaster Tools](https://www.google.com/webmasters/tools) which is used in submitting sitemap.
 
 {% tabs google-webmaster-tools %}
 <!-- tab Get Verification Code → -->
@@ -28,7 +28,7 @@ google_site_verification: XXXXXXXXXXXXXXXXXXXXXXX
 
 #### Bing Webmaster Tools
 
-Set the verification string of {% exturl Bing Webmaster Tools https://www.bing.com/webmaster/ %} which is used in submitting sitemap.
+Set the verification string of [Bing Webmaster Tools](https://www.bing.com/webmaster/) which is used in submitting sitemap.
 
 {% tabs bing-webmaster-tools %}
 <!-- tab Get Verification Code → -->
@@ -49,7 +49,7 @@ bing_site_verification: XXXXXXXXXXXXXXXXXXXXXXX
 
 #### Yandex Webmaster Tools
 
-Set the verification string of {% exturl Yandex Webmaster Tools https://webmaster.yandex.ru/ %} which is used in submitting sitemap.
+Set the verification string of [Yandex Webmaster Tools](https://webmaster.yandex.ru/) which is used in submitting sitemap.
 
 {% tabs yandex-webmaster-tools %}
 <!-- tab Get Verification Code → -->
@@ -70,7 +70,7 @@ yandex_site_verification: XXXXXXXXXXXXXXXXXXXXXXX
 
 #### Baidu Webmaster Tools
 
-Set the verification string of {% exturl Baidu Webmaster Tools https://ziyuan.baidu.com/site/ %} which is used in submitting sitemap.
+Set the verification string of [Baidu Webmaster Tools](https://ziyuan.baidu.com/site/) which is used in submitting sitemap.
 
 {% tabs Baidu-webmaster-tools %}
 <!-- tab Get Verification Code → -->
@@ -93,7 +93,7 @@ baidu_site_verification: XXXXXXXXXXXXXXXXXXXXXXX
 
 #### Google Analytics
 
-1. Create an account and log into {% exturl Google Analytics https://analytics.google.com %}. {% exturl More detailed documentation https://support.google.com/analytics/?hl=en#topic=3544906 %}
+1. Create an account and log into [Google Analytics](https://analytics.google.com). [More detailed documentation](https://support.google.com/analytics/?hl=en#topic=3544906)
 2. Edit {% label primary@theme config file %} and fill `tracking_id` under  section `google_analytics` with your Google track ID. Google track ID always starts with `UA-`.
     ```yml next/_config.yml
     # Google Analytics
@@ -105,7 +105,7 @@ when field `localhost_ignore` is set to true, NexT will not send record to googl
 
 #### Azure Application Insights
 
-1. Create an account and log into {% exturl Application Insights https://portal.azure.com/ %}. {% exturl More detailed documentation https://docs.microsoft.com/en-us/azure/application-insights/app-insights-create-new-resource %}
+1. Create an account and log into [Application Insights](https://portal.azure.com/). [More detailed documentation](https://docs.microsoft.com/en-us/azure/application-insights/app-insights-create-new-resource)
 2. Edit {% label primary@theme config file %} and change section `application_insights` to your instrumentation key.
     ```yml next/_config.yml
     # Application Insights
@@ -116,7 +116,7 @@ when field `localhost_ignore` is set to true, NexT will not send record to googl
 
 {% tabs baidu-analytics %}
 <!-- tab Login → -->
-Login to {% exturl Baidu Analytics http://tongji.baidu.com %} and locate to site code getting page.
+Login to [Baidu Analytics](http://tongji.baidu.com) and locate to site code getting page.
 <!-- endtab -->
 
 <!-- tab Script ID → -->
@@ -135,7 +135,7 @@ baidu_analytics: your_id
 
 #### Tencent Analytics (China)
 
-1. Please login to {% exturl Tencent Analytics http://ta.qq.com %} and get your ID.
+1. Please login to [Tencent Analytics](http://ta.qq.com) and get your ID.
 2. Then put it into `tencent_analytics` section of {% label primary@theme config file %}.
 
     ```yml next/_config.yml
@@ -145,7 +145,7 @@ baidu_analytics: your_id
 
 #### Tencent Mobile Analytics (China)
 
-1. Create an account and log into {% exturl Tencent Mobile Analytics https://mta.qq.com/ %}. {% exturl More detailed documentation http://docs.developer.qq.com/mta/register_start.html %}
+1. Create an account and log into [Tencent Mobile Analytics](https://mta.qq.com/). [More detailed documentation](http://docs.developer.qq.com/mta/register_start.html)
 2. Edit {% label primary@theme config file %} and fill section `tencent_mta`.
     ```yml next/_config.yml
     # Tencent MTA ID
@@ -154,7 +154,7 @@ baidu_analytics: your_id
 
 #### CNZZ Analytics (China)
 
-1. Create an account and log into {% exturl CNZZ Analytics http://www.umeng.com/ %}. {% exturl More detailed documentation https://developer.umeng.com/docs/67963/detail/68609 %}
+1. Create an account and log into [CNZZ Analytics](http://www.umeng.com/). [More detailed documentation](https://developer.umeng.com/docs/67963/detail/68609)
 2. Set the value of section `cnzz_siteid` in {% label primary@theme config file %} to your CNZZ site ID. You can find this ID in link or the auto-generated script.
     ```yml next/_config.yml
     # CNZZ count
@@ -173,7 +173,7 @@ Firebase Analytics provides the functionality of visitor statistics.
 
 {% tabs firestore %}
 <!-- tab Get apiKey & projectId → -->
-Login to {% exturl Firebase https://console.firebase.google.com/u/0/ %} to get apiKey and projectId. {% exturl More detailed documentation https://firebase.google.com/docs/firestore/ %}
+Login to [Firebase](https://console.firebase.google.com/u/0/) to get apiKey and projectId. [More detailed documentation](https://firebase.google.com/docs/firestore/)
 <!-- endtab -->
 
 <!-- tab NexT Config -->

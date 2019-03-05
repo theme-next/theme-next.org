@@ -6,10 +6,10 @@ description: NexT User Docs – Starting to Use
 #categories: English
 #lang: en
 ---
-<p>{% exturl Hexo https://hexo.io %} is a fast and powerful static blog generating framework, it's based on {% exturl Node.js https://nodejs.org %}. By using Hexo you can write articles easily with Markdown, and besides the grammer of Markdown, you can also use {% exturl tag plugins https://hexo.io/docs/tag-plugins.html %} provided by Hexo to insert special formated content simply. In this page we assume you have installed Hexo and created a site with it.</p>
+<p>[Hexo](https://hexo.io) is a fast and powerful static blog generating framework, it's based on [Node.js](https://nodejs.org). By using Hexo you can write articles easily with Markdown, and besides the grammer of Markdown, you can also use [tag plugins](https://hexo.io/docs/tag-plugins.html) provided by Hexo to insert special formated content simply. In this page we assume you have installed Hexo and created a site with it.</p>
 
 {% note info %}
-You can visit {% exturl Hexo Docs https://hexo.io/docs/index.html %} to see how to install Hexo.
+You can visit [Hexo Docs](https://hexo.io/docs/index.html) to see how to install Hexo.
 {% endnote %}
 
 ### Documentation Variables
@@ -55,7 +55,7 @@ It's easy to install Hexo theme: you can just download the NexT theme, copy the 
 
 {% tabs downloading-next %}
 <!-- tab Newest Version -->
-If you know about {% exturl Git http://git-scm.com %}, you can clone the whole repository and update it in any time with `git pull` command instead of downloading archive manually.
+If you know about [Git](http://git-scm.com), you can clone the whole repository and update it in any time with `git pull` command instead of downloading archive manually.
 
 Open your Terminal, change to Hexo {% label info@site root directory %} and clone latest master branch of NexT theme:
 {% code lang:bash %}
@@ -65,7 +65,7 @@ $ git clone https://github.com/theme-next/hexo-theme-next themes/next
 <!-- endtab -->
 
 <!-- tab Stable Version -->
-1. Go to NexT version {% exturl Release Page https://github.com/theme-next/hexo-theme-next/releases %}.
+1. Go to NexT version [Release Page](https://github.com/theme-next/hexo-theme-next/releases).
 2. Choose the version you need and download the Source Code (zip) in the Download section. For example v6.0.0.
 3. Extract the zip file to site's themes directory and rename the extracted folder (`hexo-theme-next-6.0.0`) to `next`.
 <!-- endtab -->
@@ -118,7 +118,7 @@ And if your files deployed to any free hosting service (Github, Gitlab, etc.), r
 
 {% tabs adding-plugins %}
 <!-- tab Local -->
-In NexT config now you can find dependencies on each module which was moved to external repositories which can be found by {% exturl main organization link https://github.com/theme-next %}. For example, you want to use `fancybox` in your site. Go to {% label primary@theme config file %} and see:
+In NexT config now you can find dependencies on each module which was moved to external repositories which can be found by [main organization link](https://github.com/theme-next). For example, you want to use `fancybox` in your site. Go to {% label primary@theme config file %} and see:
 
 {% code lang:yml next/_config.yml %}
 # Dependencies: https://github.com/theme-next/theme-next-fancybox
@@ -148,7 +148,7 @@ And jsDelivr CDN is recommended to deliver our third-party plugins because it is
 
 And it could automatically minify the JS and CSS files, even if you don't have the minified version. Just use the `filename.min.js` or the `filename.min.css` to replace the file above.
 
-And we also provide other optional CDNs, including the famous {% exturl CDNJS https://cdnjs.com/ %} and the {% exturl Bootcss http://www.bootcdn.cn/ %} which has the quite high access speed in China.
+And we also provide other optional CDNs, including the famous [CDNJS](https://cdnjs.com/) and the [Bootcss](http://www.bootcdn.cn/) which has the quite high access speed in China.
 
 <!-- endtab -->
 {% endtabs %}
@@ -201,7 +201,7 @@ Now NexT supports following languages:
 | Türk               | `tr`               | `language: tr`    |
 
 {% note primary %}
-If you want to add or improve language for NexT theme, you can do it easily with {% exturl crowdin https://crwd.in/theme-next %} service.
+If you want to add or improve language for NexT theme, you can do it easily with [crowdin](https://crwd.in/theme-next) service.
 {% endnote %}
 
 #### Configuring Menu Items
@@ -224,7 +224,7 @@ Value before `||` delimeter (`/link/`) → is the target link to relative url in
 <!-- tab <code>icon</code> -->
 Value after `||` delimeter (`icon`) → is the name of FontAwesome icon.
 If icon (with or without delimeter) is not specified, question icon will be loaded.
-Names of that icons can be found in {% exturl Font Awesome https://fontawesome.com %} site.
+Names of that icons can be found in [Font Awesome](https://fontawesome.com) site.
 <!-- endtab -->
 {% endtabs %}
 
@@ -290,7 +290,7 @@ menu_settings:
 
 By default the Hexo site use NexT favicons in `hexo-site/themes/next/source/images/` directory with different size for different device.
 
-We recommend that you put custom favicons into `hexo-site/source/` directory. To get or check favicons, you can visit {% exturl Favicon Generator https://realfavicongenerator.net %}. In this way, you **must remove** `/images` prefix from pathes, and **rename & redefine** the name or format of favicons in `favicon` section in {% label primary@theme config file %}, otherwise Next will rewrite your custom icons in Hexo.
+We recommend that you put custom favicons into `hexo-site/source/` directory. To get or check favicons, you can visit [Favicon Generator](https://realfavicongenerator.net). In this way, you **must remove** `/images` prefix from pathes, and **rename & redefine** the name or format of favicons in `favicon` section in {% label primary@theme config file %}, otherwise Next will rewrite your custom icons in Hexo.
 
 {% tabs favicon %}
 
