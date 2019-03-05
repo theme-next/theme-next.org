@@ -60,7 +60,7 @@ echo
 echo "=============================================================="
 echo " ${lgreen}Installing Hexo & NPM modules...${norm}"
 echo "=============================================================="
-    mkdir -v $DIR_NAME
+    mkdir -vp $DIR_NAME
     cd $DIR_NAME
     curl --silent -L https://api.github.com/repos/hexojs/hexo-starter/tarball | tar -zxv -C ./ --strip-components=1
     npm install --silent
