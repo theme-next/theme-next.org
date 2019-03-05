@@ -5,7 +5,7 @@ date: 2018-11-01 02:25:05
 
 ## Breaking Changes
 
-### Add options for canvas-nest ([#441](https://github.com/theme-next/issue/441))
+### Add options for canvas-nest ([#441](https://github.com/theme-next/hexo-theme-next/pull/441))
 
 #### Old configuration:
 
@@ -26,18 +26,18 @@ canvas_nest:
 
 ## Features
 
-- Feat: Add sina weibo option to social block in sidebar settings ([#456](https://github.com/theme-next/issue/456))
-- Add beian option at footer for Chinese website owner ([#438](https://github.com/theme-next/issue/438))
-- Add growingio analytics ([#354](https://github.com/theme-next/issue/354))
-- Add enable option for `read_more_btn` ([#446](https://github.com/theme-next/issue/446))
+- Feat: Add sina weibo option to social block in sidebar settings ([#456](https://github.com/theme-next/hexo-theme-next/pull/456))
+- Add beian option at footer for Chinese website owner ([#438](https://github.com/theme-next/hexo-theme-next/pull/438))
+- Add growingio analytics ([#354](https://github.com/theme-next/hexo-theme-next/pull/354))
+- Add enable option for `read_more_btn` ([#446](https://github.com/theme-next/hexo-theme-next/pull/446))
 
 ## Bug Fixes
 
-- Fix bugs turn on the future of google calendar ([#407](https://github.com/theme-next/issue/407))
-- Delete Bootcss settings and docs ([#439](https://github.com/theme-next/issue/439))
-- Fixes for `b2t` & variables refactoring. ([#434](https://github.com/theme-next/issue/434))
-- Fix for `offset` option. [2] ([#433](https://github.com/theme-next/issue/433))
-- Fixed resize filter & affix & back to top for sidebar ([#431](https://github.com/theme-next/issue/431), [#432](https://github.com/theme-next/issue/432))
+- Fix bugs turn on the future of google calendar ([#407](https://github.com/theme-next/hexo-theme-next/pull/407))
+- Delete Bootcss settings and docs ([#439](https://github.com/theme-next/hexo-theme-next/pull/439))
+- Fixes for `b2t` & variables refactoring. ([#434](https://github.com/theme-next/hexo-theme-next/pull/434))
+- Fix for `offset` option. [2] ([#433](https://github.com/theme-next/hexo-theme-next/pull/433))
+- Fixed resize filter & affix & back to top for sidebar ([#431](https://github.com/theme-next/hexo-theme-next/pull/431), [#432](https://github.com/theme-next/hexo-theme-next/pull/432))
 
 ***
 
