@@ -5,7 +5,7 @@ date: 2018-12-01 10:01:55
 
 ## Breaking Changes
 
-### Refactored Creative Commons copyright ([#463](https://github.com/theme-next/issue/463))
+### Refactored Creative Commons copyright ([#463](https://github.com/theme-next/hexo-theme-next/pull/463))
 
 Joined `post_copyright` and `creative_commons` options into one.
 
@@ -36,7 +36,7 @@ creative_commons:
   post: false
 ```
 
-### Global improvement for ExtURL ([#463](https://github.com/theme-next/issue/463))
+### Global improvement for ExtURL ([#463](https://github.com/theme-next/hexo-theme-next/pull/463))
 
 From now no need to use `{% exturl %}` tag – all external links will be automatically replaced in posts (and in templates) with spanned links if `exturl` option will be enabled.
 
@@ -65,7 +65,7 @@ From now no need to use `{% exturl %}` tag – all external links will be automa
 exturl: false
 ```
 
-### Reward be more intelligent, related issue [#280](https://github.com/theme-next/issue/280) ([#465](https://github.com/theme-next/issue/465))
+### Reward be more intelligent, related issue [#280](https://github.com/theme-next/hexo-theme-next/pull/280) ([#465](https://github.com/theme-next/hexo-theme-next/pull/465))
 
 #### How to use?
 In NexT _config.yml:
@@ -95,20 +95,20 @@ reward: true/false
 
 ## Features
 
-- Add gitalk comment system ([#464](https://github.com/theme-next/issue/464))
-- Add PDFObject and PDF.js support ([#466](https://github.com/theme-next/issue/466))
+- Add gitalk comment system ([#464](https://github.com/theme-next/hexo-theme-next/pull/464))
+- Add PDFObject and PDF.js support ([#466](https://github.com/theme-next/hexo-theme-next/pull/466))
 
 ## Optimizations
 
-- Format code in _config.yml ([#469](https://github.com/theme-next/issue/469))
-- Format code & change default CDN for pdfobject ([#470](https://github.com/theme-next/issue/470))
-- Add enable option for `read_more_btn` ([#446](https://github.com/theme-next/issue/446))
+- Format code in _config.yml ([#469](https://github.com/theme-next/hexo-theme-next/pull/469))
+- Format code & change default CDN for pdfobject ([#470](https://github.com/theme-next/hexo-theme-next/pull/470))
+- Add enable option for `read_more_btn` ([#446](https://github.com/theme-next/hexo-theme-next/pull/446))
 
 ## Bug Fixes
 
-- Fix the error when the Chinese is included in the hash ([#452](https://github.com/theme-next/issue/452))
-- Fix images in an anchor being wrapped as fancybox [#399](https://github.com/theme-next/issue/399) and [#394](https://github.com/theme-next/issue/394) ([#468](https://github.com/theme-next/issue/468))
-- Fix mathjax overflow ([#488](https://github.com/theme-next/issue/488))
+- Fix the error when the Chinese is included in the hash ([#452](https://github.com/theme-next/hexo-theme-next/pull/452))
+- Fix images in an anchor being wrapped as fancybox [#399](https://github.com/theme-next/hexo-theme-next/pull/399) and [#394](https://github.com/theme-next/hexo-theme-next/pull/394) ([#468](https://github.com/theme-next/hexo-theme-next/pull/468))
+- Fix mathjax overflow ([#488](https://github.com/theme-next/hexo-theme-next/pull/488))
 
 ***
 
