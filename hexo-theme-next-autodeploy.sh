@@ -44,9 +44,8 @@ echo "=============================================================="
 echo " ${yellow}Checking starting directory structure...${norm}"
 echo "=============================================================="
     echo "${lcyan}`pwd`${norm}"
-    echo "size `du -sh .`"
+    du -sh
     du -sh *
-    ls -ls
 
 echo
 echo "=============================================================="
@@ -203,8 +202,8 @@ echo " ${yellow}Checking 'repo' directory structure...${norm}"
 echo "=============================================================="
     cd ../
     echo "${lcyan}`pwd`${norm}"
+    du -sh
     du -sh *
-    ls -ls
 
 echo
 echo "=============================================================="
@@ -212,8 +211,8 @@ echo " ${yellow}Checking '$DIR_NAME' directory structure...${norm}"
 echo "=============================================================="
     cd $DIR_NAME
     echo "${lcyan}`pwd`${norm}"
+    du -sh
     du -sh *
-    ls -ls
 
 echo
 echo "=============================================================="
@@ -221,8 +220,8 @@ echo " ${yellow}Checking 'public' directory structure...${norm}"
 echo "=============================================================="
     cd public
     echo "${lcyan}`pwd`${norm}"
+    du -sh
     du -sh *
-    ls -ls
 
 echo
 echo "=============================================================="
@@ -230,8 +229,8 @@ echo " ${yellow}Checking 'schemes' directory structure...${norm}"
 echo "=============================================================="
     cd schemes
     echo "${lcyan}`pwd`${norm}"
+    du -sh
     du -sh *
-    ls -ls
 
 #echo
 #echo "=============================================================="
