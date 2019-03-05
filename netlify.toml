@@ -4,11 +4,11 @@ ID = "Theme-Next"
 # ================ #
 #       Test       #
 # ================ #
-#[[redirects]]
-#  from = "https://theme-next.org/schemes/test/*"
-#  to = "https://test.theme-next.org/:splat"
-#  status = 301
-#  force = false
+[[redirects]]
+  from = "https://theme-next.org/schemes/test/*"
+  to = "https://test.theme-next.org/:splat"
+  status = 301
+  force = false
 
 [[redirects]]
   from = "https://test.theme-next.org/*"
