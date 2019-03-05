@@ -4,9 +4,9 @@ description: NexT User Docs – Update from NexT v5.1.x
 ---
 There are no hard breaking changes between 5.1.x and 6.0.x versions. It's change major version to 6 because:
 
-1. Main repositorie was rebased from {% exturl iissnan's https://github.com/iissnan/hexo-theme-next %} profile to {% exturl theme-next https://github.com/theme-next %} organization.
-2. Most libraries under the `next/source/lib` directory was moved out to {% exturl external repositories under NexT organization https://github.com/theme-next %}.
-3. 3rd-party plugin `{% exturl hexo-wordcount https://github.com/willin/hexo-wordcount %}` was replaced by `{% exturl hexo-symbols-count-time https://github.com/theme-next/hexo-symbols-count-time %}` because `hexo-symbols-count-time` no have any external nodejs dependencies, no have {% exturl language filter https://github.com/willin/hexo-wordcount/issues/7 %} which causes better performance on speed at site generation.
+1. Main repositorie was rebased from [iissnan's](https://github.com/iissnan/hexo-theme-next) profile to [theme-next](https://github.com/theme-next) organization.
+2. Most libraries under the `next/source/lib` directory was moved out to [external repositories under NexT organization](https://github.com/theme-next).
+3. 3rd-party plugin [`hexo-wordcount`](https://github.com/willin/hexo-wordcount) was replaced by [`hexo-symbols-count-time`](https://github.com/theme-next/hexo-symbols-count-time) because `hexo-symbols-count-time` no have any external nodejs dependencies, no have [language filter](https://github.com/willin/hexo-wordcount/issues/7) which causes better performance on speed at site generation.
 
 So, NexT suggest to update from version 5 to version 6 in this way:
 

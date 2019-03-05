@@ -19,7 +19,7 @@ Download theme from GitHub. There are **3 options** to do it, need to **choose o
 
 {% tabs download-next %}
 <!-- tab {% label success@Latest Master Branch %} -->
-**Option 3: Download {% exturl Latest Master Branch https://github.com/theme-next/hexo-theme-next/archive/master.zip %}**
+**Option 3: Download [Latest Master Branch](https://github.com/theme-next/hexo-theme-next/archive/master.zip)**
 
 May be **unstable**, but includes **latest features**. Recommended for advanced users and for developers.
 
@@ -68,7 +68,7 @@ $ git pull
 {% endcode %}
 
 And if you see any error message during update (something like **«Commit your changes or stash them before you can merge»**), recommended to learn [Data Files](/docs/getting-started/data-files/) feature.
-Howbeit, you can bypass update errors by `Commit`, `Stash` or `Discard` local changes. See {% exturl here https://stackoverflow.com/a/15745424/5861495 %} how to do it.
+Howbeit, you can bypass update errors by `Commit`, `Stash` or `Discard` local changes. See [here](https://stackoverflow.com/a/15745424/5861495) how to do it.
 <!-- endtab -->
 
 <!-- tab Curl & Tar -->
@@ -85,10 +85,10 @@ At some cases useful for developers.
 <!-- endtab -->
 
 <!-- tab Tagged Release Version -->
-**Option 2: Download {% exturl Tagged Release Version https://github.com/theme-next/hexo-theme-next/releases %}**
+**Option 2: Download [Tagged Release Version](https://github.com/theme-next/hexo-theme-next/releases)**
 
 In rare cases useful, but not recommended.
-You must define version. Replace `v6.0.0` with any version from {% exturl tags list https://github.com/theme-next/hexo-theme-next/tags %}.
+You must define version. Replace `v6.0.0` with any version from [tags list](https://github.com/theme-next/hexo-theme-next/tags).
 
 {% subtabs tagged-release-version %}
 <!-- tab Git -->
@@ -113,7 +113,7 @@ Same as before under `curl & tar & wget` variant, but will download **only concr
 <!-- endtab -->
 
 <!-- tab Latest Release Version -->
-**Option 1: Download {% exturl Latest Release Version https://github.com/theme-next/hexo-theme-next/releases/latest %}**
+**Option 1: Download [Latest Release Version](https://github.com/theme-next/hexo-theme-next/releases/latest)**
 
 At most cases **stable**. Recommended for beginners.
 

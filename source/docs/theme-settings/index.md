@@ -21,7 +21,7 @@ There are three RSS options in NexT to fit different cases.
 Edit {% label primary@theme config file %} and set the value of `rss`:
 
 * `false`: Disable RSS, which won't show links on page.
-* Leave Blank: Use Hexo to generate feed and insert links automatically. You may need to install {% exturl hexo-generator-feed https://github.com/hexojs/hexo-generator-feed %} plugin with npm firstly.
+* Leave Blank: Use Hexo to generate feed and insert links automatically. You may need to install [hexo-generator-feed](https://github.com/hexojs/hexo-generator-feed) plugin with npm firstly.
 * Concrete URL: This means you have generate Feed in advance.
 
 ### GitHub Banner
@@ -110,7 +110,7 @@ Add your custom files in `hexo/source/_data` and uncomment needed files under th
 
 ### Fonts Customization
 
-To solve the unstable of {% exturl Google Fonts API https://www.google.com/fonts %} in some countries, NexT supports setting fonts. By using this feature you can assign URL of fonts library. And NexT gives you 5 specific font settings, they are:
+To solve the unstable of [Google Fonts API](https://www.google.com/fonts) in some countries, NexT supports setting fonts. By using this feature you can assign URL of fonts library. And NexT gives you 5 specific font settings, they are:
 
 * Global Font: Font used in the whole site.
 * Title Font: Font used by titles in articles (H1, H2, H3, H4, H5, H6).
@@ -185,7 +185,7 @@ From NexT v7.0.2 you can customize them, just set related values in  {% label pr
 
 ### Creative Commons
 
-NexT supports the display of {% exturl Creative Commons 4.0 International License http://creativecommons.org/ %} in sidebar and post including `by`, `by-nc`, `by-nc-nd`, `by-nc-sa`, `by-nd`, `by-sa`, `zero`. These licenses allow creators to communicate which rights they reserve, and which rights they waive for the benefit of recipients or other creators.
+NexT supports the display of [Creative Commons 4.0 International License](http://creativecommons.org/) in sidebar and post including `by`, `by-nc`, `by-nc-nd`, `by-nc-sa`, `by-nd`, `by-sa`, `zero`. These licenses allow creators to communicate which rights they reserve, and which rights they waive for the benefit of recipients or other creators.
 
 You can configure it by editing values in `creative_commons` section in {% label primary@theme config file %}, for example:
 
@@ -425,7 +425,7 @@ social_icons:
 <!-- endtab -->
 
 <!-- tab <code>exturl</code> -->
-Set the value `exturl` to `true` to {% exturl encrypt social links https://www.base64encode.org %} in `social_icons` section in {% label primary@theme config file %}. For example, encoded GitHub link: `GitHub: aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQ= || github`.
+Set the value `exturl` to `true` to [encrypt social links](https://www.base64encode.org) in `social_icons` section in {% label primary@theme config file %}. For example, encoded GitHub link: `GitHub: aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQ= || github`.
 
 {% code lang:yml next/_config.yml %}
 social_icons:
@@ -451,7 +451,7 @@ links:
 <!-- endtab -->
 
 <!-- tab <code>links_icon</code> -->
-By default NexT shows the `link` icon {% btn #,, link %} before `links_title`. The name of icon can be found in {% exturl Font Awesome https://fontawesome.com %} site. You can configure it by editing values in `links_icon` section in {% label primary@theme config file %}.
+By default NexT shows the `link` icon {% btn #,, link %} before `links_title`. The name of icon can be found in [Font Awesome](https://fontawesome.com) site. You can configure it by editing values in `links_icon` section in {% label primary@theme config file %}.
 
 {% code lang:yml next/_config.yml %}
 links_icon: link
@@ -535,7 +535,7 @@ By default NexT shows black `user` icon {% btn #,, user %} without animation bet
 
 {% tabs icon %}
 <!-- tab <code>name</code> -->
-The name of footer icon can be founded in {% exturl Font Awesome https://fontawesome.com %} site. `heart` is recommended.
+The name of footer icon can be founded in [Font Awesome](https://fontawesome.com) site. `heart` is recommended.
 
 {% code lang:yml next/_config.yml %}
 footer:
@@ -655,7 +655,7 @@ Next provides useful options for better Search Engine Optimization (SEO).
 
 {% tabs SEO %}
 <!-- tab <code>canonical</code> -->
-By default a canonical link tag is created in Hexo by setting the value `canonical` to `true` in {% label primary@theme config file %} after you have set up your URL `url: http://yoursite.com` in {% label info@site config file %}. More detailed information can be found in {% exturl Consolidate duplicate URLs https://support.google.com/webmasters/answer/139066 %}.
+By default a canonical link tag is created in Hexo by setting the value `canonical` to `true` in {% label primary@theme config file %} after you have set up your URL `url: http://yoursite.com` in {% label info@site config file %}. More detailed information can be found in [Consolidate duplicate URLs](https://support.google.com/webmasters/answer/139066).
 
 {% code lang:yml next/_config.yml %}
 canonical: true

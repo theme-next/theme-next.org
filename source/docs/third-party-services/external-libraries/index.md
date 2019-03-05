@@ -203,7 +203,7 @@ pace: false
 {% endcode %}
 <!-- endtab -->
 <!-- tab <code>pace_theme</code> -->
-Pace includes a bunch of {% exturl themes http://github.hubspot.com/pace/docs/welcome/ %} to get you started. Just include the appropriate css file.
+Pace includes a bunch of [themes](http://github.hubspot.com/pace/docs/welcome/) to get you started. Just include the appropriate css file.
 
 * pace-theme-big-counter
 * pace-theme-bounce
@@ -245,7 +245,7 @@ vendors:
 
 ### FastClick
 
-{% exturl FastClick https://github.com/ftlabs/fastclick %} is a simple, easy-to-use library for eliminating the 300ms delay between a physical tap and the firing of a click event on mobile browsers. The aim is to make your application feel less laggy and more responsive while avoiding any interference with your current logic.
+[FastClick](https://github.com/ftlabs/fastclick) is a simple, easy-to-use library for eliminating the 300ms delay between a physical tap and the firing of a click event on mobile browsers. The aim is to make your application feel less laggy and more responsive while avoiding any interference with your current logic.
 
 {% tabs fastclick %}
 <!-- tab Installation → -->
@@ -284,7 +284,7 @@ fastclick: false
 
 ### Jquery Lazyload
 
-{% exturl Jquery Lazyload https://github.com/tuupola/jquery_lazyload %} is a modern vanilla JavaScript version of the original Lazy Load plugin. Lazy Load delays loading of images in long web pages. Images outside of viewport will not be loaded before user scrolls to them. This is opposite of image preloading.
+[Jquery Lazyload](https://github.com/tuupola/jquery_lazyload) is a modern vanilla JavaScript version of the original Lazy Load plugin. Lazy Load delays loading of images in long web pages. Images outside of viewport will not be loaded before user scrolls to them. This is opposite of image preloading.
 
 {% tabs lazyload %}
 <!-- tab Installation → -->
@@ -323,7 +323,7 @@ lazyload: false
 
 ### Quicklink
 
-{% exturl Quicklink https://github.com/GoogleChromeLabs/quicklink %} is a JavaScript plugin that faster subsequent page-loads by prefetching in-viewport links during idle time. Chrome, Firefox, Edge are supported without polyfills.
+[Quicklink](https://github.com/GoogleChromeLabs/quicklink) is a JavaScript plugin that faster subsequent page-loads by prefetching in-viewport links during idle time. Chrome, Firefox, Edge are supported without polyfills.
 
 {% tabs quicklink %}
 <!-- tab Installation → -->
@@ -371,7 +371,7 @@ quicklink:
 
 #### Canvas Nest
 
-{% exturl canvas-nest.js https://github.com/hustcc/canvas-nest.js %} is a nest backgroud of website draw on canvas.
+[canvas-nest.js](https://github.com/hustcc/canvas-nest.js) is a nest backgroud of website draw on canvas.
 
 {% tabs canvas_nest %}
 <!-- tab Installation → -->
@@ -413,7 +413,7 @@ For now, it will be loaded both in webs and mobile devices.
 
 #### Canvas Ribbon
 
-{% exturl canvas-ribbon.js https://github.com/zproo/canvas-ribbon %} is a ribbon backgroud of website draw on canvas.
+[canvas-ribbon.js](https://github.com/zproo/canvas-ribbon) is a ribbon backgroud of website draw on canvas.
 
 {% tabs canvas_ribbon %}
 <!-- tab Installation → -->
@@ -462,7 +462,7 @@ For now only Pisces Scheme supports canvas ribbon setting under **6.0.x** versio
 
 #### JavaScript 3D library
 
-The aim of {% exturl JavaScript 3D library https://github.com/mrdoob/three.js %} is to create an easy to use, lightweight, 3D library. The library provides `<canvas>`, `<svg>`, `CSS3D` and `WebGL` renderers.
+The aim of [JavaScript 3D library](https://github.com/mrdoob/three.js) is to create an easy to use, lightweight, 3D library. The library provides `<canvas>`, `<svg>`, `CSS3D` and `WebGL` renderers.
 
 {% tabs JavaScript-3D %}
 <!-- tab Installation → -->
@@ -519,7 +519,7 @@ canvas_sphere: false
 
 #### Han Support
 
-{% exturl Han.css https://github.com/ethantw/Han %} provides a CSS typography framework optimised for Hanzi.
+[Han.css](https://github.com/ethantw/Han) provides a CSS typography framework optimised for Hanzi.
 
 {% tabs han %}
 <!-- tab Installation → -->
@@ -555,7 +555,7 @@ han: false
 
 #### Pangu Autospace Support
 
-{% exturl pangu.js https://github.com/vinta/pangu.js %} will automatically insert a blank space between all the Chinese characters and the hexagonal English numeric symbols on the page.
+[pangu.js](https://github.com/vinta/pangu.js) will automatically insert a blank space between all the Chinese characters and the hexagonal English numeric symbols on the page.
 
 {% tabs pangu %}
 <!-- tab Installation → -->

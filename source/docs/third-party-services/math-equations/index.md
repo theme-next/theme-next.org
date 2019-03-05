@@ -110,12 +110,12 @@ title: Not Render Math Either
 
 <!-- tab <code>cdn</code> -->
 {% note success %}
-Both MathJax and KaTeX provide `cdn` config and use the {% exturl jsDelivr https://www.jsdelivr.com %} as the default CDN.
+Both MathJax and KaTeX provide `cdn` config and use the [jsDelivr](https://www.jsdelivr.com) as the default CDN.
 The reason that jsDelivr is chosen is because it is fast everywhere, and jsDelivr has the valid ICP license issued by the Chinese government, it can be accessed in China pretty well.
 {% endnote %}
 
 {% note warning %}
-And we also provide other optional CDNs, including the famous {% exturl CDNJS https://cdnjs.com %}.
+And we also provide other optional CDNs, including the famous [CDNJS](https://cdnjs.com).
 For MathJax, we are currently using version 2.7.1.
 For KaTeX, due to the problem described above, we are now using version 0.7.1.
 {% endnote %}
@@ -129,7 +129,7 @@ Particularly, if you are a Chinese blogger or most of your visits come from Chin
 
 ### Render Engines
 
-For now, NexT provides two Render Engines: {% exturl MathJax https://www.mathjax.org %} and {% exturl KaTeX https://khan.github.io/KaTeX/ %} (default is MathJax).
+For now, NexT provides two Render Engines: [MathJax](https://www.mathjax.org) and [KaTeX](https://khan.github.io/KaTeX/) (default is MathJax).
 
 {% tabs render-engines %}
 <!-- tab <strong><code>mathjax</code></strong> -->
@@ -139,8 +139,8 @@ For now, NexT provides two Render Engines: {% exturl MathJax https://www.mathjax
 
 If you use MathJax to render Math Equations, you can choose one of renderers below:
 
-* {% exturl hexo-renderer-kramed https://github.com/sun11/hexo-renderer-kramed %}
-* {% exturl hexo-renderer-pandoc https://github.com/wzpan/hexo-renderer-pandoc %}
+* [hexo-renderer-kramed](https://github.com/sun11/hexo-renderer-kramed)
+* [hexo-renderer-pandoc](https://github.com/wzpan/hexo-renderer-pandoc)
 
 {% endnote %}
 
@@ -175,11 +175,11 @@ If you use MathJax to render Math Equations, you can choose one of renderers bel
 
 <!-- tab <code>katex</code> -->
 {% note success %}
-The {% exturl KaTeX engine is a much faster https://www.intmath.com/cg5/katex-mathjax-comparison.php %} math render engine compared to MathJax. And it could survive without JavaScript.
+The [KaTeX engine is a much faster](https://www.intmath.com/cg5/katex-mathjax-comparison.php) math render engine compared to MathJax. And it could survive without JavaScript.
 {% endnote %}
 
 {% note danger %}
-But, for now {% exturl KaTeX support less things https://github.com/Khan/KaTeX/wiki/Things-that-KaTeX-does-not-%28yet%29-support %} than MathJax. Here is a list of {% exturl TeX functions supported by KaTeX https://khan.github.io/KaTeX/function-support.html %}.
+But, for now [KaTeX support less things](https://github.com/Khan/KaTeX/wiki/Things-that-KaTeX-does-not-%28yet%29-support) than MathJax. Here is a list of [TeX functions supported by KaTeX](https://khan.github.io/KaTeX/function-support.html).
 {% endnote %}
 
 {% note warning %}
@@ -187,8 +187,8 @@ But, for now {% exturl KaTeX support less things https://github.com/Khan/KaTeX/w
 
 If you use KaTeX to render Math Equations, you can choose one of renderers below:
 
-* {% exturl hexo-renderer-markdown-it-plus https://github.com/CHENXCHEN/hexo-renderer-markdown-it-plus %}
-* {% exturl hexo-renderer-markdown-it https://github.com/hexojs/hexo-renderer-markdown-it %}
+* [hexo-renderer-markdown-it-plus](https://github.com/CHENXCHEN/hexo-renderer-markdown-it-plus)
+* [hexo-renderer-markdown-it](https://github.com/hexojs/hexo-renderer-markdown-it)
 
 {% tabs hexo-renderer-markdown-it, -1 %}
 <!-- tab {% label warning@Chosen hexo-renderer-markdown-it? %} -->
@@ -246,14 +246,14 @@ markdown:
 {% note danger %}
 **Known Issues**
 
-1. Firstly, please check {% exturl Common Issues https://github.com/Khan/KaTeX#common-issues %} of KaTeX.
+1. Firstly, please check [Common Issues](https://github.com/Khan/KaTeX#common-issues) of KaTeX.
 2. Displayed Math (i.e. ` $$...$$ `) needs to started with new clear line.
-   In other words: you must not have any characters (except of whitespaces) **before the opening ` $$ ` and after the ending ` $$ `** ({% exturl comment #32 https://github.com/theme-next/hexo-theme-next/pull/32#issuecomment-357489509 %}).
-3. Don't support Unicode ({% exturl comment #32 https://github.com/theme-next/hexo-theme-next/pull/32#issuecomment-357489509 %}).
-4. Inline Math (..` $...$ `) must not have white spaces **after the opening ` $ ` and before the ending ` $ `** ({% exturl comment #32 https://github.com/theme-next/hexo-theme-next/pull/32#issuecomment-357489509 %}).
+   In other words: you must not have any characters (except of whitespaces) **before the opening ` $$ ` and after the ending ` $$ `** ([comment #32](https://github.com/theme-next/hexo-theme-next/pull/32#issuecomment-357489509)).
+3. Don't support Unicode ([comment #32](https://github.com/theme-next/hexo-theme-next/pull/32#issuecomment-357489509)).
+4. Inline Math (..` $...$ `) must not have white spaces **after the opening ` $ ` and before the ending ` $ `** ([comment #32](https://github.com/theme-next/hexo-theme-next/pull/32#issuecomment-357489509)).
 5. If you use math in Heading (i.e. `## Heading`).
-   Then in corresponding TOC item it will show the related LaTex code 3 times ({% exturl comment #32 https://github.com/theme-next/hexo-theme-next/pull/32#issuecomment-359018694 %}).
-6. If you use math in your post's title, it will not be rendered ({% exturl comment #32 https://github.com/theme-next/hexo-theme-next/pull/32#issuecomment-359142879 %}).
+   Then in corresponding TOC item it will show the related LaTex code 3 times ([comment #32](https://github.com/theme-next/hexo-theme-next/pull/32#issuecomment-359018694)).
+6. If you use math in your post's title, it will not be rendered ([comment #32](https://github.com/theme-next/hexo-theme-next/pull/32#issuecomment-359142879)).
 {% endnote %}
 
 {% note info %}
@@ -270,9 +270,9 @@ We will continuously monitor the updates of corresponding renderers, if there is
 
 NexT also integrates some plugins for MathJax and KaTeX. You can easily configure them by setting the CDN URLs.
 
-mhchem is a third-party extension for MathJax, it's a tool for writing beautiful chemical equations easily. More infomation: {% exturl MathJax/mhchem Manual https://mhchem.github.io/MathJax-mhchem/ %}.
+mhchem is a third-party extension for MathJax, it's a tool for writing beautiful chemical equations easily. More infomation: [MathJax/mhchem Manual](https://mhchem.github.io/MathJax-mhchem/).
 
-Copy-tex extension for KaTeX modifes the copy/paste behavior in any browser supporting the Clipboard API so that, when selecting and copying whole KaTeX-rendered elements, the text content of the resulting clipboard renders KaTeX elements as their LaTeX source surrounded by specified delimiters. More infomation: {% exturl Copy-tex extension https://github.com/KaTeX/KaTeX/tree/master/contrib/copy-tex %}.
+Copy-tex extension for KaTeX modifes the copy/paste behavior in any browser supporting the Clipboard API so that, when selecting and copying whole KaTeX-rendered elements, the text content of the resulting clipboard renders KaTeX elements as their LaTeX source surrounded by specified delimiters. More infomation: [Copy-tex extension](https://github.com/KaTeX/KaTeX/tree/master/contrib/copy-tex).
 
 ### Examples
 
@@ -282,7 +282,7 @@ For examples below (and for all other examples in this domain) NexT uses `hexo-r
 
 #### Numbering and referring equations in MathJax
 
-In the new version of NexT, we have added feature to {% exturl automatic equation numbering http://docs.mathjax.org/en/latest/tex.html#automatic-equation-numbering %} with opportunity to make reference to that equations. We briefly describe how to use this feature below.
+In the new version of NexT, we have added feature to [automatic equation numbering](http://docs.mathjax.org/en/latest/tex.html#automatic-equation-numbering) with opportunity to make reference to that equations. We briefly describe how to use this feature below.
 
 In general, to make the automatic equation numbering work, you have to wrap your LaTeX equations in `equation` environment. Using the plain old style (i.e., wrap an equation with two dollar signs in each side) will not work. How to refer to an equation? Just give a `\label{}` tag and then in your later text, use `\ref{}` or `\eqref{}` to refer it. Using `\eqref{}` is preferred since if you use `\ref{}`, there are no parentheses around the equation number. Below are some of the common scenarios for equation numbering.
 
@@ -360,7 +360,7 @@ There are three aligned equations: equation $\eqref{eq3}$, equation $\eqref{eq4}
 
 There are three aligned equations: equation $\eqref{eq3}$, equation $\eqref{eq4}$ and equation $\eqref{eq5}$.
 
-Since `align` in and of itself is a complete equation environment (read {% exturl here https://tex.stackexchange.com/questions/95402/what-is-the-difference-between-aligned-in-displayed-mode-and-starred-align %} about the difference between `aligned` and `align` in LaTeX). You do not need to wrap it with `equation` environment.
+Since `align` in and of itself is a complete equation environment (read [here](https://tex.stackexchange.com/questions/95402/what-is-the-difference-between-aligned-in-displayed-mode-and-starred-align) about the difference between `aligned` and `align` in LaTeX). You do not need to wrap it with `equation` environment.
 
 #### Exclude equations from numbering
 

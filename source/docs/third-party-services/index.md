@@ -18,7 +18,7 @@ In any time you can extend needed functions by using third-party services suppor
 * [Widgetpack Rating](/docs/third-party-services/comments-and-widgets/#Widgetpack-Rating)
 
 {% note info %}
-If you want to disable comment in some page/post, just add `comments: false` to {% exturl front-matter https://hexo.io/docs/front-matter.html %} in your markdown file.
+If you want to disable comment in some page/post, just add `comments: false` to [front-matter](https://hexo.io/docs/front-matter.html) in your markdown file.
 {% endnote %}
 
 ### Statistics and Analytics

@@ -44,11 +44,11 @@ url     : Full URL of external source.
 ### Examples
 
 ```md
-Welcome to {% exturl Theme NexT Organization https://github.com/theme-next %}!
+Welcome to [Theme NexT Organization](https://github.com/theme-next)!
 If you want new feature or want to report a bug, feel free to {% exturl open an issue https://github.com/theme-next/hexo-theme-next/issues/new Open new issue in NexT repository %}.
 And if you have coding skills, NexT will be glad for your {% exturl pull request https://github.com/theme-next/hexo-theme-next/pulls "See all current pulls" %}.
 ```
 
-Welcome to {% exturl Theme NexT Organization! https://github.com/theme-next %}
+Welcome to [Theme NexT Organization!](https://github.com/theme-next)
 If you want new feature or want to report a bug, feel free to {% exturl open an issue. https://github.com/theme-next/hexo-theme-next/issues/new Open new issue in NexT repository %}
 And if you have coding skills, NexT will be glad for your {% exturl pull request. https://github.com/theme-next/hexo-theme-next/pulls "See all current pulls" %}

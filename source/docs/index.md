@@ -33,7 +33,7 @@ Thanks to the contribution of our users and developers, NexT now supports 15 lan
 | Türk               | `tr`               | `Merhaba`    |
 
 {% note primary %}
-If you want to add or improve language for NexT theme, you can do it easily with {% exturl crowdin https://crwd.in/theme-next %} service.
+If you want to add or improve language for NexT theme, you can do it easily with [crowdin](https://crwd.in/theme-next) service.
 {% endnote %}
 
 ### Five Code Highlighting Themes

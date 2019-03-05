@@ -16,7 +16,7 @@ In your terminal emulator, change to Hexo site dir. Use `hexo new page custom_na
 <!-- endtab -->
 
 <!-- tab Setting Front-matter Values → -->
-Front-matter is a block of YAML or JSON at the beginning of the file that is used to configure settings for your writings. Settings Front-matter values and more detailed can be found in {% exturl Front-matter https://hexo.io/docs/front-matter.html %}. You can also add contents in `custom_name/index.md` if you like.
+Front-matter is a block of YAML or JSON at the beginning of the file that is used to configure settings for your writings. Settings Front-matter values and more detailed can be found in [Front-matter](https://hexo.io/docs/front-matter.html). You can also add contents in `custom_name/index.md` if you like.
 
 {% codeblock lang:md %}
 title: custom_name
@@ -64,7 +64,7 @@ tags:
 {% endtabs %}
 
 {% note info %}
-Please read {% exturl Hexo's Docs of Categories & Tags https://hexo.io/docs/front-matter.html#Categories-amp-Tags %} to know how to add tags or categories for articles.
+Please read [Hexo's Docs of Categories & Tags](https://hexo.io/docs/front-matter.html#Categories-amp-Tags) to know how to add tags or categories for articles.
 {% endnote %}
 
 {% tabs adding-tags-page %}
@@ -121,7 +121,7 @@ In your terminal emulator, change to Hexo site dir. Use `hexo new page schedule`
 <!-- endtab -->
 
 <!-- tab Setting Front-matter Values → -->
-Front-matter is a block of YAML or JSON at the beginning of the file that is used to configure settings for your writings. Settings Front-matter values and more detailed can be found in {% exturl Front-matter https://hexo.io/docs/front-matter.html %}. You can also add contents in `schedule/index.md` if you like.
+Front-matter is a block of YAML or JSON at the beginning of the file that is used to configure settings for your writings. Settings Front-matter values and more detailed can be found in [Front-matter](https://hexo.io/docs/front-matter.html). You can also add contents in `schedule/index.md` if you like.
 
 {% codeblock lang:md %}
 title: schedule
@@ -144,7 +144,7 @@ menu:
 
 {% subtabs calendar1 %}
 <!-- tab Get calendar ID and API KEY→  -->
-Login to {% exturl Google developers https://console.developers.google.com/flows/enableapi?apiid=calendar %} and add Google Calendar API, you will get your calendar ID and API KEY. {% exturl More detailed documentation https://developers.google.com/calendar/quickstart/js %}
+Login to [Google developers](https://console.developers.google.com/flows/enableapi?apiid=calendar) and add Google Calendar API, you will get your calendar ID and API KEY. [More detailed documentation](https://developers.google.com/calendar/quickstart/js)
 
 <!-- endtab -->
 <!-- tab NexT Config  -->

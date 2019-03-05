@@ -8,7 +8,7 @@ Currently, it is not smooth to update NexT theme from pulling or downloading new
 1. Configurations are splitted into two pieces
 2. Users may be confused which place should be for options
 
-In order to resolve this issue, NexT will take advantage of {% exturl Hexo Data files https://hexo.io/docs/data-files.html %}. Because Data files is introduced in Hexo 3, so you need upgrade Hexo to 3.0 (or above) to use this feature.
+In order to resolve this issue, NexT will take advantage of [Hexo Data files](https://hexo.io/docs/data-files.html). Because Data files is introduced in Hexo 3, so you need upgrade Hexo to 3.0 (or above) to use this feature.
 
 If you prefer Hexo 2.x, you can still use the old approach for configurations. NexT is still compatible with Hexo 2.x (but errors are possible).
 
@@ -31,8 +31,8 @@ If there are any new options in new releases, you just need to copy those option
 
 **Useful links**
 
-* {% exturl Hexo Configuration https://hexo.io/docs/configuration.html#Overriding-Theme-Config %}
-* {% exturl Hexo Pull #757 https://github.com/hexojs/hexo/pull/757 %}
+* [Hexo Configuration](https://hexo.io/docs/configuration.html#Overriding-Theme-Config)
+* [Hexo Pull #757](https://github.com/hexojs/hexo/pull/757)
 
 <!-- endtab -->
 

@@ -2,14 +2,14 @@
 title: Frequently Asked Questions
 description: NexT User Docs – Frequently Asked Questions
 ---
-Here is a collection of frequently asked questions in NexT Issues. If you cannot not find your problem here, please go to {% exturl NexT Issues https://github.com/theme-next/hexo-theme-next/issues %} to submit your question.
+Here is a collection of frequently asked questions in NexT Issues. If you cannot not find your problem here, please go to [NexT Issues](https://github.com/theme-next/hexo-theme-next/issues) to submit your question.
 
 ### How to Set «Read More»
 
 It's a common need to show some part of article in home page and then give a link to full article. NexT gives 3 ways to control how article is shown in home page. In other words, you can use following ways to show summary of articles and a **Read More** button:
 
 1. Use `<!-- more -->` in your article to break your article manually, which is recommended by Hexo. {% label success@Recommended %}
-2. Add `description` and set its value to your article summary in {% exturl front-matter https://hexo.io/docs/front-matter.html %}.
+2. Add `description` and set its value to your article summary in [front-matter](https://hexo.io/docs/front-matter.html).
 3. Generate summary automatically by adding following section in {% label primary@theme config file%}:
    ```yml next/_config.yml
    auto_excerpt:
@@ -161,4 +161,4 @@ Please note that Hexo 3.2 doesn't allow to have duplicated same options. You'd b
 
 ### How to Optimize NexT Theme
 
-NexT doesn't compress HTML, JavaScript and CSS. If you need this, you can try to search 3rd-party libraries in {% exturl Hexo plugins section https://hexo.io/plugins/ %} or plugins/modules under the {% exturl NexT organization https://github.com/theme-next %} link. For example, you can use {% exturl hexo-filter-optimize https://github.com/theme-next/hexo-filter-optimize %} plugin.
+NexT doesn't compress HTML, JavaScript and CSS. If you need this, you can try to search 3rd-party libraries in [Hexo plugins section](https://hexo.io/plugins/) or plugins/modules under the [NexT organization](https://github.com/theme-next) link. For example, you can use [hexo-filter-optimize](https://github.com/theme-next/hexo-filter-optimize) plugin.
