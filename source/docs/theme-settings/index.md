@@ -36,7 +36,7 @@ github_banner:
   title: Follow me on GitHub
 ```
 
-{% tabs gitHub-banner %}
+{% tabs github-banner %}
 <!-- tab <code>permalink</code> -->
 `permalink` → is the specified link must have full url path.
 <!-- endtab -->
@@ -53,12 +53,12 @@ You can set `enable` to `true` and add your own GitHub link.
 NexT supports the site logo personalization.
 
 {% tabs custom_logo %}
-<!-- tab <code>enabled</code> → -->
+<!-- tab <code>enable</code> → -->
 You can enable it by editing values `custom_logo.enable` to `true` in {% label primary@theme config file %}.
 
 {% codeblock lang:yml next/_config.yml %}
 custom_logo:
-  enabled: false
+  enable: false
 {% endcodeblock %}
 <!-- endtab -->
 
@@ -74,7 +74,7 @@ custom_logo:
 {% endtabs %}
 
 {% note danger %}
-For now only default Muse Scheme supports custom logo setting under **6.0.x** version or highter.
+Scheme Mist does not support custom logo setting under **6.0.x** version or highter.
 {% endnote %}
 
 ### Custom Style Support
@@ -169,7 +169,7 @@ font:
 ### Tagcloud
 
 By default, NexT has setted font color and size for tagcloud.
-From NexT v7.0.2 you can customize them, just set related values in  {% label primary@theme config file %}:
+From NexT v7.0.2 you can customize them, just set related values in {% label primary@theme config file %}:
 
    ```yml next/_config.yml
    tagcloud:
@@ -223,7 +223,7 @@ Show your WeChat public account QRcode after each article, subscribing blog by s
 
   ```yml next/_config.yml
   wechat_subscriber:
-    enabled: true
+    enable: true
     qcode: /uploads/wechat-qcode.jpg
     description: Welcome to scan the WeChat Public Account QRcode and subscribe my blog!
   ```
