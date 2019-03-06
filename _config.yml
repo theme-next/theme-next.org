@@ -99,6 +99,7 @@ symbols_count_time:
   total_symbols: false
   total_time: false
 
+
 #################################################################
 ###################### NexT Configuration #######################
 #################################################################
@@ -115,6 +116,7 @@ theme_config:
   custom_file_path:
     styles: source/_data/styles.styl
 
+
   # ============================================================= #
   # ======================= SEO Settings ======================== #
   # ============================================================= #
@@ -122,6 +124,7 @@ theme_config:
   seo: true
   index_with_subtitle: true
   exturl: true
+
 
   # ============================================================= #
   # ====================== Scheme Settings ====================== #
@@ -131,6 +134,7 @@ theme_config:
   #scheme: Mist
   #scheme: Pisces
   #scheme: Gemini
+
 
   # ============================================================= #
   # ================= Site Information Settings ================= #
@@ -157,6 +161,7 @@ theme_config:
     sidebar: true
     post: false
 
+
   # ============================================================= #
   # ======================= Menu Settings ======================= #
   # ============================================================= #
@@ -176,9 +181,10 @@ theme_config:
 
       Theme Settings:
         default: /theme-settings/ || star
-        ExtURL: /exturl/ || external-link-square
         Custom Pages: /custom-pages/ || file
         Posts: /posts/ || pencil-square-o
+        Sidebar: /sidebar/ || bars
+        ExtURL: /exturl/ || external-link-square
 
       Third Party Services:
         default: /third-party-services/ || plug
@@ -199,6 +205,7 @@ theme_config:
         Mermaid: /mermaid/ || tasks
         Video: /video/ || video-camera
         Group Pictures: /group-pictures/ || file-image-o
+        PDF: /pdf/ || file-pdf-o
 
       Advanced Settings: /advanced-settings/ || cogs
       FAQ's: /faqs/ || life-ring
@@ -210,6 +217,7 @@ theme_config:
   menu_settings:
     icons: true
     badges: true
+
 
   # ============================================================= #
   # ===================== Sidebar Settings ====================== #
@@ -248,6 +256,7 @@ theme_config:
     scrollpercent: true
     onmobile: true
 
+
   # ============================================================= #
   # ======================= Post Settings ======================= #
   # ============================================================= #
@@ -263,15 +272,18 @@ theme_config:
     enable: true
     url: https://github.com/theme-next/theme-next.org/edit/source/source/
 
+
   # ============================================================= #
   # ==================== Misc Theme Settings ==================== #
   # ============================================================= #
 
   mobile_layout_economy: true
 
+
   # ============================================================= #
   # =============== Third Party Services Settings =============== #
   # ============================================================= #
+
 
   # ============================================================= #
   # ------------------- Comments and Widgets -------------------- #
@@ -283,11 +295,13 @@ theme_config:
     count: true
     lazyload: true
 
+
   # ============================================================= #
   # ----------------- Statistics and Analytics ------------------ #
   # ============================================================= #
 
   yandex_site_verification: 3ac9ae36ddebb425
+
 
   # ============================================================= #
   # ---------------------- Search Services ---------------------- #
@@ -297,6 +311,7 @@ theme_config:
     enable: true
     trigger: auto
     top_n_per_article: 1
+
 
   # ============================================================= #
   # -------------------- External Libraries --------------------- #
@@ -315,6 +330,7 @@ theme_config:
 
   lazyload: true
 
+
   # ============================================================= #
   # ---------------------- Math Equations ----------------------- #
   # ============================================================= #
@@ -325,6 +341,7 @@ theme_config:
     engine: mathjax
     mathjax:
       cdn: //cdn.jsdelivr.net/npm/mathjax@2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+
 
   # ============================================================= #
   # ======================== Tag Plugins ======================== #
