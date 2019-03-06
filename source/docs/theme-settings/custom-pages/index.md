@@ -171,8 +171,47 @@ calendar:
 
 #### Cheers Archive Page
 
-By default NexT shows the cheers characters from `ok` to `excellent` according to the numbers of your posts. You can disable it by editing values `cheers_enabled` to `false` in {% label primary@theme config file %}.
+By default NexT shows the cheers characters from `ok` to `excellent` according to the numbers of your posts. You can disable it by editing values `cheers` to `false` in {% label primary@theme config file %}.
 
 ```yml next/_config.yml
-cheers_enabled: true
+cheers: true
 ```
+
+#### Custom 404 Page
+
+{% tabs custom-404-page %}
+<!-- tab Adding New Page → -->
+In your terminal emulator, change to Hexo site dir. Create a new folder called `404`, then create a new page in it:
+
+    $ cd your-hexo-site
+    $ mkdir 404
+    $ touch 404/index.md
+
+<!-- endtab -->
+
+<!-- tab Editting Page → -->
+If you would like to enable `commonweal 404`(A service provided by Tencent in China), Edit `404/index.md` like this:
+```
+---
+title: 404
+date: 1970-01-01 00:00:00
+---
+
+<script src="//qzonestyle.gtimg.cn/qzone/hybrid/app/404/search_children.js"
+        charset="utf-8" homePageUrl="/" homePageName="Back to home">
+</script>
+```
+You can also add any content you want to it.
+<!-- endtab -->
+
+<!-- tab Editting Menu → -->
+Add `404` to `menu` by editing {% label primary@theme config file %}:
+{% codeblock lang:yml next/_config.yml %}
+menu:
+  home: / || home
+  archives: /archives/ || archive
+  schedule: /schedule/ || calendar
+  commonweal: /404/ || heartbeat
+{% endcodeblock %}
+<!-- endtab -->
+{% endtabs %}

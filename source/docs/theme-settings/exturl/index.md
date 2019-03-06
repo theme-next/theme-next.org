@@ -25,6 +25,8 @@ Just one setting must be turned on under the `Tags Settings` section in {% label
 exturl: true
 ```
 
+***
+
 **Below is the usage of `exturl` tag, which will no longer be supported.**
 
 ### Usage
