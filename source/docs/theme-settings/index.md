@@ -256,7 +256,7 @@ android_chrome_color: "#222"
 
 By default sidebar only shows in posts (have a table of content), and is placed in left side. You can change it by editing values under `sidebar` setting in {% label primary@theme config file %}.
 
-Sidebar has several options, but for now we will consider `position`, `width`, `display`, `offset`, `b2t`, `scrollpercent`, and `onmobile` options.
+Sidebar has several options, but for now we will consider `position`, `width`, `display`, `offset` and `onmobile` options.
 
 {% tabs setting-sidebar %}
 <!-- tab <code>position</code> -->
@@ -325,28 +325,6 @@ sidebar:
 {% note danger %}
 For now only Pisces / Gemini Schemes supports `offset` setting under **6.0.x** version or highter.
 {% endnote %}
-<!-- endtab -->
-
-<!-- tab <code>b2t</code> -->
-Set the value `sidebar.b2t` to `true` to display `Back to top` button as following:
-
-{% code lang:yml next/_config.yml %}
-sidebar:
-  b2t: false
-{% endcode %}
-
-{% note danger %}
-For now only Pisces / Gemini Schemes supports `b2t` setting under **6.0.x** version or highter.
-{% endnote %}
-<!-- endtab -->
-
-<!-- tab <code>scrollpercent</code> -->
-Set the value `sidebar.scrollpercent` to `true` to display scroll percent label in `Back to top` button as following:
-
-{% code lang:yml next/_config.yml %}
-sidebar:
-  scrollpercent: false
-{% endcode %}
 <!-- endtab -->
 
 <!-- tab <code>onmobile</code> -->
@@ -516,6 +494,38 @@ toc:
 {% endcode %}
 <!-- endtab -->
 
+{% endtabs %}
+
+### Back To Top
+
+{% tabs b2t %}
+<!-- tab <code>enable</code> -->
+{% code lang:yml next/_config.yml %}
+back2top:
+  enable: true
+{% endcode %}
+Set the value `back2top.enable` to `true` to display `Back to top` button.
+<!-- endtab -->
+
+<!-- tab <code>enable</code> -->
+{% code lang:yml next/_config.yml %}
+back2top:
+  # Back to top in sidebar.
+  sidebar: true
+{% endcode %}
+
+Set the value `back2top.sidebar` to `true` to put the button in sidebar.
+<!-- endtab -->
+
+<!-- tab <code>scrollpercent</code> -->
+{% code lang:yml next/_config.yml %}
+back2top:
+  # Scroll percent label in b2t button.
+  scrollpercent: true
+{% endcode %}
+
+Set the value `back2top.scrollpercent` to `true` to display scroll percent label in `Back to top` button.
+<!-- endtab -->
 {% endtabs %}
 
 ### Site Footer Setting
