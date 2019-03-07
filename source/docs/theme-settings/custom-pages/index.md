@@ -103,6 +103,23 @@ If you enable any comment system for your site, comments will be shown for all p
 See [«How to Disable Comments on Page»](/docs/faqs/#How-to-Disable-Comments-on-Page) if you want to do it for pages like `tags` or `categories`.
 {% endnote %}
 
+#### Tagcloud
+
+By default, NexT has setted font color and size for tagcloud in tags page.
+From NexT v7.0.2 you can customize them, just set related values in {% label primary@theme config file %}:
+
+```yml next/_config.yml
+tagcloud:
+  # If true, font size and color can be customized
+  enable: true
+
+  # All values below are same as default, change them by yourself
+  min: 12 # min font size in px
+  max: 30 # max font size in px
+  start: '#ccc' # start color (hex, rgba, hsla or color keywords)
+  end: '#111' # end color (hex, rgba, hsla or color keywords)
+```
+
 #### Adding «Categories» Page
 
 {% note default %}
@@ -174,7 +191,7 @@ calendar:
 By default NexT shows the cheers characters from `ok` to `excellent` according to the numbers of your posts. You can disable it by editing values `cheers` to `false` in {% label primary@theme config file %}.
 
 ```yml next/_config.yml
-cheers: true
+cheers: false
 ```
 
 #### Custom 404 Page
