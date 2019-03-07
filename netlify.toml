@@ -2,33 +2,33 @@
 ID = "Theme-Next"
 
 # ================ #
-#       Muse       #
+#       Test       #
 # ================ #
-[[redirects]]
-  from = "https://theme-next.org/schemes/muse/*"
-  to = "https://muse.theme-next.org/:splat"
-  status = 301
-  force = false
+#[[redirects]]
+#  from = "https://theme-next.org/schemes/test/*"
+#  to = "https://test.theme-next.org/:splat"
+#  status = 301
+#  force = false
 
 [[redirects]]
-  from = "https://muse.theme-next.org/*"
-  to = "https://theme-next.org/schemes/muse/:splat"
+  from = "https://test.theme-next.org/*"
+  to = "https://theme-next.org/schemes/test/:splat"
   status = 200
   force = true
 
 
 # ================ #
-#       Test       #
+#       Muse       #
 # ================ #
-[[redirects]]
-  from = "https://theme-next.org/schemes/muse/*"
-  to = "https://test.theme-next.org/:splat"
-  status = 301
-  force = false
+#[[redirects]]
+#  from = "https://theme-next.org/schemes/muse/*"
+#  to = "https://muse.theme-next.org/:splat"
+#  status = 301
+#  force = false
 
 [[redirects]]
-  from = "https://test.theme-next.org/*"
-  to = "https://theme-next.org/schemes/muse/:splat"
+  from = "https://muse.theme-next.org/*"
+  to = "https://theme-next.org/schemes/test/:splat"
   status = 200
   force = true
 
