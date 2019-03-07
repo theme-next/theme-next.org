@@ -253,9 +253,12 @@ theme_config:
     wrap: true
 
   sidebar:
-    b2t: true
-    scrollpercent: true
     onmobile: true
+
+  back2top:
+    enable: true
+    sidebar: true
+    scrollpercent: true
 
 
   # ============================================================= #

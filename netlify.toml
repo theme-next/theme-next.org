@@ -2,30 +2,8 @@
 ID = "Theme-Next"
 
 # ================ #
-#       Test       #
-# ================ #
-#[[redirects]]
-#  from = "https://theme-next.org/schemes/test/*"
-#  to = "https://test.theme-next.org/:splat"
-#  status = 301
-#  force = false
-
-#[[redirects]]
-#  from = "https://test.theme-next.org/*"
-#  to = "https://theme-next.org/schemes/test/:splat"
-#  status = 200
-#  force = true
-
-
-# ================ #
 #       Muse       #
 # ================ #
-#[[redirects]]
-#  from = "https://theme-next.org/schemes/muse/*"
-#  to = "https://muse.theme-next.org/:splat"
-#  status = 301
-#  force = false
-
 [[redirects]]
   from = "https://muse.theme-next.org/*"
   to = "https://theme-next.org/schemes/muse/:splat"
@@ -37,12 +15,6 @@ ID = "Theme-Next"
 #       Mist       #
 # ================ #
 [[redirects]]
-  from = "https://theme-next.org/schemes/mist/*"
-  to = "https://mist.theme-next.org/:splat"
-  status = 301
-  force = false
-
-[[redirects]]
   from = "https://mist.theme-next.org/*"
   to = "https://theme-next.org/schemes/mist/:splat"
   status = 200
@@ -52,11 +24,6 @@ ID = "Theme-Next"
 # ================ #
 #      Pisces      #
 # ================ #
-[[redirects]]
-  from = "https://theme-next.org/schemes/pisces/*"
-  to = "https://pisces.theme-next.org/:splat"
-  status = 301
-  force = false
 
 [[redirects]]
   from = "https://pisces.theme-next.org/*"
@@ -67,11 +34,6 @@ ID = "Theme-Next"
 # ================ #
 #      Gemini      #
 # ================ #
-[[redirects]]
-  from = "https://theme-next.org/schemes/gemini/*"
-  to = "https://gemini.theme-next.org/:splat"
-  status = 301
-  force = false
 
 [[redirects]]
   from = "https://gemini.theme-next.org/*"
