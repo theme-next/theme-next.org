@@ -260,3 +260,35 @@ toc:
 <!-- endtab -->
 
 {% endtabs %}
+
+### Back To Top
+
+{% tabs b2t %}
+<!-- tab <code>enable</code> -->
+{% code lang:yml next/_config.yml %}
+back2top:
+  enable: true
+{% endcode %}
+Set the value `back2top.enable` to `true` to display `Back to top` button.
+<!-- endtab -->
+
+<!-- tab <code>enable</code> -->
+{% code lang:yml next/_config.yml %}
+back2top:
+  # Back to top in sidebar.
+  sidebar: true
+{% endcode %}
+
+Set the value `back2top.sidebar` to `true` to put the button in sidebar.
+<!-- endtab -->
+
+<!-- tab <code>scrollpercent</code> -->
+{% code lang:yml next/_config.yml %}
+back2top:
+  # Scroll percent label in b2t button.
+  scrollpercent: true
+{% endcode %}
+
+Set the value `back2top.scrollpercent` to `true` to display scroll percent label in `Back to top` button.
+<!-- endtab -->
+{% endtabs %}

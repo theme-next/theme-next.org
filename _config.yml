@@ -13,7 +13,7 @@ index_generator:
   order_by: -date
 
 archive_generator:
-  per_page: 3
+  per_page: 8
   yearly: true
   monthly: true
   daily: false
@@ -22,8 +22,8 @@ category_generator:
   per_page: 5
 
 tag_generator:
-   per_page: 5
-   enable_index_page: false
+  per_page: 5
+  enable_index_page: false
 
 timezone: UTC
 
@@ -181,7 +181,8 @@ theme_config:
 
       Theme Settings:
         default: /theme-settings/ || star
-        Custom Pages: /custom-pages/ || file
+        Footer: /footer/ || sun-o
+        Custom Pages: /custom-pages/ || file-o
         Posts: /posts/ || pencil-square-o
         Sidebar: /sidebar/ || bars
         ExtURL: /exturl/ || external-link-square
@@ -190,9 +191,9 @@ theme_config:
         default: /third-party-services/ || plug
         Comments and Widgets: /comments-and-widgets/ || comments-o
         Statistics and Analytics: /statistics-and-analytics/ || bar-chart
-        Content Sharing Services: /content-sharing-services/ || share-alt
+        Content Sharing Services: /content-sharing-services/ || share-square
         Search Services: /search-services/ || search-plus
-        External Libraries: /external-libraries/ || sun-o
+        External Libraries: /external-libraries/ || puzzle-piece
         Math Equations: /math-equations/ || superscript
 
       Tag Plugins:
