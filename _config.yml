@@ -133,7 +133,7 @@ theme_config:
   #scheme: Muse
   #scheme: Mist
   #scheme: Pisces
-  #scheme: Gemini
+  scheme: Gemini
 
 
   # ============================================================= #
@@ -152,8 +152,8 @@ theme_config:
       enable: true
       version: true
     theme:
-      enable: false
-      version: false
+      enable: true
+      version: true
     custom_text: Theme source code <span class="exturl theme-link" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0">here</span><br>Website source code <span class="exturl theme-link" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvdGhlbWUtbmV4dC5vcmc=">here</span>
 
   creative_commons:

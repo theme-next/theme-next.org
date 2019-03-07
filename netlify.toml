@@ -2,22 +2,6 @@
 ID = "Theme-Next"
 
 # ================ #
-#       Test       #
-# ================ #
-[[redirects]]
-  from = "https://theme-next.org/schemes/muse/*"
-  to = "https://test.theme-next.org/:splat"
-  status = 301
-  force = false
-
-[[redirects]]
-  from = "https://test.theme-next.org/*"
-  to = "https://theme-next.org/schemes/muse/:splat"
-  status = 200
-  force = true
-
-
-# ================ #
 #       Muse       #
 # ================ #
 [[redirects]]
@@ -28,6 +12,22 @@ ID = "Theme-Next"
 
 [[redirects]]
   from = "https://muse.theme-next.org/*"
+  to = "https://theme-next.org/schemes/muse/:splat"
+  status = 200
+  force = true
+
+
+# ================ #
+#       Test       #
+# ================ #
+[[redirects]]
+  from = "https://theme-next.org/schemes/muse/*"
+  to = "https://test.theme-next.org/:splat"
+  status = 301
+  force = false
+
+[[redirects]]
+  from = "https://test.theme-next.org/*"
   to = "https://theme-next.org/schemes/muse/:splat"
   status = 200
   force = true
