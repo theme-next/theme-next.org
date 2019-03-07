@@ -110,7 +110,7 @@ From NexT v7.0.2 you can customize them, just set related values in {% label pri
 
 ```yml next/_config.yml
 tagcloud:
-  # If true, font size and color can be customized
+  # If true, font size, font color and amount of tags can be customized
   enable: true
 
   # All values below are same as default, change them by yourself
@@ -118,6 +118,7 @@ tagcloud:
   max: 30 # max font size in px
   start: '#ccc' # start color (hex, rgba, hsla or color keywords)
   end: '#111' # end color (hex, rgba, hsla or color keywords)
+  amount: 200 # amount of tags, chage it if you have more than 200 tags
 ```
 
 #### Adding «Categories» Page
