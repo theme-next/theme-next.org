@@ -105,18 +105,18 @@ echo "=============================================================="
     ln -sv ../_config.yml _config.yml
     mkdir -v schemes
 
-echo
-echo "=============================================================="
-echo " ${lpurple}Generating content for 'test.theme-next.org' subdomain...${norm}"
-echo "=============================================================="
-    hexo config url https://test.theme-next.org
-    echo "${yellow}Setted url:${norm} ${lcyan}`hexo config url`${norm}"
+#echo
+#echo "=============================================================="
+#echo " ${lpurple}Generating content for 'test.theme-next.org' subdomain...${norm}"
+#echo "=============================================================="
+#    hexo config url https://test.theme-next.org
+#    echo "${yellow}Setted url:${norm} ${lcyan}`hexo config url`${norm}"
 
-    hexo config theme_config.scheme Muse
-    echo "${yellow}Setted scheme:${norm} ${lcyan}`hexo config theme_config.scheme`${norm}"
+#    hexo config theme_config.scheme Muse
+#    echo "${yellow}Setted scheme:${norm} ${lcyan}`hexo config theme_config.scheme`${norm}"
 
-    hexo clean && hexo g --silent
-    echo "${lred}`mv -v public schemes/test`${norm}"
+#    hexo clean && hexo g --silent
+#    echo "${lred}`mv -v public schemes/test`${norm}"
 
 echo
 echo "=============================================================="

@@ -10,11 +10,11 @@ ID = "Theme-Next"
 #  status = 301
 #  force = false
 
-[[redirects]]
-  from = "https://test.theme-next.org/*"
-  to = "https://theme-next.org/schemes/test/:splat"
-  status = 200
-  force = true
+#[[redirects]]
+#  from = "https://test.theme-next.org/*"
+#  to = "https://theme-next.org/schemes/test/:splat"
+#  status = 200
+#  force = true
 
 
 # ================ #
@@ -28,7 +28,7 @@ ID = "Theme-Next"
 
 [[redirects]]
   from = "https://muse.theme-next.org/*"
-  to = "https://theme-next.org/schemes/test/:splat"
+  to = "https://theme-next.org/schemes/muse/:splat"
   status = 200
   force = true
 
