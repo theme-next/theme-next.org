@@ -5,7 +5,7 @@ description: NexT User Docs – NexT Supported Tags
 Tag Plugin is a way to make special style contents supported by Hexo. For example, we cannot show a image with custom size in standard Markdown. And then we can use tag plugins to solve it. [Hexo has a lot of tags](https://hexo.io/docs/tag-plugins.html) which can help user. And Hexo also have interfaces to themes which make themes able to create their own tags. Following tags is provided by NexT:
 
 * [Centered Quote](#Centered-Quote)
-* [Group Pictures](#Group-Pictures)
+* [Group Pictures](docs/tag-plugins/group-pictures/)
 * [Include Raw](#Include-Raw)
 * [Full Image](/docs/tag-plugins/full-image/)
 * [Note](/docs/tag-plugins/note/)
@@ -59,5 +59,3 @@ Then in any post we can use this content with `include_raw` tag:
 ```
 
 {% include_raw '_data/include-raw.html' %}
-
-### Group Pictures
