@@ -340,7 +340,7 @@ If you want to use the CDN instead of clone this repo, then need to **set vendor
 vendors:
   ...
   # See: https://github.com/GoogleChromeLabs/quicklink
-  quicklink: //cdn.jsdelivr.net/npm/quicklink@1.0.0/dist/quicklink.umd.js
+  quicklink: //cdn.jsdelivr.net/npm/quicklink@1/dist/quicklink.umd.js
   ...
 {% endcode %}
 {% endnote %}
