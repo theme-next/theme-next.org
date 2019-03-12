@@ -40,6 +40,7 @@ If you want to disable comment in some page/post, just add `comments: false` to 
 ### Content Sharing Services
 
 * [AddThis](/docs/third-party-services/content-sharing-services/#AddThis)
+* [Likely](/docs/third-party-services/content-sharing-services/#Likely)
 * [Need More Share](/docs/third-party-services/content-sharing-services/#Need-More-Share)
 * [Baidu Sharing (China)](/docs/third-party-services/content-sharing-services/#Baidu-Sharing-China)
 

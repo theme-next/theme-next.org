@@ -22,6 +22,30 @@ add_this_id: your_add_this_id
 <!-- endtab -->
 {% endtabs %}
 
+### Likely 
+
+Edit the configurations in `likely` section in the {% label primary@theme config file %} as following:
+
+```yml next/_config.yml
+# Likely Share
+# See: https://ilyabirman.net/projects/likely/
+# Likely supports four looks, nine social networks, any button text
+# You are free to modify the text value and order of any network
+likely:
+  enable: true
+  look: normal # available values: normal, light, small, big
+  networks:
+    twitter: Tweet
+    facebook: Share
+    linkedin: Link
+    gplus: Plus
+    vkontakte: Share
+    odnoklassniki: Class
+    telegram: Send
+    whatsapp: Send
+    pinterest: Pin
+```
+
 ### Need More Share
 
 {% tabs needmoreshare2 %}
@@ -79,7 +103,6 @@ needmoreshare2:
 {% endcode %}
 <!-- endtab -->
 {% endtabs %}
-
 
 ### Baidu Sharing (China)
 
