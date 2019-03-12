@@ -195,6 +195,7 @@ theme_config:
         Search Services: /search-services/ || search-plus
         External Libraries: /external-libraries/ || puzzle-piece
         Math Equations: /math-equations/ || superscript
+        Chat Services: /chat-services/ || comment-dots
 
       Tag Plugins:
         default: /tag-plugins/ || rocket
