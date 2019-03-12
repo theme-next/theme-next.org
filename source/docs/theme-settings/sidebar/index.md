@@ -225,7 +225,7 @@ links_layout: block
 
 {% tabs toc %}
 <!-- tab <code>enable</code> -->
-By default NexT shows `Table Of Contents (TOC)` in the Sidebar. You can disable it by editing values `toc.enable` to `false` in {% label primary@theme config file %}.
+By default NexT shows `Table Of Contents (TOC)` in the Sidebar. You can disable it by setting `toc.enable` to `false` in {% label primary@theme config file %}.
 
 {% code lang:yml next/_config.yml %}
 toc:
@@ -234,7 +234,7 @@ toc:
 <!-- endtab -->
 
 <!-- tab <code>number</code> -->
-By default NexT adds list number to TOC automatically. You can disable it by editing values `toc.number` to `false` in {% label primary@theme config file %}.
+By default NexT adds list number to TOC automatically. You can disable it by setting `toc.number` to `false` in {% label primary@theme config file %}.
 
 {% code lang:yml next/_config.yml %}
 toc:
@@ -243,7 +243,7 @@ toc:
 <!-- endtab -->
 
 <!-- tab <code>wrap</code> -->
-If the post header width longer than sidebar width, you can wrap the header words in next lines by editing values `toc.wrap` to `true` in {% label primary@theme config file %}.
+If the post header width longer than sidebar width, you can wrap the header words in next lines by setting `toc.wrap` to `true` in {% label primary@theme config file %}.
 
 {% code lang:yml next/_config.yml %}
 toc:
@@ -251,8 +251,17 @@ toc:
 {% endcode %}
 <!-- endtab -->
 
+<!-- tab <code>expand_all</code> -->
+If you want all level of TOC in a post to be displayed, rather than the activated part of it, you can set `toc.expand_all` to `true` in {% label primary@theme config file %}.
+
+{% code lang:yml next/_config.yml %}
+toc:
+  expand_all: false
+{% endcode %}
+<!-- endtab -->
+
 <!-- tab <code>max_depth</code> -->
-By default maximum heading depth of generated toc is 6. You can set it by editing values `toc.max_depth` to `another number` in {% label primary@theme config file %}.
+By default maximum heading depth of generated toc is 6. You can set it by setting `toc.max_depth` to `another number` in {% label primary@theme config file %}.
 {% code lang:yml next/_config.yml %}
 toc:
   max_depth: 3
