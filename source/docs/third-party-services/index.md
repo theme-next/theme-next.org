@@ -65,3 +65,8 @@ If you want to disable comment in some page/post, just add `comments: false` to 
 ### Math Equations
 
 * [Math Equations](/docs/third-party-services/math-equations/)
+
+### Chat Services
+
+* [Chatra](/docs/third-party-services/chat-services/#Chatra)
+* [Tidio](/docs/third-party-services/chat-services/#Tidio)

@@ -2,6 +2,7 @@
 title: External Libraries
 description: NexT User Docs – Third-party Service Integration – External Libraries
 ---
+
 ### Fancybox
 
 NexT supports the fancybox plugin, which is a jQuery lightbox script for displaying images, videos and more. Touch enabled, responsive and fully customizable.
