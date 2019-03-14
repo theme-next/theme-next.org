@@ -32,6 +32,7 @@ After Chatra enabled, you can set `chat.enable` to `true` and set `chat.service`
 chat:
   enable: true
   service: chatra
+  icon: comment
   text: Chat
 {% endcode %}
 <!-- endtab -->
@@ -65,6 +66,7 @@ After Tidio enabled, you can set `chat.enable` to `true` and set `chat.service` 
 chat:
   enable: true
   service: tidio
+  icon: comment
   text: Chat
 {% endcode %}
 <!-- endtab -->
