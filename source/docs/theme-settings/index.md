@@ -98,6 +98,14 @@ You can set `enable` to `true` and add your own GitHub link.
 Next provides useful options for better Search Engine Optimization (SEO).
 
 {% tabs SEO %}
+<!-- tab <code>disable_baidu_tranformation</code> -->
+By default China's search engine Baidu will cache and rewrite your site to provide a webpage snapshot for mobile users. You can disable this by setting the value `disable_baidu_tranformation` to `true` in {% label primary@theme config file %}.
+
+{% code lang:yml next/_config.yml %}
+disable_baidu_tranformation: false
+{% endcode %}
+<!-- endtab -->
+
 <!-- tab <code>canonical</code> -->
 By default a canonical link tag is created in Hexo by setting the value `canonical` to `true` in {% label primary@theme config file %} after you have set up your URL `url: http://yoursite.com` in {% label info@site config file %}. More detailed information can be found in [Consolidate duplicate URLs](https://support.google.com/webmasters/answer/139066).
 
@@ -181,6 +189,26 @@ android_chrome_color: "#222"
 <!-- endtab -->
 
 {% endtabs %}
+
+### Rainbow Safari
+
+If you want to hide sticky headers and color the menu bar on Safari (iOS / macOS), you can set `safari_rainbow` to `true`. More information here: [rainbowsafari](https://github.com/koole/rainbowsafari).
+
+{% code lang:yml next/_config.yml %}
+safari_rainbow: false
+{% endcode %}
+
+### Custom Scrollbar Support
+
+NexT supports the scrollbar personalization.
+
+{% note danger %}
+Only works on webkit based browsers.
+{% endnote %}
+
+{% code lang:yml next/_config.yml %}
+custom_scrollbar: false
+{% endcode %}
 
 ### Custom Logo Support
 
