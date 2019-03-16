@@ -138,37 +138,6 @@ NexT also supports the baidu push so that the blog will push the url to baidu au
 baidu_push: false
 ```
 
-### WeChat Subscribing
-
-Show your WeChat public account QRcode after each article, subscribing blog by simply scanning.
-
-1. Download your QRcode from WeChat Public Platform, and save it under `source/uploads/` {% label info@site directory %}.
-2. Edit {% label primary@theme config file %} like following:
-
-  ```yml next/_config.yml
-  wechat_subscriber:
-    enable: true
-    qcode: /uploads/wechat-qcode.jpg
-    description: Welcome to scan the WeChat Public Account QRcode and subscribe my blog!
-  ```
-
-### Reward (Donate)
-
-More and more platform (WeChat public accounts, Weibo, Jianshu, Baidu Reward) supports reward (donate). To catch paid reading trends, we added reward feature, supports WeChat Pay, Alipay and Bitcoin. What you need is:
-
-1. Get your WeChat Pay / Alipay / Bitcoin receive money QRcode image(s) and put into `source/images` under {% label primary@theme directory %} or upload it(them) to an image cloud to get the absolute HTTP address(es).
-2. Set needed values in  {% label primary@theme config file %}:
-
-   ```yml next/_config.yml
-   # Reward
-   reward:
-     enable: true
-     comment: Donate comment here
-     wechatpay: /images/wechatpay.jpg # or HTTP address like https://i.loli.net/2017/07/04/595a7e1e266f2.gif
-     alipay: /images/alipay.jpg
-     bitcoin: /images/bitcoin.png
-   ```
-
 ### Mobile Devices Adaptation
 
 {% tabs Mobile-Adaptation %}

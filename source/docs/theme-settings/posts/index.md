@@ -318,36 +318,47 @@ Change the value of `highlight_theme` to choose the highlight style you like, fo
 highlight_theme: night
 ```
 
-#### Post Edit
-NexT supports the edit functionality of your posts.
+#### WeChat Subscribing
 
-{% tabs post_edit %}
-<!-- tab <code>enable</code> -->
-You can enable it by editing values `post_edit.enable` to `true` in {% label primary@theme config file %}.
+Show your WeChat public account QRcode after each article, subscribing blog by simply scanning.
 
-{% code lang:yml hexo/_config.yml %}
-post_edit:
-  enable: false
-{% endcode %}
-<!-- endtab -->
+1. Download your QRcode from WeChat Public Platform, and save it under `source/uploads/` {% label info@site directory %}.
+2. Edit {% label primary@theme config file %} like following:
 
-<!-- tab <code>url</code> -->
-You should create a source repository of your post files. The `url` setting depends on the source project in github.
+  ```yml next/_config.yml
+  wechat_subscriber:
+    enable: true
+    qcode: /uploads/wechat-qcode.jpg
+    description: Welcome to scan the WeChat Public Account QRcode and subscribe my blog!
+  ```
 
-* For site repository
-    * Link for view source: `url: https://github.com/.../tree/master/source/_posts/`
-    * Link for fork & edit: `url: https://github.com/.../edit/master/source/_posts/`
-* For post repository
-    * Link for view source: `url: https://github.com/.../_posts/tree/master/`
-    * Link for fork & edit: `url: https://github.com/.../_posts/edit/master/`
+#### Reward (Donate)
 
-{% code lang:yml hexo/_config.yml %}
-post_edit:
-  url:
-{% endcode %}
-<!-- endtab -->
+More and more platform (WeChat public accounts, Weibo, Jianshu, Baidu Reward) supports reward (donate). To catch paid reading trends, we added reward feature, supports WeChat Pay, Alipay and Bitcoin. What you need is:
 
-{% endtabs %}
+1. Get your WeChat Pay / Alipay / Bitcoin receive money QRcode image(s) and put into `source/images` under {% label primary@theme directory %} or upload it(them) to an image cloud to get the absolute HTTP address(es).
+2. Set needed values in  {% label primary@theme config file %}:
+
+   ```yml next/_config.yml
+   # Reward (Donate)
+   reward_settings:
+     # If true, reward would be displayed in every article by default.
+     # You can show or hide reward in a specific article throuth `reward: true | false` in Front Matter.
+     enable: false
+     animation: false
+     #comment: Donate comment here
+   
+   reward:
+     #wechatpay: /images/wechatpay.png
+     #alipay: /images/alipay.png
+     #bitcoin: /images/bitcoin.png
+   ```
+
+You can also add QRcode of other platforms, e.g.
+```yml next/_config.yml
+paypal: /images/paypal.png
+monero: /images/monero.png
+```
 
 #### Related popular posts (REDOCS)
 
@@ -403,6 +414,37 @@ related_posts:
 <!-- endtab -->
 {% endsubtabs %}
 
+<!-- endtab -->
+
+{% endtabs %}
+
+#### Post Edit
+NexT supports the edit functionality of your posts.
+
+{% tabs post_edit %}
+<!-- tab <code>enable</code> -->
+You can enable it by editing values `post_edit.enable` to `true` in {% label primary@theme config file %}.
+
+{% code lang:yml hexo/_config.yml %}
+post_edit:
+  enable: false
+{% endcode %}
+<!-- endtab -->
+
+<!-- tab <code>url</code> -->
+You should create a source repository of your post files. The `url` setting depends on the source project in github.
+
+* For site repository
+    * Link for view source: `url: https://github.com/.../tree/master/source/_posts/`
+    * Link for fork & edit: `url: https://github.com/.../edit/master/source/_posts/`
+* For post repository
+    * Link for view source: `url: https://github.com/.../_posts/tree/master/`
+    * Link for fork & edit: `url: https://github.com/.../_posts/edit/master/`
+
+{% code lang:yml hexo/_config.yml %}
+post_edit:
+  url:
+{% endcode %}
 <!-- endtab -->
 
 {% endtabs %}
