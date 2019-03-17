@@ -18,6 +18,30 @@ Disqus is a global comment system that improves discussion on websites and conne
       count: true
     ```
 
+### DisqusJS
+
+Render Disqus comment component using Disqus API.
+
+1. Get your Disqus API Key from [Disqus API Application](https://disqus.com/api/applications/).
+2. Go to the settings page of your Disqus Application, enter your domain in Settings -> Domains.
+3. Get your Disqus Shortname from [General Settings - Disqus Admin](https://disqus.com/admin/settings/general/).
+4. Set the value `enable` to `true`, add the obtained Disqus API Key (`apikey`) and Shortname (`shortname`), and edit other configurations in `disqusjs` section in the {% label primary@theme config file %} as following:
+    ```yml next/_config.yml
+    # DisqusJS
+    # Alternative Disqus - Render comment component using Disqus API
+    # Demo: https://suka.js.org/DisqusJS/
+    disqusjs:
+      enable: false
+      # API Endpoint of Disqus API (https://disqus.com/api/)
+      # leave api empty if you are able to connect to Disqus API
+      # otherwise you need a reverse proxy for Disqus API
+      # For example: 
+      # api: https://disqus.skk.moe/disqus/
+      api:
+      apikey: # register new application from https://disqus.com/api/applications/
+      shortname: # See: https://disqus.com/admin/settings/general/
+    ```
+
 ### Facebook Comments and Likes
 
 The [Facebook comments plugin](https://developers.facebook.com/docs/plugins/comments?locale=en_US) lets people comment on content on your site using their Facebook account. People can choose to share their comment activity with their friends (and friends of their friends) on Facebook as well. The comments plugin also includes built-in moderation tools and social relevance ranking.

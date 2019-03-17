@@ -8,6 +8,7 @@ In any time you can extend needed functions by using third-party services suppor
 ### Comment Systems
 
 * [Disqus](/docs/third-party-services/comments-and-widgets/#Disqus)
+* [DisqusJS](/docs/third-party-services/comments-and-widgets/#DisqusJS)
 * [Facebook Comments](/docs/third-party-services/comments-and-widgets/#Facebook-Comments)
 * [VKontakte Comments and Likes](/docs/third-party-services/comments-and-widgets/#VKontakte-Comments-and-Likes)
 * [Gitalk](/docs/third-party-services/comments-and-widgets/#Gitalk)
