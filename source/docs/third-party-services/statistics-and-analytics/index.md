@@ -234,42 +234,26 @@ page_pv_footer: times.
 
 #### LeanCloud (China)
 
-Adding article reading times counting to NexT theme. Documentation how to set the counter up and running safely aviable in {% exturl hexo-leancloud-counter-security https://github.com/theme-next/hexo-leancloud-counter-security%}.
+Adding article reading times counting to NexT theme. Documentation how to set the counter up and running safely aviable in {% exturl hexo-leancloud-counter-security https://theme-next.github.io/hexo-leancloud-counter/ %}.
 
 {% tabs leanCloud-counter %}
 <!-- tab Installation → -->
-Install `hexo-leancloud-counter-security` by run following command in {% label info@site root dir %}:
+Install `hexo-leancloud-counter` by run following command in {% label info@site root dir %}:
 
-    $ npm install hexo-leancloud-counter-security --save
+    $ npm install hexo-leancloud-counter --save
 
 <!-- endtab -->
 
 <!-- tab Hexo Config → -->
-Edit {% label info@site config file %} and add following content:
-{% code lang:yml hexo/_config.yml %}
-leancloud_counter_security:
-  enable_sync: true
-  app_id: <<your app id>>
-  app_key: <<your app key>>
-  username: <<your username>> # Will be asked while deploying if is left blank
-  password: <<your password>> # Recommmended to be left blank. Will be asked while deploying if is left blank
-{% endcode %}
+Follow instructions at {% exturl hexo-leancloud-counter-security https://theme-next.github.io/hexo-leancloud-counter/#configuration %}
 <!-- endtab -->
 
 <!-- tab NexT Config -->
 Edit {% label primary@theme config file %} and fill options under `leancloud_visitors` section.
 {% code lang:yml next/_config.yml %}
 # Show number of visitors to each article.
-# You can visit https://leancloud.cn get AppID and AppKey.
 leancloud_visitors:
-  enable: false
-  app_id: #<app_id>
-  app_key: #<app_key>
-  # Dependencies: https://github.com/theme-next/hexo-leancloud-counter-security
-  # If you don't care about security in lc counter and just want to use it directly
-  # (without hexo-leancloud-counter-security plugin), set the `security` to `false`.
-  security: true
-  betterPerformance: false
+  enable: true
 {% endcode %}
 <!-- endtab -->
 {% endtabs %}
