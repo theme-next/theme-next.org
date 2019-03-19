@@ -334,6 +334,8 @@ theme_config:
       sidebar: slideUpIn
 
   lazyload: true
+  
+  fancybox: true
 
 
   # ============================================================= #
