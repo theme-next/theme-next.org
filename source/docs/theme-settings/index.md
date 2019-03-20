@@ -241,14 +241,14 @@ font:
   # Global font settings used for all elements in <body>.
   global:
     external: true
-    family: Lato
+    family: Monda
     size:
 
   # Font settings for headlines (<h1> to <h6>).
   headings:
     external: true
-    family:
-    size: 30
+    family: Roboto Slab
+    size:
 
   # Font settings for posts.
   # Fallback to `global` font size settings.
@@ -260,13 +260,13 @@ font:
   # Font settings for site title.
   title:
     external: true
-    family:
-    size:
+    family: Lobster Two
+    size: 24
 
   # Font settings for <code> and code blocks.
   codes:
     external: true
-    family:
+    family: PT Mono
 ```
 
 ### Animation Effect
