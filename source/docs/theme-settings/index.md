@@ -98,11 +98,11 @@ You can set `enable` to `true` and add your own GitHub link.
 Next provides useful options for better Search Engine Optimization (SEO).
 
 {% tabs SEO %}
-<!-- tab <code>disable_baidu_tranformation</code> -->
-By default China's search engine Baidu will cache and rewrite your site to provide a webpage snapshot for mobile users. You can disable this by setting the value `disable_baidu_tranformation` to `true` in {% label primary@theme config file %}.
+<!-- tab <code>disable_baidu_transformation</code> -->
+By default China's search engine Baidu will cache and rewrite your site to provide a webpage snapshot for mobile users. You can disable this by setting the value `disable_baidu_transformation` to `true` in {% label primary@theme config file %}.
 
 {% code lang:yml next/_config.yml %}
-disable_baidu_tranformation: false
+disable_baidu_transformation: false
 {% endcode %}
 <!-- endtab -->
 
