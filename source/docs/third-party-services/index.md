@@ -11,11 +11,11 @@ In any time you can extend needed functions by using third-party services suppor
 * [DisqusJS](/docs/third-party-services/comments-and-widgets/#DisqusJS)
 * [Facebook Comments](/docs/third-party-services/comments-and-widgets/#Facebook-Comments)
 * [VKontakte Comments and Likes](/docs/third-party-services/comments-and-widgets/#VKontakte-Comments-and-Likes)
-* [Gitalk](/docs/third-party-services/comments-and-widgets/#Gitalk)
 * [LiveRe](/docs/third-party-services/comments-and-widgets/#LiveRe)
-* [Valine](/docs/third-party-services/comments-and-widgets/#Valine)
 * [Gitment](/docs/third-party-services/comments-and-widgets/#Gitment)
-* [Changyan](/docs/third-party-services/comments-and-widgets/#Changyan)
+* [Gitalk](/docs/third-party-services/comments-and-widgets/#Gitalk)
+* [Valine (China)](/docs/third-party-services/comments-and-widgets/#Valine)
+* [Changyan (China)](/docs/third-party-services/comments-and-widgets/#Changyan)
 * [Widgetpack Rating](/docs/third-party-services/comments-and-widgets/#Widgetpack-Rating)
 
 {% note info %}
@@ -24,10 +24,6 @@ If you want to disable comment in some page/post, just add `comments: false` to 
 
 ### Statistics and Analytics
 
-* [Google Webmaster Tools](/docs/third-party-services/statistics-and-analytics/#Google-Webmaster-Tools)
-* [Bing Webmaster Tools](/docs/third-party-services/statistics-and-analytics/#Bing-Webmaster-Tools)
-* [Yandex Webmaster Tools](/docs/third-party-services/statistics-and-analytics/#Yandex-Webmaster-Tools)
-* [Baidu Webmaster Tools](/docs/third-party-services/statistics-and-analytics/#Baidu-Webmaster-Tools)
 * [Google Analytics](/docs/third-party-services/statistics-and-analytics/#Google-Analytics)
 * [Azure Application Insights](/docs/third-party-services/statistics-and-analytics/#Azure-Application-Insights)
 * [Baidu Analytics (China)](/docs/third-party-services/statistics-and-analytics/#Baidu-Analytics-China)
@@ -35,7 +31,7 @@ If you want to disable comment in some page/post, just add `comments: false` to 
 * [CNZZ Analytics (China)](/docs/third-party-services/statistics-and-analytics/#CNZZ-Analytics-China)
 * [Tencent Mobile Analytics (China)](/docs/third-party-services/statistics-and-analytics/#Tencent-Mobile-Analytics-China)
 * [LeanCloud (China)](/docs/third-party-services/statistics-and-analytics/#LeanCloud-China)
-* [Busuanzi Counting (China)](/docs/third-party-services/statistics-and-analytics/#Busuanzi-Counting-China)
+* [Busuanzi Counting](/docs/third-party-services/statistics-and-analytics/#Busuanzi-Counting-China)
 * [Firebase](/docs/third-party-services/statistics-and-analytics/#Firebase)
 
 ### Content Sharing Services
