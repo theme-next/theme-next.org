@@ -167,15 +167,6 @@ social_icons:
 {% endcode %}
 <!-- endtab -->
 
-<!-- tab <code>exturl</code> -->
-Set the value `exturl` to `true` to [encrypt social links](https://www.base64encode.org) in `social_icons` section in {% label primary@theme config file %}. For example, encoded GitHub link: `GitHub: aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQ= || github`.
-
-{% code lang:yml next/_config.yml %}
-social_icons:
-  exturl: false
-{% endcode %}
-<!-- endtab -->
-
 {% endtabs %}
 
 #### Sidebar Blogrolls

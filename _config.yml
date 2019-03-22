@@ -182,10 +182,10 @@ theme_config:
       Theme Settings:
         default: /theme-settings/ || star
         Footer: /footer/ || sun-o
+        SEO: /seo/ || external-link-square
         Custom Pages: /custom-pages/ || file-o
         Posts: /posts/ || pencil-square-o
         Sidebar: /sidebar/ || bars
-        ExtURL: /exturl/ || external-link-square
 
       Third Party Services:
         default: /third-party-services/ || plug

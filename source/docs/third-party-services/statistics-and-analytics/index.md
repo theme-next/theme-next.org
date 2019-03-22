@@ -148,7 +148,7 @@ page_pv_footer: times.
 
 #### LeanCloud (China)
 
-Adding article reading times counting to NexT theme. Documentation how to set the counter up and running safely aviable in {% exturl hexo-leancloud-counter-security https://github.com/theme-next/hexo-leancloud-counter-security%}.
+Adding article reading times counting to NexT theme. Documentation how to set the counter up and running safely aviable in [hexo-leancloud-counter-security](https://github.com/theme-next/hexo-leancloud-counter-security).
 
 {% tabs leanCloud-counter %}
 <!-- tab Installation → -->
