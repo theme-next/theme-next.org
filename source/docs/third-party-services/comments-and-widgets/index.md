@@ -34,7 +34,6 @@ If `comments.type` is `disqus`, follow the steps below to complete the disqus se
 2. Enter your `Website Name`, which will serve as your Disqus shortname, and select a Category from the drop-down menu. Then click `Create Site` button.
 3. Choose `I don't see my platform listed, install manually with Universal Code`, configure Disqus for your site, and click `Complete Setup` button.
 4. Copy config as following into {% label primary@theme config file %}, add the obtained Disqus shortname (`shortname`), and edit other configurations:
-
     ```yml next/_config.yml
     disqus:
       shortname: your-short-disqus-name
@@ -51,7 +50,6 @@ If `comments.type` is `disqusjs`, follow the steps below to complete the disqusj
 2. Go to the settings page of your Disqus Application, enter your domain in Settings -> Domains.
 3. Get your Disqus Shortname from [General Settings - Disqus Admin](https://disqus.com/admin/settings/general/).
 4. Copy config as following into {% label primary@theme config file %}, add the obtained Disqus API Key (`apikey`) and Shortname (`shortname`), and edit other configurations:
-
     ```yml next/_config.yml
     # DisqusJS
     # Alternative Disqus - Render comment component using Disqus API
@@ -74,7 +72,6 @@ The [Facebook comments plugin](https://developers.facebook.com/docs/plugins/comm
 If `comments.type` is `facebook_comments_plugin`, follow the steps below to complete the facebook_comments_plugin service configuration.
 
 1. Firstly you need to integrate [Facebook SDK](https://developers.facebook.com/apps), by setting following options in {% label primary@theme config file %}:
-
     ```yml next/_config.yml
     # Facebook SDK Support.
     facebook_sdk:
@@ -86,7 +83,6 @@ If `comments.type` is `facebook_comments_plugin`, follow the steps below to comp
     ```
 
 2. Then copy config as following into {% label primary@theme config file %}, and change options:
-
     ```yml next/_config.yml
     # Facebook comments plugin
     # This plugin depends on Facebook SDK.
@@ -135,7 +131,6 @@ If `comments.type` is `livere`, follow the steps below to complete the LiveRe se
 1. Create an account or log into [LiveRe](https://livere.com), click on the `installation` button and select the free city version, then click on the `install now` button.
 2. Copy the `data-uid` field in the installation code to get your LiveRe UID.
 3. Copy config as following into {% label primary@theme config file %}, and add the obtained LiveRe UID to the `livere_uid`:
-
     ```yml next/_config.yml
     # Support for LiveRe comments system.
     # You can get your uid from https://livere.com/insight/myCode (General web site)
@@ -155,7 +150,6 @@ Gitment can only use GitHub accounts for comments.
 1. Click here to sign up for a [new OAuth Application](https://github.com/settings/applications/new). Other content can be filled in at will, but be sure to fill in the correct callback URL (usually the domain name corresponding to the comment page). Then you will get a Client ID and a Client secret, which will be used for subsequent user logins.
 2. Create a repository you want to store Gitment comments in your GitHub.
 3. Copy config as following into {% label primary@theme config file %}, add Client ID (`client_id`) and Client secret (`client_secret`) in step 1, add your Github username (`github_user`) and the created repository name (`github_repo`) in step 2, and edit other configurations:
-
     ```yml next/_config.yml
     # Gitment
     # Introduction: https://imsun.net/posts/gitment-introduction/
@@ -190,7 +184,6 @@ Gitalk can only use GitHub accounts for comments.
 1. Click here to sign up for a [new OAuth Application](https://github.com/settings/applications/new). Other content can be filled in at will, but be sure to fill in the correct callback URL (usually the domain name corresponding to the comment page). Then you will get a Client ID and a Client secret.
 2. Create a repository you want to store Gitalk comments in your GitHub.
 3. Copy config as following into {% label primary@theme config file %}, add Client ID (`client_id`) and Client secret (`client_secret`) in step 1, add your Github username (`github_id` and `admin_user`) and the created repository name (`repo`) in step 2, and edit other configurations:
-
     ```yml next/_config.yml
     # Gitalk
     # Demo: https://gitalk.github.io
@@ -218,7 +211,6 @@ If `comments.type` is `valine`, follow the steps below to complete the Valine se
 2. Go to the application you just created, select `Settings -> Apply Key` in the lower left corner, and you will see your APP ID and APP Key.
     ![Valine](/images/docs/valine-2.png)
 3. Copy config as following into {% label primary@theme config file %}, add the obtained APP ID (`appid`) and APP Key (`appkey`), and edit other configurations:
-
     ```yml next/_config.yml
     # Valine.
     # You can get your appid and appkey from https://leancloud.cn
@@ -244,7 +236,6 @@ If `comments.type` is `changyan`, follow the steps below to complete the Changya
 
 1. Create an account or log into [Changyan](https://changyan.kuaizhan.com/), then add your site to get APP ID and APP KEY.
 2. Copy config as following into {% label primary@theme config file %}, and add the obtained APP ID (`appid`) and APP KEY (`appkey`):
-
     ```yml next/_config.yml
     # changyan
     changyan:
