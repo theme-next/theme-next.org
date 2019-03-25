@@ -81,7 +81,6 @@ If `comments.type` is `facebook_comments_plugin`, follow the steps below to comp
       like_button:  #true
       webmaster:    #true
     ```
-
 2. Then copy config as following into {% label primary@theme config file %}, and change options:
     ```yml next/_config.yml
     # Facebook comments plugin
