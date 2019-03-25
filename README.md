@@ -10,7 +10,7 @@
 * :heart_decoration: [Muse](https://muse.theme-next.org)
 * :six_pointed_star: [Mist](https://mist.theme-next.org)
 * :pisces: [Pisces](https://pisces.theme-next.org)
-* :gemini: [Gemini](https://gemini.theme-next.org)
+* :gemini: [Gemini](https://theme-next.org) (**Default**)
 
 ## Autoinstall Hexo & NexT & NexT Website Source on Localhost
 

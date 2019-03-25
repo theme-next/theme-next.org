@@ -147,19 +147,6 @@ echo "=============================================================="
 
 echo
 echo "=============================================================="
-echo " ${lpurple}Generating content for 'gemini.theme-next.org' subdomain...${norm}"
-echo "=============================================================="
-    hexo config url https://gemini.theme-next.org
-    echo "${yellow}Setted url:${norm} ${lcyan}`hexo config url`${norm}"
-
-    hexo config theme_config.scheme Gemini
-    echo "${yellow}Setted scheme:${norm} ${lcyan}`hexo config theme_config.scheme`${norm}"
-
-    hexo clean && hexo g --silent
-    echo "${lred}`mv -v public schemes/gemini`${norm}"
-
-echo
-echo "=============================================================="
 echo " ${lpurple}Prepairing content for main 'theme-next.org' domain...${norm}"
 echo "=============================================================="
     hexo config url https://theme-next.org
@@ -168,7 +155,7 @@ echo "=============================================================="
     hexo config theme_config.scheme Gemini
     echo "${yellow}Setted scheme:${norm} ${lcyan}`hexo config theme_config.scheme`${norm}"
 
-    cp -R schemes/gemini public
+    hexo clean && hexo g --silent
 
     echo "${yellow}robots.txt:${norm}"
     echo "User-agent: *
