@@ -288,9 +288,13 @@ menu_settings:
 
 #### Configuring Favicon
 
-By default the Hexo site use NexT favicons in `hexo-site/themes/next/source/images/` directory with different size for different device.
+By default the Hexo site use NexT favicons in `hexo-site/themes/next/source/images/` directory with different size for different device. You can replace them with your own favicons.
 
-We recommend that you put custom favicons into `hexo-site/source/` directory. To get or check favicons, you can visit [Favicon Generator](https://realfavicongenerator.net). In this way, you **must remove** `/images` prefix from pathes, and **rename & redefine** the name or format of favicons in `favicon` section in {% label primary@theme config file %}, otherwise Next will rewrite your custom icons in Hexo.
+For example, you can put your favicons in `hexo-site/source/images/` directory. Then you need to rename them and change the settings in `favicon` section in {% label primary@theme config file %}, otherwise icons from Next will rewrite your custom icons in Hexo.
+
+You can also put custom favicons into `hexo-site/source/` directory. In this way, you **must remove** `/images` prefix from paths.
+
+To generate custom favicons, you can visit [Favicon Generator](https://realfavicongenerator.net). 
 
 {% tabs favicon %}
 

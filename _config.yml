@@ -182,10 +182,10 @@ theme_config:
       Theme Settings:
         default: /theme-settings/ || star
         Footer: /footer/ || sun-o
+        SEO: /seo/ || external-link-square
         Custom Pages: /custom-pages/ || file-o
         Posts: /posts/ || pencil-square-o
         Sidebar: /sidebar/ || bars
-        ExtURL: /exturl/ || external-link-square
 
       Third Party Services:
         default: /third-party-services/ || plug
@@ -239,7 +239,7 @@ theme_config:
     Riot: https://riot.im/app/#/room/#NexT:matrix.org || bullhorn
 
     Telegram [Chat]: https://t.me/joinchat/GUNHXA-vZkgSMuimL1VmMw || telegram
-    Telegram [News]: https://t.me/theme_next || telegram
+    Telegram [News]: https://t.me/theme_next || paper-plane
 
   social_icons:
     enable: true
@@ -334,6 +334,8 @@ theme_config:
       sidebar: slideUpIn
 
   lazyload: true
+  
+  fancybox: true
 
 
   # ============================================================= #
@@ -345,7 +347,7 @@ theme_config:
     per_page: true
     engine: mathjax
     mathjax:
-      cdn: //cdn.jsdelivr.net/npm/mathjax@2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+      cdn: //cdn.jsdelivr.net/npm/mathjax@2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 
 
   # ============================================================= #

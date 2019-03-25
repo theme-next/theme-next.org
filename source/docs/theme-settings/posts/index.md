@@ -31,7 +31,7 @@ text_align:
 
 {% tabs page-scroll %}
 <!-- tab <code>scroll_to_more</code> -->
-By default NexT scrolls page automatically to section which is under <!-- more --> mark. You can disable it by editing values `scroll_to_more` to `false` in {% label primary@theme config file %}.
+By default NexT scrolls page automatically to section which is under <!-- more --> mark. You can disable it by editing value `scroll_to_more` to `false` in {% label primary@theme config file %}.
 
 {% code lang:yml next/_config.yml %}
 scroll_to_more: true
@@ -39,7 +39,7 @@ scroll_to_more: true
 <!-- endtab -->
 
 <!-- tab <code>save_scroll</code> -->
-If you want to save page scroll position automatically in cookies, you can enable it by editing values `save_scroll` to `true` in {% label primary@theme config file %}.
+If you want to save page scroll position automatically in cookies, you can enable it by editing value `save_scroll` to `true` in {% label primary@theme config file %}.
 
 {% code lang:yml next/_config.yml %}
 save_scroll: false
@@ -56,7 +56,7 @@ It's a common need to show some part of article in home page and then give a lin
 <!-- tab <code>excerpt_description</code> -->
 If you have added `description` and set its value to your article summary in [front-matter](https://hexo.io/docs/front-matter.html), NexT excerpts `description` as preamble text in homepage by default. Without `description`, the full contents would be the preamble text in homepage.
 
-You can disable it by editing values `excerpt_description` to `false` in {% label primary@theme config file %}.
+You can disable it by editing value `excerpt_description` to `false` in {% label primary@theme config file %}.
 
 {% code lang:yml next/_config.yml %}
 excerpt_description: true
@@ -70,9 +70,9 @@ Use `<!-- more -->` in your article to break your article manually, which is rec
 <!-- endtab -->
 
 <!-- tab {% label warning@auto_excerpt %} -->
-Next would use `150` characters from article header automatically as preamble text by editing values `auto_excerpt.enable` to `true`.
+Next would use `150` characters from article header automatically as preamble text by editing value `auto_excerpt.enable` to `true`.
 
-You can configure it by editing values in `auto_excerpt` section in {% label primary@theme config file %}.
+You can configure it by editing value in `auto_excerpt` section in {% label primary@theme config file %}.
 
 {% code lang:yml next/_config.yml %}
 auto_excerpt:
@@ -93,7 +93,7 @@ NexT supports post created date, post updated date and post categories display.
 
 {% tabs postmeta %}
 <!-- tab <code>item_text</code> -->
-By default NexT shows the description text of post meta. You can disable it by editing values `post_meta.item_text` to `false` in {% label primary@theme config file %}.
+By default NexT shows the description text of post meta. You can disable it by editing value `post_meta.item_text` to `false` in {% label primary@theme config file %}.
 
 {% code lang:yml next/_config.yml %}
 post_meta:
@@ -102,7 +102,7 @@ post_meta:
 <!-- endtab -->
 
 <!-- tab <code>created_at</code> -->
-By default NexT shows the post created date in post meta section and created time in popup. You can disable it by editing values `post_meta.created_at` to `false` in {% label primary@theme config file %}.
+By default NexT shows the post created date in post meta section and created time in popup. You can disable it by editing value `post_meta.created_at` to `false` in {% label primary@theme config file %}.
 
 {% code lang:yml next/_config.yml %}
 post_meta:
@@ -113,18 +113,22 @@ post_meta:
 <!-- tab <code>updated_at</code> -->
 
 {% subtabs postmeta1 %}
-<!-- tab <code>enabled</code> -->
-By default NexT shows the post updated date in post meta section and updated time in popup. You can disable it by editing values `post_meta.updated_at.enabled` to `false` in {% label primary@theme config file %}.
+<!-- tab <code>enable</code> -->
+By default NexT shows the post updated date in post meta section and updated time in popup. You can disable it by editing value `post_meta.updated_at.enable` to `false` in {% label primary@theme config file %}.
 
 {% code lang:yml next/_config.yml %}
 post_meta:
   updated_at:
-    enabled: true
+    enable: true
 {% endcode %}
 <!-- endtab -->
 
 <!-- tab <code>another_day</code> -->
-By default edited time would be show in popup message if updated/edited date is same as created date. You can disable it by editing values `post_meta.updated_at.another_day` to `false` in {% label primary@theme config file %}.
+By default, if updated/edited date is the same as created date, edited time would be displayed in popup message. You can disable it by editing value `post_meta.updated_at.another_day` to `false` in {% label primary@theme config file %}.
+In other words:
+* If true, show updated date label only if `updated date` is different from `created date` (post edited in another day than was created).
+* And if post was edited in same day as created, edited time will show in popup title under created time label.
+* If false show anyway, but if post edited in same day, show only edited time.
 
 {% code lang:yml next/_config.yml %}
 post_meta:
@@ -137,7 +141,7 @@ post_meta:
 <!-- endtab -->
 
 <!-- tab <code>categories</code> -->
-By default NexT shows the post categorie in post meta section. You can disable it by editing values `post_meta.categories` to `false` in {% label primary@theme config file %}.
+By default NexT shows the post categorie in post meta section. You can disable it by editing value `post_meta.categories` to `false` in {% label primary@theme config file %}.
 
 {% code lang:yml next/_config.yml %}
 post_meta:
@@ -164,7 +168,7 @@ Activate this plugin in {% label info@site config file %} by enabled any option:
 
 {% subtabs wordcount1 %}
 <!-- tab <code>symbols</code> -->
-By default NexT shows the number of post words in post meta section. You can disable it by editing values `symbols_count_time.symbols` to `false` in {% label info@site config file %}.
+By default NexT shows the number of post words in post meta section. You can disable it by editing value `symbols_count_time.symbols` to `false` in {% label info@site config file %}.
 {% code lang:yml hexo/_config.yml %}
 symbols_count_time:
   symbols: true
@@ -172,7 +176,7 @@ symbols_count_time:
 <!-- endtab -->
 
 <!-- tab <code>time</code> -->
-By default NexT shows the estimated reading time of post in post meta section. You can disable it by editing values `symbols_count_time.time` to `false` in {% label info@site config file %}.
+By default NexT shows the estimated reading time of post in post meta section. You can disable it by editing value `symbols_count_time.time` to `false` in {% label info@site config file %}.
 {% code lang:yml hexo/_config.yml %}
 symbols_count_time:
   time: true
@@ -180,7 +184,7 @@ symbols_count_time:
 <!-- endtab -->
 
 <!-- tab <code>total_symbols</code> -->
-By default NexT shows the number of all posts words in footer section. You can disable it by editing values `symbols_count_time.total_symbols` to `false` in {% label info@site config file %}.
+By default NexT shows the number of all posts words in footer section. You can disable it by editing value `symbols_count_time.total_symbols` to `false` in {% label info@site config file %}.
 {% code lang:yml hexo/_config.yml %}
 symbols_count_time:
   total_symbols: true
@@ -188,7 +192,7 @@ symbols_count_time:
 <!-- endtab -->
 
 <!-- tab <code>total_time</code> -->
-By default NexT shows the estimated reading time of all posts in footer section. You can disable it by editing values `symbols_count_time.total_time` to `false` in {% label info@site config file %}.
+By default NexT shows the estimated reading time of all posts in footer section. You can disable it by editing value `symbols_count_time.total_time` to `false` in {% label info@site config file %}.
 {% code lang:yml hexo/_config.yml %}
 symbols_count_time:
   total_time: true
@@ -204,7 +208,7 @@ After the plugin enabled, you may adjust options in `symbols_count_time` section
 
 {% subtabs wordcount2 %}
 <!-- tab <code>separated_meta</code> -->
-By default NexT shows the words counts and estimated reading time in a separated line. You can add them into one line by editing values `symbols_count_time.separated_meta` to `false` in {% label primary@theme config file %}.
+By default NexT shows the words counts and estimated reading time in a separated line. You can add them into one line by editing value `symbols_count_time.separated_meta` to `false` in {% label primary@theme config file %}.
 {% code lang:yml hexo/_config.yml %}
 symbols_count_time:
   separated_meta: true
@@ -212,7 +216,7 @@ symbols_count_time:
 <!-- endtab -->
 
 <!-- tab <code>item_text_post</code> -->
-By default NexT shows the text description of the words counts and estimated reading time in post meta section. You can disable it by editing values `symbols_count_time.item_text_post` to `false` in {% label primary@theme config file %}.
+By default NexT shows the text description of the words counts and estimated reading time in post meta section. You can disable it by editing value `symbols_count_time.item_text_post` to `false` in {% label primary@theme config file %}.
 {% code lang:yml hexo/_config.yml %}
 symbols_count_time:
   item_text_post: true
@@ -220,7 +224,7 @@ symbols_count_time:
 <!-- endtab -->
 
 <!-- tab <code>item_text_total</code> -->
-By default NexT doesn't shows the text description of the words counts and estimated reading time in footer section. You can enable it by editing values `symbols_count_time.item_text_total` to `false` in {% label primary@theme config file %}.
+By default NexT doesn't shows the text description of the words counts and estimated reading time in footer section. You can enable it by editing value `symbols_count_time.item_text_total` to `false` in {% label primary@theme config file %}.
 {% code lang:yml hexo/_config.yml %}
 symbols_count_time:
   item_text_total: false
@@ -265,7 +269,7 @@ NexT supports the copy-and-paste functionality of codeblock.
 
 {% subtabs codeblock1 %}
 <!-- tab <code>enable</code> -->
-You can enable it by editing values `copy_button.enable` to `true` in {% label primary@theme config file %}.
+You can enable it by editing value `copy_button.enable` to `true` in {% label primary@theme config file %}.
 
 {% code lang:yml hexo/_config.yml %}
 codeblock:
@@ -274,7 +278,7 @@ codeblock:
 {% endcode %}
 <!-- endtab -->
 <!-- tab <code>show_result</code> -->
-By default NexT doesn't show copy results of the copy-and-paste functionality. You can also enable it by editing values `copy_button.show_result` to `true` in {% label primary@theme config file %}.
+By default NexT doesn't show copy results of the copy-and-paste functionality. You can also enable it by editing value `copy_button.show_result` to `true` in {% label primary@theme config file %}.
 
 {% code lang:yml hexo/_config.yml %}
 codeblock:
@@ -366,7 +370,7 @@ NexT supports the related posts functionality according to [hexo-related-popular
 
 {% tabs related_posts %}
 <!-- tab <code>enable</code> -->
-You can enable it by editing values `related_posts.enable` to `true` in {% label primary@theme config file %}.
+You can enable it by editing value `related_posts.enable` to `true` in {% label primary@theme config file %}.
 
 {% code lang:yml hexo/_config.yml %}
 related_posts:
@@ -375,7 +379,7 @@ related_posts:
 <!-- endtab -->
 
 <!-- tab <code>title</code> -->
-By default NexT uses 'Related Posts' as title by default. You can configure it by editing values in `related_posts.title` section in {% label primary@theme config file %}.
+By default NexT uses 'Related Posts' as title by default. You can configure it by editing value in `related_posts.title` section in {% label primary@theme config file %}.
 
 {% code lang:yml hexo/_config.yml %}
 related_posts:
@@ -384,7 +388,7 @@ related_posts:
 <!-- endtab -->
 
 <!-- tab <code>display_in_home</code> -->
-By default NexT doesn't show the related posts in homepage. You can enable it by editing values `related_posts.display_in_home` to `true` in {% label primary@theme config file %}.
+By default NexT doesn't show the related posts in homepage. You can enable it by editing value `related_posts.display_in_home` to `true` in {% label primary@theme config file %}.
 
 {% code lang:yml hexo/_config.yml %}
 related_posts:
@@ -423,7 +427,7 @@ NexT supports the edit functionality of your posts.
 
 {% tabs post_edit %}
 <!-- tab <code>enable</code> -->
-You can enable it by editing values `post_edit.enable` to `true` in {% label primary@theme config file %}.
+You can enable it by editing value `post_edit.enable` to `true` in {% label primary@theme config file %}.
 
 {% code lang:yml hexo/_config.yml %}
 post_edit:

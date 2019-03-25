@@ -65,7 +65,7 @@ vendors:
 - Fixed Disqus URL. Again. A little bit hard. ([#506](https://github.com/theme-next/hexo-theme-next/pull/506))
 - Fixed Disqus bug if in permalink exists symbol «'» . ([#504](https://github.com/theme-next/hexo-theme-next/pull/504))
 - Fixed W3 validator errors. ([#501](https://github.com/theme-next/hexo-theme-next/pull/501))
-- Added `disable_baidu_tranformation` option. ([#500](https://github.com/theme-next/hexo-theme-next/pull/500))
+- Added `disable_baidu_transformation` option. ([#500](https://github.com/theme-next/hexo-theme-next/pull/500))
 - Fixed sidebar under Pisces / Gemini schemes for IE 11. ([#498](https://github.com/theme-next/hexo-theme-next/pull/498))
 - Fix submenu when path name is same ([#497](https://github.com/theme-next/hexo-theme-next/pull/497))
 - Menu external url ([#476](https://github.com/theme-next/hexo-theme-next/pull/476))
