@@ -42,6 +42,7 @@ i18n_dir: :lang
 
 skip_render:
 - 'robots.txt'
+- 'db63edccf5e98320563c122dcef8ad2d.html'
 
 new_post_name: :title.md
 default_layout: post
@@ -209,7 +210,7 @@ theme_config:
         Group Pictures: /group-pictures/ || file-image-o
         PDF: /pdf/ || file-pdf-o
 
-      Advanced Settings: /advanced-settings/ || cogs
+      Advanced Settings: /advanced-settings.html || cogs
       FAQ's: /faqs/ || life-ring
       Troubleshooting: /troubleshooting/ || bug
     archives: /archives/ || archive
