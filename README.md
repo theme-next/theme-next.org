@@ -2,6 +2,7 @@
 
 <p align="center">
   <a href="https://app.netlify.com/sites/theme-next/deploys"><img src="https://api.netlify.com/api/v1/badges/1d59e9ba-019f-4d9e-ac93-c73df98957c1/deploy-status" title="Build Status [Multi-Schemes]"></a>
+  <a title="Crowdin" target="_blank" href="https://crowdin.com/project/theme-next-org"><img src="https://d322cqt584bo4o.cloudfront.net/theme-next-org/localized.svg"></a>
 </p>
 
 ## Schemes
