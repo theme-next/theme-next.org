@@ -161,6 +161,11 @@ theme_config:
     sidebar: true
     post: false
 
+  github_banner:
+    enable: true
+    permalink: https://github.com/theme-next/hexo-theme-next
+    title: Fork NexT on GitHub
+
 
   # ============================================================= #
   # ======================= Menu Settings ======================= #
@@ -245,8 +250,6 @@ theme_config:
     enable: true
     icons_only: true
     transition: true
-
-  github_banner: https://github.com/theme-next/hexo-theme-next || Fork NexT on GitHub
 
   toc:
     enable: true
