@@ -34,11 +34,11 @@ If `comments.type` is `disqus`, follow the steps below to complete the disqus se
 2. Enter your `Website Name`, which will serve as your Disqus shortname, and select a Category from the drop-down menu. Then click `Create Site` button.
 3. Choose `I don't see my platform listed, install manually with Universal Code`, configure Disqus for your site, and click `Complete Setup` button.
 4. Copy config as following into {% label primary@theme config file %}, add the obtained Disqus shortname (`shortname`), and edit other configurations:
-    ```yml next/_config.yml
-    disqus:
-      shortname: your-short-disqus-name
-      lazyload: false
-    ```
+   ```yml next/_config.yml
+   disqus:
+     shortname: your-short-disqus-name
+     lazyload: false
+   ```
 
 #### DisqusJS
 
@@ -50,20 +50,20 @@ If `comments.type` is `disqusjs`, follow the steps below to complete the disqusj
 2. Go to the settings page of your Disqus Application, enter your domain in Settings -> Domains.
 3. Get your Disqus Shortname from [General Settings - Disqus Admin](https://disqus.com/admin/settings/general/).
 4. Copy config as following into {% label primary@theme config file %}, add the obtained Disqus API Key (`apikey`) and Shortname (`shortname`), and edit other configurations:
-    ```yml next/_config.yml
-    # DisqusJS
-    # Alternative Disqus - Render comment component using Disqus API
-    # Demo: https://suka.js.org/DisqusJS/
-    disqusjs:
-      # API Endpoint of Disqus API (https://disqus.com/api/)
-      # leave api empty if you are able to connect to Disqus API
-      # otherwise you need a reverse proxy for Disqus API
-      # For example: 
-      # api: https://disqus.skk.moe/disqus/
-      api:
-      apikey: # register new application from https://disqus.com/api/applications/
-      shortname: # See: https://disqus.com/admin/settings/general/
-    ```
+   ```yml next/_config.yml
+   # DisqusJS
+   # Alternative Disqus - Render comment component using Disqus API
+   # Demo: https://suka.js.org/DisqusJS/
+   disqusjs:
+     # API Endpoint of Disqus API (https://disqus.com/api/)
+     # leave api empty if you are able to connect to Disqus API
+     # otherwise you need a reverse proxy for Disqus API
+     # For example: 
+     # api: https://disqus.skk.moe/disqus/
+     api:
+     apikey: # register new application from https://disqus.com/api/applications/
+     shortname: # See: https://disqus.com/admin/settings/general/
+   ```
 
 #### Facebook Comments
 
@@ -72,25 +72,25 @@ The [Facebook comments plugin](https://developers.facebook.com/docs/plugins/comm
 If `comments.type` is `facebook_comments_plugin`, follow the steps below to complete the facebook_comments_plugin service configuration.
 
 1. Firstly you need to integrate [Facebook SDK](https://developers.facebook.com/apps), by setting following options in {% label primary@theme config file %}:
-    ```yml next/_config.yml
-    # Facebook SDK Support.
-    facebook_sdk:
-      enable:       false
-      app_id:       #<app_id>
-      fb_admin:     #<user_id>
-      like_button:  #true
-      webmaster:    #true
-    ```
+   ```yml next/_config.yml
+   # Facebook SDK Support.
+   facebook_sdk:
+     enable:       false
+     app_id:       #<app_id>
+     fb_admin:     #<user_id>
+     like_button:  #true
+     webmaster:    #true
+   ```
 2. Then copy config as following into {% label primary@theme config file %}, and change options:
-    ```yml next/_config.yml
-    # Facebook comments plugin
-    # This plugin depends on Facebook SDK.
-    # If facebook_sdk.enable is false, Facebook comments plugin is unavailable.
-    facebook_comments_plugin:
-      num_of_posts: 10    # min posts num is 1
-      width:        100%  # default width is 550px
-      scheme:       light # default scheme is light (light or dark)
-    ```
+   ```yml next/_config.yml
+   # Facebook comments plugin
+   # This plugin depends on Facebook SDK.
+   # If facebook_sdk.enable is false, Facebook comments plugin is unavailable.
+   facebook_comments_plugin:
+     num_of_posts: 10    # min posts num is 1
+     width:        100%  # default width is 550px
+     scheme:       light # default scheme is light (light or dark)
+   ```
 
 #### VKontakte Comments
 
@@ -130,11 +130,11 @@ If `comments.type` is `livere`, follow the steps below to complete the LiveRe se
 1. Create an account or log into [LiveRe](https://livere.com), click on the `installation` button and select the free city version, then click on the `install now` button.
 2. Copy the `data-uid` field in the installation code to get your LiveRe UID.
 3. Copy config as following into {% label primary@theme config file %}, and add the obtained LiveRe UID to the `livere_uid`:
-    ```yml next/_config.yml
-    # Support for LiveRe comments system.
-    # You can get your uid from https://livere.com/insight/myCode (General web site)
-    livere_uid: your_uid
-    ```
+   ```yml next/_config.yml
+   # Support for LiveRe comments system.
+   # You can get your uid from https://livere.com/insight/myCode (General web site)
+   livere_uid: your_uid
+   ```
 
 #### Gitment
 
@@ -149,21 +149,21 @@ Gitment can only use GitHub accounts for comments.
 1. Click here to sign up for a [new OAuth Application](https://github.com/settings/applications/new). Other content can be filled in at will, but be sure to fill in the correct callback URL (usually the domain name corresponding to the comment page). Then you will get a Client ID and a Client secret, which will be used for subsequent user logins.
 2. Create a repository you want to store Gitment comments in your GitHub.
 3. Copy config as following into {% label primary@theme config file %}, add Client ID (`client_id`) and Client secret (`client_secret`) in step 1, add your Github username (`github_user`) and the created repository name (`github_repo`) in step 2, and edit other configurations:
-    ```yml next/_config.yml
-    # Gitment
-    # Introduction: https://imsun.net/posts/gitment-introduction/
-    gitment:
-      mint: true # RECOMMEND, A mint on Gitment, to support count, language and proxy_gateway
-      lazy: false # Comments lazy loading with a button
-      cleanly: false # Hide 'Powered by ...' on footer, and more
-      language: # Force language, or auto switch by theme
-      github_user: # MUST HAVE, Your Github Username
-      github_repo: # MUST HAVE, The name of the repo you use to store Gitment comments
-      client_id: # MUST HAVE, Github client id for the Gitment
-      client_secret: # EITHER this or proxy_gateway, Github access secret token for the Gitment
-      proxy_gateway: # Address of api proxy, See: https://github.com/aimingoo/intersect
-      redirect_protocol: # Protocol of redirect_uri with force_redirect_protocol when mint enabled
-    ```
+   ```yml next/_config.yml
+   # Gitment
+   # Introduction: https://imsun.net/posts/gitment-introduction/
+   gitment:
+     mint: true # RECOMMEND, A mint on Gitment, to support count, language and proxy_gateway
+     lazy: false # Comments lazy loading with a button
+     cleanly: false # Hide 'Powered by ...' on footer, and more
+     language: # Force language, or auto switch by theme
+     github_user: # MUST HAVE, Your Github Username
+     github_repo: # MUST HAVE, The name of the repo you use to store Gitment comments
+     client_id: # MUST HAVE, Github client id for the Gitment
+     client_secret: # EITHER this or proxy_gateway, Github access secret token for the Gitment
+     proxy_gateway: # Address of api proxy, See: https://github.com/aimingoo/intersect
+     redirect_protocol: # Protocol of redirect_uri with force_redirect_protocol when mint enabled
+   ```
 4. After the post is published, you will need to visit this page, log in with your GitHub account and click the `Initialize button`, then other users can post comments on this page.
 
 {% note warning %}
@@ -183,21 +183,21 @@ Gitalk can only use GitHub accounts for comments.
 1. Click here to sign up for a [new OAuth Application](https://github.com/settings/applications/new). Other content can be filled in at will, but be sure to fill in the correct callback URL (usually the domain name corresponding to the comment page). Then you will get a Client ID and a Client secret.
 2. Create a repository you want to store Gitalk comments in your GitHub.
 3. Copy config as following into {% label primary@theme config file %}, add Client ID (`client_id`) and Client secret (`client_secret`) in step 1, add your Github username (`github_id` and `admin_user`) and the created repository name (`repo`) in step 2, and edit other configurations:
-    ```yml next/_config.yml
-    # Gitalk
-    # Demo: https://gitalk.github.io
-    gitalk:
-      github_id:  # Github repo owner
-      repo:  # Repository name to store issues
-      client_id:  # Github Application Client ID
-      client_secret:  # Github Application Client Secret
-      admin_user:  # GitHub repo owner and collaborators, only these guys can initialize github issues
-      distraction_free_mode: true # Facebook-like distraction free mode
-      # Gitalk's display language depends on user's browser or system environment
-      # If you want everyone visiting your site to see a uniform language, you can set a force language value
-      # Available value: en, es-ES, fr, ru, zh-CN, zh-TW
-      language:
-    ```
+   ```yml next/_config.yml
+   # Gitalk
+   # Demo: https://gitalk.github.io
+   gitalk:
+     github_id:  # Github repo owner
+     repo:  # Repository name to store issues
+     client_id:  # Github Application Client ID
+     client_secret:  # Github Application Client Secret
+     admin_user:  # GitHub repo owner and collaborators, only these guys can initialize github issues
+     distraction_free_mode: true # Facebook-like distraction free mode
+     # Gitalk's display language depends on user's browser or system environment
+     # If you want everyone visiting your site to see a uniform language, you can set a force language value
+     # Available value: en, es-ES, fr, ru, zh-CN, zh-TW
+     language:
+   ```
 
 #### Valine (China)
 
@@ -210,22 +210,22 @@ If `comments.type` is `valine`, follow the steps below to complete the Valine se
 2. Go to the application you just created, select `Settings -> Apply Key` in the lower left corner, and you will see your APP ID and APP Key.
     ![Valine](/images/docs/valine-2.png)
 3. Copy config as following into {% label primary@theme config file %}, add the obtained APP ID (`appid`) and APP Key (`appkey`), and edit other configurations:
-    ```yml next/_config.yml
-    # Valine.
-    # You can get your appid and appkey from https://leancloud.cn
-    # more info please open https://valine.js.org
-    # When enable, leancloud_visitors is recommended to be closed for the re-initialization problem within different leancloud adk version.
-    valine:
-      appid:  # your leancloud application appid
-      appkey:  # your leancloud application appkey
-      notify: false # mail notifier , https://github.com/xCss/Valine/wiki
-      verify: false # Verification code
-      placeholder: Just go go # comment box placeholder
-      avatar: mm # gravatar style
-      guest_info: nick,mail,link # custom comment header
-      pageSize: 10 # pagination size
-      visitor: false # leancloud-counter-security is not supported for now. When visitor is set to be true, appid and appkey are recommended to be the same as leancloud_visitors' for counter compatibility. Article reading statistic https://valine.js.org/visitor.html
-    ```
+   ```yml next/_config.yml
+   # Valine.
+   # You can get your appid and appkey from https://leancloud.cn
+   # more info please open https://valine.js.org
+   # When enable, leancloud_visitors is recommended to be closed for the re-initialization problem within different leancloud adk version.
+   valine:
+     appid:  # your leancloud application appid
+     appkey:  # your leancloud application appkey
+     notify: false # mail notifier , https://github.com/xCss/Valine/wiki
+     verify: false # Verification code
+     placeholder: Just go go # comment box placeholder
+     avatar: mm # gravatar style
+     guest_info: nick,mail,link # custom comment header
+     pageSize: 10 # pagination size
+     visitor: false # leancloud-counter-security is not supported for now. When visitor is set to be true, appid and appkey are recommended to be the same as leancloud_visitors' for counter compatibility. Article reading statistic https://valine.js.org/visitor.html
+   ```
 
 #### Changyan (China)
 
@@ -235,12 +235,12 @@ If `comments.type` is `changyan`, follow the steps below to complete the Changya
 
 1. Create an account or log into [Changyan](https://changyan.kuaizhan.com/), then add your site to get APP ID and APP KEY.
 2. Copy config as following into {% label primary@theme config file %}, and add the obtained APP ID (`appid`) and APP KEY (`appkey`):
-    ```yml next/_config.yml
-    # changyan
-    changyan:
-      appid:
-      appkey:
-    ```
+   ```yml next/_config.yml
+   # changyan
+   changyan:
+     appid:
+     appkey:
+   ```
 
 {% note warning %}
 Please note that you should fill in the ICP record number of your website in time. If not, or the record information is not correct, the comment service will be stopped after 13 days. [Useful link](http://changyan.kuaizhan.com/help/o-beian.html)
