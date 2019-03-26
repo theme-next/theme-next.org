@@ -42,7 +42,6 @@ i18n_dir: :lang
 
 skip_render:
 - 'robots.txt'
-- 'db63edccf5e98320563c122dcef8ad2d.html'
 
 new_post_name: :title.md
 default_layout: post
