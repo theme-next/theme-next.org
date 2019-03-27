@@ -199,9 +199,9 @@ cheers: false
 
 {% tabs custom-404-page %}
 <!-- tab Adding New Page → -->
-In your terminal emulator, change to Hexo site dir. Create a new folder called `404`, then create a new page in it:
+In your terminal emulator, change to the `source` folder of Hexo site dir. Create a new folder called `404`, then create a new page in it:
 
-    $ cd your-hexo-site
+    $ cd your-hexo-site/source
     $ mkdir 404
     $ touch 404/index.md
 
