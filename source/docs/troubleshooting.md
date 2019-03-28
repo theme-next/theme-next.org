@@ -7,7 +7,7 @@ description: NexT User Docs – Troubleshooting
 When you edit any YAML configs, always need to keep up indents.
 Currently, in all Hexo and NexT configuration files parameters uses **2 spaces indents** from parent option.
 
-For example, we want to change NexT scheme from standart `Muse` to `Gemini` and want to use [Data Files](/docs/getting-started/data-files/) feature with [Hexo way](/docs/getting-started/data-files/#option-1) option.
+For example, we want to change NexT scheme from standart `Muse` to `Gemini` and want to use [Data Files](/docs/getting-started/data-files) feature with [Hexo way](/docs/getting-started/data-files#option-1) option.
 
 {% tabs keep-up-indentation %}
 <!-- tab NexT Config → -->
@@ -65,7 +65,7 @@ When backtick code block(s) exists inside other tags (like `blockquote`, `note`,
 
 {% tabs backtick-code-block %}
 <!-- tab {% label success@Tagged Code Block %} -->
-Instead of [Backtick Code Block](https://hexo.io/docs/tag-plugins.html#Backtick-Code-Block) you also can use tagged [Code Block](https://hexo.io/docs/tag-plugins.html#Code-Block).
+Instead of [Backtick Code Block](https://hexo.io/docs/tag-plugins#Backtick-Code-Block) you also can use tagged [Code Block](https://hexo.io/docs/tag-plugins#Code-Block).
 But in rare cases standard code block can obtain errors inside other tags.
 <!-- endtab -->
 
