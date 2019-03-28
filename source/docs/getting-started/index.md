@@ -6,10 +6,10 @@ description: NexT User Docs – Starting to Use
 #categories: English
 #lang: en
 ---
-[Hexo](https://hexo.io) is a fast and powerful static blog generating framework, it's based on [Node.js](https://nodejs.org). By using Hexo you can write articles easily with Markdown, and besides the grammer of Markdown, you can also use [tag plugins](https://hexo.io/docs/tag-plugins.html) provided by Hexo to insert special formated content simply. In this page we assume you have installed Hexo and created a site with it.
+[Hexo](https://hexo.io) is a fast and powerful static blog generating framework, it's based on [Node.js](https://nodejs.org). By using Hexo you can write articles easily with Markdown, and besides the grammer of Markdown, you can also use [tag plugins](https://hexo.io/docs/tag-plugins) provided by Hexo to insert special formated content simply. In this page we assume you have installed Hexo and created a site with it.
 
 {% note info %}
-You can visit [Hexo Docs](https://hexo.io/docs/index.html) to see how to install Hexo.
+You can visit [Hexo Docs](https://hexo.io/docs/) to see how to install Hexo.
 {% endnote %}
 
 ### Documentation Variables
@@ -72,11 +72,11 @@ $ git clone https://github.com/theme-next/hexo-theme-next themes/next
 {% endtabs %}
 
 {% note primary %}
-You also can read [detailed installation instructions](/docs/getting-started/installation/) if you want any other installation variant.
+You also can read [detailed installation instructions](/docs/getting-started/installation) if you want any other installation variant.
 {% endnote %}
 
 {% note warning %}
-If you still use NexT version 5, you can read [instructions for update from v5 to v6](/docs/getting-started/update-from-v5/).
+If you still use NexT version 5, you can read [instructions for update from v5 to v6](/docs/getting-started/update-from-v5).
 {% endnote %}
 
 #### Enabling NexT
@@ -444,4 +444,4 @@ Edit {% label info@site config file %} and set the value of `description` to you
 description:
 ```
 
-After that we can [configure deployment](/docs/getting-started/deployment/).
+After that we can [configure deployment](/docs/getting-started/deployment).

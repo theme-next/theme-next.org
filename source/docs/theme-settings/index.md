@@ -17,7 +17,7 @@ cache:
 
 ### Custom Style Support
 
-Like [Next Data files](/docs/getting-started/data-files/), you can put all your custom styles into one place (`hexo/source/_data`).
+Like [Next Data files](/docs/getting-started/data-files), you can put all your custom styles into one place (`hexo/source/_data`).
 
 - `head`: It's custom swig styles placed in `layout/_custom/head.swig`.
 - `header`: It's custom swig styles placed in `layout/_custom/header.swig`.

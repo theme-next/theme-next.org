@@ -37,5 +37,5 @@ See [adding plugins][plugins] section.
 [hexo-symbols-count-time]: https://github.com/theme-next/hexo-symbols-count-time
 [language filter]:         https://github.com/willin/hexo-wordcount/issues/7
 [v6.0.0]:                  https://github.com/theme-next/hexo-theme-next/releases/tag/v6.0.0
-[update-from-v5-to-v6]:    /docs/getting-started/update-from-v5/
+[update-from-v5-to-v6]:    /docs/getting-started/update-from-v5
 [plugins]:                 /docs/getting-started/#Adding-Plugins
