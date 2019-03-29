@@ -31,19 +31,9 @@ ID = "Theme-Next"
   status = 200
   force = true
 
-# ================ #
-#      Gemini      #
-# ================ #
-
-[[redirects]]
-  from = "https://gemini.theme-next.org/*"
-  to = "https://theme-next.org/schemes/gemini/:splat"
-  status = 200
-  force = true
-
 
 # ================ #
-# Default (Gemini) #
+# Gemini (Default) #
 # ================ #
 [[redirects]]
   from = "https://theme-next.netlify.com/*"

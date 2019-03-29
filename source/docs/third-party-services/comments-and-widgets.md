@@ -125,35 +125,6 @@ vkontakte_api:
 <!-- endtab -->
 {% endtabs %}
 
-### Gitalk
-
-Gitalk is a modern comment component based on Github Issue and Preact.
-
-{% note info %}
-Gitalk can only use GitHub accounts for comments.
-{% endnote %}
-
-1. Click here to sign up for a [new OAuth Application](https://github.com/settings/applications/new). Other content can be filled in at will, but be sure to fill in the correct callback URL (usually the domain name corresponding to the comment page). Then you will get a Client ID and a Client secret.
-2. Create a repository you want to store Gitalk comments in your GitHub.
-3. Set the value `enable` to `true`, add Client ID (`client_id`) and Client secret (`client_secret`) in step 1, add your Github username (`github_id` and `admin_user`) and the created repository name (`repo`) in step 2, and edit other configurations in `gitalk` section in the {% label primary@theme config file %} as following:
-
-    ```yml next/_config.yml
-    # Gitalk
-    # Demo: https://gitalk.github.io
-    gitalk:
-      enable: false
-      github_id:  # Github repo owner
-      repo:  # Repository name to store issues
-      client_id:  # Github Application Client ID
-      client_secret:  # Github Application Client Secret
-      admin_user:  # GitHub repo owner and collaborators, only these guys can initialize github issues
-      distraction_free_mode: true # Facebook-like distraction free mode
-      # Gitalk's display language depends on user's browser or system environment
-      # If you want everyone visiting your site to see a uniform language, you can set a force language value
-      # Available value: en, es-ES, fr, ru, zh-CN, zh-TW
-      language:
-    ```
-
 ### LiveRe
 
 LiveRe is a content platform based on social networking site reviews to help users communicate freely.
@@ -166,33 +137,6 @@ LiveRe is a content platform based on social networking site reviews to help use
     # Support for LiveRe comments system.
     # You can get your uid from https://livere.com/insight/myCode (General web site)
     livere_uid: your_uid
-    ```
-
-### Valine
-
-Valine is a fast, simple & efficient Leancloud based no back end comment system.
-
-1. Create an account or log into [LeanCloud](https://leancloud.cn/dashboard/login.html#/signin), and then click on the bottom left corner to [create the application](https://leancloud.cn/dashboard/applist.html#/newapp) in [dashboard](https://leancloud.cn/dashboard/applist.html#/apps).
-    ![Valine](/images/docs/valine-1.png)
-2. Go to the application you just created, select `Settings -> Apply Key` in the lower left corner, and you will see your APP ID and APP Key.
-    ![Valine](/images/docs/valine-2.png)
-3. Set the value `enable` to `true`, add the obtained APP ID (`appid`) and APP Key (`appkey`), and edit other configurations in `valine` section in the {% label primary@theme config file %} as following:
-
-    ```yml next/_config.yml
-    # Valine.
-    # You can get your appid and appkey from https://leancloud.cn
-    # more info please open https://valine.js.org
-    valine:
-      enable: false # When enable is set to be true, leancloud_visitors is recommended to be closed for the re-initialization problem within different leancloud adk version.
-      appid:  # your leancloud application appid
-      appkey:  # your leancloud application appkey
-      notify: false # mail notifier , https://github.com/xCss/Valine/wiki
-      verify: false # Verification code
-      placeholder: Just go go # comment box placeholder
-      avatar: mm # gravatar style
-      guest_info: nick,mail,link # custom comment header
-      pageSize: 10 # pagination size
-      visitor: false # leancloud-counter-security is not supported for now. When visitor is set to be true, appid and appkey are recommended to be the same as leancloud_visitors' for counter compatibility. Article reading statistic https://valine.js.org/visitor.html
     ```
 
 ### Gitment
@@ -230,7 +174,63 @@ Gitment can only use GitHub accounts for comments.
 Please note that the authorized permission of Gitment will obtain the read and write access to all your public repositories and maybe send github keys to the 3rd-party imsun's proxy server. **If you concern about the security, we strongly deprecated to use gitment**. [Useful link](https://github.com/theme-next/hexo-theme-next/issues/35)
 {% endnote %}
 
-### Changyan
+### Gitalk
+
+Gitalk is a modern comment component based on Github Issue and Preact.
+
+{% note info %}
+Gitalk can only use GitHub accounts for comments.
+{% endnote %}
+
+1. Click here to sign up for a [new OAuth Application](https://github.com/settings/applications/new). Other content can be filled in at will, but be sure to fill in the correct callback URL (usually the domain name corresponding to the comment page). Then you will get a Client ID and a Client secret.
+2. Create a repository you want to store Gitalk comments in your GitHub.
+3. Set the value `enable` to `true`, add Client ID (`client_id`) and Client secret (`client_secret`) in step 1, add your Github username (`github_id` and `admin_user`) and the created repository name (`repo`) in step 2, and edit other configurations in `gitalk` section in the {% label primary@theme config file %} as following:
+
+    ```yml next/_config.yml
+    # Gitalk
+    # Demo: https://gitalk.github.io
+    gitalk:
+      enable: false
+      github_id:  # Github repo owner
+      repo:  # Repository name to store issues
+      client_id:  # Github Application Client ID
+      client_secret:  # Github Application Client Secret
+      admin_user:  # GitHub repo owner and collaborators, only these guys can initialize github issues
+      distraction_free_mode: true # Facebook-like distraction free mode
+      # Gitalk's display language depends on user's browser or system environment
+      # If you want everyone visiting your site to see a uniform language, you can set a force language value
+      # Available value: en, es-ES, fr, ru, zh-CN, zh-TW
+      language:
+    ```
+
+### Valine (China)
+
+Valine is a fast, simple & efficient Leancloud based no back end comment system.
+
+1. Create an account or log into [LeanCloud](https://leancloud.cn/dashboard/login.html#/signin), and then click on the bottom left corner to [create the application](https://leancloud.cn/dashboard/applist.html#/newapp) in [dashboard](https://leancloud.cn/dashboard/applist.html#/apps).
+    ![Valine](/images/docs/valine-1.png)
+2. Go to the application you just created, select `Settings -> Apply Key` in the lower left corner, and you will see your APP ID and APP Key.
+    ![Valine](/images/docs/valine-2.png)
+3. Set the value `enable` to `true`, add the obtained APP ID (`appid`) and APP Key (`appkey`), and edit other configurations in `valine` section in the {% label primary@theme config file %} as following:
+
+    ```yml next/_config.yml
+    # Valine.
+    # You can get your appid and appkey from https://leancloud.cn
+    # more info please open https://valine.js.org
+    valine:
+      enable: false # When enable is set to be true, leancloud_visitors is recommended to be closed for the re-initialization problem within different leancloud adk version.
+      appid:  # your leancloud application appid
+      appkey:  # your leancloud application appkey
+      notify: false # mail notifier , https://github.com/xCss/Valine/wiki
+      verify: false # Verification code
+      placeholder: Just go go # comment box placeholder
+      avatar: mm # gravatar style
+      guest_info: nick,mail,link # custom comment header
+      pageSize: 10 # pagination size
+      visitor: false # leancloud-counter-security is not supported for now. When visitor is set to be true, appid and appkey are recommended to be the same as leancloud_visitors' for counter compatibility. Article reading statistic https://valine.js.org/visitor.html
+    ```
+
+### Changyan (China)
 
 Changyan is the industry's leading social commenting system, supporting both PC and mobile access methods, providing a new way of commenting on websites. Changyan has a variety of common account login, triple filtering mechanism, real-time data statistics, fast data export, comprehensive support for mobile and other leading functions. It fully satisfies the needs of major websites for user login, comment, sharing, and review.
 

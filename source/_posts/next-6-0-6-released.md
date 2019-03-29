@@ -84,4 +84,4 @@ Since more and more contributors joined to NexT, version 6.0.6 got more improvem
 [theme-next-pangu]:                https://github.com/theme-next/theme-next-pangu
 [theme-next-bookmark]:             https://github.com/theme-next/theme-next-bookmark
 [theme-next-reading-progress]:     https://github.com/theme-next/theme-next-reading-progress
-[katex-usage]:                     /docs/third-party-services/math-equations/#render-engines-2
+[katex-usage]:                     /docs/third-party-services/math-equations#render-engines-2

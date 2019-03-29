@@ -86,6 +86,7 @@ echo "=============================================================="
 echo "${yellow}NexT:${norm} ${lcyan}`git -C themes/next pull || git clone https://github.com/theme-next/hexo-theme-next themes/next`${norm}"
 
 echo "${yellow}jquery-lazyload:${norm} ${lcyan}`git -C themes/next/source/lib/jquery_lazyload pull || git clone https://github.com/theme-next/theme-next-jquery-lazyload themes/next/source/lib/jquery_lazyload`${norm}"
+echo "${yellow}fancybox:${norm} ${lcyan}`git -C themes/next/source/lib/fancybox pull || git clone https://github.com/theme-next/theme-next-fancybox3 themes/next/source/lib/fancybox`${norm}"
 
 echo
 echo "=============================================================="
@@ -146,19 +147,6 @@ echo "=============================================================="
 
 echo
 echo "=============================================================="
-echo " ${lpurple}Generating content for 'gemini.theme-next.org' subdomain...${norm}"
-echo "=============================================================="
-    hexo config url https://gemini.theme-next.org
-    echo "${yellow}Setted url:${norm} ${lcyan}`hexo config url`${norm}"
-
-    hexo config theme_config.scheme Gemini
-    echo "${yellow}Setted scheme:${norm} ${lcyan}`hexo config theme_config.scheme`${norm}"
-
-    hexo clean && hexo g --silent
-    echo "${lred}`mv -v public schemes/gemini`${norm}"
-
-echo
-echo "=============================================================="
 echo " ${lpurple}Prepairing content for main 'theme-next.org' domain...${norm}"
 echo "=============================================================="
     hexo config url https://theme-next.org
@@ -167,7 +155,7 @@ echo "=============================================================="
     hexo config theme_config.scheme Gemini
     echo "${yellow}Setted scheme:${norm} ${lcyan}`hexo config theme_config.scheme`${norm}"
 
-    cp -R schemes/gemini public
+    hexo clean && hexo g --silent
 
     echo "${yellow}robots.txt:${norm}"
     echo "User-agent: *
@@ -218,12 +206,6 @@ echo "=============================================================="
     echo "${lcyan}`pwd`${norm}"
     du -sh
     du -sh *
-
-#echo
-#echo "=============================================================="
-#echo " ${yellow}Checking Netlify redirects...${norm}"
-#echo "=============================================================="
-#    cat ../../../netlify.toml
 
 echo
 echo "=============================================================="

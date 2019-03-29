@@ -3,92 +3,6 @@ title: Statistics and Analytics
 description: NexT User Docs – Third-party Service Integration – Statistics and Analytics
 ---
 
-### Webmaster Tools
-
-#### Google Webmaster Tools
-
-Set the verification string of [Google Webmaster Tools](https://www.google.com/webmasters/tools) which is used in submitting sitemap.
-
-{% tabs google-webmaster-tools %}
-<!-- tab Get Verification Code → -->
-Login to Google Webmaster Tools and go to verification methods and choose `HTML Tag`, you will get some code:
-{% code lang:html %}
-<meta name="google-site-verification" content="XXXXXXXXXXXXXXXXXXXXXXX" />
-{% endcode %}
-<!-- endtab -->
-
-<!-- tab NexT Config -->
-Copy `XXXXXXXXXXXXXXXXXXXXXXX` value of `content` key.
-Edit {% label primary@theme config file %} and add or change `google_site_verification` section:
-{% code lang:yml next/_config.yml %}
-google_site_verification: XXXXXXXXXXXXXXXXXXXXXXX
-{% endcode %}
-<!-- endtab -->
-{% endtabs %}
-
-#### Bing Webmaster Tools
-
-Set the verification string of [Bing Webmaster Tools](https://www.bing.com/webmaster/) which is used in submitting sitemap.
-
-{% tabs bing-webmaster-tools %}
-<!-- tab Get Verification Code → -->
-Login to Bing Webmaster Tools and go to verification methods and choose `HTML Tag`, you will get some code:
-{% code lang:html %}
-<meta name="msvalidate.01" content="XXXXXXXXXXXXXXXXXXXXXXX" />
-{% endcode %}
-<!-- endtab -->
-
-<!-- tab NexT Config -->
-Copy `XXXXXXXXXXXXXXXXXXXXXXX` value of `content` key.
-Edit {% label primary@theme config file %} and add or change `bing_site_verification` section:
-{% code lang:yml next/_config.yml %}
-bing_site_verification: XXXXXXXXXXXXXXXXXXXXXXX
-{% endcode %}
-<!-- endtab -->
-{% endtabs %}
-
-#### Yandex Webmaster Tools
-
-Set the verification string of [Yandex Webmaster Tools](https://webmaster.yandex.ru/) which is used in submitting sitemap.
-
-{% tabs yandex-webmaster-tools %}
-<!-- tab Get Verification Code → -->
-Login to Yandex Webmaster Tools and go to verification methods and choose `Meta Tag`, you will get some code:
-{% code lang:html %}
-<meta name="yandex-verification" content="XXXXXXXXXXXXXXXXXXXXXXX" />
-{% endcode %}
-<!-- endtab -->
-
-<!-- tab NexT Config -->
-Copy `XXXXXXXXXXXXXXXXXXXXXXX` value of `content` key.
-Edit {% label primary@theme config file %} and add or change `yandex_site_verification` section:
-{% code lang:yml next/_config.yml %}
-yandex_site_verification: XXXXXXXXXXXXXXXXXXXXXXX
-{% endcode %}
-<!-- endtab -->
-{% endtabs %}
-
-#### Baidu Webmaster Tools
-
-Set the verification string of [Baidu Webmaster Tools](https://ziyuan.baidu.com/site/) which is used in submitting sitemap.
-
-{% tabs Baidu-webmaster-tools %}
-<!-- tab Get Verification Code → -->
-Login to Baidu Webmaster Tools and go to verification methods and choose `HTML Tag`, you will get some code:
-{% code lang:html %}
-<meta name="baidu-site-verification" content="XXXXXXXXXXXXXXXXXXXXXXX" />
-{% endcode %}
-<!-- endtab -->
-
-<!-- tab NexT Config -->
-Copy `XXXXXXXXXXXXXXXXXXXXXXX` value of `content` key.
-Edit {% label primary@theme config file %} and add or change `baidu_site_verification` section:
-{% code lang:yml next/_config.yml %}
-baidu_site_verification: XXXXXXXXXXXXXXXXXXXXXXX
-{% endcode %}
-<!-- endtab -->
-{% endtabs %}
-
 ### Analytics Tools
 
 #### Google Analytics
@@ -234,7 +148,7 @@ page_pv_footer: times.
 
 #### LeanCloud (China)
 
-Adding article reading times counting to NexT theme. Documentation how to set the counter up and running safely aviable in {% exturl hexo-leancloud-counter https://theme-next.github.io/hexo-leancloud-counter/ %}.
+Adding article reading times counting to NexT theme. Documentation how to set the counter up and running safely aviable in [hexo-leancloud-counter](https://theme-next.github.io/hexo-leancloud-counter/).
 
 {% tabs leanCloud-counter %}
 <!-- tab Installation → -->
@@ -245,7 +159,7 @@ Install `hexo-leancloud-counter` by run following command in {% label info@site 
 <!-- endtab -->
 
 <!-- tab Hexo Config → -->
-Follow instructions at {% exturl hexo-leancloud-counter https://theme-next.github.io/hexo-leancloud-counter/#configuration %}
+Follow instructions at [hexo-leancloud-counter](https://theme-next.github.io/hexo-leancloud-counter/#configuration).
 <!-- endtab -->
 
 <!-- tab NexT Config -->

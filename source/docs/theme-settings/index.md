@@ -17,7 +17,7 @@ cache:
 
 ### Custom Style Support
 
-Like [Next Data files](/docs/getting-started/data-files/), you can put all your custom styles into one place (`hexo/source/_data`).
+Like [Next Data files](/docs/getting-started/data-files), you can put all your custom styles into one place (`hexo/source/_data`).
 
 - `head`: It's custom swig styles placed in `layout/_custom/head.swig`.
 - `header`: It's custom swig styles placed in `layout/_custom/header.swig`.
@@ -92,51 +92,6 @@ github_banner:
 {% endtabs %}
 
 You can set `enable` to `true` and add your own GitHub link.
-
-### SEO Setting
-
-Next provides useful options for better Search Engine Optimization (SEO).
-
-{% tabs SEO %}
-<!-- tab <code>disable_baidu_tranformation</code> -->
-By default China's search engine Baidu will cache and rewrite your site to provide a webpage snapshot for mobile users. You can disable this by setting the value `disable_baidu_tranformation` to `true` in {% label primary@theme config file %}.
-
-{% code lang:yml next/_config.yml %}
-disable_baidu_tranformation: false
-{% endcode %}
-<!-- endtab -->
-
-<!-- tab <code>canonical</code> -->
-By default a canonical link tag is created in Hexo by setting the value `canonical` to `true` in {% label primary@theme config file %} after you have set up your URL `url: http://yoursite.com` in {% label info@site config file %}. More detailed information can be found in [Consolidate duplicate URLs](https://support.google.com/webmasters/answer/139066).
-
-{% code lang:yml next/_config.yml %}
-canonical: true
-{% endcode %}
-<!-- endtab -->
-
-<!-- tab <code>seo</code> -->
-Set the value `enable` to `true` in `seo` section to change headers hierarchy on `subtitle` in {% label info@site config file %} and on all post/pages titles for better SEO in {% label primary@theme config file %} as following:
-
-{% code lang:yml next/_config.yml %}
-seo: false
-{% endcode %}
-<!-- endtab -->
-
-<!-- tab <code>index_with_subtitle</code> -->
-Set the value `enable` to `true` in `index_with_subtitle` section to add `subtitle` information in {% label info@site config file %} to index page.
-
-{% code lang:yml next/_config.yml %}
-index_with_subtitle: false
-{% endcode %}
-<!-- endtab -->
-
-{% endtabs %}
-
-NexT also supports the baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO. You can enable it by editing values `related_posts.enable` to `true` in {% label primary@theme config file %}.
-
-```yml next/_config.yml
-baidu_push: false
-```
 
 ### Mobile Devices Adaptation
 

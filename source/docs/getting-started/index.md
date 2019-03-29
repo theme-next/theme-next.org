@@ -6,10 +6,10 @@ description: NexT User Docs – Starting to Use
 #categories: English
 #lang: en
 ---
-[Hexo](https://hexo.io) is a fast and powerful static blog generating framework, it's based on [Node.js](https://nodejs.org). By using Hexo you can write articles easily with Markdown, and besides the grammer of Markdown, you can also use [tag plugins](https://hexo.io/docs/tag-plugins.html) provided by Hexo to insert special formated content simply. In this page we assume you have installed Hexo and created a site with it.
+[Hexo](https://hexo.io) is a fast and powerful static blog generating framework, it's based on [Node.js](https://nodejs.org). By using Hexo you can write articles easily with Markdown, and besides the grammer of Markdown, you can also use [tag plugins](https://hexo.io/docs/tag-plugins) provided by Hexo to insert special formated content simply. In this page we assume you have installed Hexo and created a site with it.
 
 {% note info %}
-You can visit [Hexo Docs](https://hexo.io/docs/index.html) to see how to install Hexo.
+You can visit [Hexo Docs](https://hexo.io/docs/) to see how to install Hexo.
 {% endnote %}
 
 ### Documentation Variables
@@ -72,11 +72,11 @@ $ git clone https://github.com/theme-next/hexo-theme-next themes/next
 {% endtabs %}
 
 {% note primary %}
-You also can read [detailed installation instructions](/docs/getting-started/installation/) if you want any other installation variant.
+You also can read [detailed installation instructions](/docs/getting-started/installation) if you want any other installation variant.
 {% endnote %}
 
 {% note warning %}
-If you still use NexT version 5, you can read [instructions for update from v5 to v6](/docs/getting-started/update-from-v5/).
+If you still use NexT version 5, you can read [instructions for update from v5 to v6](/docs/getting-started/update-from-v5).
 {% endnote %}
 
 #### Enabling NexT
@@ -288,9 +288,13 @@ menu_settings:
 
 #### Configuring Favicon
 
-By default the Hexo site use NexT favicons in `hexo-site/themes/next/source/images/` directory with different size for different device.
+By default the Hexo site use NexT favicons in `hexo-site/themes/next/source/images/` directory with different size for different device. You can replace them with your own favicons.
 
-We recommend that you put custom favicons into `hexo-site/source/` directory. To get or check favicons, you can visit [Favicon Generator](https://realfavicongenerator.net). In this way, you **must remove** `/images` prefix from pathes, and **rename & redefine** the name or format of favicons in `favicon` section in {% label primary@theme config file %}, otherwise Next will rewrite your custom icons in Hexo.
+For example, you can put your favicons in `hexo-site/source/images/` directory. Then you need to rename them and change the settings in `favicon` section in {% label primary@theme config file %}, otherwise icons from Next will rewrite your custom icons in Hexo.
+
+You can also put custom favicons into `hexo-site/source/` directory. In this way, you **must remove** `/images` prefix from paths.
+
+To generate custom favicons, you can visit [Favicon Generator](https://realfavicongenerator.net). 
 
 {% tabs favicon %}
 
@@ -440,4 +444,4 @@ Edit {% label info@site config file %} and set the value of `description` to you
 description:
 ```
 
-After that we can [configure deployment](/docs/getting-started/deployment/).
+After that we can [configure deployment](/docs/getting-started/deployment).
