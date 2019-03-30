@@ -294,53 +294,17 @@ For example, you can put your favicons in `hexo-site/source/images/` directory. 
 
 You can also put custom favicons into `hexo-site/source/` directory. In this way, you **must remove** `/images` prefix from paths.
 
-To generate custom favicons, you can visit [Favicon Generator](https://realfavicongenerator.net). 
+To generate custom favicons, you can visit [Favicon Generator](https://realfavicongenerator.net).
 
-{% tabs favicon %}
-
-<!-- tab <code>small</code> -->
-{% code lang:yml hexo/_config.yml %}
+```yml hexo/_config.yml
 favicon:
   small: /images/favicon-16x16-next.png
-{% endcode %}
-<!-- endtab -->
-
-<!-- tab <code>medium</code> -->
-{% code lang:yml hexo/_config.yml %}
-favicon:
   medium: /images/favicon-32x32-next.png
-{% endcode %}
-<!-- endtab -->
-
-<!-- tab <code>apple_touch_icon</code> -->
-{% code lang:yml hexo/_config.yml %}
-favicon:
   apple_touch_icon: /images/apple-touch-icon-next.png
-{% endcode %}
-<!-- endtab -->
-
-<!-- tab <code>safari_pinned_tab</code> -->
-{% code lang:yml hexo/_config.yml %}
-favicon:
   safari_pinned_tab: /images/logo.svg
-{% endcode %}
-<!-- endtab -->
-
-<!-- tab <code>android_manifest</code> -->
-{% code lang:yml hexo/_config.yml %}
-favicon:
   android_manifest: /images/manifest.json
-{% endcode %}
-<!-- endtab -->
-
-<!-- tab <code>ms_browserconfig</code> -->
-{% code lang:yml hexo/_config.yml %}
-favicon:
   ms_browserconfig: /images/browserconfig.xml
-{% endcode %}
-<!-- endtab -->
-
-{% endtabs %}
+```
 
 #### Configuring Avatar
 
