@@ -397,29 +397,61 @@ related_posts:
 <!-- endtab -->
 
 <!-- tab <code>params</code> -->
-2
-
+By default NexT shows up to 5 related posts and their titles without any date, image and excerpt. You can change the default behavior by editing values of `related_posts.params` in {% label primary@theme config file %}.
 
 {% subtabs related_posts1 %}
 <!-- tab <code>maxCount</code> -->
-1.1
+Maximum count of a list, change it by yourself.
+
+{% code lang:yml hexo/_config.yml %}
+related_posts:
+  params:
+    maxCount: 5
+{% endcode %}
 <!-- endtab -->
+
 <!-- tab <code>PPMixingRate</code> -->
-1.2
+Mixing ratio of popular posts and related posts.
+
+{% code lang:yml hexo/_config.yml %}
+related_posts:
+  params:
+    #PPMixingRate: 0.0
+{% endcode %}
 <!-- endtab -->
+
 <!-- tab <code>isDate</code> -->
-1.2
+Uncomment and set true to display dates of related post.
+
+{% code lang:yml hexo/_config.yml %}
+related_posts:
+  params:
+    #isDate: false
+{% endcode %}
 <!-- endtab -->
+
 <!-- tab <code>isImage</code> -->
-1.2
+Uncomment and set true to display images of related posts.
+
+{% code lang:yml hexo/_config.yml %}
+related_posts:
+  params:
+    #isImage: false
+{% endcode %}
 <!-- endtab -->
+
 <!-- tab <code>isExcerpt</code> -->
-1.2
+Uncomment and set true to display excerpts of related posts.
+
+{% code lang:yml hexo/_config.yml %}
+related_posts:
+  params:
+    #isExcerpt: false
+{% endcode %}
 <!-- endtab -->
+
 {% endsubtabs %}
-
 <!-- endtab -->
-
 {% endtabs %}
 
 #### Post Edit
