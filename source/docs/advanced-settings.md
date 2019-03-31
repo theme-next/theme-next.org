@@ -78,13 +78,6 @@ vendors:
   velocity: //cdn.jsdelivr.net/npm/velocity-animate/velocity.min.js
   velocity_ui: //cdn.jsdelivr.net/npm/velocity-animate/velocity.ui.min.js
 
-  # Internal version: 0.7.9
-  # See: https://faisalman.github.io/ua-parser-js
-  # Example:
-  # ua_parser: //cdn.jsdelivr.net/npm/ua-parser-js@0/src/ua-parser.min.js
-  # ua_parser: //cdnjs.cloudflare.com/ajax/libs/UAParser.js/0.7.9/ua-parser.min.js
-  ua_parser: //cdn.jsdelivr.net/npm/ua-parser-js/src/ua-parser.min.js
-
   # Internal version: 4.6.2
   # See: https://fontawesome.com
   # Example:

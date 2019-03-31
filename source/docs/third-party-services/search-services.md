@@ -135,7 +135,7 @@ algolia_search:
 
 1. The latest version of the [Hexo-Algolia](https://github.com/oncletom/hexo-algolia) plugin removes the content indexing feature, given Algolia's free account limitation.
 2. The [Hexo-Algoliasearch](https://github.com/LouisBarranqueiro/hexo-algoliasearch) plugin provides content indexing functionality, but requires the replacement of keywords in the NexT theme. The same problem exists with `Record Too Big` for Algolia's free account.
-   - Replace all `applicationID` in `source/js/src/algolia-search.js` with `appId`
+   - Replace all `applicationID` in `source/js/algolia-search.js` with `appId`
    - Replace all `applicationID` in `layout/_partials/head/head.swig` with `appId`
 {% endnote %}
 
