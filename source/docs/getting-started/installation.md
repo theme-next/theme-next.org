@@ -19,7 +19,7 @@ Download theme from GitHub. There are **3 options** to do it, need to **choose o
 
 {% tabs download-next %}
 <!-- tab {% label success@Latest Master Branch %} -->
-**Option 3: Download [Latest Master Branch](https://github.com/theme-next/hexo-theme-next/archive/master.zip)**
+**Option 1: Download [Latest Master Branch](https://github.com/theme-next/hexo-theme-next/archive/master.zip)**
 
 May be **unstable**, but includes **latest features**. Recommended for advanced users and for developers.
 
@@ -71,7 +71,7 @@ And if you see any error message during update (something like **«Commit your c
 Howbeit, you can bypass update errors by `Commit`, `Stash` or `Discard` local changes. See [here](https://stackoverflow.com/a/15745424/5861495) how to do it.
 <!-- endtab -->
 
-<!-- tab Curl & Tar -->
+<!-- tab cURL & Tar -->
 {% code lang:bash %}
 $ mkdir themes/next
 $ curl -L https://api.github.com/repos/theme-next/hexo-theme-next/tarball | tar -zxv -C themes/next --strip-components=1
@@ -113,7 +113,7 @@ Same as before under `curl & tar & wget` variant, but will download **only concr
 <!-- endtab -->
 
 <!-- tab Latest Release Version -->
-**Option 1: Download [Latest Release Version](https://github.com/theme-next/hexo-theme-next/releases/latest)**
+**Option 3: Download [Latest Release Version](https://github.com/theme-next/hexo-theme-next/releases/latest)**
 
 At most cases **stable**. Recommended for beginners.
 
