@@ -228,7 +228,7 @@ Use this can help you to use fonts installed in system and reduce unnecessary re
 
 ```yml next/_config.yml
 font:
-  enable: false
+  enable: true
 
   # Uri of fonts host, e.g. //fonts.googleapis.com (Default).
   host:
