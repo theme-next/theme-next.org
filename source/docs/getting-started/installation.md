@@ -42,6 +42,7 @@ $ git tag -l
 v6.0.0
 v6.0.1
 v6.0.2
+...
 {% endcode %}
 
 For example, you want to switch on `v6.0.1` tagged release version. Input the following command:
@@ -51,6 +52,9 @@ $ git checkout tags/v6.0.1
 Note: checking out 'tags/v6.0.1'.
 …
 HEAD is now at da9cdd2... Release v6.0.1
+
+# If you want to switch on latest release version without defining tag (optional)
+$ git checkout $(git describe --tags $(git rev-list --tags --max-count=1))
 {% endcode %}
 
 And if you want to switch back on master branch, input this command:
@@ -67,8 +71,7 @@ $ cd themes/next
 $ git pull
 {% endcode %}
 
-And if you see any error message during update (something like **«Commit your changes or stash them before you can merge»**), recommended to learn [Data Files](/docs/getting-started/data-files) feature.
-Howbeit, you can bypass update errors by `Commit`, `Stash` or `Discard` local changes. See [here](https://stackoverflow.com/a/15745424/5861495) how to do it.
+And if you see any error message during update (something like **«Commit your changes or stash them before you can merge»**), recommended to learn [Data Files](/docs/getting-started/data-files) feature. Howbeit, you can bypass update errors by `Commit`, `Stash` or `Discard` local changes. See [here](https://stackoverflow.com/a/15745424/5861495) how to do it.
 <!-- endtab -->
 
 <!-- tab cURL & Tar -->
