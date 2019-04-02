@@ -154,7 +154,7 @@ If you use MathJax to render Math Equations, you can choose one of renderers bel
    $ npm i hexo-renderer-kramed --save # or hexo-renderer-pandoc
    {% endcode %}
 
-2. In {% label primary@theme config file %}, turn on `enable` option of `math` and choose `katex` as render `engine`.
+2. In {% label primary@theme config file %}, turn on `enable` option of `math` and choose `mathjax` as render `engine`.
 
    {% code lang:yml %}
    math:
