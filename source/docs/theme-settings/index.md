@@ -236,13 +236,13 @@ font:
   # Font options:
   # `external: true` will load this font family from `host` above.
   # `family: Times New Roman`. Without any quotes.
-  # `size: xx`. Use `px` as unit.
+  # `size: xx`. Use `em` as unit.
 
   # Global font settings used for all elements in <body>.
   global:
     external: true
     family: Monda
-    size:
+    size: 1
 
   # Font settings for headlines (<h1> to <h6>).
   headings:
@@ -261,7 +261,7 @@ font:
   title:
     external: true
     family: Lobster Two
-    size: 24
+    size: 1.5
 
   # Font settings for <code> and code blocks.
   codes:
