@@ -154,7 +154,7 @@ Set the value `icons_only` to `true` to display social icons without description
 
 {% code lang:yml next/_config.yml %}
 social_icons:
-  icons_only: false
+  icons_only: true
 {% endcode %}
 <!-- endtab -->
 
@@ -163,7 +163,7 @@ Set the value `transition` to `true` to display social icons with transition eff
 
 {% code lang:yml next/_config.yml %}
 social_icons:
-  transition: false
+  transition: true
 {% endcode %}
 <!-- endtab -->
 
@@ -238,7 +238,7 @@ If the post header width longer than sidebar width, you can wrap the header word
 
 {% code lang:yml next/_config.yml %}
 toc:
-  wrap: false
+  wrap: true
 {% endcode %}
 <!-- endtab -->
 
@@ -247,7 +247,7 @@ If you want all level of TOC in a post to be displayed, rather than the activate
 
 {% code lang:yml next/_config.yml %}
 toc:
-  expand_all: false
+  expand_all: true
 {% endcode %}
 <!-- endtab -->
 

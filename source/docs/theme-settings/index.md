@@ -76,7 +76,7 @@ NexT provides `Follow me on GitHub` banner in right-top corner.
 ```yml next/_config.yml
 # Follow me on GitHub banner in right-top corner.
 github_banner:
-  enable: false
+  enable: true
   permalink: https://github.com/yourname
   title: Follow me on GitHub
 ```
@@ -100,7 +100,7 @@ You can set `enable` to `true` and add your own GitHub link.
 If you want to reduce padding/margin indents on devices with narrow width, you can enable it by editing values `mobile_layout_economy` to `true` in {% label primary@theme config file %}.
 
 {% code lang:yml next/_config.yml %}
-mobile_layout_economy: false
+mobile_layout_economy: true
 {% endcode %}
 <!-- endtab -->
 
@@ -119,7 +119,7 @@ android_chrome_color: "#222"
 If you want to hide sticky headers and color the menu bar on Safari (iOS / macOS), you can set `safari_rainbow` to `true`. More information here: [rainbowsafari](https://github.com/koole/rainbowsafari).
 
 {% code lang:yml next/_config.yml %}
-safari_rainbow: false
+safari_rainbow: true
 {% endcode %}
 
 ### Custom Scrollbar Support
@@ -131,7 +131,7 @@ Only works on webkit based browsers.
 {% endnote %}
 
 {% code lang:yml next/_config.yml %}
-custom_scrollbar: false
+custom_scrollbar: true
 {% endcode %}
 
 ### Custom Logo Support
@@ -144,7 +144,7 @@ You can enable it by editing values `custom_logo.enable` to `true` in {% label p
 
 {% codeblock lang:yml next/_config.yml %}
 custom_logo:
-  enable: false
+  enable: true
 {% endcodeblock %}
 <!-- endtab -->
 

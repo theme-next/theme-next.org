@@ -12,7 +12,7 @@ Next provides useful options for better Search Engine Optimization (SEO).
 By default China's search engine Baidu will cache and rewrite your site to provide a webpage snapshot for mobile users. You can disable this by setting the value `disable_baidu_transformation` to `true` in {% label primary@theme config file %}.
 
 {% code lang:yml next/_config.yml %}
-disable_baidu_transformation: false
+disable_baidu_transformation: true
 {% endcode %}
 <!-- endtab -->
 
@@ -28,7 +28,7 @@ canonical: true
 Set the value `enable` to `true` in `seo` section to change headers hierarchy on `subtitle` in {% label info@site config file %} and on all post/pages titles for better SEO in {% label primary@theme config file %} as following:
 
 {% code lang:yml next/_config.yml %}
-seo: false
+seo: true
 {% endcode %}
 <!-- endtab -->
 
@@ -36,7 +36,7 @@ seo: false
 Set the value `enable` to `true` in `index_with_subtitle` section to add `subtitle` information in {% label info@site config file %} to index page.
 
 {% code lang:yml next/_config.yml %}
-index_with_subtitle: false
+index_with_subtitle: true
 {% endcode %}
 <!-- endtab -->
 
@@ -183,8 +183,8 @@ baidu_site_verification: XXXXXXXXXXXXXXXXXXXXXXX
 <!-- endtab -->
 {% endtabs %}
 
-NexT also supports the baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO. You can enable it by editing values `related_posts.enable` to `true` in {% label primary@theme config file %}.
+NexT also supports the baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO. You can enable it by editing values `baidu_push` to `true` in {% label primary@theme config file %}.
 
 ```yml next/_config.yml
-baidu_push: false
+baidu_push: true
 ```

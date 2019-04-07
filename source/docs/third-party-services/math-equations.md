@@ -12,7 +12,7 @@ If you choose to use this feature, you don't need to manually import any JS or C
 ```yml next/_config.yml
 # Math Equations Render Support
 math:
-  enable: false
+  enable: true
 
   # Default(true) will load mathjax/katex script on demand
   # That is it only render those page who has `mathjax: true` in Front Matter.

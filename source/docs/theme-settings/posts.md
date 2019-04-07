@@ -42,7 +42,7 @@ scroll_to_more: true
 If you want to save page scroll position automatically in cookies, you can enable it by editing value `save_scroll` to `true` in {% label primary@theme config file %}.
 
 {% code lang:yml next/_config.yml %}
-save_scroll: false
+save_scroll: true
 {% endcode %}
 <!-- endtab -->
 
@@ -76,7 +76,7 @@ You can configure it by editing value in `auto_excerpt` section in {% label prim
 
 {% code lang:yml next/_config.yml %}
 auto_excerpt:
-  enable: false
+  enable: true
   length: 150
 {% endcode %}
 <!-- endtab -->
@@ -227,7 +227,7 @@ symbols_count_time:
 By default NexT doesn't shows the text description of the words counts and estimated reading time in footer section. You can enable it by editing value `symbols_count_time.item_text_total` to `false` in {% label primary@theme config file %}.
 {% code lang:yml hexo/_config.yml %}
 symbols_count_time:
-  item_text_total: false
+  item_text_total: true
 {% endcode %}
 <!-- endtab -->
 
@@ -274,7 +274,7 @@ You can enable it by editing value `copy_button.enable` to `true` in {% label pr
 {% code lang:yml hexo/_config.yml %}
 codeblock:
   copy_button:
-    enable: false
+    enable: true
 {% endcode %}
 <!-- endtab -->
 <!-- tab <code>show_result</code> -->
@@ -283,7 +283,7 @@ By default NexT doesn't show copy results of the copy-and-paste functionality. Y
 {% code lang:yml hexo/_config.yml %}
 codeblock:
   copy_button:
-    show_result: false
+    show_result: true
 {% endcode %}
 <!-- endtab -->
 <!-- tab <code>style</code> -->
@@ -348,14 +348,14 @@ More and more platform (WeChat public accounts, Weibo, Jianshu, Baidu Reward) su
    reward_settings:
      # If true, reward would be displayed in every article by default.
      # You can show or hide reward in a specific article throuth `reward: true | false` in Front Matter.
-     enable: false
+     enable: true
      animation: false
      #comment: Donate comment here
    
    reward:
-     #wechatpay: /images/wechatpay.png
-     #alipay: /images/alipay.png
-     #bitcoin: /images/bitcoin.png
+     wechatpay: /images/wechatpay.png
+     alipay: /images/alipay.png
+     bitcoin: /images/bitcoin.png
    ```
 
 You can also add QRcode of other platforms, e.g.
@@ -374,7 +374,7 @@ You can enable it by editing value `related_posts.enable` to `true` in {% label 
 
 {% code lang:yml hexo/_config.yml %}
 related_posts:
-  enable: false
+  enable: true
 {% endcode %}
 <!-- endtab -->
 
@@ -392,7 +392,7 @@ By default NexT doesn't show the related posts in homepage. You can enable it by
 
 {% code lang:yml hexo/_config.yml %}
 related_posts:
-  display_in_home: false
+  display_in_home: true
 {% endcode %}
 <!-- endtab -->
 
@@ -426,7 +426,7 @@ Uncomment and set true to display dates of related post.
 {% code lang:yml hexo/_config.yml %}
 related_posts:
   params:
-    #isDate: false
+    isDate: true
 {% endcode %}
 <!-- endtab -->
 
@@ -436,7 +436,7 @@ Uncomment and set true to display images of related posts.
 {% code lang:yml hexo/_config.yml %}
 related_posts:
   params:
-    #isImage: false
+    isImage: true
 {% endcode %}
 <!-- endtab -->
 
@@ -446,7 +446,7 @@ Uncomment and set true to display excerpts of related posts.
 {% code lang:yml hexo/_config.yml %}
 related_posts:
   params:
-    #isExcerpt: false
+    isExcerpt: true
 {% endcode %}
 <!-- endtab -->
 
@@ -463,7 +463,7 @@ You can enable it by editing value `post_edit.enable` to `true` in {% label prim
 
 {% code lang:yml hexo/_config.yml %}
 post_edit:
-  enable: false
+  enable: true
 {% endcode %}
 <!-- endtab -->
 

@@ -94,7 +94,7 @@ Login to [Firebase](https://console.firebase.google.com/u/0/) to get apiKey and 
 Edit {% label primary@theme config file %} and add or change `firestore` section:
 {% code lang:yml next/_config.yml %}
 firestore:
-  enable: false
+  enable: true
   collection: articles #required, a string collection name to access firestore database
   apiKey: #required
   projectId: #required
@@ -176,7 +176,7 @@ Edit {% label primary@theme config file %} and fill options under `leancloud_vis
 # Show number of visitors to each article.
 # You can visit https://leancloud.cn get AppID and AppKey.
 leancloud_visitors:
-  enable: false
+  enable: true
   app_id: #<app_id>
   app_key: #<app_key>
   # Dependencies: https://github.com/theme-next/hexo-leancloud-counter-security

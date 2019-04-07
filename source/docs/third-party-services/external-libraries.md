@@ -39,7 +39,7 @@ vendors:
 After the plugin installed, you can enable it by editing values `fancybox` to `true` in {% label primary@theme config file %}.
 
 {% code lang:yml hexo/_config.yml %}
-fancybox: false
+fancybox: true
 {% endcode %}
 <!-- endtab -->
 {% endsubtabs %}
@@ -75,7 +75,7 @@ vendors:
 After the plugin installed, you can enable it by editing values `fancybox` to `true` in {% label primary@theme config file %}.
 
 {% code lang:yml hexo/_config.yml %}
-fancybox: false
+fancybox: true
 {% endcode %}
 <!-- endtab -->
 {% endsubtabs %}
@@ -117,7 +117,7 @@ After the plugin installed, you can enable it by editing values `bookmark.enable
 {% code lang:yml hexo/_config.yml %}
 # Dependencies: https://github.com/theme-next/theme-next-bookmark
 bookmark:
-  enable: false
+  enable: true
   # if auto
   #   - save the reading position when closing the page
   #   - or clicking the bookmark-icon
@@ -159,7 +159,7 @@ After the plugin installed, you can enable it by editing values `reading_progres
 
 {% code lang:yml hexo/_config.yml %}
 reading_progress:
-  enable: false
+  enable: true
   color: "#37c6c0"
   height: 2px
 {% endcode %}
@@ -200,7 +200,7 @@ vendors:
 After the plugin installed, you can enable it by editing values `pace` to `true` in {% label primary@theme config file %}.
 
 {% code lang:yml hexo/_config.yml %}
-pace: false
+pace: true
 {% endcode %}
 <!-- endtab -->
 <!-- tab <code>pace_theme</code> -->
@@ -277,7 +277,7 @@ After the plugin installed, you can enable it by editing values `fastclick` to `
 {% code lang:yml hexo/_config.yml %}
 # Added switch option for separated repo in 6.0.0.
 # Dependencies: https://github.com/theme-next/theme-next-fastclick
-fastclick: false
+fastclick: true
 {% endcode %}
 
 <!-- endtab -->
@@ -316,7 +316,7 @@ After the plugin installed, you can enable it by editing values `lazyload` to `t
 {% code lang:yml hexo/_config.yml %}
 # Added switch option for separated repo in 6.0.0.
 # Dependencies: https://github.com/theme-next/theme-next-fastclick
-lazyload: false
+lazyload: true
 {% endcode %}
 
 <!-- endtab -->
@@ -355,7 +355,7 @@ After the plugin installed, you can enable it by editing values `quicklink.enabl
 {% code lang:yml hexo/_config.yml %}
 ...
 quicklink:
-  enable: false
+  enable: true
   home: true
   archive: true
   delay: true
@@ -402,7 +402,7 @@ After the plugin installed, you can enable it by editing values `canvas_nest` to
 
 {% code lang:yml hexo/_config.yml %}
 # Dependencies: https://github.com/theme-next/theme-next-fastclick
-canvas_nest: false
+canvas_nest: true
 {% endcode %}
 
 <!-- endtab -->
@@ -448,7 +448,7 @@ After the plugin installed, you can enable it by editing values `canvas_ribbon` 
 
 {% code lang:yml hexo/_config.yml %}
 canvas_ribbon:
-  enable: false
+  enable: true
   size: 300
   alpha: 0.6
   zIndex: -1
@@ -549,7 +549,7 @@ After the plugin installed, you can enable it by editing values `han` to `true` 
 
 {% code lang:yml hexo/_config.yml %}
 # Dependencies: https://github.com/theme-next/theme-next-han
-han: false
+han: true
 {% endcode %}
 <!-- endtab -->
 {% endtabs %}
@@ -585,7 +585,7 @@ After the plugin installed, you can enable it by editing values `han` to `true` 
 
 {% code lang:yml hexo/_config.yml %}
 # Dependencies: https://github.com/theme-next/theme-next-pangu
-pangu: false
+pangu: true
 {% endcode %}
 <!-- endtab -->
 {% endtabs %}

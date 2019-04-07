@@ -170,7 +170,7 @@ You can enable it by editing values `calendar.enable` to `true`, and copy the va
 
 {% codeblock lang:yml next/_config.yml %}
 calendar:
-  enable: false
+  enable: true
   calendar_id: <required>
   api_key: <required>
   orderBy: startTime

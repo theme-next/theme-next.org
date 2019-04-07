@@ -280,7 +280,7 @@ Set the value `badges` to `true` to display the count of Posts / Categories / Ta
 
 {% code lang:yml next/_config.yml %}
 menu_settings:
-  badges: false
+  badges: true
 {% endcode %}
 <!-- endtab -->
 
@@ -360,7 +360,7 @@ Set up rounded of avatar by changing the value of `avatar.rounded`:
 
 {% code lang:yml next/_config.yml %}
 avatar:
-  rounded: false
+  rounded: true
 {% endcode %}
 <!-- endtab -->
 
@@ -372,7 +372,7 @@ Set up rotated of avatar by changing the value of `avatar.rotated`:
 
 {% code lang:yml next/_config.yml %}
 avatar:
-  rotated: false
+  rotated: true
 {% endcode %}
 
 <!-- endtab -->
