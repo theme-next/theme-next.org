@@ -16,7 +16,7 @@ In your terminal emulator, change to Hexo site dir. Use `hexo new page custom_na
 <!-- endtab -->
 
 <!-- tab Setting Front-matter Values → -->
-Front-matter is a block of YAML or JSON at the beginning of the file that is used to configure settings for your writings. Settings Front-matter values and more detailed can be found in [Front-matter](https://hexo.io/docs/front-matter.html). You can also add contents in `custom_name/index.md` if you like.
+Front-matter is a block of YAML or JSON at the beginning of the file that is used to configure settings for your writings. Settings Front-matter values and more detailed can be found in [Front-matter](https://hexo.io/docs/front-matter). You can also add contents in `custom_name/index.md` if you like.
 
 {% codeblock lang:md %}
 title: custom_name
@@ -64,7 +64,7 @@ tags:
 {% endtabs %}
 
 {% note info %}
-Please read [Hexo's Docs of Categories & Tags](https://hexo.io/docs/front-matter.html#Categories-amp-Tags) to know how to add tags or categories for articles.
+Please read [Hexo's Docs of Categories & Tags](https://hexo.io/docs/front-matter#Categories-amp-Tags) to know how to add tags or categories for articles.
 {% endnote %}
 
 {% tabs adding-tags-page %}
@@ -139,7 +139,7 @@ In your terminal emulator, change to Hexo site dir. Use `hexo new page schedule`
 <!-- endtab -->
 
 <!-- tab Setting Front-matter Values → -->
-Front-matter is a block of YAML or JSON at the beginning of the file that is used to configure settings for your writings. Settings Front-matter values and more detailed can be found in [Front-matter](https://hexo.io/docs/front-matter.html). You can also add contents in `schedule/index.md` if you like.
+Front-matter is a block of YAML or JSON at the beginning of the file that is used to configure settings for your writings. Settings Front-matter values and more detailed can be found in [Front-matter](https://hexo.io/docs/front-matter). You can also add contents in `schedule/index.md` if you like.
 
 {% codeblock lang:md %}
 title: schedule
@@ -199,9 +199,9 @@ cheers: false
 
 {% tabs custom-404-page %}
 <!-- tab Adding New Page → -->
-In your terminal emulator, change to Hexo site dir. Create a new folder called `404`, then create a new page in it:
+In your terminal emulator, change to the `source` folder of Hexo site dir. Create a new folder called `404`, then create a new page in it:
 
-    $ cd your-hexo-site
+    $ cd your-hexo-site/source
     $ mkdir 404
     $ touch 404/index.md
 

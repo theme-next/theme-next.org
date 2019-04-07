@@ -161,6 +161,11 @@ theme_config:
     sidebar: true
     post: false
 
+  github_banner:
+    enable: true
+    permalink: https://github.com/theme-next/hexo-theme-next
+    title: Fork NexT on GitHub
+
 
   # ============================================================= #
   # ======================= Menu Settings ======================= #
@@ -174,44 +179,44 @@ theme_config:
 
       Getting Started:
         default: /getting-started/ || flag
-        Installation: /installation/ || download
-        Deployment: /deployment/ || upload
-        Data Files: /data-files/ || wrench
-        Update from 5.x: /update-from-v5/ || retweet
+        Installation: /installation.html || download
+        Deployment: /deployment.html || upload
+        Data Files: /data-files.html || wrench
+        Update from 5.x: /update-from-v5.html || retweet
 
       Theme Settings:
         default: /theme-settings/ || star
-        Footer: /footer/ || sun-o
-        SEO: /seo/ || external-link-square
-        Custom Pages: /custom-pages/ || file-o
-        Posts: /posts/ || pencil-square-o
-        Sidebar: /sidebar/ || bars
+        Footer: /footer.html || sun-o
+        SEO: /seo.html || external-link-square
+        Custom Pages: /custom-pages.html || file-o
+        Posts: /posts.html || pencil-square-o
+        Sidebar: /sidebar.html || bars
 
       Third Party Services:
         default: /third-party-services/ || plug
-        Comments and Widgets: /comments-and-widgets/ || comments-o
-        Statistics and Analytics: /statistics-and-analytics/ || bar-chart
-        Content Sharing Services: /content-sharing-services/ || share-square
-        Search Services: /search-services/ || search-plus
-        External Libraries: /external-libraries/ || puzzle-piece
-        Math Equations: /math-equations/ || superscript
-        Chat Services: /chat-services/ || comment
+        Comments and Widgets: /comments-and-widgets.html || comments-o
+        Statistics and Analytics: /statistics-and-analytics.html || bar-chart
+        Content Sharing Services: /content-sharing-services.html || share-square
+        Search Services: /search-services.html || search-plus
+        External Libraries: /external-libraries.html || puzzle-piece
+        Math Equations: /math-equations.html || superscript
+        Chat Services: /chat-services.html || comment
 
       Tag Plugins:
         default: /tag-plugins/ || rocket
-        Full Image: /full-image/ || picture-o
-        Note: /note/ || comment
-        Button: /button/ || square
-        Label: /label/ || font
-        Tabs: /tabs/ || columns
-        Mermaid: /mermaid/ || tasks
-        Video: /video/ || video-camera
-        Group Pictures: /group-pictures/ || file-image-o
-        PDF: /pdf/ || file-pdf-o
+        Full Image: /full-image.html || picture-o
+        Note: /note.html || comment
+        Button: /button.html || square
+        Label: /label.html || font
+        Tabs: /tabs.html || columns
+        Mermaid: /mermaid.html || tasks
+        Video: /video.html || video-camera
+        Group Pictures: /group-pictures.html || file-image-o
+        PDF: /pdf.html || file-pdf-o
 
-      Advanced Settings: /advanced-settings/ || cogs
-      FAQ's: /faqs/ || life-ring
-      Troubleshooting: /troubleshooting/ || bug
+      Advanced Settings: /advanced-settings.html || cogs
+      FAQ's: /faqs.html || life-ring
+      Troubleshooting: /troubleshooting.html || bug
     archives: /archives/ || archive
     #sitemap: /sitemap.xml || sitemap
     #commonweal: /404/ || heartbeat
@@ -245,8 +250,6 @@ theme_config:
     enable: true
     icons_only: true
     transition: true
-
-  github_banner: https://github.com/theme-next/hexo-theme-next || Fork NexT on GitHub
 
   toc:
     enable: true
