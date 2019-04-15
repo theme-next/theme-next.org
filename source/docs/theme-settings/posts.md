@@ -328,7 +328,7 @@ Add an end tag at the end of the post.
 
   ```yml next/_config.yml
   post_end_tag:
-    enabled: true
+    enable: true
     message: Thank you for reading
   ```
 
