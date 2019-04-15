@@ -322,6 +322,16 @@ Change the value of `highlight_theme` to choose the highlight style you like, fo
 highlight_theme: night
 ```
 
+#### Post End Tag
+
+Add an end tag at the end of the post.
+
+  ```yml next/_config.yml
+  post_end_tag:
+    enabled: true
+    message: Thank you for reading
+  ```
+
 #### WeChat Subscribing
 
 Show your WeChat public account QRcode after each article, subscribing blog by simply scanning.
