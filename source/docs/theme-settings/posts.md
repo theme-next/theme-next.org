@@ -54,7 +54,7 @@ It's a common need to show some part of article in home page and then give a lin
 
 {% tabs preamble %}
 <!-- tab <code>excerpt_description</code> -->
-If you have added `description` and set its value to your article summary in [front-matter](https://hexo.io/docs/front-matter), NexT excerpts `description` as preamble text in homepage by default. Without `description`, the full contents would be the preamble text in homepage.
+If you have added `description` and set its value to your article summary in [Front-matter](https://hexo.io/docs/front-matter), NexT excerpts `description` as preamble text in homepage by default. Without `description`, the full contents would be the preamble text in homepage.
 
 You can disable it by editing value `excerpt_description` to `false` in {% label primary@theme config file %}.
 
@@ -347,7 +347,7 @@ More and more platform (WeChat public accounts, Weibo, Jianshu, Baidu Reward) su
    # Reward (Donate)
    reward_settings:
      # If true, reward would be displayed in every article by default.
-     # You can show or hide reward in a specific article throuth `reward: true | false` in Front Matter.
+     # You can show or hide reward in a specific article throuth `reward: true | false` in Front-matter.
      enable: true
      animation: false
      #comment: Donate comment here
