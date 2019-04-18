@@ -140,7 +140,7 @@ GitLab offers a continuous integration service and pages service. If you add a `
 
     before_script:
       # Set TimeZone, eg: Asia/Shanghai
-      - export TZ='Asia/Shanghai'
+      # - export TZ='Asia/Shanghai'
       # Restore last modified time
       - "git ls-files -z | while read -d '' path; do touch -d \"$(git log -1 --format=\"@%ct\" \"$path\")\" \"$path\"; done"
 
@@ -216,7 +216,8 @@ Deploy key is a SSH key set in your repo to grant client read-only (as well as r
 
     {% code lang:yml hexo/.gitlab-ci.yml %}
     before_script:
-      - export TZ='Asia/Shanghai'
+      # Set TimeZone, eg: Asia/Shanghai
+      # - export TZ='Asia/Shanghai'
 
       - git config --global user.name "YOUR-USER-NAME"
       - git config --global user.email "YOUR-EMAIL"
