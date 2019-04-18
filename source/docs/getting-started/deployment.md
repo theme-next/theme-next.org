@@ -243,8 +243,8 @@ Deploy key is a SSH key set in your repo to grant client read-only (as well as r
       # - '[[ -f /.dockerenv ]] && echo "$SSH_SERVER_HOSTKEYS" > ~/.ssh/known_hosts'
 
       # Install pandoc, eg: v1.19.2.1
-      - wget https://github.com/jgm/pandoc/releases/download/1.19.2.1/pandoc-1.19.2.1-1-amd64.deb
-      - dpkg -i ./pandoc-1.19.2.1-1-amd64.deb
+      # - wget https://github.com/jgm/pandoc/releases/download/1.19.2.1/pandoc-1.19.2.1-1-amd64.deb
+      # - dpkg -i ./pandoc-1.19.2.1-1-amd64.deb
 
     image: node:8.11.2
 
