@@ -139,6 +139,8 @@ GitLab offers a continuous integration service and pages service. If you add a `
     image: node:8.11.2
 
     before_script:
+      # Set TimeZone, eg: Asia/Shanghai
+      # - export TZ='Asia/Shanghai'
       # Restore last modified time
       - "git ls-files -z | while read -d '' path; do touch -d \"$(git log -1 --format=\"@%ct\" \"$path\")\" \"$path\"; done"
 
@@ -150,9 +152,12 @@ GitLab offers a continuous integration service and pages service. If you add a `
       script:
       - npm install hexo-cli -g
       - npm install
-      # NEXT NPM installation
+      # NEXT NPM installation start
       - npm install hexo-symbols-count-time --save
+      # NEXT NPM installation end
+      # NEXT External Libraries installation start
       - git clone https://github.com/theme-next/theme-next-pace themes/next/source/lib/pace
+      # NEXT External Libraries installation end
       - hexo deploy
       artifacts:
         paths:
@@ -177,9 +182,9 @@ Of course, you also can pulish static website on GitHub Pages or others pages se
 {% subtabs Gitlab-CI-1 %}
 <!-- tab <code>HTTPS</code> -->
 
-* Get the Access Token: Settings -> Developer settings -> Personal access token -> Generate new token. Set access rights according to the actual situation. It should be noted that the access token is only displayed once on this page, and it should be copied, otherwise it can only be regenerated.
+* Get the Access Token: `Settings` → `Developer settings` → `Personal access token` → `Generate new token`. Set access rights according to the actual situation. It should be noted that the access token is only displayed once on this page, and it should be copied, otherwise it can only be regenerated.
 * Click `SETTINGS-CI/CD → Variables` in Gitlab, and defined access token as custom variable `GITHUB_ACCESS_TOKEN`. Or set `USERNAME` `PASSWORD` variable for coding repo.
-* Configure `.gitlab-ci.yml`: only add deploy stage at the end of this file
+* Configure `.gitlab-ci.yml`: **only add deploy stage at the end of this file**
     {% code lang:yml hexo/.gitlab-ci.yml %}
     github:
       stage: deploy
@@ -207,13 +212,16 @@ Deploy key is a SSH key set in your repo to grant client read-only (as well as r
     {% endcode %}
 
 * Click `SETTINGS-CI/CD → Variables` in Gitlab, copy the content of private key and defined it as custom variable `DEPLOY_PRIVATE_KEY`.
-* Configure `.gitlab-ci.yml`: only update script in `before_script`
+* Configure `.gitlab-ci.yml`: **only update script in `before_script`**
 
     {% code lang:yml hexo/.gitlab-ci.yml %}
     before_script:
-      - export TZ='Asia/Shanghai'
+      # Set TimeZone, eg: Asia/Shanghai
+      # - export TZ='Asia/Shanghai'
+
       - git config --global user.name "YOUR-USER-NAME"
       - git config --global user.email "YOUR-EMAIL"
+
       # Restore last modified time
       - "git ls-files -z | while read -d '' path; do touch -d \"$(git log -1 --format=\"@%ct\" \"$path\")\" \"$path\"; done"
       # Install ssh-agent if not already installed, it is required by Docker.
@@ -234,7 +242,10 @@ Deploy key is a SSH key set in your repo to grant client read-only (as well as r
       # instead.
       # - mkdir -p ~/.ssh
       # - '[[ -f /.dockerenv ]] && echo "$SSH_SERVER_HOSTKEYS" > ~/.ssh/known_hosts'
-      - apt-get update -qq && apt-get install -y -qq pandoc
+
+      # Install pandoc, eg: v1.19.2.1
+      # - wget https://github.com/jgm/pandoc/releases/download/1.19.2.1/pandoc-1.19.2.1-1-amd64.deb
+      # - dpkg -i ./pandoc-1.19.2.1-1-amd64.deb
 
     image: node:8.11.2
 
@@ -245,9 +256,12 @@ Deploy key is a SSH key set in your repo to grant client read-only (as well as r
       script:
       - npm install -g hexo-cli
       - npm install
-      # NEXT NPM installation
+      # NEXT NPM installation start
       - npm install hexo-symbols-count-time --save
+      # NEXT NPM installation end
+      # NEXT External Libraries installation start
       - git clone https://github.com/theme-next/theme-next-pace themes/next/source/lib/pace
+      # NEXT External Libraries installation end
       - hexo deploy
 
       artifacts:
