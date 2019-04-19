@@ -326,11 +326,7 @@ highlight_theme: night
 
 Add an end tag at the end of the post.
 
-  ```yml next/_config.yml
-  post_end_tag:
-    enable: true
-    message: Thank you for reading
-  ```
+You can enable it by editing value `post_end_tag.enable` to `true` in theme config file.
 
 #### WeChat Subscribing
 
