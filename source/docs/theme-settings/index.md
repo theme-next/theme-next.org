@@ -236,9 +236,12 @@ font:
   # Font options:
   # `external: true` will load this font family from `host` above.
   # `family: Times New Roman`. Without any quotes.
-  # `size: xx`. Use `em` as unit.
+  # `size: xx`. Use `em` as unit. Default: 0.875 (14px)
+  # For all other font sizes classes will be relative from global size.
+  # //It's mean no need anymore to redefine sizes for each class,
+  # //but if you want it can be done with custom variables.
 
-  # Global font settings used for all elements in <body>.
+  # Global font settings used for all elements inside <body>.
   global:
     external: true
     family: Monda
@@ -248,20 +251,17 @@ font:
   headings:
     external: true
     family: Roboto Slab
-    size:
 
-  # Font settings for posts.
+  # Font settings for posts (.post-body).
   # Fallback to `global` font size settings.
   posts:
     external: true
     family:
-    size:
 
-  # Font settings for site title.
+  # Font settings for site title (.site-title).
   title:
     external: true
     family: Lobster Two
-    size: 1.5
 
   # Font settings for <code> and code blocks.
   codes:
