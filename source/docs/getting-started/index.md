@@ -181,24 +181,29 @@ Edit {% label info@site config file %}, set the value of `language` to the langu
 language: en
 ```
 
-Now NexT supports following languages:
+NexT now supports following languages:
 
-|      Language      |        Code        |      Example      |
-| ------------------ | ------------------ | ----------------- |
-| English            | `en`               | `language: en`    |
-| 简体中文            | `zh-CN`            | `language: zh-CN` |
-| 繁體中文            | `zh-TW` or `zh-HK` | `language: zh-TW` |
-| Русский            | `ru`               | `language: ru`    |
-| Français           | `fr`               | `language: fr`    |
-| German             | `de`               | `language: de`    |
-| 日本語              | `ja`               | `language: ja`    |
-| Indonesian         | `id`               | `language: id`    |
-| Português (Brasil) | `pt` or `pt-BR`    | `language: pt`    |
-| 한국어              | `ko`               | `language: ko`    |
-| Niederländisch     | `nl`               | `language: nl`    |
-| Tiếng Việt         | `vi`               | `language: vi`    |
-| Italiano           | `it`               | `language: it`    |
-| Türk               | `tr`               | `language: tr`    |
+| Language                             | Example               | Code    |
+| ------------------------------------ | --------------------- | ------- |
+| 🇨🇳 Chinese (Simplified)              | 简体中文               | `zh-CN` |
+| 🇹🇼 Chinese (Traditional)             | 繁體中文               | `zh-TW` |
+| 🇭🇰 Chinese (Hong Kong)               | 繁體中文-香港           | `zh-HK` |
+| 🇧🇶 Dutch                             | Niederländisch        | `nl`    |
+| 🇺🇸 English                           | English               | `en`    |
+| 🇹🇫 French                            | Français              | `fr`    |
+| 🇩🇪 German                            | Deutsch               | `de`    |
+| 🇮🇩 Indonesian                        | Indonesia             | `id`    |
+| 🇮🇹 Italian                           | Italiano              | `it`    |
+| 🇯🇵 Japanese                          | 日本語                 | `ja`    |
+| 🇰🇷 Korean                            | 한국어                 | `ko`    |
+| 🇮🇷 Persian                           | فارسی                 | `fa`    |
+| 🇵🇹 Portuguese                        | Português             | `pt`    |
+| 🇧🇷 Portuguese (Brazilian)            | Português (Brazilian) | `pt-BR` |
+| 🇷🇺 Russian                           | Русский               | `ru`    |
+| 🇪🇸 Spanish                           | Español               | `es`    |
+| 🇹🇷 Turkish                           | Türk                  | `tr`    |
+| 🇺🇦 Ukrainian                         | Український           | `uk`    |
+| 🇻🇳 Vietnamese                        | Tiếng Việt            | `vi`    |
 
 {% note primary %}
 If you want to add or improve language for NexT theme, you can do it easily with [crowdin](https://crwd.in/theme-next) service.

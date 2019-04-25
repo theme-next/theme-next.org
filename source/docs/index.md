@@ -13,28 +13,7 @@ By using different styles in NexT (also called Scheme), you simply change what y
 
 ### Multilingual Support
 
-Thanks to the contribution of our users and developers, NexT now supports 15 languages.
-
-|      Language      |        Code        |      Example      |
-| ------------------ | ------------------ | ----------------- |
-| English            | `en`               | `Hello`    |
-| 简体中文            | `zh-CN`            | `你好` |
-| 繁體中文            | `zh-TW` or `zh-HK` | `你好` |
-| Русский            | `ru`               | `Здравствуйте`    |
-| Français           | `fr`               | `Bonjour`    |
-| German             | `de`               | `Hallo`    |
-| 日本語              | `ja`               | `こんにちは`    |
-| Indonesian         | `id`               | `Halo`    |
-| Português (Brasil) | `pt` or `pt-BR`    | `Olá`    |
-| 한국어              | `ko`               | `여보세요`    |
-| Niederländisch     | `nl`               | `Hallo`    |
-| Tiếng Việt         | `vi`               | `xin chào`    |
-| Italiano           | `it`               | `Ciao`    |
-| Türk               | `tr`               | `Merhaba`    |
-
-{% note primary %}
-If you want to add or improve language for NexT theme, you can do it easily with [crowdin](https://crwd.in/theme-next) service.
-{% endnote %}
+Thanks to the [contribution of our users and developers](https://github.com/theme-next/hexo-theme-next/pulls?&q=is%3Apr+label%3Ai18n), [NexT now supports over 15 languages](/docs/getting-started/#Choosing-Language).
 
 ### Five Code Highlighting Themes
 
