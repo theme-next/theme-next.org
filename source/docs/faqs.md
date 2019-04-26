@@ -2,7 +2,7 @@
 title: Frequently Asked Questions
 description: NexT User Docs – Frequently Asked Questions
 ---
-Here is a collection of frequently asked questions in NexT Issues. If you cannot not find your problem here, please go to [NexT Issues](https://github.com/theme-next/hexo-theme-next/issues) to submit your question.
+Here is a collection of frequently asked questions in NexT Issues. If you can't find your problem here, please go to [NexT Issues](https://github.com/theme-next/hexo-theme-next/issues) to submit your question.
 
 ### How to Set «Read More»
 
@@ -24,7 +24,7 @@ It is recommended to use `<!-- more -->` (the first way) which can not only cont
 
 ### How to Change Fonts
 
-NexT provided a [Fonts Customization](/docs/theme-settings#Fonts-Customization) funtion. If you still need more customization, following change will cover Fonts Customization function. Edit `source/css/_variables/custom.styl` in NexT theme dir and add two varibles:
+NexT provided a [Fonts Customization](/docs/theme-settings#Fonts-Customization) function. If you still need more customization, following change will cover Fonts Customization function. Edit `source/css/_variables/custom.styl` in NexT theme dir and add two varibles:
 
 ```styl source/css/_custom/custom.styl
 // Title Font, set it to font family you want.
