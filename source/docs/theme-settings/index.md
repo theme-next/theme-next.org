@@ -228,6 +228,8 @@ Use this can help you to use fonts installed in system and reduce unnecessary re
 
 ```yml next/_config.yml
 font:
+  # Use custom fonts families or not.
+  # Depended options: `external` and `family`.
   enable: true
 
   # Uri of fonts host, e.g. //fonts.googleapis.com (Default).
@@ -236,16 +238,14 @@ font:
   # Font options:
   # `external: true` will load this font family from `host` above.
   # `family: Times New Roman`. Without any quotes.
-  # `size: xx`. Use `em` as unit. Default: 0.875 (14px)
+  # `size: xx`. Use `em` as unit. Default: 1 (16px)
   # For all other font sizes classes will be relative from global size.
-  # //It's mean no need anymore to redefine sizes for each class,
-  # //but if you want it can be done with custom variables.
 
   # Global font settings used for all elements inside <body>.
   global:
     external: true
     family: Monda
-    size: 1
+    size: 1.1
 
   # Font settings for headlines (<h1> to <h6>).
   headings:
