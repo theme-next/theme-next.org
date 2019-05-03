@@ -10,7 +10,7 @@ date: 2019-04-01 11:19:46
 ### Usage of `quicklink` ([#642](https://github.com/theme-next/hexo-theme-next/pull/642))
 
 - Now quicklink will load on demand by default.
-- Add `quicklink: true` in front matter for those pages or posts you want.
+- Add `quicklink: true` in Front-matter for those pages or posts you want.
 - Home page and archive page can be controlled through `home` and `archive` option.
 
 ```diff
@@ -19,7 +19,7 @@ quicklink:
 - per_page: true
 + home: true # enable or disable quicklink on home page
 + archive: true # enable or disable quicklink on archive page
-# Add `quicklink: true` in front matter to enable quicklink on special page or post
+# Add `quicklink: true` in Front-matter to enable quicklink on special page or post
 ```
 ### Some options look more uniform in `_config.yml` ([#643](https://github.com/theme-next/hexo-theme-next/pull/643))
 

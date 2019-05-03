@@ -45,7 +45,7 @@ Since more and more contributors joined to NexT, version 6.0.6 got more improvem
 - {% label success@ADDED %} Bookmark feature as separated module: [theme-next-bookmark][].
 - {% label success@ADDED %} Switch to choice whether it will unescape the HTML strings for local searching.
 - {% label success@ADDED %} Support to set whether the sidebar will be shown in each single post.
-- {% label danger@FIXED %} Load math script in homepage for posts or pages contained `mathjax: true` in frontmatter.
+- {% label danger@FIXED %} Load math script in homepage for posts or pages contained `mathjax: true` in Front-matter.
 - {% label danger@FIXED %} Algolia search overlay on mobile devices.
 
 [Detailed changes for NexT v6.0.3][v6.0.3]

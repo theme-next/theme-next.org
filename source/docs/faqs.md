@@ -9,7 +9,7 @@ Here is a collection of frequently asked questions in NexT Issues. If you can't 
 It's a common need to show some part of article in home page and then give a link to full article. NexT gives 3 ways to control how article is shown in home page. In other words, you can use following ways to show summary of articles and a **Read More** button:
 
 1. Use `<!-- more -->` in your article to break your article manually, which is recommended by Hexo. {% label success@Recommended %}
-2. Add `description` and set its value to your article summary in [front-matter](https://hexo.io/docs/front-matter).
+2. Add `description` and set its value to your article summary in [Front-matter](https://hexo.io/docs/front-matter).
 3. Generate summary automatically by adding following section in {% label primary@theme config file%}:
    ```yml next/_config.yml
    auto_excerpt:
