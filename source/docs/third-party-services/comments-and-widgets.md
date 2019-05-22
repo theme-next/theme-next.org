@@ -202,6 +202,31 @@ Gitalk can only use GitHub accounts for comments.
       # Available value: en, es-ES, fr, ru, zh-CN, zh-TW
       language:
     ```
+ ### Utteranc
+
+utteranc is a modern comment component based on Github Issue and Preact.
+
+{% note info %}
+utteranc can only use GitHub accounts for comments.
+{% endnote %}
+
+1. Create a repository you want to store Utteranc comments in your GitHub.
+Make sure the repo is public, otherwise your readers will not be able to view the issues/comments.
+Make sure the [utterances app](https://github.com/apps/utterances) is installed on the repo, otherwise users will not be able to post comments.
+If your repo is a fork, navigate to it's settings tab and confirm the issues feature is turned on.
+2. Blog Post ↔️ Issue Mapping .Choose the mapping between blog posts and GitHub issues.such as [x]Issue title contains page pathname
+3. edit other configurations in `utteranc` section in the {% label primary@theme config file %} as following:
+
+    ```yml next/_config.yml
+    # Utteranc
+    # Demo: https://utteranc.es/
+    # theme: github-light,github-dark,github-dark-orange,icy-dark,dark-blue,photon-dark
+    utteranc:
+      enable: true
+      repo:  #Github repo such as :TrumanDu/comments
+      pathname:  pathname
+      theme: github-light
+    ```   
 
 ### Valine (China)
 
