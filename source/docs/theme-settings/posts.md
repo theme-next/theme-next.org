@@ -322,6 +322,16 @@ Change the value of `highlight_theme` to choose the highlight style you like, fo
 highlight_theme: night
 ```
 
+#### Tag Icon
+
+By default, tags at the bottom of posts have a symbol # at there left side. 
+
+If you prefer icon instead of symbol, edit {% label primary@theme config file %} like following:
+
+  ```yml next/_config.yml
+  tag_icon: true
+  ```
+
 #### WeChat Subscribing
 
 Show your WeChat public account QRcode after each article, subscribing blog by simply scanning.
