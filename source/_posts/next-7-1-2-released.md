@@ -5,19 +5,19 @@ date: 2019-06-01 05:34:50
 
 ## 🌀 External Changes
 
-- Change the internal path of quicklink (#883)
-- Upgrade Facebook Graph API to v3.3 (#876)
-- Make `symbols_count_time` faster (#862)
+- Change the internal path of quicklink ([#883](https://github.com/theme-next/hexo-theme-next/pull/883))
+- Upgrade Facebook Graph API to v3.3 ([#876](https://github.com/theme-next/hexo-theme-next/pull/876))
+- Make `symbols_count_time` faster ([#862](https://github.com/theme-next/hexo-theme-next/pull/862))
 
 ## 🐞 Bug Fixes
 
-- Force HTTPS of `google-analytics.swig`. Again. (#881)
-- Fix Github gist bug with copy button (#861)
+- Force HTTPS of `google-analytics.swig`. Again. ([#881](https://github.com/theme-next/hexo-theme-next/pull/881))
+- Fix Github gist bug with copy button ([#861](https://github.com/theme-next/hexo-theme-next/pull/861))
 
 ## 📖 Documentation
 
-- Expressions and translations in CONTRIBUTING.md (#885)
-- Fix a few typo errors in docs (#864)
+- Expressions and translations in CONTRIBUTING.md ([#885](https://github.com/theme-next/hexo-theme-next/pull/885))
+- Fix a few typo errors in docs ([#864](https://github.com/theme-next/hexo-theme-next/pull/864))
 
 ***
 
