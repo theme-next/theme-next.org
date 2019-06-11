@@ -214,7 +214,7 @@ Valine is a fast, simple & efficient Leancloud based no back end comment system.
 3. Set the value `enable` to `true`, add the obtained APP ID (`appid`) and APP Key (`appkey`), and edit other configurations in `valine` section in the {% label primary@theme config file %} as following:
 
     ```yml next/_config.yml
-    # Valine.
+    # Valine
     # You can get your appid and appkey from https://leancloud.cn
     # more info please open https://valine.js.org
     valine:

@@ -24,10 +24,10 @@ math:
 
   # hexo-renderer-pandoc (or hexo-renderer-kramed) needed to full MathJax support.
   mathjax:
-    # Use 2.7.1 as default, jsdelivr as default CDN, works everywhere even in China
+    # Use 2.7.5 as default, jsdelivr as default CDN, works everywhere even in China
     cdn: //cdn.jsdelivr.net/npm/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML
     # For direct link to MathJax.js with CloudFlare CDN (cdnjs.cloudflare.com)
-    #cdn: //cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML
+    #cdn: //cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML
 
     # See: https://mhchem.github.io/MathJax-mhchem/
     #mhchem: //cdn.jsdelivr.net/npm/mathjax-mhchem@3
@@ -116,7 +116,7 @@ The reason that jsDelivr is chosen is because it is fast everywhere, and jsDeliv
 
 {% note warning %}
 And we also provide other optional CDNs, including the famous [CDNJS](https://cdnjs.com).
-For MathJax, we are currently using version 2.7.1.
+For MathJax, we are currently using version 2.7.5.
 For KaTeX, due to the problem described above, we are now using version 0.7.1.
 {% endnote %}
 
