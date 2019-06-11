@@ -519,43 +519,6 @@ canvas_sphere: false
 
 ### Chinese Typesetting
 
-#### Han Support
-
-[Han.css](https://github.com/ethantw/Han) provides a CSS typography framework optimised for Hanzi.
-
-{% tabs han %}
-<!-- tab Installation → -->
-Change dir to NexT directory, and install module to `source/lib` directory.
-
-{% code lang:bash %}
-$ cd themes/next
-$ git clone https://github.com/theme-next/theme-next-han source/lib/Han
-{% endcode %}
-
-{% note info %}
-If you want to use the CDN instead of clone this repo, then need to **set vendors** in {% label primary@theme config file %}:
-{% code lang:yml next/_config.yml %}
-vendors:
-  ...
-  # https://github.com/ethantw/Han
-  han: //cdnjs.cloudflare.com/ajax/libs/Han/3.3.0/han.min.css
-  ...
-{% endcode %}
-{% endnote %}
-
-<!-- endtab -->
-
-<!-- tab NexT Config -->
-After the plugin installed, you can enable it by editing values `han` to `true` in {% label primary@theme config file %}.
-
-{% code lang:yml hexo/_config.yml %}
-# Han Support
-# Dependencies: https://github.com/theme-next/theme-next-han
-han: true
-{% endcode %}
-<!-- endtab -->
-{% endtabs %}
-
 #### Pangu Autospace Support
 
 [pangu.js](https://github.com/vinta/pangu.js) will automatically insert a blank space between all the Chinese characters and the hexagonal English numeric symbols on the page.
