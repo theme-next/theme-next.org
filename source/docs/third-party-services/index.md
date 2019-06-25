@@ -56,7 +56,6 @@ If you want to disable comment in some page/post, just add `comments: false` to 
 * [FastClick](/docs/third-party-services/external-libraries#FastClick)
 * [Jquery Lazyload](/docs/third-party-services/external-libraries#Jquery-Lazyload)
 * [Backgroud JS](/docs/third-party-services/external-libraries#Backgroud-JS)
-* [Han Support](/docs/third-party-services/external-libraries#Han-Support)
 * [Pangu Autospace Support](/docs/third-party-services/external-libraries#Pangu-Autospace-Support)
 
 ### Math Equations
