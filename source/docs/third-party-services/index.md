@@ -12,7 +12,6 @@ In any time you can extend needed functions by using third-party services suppor
 * [Facebook Comments](/docs/third-party-services/comments-and-widgets#Facebook-Comments)
 * [VKontakte Comments and Likes](/docs/third-party-services/comments-and-widgets#VKontakte-Comments-and-Likes)
 * [LiveRe](/docs/third-party-services/comments-and-widgets#LiveRe)
-* [Gitment](/docs/third-party-services/comments-and-widgets#Gitment)
 * [Gitalk](/docs/third-party-services/comments-and-widgets#Gitalk)
 * [Valine (China)](/docs/third-party-services/comments-and-widgets#Valine)
 * [Changyan (China)](/docs/third-party-services/comments-and-widgets#Changyan)
