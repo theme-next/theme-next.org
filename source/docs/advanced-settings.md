@@ -195,3 +195,78 @@ vendors:
   # md5: //cdn.jsdelivr.net/npm/js-md5@0/src/md5.min.js
   md5:
 ```
+
+### Injects
+
+We extended the hexo filter and added `theme_inject`, so user can add the desired custom content to any injection point.
+
+#### Synopsis
+
+```js
+hexo.extend.filter.register('theme_inject', function(injects) {
+  // ...
+});
+```
+
+A injects argument will get passed into the function, so we can use it add custom code in `injectPoint` as below.
+
+For inject view: 
+```js
+// note: the name must be unique
+// locals and options is the same as partial https://hexo.io/docs/helpers#partial
+injects.[injectPoint].file(name, filePath, [locals], [options]);
+injects.[injectPoint].raw(name, raw, [locals], options]);
+```
+
+For inject style: 
+```js
+injects.[point].push(styleFile);
+```
+
+These are many `injectPoint`, defined in `scripts/injects-point.js`
+```js
+module.exports = {
+  views: ['head', 'header', 'sidebar', 'postMeta', 'postBodyEnd', 'footer', 'bodyEnd'],
+  styles: ['variable', 'mixin', 'style']
+};
+```
+
+#### Example
+
+**Example One**: Load a custom script. We can add it in `bodyEnd`.
+
+```js
+hexo.extend.filter.register('theme_inject', function(injects) {
+  injects.bodyEnd.raw('load-custom-js', '<script src="js-path-or-cdn.js"></script>', {}, {cache: true});
+});
+```
+
+**Example Two**: Add a custom `my-favourite-food.swig` to sidebar. 
+
+Step1: you should create `my-favourite-food.swig` in any path(example: `source/_data/`) as below. You can get variable from `hexo` or `local` defined in filter.
+```html
+{% for food in foods %}
+  <div>{{food}}</div>
+{% endfor %}
+```
+
+Step2: add filter to load it.
+```js
+hexo.extend.filter.register('theme_inject', function(injects) {
+  injects.sidebar.raw('my-favourite-food', 'source/_data/my-favourite-food.swig', {
+    foods: ['apple', 'orange']
+  });
+});
+```
+
+**Example Three**: Want to have big header, put `big-header.styl` to NexT. Of course, you need to create this file first and then add it in filter.
+```js
+hexo.extend.filter.register('theme_inject', function(injects) {
+  injects.style.push('source/_data/big-header.styl');
+```
+
+#### Plugin
+
+We also support plugin system, which makes it easy to extend functions without modifying the source code of the core module. You can see <https://hexo.io/docs/plugins.html#Plugin> to learn how to create a plugin.
+
+But you have to note path, it must absolute or relative to `hexo_dir`.
