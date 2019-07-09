@@ -264,10 +264,20 @@ hexo.extend.filter.register('theme_inject', function(injects) {
 });
 ```
 
-**Example Three**: Want to have big header, put `big-header.styl` to NexT. Of course, you need to create this file first and then add it in filter.
+**Example Three**: Want to have big header, put `big-header.styl` to NexT. 
+
+Of course, you need to create this file first 
+```css
+h1 {
+  font-size: 2rem;
+}
+```
+
+And then add it in filter.
 ```js
 hexo.extend.filter.register('theme_inject', function(injects) {
   injects.style.push('source/_data/big-header.styl');
+}
 ```
 
 #### Plugin
