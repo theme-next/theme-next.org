@@ -139,41 +139,6 @@ LiveRe is a content platform based on social networking site reviews to help use
     livere_uid: your_uid
     ```
 
-### Gitment
-
-Gitment is an commenting system based on GitHub Issues, which supports for direct introduction at the front end does not require any backend code. You can log in, view, comment, like, etc. on the page, with full Markdown / GFM and code highlighting support.
-
-{% note info %}
-Gitment can only use GitHub accounts for comments.
-{% endnote %}
-
-1. Click here to sign up for a [new OAuth Application](https://github.com/settings/applications/new). Other content can be filled in at will, but be sure to fill in the correct callback URL (usually the domain name corresponding to the comment page). Then you will get a Client ID and a Client secret, which will be used for subsequent user logins.
-2. Create a repository you want to store Gitment comments in your GitHub.
-3. Set the value `enable` to `true`, add Client ID (`client_id`) and Client secret (`client_secret`) in step 1, add your Github username (`github_user`) and the created repository name (`github_repo`) in step 2, and edit other configurations in `gitment` section in the {% label primary@theme config file %} as following:
-
-    ```yml next/_config.yml
-    # Gitment
-    # Introduction: https://imsun.net/posts/gitment-introduction/
-    gitment:
-      enable: false
-      mint: true # RECOMMEND, A mint on Gitment, to support count, language and proxy_gateway
-      count: true # Show comments count in post meta area
-      lazy: false # Comments lazy loading with a button
-      cleanly: false # Hide 'Powered by ...' on footer, and more
-      language: # Force language, or auto switch by theme
-      github_user: # MUST HAVE, Your Github Username
-      github_repo: # MUST HAVE, The name of the repo you use to store Gitment comments
-      client_id: # MUST HAVE, Github client id for the Gitment
-      client_secret: # EITHER this or proxy_gateway, Github access secret token for the Gitment
-      proxy_gateway: # Address of api proxy, See: https://github.com/aimingoo/intersect
-      redirect_protocol: # Protocol of redirect_uri with force_redirect_protocol when mint enabled
-    ```
-4. After the post is published, you will need to visit this page, log in with your GitHub account and click the `Initialize button`, then other users can post comments on this page.
-
-{% note warning %}
-Please note that the authorized permission of Gitment will obtain the read and write access to all your public repositories and maybe send github keys to the 3rd-party imsun's proxy server. **If you concern about the security, we strongly deprecated to use gitment**. [Useful link](https://github.com/theme-next/hexo-theme-next/issues/35)
-{% endnote %}
-
 ### Gitalk
 
 Gitalk is a modern comment component based on Github Issue and Preact.
@@ -214,7 +179,7 @@ Valine is a fast, simple & efficient Leancloud based no back end comment system.
 3. Set the value `enable` to `true`, add the obtained APP ID (`appid`) and APP Key (`appkey`), and edit other configurations in `valine` section in the {% label primary@theme config file %} as following:
 
     ```yml next/_config.yml
-    # Valine.
+    # Valine
     # You can get your appid and appkey from https://leancloud.cn
     # more info please open https://valine.js.org
     valine:

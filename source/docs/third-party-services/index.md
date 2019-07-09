@@ -12,7 +12,6 @@ In any time you can extend needed functions by using third-party services suppor
 * [Facebook Comments](/docs/third-party-services/comments-and-widgets#Facebook-Comments)
 * [VKontakte Comments and Likes](/docs/third-party-services/comments-and-widgets#VKontakte-Comments-and-Likes)
 * [LiveRe](/docs/third-party-services/comments-and-widgets#LiveRe)
-* [Gitment](/docs/third-party-services/comments-and-widgets#Gitment)
 * [Gitalk](/docs/third-party-services/comments-and-widgets#Gitalk)
 * [Valine (China)](/docs/third-party-services/comments-and-widgets#Valine)
 * [Changyan (China)](/docs/third-party-services/comments-and-widgets#Changyan)
@@ -56,7 +55,6 @@ If you want to disable comment in some page/post, just add `comments: false` to 
 * [FastClick](/docs/third-party-services/external-libraries#FastClick)
 * [Jquery Lazyload](/docs/third-party-services/external-libraries#Jquery-Lazyload)
 * [Backgroud JS](/docs/third-party-services/external-libraries#Backgroud-JS)
-* [Han Support](/docs/third-party-services/external-libraries#Han-Support)
 * [Pangu Autospace Support](/docs/third-party-services/external-libraries#Pangu-Autospace-Support)
 
 ### Math Equations

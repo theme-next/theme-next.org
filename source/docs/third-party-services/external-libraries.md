@@ -27,8 +27,8 @@ If you want to use the CDN instead of clone this repo, then need to **set vendor
 vendors:
   ...
   # See: http://fancyapps.com/fancybox/
-  fancybox: //cdn.jsdelivr.net/npm/fancybox@2.1.5/dist/js/jquery.fancybox.pack.js
-  fancybox_css: //cdn.jsdelivr.net/npm/fancybox@2.1.5/dist/css/jquery.fancybox.min.css
+  fancybox: //cdn.jsdelivr.net/npm/fancybox@2/dist/js/jquery.fancybox.pack.js
+  fancybox_css: //cdn.jsdelivr.net/npm/fancybox@2/dist/css/jquery.fancybox.min.css
   ...
 {% endcode %}
 {% endnote %}
@@ -63,8 +63,8 @@ If you want to use the CDN instead of clone this repo, then need to **set vendor
 vendors:
   ...
   # See: http://fancyapps.com/fancybox/
-  fancybox: //cdn.jsdelivr.net/npm/fancybox@3.0.0/dist/js/jquery.fancybox.pack.js
-  fancybox_css: //cdn.jsdelivr.net/npm/fancybox@3.0.0/dist/css/jquery.fancybox.min.css
+  fancybox: //cdn.jsdelivr.net/npm/fancybox@3/dist/js/jquery.fancybox.pack.js
+  fancybox_css: //cdn.jsdelivr.net/npm/fancybox@3/dist/css/jquery.fancybox.min.css
   ...
 {% endcode %}
 {% endnote %}
@@ -104,7 +104,7 @@ vendors:
   ...
   # bookmark
   # https://github.com/theme-next/theme-next-bookmark
-  bookmark: //cdn.jsdelivr.net/gh/theme-next/theme-next-bookmark@1.0.0/bookmark.min.js
+  bookmark: //cdn.jsdelivr.net/gh/theme-next/theme-next-bookmark@1/bookmark.min.js
   ...
 {% endcode %}
 {% endnote %}
@@ -185,8 +185,8 @@ If you want to use the CDN instead of clone this repo, then need to **set vendor
 vendors:
   ...
   # See: https://github.com/HubSpot/pace
-  pace: //cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js
-  pace_css: //cdn.jsdelivr.net/npm/pace-js@1.0.2/themes/blue/pace-theme-minimal.css
+  pace: //cdn.jsdelivr.net/npm/pace-js@1/pace.min.js
+  pace_css: //cdn.jsdelivr.net/npm/pace-js@1/themes/blue/pace-theme-minimal.css
   ...
 {% endcode %}
 {% endnote %}
@@ -233,7 +233,7 @@ If you want to use the CDN, then need to **set vendors** in {% label primary@the
 vendors:
   ...
   # See: https://github.com/HubSpot/pace
-  pace_css: //cdn.jsdelivr.net/npm/pace-js@1.0.2/themes/blue/pace-theme-minimal.css
+  pace_css: //cdn.jsdelivr.net/npm/pace-js@1/themes/blue/pace-theme-minimal.css
   ...
 {% endcode %}
 {% endnote %}
@@ -263,7 +263,7 @@ If you want to use the CDN instead of clone this repo, then need to **set vendor
 vendors:
   ...
   # See: https://github.com/ftlabs/fastclick
-  fastclick: https://cdn.jsdelivr.net/npm/fastclick@1.0.6/lib/fastclick.min.js
+  fastclick: https://cdn.jsdelivr.net/npm/fastclick@1/lib/fastclick.min.js
   ...
 {% endcode %}
 {% endnote %}
@@ -275,7 +275,7 @@ vendors:
 After the plugin installed, you can enable it by editing values `fastclick` to `true` in {% label primary@theme config file %}.
 
 {% code lang:yml hexo/_config.yml %}
-# Added switch option for separated repo in 6.0.0.
+# Polyfill to remove click delays on browsers with touch UIs.
 # Dependencies: https://github.com/theme-next/theme-next-fastclick
 fastclick: true
 {% endcode %}
@@ -302,7 +302,7 @@ If you want to use the CDN instead of clone this repo, then need to **set vendor
 vendors:
   ...
   # See: https://github.com/tuupola/jquery_lazyload
-  lazyload: //cdn.jsdelivr.net/npm/jquery_lazyload@1.9.3/jquery.lazyload.min.js
+  lazyload: //cdn.jsdelivr.net/npm/jquery_lazyload@1/jquery.lazyload.min.js
   ...
 {% endcode %}
 {% endnote %}
@@ -314,8 +314,8 @@ vendors:
 After the plugin installed, you can enable it by editing values `lazyload` to `true` in {% label primary@theme config file %}.
 
 {% code lang:yml hexo/_config.yml %}
-# Added switch option for separated repo in 6.0.0.
-# Dependencies: https://github.com/theme-next/theme-next-fastclick
+# Vanilla JavaScript plugin for lazyloading images.
+# Dependencies: https://github.com/theme-next/theme-next-jquery-lazyload
 lazyload: true
 {% endcode %}
 
@@ -389,7 +389,7 @@ If you want to use the CDN instead of clone this repo, then need to **set vendor
 vendors:
   ...
   # https://github.com/hustcc/canvas-nest.js
-  canvas_nest: //cdn.jsdelivr.net/npm/canvas-nest.js@1.0.1/dist/canvas-nest.min.js
+  canvas_nest: //cdn.jsdelivr.net/npm/canvas-nest.js@1/dist/canvas-nest.min.js
   ...
 {% endcode %}
 {% endnote %}
@@ -401,6 +401,7 @@ vendors:
 After the plugin installed, you can enable it by editing values `canvas_nest` to `true` in {% label primary@theme config file %}.
 
 {% code lang:yml hexo/_config.yml %}
+# Canvas-nest
 # Dependencies: https://github.com/theme-next/theme-next-fastclick
 canvas_nest: true
 {% endcode %}
@@ -431,7 +432,7 @@ If you want to use the CDN instead of clone this repo, then need to **set vendor
 vendors:
   ...
   # https://github.com/zproo/canvas-ribbon
-  canvas_ribbon: //cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-ribbon@1.0.0/canvas-ribbon.js
+  canvas_ribbon: //cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-ribbon@1/canvas-ribbon.js
   ...
 {% endcode %}
 {% endnote %}
@@ -480,19 +481,19 @@ If you want to use the CDN instead of clone this repo, then need to **set vendor
 vendors:
   ...
   # three
-  three: //cdn.jsdelivr.net/gh/theme-next/theme-next-three@1.0.0/three.min.js
+  three: //cdn.jsdelivr.net/gh/theme-next/theme-next-three@1/three.min.js
 
   # three_waves
   # https://github.com/jjandxa/three_waves
-  three_waves: //cdn.jsdelivr.net/gh/theme-next/theme-next-three@1.0.0/three-waves.min.js
+  three_waves: //cdn.jsdelivr.net/gh/theme-next/theme-next-three@1/three-waves.min.js
 
   # three_waves
   # https://github.com/jjandxa/canvas_lines
-  canvas_lines: //cdn.jsdelivr.net/gh/theme-next/theme-next-three@1.0.0/canvas_lines.min.js
+  canvas_lines: //cdn.jsdelivr.net/gh/theme-next/theme-next-three@1/canvas_lines.min.js
 
   # three_waves
   # https://github.com/jjandxa/canvas_sphere
-  canvas_sphere: //cdn.jsdelivr.net/gh/theme-next/theme-next-three@1.0.0/canvas_sphere.min.js
+  canvas_sphere: //cdn.jsdelivr.net/gh/theme-next/theme-next-three@1/canvas_sphere.min.js
 
   ...
 {% endcode %}
@@ -518,42 +519,6 @@ canvas_sphere: false
 
 ### Chinese Typesetting
 
-#### Han Support
-
-[Han.css](https://github.com/ethantw/Han) provides a CSS typography framework optimised for Hanzi.
-
-{% tabs han %}
-<!-- tab Installation → -->
-Change dir to NexT directory, and install module to `source/lib` directory.
-
-{% code lang:bash %}
-$ cd themes/next
-$ git clone https://github.com/theme-next/theme-next-han source/lib/Han
-{% endcode %}
-
-{% note info %}
-If you want to use the CDN instead of clone this repo, then need to **set vendors** in {% label primary@theme config file %}:
-{% code lang:yml next/_config.yml %}
-vendors:
-  ...
-  # https://github.com/ethantw/Han
-  han: //cdnjs.cloudflare.com/ajax/libs/Han/3.3.0/han.min.css
-  ...
-{% endcode %}
-{% endnote %}
-
-<!-- endtab -->
-
-<!-- tab NexT Config -->
-After the plugin installed, you can enable it by editing values `han` to `true` in {% label primary@theme config file %}.
-
-{% code lang:yml hexo/_config.yml %}
-# Dependencies: https://github.com/theme-next/theme-next-han
-han: true
-{% endcode %}
-<!-- endtab -->
-{% endtabs %}
-
 #### Pangu Autospace Support
 
 [pangu.js](https://github.com/vinta/pangu.js) will automatically insert a blank space between all the Chinese characters and the hexagonal English numeric symbols on the page.
@@ -573,7 +538,7 @@ If you want to use the CDN instead of clone this repo, then need to **set vendor
 vendors:
   ...
   # https://github.com/vinta/pangu.js
-  pangu: //cdn.jsdelivr.net/npm/pangu@3.3.0/dist/browser/pangu.min.js
+  pangu: //cdn.jsdelivr.net/npm/pangu@4/dist/browser/pangu.min.js
   ...
 {% endcode %}
 {% endnote %}
@@ -581,9 +546,10 @@ vendors:
 <!-- endtab -->
 
 <!-- tab NexT Config -->
-After the plugin installed, you can enable it by editing values `han` to `true` in {% label primary@theme config file %}.
+After the plugin installed, you can enable it by editing values `pangu` to `true` in {% label primary@theme config file %}.
 
 {% code lang:yml hexo/_config.yml %}
+# Pangu Support
 # Dependencies: https://github.com/theme-next/theme-next-pangu
 pangu: true
 {% endcode %}

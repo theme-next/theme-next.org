@@ -11,18 +11,17 @@ You can set it to a proper CDN URL, which can make static assets (JavaScript Thi
 
 | Name               | Original Link                                                                | NexT Internal Version |
 | ------------------ | ---------------------------------------------------------------------------- | --------------------- |
-| jQuery             | [jquery.com](http://jquery.com)                                              | 2.1.3                 |
-| FontAwesome        | [fontawesome.io](http://fontawesome.io)                                      | 4.4.0                 |
+| jQuery             | [jquery.com](http://jquery.com)                                              | 3.4.1                 |
+| FontAwesome        | [fontawesome.io](http://fontawesome.io)                                      | 4.7.0                 |
 | VelocityJS         | [velocityjs.org](http://velocityjs.org)                                      | 1.2.1                 |
 | VelocityJS UI Pack | [velocityjs.org/#uiPack](http://velocityjs.org/#uiPack)                      | 1.2.1                 |
-| UAParser.js        | [faisalman.github.io/ua-parser-js](https://faisalman.github.io/ua-parser-js) | 0.7.9                 |
 
 This feature located under `vendors` section in {% label primary@theme config file %}.
 `_internal: lib` is used to tell NexT where internal library is located and you shouldn't change this in most cases.
 And next part is config of each library; if you leave it blank NexT will use internal version. Each config is in format of `libname: CDN URL`. For example:
 
 ```yml
-jquery: //cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js
+jquery: //cdn.jsdelivr.net/jquery/3.4.1/jquery.min.js
 ```
 
 «Internal version» is the version that NexT tested and uses. And if you need other versions you need to test them first.
@@ -38,13 +37,13 @@ vendors:
   # Internal path prefix. Please do not edit it.
   _internal: lib
 
-  # Internal version: 2.1.3
+  # Internal version: 3.4.1
   # Example:
-  # jquery: //cdn.jsdelivr.net/npm/jquery@2/dist/jquery.min.js
-  # jquery: //cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js
+  # jquery: //cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js
+  # jquery: //cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js
   jquery: //cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js
 
-  # Internal version: 2.1.5
+  # Internal version: 2.1.5 & 3.5.7
   # See: https://fancyapps.com/fancybox
   # Example:
   # fancybox: //cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js
@@ -78,14 +77,14 @@ vendors:
   velocity: //cdn.jsdelivr.net/npm/velocity-animate/velocity.min.js
   velocity_ui: //cdn.jsdelivr.net/npm/velocity-animate/velocity.ui.min.js
 
-  # Internal version: 4.6.2
+  # Internal version: 4.7.0
   # See: https://fontawesome.com
   # Example:
   # fontawesome: //cdn.jsdelivr.net/npm/font-awesome@4/css/font-awesome.min.css
-  # fontawesome: //cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css
+  # fontawesome: //cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css
   fontawesome: //cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css
 
-  # Internal version: 2.4.1
+  # Internal version: 2.10.4
   # See: https://www.algolia.com
   # Example:
   # algolia_instant_js: //cdn.jsdelivr.net/npm/instantsearch.js@2/dist/instantsearch.js
@@ -129,23 +128,17 @@ vendors:
   # canvas_ribbon: //cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-ribbon@1/canvas-ribbon.js
   canvas_ribbon:
 
-  # Internal version: 3.3.0
-  # See: https://github.com/ethantw/Han
-  # Example:
-  # han: //cdn.jsdelivr.net/npm/han-css@3/dist/han.min.css
-  # han: //cdnjs.cloudflare.com/ajax/libs/Han/3.3.0/han.min.css
-  han: //cdn.jsdelivr.net/npm/han-css/dist/han.min.css
-
-  # Internal version: 3.3.0
+  # Internal version: 4.0.7
   # See: https://github.com/vinta/pangu.js
   # Example:
-  # pangu: //cdn.jsdelivr.net/npm/pangu@3/dist/browser/pangu.min.js
-  # pangu: //cdnjs.cloudflare.com/ajax/libs/pangu/3.3.0/pangu.min.js
+  # pangu: //cdn.jsdelivr.net/npm/pangu@4/dist/browser/pangu.min.js
+  # pangu: //cdnjs.cloudflare.com/ajax/libs/pangu/4.0.7/pangu.min.js
   pangu: //cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js
 
+  # Internal version: 1.0.0
   # See: https://github.com/GoogleChromeLabs/quicklink
   # Example:
-  # quicklink: //cdn.jsdelivr.net/npm/quicklink@1.0.0/dist/quicklink.umd.js
+  # quicklink: //cdn.jsdelivr.net/npm/quicklink@1/dist/quicklink.umd.js
   quicklink:
 
   # Internal version: 1.0.0
@@ -179,21 +172,33 @@ vendors:
   # Example:
   # valine: //cdn.jsdelivr.net/npm/valine@1/dist/Valine.min.js
   # valine: //cdnjs.cloudflare.com/ajax/libs/valine/1.3.4/Valine.min.js
-  valine: /lib/Valine.min.js
+  valine: //cdn.jsdelivr.net/npm/valine/dist/Valine.min.js
 
-  # gitalk
-  # See: https://github.com/gitalk/gitalk
+  # gitalk & js-md5
+  # See: https://github.com/gitalk/gitalk, https://github.com/emn178/js-md5
   # Example:
   # gitalk_js: //cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js
   # gitalk_css: //cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css
-  gitalk_js:
-  gitalk_css:
-
-  # js-md5
-  # See: https://github.com/emn178/js-md5
-  # Example:
   # md5: //cdn.jsdelivr.net/npm/js-md5@0/src/md5.min.js
-  md5:
+  gitalk_js: //cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js
+  gitalk_css: //cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css
+  md5: //cdn.jsdelivr.net/npm/js-md5/src/md5.min.js
+
+  # likely
+  # See: https://github.com/ilyabirman/Likely
+  # Example:
+  # likely_js: //cdn.jsdelivr.net/npm/ilyabirman-likely@2/release/likely.js
+  # likely_css: //cdn.jsdelivr.net/npm/ilyabirman-likely@2/release/likely.css
+  likely_js: //cdn.jsdelivr.net/npm/ilyabirman-likely/release/likely.js
+  likely_css: //cdn.jsdelivr.net/npm/ilyabirman-likely/release/likely.css
+
+  # DisqusJS
+  # See: https://github.com/SukkaW/DisqusJS
+  # Example:
+  # disqusjs_js: //cdn.jsdelivr.net/npm/disqusjs@1/dist/disqus.js
+  # disqusjs_css: //cdn.jsdelivr.net/npm/disqusjs@1/dist/disqusjs.css
+  disqusjs_js: //cdn.jsdelivr.net/npm/disqusjs/dist/disqus.js
+  disqusjs_css: //cdn.jsdelivr.net/npm/disqusjs/dist/disqusjs.css
 ```
 
 ### Injects

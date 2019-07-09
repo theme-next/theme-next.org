@@ -136,8 +136,8 @@ vendors:
   # ...
   # Some contents...
   # ...
-  fancybox: //cdn.jsdelivr.net/npm/fancybox@3.0.0/dist/js/jquery.fancybox.pack.js # Set or update fancybox cdn url.
-  fancybox_css: //cdn.jsdelivr.net/npm/fancybox@3.0.0/dist/css/jquery.fancybox.min.css # Set or update fancybox cdn url.
+  fancybox: //cdn.jsdelivr.net/npm/fancybox@3.5.7/dist/js/jquery.fancybox.pack.js # Set or update fancybox cdn url.
+  fancybox_css: //cdn.jsdelivr.net/npm/fancybox@3.5.7/dist/css/jquery.fancybox.min.css # Set or update fancybox cdn url.
 {% endcode %}
 
 And jsDelivr CDN is recommended to deliver our third-party plugins because it is fast in everywhere and has the valid ICP license issued by the Chinese government. It does not only crawl the js files from npm packages, and it crawls from the GitHub Releases! We could use the following link to reference the js files, just as other CDNs.
