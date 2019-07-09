@@ -17,33 +17,23 @@ cache:
 
 ### Custom Style Support
 
-Like [Next Data files](/docs/getting-started/data-files), you can put all your custom styles into one place (`hexo/source/_data`).
-
-- `head`: It's custom swig styles placed in `layout/_custom/head.swig`.
-- `header`: It's custom swig styles placed in `layout/_custom/header.swig`.
-- `sidebar`: It's custom swig styles placed in `layout/_custom/sidebar.swig`.
-- `variables`: It's variables styles placed in `source/css/_variables/custom.styl`.
-- `mixins`: It's mixins styles placed in `source/css/_mixins/custom.styl`.
-- `styles`: It's custom styles placed in `source/css/_custom/custom.styl`.
-
-Add your custom files in `hexo/source/_data` and uncomment needed files under the `custom_file_path` section in {% label primary@theme config file %} as following:
+Like [Next Data files](/docs/getting-started/data-files), you can put all your custom styles into one place (`hexo/source/_data`). Add your custom files in `hexo/source/_data` and uncomment needed files under the `custom_file_path` section in {% label primary@theme config file %} as following:
 
 ```yml next/_config.yml
 # For example, you want to put your custom styles file
 # outside theme directory in root `source/_data`, set
 # `styles: source/_data/styles.styl`
-#custom_file_path:
-  # Default paths: layout/_custom/*
+custom_file_path:
   #head: source/_data/head.swig
   #header: source/_data/header.swig
   #sidebar: source/_data/sidebar.swig
-
-  # Default path: source/css/_variables/custom.styl
-  #variables: source/_data/variables.styl
-  # Default path: source/css/_mixins/custom.styl
-  #mixins: source/_data/mixins.styl
-  # Default path: source/css/_custom/custom.styl
-  #styles: source/_data/styles.styl
+  #postMeta: source/_data/post-meta.swig
+  #postBodyEnd: source/_data/post-body-end.swig
+  #footer: source/_data/footer.swig
+  #bodyEnd: source/_data/body-end.swig
+  #variable: source/_data/variables.styl
+  #mixin: source/_data/mixins.styl
+  #style: source/_data/styles.styl
 ```
 
 ### RSS Support
