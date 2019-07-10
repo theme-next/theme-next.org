@@ -114,7 +114,8 @@ theme_config:
     enable: true
 
   custom_file_path:
-    styles: source/_data/styles.styl
+    style: source/_data/styles.styl
+    footer: source/_data/footer.swig
 
 
   # ============================================================= #
@@ -154,7 +155,6 @@ theme_config:
     theme:
       enable: true
       version: true
-    custom_text: Theme source code <span class="exturl theme-link" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0">here</span><br>Website source code <span class="exturl theme-link" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvdGhlbWUtbmV4dC5vcmc=">here</span>
 
   creative_commons:
     license: by-nc-sa
