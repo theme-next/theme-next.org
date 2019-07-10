@@ -248,7 +248,7 @@ hexo.extend.filter.register('theme_inject', function(injects) {
 
 **Two:** add a custom `my-favourite-food.swig` to sidebar. 
 
-Step1: you should create `my-favourite-food.swig` in any path(example: `source/_data/`) as below. You can get variable from `hexo` or `local` defined in filter.
+Step1: you should create `my-favourite-food.swig` in any path(e.g. `source/_data/`) as below. You can get variable from `hexo` or `local` defined in filter.
 ```html
 {% for food in foods %}
   <div>{{food}}</div>
@@ -266,7 +266,7 @@ hexo.extend.filter.register('theme_inject', function(injects) {
 
 **Three:** want to have big header, put `big-header.styl` to NexT. 
 
-Of course, you need to create this file first(in `source/_data/big-header.styl`).
+Of course, you need to create this file first(e.g. `source/_data/big-header.styl`).
 ```css
 h1 {
   font-size: 2rem;
@@ -277,7 +277,7 @@ And then add it in filter.
 ```js
 hexo.extend.filter.register('theme_inject', function(injects) {
   injects.style.push('source/_data/big-header.styl');
-}
+});
 ```
 
 #### Plugin
