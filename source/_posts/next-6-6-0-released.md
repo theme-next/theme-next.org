@@ -38,7 +38,7 @@ creative_commons:
 
 ### Global improvement for ExtURL ([#463](https://github.com/theme-next/hexo-theme-next/pull/463))
 
-From now no need to use `{% exturl %}` tag – all external links will be automatically replaced in posts (and in templates) with spanned links if `exturl` option will be enabled.
+From now no need to use `exturl` tag – all external links will be automatically replaced in posts (and in templates) with spanned links if `exturl` option will be enabled.
 
 #### Old configuration:
 
@@ -53,8 +53,6 @@ From now no need to use `{% exturl %}` tag – all external links will be automa
 - exturl: false
 
 -# External URL with BASE64 encrypt & decrypt.
--# Usage: {% exturl text url "title" %}
--# Alias: {% extlink text url "title" %}
 -exturl: false
 ```
 
