@@ -16,13 +16,11 @@ If you are using a lower version, this parameters will be ignored.
 {% endnote %}
 
 ```md full-image.js
-{% fullimage /url [@lazy], [alt], [title], [size] %}
+{% fullimage /url, [alt], [title], [size] %}
 <!-- Tag Alias -->
-{% fi /url [@lazy], [alt], [title], [size] %}
+{% fi /url, [alt], [title], [size] %}
 
 /url    : Relative path to image URL.
-[@lazy] : Load image only when user scroll to it.
-          Dependencies: https://github.com/theme-next/theme-next-jquery-lazyload
 [alt]   : Alternate text (for search engines).
 [title] : Tooltip at mouseover.
 [size]  : Size of image in any ratio (%, px, em).
@@ -65,15 +63,3 @@ All parameters except /url are optional.
 {% note info %}
 Recommended to use this tag once per article.
 {% endnote %}
-
-#### Lazy loading Full Image
-
-```md
-{% fi /images/docs/next-schemes-3.png@lazy, Alt text, Title text, 75% %}
-
-<!-- Or with space before '@lazy' -->
-
-{% fi /images/docs/next-schemes-3.png @lazy, Alt text, Title text, 75% %}
-```
-
-{% fi /images/docs/next-schemes-3.png @lazy, Alt text, Title text, 75% %}
