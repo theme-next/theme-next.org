@@ -225,7 +225,7 @@ injects.[injectPoint].raw(name, raw, [locals], options]);
 
 For inject style: 
 ```js
-injects.[point].push(styleFile);
+injects.[injectPoint].push(styleFile);
 ```
 
 These are many `injectPoint`, defined in `scripts/injects-point.js`
@@ -236,9 +236,9 @@ module.exports = {
 };
 ```
 
-#### Example
+#### Examples
 
-**Example One**: Load a custom script. We can add it in `bodyEnd`.
+**One:** load a custom script. We can add it in `bodyEnd`.
 
 ```js
 hexo.extend.filter.register('theme_inject', function(injects) {
@@ -246,7 +246,7 @@ hexo.extend.filter.register('theme_inject', function(injects) {
 });
 ```
 
-**Example Two**: Add a custom `my-favourite-food.swig` to sidebar. 
+**Two:** add a custom `my-favourite-food.swig` to sidebar. 
 
 Step1: you should create `my-favourite-food.swig` in any path(example: `source/_data/`) as below. You can get variable from `hexo` or `local` defined in filter.
 ```html
@@ -264,9 +264,9 @@ hexo.extend.filter.register('theme_inject', function(injects) {
 });
 ```
 
-**Example Three**: Want to have big header, put `big-header.styl` to NexT. 
+**Three:** want to have big header, put `big-header.styl` to NexT. 
 
-Of course, you need to create this file first 
+Of course, you need to create this file first(in `source/_data/big-header.styl`).
 ```css
 h1 {
   font-size: 2rem;
@@ -282,6 +282,6 @@ hexo.extend.filter.register('theme_inject', function(injects) {
 
 #### Plugin
 
-We also support plugin system, which makes it easy to extend functions without modifying the source code of the core module. You can see <https://hexo.io/docs/plugins.html#Plugin> to learn how to create a plugin.
+We also support hexo's plugin system, which makes it easy to extend functions without modifying the source code of the core module. You can see <https://hexo.io/docs/plugins.html#Plugin> to learn how to create a plugin.
 
 But you have to note path, it must absolute or relative to `hexo_dir`.
