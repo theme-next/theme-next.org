@@ -484,15 +484,12 @@ vendors:
   three: //cdn.jsdelivr.net/gh/theme-next/theme-next-three@1/three.min.js
 
   # three_waves
-  # https://github.com/jjandxa/three_waves
   three_waves: //cdn.jsdelivr.net/gh/theme-next/theme-next-three@1/three-waves.min.js
 
-  # three_waves
-  # https://github.com/jjandxa/canvas_lines
+  # canvas_lines
   canvas_lines: //cdn.jsdelivr.net/gh/theme-next/theme-next-three@1/canvas_lines.min.js
 
-  # three_waves
-  # https://github.com/jjandxa/canvas_sphere
+  # canvas_sphere
   canvas_sphere: //cdn.jsdelivr.net/gh/theme-next/theme-next-three@1/canvas_sphere.min.js
 
   ...
@@ -503,15 +500,20 @@ vendors:
 
 <!-- tab NexT Config -->
 
-After the plugin installed, you can enable it by editing values `three_waves` or `canvas_lines` or `canvas_sphere` to `true` in {% label primary@theme config file %}.
+After the plugin installed, you can enable it by editing values `three.enable` and `three.three_waves` or `three.canvas_lines` or `three.canvas_sphere` to `true` in {% label primary@theme config file %}.
 
 {% code lang:yml hexo/_config.yml %}
+# JavaScript 3D library.
+# Dependencies: https://github.com/theme-next/theme-next-three
+three:
+  enable: false
+  delay: false # Set true to further delay loading
 # three_waves
-three_waves: false
+  three_waves: false
 # canvas_lines
-canvas_lines: false
+  canvas_lines: false
 # canvas_sphere
-canvas_sphere: false
+  canvas_sphere: false
 {% endcode %}
 
 <!-- endtab -->
