@@ -285,3 +285,20 @@ hexo.extend.filter.register('theme_inject', function(injects) {
 We also support hexo's plugin system, which makes it easy to extend functions without modifying the source code of the core module. You can see <https://hexo.io/docs/plugins.html#Plugin> to learn how to create a plugin.
 
 But you have to note path, it must absolute or relative to `hexo_dir`.
+
+### Assets
+
+{% note warning %}
+In most cases you don't need any extra action, you can find following section at the end of {% label primary@theme config file%}:
+{% endnote %}
+
+```yml next/_config.yml
+# Assets
+css: css
+js: js
+images: images
+# By default, each asset URL native to NexT contains a query string (including the current version number of NexT) at the end.
+# After you update your NexT, it ensures that users always get the most up-to-date version when requesting resources.
+# Set false to remove query strings if you know what you are doing.
+query_string: true
+```
