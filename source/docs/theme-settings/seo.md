@@ -67,36 +67,6 @@ Just one setting must be turned on under the `Tags Settings` section in {% label
 exturl: true
 ```
 
-***
-
-**Below is the usage of `exturl` tag, which will no longer be supported.**
-
-#### Usage
-
-```md exturl.js
-{% exturl text url [title] %}
-<!-- Tag Alias -->
-{% extlink text url [title] %}
-
-text    : Main text of the link.
-url     : Full URL of external source.
-[title] : Tooltip at mouseover.
-          If 'title' not specified, 'url' will be used as title.
-          Optional parameter.
-```
-
-#### Examples
-
-```md
-Welcome to [Theme NexT Organization](https://github.com/theme-next)!
-If you want new feature or want to report a bug, feel free to {% exturl open an issue https://github.com/theme-next/hexo-theme-next/issues/new Open new issue in NexT repository %}.
-And if you have coding skills, NexT will be glad for your {% exturl pull request https://github.com/theme-next/hexo-theme-next/pulls "See all current pulls" %}.
-```
-
-Welcome to [Theme NexT Organization!](https://github.com/theme-next)
-If you want new feature or want to report a bug, feel free to {% exturl open an issue. https://github.com/theme-next/hexo-theme-next/issues/new Open new issue in NexT repository %}
-And if you have coding skills, NexT will be glad for your {% exturl pull request. https://github.com/theme-next/hexo-theme-next/pulls "See all current pulls" %}
-
 ### Webmaster Tools
 
 #### Google Webmaster Tools

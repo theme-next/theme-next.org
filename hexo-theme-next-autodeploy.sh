@@ -85,7 +85,7 @@ echo " ${lgreen}Updating or Installing NexT theme & Needed modules...${norm}"
 echo "=============================================================="
 echo "${yellow}NexT:${norm} ${lcyan}`git -C themes/next pull || git clone https://github.com/theme-next/hexo-theme-next themes/next`${norm}"
 
-echo "${yellow}jquery-lazyload:${norm} ${lcyan}`git -C themes/next/source/lib/jquery_lazyload pull || git clone https://github.com/theme-next/theme-next-jquery-lazyload themes/next/source/lib/jquery_lazyload`${norm}"
+echo "${yellow}lazyload:${norm} ${lcyan}`git -C themes/next/source/lib/lazyload pull || git clone https://github.com/theme-next/theme-next-lazyload themes/next/source/lib/lazyload`${norm}"
 echo "${yellow}fancybox:${norm} ${lcyan}`git -C themes/next/source/lib/fancybox pull || git clone https://github.com/theme-next/theme-next-fancybox3 themes/next/source/lib/fancybox`${norm}"
 
 echo
