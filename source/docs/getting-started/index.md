@@ -98,7 +98,7 @@ First start Hexo local server, and enable debug parameter (by adding `--debug`),
 Now you can open `http://localhost:4000` in your browser, and check whether the site works correctly.
 
 {% note success %}
-If you find your site looks like this picture, you have installed it correctly. That’s default NexT scheme – Muse.
+If you find your site looks like this picture, you have installed it correctly. That's default NexT scheme – Muse.
 ![Default Scheme – Muse](/images/docs/next-default-scheme-linux.png)
 {% endnote %}
 
