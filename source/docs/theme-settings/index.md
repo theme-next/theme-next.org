@@ -139,38 +139,23 @@ safari_rainbow: true
 
 NexT supports the scrollbar personalization.
 
-{% note danger %}
-Only works on webkit based browsers.
-{% endnote %}
-
 {% code lang:yml next/_config.yml %}
 custom_scrollbar: true
 {% endcode %}
+
+{% note danger %}
+Only works on webkit based browsers.
+{% endnote %}
 
 ### Custom Logo Support
 
 NexT supports the site logo personalization.
 
-{% tabs custom_logo %}
-<!-- tab <code>enable</code> → -->
-You can enable it by editing values `custom_logo.enable` to `true` in {% label primary@theme config file %}.
+You can enable it by adding images's url to `custom_logo` in {% label primary@theme config file %}.
 
 {% codeblock lang:yml next/_config.yml %}
-custom_logo:
-  enable: true
+custom_logo: /uploads/custom-logo.jpg
 {% endcodeblock %}
-<!-- endtab -->
-
-<!-- tab <code>image</code> -->
-Then you can add images's url by editing values in `custom_logo.image` section in {% label primary@theme config file %}.
-
-{% codeblock lang:yml next/_config.yml %}
-custom_logo:
-  image:
-{% endcodeblock %}
-<!-- endtab -->
-
-{% endtabs %}
 
 {% note danger %}
 Scheme Mist does not support custom logo setting under **6.0.x** version or highter.
