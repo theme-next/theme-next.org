@@ -83,6 +83,29 @@ github_banner:
 
 You can set `enable` to `true` and add your own GitHub link.
 
+### Text Align
+
+NexT allows to customize the text alignment in posts / pages. The `text-align` CSS property sets the horizontal alignment of a block element or table-cell box.
+
+| Values         | Effect                                                                                                                                                                 |
+| -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `start`        | The same as `left` if direction is left-to-right and `right` if direction is right-to-left.                                                                            |
+| `end`          | The same as `right` if direction is left-to-right and `left` if direction is right-to-left.                                                                            |
+| `left`         | The inline contents are aligned to the left edge of the line box.                                                                                                      |
+| `right`        | The inline contents are aligned to the right edge of the line box.                                                                                                     |
+| `center`       | The inline contents are centered within the line box.                                                                                                                  |
+| `justify`      | The inline contents are justified. Text should be spaced to line up its left and right edges to the left and right edges of the line box, except for the last line.    |
+| `justify-all`  | Same as `justify`, but also forces the last line to be justified.                                                                                                      |
+| `match-parent` | Similar to `inherit`, but the values `start` and `end` are calculated according to the parent's direction and are replaced by the appropriate `left` or `right` value. |
+
+{% code lang:yml next/_config.yml %}
+# Set the text alignment in the posts.
+text_align:
+  # Available values: start | end | left | right | center | justify | justify-all | match-parent
+  desktop: justify
+  mobile: justify
+{% endcode %}
+
 ### Mobile Devices Adaptation
 
 {% tabs Mobile-Adaptation %}
