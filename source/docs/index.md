@@ -19,7 +19,13 @@ Thanks to the [contribution of our users and developers](https://github.com/them
 
 NexT uses code highlighting themes from Tomorrow, and you can choose what you like by changing one line option.
 
-![Tomorrow Normal](/images/docs/tomorrow-normal.png) ![Tomorrow Night](/images/docs/tomorrow-night.png) ![Tomorrow Night Blue](/images/docs/tomorrow-night-blue.png)
+{% gp 5-2 %}
+![Tomorrow Normal](/images/docs/tomorrow.png)
+![Tomorrow Night](/images/docs/tomorrow-night.png)
+![Tomorrow Night Eighties](/images/docs/tomorrow-night-eighties.png)
+![Tomorrow Night Blue](/images/docs/tomorrow-night-blue.png)
+![Tomorrow Night Bright](/images/docs/tomorrow-night-bright.png)
+{% endgp %}
 
 ### Customize Your NexT
 
