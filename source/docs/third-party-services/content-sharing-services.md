@@ -104,16 +104,3 @@ needmoreshare2:
 {% endcode %}
 <!-- endtab -->
 {% endtabs %}
-
-### Baidu Sharing (China)
-
-Edit the configurations in `baidushare` section in the {% label primary@theme config file %} as following:
-
-```yml next/_config.yml
-# Baidu Share
-# Available value:
-#    button | slide
-# Warning: Baidu Share does not support https.
-baidushare:
-  type: button
-```
