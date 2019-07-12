@@ -232,13 +232,28 @@ symbols_count_time:
 #### Post Codeblock
 
 {% tabs codeblock %}
-<!-- tab <code>border_radius</code> -->
-By default NexT defines the default value of codeblock border radius as 1. You can configure it by editing `border_radius` values in `codeblock` section in {% label primary@theme config file %}.
+<!-- tab <code>highlight_theme</code> -->
 
-{% code lang:yml hexo/_config.yml %}
+Code Highlight Theme
+
+NexT uses [Tomorrow Theme](https://github.com/chriskempson/tomorrow-theme) to support code highlight.
+Default style is white (`normal`) and there are 5 styles to choose:
+
+* `normal`
+* `night`
+* `night blue`
+* `night bright`
+* `night eighties`
+
+Change the value of `highlight_theme` to choose the highlight style you like, for example:
+
+```yml next/_config.yml
 codeblock:
-  border_radius:
-{% endcode %}
+  # Code Highlight theme
+  # Available values: normal | night | night eighties | night blue | night bright
+  # https://github.com/chriskempson/tomorrow-theme
+  highlight_theme: night
+```
 <!-- endtab -->
 
 <!-- tab <code>copy_button</code> -->
@@ -278,26 +293,6 @@ codeblock:
 <!-- endtab -->
 
 {% endtabs %}
-
-#### Code Highlight Theme
-
-NexT uses [Tomorrow Theme](https://github.com/chriskempson/tomorrow-theme) to support code highlight.
-Default style is white (`normal`) and there are 5 styles to choose:
-
-* `normal`
-* `night`
-* `night blue`
-* `night bright`
-* `night eighties`
-
-Change the value of `highlight_theme` to choose the highlight style you like, for example:
-
-```yml next/_config.yml
-# Code Highlight theme
-# Available values: normal | night | night eighties | night blue | night bright
-# https://github.com/chriskempson/tomorrow-theme
-highlight_theme: night
-```
 
 #### Tag Icon
 
