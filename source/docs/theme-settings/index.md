@@ -161,6 +161,71 @@ custom_logo: /uploads/custom-logo.jpg
 Scheme Mist does not support custom logo setting under **6.0.x** version or highter.
 {% endnote %}
 
+#### Codeblock Style
+
+{% tabs codeblock %}
+<!-- tab <code>highlight_theme</code> -->
+
+Code Highlight Theme
+
+NexT uses [Tomorrow Theme](https://github.com/chriskempson/tomorrow-theme) to support code highlight.
+Default style is white (`normal`) and there are 5 styles to choose:
+
+* `normal`
+* `night`
+* `night blue`
+* `night bright`
+* `night eighties`
+
+Change the value of `highlight_theme` to choose the highlight style you like, for example:
+
+```yml next/_config.yml
+codeblock:
+  # Code Highlight theme
+  # Available values: normal | night | night eighties | night blue | night bright
+  # https://github.com/chriskempson/tomorrow-theme
+  highlight_theme: night
+```
+<!-- endtab -->
+
+<!-- tab <code>copy_button</code> -->
+NexT supports the copy-and-paste functionality of codeblock.
+
+{% subtabs codeblock1 %}
+<!-- tab <code>enable</code> -->
+You can enable it by editing value `copy_button.enable` to `true` in {% label primary@theme config file %}.
+
+{% code lang:yml hexo/_config.yml %}
+codeblock:
+  copy_button:
+    enable: true
+{% endcode %}
+<!-- endtab -->
+<!-- tab <code>show_result</code> -->
+By default NexT doesn't show copy results of the copy-and-paste functionality. You can also enable it by editing value `copy_button.show_result` to `true` in {% label primary@theme config file %}.
+
+{% code lang:yml hexo/_config.yml %}
+codeblock:
+  copy_button:
+    show_result: true
+{% endcode %}
+<!-- endtab -->
+<!-- tab <code>style</code> -->
+With `style` option, you can change your copy button style.
+There are three style available currently: `default`(Just leave it empty), `flat` and `mac`.
+
+{% code lang:yml hexo/_config.yml %}
+codeblock:
+  copy_button:
+    style: flat
+{% endcode %}
+<!-- endtab -->
+{% endsubtabs %}
+
+<!-- endtab -->
+
+{% endtabs %}
+
 ### Fonts Customization
 
 To solve the unstable of [Google Fonts API](https://www.google.com/fonts) in some countries, NexT supports setting fonts. By using this feature you can assign URL of fonts library. And NexT gives you 5 specific font settings, they are:
