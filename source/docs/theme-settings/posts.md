@@ -4,29 +4,6 @@ description: NexT User Docs – Theme Settings – Posts
 ---
 ### Post Settings
 
-#### Text Align
-
-NexT allows to customize the text alignment in the posts. The `text-align` CSS property sets the horizontal alignment of a block element or table-cell box.
-
-| Values         | Effect                                                                                                                                                                 |
-| -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `start`        | The same as `left` if direction is left-to-right and `right` if direction is right-to-left.                                                                            |
-| `end`          | The same as `right` if direction is left-to-right and `left` if direction is right-to-left.                                                                            |
-| `left`         | The inline contents are aligned to the left edge of the line box.                                                                                                      |
-| `right`        | The inline contents are aligned to the right edge of the line box.                                                                                                     |
-| `center`       | The inline contents are centered within the line box.                                                                                                                  |
-| `justify`      | The inline contents are justified. Text should be spaced to line up its left and right edges to the left and right edges of the line box, except for the last line.    |
-| `justify-all`  | Same as `justify`, but also forces the last line to be justified.                                                                                                      |
-| `match-parent` | Similar to `inherit`, but the values `start` and `end` are calculated according to the parent's direction and are replaced by the appropriate `left` or `right` value. |
-
-{% code lang:yml next/_config.yml %}
-# Set the text alignment in the posts.
-text_align:
-  # Available values: start | end | left | right | center | justify | justify-all | match-parent
-  desktop: justify
-  mobile: justify
-{% endcode %}
-
 #### Page Scroll
 
 {% tabs page-scroll %}
@@ -251,76 +228,6 @@ symbols_count_time:
 
 <!-- endtab -->
 {% endtabs %}
-
-#### Post Codeblock
-
-{% tabs codeblock %}
-<!-- tab <code>border_radius</code> -->
-By default NexT defines the default value of codeblock border radius as 1. You can configure it by editing `border_radius` values in `codeblock` section in {% label primary@theme config file %}.
-
-{% code lang:yml hexo/_config.yml %}
-codeblock:
-  border_radius:
-{% endcode %}
-<!-- endtab -->
-
-<!-- tab <code>copy_button</code> -->
-NexT supports the copy-and-paste functionality of codeblock.
-
-{% subtabs codeblock1 %}
-<!-- tab <code>enable</code> -->
-You can enable it by editing value `copy_button.enable` to `true` in {% label primary@theme config file %}.
-
-{% code lang:yml hexo/_config.yml %}
-codeblock:
-  copy_button:
-    enable: true
-{% endcode %}
-<!-- endtab -->
-<!-- tab <code>show_result</code> -->
-By default NexT doesn't show copy results of the copy-and-paste functionality. You can also enable it by editing value `copy_button.show_result` to `true` in {% label primary@theme config file %}.
-
-{% code lang:yml hexo/_config.yml %}
-codeblock:
-  copy_button:
-    show_result: true
-{% endcode %}
-<!-- endtab -->
-<!-- tab <code>style</code> -->
-With `style` option, you can change your copy button style.
-There are two style available currently: `default`(Just leave it empty) and `flat`.
-
-{% code lang:yml hexo/_config.yml %}
-codeblock:
-  copy_button:
-    style: flat
-{% endcode %}
-<!-- endtab -->
-{% endsubtabs %}
-
-<!-- endtab -->
-
-{% endtabs %}
-
-#### Code Highlight Theme
-
-NexT uses [Tomorrow Theme](https://github.com/chriskempson/tomorrow-theme) to support code highlight.
-Default style is white (`normal`) and there are 5 styles to choose:
-
-* `normal`
-* `night`
-* `night blue`
-* `night bright`
-* `night eighties`
-
-Change the value of `highlight_theme` to choose the highlight style you like, for example:
-
-```yml next/_config.yml
-# Code Highlight theme
-# Available values: normal | night | night eighties | night blue | night bright
-# https://github.com/chriskempson/tomorrow-theme
-highlight_theme: night
-```
 
 #### Tag Icon
 

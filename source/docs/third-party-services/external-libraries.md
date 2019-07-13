@@ -197,10 +197,11 @@ vendors:
 
 {% subtabs pace1 %}
 <!-- tab <code>pace</code> -->
-After the plugin installed, you can enable it by editing values `pace` to `true` in {% label primary@theme config file %}.
+After the plugin installed, you can enable it by editing values `pace.enable` to `true` in {% label primary@theme config file %}.
 
 {% code lang:yml hexo/_config.yml %}
-pace: true
+pace:
+  enable: true
 {% endcode %}
 <!-- endtab -->
 <!-- tab <code>pace_theme</code> -->
@@ -216,15 +217,18 @@ Pace includes a bunch of [themes](http://github.hubspot.com/pace/docs/welcome/) 
 * pace-theme-corner-indicator
 * pace-theme-fill-left
 * pace-theme-flash
+* pace-theme-flat-top
 * pace-theme-loading-bar
 * pace-theme-mac-osx
+* pace-theme-material
 * pace-theme-minimal
 
 
-By default NexT uses `pace-theme-minimal` theme. You can configure it by editing values in `pace_theme` section in {% label primary@theme config file %}.
+By default NexT uses `pace-theme-minimal` theme. You can configure it by editing values in `pace.theme` section in {% label primary@theme config file %}.
 
 {% code lang:yml hexo/_config.yml %}
-pace_theme: pace-theme-minimal
+pace: 
+  theme: minimal
 {% endcode %}
 
 {% note info %}

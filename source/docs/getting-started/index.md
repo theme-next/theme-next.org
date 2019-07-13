@@ -344,7 +344,6 @@ theme_config:
   avatar:
     url: /images/apple-touch-icon-next.png
     rounded: true
-    opacity: 1
     rotated: false
 {% endcode %}
 
@@ -380,18 +379,6 @@ avatar:
   rotated: true
 {% endcode %}
 
-<!-- endtab -->
-
-<!-- tab <code>opacity</code> -->
-The value of opacity should be choose from 0 to 1 to set the opacity of the avatar:
-
-* **`1`** → Avatar will be in default opacity style.
-* `0` → Avatar will be transparent.
-
-{% code lang:yml next/_config.yml %}
-avatar:
-  opacity: 1
-{% endcode %}
 <!-- endtab -->
 {% endtabs %}
 

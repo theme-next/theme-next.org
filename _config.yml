@@ -233,7 +233,6 @@ theme_config:
   avatar:
     url: /images/apple-touch-icon-next.png
     rounded: true
-    opacity: 1
     rotated: false
 
   social:
