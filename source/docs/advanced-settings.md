@@ -213,19 +213,26 @@ hexo.extend.filter.register('theme_inject', function(injects) {
 });
 ```
 
-A injects argument will get passed into the function, so we can use it add custom code in `injectPoint` as below.
+A injects argument will get passed into the function, so we can use it add custom code in `injectPoint` as following.
 
 For inject view: 
 ```js
-// note: the name must be unique
-// locals and options is the same as partial https://hexo.io/docs/helpers#partial
-injects.[injectPoint].file(name, filePath, [locals], [options]);
-injects.[injectPoint].raw(name, raw, [locals], options]);
+// the name of same `injectPoint` must be unique.
+// locals and options is the same as partial https://hexo.io/docs/helpers#partial.
+hexo.extend.filter.register('theme_inject', function(injects) {
+  // it will put code from this filePath into injectPoint.
+  injects.[injectPoint].file(name, filePath, [locals, options]);
+  // it will put raw string as code into injectPoint.
+  injects.[injectPoint].raw(name, raw, [locals, options]);
+});
 ```
 
 For inject style: 
 ```js
-injects.[injectPoint].push(styleFile);
+hexo.extend.filter.register('theme_inject', function(injects) {
+  // it will put styleFile into injectPoint.
+  injects.[injectPoint].push(styleFile);
+});
 ```
 
 These are many `injectPoint`, defined in `scripts/injects-point.js`
@@ -235,6 +242,12 @@ module.exports = {
   styles: ['variable', 'mixin', 'style']
 };
 ```
+
+`custom_file_path` also uses this API, see [default-injects.js](https://github.com/theme-next/hexo-theme-next/blob/master/scripts/filters/default-injects.js). It will consume `custom` name in view inject points. So if you use `custom_file_path`, please not use `custom`.
+
+{% note warning %}
+You have to note path, it must absolute or relative to `hexo_dir`.
+{% endnote %}
 
 #### Examples
 
@@ -258,7 +271,7 @@ Step1: you should create `my-favourite-food.swig` in any path(e.g. `source/_data
 Step2: add filter to load it.
 ```js
 hexo.extend.filter.register('theme_inject', function(injects) {
-  injects.sidebar.raw('my-favourite-food', 'source/_data/my-favourite-food.swig', {
+  injects.sidebar.file('my-favourite-food', 'source/_data/my-favourite-food.swig', {
     foods: ['apple', 'orange']
   });
 });
@@ -283,5 +296,3 @@ hexo.extend.filter.register('theme_inject', function(injects) {
 #### Plugin
 
 We also support hexo's plugin system, which makes it easy to extend functions without modifying the source code of the core module. You can see <https://hexo.io/docs/plugins.html#Plugin> to learn how to create a plugin.
-
-But you have to note path, it must absolute or relative to `hexo_dir`.
