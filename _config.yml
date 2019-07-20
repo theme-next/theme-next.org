@@ -368,3 +368,7 @@ theme_config:
       tabs: true
       labels: true
     border_radius: 0
+
+  caniuse:
+    enable: true
+    cdn: //cdn.jsdelivr.net/gh/ireade/caniuse-embed@1/caniuse-embed.min.js
