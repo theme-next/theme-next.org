@@ -15,6 +15,7 @@ Tag Plugin is a way to make special style contents supported by Hexo. For exampl
 * [PDF](/docs/tag-plugins/pdf)
 * [Tabs](/docs/tag-plugins/tabs)
 * [Video](/docs/tag-plugins/video)
+* [Caniuse](/docs/tag-plugins/caniuse)
 
 ### Centered Quote
 
