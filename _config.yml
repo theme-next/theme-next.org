@@ -204,15 +204,17 @@ theme_config:
 
       Tag Plugins:
         default: /tag-plugins/ || rocket
-        Full Image: /full-image.html || picture-o
-        Note: /note.html || comment
-        Button: /button.html || square
-        Label: /label.html || font
-        Tabs: /tabs.html || columns
-        Mermaid: /mermaid.html || tasks
-        Video: /video.html || video-camera
-        Group Pictures: /group-pictures.html || file-image-o
         PDF: /pdf.html || file-pdf-o
+        Tabs: /tabs.html || columns
+        Note: /note.html || comment
+        Label: /label.html || font
+        Video: /video.html || video-camera
+        Button: /button.html || square
+        Mermaid: /mermaid.html || tasks
+        Caniuse: /caniuse.html || signal
+        Full Image: /full-image.html || picture-o
+        Group Pictures: /group-pictures.html || file-image-o
+        
 
       Advanced Settings: /advanced-settings.html || cogs
       FAQ's: /faqs.html || life-ring
