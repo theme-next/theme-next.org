@@ -116,7 +116,7 @@ echo "=============================================================="
     hexo config theme_config.scheme Muse
     echo "${yellow}Setted scheme:${norm} ${lcyan}`hexo config theme_config.scheme`${norm}"
 
-    hexo clean && hexo g --silent
+    hexo clean && hexo g
     echo "${lred}`mv -v public schemes/muse`${norm}"
 
 echo
