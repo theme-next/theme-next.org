@@ -2,6 +2,7 @@
 title: Mermaid
 description: NexT User Docs – NexT Supported Tags – Mermaid
 ---
+
 ### Settings
 
 ```yml next/_config.yml
@@ -18,7 +19,7 @@ mermaid:
 
 ### Usage
 
-```md grouppicture.js
+```md mermaid.js
 {% mermaid type %}
 {% endmermaid %}
 
