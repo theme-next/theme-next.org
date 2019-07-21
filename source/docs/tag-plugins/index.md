@@ -6,15 +6,16 @@ Tag Plugin is a way to make special style contents supported by Hexo. For exampl
 
 * [Centered Quote](#Centered-Quote)
 * [Include Raw](#Include-Raw)
-* [Button](/docs/tag-plugins/button)
-* [Full Image](/docs/tag-plugins/full-image)
-* [Group Pictures](/docs/tag-plugins/group-pictures)
-* [Label](/docs/tag-plugins/label)
-* [Mermaid](/docs/tag-plugins/mermaid)
-* [Note](/docs/tag-plugins/note)
 * [PDF](/docs/tag-plugins/pdf)
 * [Tabs](/docs/tag-plugins/tabs)
+* [Note](/docs/tag-plugins/note)
+* [Label](/docs/tag-plugins/label)
 * [Video](/docs/tag-plugins/video)
+* [Button](/docs/tag-plugins/button)
+* [Mermaid](/docs/tag-plugins/mermaid)
+* [Caniuse](/docs/tag-plugins/caniuse)
+* [Full Image](/docs/tag-plugins/full-image)
+* [Group Pictures](/docs/tag-plugins/group-pictures)
 
 ### Centered Quote
 
