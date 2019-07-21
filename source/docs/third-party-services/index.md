@@ -38,7 +38,6 @@ If you want to disable comment in some page/post, just add `comments: false` to 
 * [AddThis](/docs/third-party-services/content-sharing-services#AddThis)
 * [Likely](/docs/third-party-services/content-sharing-services#Likely)
 * [Need More Share](/docs/third-party-services/content-sharing-services#Need-More-Share)
-* [Baidu Sharing (China)](/docs/third-party-services/content-sharing-services#Baidu-Sharing-China)
 
 ### Search Services
 
@@ -49,13 +48,14 @@ If you want to disable comment in some page/post, just add `comments: false` to 
 ### External Libraries
 
 * [Fancybox](/docs/third-party-services/external-libraries#Fancybox)
+* [MediumZoom](/docs/third-party-services/external-libraries#MediumZoom)
+* [FastClick](/docs/third-party-services/external-libraries#FastClick)
+* [Lazyload](/docs/third-party-services/external-libraries#Lazyload)
+* [Pangu Autospace Support](/docs/third-party-services/external-libraries#Pangu-Autospace-Support)
 * [Bookmark](/docs/third-party-services/external-libraries#Bookmark)
 * [Reading Progress](/docs/third-party-services/external-libraries#Reading-Progress)
 * [Progress bar](/docs/third-party-services/external-libraries#Progress-bar)
-* [FastClick](/docs/third-party-services/external-libraries#FastClick)
-* [Jquery Lazyload](/docs/third-party-services/external-libraries#Jquery-Lazyload)
 * [Backgroud JS](/docs/third-party-services/external-libraries#Backgroud-JS)
-* [Pangu Autospace Support](/docs/third-party-services/external-libraries#Pangu-Autospace-Support)
 
 ### Math Equations
 
