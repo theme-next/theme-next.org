@@ -3,15 +3,6 @@ title: Caniuse
 description: NexT User Docs – NexT Supported Tags – Caniuse
 ---
 
-### Settings
-
-```yml next/_config.yml
-# Caniuse tag
-caniuse:
-  enable: true
-  cdn: //cdn.jsdelivr.net/gh/ireade/caniuse-embed@1/caniuse-embed.min.js
-```
-
 ### Usage
 
 ```md caniuse.js
