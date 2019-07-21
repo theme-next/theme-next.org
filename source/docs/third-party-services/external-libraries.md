@@ -84,6 +84,49 @@ fancybox: true
 
 {% endtabs %}
 
+### MediumZoom
+
+[Medium Zoom](https://github.com/francoischalifour/medium-zoom) is a JavaScript library for zooming images like Medium.
+
+{% tabs medium-zoom %}
+<!-- tab Installation → -->
+Change dir to NexT directory, and install module to `source/lib` directory.
+
+{% code lang:bash %}
+$ cd themes/next
+$ git clone https://github.com/theme-next/theme-next-mediumzoom source/lib/mediumzoom
+{% endcode %}
+
+{% note info %}
+If you want to use the CDN instead of clone this repo, then need to **set vendors** in {% label primary@theme config file %}:
+{% code lang:yml next/_config.yml %}
+vendors:
+  ...
+  # See: https://github.com/francoischalifour/medium-zoom
+  mediumzoom: https://cdn.jsdelivr.net/npm/medium-zoom@1/dist/medium-zoom.min.js
+  ...
+{% endcode %}
+{% endnote %}
+
+<!-- endtab -->
+
+<!-- tab NexT Config -->
+
+After the plugin installed, you can enable it by editing values `mediumzoom` to `true` in {% label primary@theme config file %}.
+
+{% code lang:yml hexo/_config.yml %}
+# A JavaScript library for zooming images like Medium.
+# Dependencies: https://github.com/theme-next/theme-next-medium-zoom
+mediumzoom: true
+{% endcode %}
+
+{% note warning %}
+Do not enable both `fancybox` and `mediumzoom`.
+{% endnote %}
+
+<!-- endtab -->
+{% endtabs %}
+
 ### FastClick
 
 [FastClick](https://github.com/ftlabs/fastclick) is a simple, easy-to-use library for eliminating the 300ms delay between a physical tap and the firing of a click event on mobile browsers. The aim is to make your application feel less laggy and more responsive while avoiding any interference with your current logic.
