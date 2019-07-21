@@ -158,7 +158,7 @@ custom_logo: /uploads/custom-logo.jpg
 {% endcodeblock %}
 
 {% note danger %}
-Scheme Mist does not support custom logo setting under **6.0.x** version or highter.
+Scheme Mist does not support custom logo setting.
 {% endnote %}
 
 #### Codeblock Style

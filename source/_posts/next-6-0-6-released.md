@@ -6,7 +6,7 @@ Since more and more contributors joined to NexT, version 6.0.6 got more improvem
 
 ### Version 6.0.6
 
-- {% label warning@REMOVED %} Duplicated meta tag keywords (Hexo v3.3.5 or highter needed).
+- {% label warning@REMOVED %} Duplicated meta tag keywords (Hexo v3.3.5 or higher needed).
 - {% label info@IMPROVED %} Accessibility for mobile devices.
 - {% label success@ADDED %} Support for [hexo-leancloud-counter-security][] plugin.
 - {% label success@ADDED %} Sub-Menu feature.

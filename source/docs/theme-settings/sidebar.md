@@ -23,7 +23,7 @@ sidebar:
   #position: right
 {% endcode %}
 {% note danger %}
-For now only Pisces / Gemini Schemes supports `position` setting under **6.0.x** version or highter.
+Only Pisces / Gemini Schemes supports `position` setting under **7.2.0** version or lower.
 {% endnote %}
 <!-- endtab -->
 
@@ -45,7 +45,7 @@ This option commented out by default and values are:
 
 {% note danger %}
 From version {% label danger@6.0.4 %} to {% label danger@6.3.0 %} option was called `sidebar_width` and was available for Gemini Scheme only.
-From {% label danger@6.4.0 %} version or highter, option renamed to `sidebar.width` and available for all schemes.
+From {% label danger@6.4.0 %} version or higher, option renamed to `sidebar.width` and available for all schemes.
 {% endnote %}
 <!-- endtab -->
 
@@ -75,7 +75,7 @@ sidebar:
 {% endcode %}
 
 {% note danger %}
-For now only Pisces / Gemini Schemes supports `offset` setting under **6.0.x** version or highter.
+For now only Pisces / Gemini Schemes supports `offset` setting under **6.0.x** version or higher.
 {% endnote %}
 <!-- endtab -->
 
@@ -88,7 +88,7 @@ sidebar:
 {% endcode %}
 
 {% note danger %}
-For now only Muse / Mist Schemes supports `onmobile` setting under **6.0.x** version or highter.
+For now only Muse / Mist Schemes supports `onmobile` setting under **6.0.x** version or higher.
 {% endnote %}
 <!-- endtab -->
 
@@ -101,7 +101,7 @@ sidebar:
 {% endcode %}
 
 {% note danger %}
-For now only Muse / Mist Schemes supports `dimmer` setting under **7.0.x** version or highter.
+For now only Muse / Mist Schemes supports `dimmer` setting under **7.0.x** version or higher.
 {% endnote %}
 <!-- endtab -->
 

@@ -501,7 +501,7 @@ canvas_ribbon:
 {% endtabs %}
 
 {% note danger %}
-For now only Pisces Scheme supports canvas ribbon setting under **6.0.x** version or highter.
+For now only Pisces Scheme supports canvas ribbon setting under **6.0.x** version or higher.
 {% endnote %}
 
 #### JavaScript 3D library

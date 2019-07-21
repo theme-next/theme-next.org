@@ -76,7 +76,7 @@ baidu_analytics: your_id
     ```
 
 {% note warning %}
-The script will show «Webmaster Statistics» and it's ugly, so I used a `display: none;` to hide it.
+The script will show «Webmaster Statistics» and it's ugly, so we used a `display: none;` to hide it.
 {% endnote %}
 
 ### Counting Tools
