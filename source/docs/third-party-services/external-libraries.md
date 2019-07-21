@@ -84,6 +84,169 @@ fancybox: true
 
 {% endtabs %}
 
+### FastClick
+
+[FastClick](https://github.com/ftlabs/fastclick) is a simple, easy-to-use library for eliminating the 300ms delay between a physical tap and the firing of a click event on mobile browsers. The aim is to make your application feel less laggy and more responsive while avoiding any interference with your current logic.
+
+{% tabs fastclick %}
+<!-- tab Installation → -->
+Change dir to NexT directory, and install module to `source/lib` directory.
+
+{% code lang:bash %}
+$ cd themes/next
+$ git clone https://github.com/theme-next/theme-next-fastclick source/lib/fastclick
+{% endcode %}
+
+{% note info %}
+If you want to use the CDN instead of clone this repo, then need to **set vendors** in {% label primary@theme config file %}:
+{% code lang:yml next/_config.yml %}
+vendors:
+  ...
+  # See: https://github.com/ftlabs/fastclick
+  fastclick: https://cdn.jsdelivr.net/npm/fastclick@1/lib/fastclick.min.js
+  ...
+{% endcode %}
+{% endnote %}
+
+<!-- endtab -->
+
+<!-- tab NexT Config -->
+
+After the plugin installed, you can enable it by editing values `fastclick` to `true` in {% label primary@theme config file %}.
+
+{% code lang:yml hexo/_config.yml %}
+# Polyfill to remove click delays on browsers with touch UIs.
+# Dependencies: https://github.com/theme-next/theme-next-fastclick
+fastclick: true
+{% endcode %}
+
+<!-- endtab -->
+{% endtabs %}
+
+### Lazyload
+
+[Lazyload](https://github.com/ApoorvSaxena/lozad.js) is a modern vanilla JavaScript version of the original Lazy Load plugin. Lazy Load delays loading of images in long web pages. Images outside of viewport will not be loaded before user scrolls to them. This is opposite of image preloading.
+
+{% tabs lazyload %}
+<!-- tab Installation → -->
+Change dir to NexT directory, and install module to `source/lib` directory.
+
+{% code lang:bash %}
+$ cd themes/next
+$ git clone https://github.com/theme-next/theme-next-lazyload source/lib/lazyload
+{% endcode %}
+
+{% note info %}
+If you want to use the CDN instead of clone this repo, then need to **set vendors** in {% label primary@theme config file %}:
+{% code lang:yml next/_config.yml %}
+vendors:
+  ...
+  # See: https://github.com/ApoorvSaxena/lozad.js
+  lazyload: //cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js
+  ...
+{% endcode %}
+{% endnote %}
+
+<!-- endtab -->
+
+<!-- tab NexT Config -->
+
+After the plugin installed, you can enable it by editing values `lazyload` to `true` in {% label primary@theme config file %}.
+
+{% code lang:yml hexo/_config.yml %}
+# Vanilla JavaScript plugin for lazyloading images.
+# Dependencies: https://github.com/theme-next/theme-next-lazyload
+lazyload: true
+{% endcode %}
+
+<!-- endtab -->
+{% endtabs %}
+
+### Chinese Typesetting
+
+#### Pangu Autospace Support
+
+[pangu.js](https://github.com/vinta/pangu.js) will automatically insert a blank space between all the Chinese characters and the hexagonal English numeric symbols on the page.
+
+{% tabs pangu %}
+<!-- tab Installation → -->
+Change dir to NexT directory, and install module to `source/lib` directory.
+
+{% code lang:bash %}
+$ cd themes/next
+$ git clone https://github.com/theme-next/theme-next-pangu.git source/lib/pangu
+{% endcode %}
+
+{% note info %}
+If you want to use the CDN instead of clone this repo, then need to **set vendors** in {% label primary@theme config file %}:
+{% code lang:yml next/_config.yml %}
+vendors:
+  ...
+  # https://github.com/vinta/pangu.js
+  pangu: //cdn.jsdelivr.net/npm/pangu@4/dist/browser/pangu.min.js
+  ...
+{% endcode %}
+{% endnote %}
+
+<!-- endtab -->
+
+<!-- tab NexT Config -->
+After the plugin installed, you can enable it by editing values `pangu` to `true` in {% label primary@theme config file %}.
+
+{% code lang:yml hexo/_config.yml %}
+# Pangu Support
+# Dependencies: https://github.com/theme-next/theme-next-pangu
+pangu: true
+{% endcode %}
+<!-- endtab -->
+{% endtabs %}
+
+### Quicklink
+
+[Quicklink](https://github.com/GoogleChromeLabs/quicklink) is a JavaScript plugin that faster subsequent page-loads by prefetching in-viewport links during idle time. Chrome, Firefox, Edge are supported without polyfills.
+
+{% tabs quicklink %}
+<!-- tab Installation → -->
+Change dir to NexT directory, and install module to `source/lib` directory.
+
+{% code lang:bash %}
+$ cd themes/next
+$ git clone https://github.com/theme-next/theme-next-quicklink source/lib/quicklink
+{% endcode %}
+
+{% note info %}
+If you want to use the CDN instead of clone this repo, then need to **set vendors** in {% label primary@theme config file %}:
+{% code lang:yml next/_config.yml %}
+vendors:
+  ...
+  # See: https://github.com/GoogleChromeLabs/quicklink
+  quicklink: //cdn.jsdelivr.net/npm/quicklink@1/dist/quicklink.umd.js
+  ...
+{% endcode %}
+{% endnote %}
+
+<!-- endtab -->
+
+<!-- tab NexT Config -->
+
+After the plugin installed, you can enable it by editing values `quicklink.enable` to `true` in {% label primary@theme config file %}.
+
+{% code lang:yml hexo/_config.yml %}
+...
+quicklink:
+  enable: true
+  home: true
+  archive: true
+  delay: true
+  timeout: 3000
+  priority: true
+  ignores:
+...
+{% endcode %}
+
+<!-- endtab -->
+{% endtabs %}
+
 ### Bookmark
 
 Bookmark is a plugin that allow the users save their reading position. The users could just click the bookmark icon (like 🔖) in left-top of the page to save the position. And when they visit your blog in the next time, they can continue the last reading position by clicking the bookmark icon from the home page.
@@ -223,7 +386,6 @@ Pace includes a bunch of [themes](http://github.hubspot.com/pace/docs/welcome/) 
 * pace-theme-material
 * pace-theme-minimal
 
-
 By default NexT uses `pace-theme-minimal` theme. You can configure it by editing values in `pace.theme` section in {% label primary@theme config file %}.
 
 {% code lang:yml hexo/_config.yml %}
@@ -244,130 +406,6 @@ vendors:
 
 <!-- endtab -->
 {% endsubtabs %}
-
-<!-- endtab -->
-{% endtabs %}
-
-### FastClick
-
-[FastClick](https://github.com/ftlabs/fastclick) is a simple, easy-to-use library for eliminating the 300ms delay between a physical tap and the firing of a click event on mobile browsers. The aim is to make your application feel less laggy and more responsive while avoiding any interference with your current logic.
-
-{% tabs fastclick %}
-<!-- tab Installation → -->
-Change dir to NexT directory, and install module to `source/lib` directory.
-
-{% code lang:bash %}
-$ cd themes/next
-$ git clone https://github.com/theme-next/theme-next-fastclick source/lib/fastclick
-{% endcode %}
-
-{% note info %}
-If you want to use the CDN instead of clone this repo, then need to **set vendors** in {% label primary@theme config file %}:
-{% code lang:yml next/_config.yml %}
-vendors:
-  ...
-  # See: https://github.com/ftlabs/fastclick
-  fastclick: https://cdn.jsdelivr.net/npm/fastclick@1/lib/fastclick.min.js
-  ...
-{% endcode %}
-{% endnote %}
-
-<!-- endtab -->
-
-<!-- tab NexT Config -->
-
-After the plugin installed, you can enable it by editing values `fastclick` to `true` in {% label primary@theme config file %}.
-
-{% code lang:yml hexo/_config.yml %}
-# Polyfill to remove click delays on browsers with touch UIs.
-# Dependencies: https://github.com/theme-next/theme-next-fastclick
-fastclick: true
-{% endcode %}
-
-<!-- endtab -->
-{% endtabs %}
-
-### Jquery Lazyload
-
-[Jquery Lazyload](https://github.com/tuupola/jquery_lazyload) is a modern vanilla JavaScript version of the original Lazy Load plugin. Lazy Load delays loading of images in long web pages. Images outside of viewport will not be loaded before user scrolls to them. This is opposite of image preloading.
-
-{% tabs lazyload %}
-<!-- tab Installation → -->
-Change dir to NexT directory, and install module to `source/lib` directory.
-
-{% code lang:bash %}
-$ cd themes/next
-$ git clone https://github.com/theme-next/theme-next-jquery-lazyload source/lib/jquery_lazyload
-{% endcode %}
-
-{% note info %}
-If you want to use the CDN instead of clone this repo, then need to **set vendors** in {% label primary@theme config file %}:
-{% code lang:yml next/_config.yml %}
-vendors:
-  ...
-  # See: https://github.com/tuupola/jquery_lazyload
-  lazyload: //cdn.jsdelivr.net/npm/jquery_lazyload@1/jquery.lazyload.min.js
-  ...
-{% endcode %}
-{% endnote %}
-
-<!-- endtab -->
-
-<!-- tab NexT Config -->
-
-After the plugin installed, you can enable it by editing values `lazyload` to `true` in {% label primary@theme config file %}.
-
-{% code lang:yml hexo/_config.yml %}
-# Vanilla JavaScript plugin for lazyloading images.
-# Dependencies: https://github.com/theme-next/theme-next-jquery-lazyload
-lazyload: true
-{% endcode %}
-
-<!-- endtab -->
-{% endtabs %}
-
-### Quicklink
-
-[Quicklink](https://github.com/GoogleChromeLabs/quicklink) is a JavaScript plugin that faster subsequent page-loads by prefetching in-viewport links during idle time. Chrome, Firefox, Edge are supported without polyfills.
-
-{% tabs quicklink %}
-<!-- tab Installation → -->
-Change dir to NexT directory, and install module to `source/lib` directory.
-
-{% code lang:bash %}
-$ cd themes/next
-$ git clone https://github.com/theme-next/theme-next-quicklink source/lib/quicklink
-{% endcode %}
-
-{% note info %}
-If you want to use the CDN instead of clone this repo, then need to **set vendors** in {% label primary@theme config file %}:
-{% code lang:yml next/_config.yml %}
-vendors:
-  ...
-  # See: https://github.com/GoogleChromeLabs/quicklink
-  quicklink: //cdn.jsdelivr.net/npm/quicklink@1/dist/quicklink.umd.js
-  ...
-{% endcode %}
-{% endnote %}
-
-<!-- endtab -->
-
-<!-- tab NexT Config -->
-
-After the plugin installed, you can enable it by editing values `quicklink.enable` to `true` in {% label primary@theme config file %}.
-
-{% code lang:yml hexo/_config.yml %}
-...
-quicklink:
-  enable: true
-  home: true
-  archive: true
-  delay: true
-  timeout: 3000
-  priority: true
-  ignores:
-...
-{% endcode %}
 
 <!-- endtab -->
 {% endtabs %}
@@ -520,44 +558,5 @@ three:
   canvas_sphere: false
 {% endcode %}
 
-<!-- endtab -->
-{% endtabs %}
-
-### Chinese Typesetting
-
-#### Pangu Autospace Support
-
-[pangu.js](https://github.com/vinta/pangu.js) will automatically insert a blank space between all the Chinese characters and the hexagonal English numeric symbols on the page.
-
-{% tabs pangu %}
-<!-- tab Installation → -->
-Change dir to NexT directory, and install module to `source/lib` directory.
-
-{% code lang:bash %}
-$ cd themes/next
-$ git clone https://github.com/theme-next/theme-next-pangu.git source/lib/pangu
-{% endcode %}
-
-{% note info %}
-If you want to use the CDN instead of clone this repo, then need to **set vendors** in {% label primary@theme config file %}:
-{% code lang:yml next/_config.yml %}
-vendors:
-  ...
-  # https://github.com/vinta/pangu.js
-  pangu: //cdn.jsdelivr.net/npm/pangu@4/dist/browser/pangu.min.js
-  ...
-{% endcode %}
-{% endnote %}
-
-<!-- endtab -->
-
-<!-- tab NexT Config -->
-After the plugin installed, you can enable it by editing values `pangu` to `true` in {% label primary@theme config file %}.
-
-{% code lang:yml hexo/_config.yml %}
-# Pangu Support
-# Dependencies: https://github.com/theme-next/theme-next-pangu
-pangu: true
-{% endcode %}
 <!-- endtab -->
 {% endtabs %}
