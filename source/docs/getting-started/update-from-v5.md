@@ -2,6 +2,7 @@
 title: Update from Version 5
 description: NexT User Docs – Update from NexT v5.1.x
 ---
+
 There are no hard breaking changes between 5.1.x and 6.0.x versions. It's change major version to 6 because:
 
 1. Main repositorie was rebased from [iissnan's](https://github.com/iissnan/hexo-theme-next) profile to [theme-next](https://github.com/theme-next) organization.

@@ -2,6 +2,7 @@
 title: Troubleshooting
 description: NexT User Docs – Troubleshooting
 ---
+
 ### Keep up indentation
 
 When you edit any YAML configs, always need to keep up indents.

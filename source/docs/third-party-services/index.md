@@ -2,6 +2,7 @@
 title: Third-party Services
 description: NexT User Docs – Third-party Service Integration
 ---
+
 Static website is limited in some functions, so we need third-party services to extend our site.
 In any time you can extend needed functions by using third-party services supported by NexT.
 

@@ -2,6 +2,7 @@
 title: Note (Bootstrap Callout)
 description: NexT User Docs – NexT Supported Tags – Note
 ---
+
 ### Settings
 
 ```yml next/_config.yml

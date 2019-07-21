@@ -2,6 +2,7 @@
 title: Sidebar
 description: NexT User Docs – Theme Settings – Sidebar
 ---
+
 ### Sidebar Setting
 
 #### Sidebar Style

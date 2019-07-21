@@ -2,6 +2,7 @@
 title: Search Services
 description: NexT User Docs – Third-party Service Integration – Search Services
 ---
+
 ### Local Search
 
 Local search no need any external 3rd-party services and can be extra indexed by search engines. That search method recommended for most users.

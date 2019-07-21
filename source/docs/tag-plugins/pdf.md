@@ -2,6 +2,7 @@
 title: PDF
 description: NexT User Docs – NexT Supported Tags – PDF
 ---
+
 ### Settings
 
 ```yml next/_config.yml

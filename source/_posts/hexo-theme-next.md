@@ -3,6 +3,7 @@ title: Welcome to the NexT Organization!
 date: 2018-01-01 12:55:56
 link: https://github.com/theme-next
 ---
+
 «[NexT][docs]» is a high quality elegant theme for [Hexo][]. It is crafted from scratch, with love.
 
 ### User Guide

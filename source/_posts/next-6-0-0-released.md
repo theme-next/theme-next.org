@@ -2,6 +2,7 @@
 title: NexT 6.0.0 Released
 date: 2018-01-02 14:49:45
 ---
+
 Because NexT is growing up with each year, there are more and more external libs, so:
 
 - General maintenance became a harder for all who not only use it, but help with development too.

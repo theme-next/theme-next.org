@@ -3,6 +3,7 @@ title: Math Equations
 description: NexT User Docs – Third-party Service Integration – Math Equations
 mathjax: true
 ---
+
 NexT provides two render engines for displaying Math Equations.
 
 If you choose to use this feature, you don't need to manually import any JS or CSS. You just need to turn on `enable` of `math` and define a render `engine` in {% label primary@theme config file %} for it.

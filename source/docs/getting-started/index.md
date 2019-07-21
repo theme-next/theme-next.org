@@ -6,6 +6,7 @@ description: NexT User Docs – Starting to Use
 #categories: English
 #lang: en
 ---
+
 [Hexo](https://hexo.io) is a fast and powerful static blog generating framework, it's based on [Node.js](https://nodejs.org). By using Hexo you can write articles easily with Markdown, and besides the grammer of Markdown, you can also use [tag plugins](https://hexo.io/docs/tag-plugins) provided by Hexo to insert special formated content simply. In this page we assume you have installed Hexo and created a site with it.
 
 {% note info %}

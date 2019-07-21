@@ -2,6 +2,7 @@
 title: Custom Pages
 description: NexT User Docs – Theme Settings - Custom Pages
 ---
+
 ### Custom Page Support
 
 Next allows users to add custom pages in menu.

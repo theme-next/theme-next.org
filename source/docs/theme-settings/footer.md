@@ -2,6 +2,7 @@
 title: Footer
 description: NexT User Docs – Theme Settings – Footer
 ---
+
 ### Site Footer Setting
 
 #### Site Start Time

@@ -2,6 +2,7 @@
 title: NexT 6.0.6 Released
 date: 2018-03-15 13:12:22
 ---
+
 Since more and more contributors joined to NexT, version 6.0.6 got more improvements, additions and bugfixes. Here are some important of them:
 
 ### Version 6.0.6

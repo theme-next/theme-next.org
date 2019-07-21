@@ -3,6 +3,7 @@ title: Theme Settings
 date: 2018-02-08 18:50:03
 description: NexT User Docs – Theme Settings
 ---
+
 NexT insists to hide complex details and gives you a simple but flexible config, so you can use it easily.
 
 ### Cache Support

@@ -2,6 +2,7 @@
 title: Advanced Settings
 description: NexT User Docs – Advanced Settings
 ---
+
 Besides normal [Theme Settings](/docs/theme-settings/) and [Third-party Services](/docs/third-party-services/), NexT supports some advanced settings which makes NexT customizable.
 Please note that those settings may lead to abnormal behavior if they are wrong. Change them only when you know for what they are.
 

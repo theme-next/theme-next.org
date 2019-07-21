@@ -2,6 +2,7 @@
 title: Posts
 description: NexT User Docs – Theme Settings – Posts
 ---
+
 ### Post Settings
 
 #### Page Scroll

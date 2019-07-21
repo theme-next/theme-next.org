@@ -2,6 +2,7 @@
 title: Frequently Asked Questions
 description: NexT User Docs – Frequently Asked Questions
 ---
+
 Here is a collection of frequently asked questions in NexT Issues. If you can't find your problem here, please go to [NexT Issues](https://github.com/theme-next/hexo-theme-next/issues) to submit your question.
 
 ### How to Set «Read More»

@@ -2,6 +2,7 @@
 title: Full Image (Featured Image)
 description: NexT User Docs – NexT Supported Tags – Full Image
 ---
+
 Using this tag will add meta data `ImageObject` to make your image featured. It's mean search engines/social services will display your article in their services with this image as thumbnail by default.
 
 ### Usage

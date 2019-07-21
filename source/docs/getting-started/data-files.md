@@ -2,6 +2,7 @@
 title: Data Files
 description: NexT User Docs – Starting to Use – Data Files
 ---
+
 Currently, it is not smooth to update NexT theme from pulling or downloading new releases. It is quite often running into conflict status when updating NexT theme via `git pull`, or need to merge configurations manually when upgrading to new releases.
 
  At present, NexT encourages users to store some options in {% label info@site config file %} (`hexo/_config.yml`) and other options in {% label primary@theme config file %} (`next/_config.yml`). This approach is applicable, but has some drawbacks:

@@ -2,6 +2,7 @@
 title: Tabs
 description: NexT User Docs – NexT Supported Tags – Tabs
 ---
+
 ### Settings
 
 ```yml next/_config.yml
