@@ -127,45 +127,6 @@ Do not enable both `fancybox` and `mediumzoom`.
 <!-- endtab -->
 {% endtabs %}
 
-### FastClick
-
-[FastClick](https://github.com/ftlabs/fastclick) is a simple, easy-to-use library for eliminating the 300ms delay between a physical tap and the firing of a click event on mobile browsers. The aim is to make your application feel less laggy and more responsive while avoiding any interference with your current logic.
-
-{% tabs fastclick %}
-<!-- tab Installation → -->
-Change dir to NexT directory, and install module to `source/lib` directory.
-
-{% code lang:bash %}
-$ cd themes/next
-$ git clone https://github.com/theme-next/theme-next-fastclick source/lib/fastclick
-{% endcode %}
-
-{% note info %}
-If you want to use the CDN instead of clone this repo, then need to **set vendors** in {% label primary@theme config file %}:
-{% code lang:yml next/_config.yml %}
-vendors:
-  ...
-  # See: https://github.com/ftlabs/fastclick
-  fastclick: https://cdn.jsdelivr.net/npm/fastclick@1/lib/fastclick.min.js
-  ...
-{% endcode %}
-{% endnote %}
-
-<!-- endtab -->
-
-<!-- tab NexT Config -->
-
-After the plugin installed, you can enable it by editing values `fastclick` to `true` in {% label primary@theme config file %}.
-
-{% code lang:yml hexo/_config.yml %}
-# Polyfill to remove click delays on browsers with touch UIs.
-# Dependencies: https://github.com/theme-next/theme-next-fastclick
-fastclick: true
-{% endcode %}
-
-<!-- endtab -->
-{% endtabs %}
-
 ### Lazyload
 
 [Lazyload](https://github.com/ApoorvSaxena/lozad.js) is a modern vanilla JavaScript version of the original Lazy Load plugin. Lazy Load delays loading of images in long web pages. Images outside of viewport will not be loaded before user scrolls to them. This is opposite of image preloading.
@@ -487,7 +448,7 @@ After the plugin installed, you can enable it by editing values `canvas_nest` to
 
 {% code lang:yml hexo/_config.yml %}
 # Canvas-nest
-# Dependencies: https://github.com/theme-next/theme-next-fastclick
+# Dependencies: https://github.com/theme-next/theme-next-canvas-nest
 canvas_nest: true
 {% endcode %}
 
