@@ -448,7 +448,7 @@ After the plugin installed, you can enable it by editing values `canvas_nest` to
 
 {% code lang:yml hexo/_config.yml %}
 # Canvas-nest
-# Dependencies: https://github.com/theme-next/theme-next-fastclick
+# Dependencies: https://github.com/theme-next/theme-next-canvas-nest
 canvas_nest: true
 {% endcode %}
 
