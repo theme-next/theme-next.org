@@ -54,12 +54,18 @@ vendors:
   fancybox: //cdn.jsdelivr.net/gh/fancyapps/fancybox/dist/jquery.fancybox.min.js
   fancybox_css: //cdn.jsdelivr.net/gh/fancyapps/fancybox/dist/jquery.fancybox.min.css
 
-  # Internal version: 1.9.7
-  # See: https://github.com/tuupola/jquery_lazyload
+  # Internal version: 1.0.4
+  # See: https://github.com/francoischalifour/medium-zoom
   # Example:
-  # lazyload: //cdn.jsdelivr.net/npm/jquery-lazyload@1/jquery.lazyload.min.js
-  # lazyload: //cdnjs.cloudflare.com/ajax/libs/jquery_lazyload/1.9.7/jquery.lazyload.min.js
-  lazyload: //cdn.jsdelivr.net/npm/jquery-lazyload/jquery.lazyload.min.js
+  # mediumzoom: //cdn.jsdelivr.net/npm/medium-zoom@1/dist/medium-zoom.min.js
+  mediumzoom: //cdn.jsdelivr.net/npm/medium-zoom@1/dist/medium-zoom.min.js
+
+  # Internal version: 1.10.0
+  # See: https://github.com/ApoorvSaxena/lozad.js
+  # Example:
+  # lazyload: //cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js
+  # lazyload: //cdnjs.cloudflare.com/ajax/libs/lozad.js/1.9.0/lozad.min.js
+  lazyload: //cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js
 
   # Internal version: 1.2.1
   # See: http://velocityjs.org
@@ -147,19 +153,13 @@ vendors:
   # See: https://github.com/theme-next/theme-next-bookmark
   # Example:
   # bookmark: //cdn.jsdelivr.net/gh/theme-next/theme-next-bookmark@1/bookmark.min.js
-  bookmark:
+  bookmark: //cdn.jsdelivr.net/gh/theme-next/theme-next-bookmark/bookmark.min.js
 
   # Internal version: 1.1
   # See: https://github.com/theme-next/theme-next-reading-progress
   # Example:
   # reading_progress: //cdn.jsdelivr.net/gh/theme-next/theme-next-reading-progress@1/reading_progress.min.js
   reading_progress: //cdn.jsdelivr.net/gh/theme-next/theme-next-reading-progress/reading_progress.min.js
-
-  # leancloud-storage
-  # See: https://www.npmjs.com/package/leancloud-storage
-  # Example:
-  # leancloud: //cdn.jsdelivr.net/npm/leancloud-storage@3/dist/av-min.js
-  leancloud: //cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js
 
   # valine
   # See: https://github.com/xCss/Valine
