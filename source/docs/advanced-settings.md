@@ -287,6 +287,23 @@ hexo.extend.filter.register('theme_inject', function(injects) {
 });
 ```
 
+#### Priority
+
+In views inject points, we can adjust the location of the injected content with priority. Here are some of the built-in NexT injects.
+
+- [default-injects.js](https://github.com/theme-next/hexo-theme-next/blob/master/scripts/filters/default-injects.js): Support inject content by `custom_file_path` (Priority: 99).
+- [wechat-subscriber.js](https://github.com/theme-next/hexo-theme-next/blob/master/scripts/filters/post-body-end/wechat-subscriber.js): Add wechat-subscriber at the end of post-body (Priority: 110).
+- [reward.js](https://github.com/theme-next/hexo-theme-next/blob/master/scripts/filters/post-body-end/reward.js): Add reward at the end of post-body (Priority: 120).
+- [creative-commons.js](https://github.com/theme-next/hexo-theme-next/blob/master/scripts/filters/post-body-end/creative-commons.js): Add creative-commons at the end of post-body (Priority: 200).
+
+You can modify the priority by adding the following configuration in **hexo** `_config.yml`.
+
+```yml
+inject_priority_wechat_subscriber: 110
+inject_priority_reward: 120
+inject_priority_creative_commons: 200
+```
+
 #### Plugin
 
 We also support hexo's plugin system, which makes it easy to extend functions without modifying the source code of the core module. You can see <https://hexo.io/docs/plugins.html#Plugin> to learn how to create a plugin.
