@@ -119,7 +119,7 @@ echo "=============================================================="
     hexo config theme_config.minify true
     echo "${yellow}Setted minify:${norm} ${lcyan}`hexo config theme_config.minify`${norm}"
 
-    hexo clean && hexo g --debug
+    hexo clean && hexo g --silent
     echo "${lred}`mv -v public schemes/muse`${norm}"
 
 echo
