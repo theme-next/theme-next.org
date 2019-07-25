@@ -113,8 +113,6 @@ theme_config:
   cache:
     enable: true
 
-  minify: true
-
   custom_file_path:
     style: source/_data/styles.styl
     footer: source/_data/footer.swig

@@ -116,6 +116,9 @@ echo "=============================================================="
     hexo config theme_config.scheme Muse
     echo "${yellow}Setted scheme:${norm} ${lcyan}`hexo config theme_config.scheme`${norm}"
 
+    hexo config theme_config.minify true
+    echo "${yellow}Setted minify:${norm} ${lcyan}`hexo config theme_config.minify`${norm}"
+
     hexo clean && hexo g --silent
     echo "${lred}`mv -v public schemes/muse`${norm}"
 
@@ -128,6 +131,9 @@ echo "=============================================================="
 
     hexo config theme_config.scheme Mist
     echo "${yellow}Setted scheme:${norm} ${lcyan}`hexo config theme_config.scheme`${norm}"
+
+    hexo config theme_config.minify true
+    echo "${yellow}Setted minify:${norm} ${lcyan}`hexo config theme_config.minify`${norm}"
 
     hexo clean && hexo g --silent
     echo "${lred}`mv -v public schemes/mist`${norm}"
@@ -142,6 +148,9 @@ echo "=============================================================="
     hexo config theme_config.scheme Pisces
     echo "${yellow}Setted scheme:${norm} ${lcyan}`hexo config theme_config.scheme`${norm}"
 
+    hexo config theme_config.minify true
+    echo "${yellow}Setted minify:${norm} ${lcyan}`hexo config theme_config.minify`${norm}"
+
     hexo clean && hexo g --silent
     echo "${lred}`mv -v public schemes/pisces`${norm}"
 
@@ -154,6 +163,9 @@ echo "=============================================================="
 
     hexo config theme_config.scheme Gemini
     echo "${yellow}Setted scheme:${norm} ${lcyan}`hexo config theme_config.scheme`${norm}"
+
+    hexo config theme_config.minify true
+    echo "${yellow}Setted minify:${norm} ${lcyan}`hexo config theme_config.minify`${norm}"
 
     hexo clean && hexo g --silent
 
