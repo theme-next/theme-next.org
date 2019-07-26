@@ -129,13 +129,15 @@ Edit {% label primary@theme config file %} to enable Local Search:
 # Dependencies: https://github.com/theme-next/hexo-generator-searchdb
 local_search:
   enable: true
-  # if auto, trigger search by changing input
-  # if manual, trigger search by pressing enter key or search button
+  # If auto, trigger search by changing input.
+  # If manual, trigger search by pressing enter key or search button.
   trigger: auto
-  # show top n results per article, show all results by setting to -1
+  # Show top n results per article, show all results by setting to -1
   top_n_per_article: 1
-  # unescape html strings to the readable one
+  # Unescape html strings to the readable one.
   unescape: false
+  # Preload the search data when the page loads.
+  preload: false
 {% endcode %}
 <!-- endtab -->
 {% endtabs %}
