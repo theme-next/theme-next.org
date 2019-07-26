@@ -3,47 +3,6 @@ title: Search Services
 description: NexT User Docs – Third-party Service Integration – Search Services
 ---
 
-### Local Search
-
-Local search no need any external 3rd-party services and can be extra indexed by search engines. That search method recommended for most users.
-
-{% tabs local-search %}
-<!-- tab Installation → -->
-Install `hexo-generator-searchdb` by run following command in {% label info@site root dir %}:
-
-    $ npm install hexo-generator-searchdb --save
-
-<!-- endtab -->
-
-<!-- tab Hexo Config → -->
-Edit {% label info@site config file %} and add following content:
-{% code lang:yml hexo/_config.yml %}
-search:
-  path: search.xml
-  field: post
-  format: html
-  limit: 10000
-{% endcode %}
-<!-- endtab -->
-
-<!-- tab NexT Config -->
-Edit {% label primary@theme config file %} to enable Local Search:
-{% code lang:yml next/_config.yml %}
-# Local search
-# Dependencies: https://github.com/theme-next/hexo-generator-searchdb
-local_search:
-  enable: true
-  # if auto, trigger search by changing input
-  # if manual, trigger search by pressing enter key or search button
-  trigger: auto
-  # show top n results per article, show all results by setting to -1
-  top_n_per_article: 1
-  # unescape html strings to the readable one
-  unescape: false
-{% endcode %}
-<!-- endtab -->
-{% endtabs %}
-
 ### Algolia Search
 
 NexT provides Algolia search plugin for index your hexo website content. What you should note here is that only turn on `enable` of `algolia_search` in {% label primary@theme config file %} cannot let you use the algolia search correctly, you need to install corresponding [Hexo Algolia](https://github.com/oncletom/hexo-algolia) plugin to seach your website with Algolia. Follow the steps described below to complete the installation of Algolia search.
@@ -140,6 +99,47 @@ algolia_search:
    - Replace all `applicationID` in `layout/_partials/head/head.swig` with `appId`
 {% endnote %}
 
+### Local Search
+
+Local search no need any external 3rd-party services and can be extra indexed by search engines. That search method recommended for most users.
+
+{% tabs local-search %}
+<!-- tab Installation → -->
+Install `hexo-generator-searchdb` by run following command in {% label info@site root dir %}:
+
+    $ npm install hexo-generator-searchdb --save
+
+<!-- endtab -->
+
+<!-- tab Hexo Config → -->
+Edit {% label info@site config file %} and add following content:
+{% code lang:yml hexo/_config.yml %}
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
+{% endcode %}
+<!-- endtab -->
+
+<!-- tab NexT Config -->
+Edit {% label primary@theme config file %} to enable Local Search:
+{% code lang:yml next/_config.yml %}
+# Local search
+# Dependencies: https://github.com/theme-next/hexo-generator-searchdb
+local_search:
+  enable: true
+  # if auto, trigger search by changing input
+  # if manual, trigger search by pressing enter key or search button
+  trigger: auto
+  # show top n results per article, show all results by setting to -1
+  top_n_per_article: 1
+  # unescape html strings to the readable one
+  unescape: false
+{% endcode %}
+<!-- endtab -->
+{% endtabs %}
+
 ### Swiftype Search
 
 {% tabs swiftype-search %}
@@ -161,6 +161,11 @@ After creating choose `Integrate` → `Install Search` in the menu to customize 
 <!-- tab Get Key → -->
 Back to `INSTALL CODE` and copy your `swiftype_key`.
 ![Swiftype Get Key](/images/docs/swiftype-4.png)
+<!-- endtab -->
+
+<!-- tab Search Field → -->
+Click `Change Configuration` → `Search Field`, then follow the instructions.
+![Swiftype Search Field](/images/docs/swiftype-5.png)
 <!-- endtab -->
 
 <!-- tab NexT Config -->

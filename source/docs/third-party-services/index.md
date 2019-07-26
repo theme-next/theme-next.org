@@ -42,8 +42,8 @@ If you want to disable comment in some page/post, just add `comments: false` to 
 
 ### Search Services
 
-* [Local Search](/docs/third-party-services/search-services#Local-Search)
 * [Algolia Search](/docs/third-party-services/search-services#Algolia-Search)
+* [Local Search](/docs/third-party-services/search-services#Local-Search)
 * [Swiftype](/docs/third-party-services/search-services#Swiftype-Search)
 
 ### External Libraries
