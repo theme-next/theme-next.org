@@ -36,7 +36,7 @@ vendors:
 <!-- endtab -->
 
 <!-- tab NexT Config -->
-After the plugin installed, you can enable it by editing values `fancybox` to `true` in {% label primary@theme config file %}.
+After the plugin installed, you can enable it by setting value `fancybox` to `true` in {% label primary@theme config file %}.
 
 {% code lang:yml hexo/_config.yml %}
 fancybox: true
@@ -72,7 +72,7 @@ vendors:
 <!-- endtab -->
 
 <!-- tab NexT Config -->
-After the plugin installed, you can enable it by editing values `fancybox` to `true` in {% label primary@theme config file %}.
+After the plugin installed, you can enable it by setting value `fancybox` to `true` in {% label primary@theme config file %}.
 
 {% code lang:yml hexo/_config.yml %}
 fancybox: true
@@ -112,7 +112,7 @@ vendors:
 
 <!-- tab NexT Config -->
 
-After the plugin installed, you can enable it by editing values `mediumzoom` to `true` in {% label primary@theme config file %}.
+After the plugin installed, you can enable it by setting value `mediumzoom` to `true` in {% label primary@theme config file %}.
 
 {% code lang:yml hexo/_config.yml %}
 # A JavaScript library for zooming images like Medium.
@@ -155,7 +155,7 @@ vendors:
 
 <!-- tab NexT Config -->
 
-After the plugin installed, you can enable it by editing values `lazyload` to `true` in {% label primary@theme config file %}.
+After the plugin installed, you can enable it by setting value `lazyload` to `true` in {% label primary@theme config file %}.
 
 {% code lang:yml hexo/_config.yml %}
 # Vanilla JavaScript plugin for lazyloading images.
@@ -195,7 +195,7 @@ vendors:
 <!-- endtab -->
 
 <!-- tab NexT Config -->
-After the plugin installed, you can enable it by editing values `pangu` to `true` in {% label primary@theme config file %}.
+After the plugin installed, you can enable it by setting value `pangu` to `true` in {% label primary@theme config file %}.
 
 {% code lang:yml hexo/_config.yml %}
 # Pangu Support
@@ -233,7 +233,7 @@ vendors:
 
 <!-- tab NexT Config -->
 
-After the plugin installed, you can enable it by editing values `quicklink.enable` to `true` in {% label primary@theme config file %}.
+After the plugin installed, you can enable it by setting value `quicklink.enable` to `true` in {% label primary@theme config file %}.
 
 {% code lang:yml hexo/_config.yml %}
 ...
@@ -279,7 +279,7 @@ vendors:
 <!-- endtab -->
 
 <!-- tab NexT Config -->
-After the plugin installed, you can enable it by editing values `bookmark.enable` to `true` in {% label primary@theme config file %}.
+After the plugin installed, you can enable it by setting value `bookmark.enable` to `true` in {% label primary@theme config file %}.
 
 {% code lang:yml hexo/_config.yml %}
 # Dependencies: https://github.com/theme-next/theme-next-bookmark
@@ -322,7 +322,7 @@ vendors:
 <!-- endtab -->
 
 <!-- tab NexT Config -->
-After the plugin installed, you can enable it by editing values `reading_progress.enable` to `true` in {% label primary@theme config file %}.
+After the plugin installed, you can enable it by setting value `reading_progress.enable` to `true` in {% label primary@theme config file %}.
 
 {% code lang:yml hexo/_config.yml %}
 reading_progress:
@@ -364,7 +364,7 @@ vendors:
 
 {% subtabs pace1 %}
 <!-- tab <code>pace</code> -->
-After the plugin installed, you can enable it by editing values `pace.enable` to `true` in {% label primary@theme config file %}.
+After the plugin installed, you can enable it by setting value `pace.enable` to `true` in {% label primary@theme config file %}.
 
 {% code lang:yml hexo/_config.yml %}
 pace:
@@ -444,7 +444,7 @@ vendors:
 
 <!-- tab NexT Config -->
 
-After the plugin installed, you can enable it by editing values `canvas_nest` to `true` in {% label primary@theme config file %}.
+After the plugin installed, you can enable it by setting value `canvas_nest` to `true` in {% label primary@theme config file %}.
 
 {% code lang:yml hexo/_config.yml %}
 # Canvas-nest
@@ -487,7 +487,7 @@ vendors:
 
 <!-- tab NexT Config -->
 
-After the plugin installed, you can enable it by editing values `canvas_ribbon` to `true` in {% label primary@theme config file %}. You can also configure the ribbon setting by editing values in `canvas_ribbon` section:
+After the plugin installed, you can enable it by setting value `canvas_ribbon` to `true` in {% label primary@theme config file %}. You can also configure the ribbon setting by editing values in `canvas_ribbon` section:
 
 * size: The width of the ribbon.
 * alpha: The transparency of the ribbon.
@@ -546,7 +546,7 @@ vendors:
 
 <!-- tab NexT Config -->
 
-After the plugin installed, you can enable it by editing values `three.enable` and `three.three_waves` or `three.canvas_lines` or `three.canvas_sphere` to `true` in {% label primary@theme config file %}.
+After the plugin installed, you can enable it by setting value `three.enable` and `three.three_waves` or `three.canvas_lines` or `three.canvas_sphere` to `true` in {% label primary@theme config file %}.
 
 {% code lang:yml hexo/_config.yml %}
 # JavaScript 3D library.

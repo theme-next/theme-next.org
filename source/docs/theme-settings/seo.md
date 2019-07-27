@@ -153,7 +153,7 @@ baidu_site_verification: XXXXXXXXXXXXXXXXXXXXXXX
 <!-- endtab -->
 {% endtabs %}
 
-NexT also supports the baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO. You can enable it by editing values `baidu_push` to `true` in {% label primary@theme config file %}.
+NexT also supports the baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO. You can enable it by setting value `baidu_push` to `true` in {% label primary@theme config file %}.
 
 ```yml next/_config.yml
 baidu_push: true

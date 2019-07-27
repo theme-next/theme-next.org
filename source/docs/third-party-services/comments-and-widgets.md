@@ -87,7 +87,7 @@ Login to VKontakte Developers and [create apps](https://vk.com/editapp?act=creat
 
 <!-- tab NexT Config -->
 
-You can enable it by editing values `vkontakte_api.enable` to `true`, and copy `API_ID` value of `apiId` key in {% label primary@theme config file %}.
+You can enable it by setting value `vkontakte_api.enable` to `true`, and copy `API_ID` value of `apiId` key in {% label primary@theme config file %}.
 
 {% code lang:yml next/_config.yml %}
 vkontakte_api:
@@ -113,7 +113,7 @@ Login to VKontakte Developers and [create apps](https://vk.com/editapp?act=creat
 
 <!-- tab NexT Config -->
 
-You can enable it by editing values `vkontakte_api.enable` to `true`, and copy `API_ID` value of `apiId` key in {% label primary@theme config file %}.
+You can enable it by setting value `vkontakte_api.enable` to `true`, and copy `API_ID` value of `apiId` key in {% label primary@theme config file %}.
 
 {% code lang:yml next/_config.yml %}
 vkontakte_api:
@@ -228,7 +228,7 @@ wpac_init.push({widget: 'Rating', id: ID});
 
 <!-- tab NexT Config -->
 
-You can enable it by editing values `rating.enable` to `true`, and copy `ID` value of `id` in {% label primary@theme config file %}. You can also configure the rating color by editing values in `rating.color` section.
+You can enable it by setting value `rating.enable` to `true`, and copy `ID` value of `id` in {% label primary@theme config file %}. You can also configure the rating color by editing values in `rating.color` section.
 
 {% code lang:yml next/_config.yml %}
 rating:

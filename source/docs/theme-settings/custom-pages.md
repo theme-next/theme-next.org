@@ -167,7 +167,7 @@ Login to [Google developers](https://console.developers.google.com/flows/enablea
 
 <!-- endtab -->
 <!-- tab NexT Config  -->
-You can enable it by editing values `calendar.enable` to `true`, and copy the value of calendar ID and API KEY in {% label primary@theme config file %}.
+You can enable it by setting value `calendar.enable` to `true`, and copy the value of calendar ID and API KEY in {% label primary@theme config file %}.
 
 {% codeblock lang:yml next/_config.yml %}
 calendar:
@@ -190,7 +190,7 @@ calendar:
 
 #### Cheers Archive Page
 
-By default NexT shows the cheers characters from `ok` to `excellent` according to the numbers of your posts. You can disable it by editing values `cheers` to `false` in {% label primary@theme config file %}.
+By default NexT shows the cheers characters from `ok` to `excellent` according to the numbers of your posts. You can disable it by setting value `cheers` to `false` in {% label primary@theme config file %}.
 
 ```yml next/_config.yml
 cheers: false

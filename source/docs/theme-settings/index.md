@@ -124,7 +124,7 @@ text_align:
 
 {% tabs Mobile-Adaptation %}
 <!-- tab <code>mobile_layout_economy</code> -->
-If you want to reduce padding/margin indents on devices with narrow width, you can enable it by editing values `mobile_layout_economy` to `true` in {% label primary@theme config file %}.
+If you want to reduce padding/margin indents on devices with narrow width, you can enable it by setting value `mobile_layout_economy` to `true` in {% label primary@theme config file %}.
 
 {% code lang:yml next/_config.yml %}
 mobile_layout_economy: true
@@ -207,7 +207,7 @@ NexT supports the copy-and-paste functionality of codeblock.
 
 {% subtabs codeblock1 %}
 <!-- tab <code>enable</code> -->
-You can enable it by editing value `copy_button.enable` to `true` in {% label primary@theme config file %}.
+You can enable it by setting value `copy_button.enable` to `true` in {% label primary@theme config file %}.
 
 {% code lang:yml hexo/_config.yml %}
 codeblock:
@@ -216,7 +216,7 @@ codeblock:
 {% endcode %}
 <!-- endtab -->
 <!-- tab <code>show_result</code> -->
-By default NexT doesn't show copy results of the copy-and-paste functionality. You can also enable it by editing value `copy_button.show_result` to `true` in {% label primary@theme config file %}.
+By default NexT doesn't show copy results of the copy-and-paste functionality. You can also enable it by setting value `copy_button.show_result` to `true` in {% label primary@theme config file %}.
 
 {% code lang:yml hexo/_config.yml %}
 codeblock:
