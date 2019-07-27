@@ -124,12 +124,3 @@ footer:
 <!-- endtab -->
 
 {% endtabs %}
-
-#### Adding Custom Information
-
-If you want, any custom text can be defined within footer in `custom_text` section in {% label primary@theme config file %} like:
-
-```yml next/_config.yml
-footer:
-  custom_text: Hosted by <a target="_blank" rel="external nofollow" href="https://pages.coding.me"><b>Coding Pages</b></a>
-```

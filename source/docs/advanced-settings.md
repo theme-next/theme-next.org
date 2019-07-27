@@ -44,6 +44,13 @@ vendors:
   # jquery: //cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js
   jquery: //cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js
 
+  # Internal version: 4.7.0
+  # See: https://fontawesome.com
+  # Example:
+  # fontawesome: //cdn.jsdelivr.net/npm/font-awesome@4/css/font-awesome.min.css
+  # fontawesome: //cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css
+  fontawesome: //cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css
+
   # Internal version: 2.1.5 & 3.5.7
   # See: https://fancyapps.com/fancybox
   # Example:
@@ -67,66 +74,11 @@ vendors:
   # lazyload: //cdnjs.cloudflare.com/ajax/libs/lozad.js/1.9.0/lozad.min.js
   lazyload: //cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js
 
-  # Internal version: 1.2.1
-  # See: http://velocityjs.org
-  # Example:
-  # velocity: //cdn.jsdelivr.net/npm/velocity-animate@1/velocity.min.js
-  # velocity: //cdnjs.cloudflare.com/ajax/libs/velocity/1.2.1/velocity.min.js
-  # velocity_ui: //cdn.jsdelivr.net/npm/velocity-animate@1/velocity.ui.min.js
-  # velocity_ui: //cdnjs.cloudflare.com/ajax/libs/velocity/1.2.1/velocity.ui.min.js
-  velocity: //cdn.jsdelivr.net/npm/velocity-animate/velocity.min.js
-  velocity_ui: //cdn.jsdelivr.net/npm/velocity-animate/velocity.ui.min.js
-
-  # Internal version: 4.7.0
-  # See: https://fontawesome.com
-  # Example:
-  # fontawesome: //cdn.jsdelivr.net/npm/font-awesome@4/css/font-awesome.min.css
-  # fontawesome: //cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css
-  fontawesome: //cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css
-
-  # Internal version: 2.10.4
-  # See: https://www.algolia.com
-  # Example:
-  # algolia_instant_js: //cdn.jsdelivr.net/npm/instantsearch.js@2/dist/instantsearch.js
-  # algolia_instant_css: //cdn.jsdelivr.net/npm/instantsearch.js@2/dist/instantsearch.min.css
-  algolia_instant_js:
-  algolia_instant_css:
-
-  # Internal version: 1.0.2
-  # See: https://github.com/HubSpot/pace
-  # Example:
-  # pace: //cdn.jsdelivr.net/npm/pace-js@1/pace.min.js
-  # pace: //cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js
-  # pace_css: //cdn.jsdelivr.net/npm/pace-js@1/themes/blue/pace-theme-minimal.css
-  # pace_css: //cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/themes/blue/pace-theme-minimal.min.css
-  pace:
-  pace_css:
-
   # Internal version: 1.0.0
-  # See: https://github.com/theme-next/theme-next-canvas-nest
+  # See: https://github.com/GoogleChromeLabs/quicklink
   # Example:
-  # canvas_nest: //cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-nest@1/canvas-nest.min.js
-  # canvas_nest_nomobile: //cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-nest@1/canvas-nest-nomobile.min.js
-  canvas_nest:
-  canvas_nest_nomobile:
-
-  # Internal version: 1.0.0
-  # See: https://github.com/theme-next/theme-next-three
-  # Example:
-  # three: //cdn.jsdelivr.net/gh/theme-next/theme-next-three@1/three.min.js
-  # three_waves: //cdn.jsdelivr.net/gh/theme-next/theme-next-three@1/three-waves.min.js
-  # canvas_lines: //cdn.jsdelivr.net/gh/theme-next/theme-next-three@1/canvas_lines.min.js
-  # canvas_sphere: //cdn.jsdelivr.net/gh/theme-next/theme-next-three@1/canvas_sphere.min.js
-  three:
-  three_waves:
-  canvas_lines:
-  canvas_sphere:
-
-  # Internal version: 1.0.0
-  # See: https://github.com/zproo/canvas-ribbon
-  # Example:
-  # canvas_ribbon: //cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-ribbon@1/canvas-ribbon.js
-  canvas_ribbon:
+  # quicklink: //cdn.jsdelivr.net/npm/quicklink@1/dist/quicklink.umd.js
+  quicklink:
 
   # Internal version: 4.0.7
   # See: https://github.com/vinta/pangu.js
@@ -134,20 +86,6 @@ vendors:
   # pangu: //cdn.jsdelivr.net/npm/pangu@4/dist/browser/pangu.min.js
   # pangu: //cdnjs.cloudflare.com/ajax/libs/pangu/4.0.7/pangu.min.js
   pangu: //cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js
-
-  # Internal version: 1.0.0
-  # See: https://github.com/GoogleChromeLabs/quicklink
-  # Example:
-  # quicklink: //cdn.jsdelivr.net/npm/quicklink@1/dist/quicklink.umd.js
-  quicklink:
-
-  # Internal version: 1.0.0
-  # See: https://github.com/revir/need-more-share2
-  # Example:
-  # needmoreshare2_js: //cdn.jsdelivr.net/gh/theme-next/theme-next-needmoreshare2@1/needsharebutton.min.js
-  # needmoreshare2_css: //cdn.jsdelivr.net/gh/theme-next/theme-next-needmoreshare2@1/needsharebutton.min.css
-  needmoreshare2_js:
-  needmoreshare2_css:
 
   # Internal version: 1.0.0
   # See: https://github.com/theme-next/theme-next-bookmark
@@ -160,6 +98,14 @@ vendors:
   # Example:
   # reading_progress: //cdn.jsdelivr.net/gh/theme-next/theme-next-reading-progress@1/reading_progress.min.js
   reading_progress: //cdn.jsdelivr.net/gh/theme-next/theme-next-reading-progress/reading_progress.min.js
+
+  # DisqusJS
+  # See: https://github.com/SukkaW/DisqusJS
+  # Example:
+  # disqusjs_js: //cdn.jsdelivr.net/npm/disqusjs@1/dist/disqus.js
+  # disqusjs_css: //cdn.jsdelivr.net/npm/disqusjs@1/dist/disqusjs.css
+  disqusjs_js: //cdn.jsdelivr.net/npm/disqusjs/dist/disqus.js
+  disqusjs_css: //cdn.jsdelivr.net/npm/disqusjs/dist/disqusjs.css
 
   # valine
   # See: https://github.com/xCss/Valine
@@ -186,13 +132,67 @@ vendors:
   likely_js: //cdn.jsdelivr.net/npm/ilyabirman-likely/release/likely.js
   likely_css: //cdn.jsdelivr.net/npm/ilyabirman-likely/release/likely.css
 
-  # DisqusJS
-  # See: https://github.com/SukkaW/DisqusJS
+  # Internal version: 1.0.0
+  # See: https://github.com/revir/need-more-share2
   # Example:
-  # disqusjs_js: //cdn.jsdelivr.net/npm/disqusjs@1/dist/disqus.js
-  # disqusjs_css: //cdn.jsdelivr.net/npm/disqusjs@1/dist/disqusjs.css
-  disqusjs_js: //cdn.jsdelivr.net/npm/disqusjs/dist/disqus.js
-  disqusjs_css: //cdn.jsdelivr.net/npm/disqusjs/dist/disqusjs.css
+  # needmoreshare2_js: //cdn.jsdelivr.net/gh/theme-next/theme-next-needmoreshare2@1/needsharebutton.min.js
+  # needmoreshare2_css: //cdn.jsdelivr.net/gh/theme-next/theme-next-needmoreshare2@1/needsharebutton.min.css
+  needmoreshare2_js:
+  needmoreshare2_css:
+
+  # Internal version: 2.10.4
+  # See: https://www.algolia.com
+  # Example:
+  # algolia_instant_js: //cdn.jsdelivr.net/npm/instantsearch.js@2/dist/instantsearch.js
+  # algolia_instant_css: //cdn.jsdelivr.net/npm/instantsearch.js@2/dist/instantsearch.min.css
+  algolia_instant_js:
+  algolia_instant_css:
+
+  # Internal version: 1.2.1
+  # See: http://velocityjs.org
+  # Example:
+  # velocity: //cdn.jsdelivr.net/npm/velocity-animate@1/velocity.min.js
+  # velocity: //cdnjs.cloudflare.com/ajax/libs/velocity/1.2.1/velocity.min.js
+  # velocity_ui: //cdn.jsdelivr.net/npm/velocity-animate@1/velocity.ui.min.js
+  # velocity_ui: //cdnjs.cloudflare.com/ajax/libs/velocity/1.2.1/velocity.ui.min.js
+  velocity: //cdn.jsdelivr.net/npm/velocity-animate/velocity.min.js
+  velocity_ui: //cdn.jsdelivr.net/npm/velocity-animate/velocity.ui.min.js
+
+  # Internal version: 1.0.2
+  # See: https://github.com/HubSpot/pace
+  # Example:
+  # pace: //cdn.jsdelivr.net/npm/pace-js@1/pace.min.js
+  # pace: //cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js
+  # pace_css: //cdn.jsdelivr.net/npm/pace-js@1/themes/blue/pace-theme-minimal.css
+  # pace_css: //cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/themes/blue/pace-theme-minimal.min.css
+  pace:
+  pace_css:
+
+  # Internal version: 1.0.0
+  # See: https://github.com/theme-next/theme-next-three
+  # Example:
+  # three: //cdn.jsdelivr.net/gh/theme-next/theme-next-three@1/three.min.js
+  # three_waves: //cdn.jsdelivr.net/gh/theme-next/theme-next-three@1/three-waves.min.js
+  # canvas_lines: //cdn.jsdelivr.net/gh/theme-next/theme-next-three@1/canvas_lines.min.js
+  # canvas_sphere: //cdn.jsdelivr.net/gh/theme-next/theme-next-three@1/canvas_sphere.min.js
+  three:
+  three_waves:
+  canvas_lines:
+  canvas_sphere:
+
+  # Internal version: 1.0.0
+  # See: https://github.com/theme-next/theme-next-canvas-nest
+  # Example:
+  # canvas_nest: //cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-nest@1/canvas-nest.min.js
+  # canvas_nest_nomobile: //cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-nest@1/canvas-nest-nomobile.min.js
+  canvas_nest:
+  canvas_nest_nomobile:
+
+  # Internal version: 1.0.0
+  # See: https://github.com/zproo/canvas-ribbon
+  # Example:
+  # canvas_ribbon: //cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-ribbon@1/canvas-ribbon.js
+  canvas_ribbon:
 ```
 
 ### Injects

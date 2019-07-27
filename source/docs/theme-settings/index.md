@@ -6,6 +6,15 @@ description: NexT User Docs – Theme Settings
 
 NexT insists to hide complex details and gives you a simple but flexible config, so you can use it easily.
 
+### Console Reminder
+
+Next supports automatic check for updates and alerts in the console. Set the value `reminder` to `true` in `minify` section in {% label primary@theme config file %} as following:
+
+```yml next/_config.yml
+# Console reminder if new version released.
+reminder: false
+```
+
 ### Cache Support
 
 NexT v6+ allows to cache content generation. Set the value `enable` to `true` in `cache` section in {% label primary@theme config file %} as following:
@@ -22,7 +31,7 @@ cache:
 This feature is currently a bit simplistic, and we will further improve it in the future.
 {% endnote %}
 
-NexT allows to minify hexo generation. Set the value `false` to `true` in `minify` section in {% label primary@theme config file %} as following:
+NexT allows to minify hexo generation. Set the value `minify` to `true` in {% label primary@theme config file %} as following:
 
 ```yml next/_config.yml
 # Remove unnecessary files after hexo generate.
@@ -72,30 +81,6 @@ creative_commons:
   post: true
   language: deed.zh
 ```
-
-### GitHub Banner
-
-NexT provides `Follow me on GitHub` banner in right-top corner.
-
-```yml next/_config.yml
-# Follow me on GitHub banner in right-top corner.
-github_banner:
-  enable: true
-  permalink: https://github.com/yourname
-  title: Follow me on GitHub
-```
-
-{% tabs github-banner %}
-<!-- tab <code>permalink</code> -->
-`permalink` → is the specified link must have full url path.
-<!-- endtab -->
-
-<!-- tab <code>title</code> -->
-`title` → is the title and aria-label name.
-<!-- endtab -->
-{% endtabs %}
-
-You can set `enable` to `true` and add your own GitHub link.
 
 ### Text Align
 
@@ -175,7 +160,7 @@ custom_logo: /uploads/custom-logo.jpg
 Scheme Mist does not support custom logo setting.
 {% endnote %}
 
-#### Codeblock Style
+### Codeblock Style
 
 {% tabs codeblock %}
 <!-- tab <code>highlight_theme</code> -->
@@ -239,6 +224,30 @@ codeblock:
 <!-- endtab -->
 
 {% endtabs %}
+
+### GitHub Banner
+
+NexT provides `Follow me on GitHub` banner in right-top corner.
+
+```yml next/_config.yml
+# Follow me on GitHub banner in right-top corner.
+github_banner:
+  enable: true
+  permalink: https://github.com/yourname
+  title: Follow me on GitHub
+```
+
+{% tabs github-banner %}
+<!-- tab <code>permalink</code> -->
+`permalink` → is the specified link must have full url path.
+<!-- endtab -->
+
+<!-- tab <code>title</code> -->
+`title` → is the title and aria-label name.
+<!-- endtab -->
+{% endtabs %}
+
+You can set `enable` to `true` and add your own GitHub link.
 
 ### Fonts Customization
 
