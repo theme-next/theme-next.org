@@ -230,7 +230,7 @@ Use this can help you to use fonts installed in system and reduce unnecessary re
 font:
   # Use custom fonts families or not.
   # Depended options: `external` and `family`.
-  enable: false
+  enable: true
 
   # Uri of fonts host, e.g. //fonts.googleapis.com (Default).
   host:
@@ -255,13 +255,13 @@ font:
   # Font settings for headlines (<h1> to <h6>).
   headings:
     external: true
-    family: Roboto Slab
+    family: Amita
     size:
 
   # Font settings for posts (.post-body).
   posts:
     external: true
-    family:
+    family: Roboto Slab
 
   # Font settings for <code> and code blocks.
   codes:
