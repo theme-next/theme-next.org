@@ -254,12 +254,12 @@ You can set `enable` to `true` and add your own GitHub link.
 To solve the unstable of [Google Fonts API](https://www.google.com/fonts) in some countries, NexT supports setting fonts. By using this feature you can assign URL of fonts library. And NexT gives you 5 specific font settings, they are:
 
 * Global Font: Font used in the whole site.
-* Title Font: Font used by titles in articles (H1, H2, H3, H4, H5, H6).
+* Title Font: Font used by site title.
+* Headlines Font: Font used by titles in articles (h1, h2, h3, h4, h5, h6).
 * Article Font: Font used by articles.
-* Logo Font: Font used by Logo.
 * Code Font: Font used by code blocks in articles.
 
-Each fonts will be used as the first font of this class, NexT will fallback to internal font settings if they are unavalible.
+Each font will be used as the first font of this class, NexT will fallback to internal font settings if they are unavalible.
 
 * Non-code Font: Fallback to `"PingFang SC", "Microsoft YaHei", sans-serif`
 * Code Font: Fallback to `consolas, Menlo, "PingFang SC", "Microsoft YaHei", monospace`
@@ -269,42 +269,45 @@ Use this can help you to use fonts installed in system and reduce unnecessary re
 
 ```yml next/_config.yml
 font:
+  # Use custom fonts families or not.
+  # Depended options: `external` and `family`.
   enable: true
 
-  # Font library CDN, e.g. //fonts.googleapis.com (Default)
+  # Uri of fonts host, e.g. //fonts.googleapis.com (Default).
   host:
 
-  # Global font settings used for all elements in <body>.
+  # Font options:
+  # `external: true` will load this font family from `host` above.
+  # `family: Times New Roman`. Without any quotes.
+  # `size: x.x`. Use `em` as unit. Default: 1 (16px)
+
+  # Global font settings used for all elements inside <body>.
   global:
     external: true
     family: Monda
-    size:
+    size: 1.125
 
-  # Font settings for Headlines (H1, H2, H3, H4, H5, H6).
-  # Fallback to `global` font settings.
-  headings:
-    external: true
-    family: Roboto Slab
-    size:
-
-  # Font settings for posts.
-  # Fallback to `global` font settings.
-  posts:
-    external: true
-    family:
-
-  # Font settings for Logo.
-  # Fallback to `global` font settings.
-  logo:
+  # Font settings for site title (.site-title).
+  title:
     external: true
     family: Lobster Two
-    size: 24
+    size:
+
+  # Font settings for headlines (<h1> to <h6>).
+  headings:
+    external: true
+    family: Amita
+    size:
+
+  # Font settings for posts (.post-body).
+  posts:
+    external: true
+    family: Roboto Slab
 
   # Font settings for <code> and code blocks.
   codes:
     external: true
     family: PT Mono
-    size:
 ```
 
 ### Animation Effect
