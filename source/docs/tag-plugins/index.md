@@ -15,7 +15,6 @@ Tag Plugin is a way to make special style contents supported by Hexo. For exampl
 * [Button](/docs/tag-plugins/button)
 * [Mermaid](/docs/tag-plugins/mermaid)
 * [Caniuse](/docs/tag-plugins/caniuse)
-* [Full Image](/docs/tag-plugins/full-image)
 * [Group Pictures](/docs/tag-plugins/group-pictures)
 
 ### Centered Quote
