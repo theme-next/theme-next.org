@@ -214,7 +214,6 @@ theme_config:
         Button: /button.html || square
         Mermaid: /mermaid.html || tasks
         Caniuse: /caniuse.html || signal
-        Full Image: /full-image.html || picture-o
         Group Pictures: /group-pictures.html || file-image-o
 
       Advanced Settings: /advanced-settings.html || cogs
