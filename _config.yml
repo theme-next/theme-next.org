@@ -118,6 +118,7 @@ theme_config:
   custom_file_path:
     style: source/_data/styles.styl
     footer: source/_data/footer.swig
+    sidebar: source/_data/sidebar.swig
 
 
   # ============================================================= #
