@@ -241,7 +241,7 @@ rating:
 
 ### Multiple Comment System Support
 
-NexT allows you to enable multiple commenting systems as same time. You can modify the following configuration to adjust the style or behavior of multiple commenting systems.
+NexT allows you to enable multiple commenting systems at the same time. You can modify the following configuration to adjust the style or behavior of multiple commenting systems.
 
 ```yml
 # Multiple Comment System Support
