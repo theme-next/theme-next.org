@@ -238,3 +238,24 @@ rating:
 {% endcode %}
 <!-- endtab -->
 {% endtabs %}
+
+### Multiple Comment System Support
+
+NexT allows you to enable multiple commenting systems as same time. You can modify the following configuration to adjust the style or behavior of multiple commenting systems.
+
+```yml
+# Multiple Comment System Support
+comments:
+  # Available values: tabs | buttons
+  style: tabs
+  # Choose a comment system to be displayed by default
+  # Available values: changyan | disqus | disqusjs | facebook_comments_plugin | gitalk | livere | valine | vkontakte
+  active:
+  # Setting `true` means remembering the comment system selected by the visitor
+  storage: true
+  # Modify icons and texts for any style, here are some examples
+  nav:
+    #disqus: disqus
+    #facebook_comments_plugin: <i class="fa fa-facebook-official" aria-hidden="true"></i> facebook
+    #gitalk: Load Gitalk
+```
