@@ -87,28 +87,11 @@ title: Not Render Math Either
 {% endnote %}
 <!-- endtab -->
 
-<!-- tab <code>cdn</code> -->
-{% note success %}
-Both MathJax and KaTeX provide `cdn` config and use the [jsDelivr](https://www.jsdelivr.com) as the default CDN.
-The reason that jsDelivr is chosen is because it is fast everywhere, and jsDelivr has the valid ICP license issued by the Chinese government, it can be accessed in China pretty well.
-{% endnote %}
-
-{% note warning %}
-And we also provide other optional CDNs, including the famous [CDNJS](https://cdnjs.com).
-For MathJax, we are currently using version 2.7.5.
-For KaTeX, due to the problem described above, we are now using version 0.7.1.
-{% endnote %}
-
-{% note danger %}
-If you want to try the other CDNs not included in the optional list, you must use the corresponding version.
-Particularly, if you are a Chinese blogger or most of your visits come from China, please note that the CDNJS is blocked in some parts of China, don't use it as your CDN.
-{% endnote %}
-<!-- endtab -->
 {% endtabs %}
 
 ### Render Engines
 
-For now, NexT provides two Render Engines: [MathJax](https://www.mathjax.org) and [KaTeX](https://khan.github.io/KaTeX/) (default is MathJax).
+For now, NexT provides two Render Engines: [MathJax](https://www.mathjax.org) and [KaTeX](https://khan.github.io/KaTeX/).
 
 {% tabs render-engines %}
 <!-- tab <strong><code>mathjax</code></strong> -->

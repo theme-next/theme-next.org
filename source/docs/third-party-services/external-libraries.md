@@ -3,6 +3,47 @@ title: External Libraries
 description: NexT User Docs – Third-party Service Integration – External Libraries
 ---
 
+### PJAX
+
+[Pjax](https://github.com/MoOx/pjax) is a standalone JavaScript module that uses AJAX (XmlHttpRequest) and `pushState()` to deliver a fast browsing experience.
+
+It allows you to completely transform the user experience of standard websites (server-side generated or static ones) to make users feel like they are browsing an app, especially for those with low bandwidth connections.
+
+{% tabs pjax %}
+<!-- tab Installation → -->
+Change dir to NexT directory, and install module to `source/lib` directory.
+
+{% code lang:bash %}
+$ cd themes/next
+$ git clone https://github.com/theme-next/theme-next-pjax source/lib/pjax
+{% endcode %}
+
+{% note info %}
+If you want to use the CDN instead of clone this repo, then need to **set vendors** in {% label primary@theme config file %}:
+{% code lang:yml next/_config.yml %}
+vendors:
+  ...
+  pjax: //cdn.jsdelivr.net/gh/theme-next/theme-next-pjax@0/pjax.min.js
+  ...
+{% endcode %}
+{% endnote %}
+
+<!-- endtab -->
+
+<!-- tab NexT Config -->
+
+After the plugin installed, you can enable it by setting value `pjax` to `true` in {% label primary@theme config file %}.
+
+{% code lang:yml hexo/_config.yml %}
+# Easily enable fast Ajax navigation on your website.
+# Dependencies: https://github.com/theme-next/theme-next-pjax
+# For moreinformation: https://github.com/MoOx/pjax
+pjax: true
+{% endcode %}
+
+<!-- endtab -->
+{% endtabs %}
+
 ### Fancybox
 
 NexT supports the fancybox plugin, which is a jQuery lightbox script for displaying images, videos and more. Touch enabled, responsive and fully customizable.
@@ -26,7 +67,6 @@ If you want to use the CDN instead of clone this repo, then need to **set vendor
 {% code lang:yml next/_config.yml %}
 vendors:
   ...
-  # See: http://fancyapps.com/fancybox/
   fancybox: //cdn.jsdelivr.net/npm/fancybox@2/dist/js/jquery.fancybox.pack.js
   fancybox_css: //cdn.jsdelivr.net/npm/fancybox@2/dist/css/jquery.fancybox.min.css
   ...
@@ -62,7 +102,6 @@ If you want to use the CDN instead of clone this repo, then need to **set vendor
 {% code lang:yml next/_config.yml %}
 vendors:
   ...
-  # See: http://fancyapps.com/fancybox/
   fancybox: //cdn.jsdelivr.net/npm/fancybox@3/dist/js/jquery.fancybox.pack.js
   fancybox_css: //cdn.jsdelivr.net/npm/fancybox@3/dist/css/jquery.fancybox.min.css
   ...
@@ -102,7 +141,6 @@ If you want to use the CDN instead of clone this repo, then need to **set vendor
 {% code lang:yml next/_config.yml %}
 vendors:
   ...
-  # See: https://github.com/francoischalifour/medium-zoom
   mediumzoom: https://cdn.jsdelivr.net/npm/medium-zoom@1/dist/medium-zoom.min.js
   ...
 {% endcode %}
@@ -145,7 +183,6 @@ If you want to use the CDN instead of clone this repo, then need to **set vendor
 {% code lang:yml next/_config.yml %}
 vendors:
   ...
-  # See: https://github.com/ApoorvSaxena/lozad.js
   lazyload: //cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js
   ...
 {% endcode %}
@@ -166,9 +203,7 @@ lazyload: true
 <!-- endtab -->
 {% endtabs %}
 
-### Chinese Typesetting
-
-#### Pangu Autospace Support
+### Pangu Autospace
 
 [pangu.js](https://github.com/vinta/pangu.js) will automatically insert a blank space between all the Chinese characters and the hexagonal English numeric symbols on the page.
 
@@ -223,7 +258,6 @@ If you want to use the CDN instead of clone this repo, then need to **set vendor
 {% code lang:yml next/_config.yml %}
 vendors:
   ...
-  # See: https://github.com/GoogleChromeLabs/quicklink
   quicklink: //cdn.jsdelivr.net/npm/quicklink@1/dist/quicklink.umd.js
   ...
 {% endcode %}
@@ -351,7 +385,6 @@ If you want to use the CDN instead of clone this repo, then need to **set vendor
 {% code lang:yml next/_config.yml %}
 vendors:
   ...
-  # See: https://github.com/HubSpot/pace
   pace: //cdn.jsdelivr.net/npm/pace-js@1/pace.min.js
   pace_css: //cdn.jsdelivr.net/npm/pace-js@1/themes/blue/pace-theme-minimal.css
   ...
@@ -390,7 +423,7 @@ Pace includes a bunch of [themes](http://github.hubspot.com/pace/docs/welcome/) 
 * pace-theme-material
 * pace-theme-minimal
 
-By default NexT uses `pace-theme-minimal` theme. You can configure it by editing values in `pace.theme` section in {% label primary@theme config file %}.
+By default NexT uses `minimal` theme (pace-theme-minimal). You can configure it by editing values in `pace.theme` section in {% label primary@theme config file %}.
 
 {% code lang:yml hexo/_config.yml %}
 pace: 
@@ -402,7 +435,6 @@ If you want to use the CDN, then need to **set vendors** in {% label primary@the
 {% code lang:yml next/_config.yml %}
 vendors:
   ...
-  # See: https://github.com/HubSpot/pace
   pace_css: //cdn.jsdelivr.net/npm/pace-js@1/themes/blue/pace-theme-minimal.css
   ...
 {% endcode %}

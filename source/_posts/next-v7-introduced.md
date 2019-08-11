@@ -51,6 +51,7 @@ So, lets comment this models:
 3. Again: `rebase` + `merge --no--ff` – only with a little difference with allow to minimize merged commits history. Anyway, history will not linear.
 4. So, this is similar to our model, with except – releases created not only under the tags, but under branches too. As I understand, branches serve for temporary maintenance multiple software versions. And this model exactly what we need! With some changes, of course...
 
+<!-- more -->
 ## NexT Branching Model
 
 As described above, most liked branching model is 4. But need to make some changes in this model to be sure with NexT compatibility. Let's write in order:
@@ -62,7 +63,7 @@ As described above, most liked branching model is 4. But need to make some chang
 
 ![next-branches-model](https://user-images.githubusercontent.com/16944225/50718831-01a05600-1094-11e9-9ffd-2ebd562104ae.png)
 
-**Only one question here**: are we need to have separated **v7.x** branch to advantage at most cases stable releases?
+**Only one question here**: do we need to have separated **v7.x** branch to advantage at most cases stable releases?
 
 ### Don't push «Update branch» button
 

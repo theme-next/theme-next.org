@@ -48,10 +48,12 @@ If you want to disable comment in some page/post, just add `comments: false` to 
 
 ### External Libraries
 
+* [PJAX](/docs/third-party-services/external-libraries#PJAX)
 * [Fancybox](/docs/third-party-services/external-libraries#Fancybox)
 * [MediumZoom](/docs/third-party-services/external-libraries#MediumZoom)
 * [Lazyload](/docs/third-party-services/external-libraries#Lazyload)
-* [Pangu Autospace Support](/docs/third-party-services/external-libraries#Pangu-Autospace-Support)
+* [Pangu Autospace](/docs/third-party-services/external-libraries#Pangu-Autospace)
+* [Quicklink](/docs/third-party-services/external-libraries#Quicklink)
 * [Bookmark](/docs/third-party-services/external-libraries#Bookmark)
 * [Reading Progress](/docs/third-party-services/external-libraries#Reading-Progress)
 * [Progress bar](/docs/third-party-services/external-libraries#Progress-bar)
