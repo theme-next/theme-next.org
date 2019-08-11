@@ -6,46 +6,31 @@ mathjax: true
 
 NexT provides two render engines for displaying Math Equations.
 
-If you choose to use this feature, you don't need to manually import any JS or CSS. You just need to turn on `enable` of `math` and define a render `engine` in {% label primary@theme config file %} for it.
+If you choose to use this feature, you don't need to manually import any JS or CSS. You just need to turn on `enable` of `math` and define a render engine in {% label primary@theme config file %} for it.
 
 ### Settings
 
 ```yml next/_config.yml
-# Math Equations Render Support
+# Math Formulas Render Support
 math:
   enable: true
 
-  # Default(true) will load mathjax/katex script on demand
-  # That is it only render those page who has `mathjax: true` in Front-matter.
-  # If you set it to false, it will load mathjax/katex srcipt EVERY PAGE.
+  # Default (true) will load mathjax / katex script on demand.
+  # That is it only render those page which has `mathjax: true` in Front-matter.
+  # If you set it to false, it will load mathjax / katex srcipt EVERY PAGE.
   per_page: true
 
-  engine: mathjax
-  #engine: katex
-
-  # hexo-renderer-pandoc (or hexo-renderer-kramed) needed to full MathJax support.
+  # hexo-renderer-pandoc (or hexo-renderer-kramed) required for full MathJax support.
   mathjax:
-    # Use 2.7.5 as default, jsdelivr as default CDN, works everywhere even in China
-    cdn: //cdn.jsdelivr.net/npm/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML
-    # For direct link to MathJax.js with CloudFlare CDN (cdnjs.cloudflare.com)
-    #cdn: //cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML
-
+    enable: true
     # See: https://mhchem.github.io/MathJax-mhchem/
-    #mhchem: //cdn.jsdelivr.net/npm/mathjax-mhchem@3
-    #mhchem: //cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.3.0
+    mhchem: false
 
-  # hexo-renderer-markdown-it-plus (or hexo-renderer-markdown-it with markdown-it-katex plugin) needed to full Katex support.
+  # hexo-renderer-markdown-it-plus (or hexo-renderer-markdown-it with markdown-it-katex plugin) required for full Katex support.
   katex:
-    # Use 0.7.1 as default, jsdelivr as default CDN, works everywhere even in China
-    cdn: //cdn.jsdelivr.net/npm/katex@0.7.1/dist/katex.min.css
-    # CDNJS, provided by cloudflare, maybe the best CDN, but not works in China
-    #cdn: //cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css
-
-    copy_tex:
-      # See: https://github.com/KaTeX/KaTeX/tree/master/contrib/copy-tex
-      enable: false
-      copy_tex_js: //cdn.jsdelivr.net/npm/katex@0/dist/contrib/copy-tex.min.js
-      copy_tex_css: //cdn.jsdelivr.net/npm/katex@0/dist/contrib/copy-tex.min.css
+    enable: false
+    # See: https://github.com/KaTeX/KaTeX/tree/master/contrib/copy-tex
+    copy_tex: false
 ```
 
 {% note danger %}
@@ -102,13 +87,6 @@ title: Not Render Math Either
 {% endnote %}
 <!-- endtab -->
 
-<!-- tab <code>engine</code> -->
-
-* **`mathjax`** → details in [mathjax tab below](#render-engines-1).
-* `katex` → details in [katex tab below](#render-engines-2).
-
-<!-- endtab -->
-
 <!-- tab <code>cdn</code> -->
 {% note success %}
 Both MathJax and KaTeX provide `cdn` config and use the [jsDelivr](https://www.jsdelivr.com) as the default CDN.
@@ -155,14 +133,14 @@ If you use MathJax to render Math Equations, you can choose one of renderers bel
    $ npm i hexo-renderer-kramed --save # or hexo-renderer-pandoc
    {% endcode %}
 
-2. In {% label primary@theme config file %}, turn on `enable` option of `math` and choose `mathjax` as render `engine`.
+2. In {% label primary@theme config file %}, turn on `enable` option of `math` and choose `mathjax` as render engine.
 
    {% code lang:yml %}
    math:
      enable: true
      ...
-     engine: mathjax
-     #engine: katex
+     mathjax:
+       enable: true
    {% endcode %}
 
 3. Run standard Hexo generate, deploy process or start the server:
@@ -226,14 +204,14 @@ markdown:
    $ npm i hexo-renderer-markdown-it-plus --save # or hexo-renderer-markdown-it
    {% endcode %}
 
-2. In {% label primary@theme config file %}, turn on `enable` option of `math` and choose `katex` as render `engine`.
+2. In {% label primary@theme config file %}, turn on `enable` option of `math` and choose `katex` as render engine.
 
    {% code lang:yml %}
    math:
      enable: true
      ...
-     #engine: mathjax
-     engine: katex
+     katex:
+       enable: true
    {% endcode %}
 
 3. Run standard Hexo generate, deploy process or start the server:
@@ -271,7 +249,7 @@ We will continuously monitor the updates of corresponding renderers, if there is
 
 NexT also integrates some plugins for MathJax and KaTeX. You can easily configure them by setting the CDN URLs.
 
-mhchem is a third-party extension for MathJax, it's a tool for writing beautiful chemical equations easily. More infomation: [MathJax/mhchem Manual](https://mhchem.github.io/MathJax-mhchem/).
+`mhchem` is a third-party extension for MathJax, it's a tool for writing beautiful chemical equations easily. More infomation: [MathJax/mhchem Manual](https://mhchem.github.io/MathJax-mhchem/).
 
 Copy-tex extension for KaTeX modifes the copy/paste behavior in any browser supporting the Clipboard API so that, when selecting and copying whole KaTeX-rendered elements, the text content of the resulting clipboard renders KaTeX elements as their LaTeX source surrounded by specified delimiters. More infomation: [Copy-tex extension](https://github.com/KaTeX/KaTeX/tree/master/contrib/copy-tex).
 

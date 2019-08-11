@@ -351,9 +351,8 @@ theme_config:
   math:
     enable: true
     per_page: true
-    engine: mathjax
     mathjax:
-      cdn: //cdn.jsdelivr.net/npm/mathjax@2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+      enable: true
 
 
   # ============================================================= #
