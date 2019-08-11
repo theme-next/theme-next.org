@@ -98,7 +98,6 @@ firestore:
   collection: articles #required, a string collection name to access firestore database
   apiKey: #required
   projectId: #required
-  bluebird: false #enable this if you want to include bluebird 3.5.1(core version) Promise polyfill
 {% endcode %}
 <!-- endtab -->
 {% endtabs %}

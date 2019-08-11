@@ -167,11 +167,10 @@ Login to [Google developers](https://console.developers.google.com/flows/enablea
 
 <!-- endtab -->
 <!-- tab NexT Config  -->
-You can enable it by setting value `calendar.enable` to `true`, and copy the value of calendar ID and API KEY in {% label primary@theme config file %}.
+You can enable it by setting values in `calendar` part. Copy the value of calendar ID and API KEY in {% label primary@theme config file %}.
 
 {% codeblock lang:yml next/_config.yml %}
 calendar:
-  enable: true
   calendar_id: <required>
   api_key: <required>
   orderBy: startTime

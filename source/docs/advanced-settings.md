@@ -119,10 +119,8 @@ vendors:
   # Example:
   # gitalk_js: //cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js
   # gitalk_css: //cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css
-  # md5: //cdn.jsdelivr.net/npm/js-md5@0/src/md5.min.js
   gitalk_js: //cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js
   gitalk_css: //cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css
-  md5: //cdn.jsdelivr.net/npm/js-md5/src/md5.min.js
 
   # likely
   # See: https://github.com/ilyabirman/Likely

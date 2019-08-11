@@ -17,7 +17,7 @@ scroll_to_more: true
 <!-- endtab -->
 
 <!-- tab <code>save_scroll</code> -->
-If you want to save page scroll position automatically in cookies, you can enable it by setting value `save_scroll` to `true` in {% label primary@theme config file %}.
+If you want to save page scroll position automatically, you can enable it by setting value `save_scroll` to `true` in {% label primary@theme config file %}.
 
 {% code lang:yml next/_config.yml %}
 save_scroll: true
