@@ -8,7 +8,16 @@ Please note that those settings may lead to abnormal behavior if they are wrong.
 
 ### Third-party JS Libraries
 
-You can set it to a proper CDN URL, which can make static assets (JavaScript Third-party Library) load faster, now NexT contains following third-party library:
+This feature is located under `vendors` section in {% label primary@theme config file %}.
+`_internal: lib` is used to tell NexT where internal library is located and you shouldn't change this in most cases.
+
+And next part is config of each library; if you leave it blank NexT will use internal version. Each config is in format of `libname: CDN URL`. For example:
+
+```yml
+jquery: //cdn.jsdelivr.net/jquery/3.4.1/jquery.min.js
+```
+
+You can set it to a proper CDN URL, which can make static assets (JavaScript Third-party Library) load faster. Now NexT contains following third-party library:
 
 | Name               | Original Link                                                                | NexT Internal Version |
 | ------------------ | ---------------------------------------------------------------------------- | --------------------- |
@@ -17,14 +26,12 @@ You can set it to a proper CDN URL, which can make static assets (JavaScript Thi
 | VelocityJS         | [velocityjs.org](http://velocityjs.org)                                      | 1.2.1                 |
 | VelocityJS UI Pack | [velocityjs.org/#uiPack](http://velocityjs.org/#uiPack)                      | 1.2.1                 |
 
-This feature located under `vendors` section in {% label primary@theme config file %}.
-`_internal: lib` is used to tell NexT where internal library is located and you shouldn't change this in most cases.
-And next part is config of each library; if you leave it blank NexT will use internal version. Each config is in format of `libname: CDN URL`. For example:
+NexT use the [jsDelivr](https://www.jsdelivr.com/) as the default CDN service provider. The reason that jsDelivr is chosen is because it is fast everywhere, and jsDelivr has the valid ICP license issued by the Chinese government, it can be accessed in China pretty well.
 
-```yml
-jquery: //cdn.jsdelivr.net/jquery/3.4.1/jquery.min.js
-```
+And we also provide other optional CDNs, including the famous [CDNJS](https://cdnjs.com/).
+Particularly, if you are a Chinese blogger or most of your visits come from China, please note that **the CDNJS is blocked in some parts of China**, don't use it as your CDN.
 
+If you want to try the other CDNs not included in the optional list, you would better use the corresponding version.
 «Internal version» is the version that NexT tested and uses. And if you need other versions you need to test them first.
 
 ```yml next/_config.yml
