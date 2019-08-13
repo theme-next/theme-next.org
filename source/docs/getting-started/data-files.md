@@ -69,5 +69,9 @@ If there are any new options in new releases, you just need to copy those option
 3. Then, in main {% label info@site config file %} need to define `theme: next` option (and if needed, `source_dir: source`).
 4. Use standart parameters to start server, generate or deploy (`hexo clean && hexo g -d && hexo s`).
 
+{% note danger %}
+NexT uses `lodash/merge` to merge configs from `next.yml`, which might lead to the incorrect order of menu item. Since `lodash/merge` is using deep copy, even if you set the order of the menu items, they will follow the default order in `_config.yml`.
+{% endnote %}
+
 <!-- endtab -->
 {% endtabs %}

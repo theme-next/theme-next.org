@@ -9,6 +9,10 @@ description: NexT User Docs – Starting to Use — Deployment
 2. Localization testing: `hexo clean && hexo g && hexo s`.
 3. Deployment: `hexo g -d`.
 
+{% note danger %}
+If you are using macOS with `hexo-deployer-git`, make sure that `lib/` directory is not ignored by git (e.g. check `~/.gitignore_global`). Otherwise some necessary files may be missing after the deployment.
+{% endnote %}
+
 ### Continuous Integration
 
 * Edit the file directly online, effective immediately

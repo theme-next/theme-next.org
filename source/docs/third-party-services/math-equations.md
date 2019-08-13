@@ -242,6 +242,10 @@ Copy-tex extension for KaTeX modifes the copy/paste behavior in any browser supp
 For examples below (and for all other examples in this domain) NexT uses `hexo-renderer-kramed` renderer with `mathjax` engine.
 {% endnote %}
 
+{% note danger %}
+In some cases, the syntax of Markdown and TeX will conflict. For example, an underscore (`_`) may be interpreted as the start of italic text in Markdown, or subscripted mark in TeX. To avoid syntax errors, please use escape characters (`\_`) instead.
+{% endnote %}
+
 #### Numbering and referring equations in MathJax
 
 In the new version of NexT, we have added feature to [automatic equation numbering](http://docs.mathjax.org/en/latest/tex.html#automatic-equation-numbering) with opportunity to make reference to that equations. We briefly describe how to use this feature below.
