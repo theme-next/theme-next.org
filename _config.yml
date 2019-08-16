@@ -197,9 +197,9 @@ theme_config:
 
       Third Party Services:
         default: /third-party-services/ || plug
-        Comments and Widgets: /comments-and-widgets.html || comments-o
+        Comment Systems: /comments.html || comments-o
         Statistics and Analytics: /statistics-and-analytics.html || bar-chart
-        Content Sharing Services: /content-sharing-services.html || share-square
+        Post Widgets: /post-widgets.html || share-square
         Search Services: /search-services.html || search-plus
         External Libraries: /external-libraries.html || puzzle-piece
         Math Equations: /math-equations.html || superscript

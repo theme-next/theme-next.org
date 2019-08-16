@@ -8,15 +8,12 @@ In any time you can extend needed functions by using third-party services suppor
 
 ### Comment Systems
 
-* [Disqus](/docs/third-party-services/comments-and-widgets#Disqus)
-* [DisqusJS](/docs/third-party-services/comments-and-widgets#DisqusJS)
-* [Facebook Comments](/docs/third-party-services/comments-and-widgets#Facebook-Comments)
-* [VKontakte Comments and Likes](/docs/third-party-services/comments-and-widgets#VKontakte-Comments-and-Likes)
-* [LiveRe](/docs/third-party-services/comments-and-widgets#LiveRe)
-* [Gitalk](/docs/third-party-services/comments-and-widgets#Gitalk)
-* [Valine (China)](/docs/third-party-services/comments-and-widgets#Valine)
-* [Changyan (China)](/docs/third-party-services/comments-and-widgets#Changyan)
-* [Widgetpack Rating](/docs/third-party-services/comments-and-widgets#Widgetpack-Rating)
+* [Disqus](/docs/third-party-services/comments#Disqus)
+* [DisqusJS](/docs/third-party-services/comments#DisqusJS)
+* [LiveRe](/docs/third-party-services/comments#LiveRe)
+* [Gitalk](/docs/third-party-services/comments#Gitalk)
+* [Valine (China)](/docs/third-party-services/comments#Valine)
+* [Changyan (China)](/docs/third-party-services/comments#Changyan)
 
 {% note info %}
 If you want to disable comment in some page/post, just add `comments: false` to [Front-matter](https://hexo.io/docs/front-matter) in your markdown file.
@@ -34,11 +31,12 @@ If you want to disable comment in some page/post, just add `comments: false` to 
 * [Busuanzi Counting](/docs/third-party-services/statistics-and-analytics#Busuanzi-Counting-China)
 * [Firebase](/docs/third-party-services/statistics-and-analytics#Firebase)
 
-### Content Sharing Services
+### Post Widgets
 
-* [AddThis](/docs/third-party-services/content-sharing-services#AddThis)
-* [Likely](/docs/third-party-services/content-sharing-services#Likely)
-* [Need More Share](/docs/third-party-services/content-sharing-services#Need-More-Share)
+* [Facebook Comments](/docs/third-party-services/post-widgets#Facebook-Comments)
+* [VKontakte Comments and Likes](/docs/third-party-services/post-widgets#VKontakte-Comments-and-Likes)
+* [Widgetpack Rating](/docs/third-party-services/post-widgets#Widgetpack-Rating)
+* [AddThis](/docs/third-party-services/post-widgets#AddThis)
 
 ### Search Services
 
