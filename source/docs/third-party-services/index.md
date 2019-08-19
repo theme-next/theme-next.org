@@ -6,6 +6,10 @@ description: NexT User Docs – Third-party Service Integration
 Static website is limited in some functions, so we need third-party services to extend our site.
 In any time you can extend needed functions by using third-party services supported by NexT.
 
+### Math Equations
+
+* [Math Equations](/docs/third-party-services/math-equations)
+
 ### Comment Systems
 
 * [Disqus](/docs/third-party-services/comments#Disqus)
@@ -44,24 +48,19 @@ If you want to disable comment in some page/post, just add `comments: false` to 
 * [Local Search](/docs/third-party-services/search-services#Local-Search)
 * [Swiftype](/docs/third-party-services/search-services#Swiftype-Search)
 
-### External Libraries
-
-* [PJAX](/docs/third-party-services/external-libraries#PJAX)
-* [Fancybox](/docs/third-party-services/external-libraries#Fancybox)
-* [MediumZoom](/docs/third-party-services/external-libraries#MediumZoom)
-* [Lazyload](/docs/third-party-services/external-libraries#Lazyload)
-* [Pangu Autospace](/docs/third-party-services/external-libraries#Pangu-Autospace)
-* [Quicklink](/docs/third-party-services/external-libraries#Quicklink)
-* [Bookmark](/docs/third-party-services/external-libraries#Bookmark)
-* [Reading Progress](/docs/third-party-services/external-libraries#Reading-Progress)
-* [Progress bar](/docs/third-party-services/external-libraries#Progress-bar)
-* [Backgroud JS](/docs/third-party-services/external-libraries#Backgroud-JS)
-
-### Math Equations
-
-* [Math Equations](/docs/third-party-services/math-equations)
-
 ### Chat Services
 
 * [Chatra](/docs/third-party-services/chat-services#Chatra)
 * [Tidio](/docs/third-party-services/chat-services#Tidio)
+
+### External Libraries
+
+* [PJAX](/docs/third-party-services/external-libraries#PJAX)
+* [Fancybox](/docs/third-party-services/external-libraries#Fancybox)
+* [MediumZoom](/docs/third-party-services/external-libraries#Medium-Zoom)
+* [Lazyload](/docs/third-party-services/external-libraries#Lazyload)
+* [Pangu Autospace](/docs/third-party-services/external-libraries#Pangu-Autospace)
+* [Quicklink](/docs/third-party-services/external-libraries#Quicklink)
+* [Motion](/docs/third-party-services/external-libraries#Animation-Effect)
+* [Progress bar](/docs/third-party-services/external-libraries#Progress-Bar)
+* [Backgroud JS](/docs/third-party-services/external-libraries#Backgroud-JS)

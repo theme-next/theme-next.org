@@ -123,7 +123,7 @@ fancybox: true
 
 {% endtabs %}
 
-### MediumZoom
+### Medium Zoom
 
 [Medium Zoom](https://github.com/francoischalifour/medium-zoom) is a JavaScript library for zooming images like Medium.
 
@@ -285,89 +285,35 @@ quicklink:
 <!-- endtab -->
 {% endtabs %}
 
-### Bookmark
+### Animation Effect
 
-Bookmark is a plugin that allow the users save their reading position. The users could just click the bookmark icon (like 🔖) in left-top of the page to save the position. And when they visit your blog in the next time, they can continue the last reading position by clicking the bookmark icon from the home page.
+NexT enables animation effect by default which is supported by JavaScript, so it will wait for JavaScript loaded to show content.
+If you need speed you can set this section to `false` to disable it.
 
-{% tabs bookmark %}
-<!-- tab Installation → -->
-Change dir to NexT directory, and install module to `source/lib` directory.
+Edit {% label primary@theme config file %} and set the needed values under the `motion` to fit your demand.
 
-{% code lang:bash %}
-$ cd themes/next
-$ git clone https://github.com/theme-next/theme-next-bookmark.git source/lib/bookmark
-{% endcode %}
-
-{% note info %}
-If you want to use the CDN instead of clone this repo, then need to **set vendors** in {% label primary@theme config file %}:
-{% code lang:yml next/_config.yml %}
-vendors:
-  ...
-  # bookmark
-  # https://github.com/theme-next/theme-next-bookmark
-  bookmark: //cdn.jsdelivr.net/gh/theme-next/theme-next-bookmark@1/bookmark.min.js
-  ...
-{% endcode %}
-{% endnote %}
-
-<!-- endtab -->
-
-<!-- tab NexT Config -->
-After the plugin installed, you can enable it by setting value `bookmark.enable` to `true` in {% label primary@theme config file %}.
-
-{% code lang:yml hexo/_config.yml %}
-# Dependencies: https://github.com/theme-next/theme-next-bookmark
-bookmark:
+```yml next/_config.yml
+# Use velocity to animate everything.
+motion:
   enable: true
-  # if auto
-  #   - save the reading position when closing the page
-  #   - or clicking the bookmark-icon
-  # if manual, only save it by clicking the bookmark-icon
-  save: auto
-{% endcode %}
-<!-- endtab -->
-{% endtabs %}
+  async: false
+  transition:
+    # Transition variants:
+    # fadeIn | fadeOut | flipXIn | flipXOut | flipYIn | flipYOut | flipBounceXIn | flipBounceXOut | flipBounceYIn | flipBounceYOut
+    # swoopIn | swoopOut | whirlIn | whirlOut | shrinkIn | shrinkOut | expandIn | expandOut
+    # bounceIn | bounceOut | bounceUpIn | bounceUpOut | bounceDownIn | bounceDownOut | bounceLeftIn | bounceLeftOut | bounceRightIn | bounceRightOut
+    # slideUpIn | slideUpOut | slideDownIn | slideDownOut | slideLeftIn | slideLeftOut | slideRightIn | slideRightOut
+    # slideUpBigIn | slideUpBigOut | slideDownBigIn | slideDownBigOut | slideLeftBigIn | slideLeftBigOut | slideRightBigIn | slideRightBigOut
+    # perspectiveUpIn | perspectiveUpOut | perspectiveDownIn | perspectiveDownOut | perspectiveLeftIn | perspectiveLeftOut | perspectiveRightIn | perspectiveRightOut
+    post_block: fadeIn
+    post_header: slideDownIn
+    post_body: slideDownIn
+    coll_header: slideLeftIn
+    # Only for Pisces | Gemini.
+    sidebar: slideUpIn
+```
 
-### Reading Progress
-
-NexT supports the page scroll reading progress indicator.
-
-{% tabs reading_progress %}
-<!-- tab Installation → -->
-Change dir to NexT directory, and install module to `source/lib` directory.
-
-{% code lang:bash %}
-$ cd themes/next
-$ git clone https://github.com/theme-next/theme-next-reading-progress source/lib/reading_progress
-{% endcode %}
-
-{% note info %}
-If you want to use the CDN instead of clone this repo, then need to **set vendors** in {% label primary@theme config file %}:
-{% code lang:yml next/_config.yml %}
-vendors:
-  ...
-  # reading_progress
-  # https://github.com/theme-next/theme-next-reading-progress
-  reading_progress: //cdn.jsdelivr.net/gh/theme-next/theme-next-reading-progress@1.1/reading_progress.min.js
-  ...
-{% endcode %}
-{% endnote %}
-
-<!-- endtab -->
-
-<!-- tab NexT Config -->
-After the plugin installed, you can enable it by setting value `reading_progress.enable` to `true` in {% label primary@theme config file %}.
-
-{% code lang:yml hexo/_config.yml %}
-reading_progress:
-  enable: true
-  color: "#37c6c0"
-  height: 2px
-{% endcode %}
-<!-- endtab -->
-{% endtabs %}
-
-### Progress bar
+### Progress Bar
 
 Pace will automatically monitor your Ajax requests, event loop lag, document ready state and elements on your page to decide on the progress.
 

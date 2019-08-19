@@ -113,18 +113,6 @@ vendors:
   # pangu: //cdnjs.cloudflare.com/ajax/libs/pangu/4.0.7/pangu.min.js
   pangu: //cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js
 
-  # Internal version: 1.0.0
-  # See: https://github.com/theme-next/theme-next-bookmark
-  # Example:
-  # bookmark: //cdn.jsdelivr.net/gh/theme-next/theme-next-bookmark@1/bookmark.min.js
-  bookmark: //cdn.jsdelivr.net/gh/theme-next/theme-next-bookmark/bookmark.min.js
-
-  # Internal version: 1.1
-  # See: https://github.com/theme-next/theme-next-reading-progress
-  # Example:
-  # reading_progress: //cdn.jsdelivr.net/gh/theme-next/theme-next-reading-progress@1/reading_progress.min.js
-  reading_progress: //cdn.jsdelivr.net/gh/theme-next/theme-next-reading-progress/reading_progress.min.js
-
   # DisqusJS
   # See: https://github.com/SukkaW/DisqusJS
   # Example:
@@ -147,22 +135,6 @@ vendors:
   # gitalk_css: //cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css
   gitalk_js: //cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js
   gitalk_css: //cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css
-
-  # likely
-  # See: https://github.com/ilyabirman/Likely
-  # Example:
-  # likely_js: //cdn.jsdelivr.net/npm/ilyabirman-likely@2/release/likely.js
-  # likely_css: //cdn.jsdelivr.net/npm/ilyabirman-likely@2/release/likely.css
-  likely_js: //cdn.jsdelivr.net/npm/ilyabirman-likely/release/likely.js
-  likely_css: //cdn.jsdelivr.net/npm/ilyabirman-likely/release/likely.css
-
-  # Internal version: 1.0.0
-  # See: https://github.com/revir/need-more-share2
-  # Example:
-  # needmoreshare2_js: //cdn.jsdelivr.net/gh/theme-next/theme-next-needmoreshare2@1/needsharebutton.min.js
-  # needmoreshare2_css: //cdn.jsdelivr.net/gh/theme-next/theme-next-needmoreshare2@1/needsharebutton.min.css
-  needmoreshare2_js:
-  needmoreshare2_css:
 
   # Internal version: 2.10.4
   # See: https://www.algolia.com

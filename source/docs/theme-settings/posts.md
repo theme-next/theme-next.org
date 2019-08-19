@@ -7,24 +7,11 @@ description: NexT User Docs – Theme Settings – Posts
 
 #### Page Scroll
 
-{% tabs page-scroll %}
-<!-- tab <code>scroll_to_more</code> -->
 By default NexT scrolls page automatically to section which is under <!-- more --> mark. You can disable it by setting value `scroll_to_more` to `false` in {% label primary@theme config file %}.
 
 {% code lang:yml next/_config.yml %}
 scroll_to_more: true
 {% endcode %}
-<!-- endtab -->
-
-<!-- tab <code>save_scroll</code> -->
-If you want to save page scroll position automatically, you can enable it by setting value `save_scroll` to `true` in {% label primary@theme config file %}.
-
-{% code lang:yml next/_config.yml %}
-save_scroll: true
-{% endcode %}
-<!-- endtab -->
-
-{% endtabs %}
 
 #### Preamble Text
 

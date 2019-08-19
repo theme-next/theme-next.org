@@ -225,6 +225,34 @@ codeblock:
 
 {% endtabs %}
 
+### Reading Progress
+
+NexT supports the page scroll reading progress indicator.
+
+You can enable it by setting value `reading_progress.enable` to `true` in {% label primary@theme config file %}.
+
+{% code lang:yml hexo/_config.yml %}
+reading_progress:
+  enable: true
+  color: "#37c6c0"
+  height: 2px
+{% endcode %}
+
+### Bookmark
+
+Bookmark is a plugin that allow the users save their reading progress. Users could just click the bookmark icon (like 🔖) in left-top of the page to save the scroll position. And when they visit your blog in the next time, they can resume the last scroll position of each page automatically.
+
+You can enable it by setting value `bookmark.enable` to `true` in {% label primary@theme config file %}.
+
+{% code lang:yml hexo/_config.yml %}
+# Dependencies: https://github.com/theme-next/theme-next-bookmark
+bookmark:
+  enable: true
+  # if auto, save the reading position when closing the page or clicking the bookmark-icon.
+  # if manual, only save it by clicking the bookmark-icon.
+  save: auto
+{% endcode %}
+
 ### GitHub Banner
 
 NexT provides `Follow me on GitHub` banner in right-top corner.
@@ -308,32 +336,4 @@ font:
   codes:
     external: true
     family: PT Mono
-```
-
-### Animation Effect
-
-NexT enables animation effect by default which is supported by JavaScript, so it will wait for JavaScript loaded to show content.
-If you need speed you can set this section to `false` to disable it.
-
-Edit {% label primary@theme config file %} and set the needed values under the `motion` to fit your demand.
-
-```yml next/_config.yml
-# Use velocity to animate everything.
-motion:
-  enable: true
-  async: false
-  transition:
-    # Transition variants:
-    # fadeIn | fadeOut | flipXIn | flipXOut | flipYIn | flipYOut | flipBounceXIn | flipBounceXOut | flipBounceYIn | flipBounceYOut
-    # swoopIn | swoopOut | whirlIn | whirlOut | shrinkIn | shrinkOut | expandIn | expandOut
-    # bounceIn | bounceOut | bounceUpIn | bounceUpOut | bounceDownIn | bounceDownOut | bounceLeftIn | bounceLeftOut | bounceRightIn | bounceRightOut
-    # slideUpIn | slideUpOut | slideDownIn | slideDownOut | slideLeftIn | slideLeftOut | slideRightIn | slideRightOut
-    # slideUpBigIn | slideUpBigOut | slideDownBigIn | slideDownBigOut | slideLeftBigIn | slideLeftBigOut | slideRightBigIn | slideRightBigOut
-    # perspectiveUpIn | perspectiveUpOut | perspectiveDownIn | perspectiveDownOut | perspectiveLeftIn | perspectiveLeftOut | perspectiveRightIn | perspectiveRightOut
-    post_block: fadeIn
-    post_header: slideDownIn
-    post_body: slideDownIn
-    coll_header: slideLeftIn
-    # Only for Pisces | Gemini.
-    sidebar: slideUpIn
 ```
