@@ -90,7 +90,7 @@ kramed:
   smartypants: false
 
 search:
-  path: search.xml
+  path: search.json
   field: all
 
 symbols_count_time:

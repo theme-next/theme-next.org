@@ -95,7 +95,7 @@ echo "=============================================================="
     npm un hexo-renderer-marked --save --silent
     npm i hexo-renderer-kramed --save --silent
     npm i hexo-symbols-count-time --save --silent
-    npm i hexo-generator-searchdb --save --silent
+    npm i hexo-generator-search --save --silent
     npm i hexo-generator-feed --save --silent
 
 echo
