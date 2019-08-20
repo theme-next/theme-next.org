@@ -247,9 +247,11 @@ You can enable it by setting value `bookmark.enable` to `true` in {% label prima
 {% code lang:yml hexo/_config.yml %}
 # Dependencies: https://github.com/theme-next/theme-next-bookmark
 bookmark:
-  enable: true
-  # if auto, save the reading position when closing the page or clicking the bookmark-icon.
-  # if manual, only save it by clicking the bookmark-icon.
+  enable: false
+  # Customize the color of the bookmark.
+  color: "#222"
+  # If auto, save the reading progress when closing the page or clicking the bookmark-icon.
+  # If manual, only save it by clicking the bookmark-icon.
   save: auto
 {% endcode %}
 
