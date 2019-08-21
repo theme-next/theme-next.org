@@ -119,26 +119,26 @@ And if your files deployed to any free hosting service (Github, Gitlab, etc.), r
 
 {% tabs adding-plugins %}
 <!-- tab Local -->
-In NexT config now you can find dependencies on each module which was moved to external repositories which can be found by [main organization link](https://github.com/theme-next). For example, you want to use `fancybox` in your site. Go to {% label primary@theme config file %} and see:
+In NexT config now you can find dependencies on each module which was moved to external repositories which can be found by [main organization link](https://github.com/theme-next). For example, you want to use `pjax` in your site. Go to {% label primary@theme config file %} and see:
 
 {% code lang:yml next/_config.yml %}
-# Dependencies: https://github.com/theme-next/theme-next-fancybox
-fancybox: false
+# Easily enable fast Ajax navigation on your website.
+# Dependencies: https://github.com/theme-next/theme-next-pjax
+pjax: false
 {% endcode %}
 
-Then turn on `fancybox` and go to «Dependencies» link with installation instructions of this module.
+Then turn on `pjax` and go to «Dependencies» link with installation instructions of this module.
 <!-- endtab -->
 
 <!-- tab CDN -->
-If you use cdn for any plugins, you need to replace your cdn link. For example, you want to use `fancybox` and you configured a cdn link. Go to {% label primary@theme config file %} and see:
+If you use cdn for any plugins, you need to replace your cdn link. For example, you want to use `mediumzoom` and you configured a cdn link. Go to {% label primary@theme config file %} and see:
 
 {% code lang:yml next/_config.yml %}
 vendors:
   # ...
   # Some contents...
   # ...
-  fancybox: //cdn.jsdelivr.net/npm/fancybox@3.5.7/dist/js/jquery.fancybox.pack.js # Set or update fancybox cdn url.
-  fancybox_css: //cdn.jsdelivr.net/npm/fancybox@3.5.7/dist/css/jquery.fancybox.min.css # Set or update fancybox cdn url.
+  mediumzoom: # Set or update mediumzoom CDN URL.
 {% endcode %}
 
 And jsDelivr CDN is recommended to deliver our third-party plugins because it is fast in everywhere and has the valid ICP license issued by the Chinese government. It does not only crawl the js files from npm packages, and it crawls from the GitHub Releases! We could use the following link to reference the js files, just as other CDNs.

@@ -114,7 +114,7 @@ theme_config:
     enable: true
 
   reminder: true
-  
+
   custom_file_path:
     style: source/_data/styles.styl
     footer: source/_data/footer.swig
@@ -261,11 +261,6 @@ theme_config:
   sidebar:
     onmobile: true
 
-  back2top:
-    enable: true
-    sidebar: true
-    scrollpercent: true
-
 
   # ============================================================= #
   # ======================= Post Settings ======================= #
@@ -289,6 +284,11 @@ theme_config:
 
   mobile_layout_economy: true
 
+  back2top:
+    enable: true
+    sidebar: true
+    scrollpercent: true
+
 
   # ============================================================= #
   # =============== Third Party Services Settings =============== #
@@ -296,7 +296,7 @@ theme_config:
 
 
   # ============================================================= #
-  # ------------------- Comments and Widgets -------------------- #
+  # =================== Comments and Widgets ==================== #
   # ============================================================= #
 
   disqus:
@@ -307,14 +307,14 @@ theme_config:
 
 
   # ============================================================= #
-  # ----------------- Statistics and Analytics ------------------ #
+  # ================= Statistics and Analytics ================== #
   # ============================================================= #
 
   yandex_site_verification: 3ac9ae36ddebb425
 
 
   # ============================================================= #
-  # ---------------------- Search Services ---------------------- #
+  # ====================== Search Services ====================== #
   # ============================================================= #
 
   local_search:
@@ -325,27 +325,19 @@ theme_config:
 
 
   # ============================================================= #
-  # -------------------- External Libraries --------------------- #
+  # ==================== External Libraries ===================== #
   # ============================================================= #
 
   motion:
     enable: false
-    async: true
-    transition:
-      post_block: fadeIn
-      post_header: slideDownIn
-      post_body: slideDownIn
-      coll_header: slideLeftIn
-      # Only for Pisces | Gemini.
-      sidebar: slideUpIn
 
   lazyload: true
-  
+
   fancybox: true
 
 
   # ============================================================= #
-  # ---------------------- Math Equations ----------------------- #
+  # ======================= Math Formulas ======================= #
   # ============================================================= #
 
   math:

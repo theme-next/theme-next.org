@@ -217,7 +217,7 @@ hexo.extend.filter.register('theme_inject', function(injects) {
 
 A injects argument will get passed into the function, so we can use it add custom code in `injectPoint` as following.
 
-For inject view: 
+For inject view:
 ```js
 // the name of same `injectPoint` must be unique.
 // locals and options is the same as partial https://hexo.io/docs/helpers#partial.
@@ -229,7 +229,7 @@ hexo.extend.filter.register('theme_inject', function(injects) {
 });
 ```
 
-For inject style: 
+For inject style:
 ```js
 hexo.extend.filter.register('theme_inject', function(injects) {
   // it will put styleFile into injectPoint.
@@ -261,7 +261,7 @@ hexo.extend.filter.register('theme_inject', function(injects) {
 });
 ```
 
-**Two:** add a custom `my-favourite-food.swig` to sidebar. 
+**Two:** add a custom `my-favourite-food.swig` to sidebar.
 
 Step1: you should create `my-favourite-food.swig` in any path(e.g. `source/_data/`) as below. You can get variable from `hexo` or `local` defined in filter.
 ```html
@@ -279,7 +279,7 @@ hexo.extend.filter.register('theme_inject', function(injects) {
 });
 ```
 
-**Three:** want to have big header, put `big-header.styl` to NexT. 
+**Three:** want to have big header, put `big-header.styl` to NexT.
 
 Of course, you need to create this file first(e.g. `source/_data/big-header.styl`).
 ```css

@@ -35,7 +35,7 @@ Render Disqus comment component using Disqus API.
       # API Endpoint of Disqus API (https://disqus.com/api/)
       # leave api empty if you are able to connect to Disqus API
       # otherwise you need a reverse proxy for Disqus API
-      # For example: 
+      # For example:
       # api: https://disqus.skk.moe/disqus/
       api:
       apikey: # register new application from https://disqus.com/api/applications/

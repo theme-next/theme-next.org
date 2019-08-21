@@ -1,6 +1,6 @@
 ---
 title: NexT v7 Introduced
-date: 2019-01-05 09:57:00 
+date: 2019-01-05 09:57:00
 ---
 
 From this year we will start to development NexT v7. And NexT v6 will not be cutted-out for now. Instead of this, we will continue maintenance for version 6 with simultaneous development of version 7.

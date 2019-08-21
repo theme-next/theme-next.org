@@ -219,7 +219,7 @@ symbols_count_time:
 
 #### Tag Icon
 
-By default, tags at the bottom of posts have a symbol # at there left side. 
+By default, tags at the bottom of posts have a symbol # at there left side.
 
 If you prefer icon instead of symbol, edit {% label primary@theme config file %} like following:
 

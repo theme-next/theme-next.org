@@ -55,15 +55,9 @@ There is support for old version 2 and new version 3. Please, choose only any on
 
 {% subtabs fancybox1 %}
 <!-- tab Installation → -->
-Change dir to NexT directory, and install module to `source/lib` directory.
+If you want to use a different version from CDN, please follow the instructions below.
 
-{% code lang:bash %}
-$ cd themes/next
-$ git clone https://github.com/theme-next/theme-next-fancybox source/lib/fancybox
-{% endcode %}
-
-{% note info %}
-If you want to use the CDN instead of clone this repo, then need to **set vendors** in {% label primary@theme config file %}:
+You need to **set vendors** in {% label primary@theme config file %}:
 {% code lang:yml next/_config.yml %}
 vendors:
   ...
@@ -71,7 +65,6 @@ vendors:
   fancybox_css: //cdn.jsdelivr.net/npm/fancybox@2/dist/css/jquery.fancybox.min.css
   ...
 {% endcode %}
-{% endnote %}
 
 <!-- endtab -->
 
@@ -90,15 +83,9 @@ fancybox: true
 
 {% subtabs fancybox2 %}
 <!-- tab Installation → -->
-Change dir to NexT directory, and install module to `source/lib` directory.
+If you want to use a different version from CDN, please follow the instructions below.
 
-{% code lang:bash %}
-$ cd themes/next
-$ git clone https://github.com/theme-next/theme-next-fancybox3 source/lib/fancybox
-{% endcode %}
-
-{% note info %}
-If you want to use the CDN instead of clone this repo, then need to **set vendors** in {% label primary@theme config file %}:
+You need to **set vendors** in {% label primary@theme config file %}:
 {% code lang:yml next/_config.yml %}
 vendors:
   ...
@@ -106,7 +93,6 @@ vendors:
   fancybox_css: //cdn.jsdelivr.net/npm/fancybox@3/dist/css/jquery.fancybox.min.css
   ...
 {% endcode %}
-{% endnote %}
 
 <!-- endtab -->
 
@@ -129,22 +115,15 @@ fancybox: true
 
 {% tabs medium-zoom %}
 <!-- tab Installation → -->
-Change dir to NexT directory, and install module to `source/lib` directory.
+If you want to use a different version from CDN, please follow the instructions below.
 
-{% code lang:bash %}
-$ cd themes/next
-$ git clone https://github.com/theme-next/theme-next-mediumzoom source/lib/mediumzoom
-{% endcode %}
-
-{% note info %}
-If you want to use the CDN instead of clone this repo, then need to **set vendors** in {% label primary@theme config file %}:
+You need to **set vendors** in {% label primary@theme config file %}:
 {% code lang:yml next/_config.yml %}
 vendors:
   ...
   mediumzoom: https://cdn.jsdelivr.net/npm/medium-zoom@1/dist/medium-zoom.min.js
   ...
 {% endcode %}
-{% endnote %}
 
 <!-- endtab -->
 
@@ -154,7 +133,6 @@ After the plugin installed, you can enable it by setting value `mediumzoom` to `
 
 {% code lang:yml hexo/_config.yml %}
 # A JavaScript library for zooming images like Medium.
-# Dependencies: https://github.com/theme-next/theme-next-medium-zoom
 mediumzoom: true
 {% endcode %}
 
@@ -171,22 +149,15 @@ Do not enable both `fancybox` and `mediumzoom`.
 
 {% tabs lazyload %}
 <!-- tab Installation → -->
-Change dir to NexT directory, and install module to `source/lib` directory.
+If you want to use a different version from CDN, please follow the instructions below.
 
-{% code lang:bash %}
-$ cd themes/next
-$ git clone https://github.com/theme-next/theme-next-lazyload source/lib/lazyload
-{% endcode %}
-
-{% note info %}
-If you want to use the CDN instead of clone this repo, then need to **set vendors** in {% label primary@theme config file %}:
+You need to **set vendors** in {% label primary@theme config file %}:
 {% code lang:yml next/_config.yml %}
 vendors:
   ...
   lazyload: //cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js
   ...
 {% endcode %}
-{% endnote %}
 
 <!-- endtab -->
 
@@ -196,7 +167,6 @@ After the plugin installed, you can enable it by setting value `lazyload` to `tr
 
 {% code lang:yml hexo/_config.yml %}
 # Vanilla JavaScript plugin for lazyloading images.
-# Dependencies: https://github.com/theme-next/theme-next-lazyload
 lazyload: true
 {% endcode %}
 
@@ -209,15 +179,9 @@ lazyload: true
 
 {% tabs pangu %}
 <!-- tab Installation → -->
-Change dir to NexT directory, and install module to `source/lib` directory.
+If you want to use a different version from CDN, please follow the instructions below.
 
-{% code lang:bash %}
-$ cd themes/next
-$ git clone https://github.com/theme-next/theme-next-pangu.git source/lib/pangu
-{% endcode %}
-
-{% note info %}
-If you want to use the CDN instead of clone this repo, then need to **set vendors** in {% label primary@theme config file %}:
+You need to **set vendors** in {% label primary@theme config file %}:
 {% code lang:yml next/_config.yml %}
 vendors:
   ...
@@ -225,7 +189,6 @@ vendors:
   pangu: //cdn.jsdelivr.net/npm/pangu@4/dist/browser/pangu.min.js
   ...
 {% endcode %}
-{% endnote %}
 
 <!-- endtab -->
 
@@ -234,7 +197,6 @@ After the plugin installed, you can enable it by setting value `pangu` to `true`
 
 {% code lang:yml hexo/_config.yml %}
 # Pangu Support
-# Dependencies: https://github.com/theme-next/theme-next-pangu
 pangu: true
 {% endcode %}
 <!-- endtab -->
@@ -246,22 +208,15 @@ pangu: true
 
 {% tabs quicklink %}
 <!-- tab Installation → -->
-Change dir to NexT directory, and install module to `source/lib` directory.
+If you want to use a different version from CDN, please follow the instructions below.
 
-{% code lang:bash %}
-$ cd themes/next
-$ git clone https://github.com/theme-next/theme-next-quicklink source/lib/quicklink
-{% endcode %}
-
-{% note info %}
-If you want to use the CDN instead of clone this repo, then need to **set vendors** in {% label primary@theme config file %}:
+You need to **set vendors** in {% label primary@theme config file %}:
 {% code lang:yml next/_config.yml %}
 vendors:
   ...
   quicklink: //cdn.jsdelivr.net/npm/quicklink@1/dist/quicklink.umd.js
   ...
 {% endcode %}
-{% endnote %}
 
 <!-- endtab -->
 
@@ -372,7 +327,7 @@ Pace includes a bunch of [themes](http://github.hubspot.com/pace/docs/welcome/) 
 By default NexT uses `minimal` theme (pace-theme-minimal). You can configure it by editing values in `pace.theme` section in {% label primary@theme config file %}.
 
 {% code lang:yml hexo/_config.yml %}
-pace: 
+pace:
   theme: minimal
 {% endcode %}
 

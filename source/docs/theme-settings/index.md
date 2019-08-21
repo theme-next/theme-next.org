@@ -245,7 +245,6 @@ Bookmark is a plugin that allow the users save their reading progress. Users cou
 You can enable it by setting value `bookmark.enable` to `true` in {% label primary@theme config file %}.
 
 {% code lang:yml hexo/_config.yml %}
-# Dependencies: https://github.com/theme-next/theme-next-bookmark
 bookmark:
   enable: false
   # Customize the color of the bookmark.

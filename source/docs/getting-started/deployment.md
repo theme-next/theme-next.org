@@ -180,7 +180,7 @@ GitLab offers a continuous integration service and pages service. If you add a `
     $ git push -u origin master
     {% endcode %}
 
-Now, your static website is available at `https://yourname.gitlab.io/project` that is similar to GitHub. [More GitLab Pages config in here](https://gitlab.com/help/user/project/pages/index.md).    
+Now, your static website is available at `https://yourname.gitlab.io/project` that is similar to GitHub. [More GitLab Pages config in here](https://gitlab.com/help/user/project/pages/index.md).
 
 Of course, you also can pulish static website on GitHub Pages or others pages service. There are two ways to configure `.gitlab-ci.yml`:
 

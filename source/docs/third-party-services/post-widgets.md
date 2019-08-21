@@ -34,7 +34,7 @@ The [Facebook comments plugin](https://developers.facebook.com/docs/plugins/comm
 
 ### VKontakte Comments and Likes
 
-VKontakte offers flexible commentting tools that can be easily built into your website. This enables VK users to comment on your materials without having to register on your site.  
+VKontakte offers flexible commentting tools that can be easily built into your website. This enables VK users to comment on your materials without having to register on your site.
 
 {% tabs vkontakte_api %}
 <!-- tab Get API ID → -->
@@ -60,7 +60,7 @@ vkontakte_api:
 <!-- endtab -->
 {% endtabs %}
 
-With «Like» widget your visitors can express their attitude towards an article with one click or immediately share the link to it with their friends.  
+With «Like» widget your visitors can express their attitude towards an article with one click or immediately share the link to it with their friends.
 
 {% tabs vkontakte_api_like %}
 <!-- tab Get API ID → -->

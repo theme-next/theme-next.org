@@ -53,25 +53,16 @@ algolia:
 
    ![Reload Index](/images/docs/algolia-7.png)
 
-3. Change dir to NexT directory, and install module to `source/lib` directory.
+3. If you want to use a different version from CDN, please follow the instructions below.
 
-   {% code lang:bash %}
-   $ cd themes/next
-   $ git clone https://github.com/theme-next/theme-next-algolia-instant-search source/lib/algolia-instant-search
-   {% endcode %}
-
-   {% note info %}
-   If you want to use the CDN instead of clone this repo, then need to **set vendors** in {% label primary@theme config file %}:
+   You need to **set vendors** in {% label primary@theme config file %}:
    {% code lang:yml next/_config.yml %}
    vendors:
      ...
-     # Internal version: 1
-     # https://www.algolia.com
      algolia_instant_js: https://cdn.jsdelivr.net/npm/instantsearch.js@2/dist/instantsearch.js
      algolia_instant_css: https://cdn.jsdelivr.net/npm/instantsearch.js@2/dist/instantsearch.min.css
      ...
    {% endcode %}
-   {% endnote %}
 <!-- endtab -->
 
 <!-- tab NexT Config -->
