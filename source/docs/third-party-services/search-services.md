@@ -98,7 +98,7 @@ Local search no need any external 3rd-party services and can be extra indexed by
 <!-- tab Installation → -->
 Install `hexo-generator-searchdb` by run following command in {% label info@site root dir %}:
 
-    $ npm install hexo-generator-searchdb --save
+    $ npm install hexo-generator-search --save
 
 <!-- endtab -->
 
