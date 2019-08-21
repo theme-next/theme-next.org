@@ -96,7 +96,7 @@ Local search no need any external 3rd-party services and can be extra indexed by
 
 {% tabs local-search %}
 <!-- tab Installation → -->
-Install `hexo-generator-searchdb` by run following command in {% label info@site root dir %}:
+Install `hexo-generator-search` by run following command in {% label info@site root dir %}:
 
     $ npm install hexo-generator-search --save
 
@@ -117,7 +117,7 @@ search:
 Edit {% label primary@theme config file %} to enable Local Search:
 {% code lang:yml next/_config.yml %}
 # Local search
-# Dependencies: https://github.com/theme-next/hexo-generator-searchdb
+# Dependencies: https://github.com/wzpan/hexo-generator-search
 local_search:
   enable: true
   # If auto, trigger search by changing input.
