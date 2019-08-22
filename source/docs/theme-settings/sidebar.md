@@ -175,6 +175,29 @@ social_icons:
 You can add blog rolls within sidebar in NexT.
 
 {% tabs blogrolls %}
+<!-- tab <code>links_settings</code> -->
+By default NexT shows the `link` icon {% btn #,, link %} before `title`. The name of icon can be found in [Font Awesome](https://fontawesome.com) site. You can configure it by editing values in `links_settings` section in {% label primary@theme config file %}.
+
+{% code lang:yml next/_config.yml %}
+links_settings:
+  icon: link
+{% endcode %}
+
+By default NexT uses `Links` as the name of blogroll. You can configure it by editing values in `links_settings` section in {% label primary@theme config file %}.
+
+{% code lang:yml next/_config.yml %}
+links_settings:
+  title: Links
+{% endcode %}
+
+By default all blogrolls are displayed in block. You can configure it to `inline` by editing values in `links_settings` section in {% label primary@theme config file %}.
+
+{% code lang:yml next/_config.yml %}
+links_settings:
+  layout: block
+{% endcode %}
+<!-- endtab -->
+
 <!-- tab <code>links</code> -->
 Edit the `links` section in {% label primary@theme config file %} and add your favorite links:
 
@@ -183,32 +206,6 @@ links:
   Title1: http://example1.com/
   Title2: http://example2.com/
 {% endcode %}
-<!-- endtab -->
-
-<!-- tab <code>links_icon</code> -->
-By default NexT shows the `link` icon {% btn #,, link %} before `links_title`. The name of icon can be found in [Font Awesome](https://fontawesome.com) site. You can configure it by editing values in `links_icon` section in {% label primary@theme config file %}.
-
-{% code lang:yml next/_config.yml %}
-links_icon: link
-{% endcode %}
-<!-- endtab -->
-
-<!-- tab <code>links_title</code> -->
-By default NexT uses `Links` as the name of blogroll. You can configure it by editing values in `links_title` section in {% label primary@theme config file %}.
-
-{% code lang:yml next/_config.yml %}
-links_title: Links
-{% endcode %}
-<!-- endtab -->
-
-<!-- tab <code>links_layout</code> -->
-By default all blogrolls are displayed in block. You can configure it to `inline` by editing values in `links_layout` section in {% label primary@theme config file %}.
-
-{% code lang:yml next/_config.yml %}
-links_layout: block
-#links_layout: inline
-{% endcode %}
-
 <!-- endtab -->
 
 {% endtabs %}
@@ -259,7 +256,6 @@ toc:
   max_depth: 3
 {% endcode %}
 <!-- endtab -->
-
 {% endtabs %}
 
 ### Back To Top
