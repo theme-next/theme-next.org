@@ -124,3 +124,18 @@ footer:
 <!-- endtab -->
 
 {% endtabs %}
+
+#### Site Beian Information
+
+Beian information is for Chinese users. By default NexT will not show the information of beian. You can configure it by editing values in `beian` section in {% label primary@theme config file %}.
+
+```yml next/_config.yml
+footer:
+  beian:
+    enable: true
+    icp: 京ICP备 1234567890号-1
+    gongan_id: 1234567890
+    gongan_num: 京公网安备 1234567890号
+    gongan_icon_url: /uploads/beian.png
+```
+
