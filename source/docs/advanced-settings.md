@@ -219,13 +219,14 @@ A injects argument will get passed into the function, so we can use it add custo
 
 For inject view:
 ```js
-// the name of same `injectPoint` must be unique.
-// locals and options is the same as partial https://hexo.io/docs/helpers#partial.
+// The name of same `injectPoint` suggest be unique. If same, it will override low priority configurations.
+// `locals` and `options` is the same as partial https://hexo.io/docs/helpers#partial.
+// `order` defines the order of injection, which by default depends on the priority of injection.
 hexo.extend.filter.register('theme_inject', function(injects) {
   // it will put code from this filePath into injectPoint.
-  injects.[injectPoint].file(name, filePath, [locals, options]);
+  injects.[injectPoint].file(name, filePath, [locals, options, order]);
   // it will put raw string as code into injectPoint.
-  injects.[injectPoint].raw(name, raw, [locals, options]);
+  injects.[injectPoint].raw(name, raw, [locals, options, order]);
 });
 ```
 
@@ -237,10 +238,10 @@ hexo.extend.filter.register('theme_inject', function(injects) {
 });
 ```
 
-These are many `injectPoint`, defined in `scripts/injects-point.js`
+These are many `injectPoint`, defined in [`injects-point.js`](https://github.com/theme-next/hexo-theme-next/blob/master/scripts/events/lib/injects-point.js)
 ```js
 module.exports = {
-  views: ['head', 'header', 'sidebar', 'postMeta', 'postBodyEnd', 'footer', 'bodyEnd'],
+  views: ['head', 'header', 'sidebar', 'postMeta', ..., 'footer', 'bodyEnd'],
   styles: ['variable', 'mixin', 'style']
 };
 ```
