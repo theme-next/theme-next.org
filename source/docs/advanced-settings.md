@@ -241,7 +241,7 @@ hexo.extend.filter.register('theme_inject', function(injects) {
 These are many `injectPoint`, defined in [`injects-point.js`](https://github.com/theme-next/hexo-theme-next/blob/master/scripts/events/lib/injects-point.js)
 ```js
 module.exports = {
-  views: ['head', 'header', 'sidebar', 'postMeta', ..., 'footer', 'bodyEnd'],
+  views: ['head', 'header', 'sidebar', 'postMeta', 'postBodyEnd', ..., 'footer', 'bodyEnd'],
   styles: ['variable', 'mixin', 'style']
 };
 ```
