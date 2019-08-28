@@ -117,10 +117,10 @@ echo "=============================================================="
     echo "${yellow}Setted minify:${norm} ${lcyan}`hexo config theme_config.minify`${norm}"
 
     hexo config theme_config.sidebar.position right
-    echo "${yellow}Setted sidebar:${norm} ${lcyan}`hexo config theme_config.sidebar.position right`${norm}"
+    echo "${yellow}Setted sidebar position:${norm} ${lcyan}`hexo config theme_config.sidebar.position`${norm}"
 
     hexo config theme_config.back2top.sidebar false
-    echo "${yellow}Setted back2top:${norm} ${lcyan}`hexo config theme_config.back2top.sidebar false`${norm}"
+    echo "${yellow}Setted back2top in sidebar:${norm} ${lcyan}`hexo config theme_config.back2top.sidebar`${norm}"
 
     hexo clean && hexo g --silent
     echo "${lred}`mv -v public schemes/muse`${norm}"
@@ -139,10 +139,10 @@ echo "=============================================================="
     echo "${yellow}Setted minify:${norm} ${lcyan}`hexo config theme_config.minify`${norm}"
 
     hexo config theme_config.sidebar.position right
-    echo "${yellow}Setted sidebar:${norm} ${lcyan}`hexo config theme_config.sidebar.position right`${norm}"
+    echo "${yellow}Setted sidebar position:${norm} ${lcyan}`hexo config theme_config.sidebar.position`${norm}"
 
     hexo config theme_config.back2top.sidebar false
-    echo "${yellow}Setted back2top:${norm} ${lcyan}`hexo config theme_config.back2top.sidebar false`${norm}"
+    echo "${yellow}Setted back2top in sidebar:${norm} ${lcyan}`hexo config theme_config.back2top.sidebar`${norm}"
 
     hexo clean && hexo g --silent
     echo "${lred}`mv -v public schemes/mist`${norm}"
@@ -160,6 +160,12 @@ echo "=============================================================="
     hexo config theme_config.minify true
     echo "${yellow}Setted minify:${norm} ${lcyan}`hexo config theme_config.minify`${norm}"
 
+    hexo config theme_config.sidebar.position left
+    echo "${yellow}Setted sidebar position:${norm} ${lcyan}`hexo config theme_config.sidebar.position`${norm}"
+
+    hexo config theme_config.back2top.sidebar true
+    echo "${yellow}Setted back2top in sidebar:${norm} ${lcyan}`hexo config theme_config.back2top.sidebar`${norm}"
+
     hexo clean && hexo g --silent
     echo "${lred}`mv -v public schemes/pisces`${norm}"
 
@@ -175,6 +181,12 @@ echo "=============================================================="
 
     hexo config theme_config.minify true
     echo "${yellow}Setted minify:${norm} ${lcyan}`hexo config theme_config.minify`${norm}"
+
+    hexo config theme_config.sidebar.position left
+    echo "${yellow}Setted sidebar position:${norm} ${lcyan}`hexo config theme_config.sidebar.position`${norm}"
+
+    hexo config theme_config.back2top.sidebar true
+    echo "${yellow}Setted back2top in sidebar:${norm} ${lcyan}`hexo config theme_config.back2top.sidebar`${norm}"
 
     hexo clean && hexo g --silent
 

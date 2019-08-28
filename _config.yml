@@ -286,7 +286,7 @@ theme_config:
 
   back2top:
     enable: true
-    sidebar: true
+    sidebar: false
     scrollpercent: true
 
 
