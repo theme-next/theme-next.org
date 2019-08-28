@@ -21,7 +21,7 @@ You can set it to a proper CDN URL, which can make static assets (JavaScript Thi
 
 | Name               | Original Link                                                                | NexT Internal Version |
 | ------------------ | ---------------------------------------------------------------------------- | --------------------- |
-| jQuery             | [jquery.com](http://jquery.com)                                              | 3.4.1                 |
+| Anime.js           | [animejs.com](https://animejs.com)                                           | 3.1.0                 |
 | FontAwesome        | [fontawesome.io](http://fontawesome.io)                                      | 4.7.0                 |
 | VelocityJS         | [velocityjs.org](http://velocityjs.org)                                      | 1.2.1                 |
 | VelocityJS UI Pack | [velocityjs.org/#uiPack](http://velocityjs.org/#uiPack)                      | 1.2.1                 |
@@ -35,28 +35,23 @@ If you want to try the other CDNs not included in the optional list, you would b
 «Internal version» is the version that NexT tested and uses. And if you need other versions you need to test them first.
 
 ```yml next/_config.yml
-# Script Vendors.
-# Set a CDN address for the vendor you want to customize.
-# For example
-#    jquery: https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js
-# Be aware that you should use the same version as internal ones to avoid potential problems.
+# Script Vendors. Set a CDN address for the vendor you want to customize.
+# Be aware that you would better use the same version as internal ones to avoid potential problems.
 # Please use the https protocol of CDN files when you enable https on your site.
 vendors:
   # Internal path prefix. Please do not edit it.
   _internal: lib
 
-  # Internal version: 3.4.1
+  # Internal version: 3.1.0
   # Example:
-  # jquery: //cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js
-  # jquery: //cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js
-  jquery: //cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js
+  # anime: //cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js
+  anime:
 
   # Internal version: 4.7.0
-  # See: https://fontawesome.com
   # Example:
   # fontawesome: //cdn.jsdelivr.net/npm/font-awesome@4/css/font-awesome.min.css
   # fontawesome: //cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css
-  fontawesome: //cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css
+  fontawesome:
 
   # MathJax
   # Example:
@@ -77,69 +72,65 @@ vendors:
   copy_tex_js:
   copy_tex_css:
 
-  # Internal version: 2.1.5 & 3.5.7
-  # See: https://fancyapps.com/fancybox
+  # Internal version: 0.2.8
   # Example:
-  # fancybox: //cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js
-  # fancybox: //cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.6/jquery.fancybox.min.js
-  # fancybox_css: //cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css
-  # fancybox_css: //cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.6/jquery.fancybox.min.css
-  fancybox: //cdn.jsdelivr.net/gh/fancyapps/fancybox/dist/jquery.fancybox.min.js
-  fancybox_css: //cdn.jsdelivr.net/gh/fancyapps/fancybox/dist/jquery.fancybox.min.css
+  # pjax: //cdn.jsdelivr.net/gh/theme-next/theme-next-pjax@0/pjax.min.js
+  pjax:
 
-  # Internal version: 1.0.4
-  # See: https://github.com/francoischalifour/medium-zoom
+  # FancyBox
+  # Example:
+  # jquery: //cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js
+  # fancybox: //cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js
+  # fancybox_css: //cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css
+  jquery:
+  fancybox:
+  fancybox_css:
+
+  # Medium-zoom
   # Example:
   # mediumzoom: //cdn.jsdelivr.net/npm/medium-zoom@1/dist/medium-zoom.min.js
-  mediumzoom: //cdn.jsdelivr.net/npm/medium-zoom@1/dist/medium-zoom.min.js
+  mediumzoom:
 
-  # Internal version: 1.10.0
-  # See: https://github.com/ApoorvSaxena/lozad.js
+  # Lazyload
   # Example:
   # lazyload: //cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js
   # lazyload: //cdnjs.cloudflare.com/ajax/libs/lozad.js/1.9.0/lozad.min.js
-  lazyload: //cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js
+  lazyload:
 
-  # Internal version: 1.0.0
-  # See: https://github.com/GoogleChromeLabs/quicklink
+  # Pangu
+  # Example:
+  # pangu: //cdn.jsdelivr.net/npm/pangu@4/dist/browser/pangu.min.js
+  # pangu: //cdnjs.cloudflare.com/ajax/libs/pangu/4.0.7/pangu.min.js
+  pangu:
+
+  # Quicklink
   # Example:
   # quicklink: //cdn.jsdelivr.net/npm/quicklink@1/dist/quicklink.umd.js
   quicklink:
 
-  # Internal version: 4.0.7
-  # See: https://github.com/vinta/pangu.js
-  # Example:
-  # pangu: //cdn.jsdelivr.net/npm/pangu@4/dist/browser/pangu.min.js
-  # pangu: //cdnjs.cloudflare.com/ajax/libs/pangu/4.0.7/pangu.min.js
-  pangu: //cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js
-
   # DisqusJS
-  # See: https://github.com/SukkaW/DisqusJS
   # Example:
   # disqusjs_js: //cdn.jsdelivr.net/npm/disqusjs@1/dist/disqus.js
   # disqusjs_css: //cdn.jsdelivr.net/npm/disqusjs@1/dist/disqusjs.css
-  disqusjs_js: //cdn.jsdelivr.net/npm/disqusjs/dist/disqus.js
-  disqusjs_css: //cdn.jsdelivr.net/npm/disqusjs/dist/disqusjs.css
+  disqusjs_js:
+  disqusjs_css:
 
-  # valine
-  # See: https://github.com/xCss/Valine
+  # Valine
   # Example:
   # valine: //cdn.jsdelivr.net/npm/valine@1/dist/Valine.min.js
   # valine: //cdnjs.cloudflare.com/ajax/libs/valine/1.3.4/Valine.min.js
-  valine: //cdn.jsdelivr.net/npm/valine/dist/Valine.min.js
+  valine:
 
-  # gitalk & js-md5
-  # See: https://github.com/gitalk/gitalk, https://github.com/emn178/js-md5
+  # Gitalk
   # Example:
   # gitalk_js: //cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js
   # gitalk_css: //cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css
-  gitalk_js: //cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js
-  gitalk_css: //cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css
+  gitalk_js:
+  gitalk_css:
 
-  # Internal version: 2.10.4
-  # See: https://www.algolia.com
+  # Algolia Search
   # Example:
-  # algolia_instant_js: //cdn.jsdelivr.net/npm/instantsearch.js@2/dist/instantsearch.js
+  # algolia_instant_js: //cdn.jsdelivr.net/npm/instantsearch.js@2/dist/instantsearch.min.js
   # algolia_instant_css: //cdn.jsdelivr.net/npm/instantsearch.js@2/dist/instantsearch.min.css
   algolia_instant_js:
   algolia_instant_css:
@@ -157,17 +148,15 @@ vendors:
   mermaid:
 
   # Internal version: 1.2.1
-  # See: http://velocityjs.org
   # Example:
   # velocity: //cdn.jsdelivr.net/npm/velocity-animate@1/velocity.min.js
   # velocity: //cdnjs.cloudflare.com/ajax/libs/velocity/1.2.1/velocity.min.js
   # velocity_ui: //cdn.jsdelivr.net/npm/velocity-animate@1/velocity.ui.min.js
   # velocity_ui: //cdnjs.cloudflare.com/ajax/libs/velocity/1.2.1/velocity.ui.min.js
-  velocity: //cdn.jsdelivr.net/npm/velocity-animate/velocity.min.js
-  velocity_ui: //cdn.jsdelivr.net/npm/velocity-animate/velocity.ui.min.js
+  velocity:
+  velocity_ui:
 
   # Internal version: 1.0.2
-  # See: https://github.com/HubSpot/pace
   # Example:
   # pace: //cdn.jsdelivr.net/npm/pace-js@1/pace.min.js
   # pace: //cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js
@@ -177,7 +166,6 @@ vendors:
   pace_css:
 
   # Internal version: 1.0.0
-  # See: https://github.com/theme-next/theme-next-three
   # Example:
   # three: //cdn.jsdelivr.net/gh/theme-next/theme-next-three@1/three.min.js
   # three_waves: //cdn.jsdelivr.net/gh/theme-next/theme-next-three@1/three-waves.min.js
@@ -189,7 +177,6 @@ vendors:
   canvas_sphere:
 
   # Internal version: 1.0.0
-  # See: https://github.com/theme-next/theme-next-canvas-nest
   # Example:
   # canvas_nest: //cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-nest@1/canvas-nest.min.js
   # canvas_nest_nomobile: //cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-nest@1/canvas-nest-nomobile.min.js
@@ -197,7 +184,6 @@ vendors:
   canvas_nest_nomobile:
 
   # Internal version: 1.0.0
-  # See: https://github.com/zproo/canvas-ribbon
   # Example:
   # canvas_ribbon: //cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-ribbon@1/canvas-ribbon.js
   canvas_ribbon:
