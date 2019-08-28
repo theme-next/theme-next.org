@@ -14,7 +14,7 @@ This feature is located under `vendors` section in {% label primary@theme config
 And next part is config of each library; if you leave it blank NexT will use internal version. Each config is in format of `libname: CDN URL`. For example:
 
 ```yml
-jquery: //cdn.jsdelivr.net/jquery/3.4.1/jquery.min.js
+anime: //cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js
 ```
 
 You can set it to a proper CDN URL, which can make static assets (JavaScript Third-party Library) load faster. Now NexT contains following third-party library:
