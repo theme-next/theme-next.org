@@ -147,7 +147,11 @@ comments:
   storage: true
   # Modify icons and texts for any style, here are some examples
   nav:
-    #disqus: disqus
-    #facebook_comments_plugin: <i class="fa fa-facebook-official" aria-hidden="true"></i> facebook
-    #gitalk: Load Gitalk
+    #disqus:
+    #  text: Load Disqus
+    #  order: -1
+    #facebook_comments_plugin:
+    #  text: <i class="fa fa-facebook-official" aria-hidden="true"></i> facebook
+    #gitalk:
+    #  order: -2
 ```
