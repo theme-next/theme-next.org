@@ -61,6 +61,7 @@ You need to **set vendors** in {% label primary@theme config file %}:
 {% code lang:yml next/_config.yml %}
 vendors:
   ...
+  jquery: //cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js
   fancybox: //cdn.jsdelivr.net/npm/fancybox@2/dist/js/jquery.fancybox.pack.js
   fancybox_css: //cdn.jsdelivr.net/npm/fancybox@2/dist/css/jquery.fancybox.min.css
   ...
@@ -89,6 +90,7 @@ You need to **set vendors** in {% label primary@theme config file %}:
 {% code lang:yml next/_config.yml %}
 vendors:
   ...
+  jquery: //cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js
   fancybox: //cdn.jsdelivr.net/npm/fancybox@3/dist/js/jquery.fancybox.pack.js
   fancybox_css: //cdn.jsdelivr.net/npm/fancybox@3/dist/css/jquery.fancybox.min.css
   ...
