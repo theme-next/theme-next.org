@@ -60,10 +60,6 @@ LiveRe is a content platform based on social networking site reviews to help use
 
 Gitalk is a modern comment component based on Github Issue and Preact.
 
-{% note info %}
-Gitalk can only use GitHub accounts for comments.
-{% endnote %}
-
 1. Click here to sign up for a [new OAuth Application](https://github.com/settings/applications/new). Other content can be filled in at will, but be sure to fill in the correct callback URL (usually the domain name corresponding to the comment page). Then you will get a Client ID and a Client secret.
 2. Create a repository you want to store Gitalk comments in your GitHub.
 3. Set the value `enable` to `true`, add Client ID (`client_id`) and Client secret (`client_secret`) in step 1, add your Github username (`github_id` and `admin_user`) and the created repository name (`repo`) in step 2, and edit other configurations in `gitalk` section in the {% label primary@theme config file %} as following:

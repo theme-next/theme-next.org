@@ -75,7 +75,7 @@ baidu_analytics: your_id
     #cnzz_siteid:
     ```
 
-{% note warning %}
+{% note info %}
 The script will show «Webmaster Statistics» and it's ugly, so we used a `display: none;` to hide it.
 {% endnote %}
 

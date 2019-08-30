@@ -113,7 +113,7 @@ There are 2 variants to hook up NexT plugins:
 * CDN links (plugins scripts will loaded from remote hosts).
 
 {% note info %}
-If your site hosted on VPN (or any other) server with NGINX configuration, recommended to use local installation.
+If your site hosted on VPS (or any other) with NGINX configuration, recommended to use local installation.
 And if your files deployed to any free hosting service (Github, Gitlab, etc.), recommended to use CDN links.
 {% endnote %}
 

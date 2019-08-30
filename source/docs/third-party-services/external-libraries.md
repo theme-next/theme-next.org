@@ -307,7 +307,7 @@ pace:
   enable: true
 {% endcode %}
 <!-- endtab -->
-<!-- tab <code>pace_theme</code> -->
+<!-- tab <code>theme</code> -->
 Pace includes a bunch of [themes](http://github.hubspot.com/pace/docs/welcome/) to get you started. Just include the appropriate css file.
 
 * pace-theme-big-counter
@@ -395,13 +395,10 @@ After the plugin installed, you can enable it by setting value `three.enable` an
 # JavaScript 3D library.
 # Dependencies: https://github.com/theme-next/theme-next-three
 three:
-  enable: false
+  enable: true
   delay: false # Set true to further delay loading
-# three_waves
   three_waves: false
-# canvas_lines
   canvas_lines: false
-# canvas_sphere
   canvas_sphere: false
 {% endcode %}
 
@@ -447,10 +444,6 @@ canvas_nest: true
 <!-- endtab -->
 {% endtabs %}
 
-{% note warning %}
-For now, it will be loaded both in webs and mobile devices.
-{% endnote %}
-
 #### Canvas Ribbon
 
 [canvas-ribbon.js](https://github.com/zproo/canvas-ribbon) is a ribbon backgroud of website draw on canvas.
@@ -495,7 +488,3 @@ canvas_ribbon:
 
 <!-- endtab -->
 {% endtabs %}
-
-{% note danger %}
-For now only Pisces Scheme supports canvas ribbon setting under **6.0.x** version or higher.
-{% endnote %}

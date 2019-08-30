@@ -23,9 +23,7 @@ sidebar:
   position: left
   #position: right
 {% endcode %}
-{% note danger %}
-Only Pisces / Gemini Schemes supports `position` setting under **7.2.0** version or lower.
-{% endnote %}
+
 <!-- endtab -->
 
 <!-- tab <code>width</code> -->
