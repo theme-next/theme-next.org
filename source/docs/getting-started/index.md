@@ -178,7 +178,7 @@ scheme: Gemini
 
 Edit {% label info@site config file %}, set the value of `language` to the language you need. For example, English looks like this:
 
-```yml hexo/config.yml
+```yml hexo/_config.yml
 language: en
 ```
 

@@ -111,9 +111,6 @@ From NexT v7.0.2 you can customize them, just set related values in {% label pri
 
 ```yml next/_config.yml
 tagcloud:
-  # If true, font size, font color and amount of tags can be customized
-  enable: true
-
   # All values below are same as default, change them by yourself
   min: 12 # min font size in px
   max: 30 # max font size in px
