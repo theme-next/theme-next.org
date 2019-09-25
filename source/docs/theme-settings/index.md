@@ -176,7 +176,7 @@ Default style is white (`normal`) and there are 8 styles to choose:
 * `night bright`
 * `night eighties`
 * `solarized`
-* `solarized dark
+* `solarized dark`
 * `galactic`
 
 Change the value of `highlight_theme` to choose the highlight style you like, for example:
@@ -184,7 +184,7 @@ Change the value of `highlight_theme` to choose the highlight style you like, fo
 ```yml next/_config.yml
 codeblock:
   # Code Highlight theme
-  # Available values: normal | night | night eighties | night blue | night bright
+  # Available values: normal | night | night eighties | night blue | night bright | solarized | solarized dark | galactic
   # https://github.com/chriskempson/tomorrow-theme
   highlight_theme: night
 ```
