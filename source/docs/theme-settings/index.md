@@ -168,13 +168,16 @@ Scheme Mist does not support custom logo setting.
 Code Highlight Theme
 
 NexT uses [Tomorrow Theme](https://github.com/chriskempson/tomorrow-theme) to support code highlight.
-Default style is white (`normal`) and there are 5 styles to choose:
+Default style is white (`normal`) and there are 8 styles to choose:
 
 * `normal`
 * `night`
 * `night blue`
 * `night bright`
 * `night eighties`
+* `solarized`
+* `solarized dark
+* `galactic`
 
 Change the value of `highlight_theme` to choose the highlight style you like, for example:
 
