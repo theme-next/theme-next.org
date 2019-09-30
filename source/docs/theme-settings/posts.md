@@ -174,7 +174,7 @@ After the plugin enabled, you may adjust options in `symbols_count_time` section
 {% subtabs wordcount2 %}
 <!-- tab <code>separated_meta</code> -->
 By default NexT shows the words counts and estimated reading time in a separated line. You can add them into one line by setting value `symbols_count_time.separated_meta` to `false` in {% label primary@theme config file %}.
-{% code lang:yml hexo/_config.yml %}
+{% code lang:yml next/_config.yml %}
 symbols_count_time:
   separated_meta: true
 {% endcode %}
@@ -182,7 +182,7 @@ symbols_count_time:
 
 <!-- tab <code>item_text_post</code> -->
 By default NexT shows the text description of the words counts and estimated reading time in post meta section. You can disable it by setting value `symbols_count_time.item_text_post` to `false` in {% label primary@theme config file %}.
-{% code lang:yml hexo/_config.yml %}
+{% code lang:yml next/_config.yml %}
 symbols_count_time:
   item_text_post: true
 {% endcode %}
@@ -190,7 +190,7 @@ symbols_count_time:
 
 <!-- tab <code>item_text_total</code> -->
 By default NexT doesn't shows the text description of the words counts and estimated reading time in footer section. You can enable it by setting value `symbols_count_time.item_text_total` to `false` in {% label primary@theme config file %}.
-{% code lang:yml hexo/_config.yml %}
+{% code lang:yml next/_config.yml %}
 symbols_count_time:
   item_text_total: true
 {% endcode %}
@@ -198,7 +198,7 @@ symbols_count_time:
 
 <!-- tab <code>awl</code> -->
 `awl` means the average Word Length (chars count in word). You can check this [here](https://charactercounttool.com/).
-{% code lang:yml hexo/_config.yml %}
+{% code lang:yml next/_config.yml %}
 symbols_count_time:
   awl: 4
 {% endcode %}
@@ -206,7 +206,7 @@ symbols_count_time:
 
 <!-- tab <code>wpm</code> -->
 `wpm` means the average words per minute. You can check this [here](https://wordcounter.net/).
-{% code lang:yml hexo/_config.yml %}
+{% code lang:yml next/_config.yml %}
 symbols_count_time:
   wpm: 275
 {% endcode %}
@@ -256,7 +256,7 @@ More and more platform (WeChat public accounts, Weibo, Jianshu, Baidu Reward) su
      enable: true
      animation: false
      #comment: Donate comment here
-   
+
    reward:
      wechatpay: /images/wechatpay.png
      alipay: /images/alipay.png
@@ -277,7 +277,7 @@ NexT supports the related posts functionality according to [hexo-related-popular
 <!-- tab <code>enable</code> -->
 You can enable it by setting value `related_posts.enable` to `true` in {% label primary@theme config file %}.
 
-{% code lang:yml hexo/_config.yml %}
+{% code lang:yml next/_config.yml %}
 related_posts:
   enable: true
 {% endcode %}
@@ -286,7 +286,7 @@ related_posts:
 <!-- tab <code>title</code> -->
 By default NexT uses 'Related Posts' as title by default. You can configure it by editing value in `related_posts.title` section in {% label primary@theme config file %}.
 
-{% code lang:yml hexo/_config.yml %}
+{% code lang:yml next/_config.yml %}
 related_posts:
   title:
 {% endcode %}
@@ -295,7 +295,7 @@ related_posts:
 <!-- tab <code>display_in_home</code> -->
 By default NexT doesn't show the related posts in homepage. You can enable it by setting value `related_posts.display_in_home` to `true` in {% label primary@theme config file %}.
 
-{% code lang:yml hexo/_config.yml %}
+{% code lang:yml next/_config.yml %}
 related_posts:
   display_in_home: true
 {% endcode %}
@@ -308,7 +308,7 @@ By default NexT shows up to 5 related posts and their titles without any date, i
 <!-- tab <code>maxCount</code> -->
 Maximum count of a list, change it by yourself.
 
-{% code lang:yml hexo/_config.yml %}
+{% code lang:yml next/_config.yml %}
 related_posts:
   params:
     maxCount: 5
@@ -318,7 +318,7 @@ related_posts:
 <!-- tab <code>PPMixingRate</code> -->
 Mixing ratio of popular posts and related posts.
 
-{% code lang:yml hexo/_config.yml %}
+{% code lang:yml next/_config.yml %}
 related_posts:
   params:
     #PPMixingRate: 0.0
@@ -328,7 +328,7 @@ related_posts:
 <!-- tab <code>isDate</code> -->
 Uncomment and set true to display dates of related post.
 
-{% code lang:yml hexo/_config.yml %}
+{% code lang:yml next/_config.yml %}
 related_posts:
   params:
     isDate: true
@@ -338,7 +338,7 @@ related_posts:
 <!-- tab <code>isImage</code> -->
 Uncomment and set true to display images of related posts.
 
-{% code lang:yml hexo/_config.yml %}
+{% code lang:yml next/_config.yml %}
 related_posts:
   params:
     isImage: true
@@ -348,7 +348,7 @@ related_posts:
 <!-- tab <code>isExcerpt</code> -->
 Uncomment and set true to display excerpts of related posts.
 
-{% code lang:yml hexo/_config.yml %}
+{% code lang:yml next/_config.yml %}
 related_posts:
   params:
     isExcerpt: true
@@ -367,7 +367,7 @@ NexT supports the edit functionality of your posts. By enabling this feature, us
 <!-- tab <code>enable</code> -->
 You can enable it by setting value `post_edit.enable` to `true` in {% label primary@theme config file %}.
 
-{% code lang:yml hexo/_config.yml %}
+{% code lang:yml next/_config.yml %}
 post_edit:
   enable: true
 {% endcode %}
@@ -383,7 +383,7 @@ You should create a source repository of your post files. The `url` setting depe
     * Link for view source: `url: https://github.com/.../_posts/tree/master/`
     * Link for fork & edit: `url: https://github.com/.../_posts/edit/master/`
 
-{% code lang:yml hexo/_config.yml %}
+{% code lang:yml next/_config.yml %}
 post_edit:
   url:
 {% endcode %}

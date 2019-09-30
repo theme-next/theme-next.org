@@ -181,13 +181,13 @@ Default style is white (`normal`) and there are 8 styles to choose:
 
 Change the value of `highlight_theme` to choose the highlight style you like, for example:
 
-```yml next/_config.yml
+{% code lang:yml next/_config.yml %}
 codeblock:
   # Code Highlight theme
   # Available values: normal | night | night eighties | night blue | night bright | solarized | solarized dark | galactic
   # https://github.com/chriskempson/tomorrow-theme
   highlight_theme: night
-```
+{% endcode %}
 <!-- endtab -->
 
 <!-- tab <code>copy_button</code> -->
@@ -197,7 +197,7 @@ NexT supports the copy-and-paste functionality of codeblock.
 <!-- tab <code>enable</code> -->
 You can enable it by setting value `copy_button.enable` to `true` in {% label primary@theme config file %}.
 
-{% code lang:yml hexo/_config.yml %}
+{% code lang:yml next/_config.yml %}
 codeblock:
   copy_button:
     enable: true
@@ -206,7 +206,7 @@ codeblock:
 <!-- tab <code>show_result</code> -->
 By default NexT doesn't show copy results of the copy-and-paste functionality. You can also enable it by setting value `copy_button.show_result` to `true` in {% label primary@theme config file %}.
 
-{% code lang:yml hexo/_config.yml %}
+{% code lang:yml next/_config.yml %}
 codeblock:
   copy_button:
     show_result: true
@@ -216,7 +216,7 @@ codeblock:
 With `style` option, you can change your copy button style.
 There are three style available currently: `default`(Just leave it empty), `flat` and `mac`.
 
-{% code lang:yml hexo/_config.yml %}
+{% code lang:yml next/_config.yml %}
 codeblock:
   copy_button:
     style: flat
@@ -234,7 +234,7 @@ NexT supports the page scroll reading progress indicator.
 
 You can enable it by setting value `reading_progress.enable` to `true` in {% label primary@theme config file %}.
 
-{% code lang:yml hexo/_config.yml %}
+{% code lang:yml next/_config.yml %}
 reading_progress:
   enable: true
   color: "#37c6c0"
@@ -247,7 +247,7 @@ Bookmark is a plugin that allow the users save their reading progress. Users cou
 
 You can enable it by setting value `bookmark.enable` to `true` in {% label primary@theme config file %}.
 
-{% code lang:yml hexo/_config.yml %}
+{% code lang:yml next/_config.yml %}
 bookmark:
   enable: false
   # Customize the color of the bookmark.

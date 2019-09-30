@@ -34,7 +34,7 @@ vendors:
 
 After the plugin installed, you can enable it by setting value `pjax` to `true` in {% label primary@theme config file %}.
 
-{% code lang:yml hexo/_config.yml %}
+{% code lang:yml next/_config.yml %}
 # Easily enable fast Ajax navigation on your website.
 # Dependencies: https://github.com/theme-next/theme-next-pjax
 # For moreinformation: https://github.com/MoOx/pjax
@@ -72,7 +72,7 @@ vendors:
 <!-- tab NexT Config -->
 After the plugin installed, you can enable it by setting value `fancybox` to `true` in {% label primary@theme config file %}.
 
-{% code lang:yml hexo/_config.yml %}
+{% code lang:yml next/_config.yml %}
 fancybox: true
 {% endcode %}
 <!-- endtab -->
@@ -101,7 +101,7 @@ vendors:
 <!-- tab NexT Config -->
 After the plugin installed, you can enable it by setting value `fancybox` to `true` in {% label primary@theme config file %}.
 
-{% code lang:yml hexo/_config.yml %}
+{% code lang:yml next/_config.yml %}
 fancybox: true
 {% endcode %}
 <!-- endtab -->
@@ -133,7 +133,7 @@ vendors:
 
 After the plugin installed, you can enable it by setting value `mediumzoom` to `true` in {% label primary@theme config file %}.
 
-{% code lang:yml hexo/_config.yml %}
+{% code lang:yml next/_config.yml %}
 # A JavaScript library for zooming images like Medium.
 mediumzoom: true
 {% endcode %}
@@ -167,7 +167,7 @@ vendors:
 
 After the plugin installed, you can enable it by setting value `lazyload` to `true` in {% label primary@theme config file %}.
 
-{% code lang:yml hexo/_config.yml %}
+{% code lang:yml next/_config.yml %}
 # Vanilla JavaScript plugin for lazyloading images.
 lazyload: true
 {% endcode %}
@@ -197,7 +197,7 @@ vendors:
 <!-- tab NexT Config -->
 After the plugin installed, you can enable it by setting value `pangu` to `true` in {% label primary@theme config file %}.
 
-{% code lang:yml hexo/_config.yml %}
+{% code lang:yml next/_config.yml %}
 # Pangu Support
 pangu: true
 {% endcode %}
@@ -226,7 +226,7 @@ vendors:
 
 After the plugin installed, you can enable it by setting value `quicklink.enable` to `true` in {% label primary@theme config file %}.
 
-{% code lang:yml hexo/_config.yml %}
+{% code lang:yml next/_config.yml %}
 ...
 quicklink:
   enable: true
@@ -302,7 +302,7 @@ vendors:
 <!-- tab <code>pace</code> -->
 After the plugin installed, you can enable it by setting value `pace.enable` to `true` in {% label primary@theme config file %}.
 
-{% code lang:yml hexo/_config.yml %}
+{% code lang:yml next/_config.yml %}
 pace:
   enable: true
 {% endcode %}
@@ -328,7 +328,7 @@ Pace includes a bunch of [themes](http://github.hubspot.com/pace/docs/welcome/) 
 
 By default NexT uses `minimal` theme (pace-theme-minimal). You can configure it by editing values in `pace.theme` section in {% label primary@theme config file %}.
 
-{% code lang:yml hexo/_config.yml %}
+{% code lang:yml next/_config.yml %}
 pace:
   theme: minimal
 {% endcode %}
@@ -391,7 +391,7 @@ vendors:
 
 After the plugin installed, you can enable it by setting value `three.enable` and `three.three_waves` or `three.canvas_lines` or `three.canvas_sphere` to `true` in {% label primary@theme config file %}.
 
-{% code lang:yml hexo/_config.yml %}
+{% code lang:yml next/_config.yml %}
 # JavaScript 3D library.
 # Dependencies: https://github.com/theme-next/theme-next-three
 three:
@@ -435,7 +435,7 @@ vendors:
 
 After the plugin installed, you can enable it by setting value `canvas_nest` to `true` in {% label primary@theme config file %}.
 
-{% code lang:yml hexo/_config.yml %}
+{% code lang:yml next/_config.yml %}
 # Canvas-nest
 # Dependencies: https://github.com/theme-next/theme-next-canvas-nest
 canvas_nest: true
@@ -478,7 +478,7 @@ After the plugin installed, you can enable it by setting value `canvas_ribbon` t
 * alpha: The transparency of the ribbon.
 * zIndex: The display level of the ribbon.
 
-{% code lang:yml hexo/_config.yml %}
+{% code lang:yml next/_config.yml %}
 canvas_ribbon:
   enable: true
   size: 300
