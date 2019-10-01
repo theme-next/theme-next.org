@@ -396,7 +396,6 @@ After the plugin installed, you can enable it by setting value `three.enable` an
 # Dependencies: https://github.com/theme-next/theme-next-three
 three:
   enable: true
-  delay: false # Set true to further delay loading
   three_waves: false
   canvas_lines: false
   canvas_sphere: false
