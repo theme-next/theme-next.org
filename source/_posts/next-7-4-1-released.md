@@ -5,7 +5,7 @@ date: 2019-10-01 05:18:04
 
 ## ⭐ Features
 
-- New highlight themes #(1177)
+- New highlight themes ([#1177](https://github.com/theme-next/hexo-theme-next/pull/1177))
 
 ## 🛠 Improvements
 
