@@ -108,39 +108,33 @@ firestore:
 
 <!-- tab Global Settings → -->
 Edit `busuanzi_count` option in {% label primary@theme config file %}.
-When `enable: true`, global setting is enabled. If `site_uv`, `site_pv`, `page_pv` are all `false`, Busuanzi only counts but never shows.
+When `enable: true`, global setting is enabled. If `total_visitors`, `total_views`, `post_views` are all `false`, Busuanzi only counts but never shows.
 <!-- endtab -->
 
 <!-- tab Site UV Settings → -->
-When `site_uv: true`, it will show site UV in footer.
-`site_uv_header` and `site_uv_footer` is custom style words, and you can hide it by leaving it blank. You can also use font-awesome, it looks like `[site_uv_header]UV count[site_uv_footer]`.
+When `total_visitors: true`, it will show site UV in footer. You can also use font-awesome by setting `total_visitors_icon` to the name of the icon.
 {% codeblock lang:yml next/_config.yml %}
-# View: Site visited by 12345 people.
-site_uv: true
-site_uv_header: Site visited by
-site_uv_footer: people.
+busuanzi_count:
+  total_visitors: true
+  total_visitors_icon: user
 {% endcodeblock %}
 <!-- endtab -->
 
 <!-- tab Site PV Settings → -->
-When `site_pv: true`, it will show site PV in footer.
-`site_pv_header` and `site_pv_footer` is custom style words, and you can hide it by leaving it blank, you can also use font-awesome, it looks like `[site_pv_header]PV count[site_pv_footer]`.
+When `total_views: true`, it will show site UV in footer. You can also use font-awesome by setting `total_views_icon` to the name of the icon.
 {% codeblock lang:yml next/_config.yml %}
-# View: Site visited by 12345 times.
-site_pv: true
-site_pv_header: Site visited by
-site_pv_footer: times.
+busuanzi_count:
+  total_views: true
+  total_views_icon: user
 {% endcodeblock %}
 <!-- endtab -->
 
 <!-- tab Per-page PV Settings -->
-When `page_pv: true`, it will show page PV under post title.
-`page_pv_header` and `page_pv_footer` is custom style words, and you can hide it by leaving it blank, you can also use font-awesome, it looks like `[page_pv_header]PV count[page_pv_footer]`.
+When `post_views: true`, it will show page PV in post meta. You can also use font-awesome by setting `post_views_icon` to the name of the icon.
 {% codeblock lang:yml next/_config.yml %}
-# View: Post read by 12345 times.
-page_pv: true
-page_pv_header: Post read by
-page_pv_footer: times.
+busuanzi_count:
+  post_views: true
+  post_views_icon: user
 {% endcodeblock %}
 <!-- endtab -->
 {% endtabs %}
