@@ -1,3 +1,8 @@
+---
+title: NexT 7.4.1 Released
+date: 2019-10-01 05:18:04
+---
+
 ## ⭐ Features
 
 - New highlight themes #(1177)
