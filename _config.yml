@@ -122,25 +122,6 @@ theme_config:
 
 
   # ============================================================= #
-  # ======================= SEO Settings ======================== #
-  # ============================================================= #
-
-  seo: true
-  index_with_subtitle: true
-  exturl: true
-
-
-  # ============================================================= #
-  # ====================== Scheme Settings ====================== #
-  # ============================================================= #
-
-  #scheme: Muse
-  #scheme: Mist
-  #scheme: Pisces
-  scheme: Gemini
-
-
-  # ============================================================= #
   # ================= Site Information Settings ================= #
   # ============================================================= #
 
@@ -164,10 +145,15 @@ theme_config:
     sidebar: true
     post: false
 
-  github_banner:
-    enable: true
-    permalink: https://github.com/theme-next/hexo-theme-next
-    title: Fork NexT on GitHub
+
+  # ============================================================= #
+  # ====================== Scheme Settings ====================== #
+  # ============================================================= #
+
+  #scheme: Muse
+  #scheme: Mist
+  #scheme: Pisces
+  scheme: Gemini
 
 
   # ============================================================= #
@@ -233,6 +219,12 @@ theme_config:
   # ===================== Sidebar Settings ====================== #
   # ============================================================= #
 
+  sidebar:
+    position: left
+    display: post
+    offset: 12
+    onmobile: true
+
   avatar:
     url: /images/apple-touch-icon-next.png
     rounded: true
@@ -257,9 +249,6 @@ theme_config:
     enable: true
     number: true
     wrap: true
-
-  sidebar:
-    onmobile: true
 
 
   # ============================================================= #
@@ -289,10 +278,38 @@ theme_config:
     sidebar: false
     scrollpercent: true
 
+  github_banner:
+    enable: true
+    permalink: https://github.com/theme-next/hexo-theme-next
+    title: Fork NexT on GitHub
+
+
+  # ============================================================= #
+  # ======================= SEO Settings ======================== #
+  # ============================================================= #
+
+  seo: true
+
+  index_with_subtitle: true
+
+  exturl: true
+
+  yandex_site_verification: 3ac9ae36ddebb425
+
 
   # ============================================================= #
   # =============== Third Party Services Settings =============== #
   # ============================================================= #
+
+  math:
+    enable: true
+    per_page: true
+    mathjax:
+      enable: true
+
+  mediumzoom: true
+
+  lazyload: true
 
 
   # ============================================================= #
@@ -310,8 +327,6 @@ theme_config:
   # ================= Statistics and Analytics ================== #
   # ============================================================= #
 
-  yandex_site_verification: 3ac9ae36ddebb425
-
 
   # ============================================================= #
   # ====================== Search Services ====================== #
@@ -322,29 +337,6 @@ theme_config:
     trigger: auto
     top_n_per_article: 1
     preload: true
-
-
-  # ============================================================= #
-  # ==================== External Libraries ===================== #
-  # ============================================================= #
-
-  motion:
-    enable: false
-
-  lazyload: true
-
-  mediumzoom: true
-
-
-  # ============================================================= #
-  # ======================= Math Formulas ======================= #
-  # ============================================================= #
-
-  math:
-    enable: true
-    per_page: true
-    mathjax:
-      enable: true
 
 
   # ============================================================= #
@@ -363,3 +355,11 @@ theme_config:
       tabs: true
       labels: true
     border_radius: 0
+
+
+  # ============================================================= #
+  # ==================== External Libraries ===================== #
+  # ============================================================= #
+
+  motion:
+    enable: false
