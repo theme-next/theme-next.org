@@ -89,11 +89,11 @@ echo
 echo "=============================================================="
 echo " ${lgreen}Replacing default renderer & Installing needed plugins...${norm}"
 echo "=============================================================="
-    npm un hexo-renderer-marked --save --silent
-    npm i hexo-renderer-kramed --save --silent
-    npm i hexo-symbols-count-time --save --silent
-    npm i hexo-generator-searchdb --save --silent
-    npm i hexo-generator-feed --save --silent
+    npm un hexo-renderer-marked --silent
+    npm i hexo-renderer-kramed --silent
+    npm i hexo-symbols-count-time --silent
+    npm i hexo-generator-searchdb --silent
+    npm i hexo-generator-feed --silent
 
 echo
 echo "=============================================================="

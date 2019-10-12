@@ -158,7 +158,7 @@ GitLab offers a continuous integration service and pages service. If you add a `
       - npm install hexo-cli -g
       - npm install
       # NEXT NPM installation start
-      - npm install hexo-symbols-count-time --save
+      - npm install hexo-symbols-count-time
       # NEXT NPM installation end
       # NEXT External Libraries installation start
       - git clone https://github.com/theme-next/theme-next-pace themes/next/source/lib/pace
@@ -262,7 +262,7 @@ Deploy key is a SSH key set in your repo to grant client read-only (as well as r
       - npm install -g hexo-cli
       - npm install
       # NEXT NPM installation start
-      - npm install hexo-symbols-count-time --save
+      - npm install hexo-symbols-count-time
       # NEXT NPM installation end
       # NEXT External Libraries installation start
       - git clone https://github.com/theme-next/theme-next-pace themes/next/source/lib/pace

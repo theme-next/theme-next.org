@@ -112,8 +112,8 @@ If you use MathJax to render Math Equations, you can choose one of renderers bel
 1. Need to uninstall the original renderer `hexo-renderer-marked` and install one of selected by you renderer:
 
    {% code lang:bash %}
-   $ npm un hexo-renderer-marked --save
-   $ npm i hexo-renderer-kramed --save # or hexo-renderer-pandoc
+   $ npm un hexo-renderer-marked
+   $ npm i hexo-renderer-kramed # or hexo-renderer-pandoc
    {% endcode %}
 
 2. In {% label primary@theme config file %}, turn on `enable` option of `math` and choose `mathjax` as render engine.
@@ -156,7 +156,7 @@ If you use KaTeX to render Math Equations, you can choose one of renderers below
 <!-- tab {% label warning@Chosen hexo-renderer-markdown-it? %} -->
 If you use `hexo-renderer-markdown-it`, you also need to add `markdown-it-katex` as its plugin:
 
-    $ npm i markdown-it-katex --save
+    $ npm i markdown-it-katex
 
 And then in {% label info@site config file %} you need to add `markdown-it-katex` as a plugin for `hexo-renderer-markdown-it`:
 
@@ -183,8 +183,8 @@ markdown:
 1. Need to uninstall the original renderer `hexo-renderer-marked` and install one of selected by you renderer:
 
    {% code lang:bash %}
-   $ npm un hexo-renderer-marked --save
-   $ npm i hexo-renderer-markdown-it-plus --save # or hexo-renderer-markdown-it
+   $ npm un hexo-renderer-marked
+   $ npm i hexo-renderer-markdown-it-plus # or hexo-renderer-markdown-it
    {% endcode %}
 
 2. In {% label primary@theme config file %}, turn on `enable` option of `math` and choose `katex` as render engine.

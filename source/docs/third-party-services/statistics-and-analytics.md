@@ -151,7 +151,7 @@ Adding article reading times counting to NexT theme. Documentation how to set th
 <!-- tab Installation → -->
 Install `hexo-leancloud-counter-security` by run following command in {% label info@site root dir %}:
 
-    $ npm install hexo-leancloud-counter-security --save
+    $ npm install hexo-leancloud-counter-security
 
 <!-- endtab -->
 

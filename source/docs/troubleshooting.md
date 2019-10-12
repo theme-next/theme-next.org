@@ -120,6 +120,6 @@ See: https://github.com/theme-next/hexo-theme-next/issues/882
 
 If you are using `hexo-renderer-markdown-it`, it's recommended to install `markdown-it-named-headings` to make the TOC work correctly.
 ```bash
-npm install markdown-it-named-headings --save
+npm install markdown-it-named-headings
 ```
 See: https://github.com/theme-next/hexo-theme-next/issues/1168

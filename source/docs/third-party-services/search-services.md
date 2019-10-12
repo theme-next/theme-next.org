@@ -39,7 +39,7 @@ algolia:
 
    {% code lang:bash %}
    $ cd hexo
-   $ npm install --save hexo-algolia
+   $ npm install hexo-algolia
    {% endcode %}
 
 2. Run the following command to upload index data, keep a weather eye out the output of the command.
@@ -98,7 +98,7 @@ Local search no need any external 3rd-party services and can be extra indexed by
 <!-- tab Installation → -->
 Install `hexo-generator-searchdb` by run following command in {% label info@site root dir %}:
 
-    $ npm install hexo-generator-searchdb --save
+    $ npm install hexo-generator-searchdb
 
 <!-- endtab -->
 

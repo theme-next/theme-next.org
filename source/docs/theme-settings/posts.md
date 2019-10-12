@@ -124,7 +124,7 @@ post_meta:
 <!-- tab Installation → -->
 Install `hexo-symbols-count-time` by run following command in {% label info@site root dir %}:
 
-    $ npm install hexo-symbols-count-time --save
+    $ npm install hexo-symbols-count-time
 
 <!-- endtab -->
 
