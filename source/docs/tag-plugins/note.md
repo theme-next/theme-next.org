@@ -33,13 +33,9 @@ Any content (support inline tags too.io).
 All parameters are optional.
 ```
 
-### Known Issues
-
-{% tabs known-issues %}
-<!-- tab Error at single line @check -->
 {% note danger %}
+**Known Issues**
 It's wrong to write this tag with 1 line if you don't want to see possible bugs.
-{% endnote %}
 
 For example, here is wrong syntax to write content like that:
 
@@ -62,12 +58,7 @@ note text, note text, note text
 note text, note text, note text
 {% endnote %}
 </code></pre>
-<!-- endtab -->
-
-<!-- tab Code Block «undefined» @bug -->
-See [Backtick Code Block in Tags](/docs/troubleshooting/#Backtick-Code-Block-in-Tags) section.
-<!-- endtab -->
-{% endtabs %}
+{% endnote %}
 
 ### Examples
 

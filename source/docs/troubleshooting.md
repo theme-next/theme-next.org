@@ -113,11 +113,13 @@ Put your `favicon` under {% label info@site's %} `source` dir. If you find that 
 If your site is in a subdirectory please set it to `favicon: favicon.ico`.
 {% endnote %}
 
-### Cannot Find Module XXX
+### TOC Issues
 
-NexT's tag plugin uses some submodules of Hexo, like `hexo-util`. NPM uses new module install mode in version 3, NexT will use this mode which means if you are using a old NPM will find this error. So if you find error like "Cannot find module XXX", please use `npm -v` to check your NPM version.
+Do not hava a skip-level directory in the post. For example, a third level directory `###` followed by a `#####` is not recommended.
+See: https://github.com/theme-next/hexo-theme-next/issues/882
 
-* Version > 3: Still not work? Please remove `node_modules` directory and reinstall using `npm install`.
-* Version < 3:
-  * You can update your NPM
-  * Or can install modules (and their dependences) manually: `npm install --save hexo-util`; where `hexo-util` is a example, please replace it with module name in the error.
+If you are using `hexo-renderer-markdown-it`, it's recommended to install `markdown-it-named-headings` to make the TOC work correctly.
+```bash
+npm install markdown-it-named-headings --save
+```
+See: https://github.com/theme-next/hexo-theme-next/issues/1168

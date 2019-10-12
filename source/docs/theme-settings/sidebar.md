@@ -91,19 +91,6 @@ For now only Muse / Mist Schemes supports `onmobile` setting under **6.0.x** ver
 {% endnote %}
 <!-- endtab -->
 
-<!-- tab <code>dimmer</code> -->
-Set the value `sidebar.dimmer` to `true` to enable the feature: click any blank part of the page to close sidebar.
-
-{% code lang:yml next/_config.yml %}
-sidebar:
-  dimmer: true
-{% endcode %}
-
-{% note danger %}
-For now only Muse / Mist Schemes supports `dimmer` setting under **7.0.x** version or higher.
-{% endnote %}
-<!-- endtab -->
-
 {% endtabs %}
 
 #### Sidebar Site State
