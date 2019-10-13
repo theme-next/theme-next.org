@@ -62,7 +62,7 @@ And here Hexo can read these parameters as `theme_config.scheme: Gemini` in same
 
 ### Backtick Code Block in Tags
 
-When backtick code block(s) exists inside other tags (like `blockquote`, `note`, `tabs`), that code block will be generated as «undefined» string in HTML. There are several ways to resolve this:
+For Hexo before version 4.0, when backtick code block(s) exists inside other tags (like `blockquote`, `note`, `tabs`), that code block will be generated as «undefined» string in HTML. There are several ways to resolve this:
 
 {% tabs backtick-code-block %}
 <!-- tab {% label success@Tagged Code Block %} -->
@@ -76,8 +76,8 @@ In this case you can't add code syntax highlighting.
 <!-- endtab -->
 
 <!-- tab Bugfix for Backtick -->
-Here is [pull with bugfix for use backtick code block inside tags](https://github.com/hexojs/hexo/pull/2321) (from Dec 2016 still not merged).
-So, for this moment you can merge it manually, if you need to use backtick code block inside tags.
+Here is the [PR with bugfix for use backtick code block inside tags](https://github.com/hexojs/hexo/pull/2321) (Submitted in 2016, merged three years later).
+So, upgrade to Hexo 4.0 or higher, if you need to use backtick code block inside tags.
 
 {% note danger %}
 Sometimes during generate you can see «{% label danger@Error: Unmatched placeholder remains! %}» message.
