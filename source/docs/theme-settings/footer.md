@@ -22,11 +22,11 @@ By default NexT shows black `user` icon {% btn #,, user %} without animation bet
 <!-- tab <code>name</code> -->
 The name of footer icon can be founded in [Font Awesome](https://fontawesome.com) site. `heart` is recommended.
 
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 footer:
   icon:
     name: user
-{% endcode %}
+```
 
 <!-- endtab -->
 
@@ -36,21 +36,21 @@ Set up animated of footer icon by changing the value of `icon.animated`:
 * `true` → Icon will be animated.
 * **`false`** → Icon will not be animated.
 
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 footer:
   icon:
     animated: false
-{% endcode %}
+```
 <!-- endtab -->
 
 <!-- tab <code>color</code> -->
 Set up color of footer icon by changing the value of `icon.color`. Please use Hex Code, and red (#ff0000) is recommended for `heart` icon.
 
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 footer:
   icon:
     color: "#808080"
-{% endcode %}
+```
 
 <!-- endtab -->
 {% endtabs %}
@@ -76,22 +76,22 @@ By default NexT shows Hexo and Theme & scheme information like `Powered by Hexo 
 * **`true`** → Displaying `Powered by Hexo` Information.
 * `false` → Not Displaying `Powered by Hexo` Information.
 
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 footer:
   powered:
     enable: true
-{% endcode %}
+```
 <!-- endtab -->
 
 <!-- tab <code>version</code> -->
 * **`true`** → Displaying Hexo Version Information.
 * `false` → Not Displaying Hexo Version Information.
 
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 footer:
   powered:
     version: true
-{% endcode %}
+```
 <!-- endtab -->
 {% endsubtabs %}
 <!-- endtab -->
@@ -103,22 +103,22 @@ footer:
 * **`true`** → Displaying Theme & Scheme Information.
 * `false` → Not Displaying Theme & Scheme Information.
 
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 footer:
   theme:
     enable: true
-{% endcode %}
+```
 <!-- endtab -->
 
 <!-- tab <code>version</code> -->
 * **`true`** → Displaying Theme NexT Version Information.
 * `false` → Not Displaying Theme NexT Version Information.
 
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 footer:
   theme:
     version: true
-{% endcode %}
+```
 <!-- endtab -->
 {% endsubtabs %}
 <!-- endtab -->

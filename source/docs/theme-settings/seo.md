@@ -11,33 +11,33 @@ Next provides useful options for better Search Engine Optimization (SEO).
 <!-- tab <code>disable_baidu_transformation</code> -->
 By default China's search engine Baidu will cache and rewrite your site to provide a webpage snapshot for mobile users. You can disable this by setting the value `disable_baidu_transformation` to `true` in {% label primary@theme config file %}.
 
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 disable_baidu_transformation: true
-{% endcode %}
+```
 <!-- endtab -->
 
 <!-- tab <code>canonical</code> -->
 By default a canonical link tag is created in Hexo by setting the value `canonical` to `true` in {% label primary@theme config file %} after you have set up your URL `url: http://yoursite.com` in {% label info@site config file %}. More detailed information can be found in [Consolidate duplicate URLs](https://support.google.com/webmasters/answer/139066).
 
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 canonical: true
-{% endcode %}
+```
 <!-- endtab -->
 
 <!-- tab <code>seo</code> -->
 Set the value `enable` to `true` in `seo` section to change headers hierarchy on `subtitle` in {% label info@site config file %} and on all post/pages titles for better SEO in {% label primary@theme config file %} as following:
 
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 seo: true
-{% endcode %}
+```
 <!-- endtab -->
 
 <!-- tab <code>index_with_subtitle</code> -->
 Set the value `enable` to `true` in `index_with_subtitle` section to add `subtitle` information in {% label info@site config file %} to index page.
 
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 index_with_subtitle: true
-{% endcode %}
+```
 <!-- endtab -->
 
 {% endtabs %}
@@ -76,17 +76,17 @@ Set the verification string of [Google Webmaster Tools](https://www.google.com/w
 {% tabs google-webmaster-tools %}
 <!-- tab Get Verification Code → -->
 Login to Google Webmaster Tools and go to verification methods and choose `HTML Tag`, you will get some code:
-{% code lang:html %}
+```html
 <meta name="google-site-verification" content="XXXXXXXXXXXXXXXXXXXXXXX" />
-{% endcode %}
+```
 <!-- endtab -->
 
 <!-- tab NexT Config -->
 Copy `XXXXXXXXXXXXXXXXXXXXXXX` value of `content` key.
 Edit {% label primary@theme config file %} and add or change `google_site_verification` section:
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 google_site_verification: XXXXXXXXXXXXXXXXXXXXXXX
-{% endcode %}
+```
 <!-- endtab -->
 {% endtabs %}
 
@@ -97,17 +97,17 @@ Set the verification string of [Bing Webmaster Tools](https://www.bing.com/webma
 {% tabs bing-webmaster-tools %}
 <!-- tab Get Verification Code → -->
 Login to Bing Webmaster Tools and go to verification methods and choose `HTML Tag`, you will get some code:
-{% code lang:html %}
+```html
 <meta name="msvalidate.01" content="XXXXXXXXXXXXXXXXXXXXXXX" />
-{% endcode %}
+```
 <!-- endtab -->
 
 <!-- tab NexT Config -->
 Copy `XXXXXXXXXXXXXXXXXXXXXXX` value of `content` key.
 Edit {% label primary@theme config file %} and add or change `bing_site_verification` section:
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 bing_site_verification: XXXXXXXXXXXXXXXXXXXXXXX
-{% endcode %}
+```
 <!-- endtab -->
 {% endtabs %}
 
@@ -118,17 +118,17 @@ Set the verification string of [Yandex Webmaster Tools](https://webmaster.yandex
 {% tabs yandex-webmaster-tools %}
 <!-- tab Get Verification Code → -->
 Login to Yandex Webmaster Tools and go to verification methods and choose `Meta Tag`, you will get some code:
-{% code lang:html %}
+```html
 <meta name="yandex-verification" content="XXXXXXXXXXXXXXXXXXXXXXX" />
-{% endcode %}
+```
 <!-- endtab -->
 
 <!-- tab NexT Config -->
 Copy `XXXXXXXXXXXXXXXXXXXXXXX` value of `content` key.
 Edit {% label primary@theme config file %} and add or change `yandex_site_verification` section:
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 yandex_site_verification: XXXXXXXXXXXXXXXXXXXXXXX
-{% endcode %}
+```
 <!-- endtab -->
 {% endtabs %}
 
@@ -139,17 +139,17 @@ Set the verification string of [Baidu Webmaster Tools](https://ziyuan.baidu.com/
 {% tabs Baidu-webmaster-tools %}
 <!-- tab Get Verification Code → -->
 Login to Baidu Webmaster Tools and go to verification methods and choose `HTML Tag`, you will get some code:
-{% code lang:html %}
+```html
 <meta name="baidu-site-verification" content="XXXXXXXXXXXXXXXXXXXXXXX" />
-{% endcode %}
+```
 <!-- endtab -->
 
 <!-- tab NexT Config -->
 Copy `XXXXXXXXXXXXXXXXXXXXXXX` value of `content` key.
 Edit {% label primary@theme config file %} and add or change `baidu_site_verification` section:
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 baidu_site_verification: XXXXXXXXXXXXXXXXXXXXXXX
-{% endcode %}
+```
 <!-- endtab -->
 {% endtabs %}
 

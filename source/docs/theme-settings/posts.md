@@ -9,9 +9,9 @@ description: NexT User Docs – Theme Settings – Posts
 
 By default NexT scrolls page automatically to section which is under <!-- more --> mark. You can disable it by setting value `scroll_to_more` to `false` in {% label primary@theme config file %}.
 
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 scroll_to_more: true
-{% endcode %}
+```
 
 #### Preamble Text
 
@@ -23,9 +23,9 @@ If you have added `description` and set its value to your article summary in [Fr
 
 You can disable it by setting value `excerpt_description` to `false` in {% label primary@theme config file %}.
 
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 excerpt_description: true
-{% endcode %}
+```
 
 <!-- endtab -->
 
@@ -39,11 +39,11 @@ Next would use `150` characters from article header automatically as preamble te
 
 You can configure it by editing value in `auto_excerpt` section in {% label primary@theme config file %}.
 
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 auto_excerpt:
   enable: true
   length: 150
-{% endcode %}
+```
 <!-- endtab -->
 
 {% endtabs %}
@@ -60,19 +60,19 @@ NexT supports post created date, post updated date and post categories display.
 <!-- tab <code>item_text</code> -->
 By default NexT shows the description text of post meta. You can disable it by setting value `post_meta.item_text` to `false` in {% label primary@theme config file %}.
 
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 post_meta:
   item_text: true
-{% endcode %}
+```
 <!-- endtab -->
 
 <!-- tab <code>created_at</code> -->
 By default NexT shows the post created date in post meta section and created time in popup. You can disable it by setting value `post_meta.created_at` to `false` in {% label primary@theme config file %}.
 
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 post_meta:
   created_at: true
-{% endcode %}
+```
 <!-- endtab -->
 
 <!-- tab <code>updated_at</code> -->
@@ -81,11 +81,11 @@ post_meta:
 <!-- tab <code>enable</code> -->
 By default NexT shows the post updated date in post meta section and updated time in popup. You can disable it by setting value `post_meta.updated_at.enable` to `false` in {% label primary@theme config file %}.
 
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 post_meta:
   updated_at:
     enable: true
-{% endcode %}
+```
 <!-- endtab -->
 
 <!-- tab <code>another_day</code> -->
@@ -95,11 +95,11 @@ In other words:
 * And if post was edited in same day as created, edited time will show in popup title under created time label.
 * If false show anyway, but if post edited in same day, show only edited time.
 
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 post_meta:
   updated_at:
     another_day: true
-{% endcode %}
+```
 <!-- endtab -->
 {% endsubtabs %}
 
@@ -108,10 +108,10 @@ post_meta:
 <!-- tab <code>categories</code> -->
 By default NexT shows the post categorie in post meta section. You can disable it by setting value `post_meta.categories` to `false` in {% label primary@theme config file %}.
 
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 post_meta:
   categories: true
-{% endcode %}
+```
 <!-- endtab -->
 
 {% endtabs %}
@@ -134,34 +134,34 @@ Activate this plugin in {% label info@site config file %} by enabled any option:
 {% subtabs wordcount1 %}
 <!-- tab <code>symbols</code> -->
 By default NexT shows the number of post words in post meta section. You can disable it by setting value `symbols_count_time.symbols` to `false` in {% label info@site config file %}.
-{% code lang:yml hexo/_config.yml %}
+```yml hexo/_config.yml
 symbols_count_time:
   symbols: true
-{% endcode %}
+```
 <!-- endtab -->
 
 <!-- tab <code>time</code> -->
 By default NexT shows the estimated reading time of post in post meta section. You can disable it by setting value `symbols_count_time.time` to `false` in {% label info@site config file %}.
-{% code lang:yml hexo/_config.yml %}
+```yml hexo/_config.yml
 symbols_count_time:
   time: true
-{% endcode %}
+```
 <!-- endtab -->
 
 <!-- tab <code>total_symbols</code> -->
 By default NexT shows the number of all posts words in footer section. You can disable it by setting value `symbols_count_time.total_symbols` to `false` in {% label info@site config file %}.
-{% code lang:yml hexo/_config.yml %}
+```yml hexo/_config.yml
 symbols_count_time:
   total_symbols: true
-{% endcode %}
+```
 <!-- endtab -->
 
 <!-- tab <code>total_time</code> -->
 By default NexT shows the estimated reading time of all posts in footer section. You can disable it by setting value `symbols_count_time.total_time` to `false` in {% label info@site config file %}.
-{% code lang:yml hexo/_config.yml %}
+```yml hexo/_config.yml
 symbols_count_time:
   total_time: true
-{% endcode %}
+```
 <!-- endtab -->
 
 {% endsubtabs %}
@@ -174,42 +174,42 @@ After the plugin enabled, you may adjust options in `symbols_count_time` section
 {% subtabs wordcount2 %}
 <!-- tab <code>separated_meta</code> -->
 By default NexT shows the words counts and estimated reading time in a separated line. You can add them into one line by setting value `symbols_count_time.separated_meta` to `false` in {% label primary@theme config file %}.
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 symbols_count_time:
   separated_meta: true
-{% endcode %}
+```
 <!-- endtab -->
 
 <!-- tab <code>item_text_post</code> -->
 By default NexT shows the text description of the words counts and estimated reading time in post meta section. You can disable it by setting value `symbols_count_time.item_text_post` to `false` in {% label primary@theme config file %}.
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 symbols_count_time:
   item_text_post: true
-{% endcode %}
+```
 <!-- endtab -->
 
 <!-- tab <code>item_text_total</code> -->
 By default NexT doesn't shows the text description of the words counts and estimated reading time in footer section. You can enable it by setting value `symbols_count_time.item_text_total` to `false` in {% label primary@theme config file %}.
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 symbols_count_time:
   item_text_total: true
-{% endcode %}
+```
 <!-- endtab -->
 
 <!-- tab <code>awl</code> -->
 `awl` means the average Word Length (chars count in word). You can check this [here](https://charactercounttool.com/).
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 symbols_count_time:
   awl: 4
-{% endcode %}
+```
 <!-- endtab -->
 
 <!-- tab <code>wpm</code> -->
 `wpm` means the average words per minute. You can check this [here](https://wordcounter.net/).
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 symbols_count_time:
   wpm: 275
-{% endcode %}
+```
 <!-- endtab -->
 
 {% endsubtabs %}
@@ -277,28 +277,28 @@ NexT supports the related posts functionality according to [hexo-related-popular
 <!-- tab <code>enable</code> -->
 You can enable it by setting value `related_posts.enable` to `true` in {% label primary@theme config file %}.
 
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 related_posts:
   enable: true
-{% endcode %}
+```
 <!-- endtab -->
 
 <!-- tab <code>title</code> -->
 By default NexT uses 'Related Posts' as title by default. You can configure it by editing value in `related_posts.title` section in {% label primary@theme config file %}.
 
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 related_posts:
   title:
-{% endcode %}
+```
 <!-- endtab -->
 
 <!-- tab <code>display_in_home</code> -->
 By default NexT doesn't show the related posts in homepage. You can enable it by setting value `related_posts.display_in_home` to `true` in {% label primary@theme config file %}.
 
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 related_posts:
   display_in_home: true
-{% endcode %}
+```
 <!-- endtab -->
 
 <!-- tab <code>params</code> -->
@@ -308,51 +308,51 @@ By default NexT shows up to 5 related posts and their titles without any date, i
 <!-- tab <code>maxCount</code> -->
 Maximum count of a list, change it by yourself.
 
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 related_posts:
   params:
     maxCount: 5
-{% endcode %}
+```
 <!-- endtab -->
 
 <!-- tab <code>PPMixingRate</code> -->
 Mixing ratio of popular posts and related posts.
 
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 related_posts:
   params:
     #PPMixingRate: 0.0
-{% endcode %}
+```
 <!-- endtab -->
 
 <!-- tab <code>isDate</code> -->
 Uncomment and set true to display dates of related post.
 
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 related_posts:
   params:
     isDate: true
-{% endcode %}
+```
 <!-- endtab -->
 
 <!-- tab <code>isImage</code> -->
 Uncomment and set true to display images of related posts.
 
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 related_posts:
   params:
     isImage: true
-{% endcode %}
+```
 <!-- endtab -->
 
 <!-- tab <code>isExcerpt</code> -->
 Uncomment and set true to display excerpts of related posts.
 
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 related_posts:
   params:
     isExcerpt: true
-{% endcode %}
+```
 <!-- endtab -->
 
 {% endsubtabs %}
@@ -367,10 +367,10 @@ NexT supports the edit functionality of your posts. By enabling this feature, us
 <!-- tab <code>enable</code> -->
 You can enable it by setting value `post_edit.enable` to `true` in {% label primary@theme config file %}.
 
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 post_edit:
   enable: true
-{% endcode %}
+```
 <!-- endtab -->
 
 <!-- tab <code>url</code> -->
@@ -383,10 +383,10 @@ You should create a source repository of your post files. The `url` setting depe
     * Link for view source: `url: https://github.com/.../_posts/tree/master/`
     * Link for fork & edit: `url: https://github.com/.../_posts/edit/master/`
 
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 post_edit:
   url:
-{% endcode %}
+```
 <!-- endtab -->
 
 {% endtabs %}

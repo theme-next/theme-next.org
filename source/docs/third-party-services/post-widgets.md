@@ -39,24 +39,24 @@ VKontakte offers flexible commentting tools that can be easily built into your w
 {% tabs vkontakte_api %}
 <!-- tab Get API ID → -->
 Login to VKontakte Developers and [create apps](https://vk.com/editapp?act=create). Go to the [Comments Widget](https://vk.com/dev/Comments), you will get some code:
-{% code lang:html %}
+```html
 <script type="text/javascript">
   VK.init({apiId: API_ID, onlyWidgets: true});
 </script>
-{% endcode %}
+```
 <!-- endtab -->
 
 <!-- tab NexT Config -->
 
 You can enable it by setting value `vkontakte_api.enable` to `true`, and copy `API_ID` value of `apiId` key in {% label primary@theme config file %}.
 
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 vkontakte_api:
   enable:       false
   app_id:       API_ID #<app_id>
   comments:     true
   num_of_posts: 10
-{% endcode %}
+```
 <!-- endtab -->
 {% endtabs %}
 
@@ -65,24 +65,24 @@ With «Like» widget your visitors can express their attitude towards an article
 {% tabs vkontakte_api_like %}
 <!-- tab Get API ID → -->
 Login to VKontakte Developers and [create apps](https://vk.com/editapp?act=create). Go to the [Like Widget](https://vk.com/dev/Like), you will get some code:
-{% code lang:html %}
+```html
 <script type="text/javascript">
   VK.init({apiId: API_ID, onlyWidgets: true});
 </script>
-{% endcode %}
+```
 <!-- endtab -->
 
 <!-- tab NexT Config -->
 
 You can enable it by setting value `vkontakte_api.enable` to `true`, and copy `API_ID` value of `apiId` key in {% label primary@theme config file %}.
 
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 vkontakte_api:
   enable:       false
   app_id:       API_ID #<app_id>
   like:         true
   num_of_posts: 10
-{% endcode %}
+```
 <!-- endtab -->
 {% endtabs %}
 
@@ -93,21 +93,21 @@ Rating service with login through any social networks like Facebook, Twitter, Go
 {% tabs rating %}
 <!-- tab Get ID → -->
 Login to [widgetpack](https://widgetpack.com/admin#signin) and add new site, you will get your site ID:
-{% code lang:html %}
+```html
 wpac_init.push({widget: 'Rating', id: ID});
-{% endcode %}
+```
 <!-- endtab -->
 
 <!-- tab NexT Config -->
 
 You can enable it by setting value `rating.enable` to `true`, and copy `ID` value of `id` in {% label primary@theme config file %}. You can also configure the rating color by editing values in `rating.color` section.
 
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 rating:
   enable: false
   id:     ID #<app_id>
   color:  fc6423
-{% endcode %}
+```
 <!-- endtab -->
 {% endtabs %}
 
@@ -125,8 +125,8 @@ Get AddThis ID in this menu: `More..` → `General` → `ID`. See example on the
 
 <!-- tab NexT Config -->
 Edit the configurations in `add_this_id` section in the {% label primary@theme config file %} as following:
-{% code lang:yml next/_config.yml%}
+```yml next/_config.yml
 add_this_id: your_add_this_id
-{% endcode %}
+```
 <!-- endtab -->
 {% endtabs %}

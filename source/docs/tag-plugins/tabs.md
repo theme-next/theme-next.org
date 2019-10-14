@@ -329,11 +329,11 @@ Permalink for > [Tab two 3](#tab-two-3).
 
 Tagged code block:
 
-{% code %}
+```
 code tag
 code tag
 code tag
-{% endcode %}
+```
 
 {% note default %}
 Note default tag.
@@ -451,11 +451,11 @@ Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna a ullamcorp
 
 Tagged code block:
 
-{% code %}
+```
 code tag
 code tag
 code tag
-{% endcode %}
+```
 
 {% note default %}
 Note default tag.

@@ -19,21 +19,21 @@ In your terminal emulator, change to Hexo site dir. Use `hexo new page custom_na
 <!-- tab Setting Front-matter Values → -->
 Front-matter is a block of YAML or JSON at the beginning of the file that is used to configure settings for your writings. Settings Front-matter values and more detailed can be found in [Front-matter](https://hexo.io/docs/front-matter). You can also add contents in `custom_name/index.md` if you like.
 
-{% codeblock lang:md %}
+```md
 title: custom_name
 date: 2014-12-22 12:39:04
 ---
-{% endcodeblock %}
+```
 <!-- endtab -->
 
 <!-- tab Editting Menu -->
 Add `custom_name` to `menu` by editing {% label primary@theme config file %}, like adding `about` page:
-{% codeblock lang:yml next/_config.yml %}
+```yml next/_config.yml
 menu:
   home: / || home
   archives: /archives/ || archive
   about: /about/ || user
-{% endcodeblock %}
+```
 <!-- endtab -->
 {% endtabs %}
 
@@ -46,21 +46,21 @@ Following code shows you a example of article with tags:
 
 {% tabs tags-variants %}
 <!-- tab Variant 1 -->
-{% codeblock lang:md %}
+```md
 title: Tags Testing Article
 tags: [Testing, Another Tag]
 ---
-{% endcodeblock %}
+```
 <!-- endtab -->
 
 <!-- tab Variant 2 -->
-{% codeblock lang:md %}
+```md
 title: Tags Testing Article
 tags:
   - Testing
   - Another Tag
 ---
-{% endcodeblock %}
+```
 <!-- endtab -->
 {% endtabs %}
 
@@ -80,22 +80,22 @@ In your terminal emulator, change to Hexo site dir. Use `hexo new page tags` to 
 <!-- tab Setting Page Type → -->
 Edit the new page and change the type to `"tags"`, theme will show tags cloud automatically in this page. Page content looks like following:
 
-{% codeblock lang:md %}
+```md
 title: Tags
 date: 2014-12-22 12:39:04
 type: "tags"
 ---
-{% endcodeblock %}
+```
 <!-- endtab -->
 
 <!-- tab Editting Menu -->
 Add `tags` to `menu` by editing {% label primary@theme config file %}, like following:
-{% codeblock lang:yml next/_config.yml %}
+```yml next/_config.yml
 menu:
   home: / || home
   archives: /archives/ || archive
   tags: /tags/ || tags
-{% endcodeblock %}
+```
 <!-- endtab -->
 {% endtabs %}
 
@@ -139,21 +139,21 @@ In your terminal emulator, change to Hexo site dir. Use `hexo new page schedule`
 <!-- tab Setting Front-matter Values → -->
 Front-matter is a block of YAML or JSON at the beginning of the file that is used to configure settings for your writings. Settings Front-matter values and more detailed can be found in [Front-matter](https://hexo.io/docs/front-matter). You can also add contents in `schedule/index.md` if you like.
 
-{% codeblock lang:md %}
+```md
 title: schedule
 date: 2014-12-22 12:39:04
 ---
-{% endcodeblock %}
+```
 <!-- endtab -->
 
 <!-- tab Editting Menu → -->
 Add `schedule` to `menu` by editing {% label primary@theme config file %}:
-{% codeblock lang:yml next/_config.yml %}
+```yml next/_config.yml
 menu:
   home: / || home
   archives: /archives/ || archive
   schedule: /schedule/ || calendar
-{% endcodeblock %}
+```
 <!-- endtab -->
 
 <!-- tab Setting Google Calendar-->
@@ -166,7 +166,7 @@ Login to [Google developers](https://console.developers.google.com/flows/enablea
 <!-- tab NexT Config  -->
 You can enable it by setting values in `calendar` part. Copy the value of calendar ID and API KEY in {% label primary@theme config file %}.
 
-{% codeblock lang:yml next/_config.yml %}
+```yml next/_config.yml
 calendar:
   calendar_id: <required>
   api_key: <required>
@@ -177,7 +177,7 @@ calendar:
   showDeleted: false
   singleEvents: true
   maxResults: 250
-{% endcodeblock %}
+```
 <!-- endtab -->
 {% endsubtabs %}
 
@@ -220,12 +220,12 @@ You can also add any content you want to it.
 
 <!-- tab Editting Menu → -->
 Add `404` to `menu` by editing {% label primary@theme config file %}:
-{% codeblock lang:yml next/_config.yml %}
+```yml next/_config.yml
 menu:
   home: / || home
   archives: /archives/ || archive
   schedule: /schedule/ || calendar
   commonweal: /404/ || heartbeat
-{% endcodeblock %}
+```
 <!-- endtab -->
 {% endtabs %}

@@ -14,7 +14,7 @@ For example, we want to change NexT scheme from standart `Muse` to `Gemini` and 
 <!-- tab NexT Config → -->
 We open {% label primary@theme config file %} and under the «Scheme Settings» section copy next parameters:
 
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 # ---------------------------------------------------------------
 # Scheme Settings
 # ---------------------------------------------------------------
@@ -23,7 +23,7 @@ scheme: Muse
 #scheme: Mist
 #scheme: Pisces
 #scheme: Gemini
-{% endcode %}
+```
 <!-- endtab -->
 
 <!-- tab Hexo Config -->
@@ -31,27 +31,27 @@ Then we open {% label info@site config file %} and paste these parameters under 
 
 {% subtabs 2-spaces-indents %}
 <!-- tab {% label danger@Nothing Happen %}-->
-{% code lang:yml hexo/_config.yml %}
+```yml hexo/_config.yml
 theme_config:
 
 #scheme: Muse
 #scheme: Mist
 #scheme: Pisces
 scheme: Gemini
-{% endcode %}
+```
 
 Here will nothing happen because indentation not keeped up. Hexo just can't see these parameters because subparameters (children parameters of `theme_config` parameter) are not exists. Let's see [same configuration with indents](#2-spaces-indents-2).
 <!-- endtab -->
 
 <!-- tab {% label success@Worked Fine %}-->
-{% code lang:yml hexo/_config.yml %}
+```yml hexo/_config.yml
 theme_config:
 
   #scheme: Muse
   #scheme: Mist
   #scheme: Pisces
   scheme: Gemini
-{% endcode %}
+```
 
 And here Hexo can read these parameters as `theme_config.scheme: Gemini` in same way, as NexT can read `scheme: Gemini` parameter. So, with 2 spaces indents from parent option(s) Hexo must loaded any NexT parameters and worked fine.
 <!-- endtab -->
@@ -85,19 +85,19 @@ This mean somewhere in your posts, blocks with tags was commented with `{% raw %
 
 {% tabs unmatched-placeholder-remains %}
 <!-- tab {% label danger@Error %} -->
-{% code %}
+```
 {% raw %}{#
 {% label error@Unmatched placeholder remains! %}
 #}{% endraw %}
-{% endcode %}
+```
 <!-- endtab -->
 
 <!-- tab {% label success@Success %} -->
-{% code %}
+```
 {% raw %}
 {% label error@Unmatched placeholder remains! %}
 {% endraw %}
-{% endcode %}
+```
 <!-- endtab -->
 {% endtabs %}
 

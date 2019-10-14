@@ -59,10 +59,10 @@ It's easy to install Hexo theme: you can just download the NexT theme, copy the 
 If you know about [Git](http://git-scm.com), you can clone the whole repository and update it in any time with `git pull` command instead of downloading archive manually.
 
 Open your Terminal, change to Hexo {% label info@site root directory %} and clone latest master branch of NexT theme:
-{% code lang:bash %}
+```bash
 $ cd hexo
 $ git clone https://github.com/theme-next/hexo-theme-next themes/next
-{% endcode %}
+```
 <!-- endtab -->
 
 <!-- tab Stable Version -->
@@ -121,11 +121,11 @@ And if your files deployed to any free hosting service (Github, Gitlab, etc.), r
 <!-- tab Local -->
 In NexT config now you can find dependencies on each module which was moved to external repositories which can be found by [main organization link](https://github.com/theme-next). For example, you want to use `pjax` in your site. Go to {% label primary@theme config file %} and see:
 
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 # Easily enable fast Ajax navigation on your website.
 # Dependencies: https://github.com/theme-next/theme-next-pjax
 pjax: false
-{% endcode %}
+```
 
 Then turn on `pjax` and go to «Dependencies» link with installation instructions of this module.
 <!-- endtab -->
@@ -133,19 +133,19 @@ Then turn on `pjax` and go to «Dependencies» link with installation instructio
 <!-- tab CDN -->
 If you use cdn for any plugins, you need to replace your cdn link. For example, you want to use `mediumzoom` and you configured a cdn link. Go to {% label primary@theme config file %} and see:
 
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 vendors:
   # ...
   # Some contents...
   # ...
   mediumzoom: # Set or update mediumzoom CDN URL.
-{% endcode %}
+```
 
 And jsDelivr CDN is recommended to deliver our third-party plugins because it is fast in everywhere and has the valid ICP license issued by the Chinese government. It does not only crawl the js files from npm packages, and it crawls from the GitHub Releases! We could use the following link to reference the js files, just as other CDNs.
 
-{% code %}
+```
 //cdn.jsdelivr.net/gh/user/repo@version/file
-{% endcode %}
+```
 
 And it could automatically minify the JS and CSS files, even if you don't have the minified version. Just use the `filename.min.js` or the `filename.min.css` to replace the file above.
 
@@ -275,19 +275,19 @@ By default NexT shows the icons of menu items without badges.
 <!-- tab <code>icons</code> -->
 You can configure it by editing values in `menu_settings.icons` section in {% label primary@theme config file %}.
 
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 menu_settings:
   icons: true
-{% endcode %}
+```
 <!-- endtab -->
 
 <!-- tab <code>badges</code> -->
 Set the value `badges` to `true` to display the count of Posts / Categories / Tags within menu items in `menu_settings` section in {% label primary@theme config file %} as following:
 
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 menu_settings:
   badges: true
-{% endcode %}
+```
 <!-- endtab -->
 
 {% endtabs %}
@@ -320,10 +320,10 @@ By default NexT doesn't show avatar in sidebar. You can configure it by editing 
 <!-- tab <code>url</code> -->
 For first test you can uncomment `/images/avatar.gif` value near the `avatar.url` setting to see default avatar:
 
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 avatar:
   url: /images/avatar.gif
-{% endcode %}
+```
 
 Then you need to specify your own avatar. It can be done one of the ways below:
 
@@ -340,13 +340,13 @@ And then change option to `avatar: /images/avatar.png`.
 {% note info %}
 Current site uses avatar under {% label primary@theme directory %} from file located in `next/source/images/apple-touch-icon-next.png` with following config:
 
-{% code lang:yml hexo/_config.yml %}
+```yml hexo/_config.yml
 theme_config:
   avatar:
     url: /images/apple-touch-icon-next.png
     rounded: true
     rotated: false
-{% endcode %}
+```
 
 {% endnote %}
 <!-- endtab -->
@@ -363,10 +363,10 @@ Set up rounded of avatar by changing the value of `avatar.rounded`:
 * `true` → Avatar will be rounded.
 * **`false`** → Avatar will be squared.
 
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 avatar:
   rounded: true
-{% endcode %}
+```
 <!-- endtab -->
 
 <!-- tab <code>rotated</code> -->
@@ -375,10 +375,10 @@ Set up rotated of avatar by changing the value of `avatar.rotated`:
 * `true` → Avatar will be rotate under the mouse hovering.
 * **`false`** → Avatar will not rotate under the mouse hovering.
 
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 avatar:
   rotated: true
-{% endcode %}
+```
 
 <!-- endtab -->
 {% endtabs %}

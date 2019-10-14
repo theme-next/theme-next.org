@@ -25,49 +25,49 @@ Register at [Algolia](https://www.algolia.com), you can log in directly using Gi
 
 <!-- tab Hexo Config → -->
 In your {% label info@site config file %}, add the following configuration and replace the `applicationID` & `apiKey` & `indexName` with corresponding fields obtained at Algolia.
-{% code lang:yml hexo/_config.yml %}
+```yml hexo/_config.yml
 algolia:
   applicationID: 'Application ID'
   apiKey: 'Search-only API key'
   indexName: 'indexName'
   chunkSize: 5000
-{% endcode %}
+```
 <!-- endtab -->
 
 <!-- tab Algolia Module → -->
 1. Algolia requires users to upload their search index data either manually or via provided APIs. Install and configure [Hexo Algolia](https://github.com/oncletom/hexo-algolia) in your Hexo directory. This plugin will index your site and upload selected data to Algolia.
 
-   {% code lang:bash %}
+   ```bash
    $ cd hexo
    $ npm install hexo-algolia
-   {% endcode %}
+   ```
 
 2. Run the following command to upload index data, keep a weather eye out the output of the command.
 
-   {% code lang:bash %}
+   ```bash
    $ export HEXO_ALGOLIA_INDEXING_KEY=Search-Only API key # Use Git Bash
    # set HEXO_ALGOLIA_INDEXING_KEY=Search-Only API key # Use Windows command line
    $ hexo clean
    $ hexo algolia
-   {% endcode %}
+   ```
 
    ![Reload Index](/images/docs/algolia-7.png)
 
 3. If you want to use a different version from CDN, please follow the instructions below.
 
    You need to **set vendors** in {% label primary@theme config file %}:
-   {% code lang:yml next/_config.yml %}
+   ```yml next/_config.yml
    vendors:
      ...
      algolia_instant_js: https://cdn.jsdelivr.net/npm/instantsearch.js@2/dist/instantsearch.js
      algolia_instant_css: https://cdn.jsdelivr.net/npm/instantsearch.js@2/dist/instantsearch.min.css
      ...
-   {% endcode %}
+   ```
 <!-- endtab -->
 
 <!-- tab NexT Config -->
 In {% label primary@theme config file %}, turn on `enable` of `algolia_search`. At the same time, you need to **turn off other search plugins** like Local Search. You can also adjust the text in `labels` according to your needs.
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 # Algolia Search
 algolia_search:
   enable: true
@@ -77,7 +77,7 @@ algolia_search:
     input_placeholder: Search for Posts
     hits_empty: "We didn't find any results for the search: ${query}"
     hits_stats: "${hits} results found in ${time} ms"
-{% endcode %}
+```
 <!-- endtab -->
 {% endtabs %}
 
@@ -104,18 +104,18 @@ Install `hexo-generator-searchdb` by run following command in {% label info@site
 
 <!-- tab Hexo Config → -->
 Edit {% label info@site config file %} and add following content:
-{% code lang:yml hexo/_config.yml %}
+```yml hexo/_config.yml
 search:
   path: search.xml
   field: post
   format: html
   limit: 10000
-{% endcode %}
+```
 <!-- endtab -->
 
 <!-- tab NexT Config -->
 Edit {% label primary@theme config file %} to enable Local Search:
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 # Local search
 # Dependencies: https://github.com/theme-next/hexo-generator-searchdb
 local_search:
@@ -129,7 +129,7 @@ local_search:
   unescape: false
   # Preload the search data when the page loads.
   preload: false
-{% endcode %}
+```
 <!-- endtab -->
 {% endtabs %}
 
@@ -163,9 +163,9 @@ Click `Change Configuration` → `Search Field`, then follow the instructions.
 
 <!-- tab NexT Config -->
 Edit {% label primary@theme config file %} and fill section `swiftype_key` with value of your key gets:
-{% codeblock lang:yml next/_config.yml %}
+```yml next/_config.yml
 # Swiftype Search API Key
 swiftype_key: xxxxxxxxx
-{% endcodeblock %}
+```
 <!-- endtab -->
 {% endtabs %}

@@ -42,25 +42,25 @@ Deploy key is a SSH key set in your repo to grant client read-only (as well as r
 * Create an empty branch of `source` in the repository where the blog source is hosted.
 * Generate a ssh key
 
-    {% code lang:git %}
+    ```git
     $ ssh-keygen -t rsa -b 4096 -C "{email}" -f ~/.ssh/deploy_key
-    {% endcode %}
+    ```
 
 * Add the deployment public key in your repo, and delete it
 
-    {% code lang:git %}
+    ```git
     $ rm -f deploy_key.pub
-    {% endcode %}
+    ```
 
 * Use the Travis command to encrypt private key, and add it to git
 
-    {% code lang:git %}
+    ```git
     $ gem install travis
     $ travis login
     $ travis encrypt deploy_key
     $ rm -f deploy_key
     $ git add deploy_key.enc
-    {% endcode %}
+    ```
 
 <!-- endtab -->
 {% endsubtabs %}
@@ -68,7 +68,7 @@ Deploy key is a SSH key set in your repo to grant client read-only (as well as r
 <!-- endtab -->
 <!-- tab Configure <code>.travis.yml</code> -->
 
-{% code lang:yml hexo/.travis.yml  %}
+```yml hexo/.travis.yml 
 dist: trusty
 sudo: required
 
@@ -128,7 +128,7 @@ before_script:
 script:
  - hexo clean
  - hexo g -d
-{% endcode %}
+```
 
 <!-- endtab -->
 {% endsubtabs %}
@@ -140,7 +140,7 @@ script:
 GitLab offers a continuous integration service and pages service. If you add a `.gitlab-ci.yml` file to the root directory of your repository, and configure your GitLab project to use a Runner, then each commit or push, triggers your CI pipeline. The `.gitlab-ci.yml` file tells the GitLab runner what to do. By default it runs a pipeline with three stages: build, test, and deploy. You don't need to use all three stages; stages with no jobs are simply ignored. And at the end, your websites will be published on GitLab Host automatically.
 
 1. Add `.gitlab-ci.yml` to the root directory of your repository, and configure it.
-    {% code lang:yml hexo/.gitlab-ci.yml %}
+    ```yml hexo/.gitlab-ci.yml
     image: node:8.11.2
 
     before_script:
@@ -169,16 +169,16 @@ GitLab offers a continuous integration service and pages service. If you add a `
         - public
       only:
       - master
-    {% endcode %}
+    ```
 2. Upload `scaffolds`, `source`, `themes`, `.gitignor`, `.gitlab-ci.yml`, `_config.yml`, and `package.json` to [your Gitlab repository](https://gitlab.com/).
-    {% code lang:git %}
+    ```git
     $ git init
     $ ssh -T git@gitlab.com
     $ git remote add origin YOUR-GITLAB-REPO-SSH-LINK
     $ git add .
     $ git commit -m "COMMIT MESSAGE"
     $ git push -u origin master
-    {% endcode %}
+    ```
 
 Now, your static website is available at `https://yourname.gitlab.io/project` that is similar to GitHub. [More GitLab Pages config in here](https://gitlab.com/help/user/project/pages/index.md).
 
@@ -190,7 +190,7 @@ Of course, you also can pulish static website on GitHub Pages or others pages se
 * Get the Access Token: `Settings` → `Developer settings` → `Personal access token` → `Generate new token`. Set access rights according to the actual situation. It should be noted that the access token is only displayed once on this page, and it should be copied, otherwise it can only be regenerated.
 * Click `SETTINGS-CI/CD → Variables` in Gitlab, and defined access token as custom variable `GITHUB_ACCESS_TOKEN`. Or set `USERNAME` `PASSWORD` variable for coding repo.
 * Configure `.gitlab-ci.yml`: **only add deploy stage at the end of this file**
-    {% code lang:yml hexo/.gitlab-ci.yml %}
+    ```yml hexo/.gitlab-ci.yml
     github:
       stage: deploy
       script:
@@ -205,21 +205,21 @@ Of course, you also can pulish static website on GitHub Pages or others pages se
       # - git push --force --quiet --set-upstream https://$USERNAME:$PASSWORD@git.coding.net/username/reponame.git master # replace username & password, please escape the password
       only:
       - master
-    {% endcode %}
+    ```
 <!-- endtab -->
 <!-- tab <code>SSH</code> -->
 Deploy key is a SSH key set in your repo to grant client read-only (as well as r/w, if you want) access to your repo. This method is suitable for most public blog repositories and there are no private sub-modules in the repositories.
 
 * Generate a deploy key
 
-    {% code lang:git %}
+    ```git
     $ ssh-keygen -t rsa -b 4096 -C "{email}" -f ~/.ssh/deploy_key
-    {% endcode %}
+    ```
 
 * Click `SETTINGS-CI/CD → Variables` in Gitlab, copy the content of private key and defined it as custom variable `DEPLOY_PRIVATE_KEY`.
 * Configure `.gitlab-ci.yml`: **only update script in `before_script`**
 
-    {% code lang:yml hexo/.gitlab-ci.yml %}
+    ```yml hexo/.gitlab-ci.yml
     before_script:
       # Set TimeZone, eg: Asia/Shanghai
       # - export TZ='Asia/Shanghai'
@@ -274,7 +274,7 @@ Deploy key is a SSH key set in your repo to grant client read-only (as well as r
           - public
       only:
         - master
-    {% endcode %}
+    ```
 <!-- endtab -->
 {% endsubtabs %}
 

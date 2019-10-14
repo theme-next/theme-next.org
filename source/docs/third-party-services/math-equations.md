@@ -59,31 +59,31 @@ This option is to control whether to render Math Equations every page.
 {% note default %}
 **Examples with `true` option **
 
-{% code lang:md %}
+```md
 <!-- This post will render the Math Equations -->
 ---
 title: Will Render Math
 mathjax: true
 ---
 ....
-{% endcode %}
+```
 
-{% code lang:md %}
+```md
 <!-- This post will NOT render the Math Equations -->
 ---
 title: Not Render Math
 mathjax: false
 ---
 ....
-{% endcode %}
+```
 
-{% code lang:md %}
+```md
 <!-- This post will NOT render the Math Equations either -->
 ---
 title: Not Render Math Either
 ---
 ....
-{% endcode %}
+```
 {% endnote %}
 <!-- endtab -->
 
@@ -111,27 +111,27 @@ If you use MathJax to render Math Equations, you can choose one of renderers bel
 
 1. Need to uninstall the original renderer `hexo-renderer-marked` and install one of selected by you renderer:
 
-   {% code lang:bash %}
+   ```bash
    $ npm un hexo-renderer-marked
    $ npm i hexo-renderer-kramed # or hexo-renderer-pandoc
-   {% endcode %}
+   ```
 
 2. In {% label primary@theme config file %}, turn on `enable` option of `math` and choose `mathjax` as render engine.
 
-   {% code lang:yml %}
+   ```yml
    math:
      enable: true
      ...
      mathjax:
        enable: true
-   {% endcode %}
+   ```
 
 3. Run standard Hexo generate, deploy process or start the server:
 
-   {% code lang:bash %}
+   ```bash
    $ hexo clean && hexo g -d
    # or hexo clean && hexo s
-   {% endcode %}
+   ```
 {% endnote %}
 <!-- endtab -->
 
@@ -160,7 +160,7 @@ If you use `hexo-renderer-markdown-it`, you also need to add `markdown-it-katex`
 
 And then in {% label info@site config file %} you need to add `markdown-it-katex` as a plugin for `hexo-renderer-markdown-it`:
 
-{% code lang:yml %}
+```yml
 # config of hexo-renderer-markdown-it
 markdown:
   render:
@@ -172,7 +172,7 @@ markdown:
     quotes: '“”‘’'
   plugins:
     - markdown-it-katex
-{% endcode %}
+```
 <!-- endtab -->
 {% endtabs %}
 {% endnote %}
@@ -182,27 +182,27 @@ markdown:
 
 1. Need to uninstall the original renderer `hexo-renderer-marked` and install one of selected by you renderer:
 
-   {% code lang:bash %}
+   ```bash
    $ npm un hexo-renderer-marked
    $ npm i hexo-renderer-markdown-it-plus # or hexo-renderer-markdown-it
-   {% endcode %}
+   ```
 
 2. In {% label primary@theme config file %}, turn on `enable` option of `math` and choose `katex` as render engine.
 
-   {% code lang:yml %}
+   ```yml
    math:
      enable: true
      ...
      katex:
        enable: true
-   {% endcode %}
+   ```
 
 3. Run standard Hexo generate, deploy process or start the server:
 
-   {% code lang:bash %}
+   ```bash
    $ hexo clean && hexo g -d
    # or hexo clean && hexo s
-   {% endcode %}
+   ```
 {% endnote %}
 
 {% note danger %}
@@ -256,11 +256,11 @@ In general, to make the automatic equation numbering work, you have to wrap your
 
 For simple equations, use the following form to give a tag,
 
-{% code lang:latex %}
+```latex
 $$\begin{equation}
 e=mc^2
 \end{equation}\label{eq1}$$
-{% endcode %}
+```
 
 $$\begin{equation}
 e=mc^2
@@ -268,9 +268,9 @@ e=mc^2
 
 Then, you can refer to this equation in your text easily by using something like:
 
-{% code lang:latex %}
+```latex
 The famous matter-energy equation $\eqref{eq1}$ proposed by Einstein...
-{% endcode %}
+```
 
 The famous matter-energy equation $\eqref{eq1}$ proposed by Einstein...
 
@@ -278,7 +278,7 @@ The famous matter-energy equation $\eqref{eq1}$ proposed by Einstein...
 
 For multi-line equations, inside the `equation` environment, you can use the `aligned` environment to split it into multiple lines:
 
-{% code lang:latex %}
+```latex
 $$\begin{equation}
 \begin{aligned}
 a &= b + c \\
@@ -286,7 +286,7 @@ a &= b + c \\
   &= h + i
 \end{aligned}
 \end{equation}\label{eq2}$$
-{% endcode %}
+```
 
 $$\begin{equation}
 \begin{aligned}
@@ -296,9 +296,9 @@ a &= b + c \\
 \end{aligned}
 \end{equation}\label{eq2}$$
 
-{% code lang:latex %}
+```latex
 Equation $\eqref{eq2}$ is a multi-line equation.
-{% endcode %}
+```
 
 Equation $\eqref{eq2}$ is a multi-line equation.
 
@@ -306,13 +306,13 @@ Equation $\eqref{eq2}$ is a multi-line equation.
 
 We can use `align` environment to align multiple equations. Each of these equations will get its own numbers.
 
-{% code lang:latex %}
+```latex
 $$\begin{align}
 a &= b + c \label{eq3} \\
 x &= yz \label{eq4}\\
 l &= m - n \label{eq5}
 \end{align}$$
-{% endcode %}
+```
 
 $$\begin{align}
 a &= b + c \label{eq3} \\
@@ -320,9 +320,9 @@ x &= yz \label{eq4}\\
 l &= m - n \label{eq5}
 \end{align}$$
 
-{% code lang:latex %}
+```latex
 There are three aligned equations: equation $\eqref{eq3}$, equation $\eqref{eq4}$ and equation $\eqref{eq5}$.
-{% endcode %}
+```
 
 There are three aligned equations: equation $\eqref{eq3}$, equation $\eqref{eq4}$ and equation $\eqref{eq5}$.
 
@@ -332,13 +332,13 @@ Since `align` in and of itself is a complete equation environment (read [here](h
 
 In the `align` environment, if you do not want to number one or some equations, just use `\nonumber` right behind these equations. Like the following:
 
-{% code lang:latex %}
+```latex
 $$\begin{align}
 -4 + 5x &= 2+y \nonumber  \\
  w+2 &= -1+w \\
  ab &= cb
 \end{align}$$
-{% endcode %}
+```
 
 $$\begin{align}
 -4 + 5x &= 2+y \nonumber  \\
@@ -350,14 +350,14 @@ $$\begin{align}
 
 Sometimes, you want to use more «exotic» style to refer your equation. You can use `\tag{}` to achieve this. For example:
 
-{% code lang:latex %}
+```latex
 $$x+1\over\sqrt{1-x^2} \tag{i}\label{eq_tag}$$
-{% endcode %}
+```
 
 $$x+1\over\sqrt{1-x^2} \tag{i}\label{eq_tag}$$
 
-{% code lang:latex %}
+```latex
 Equation $\eqref{eq_tag}$ use `\tag{}` instead of automatic numbering.
-{% endcode %}
+```
 
 Equation $\eqref{eq_tag}$ use `\tag{}` instead of automatic numbering.

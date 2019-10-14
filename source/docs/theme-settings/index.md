@@ -97,13 +97,13 @@ NexT allows to customize the text alignment in posts / pages. The `text-align` C
 | `justify-all`  | Same as `justify`, but also forces the last line to be justified.                                                                                                      |
 | `match-parent` | Similar to `inherit`, but the values `start` and `end` are calculated according to the parent's direction and are replaced by the appropriate `left` or `right` value. |
 
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 # Set the text alignment in the posts.
 text_align:
   # Available values: start | end | left | right | center | justify | justify-all | match-parent
   desktop: justify
   mobile: justify
-{% endcode %}
+```
 
 ### Mobile Devices Adaptation
 
@@ -111,17 +111,17 @@ text_align:
 <!-- tab <code>mobile_layout_economy</code> -->
 If you want to reduce padding/margin indents on devices with narrow width, you can enable it by setting value `mobile_layout_economy` to `true` in {% label primary@theme config file %}.
 
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 mobile_layout_economy: true
-{% endcode %}
+```
 <!-- endtab -->
 
 <!-- tab <code>android_chrome_color</code> -->
 By default NexT uses black-deep (`#222`) as the color of android Chrome header panel. You can configure it by editing values with Hex color in `android_chrome_color` section in {% label primary@theme config file %}.
 
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 android_chrome_color: "#222"
-{% endcode %}
+```
 <!-- endtab -->
 
 {% endtabs %}
@@ -130,17 +130,17 @@ android_chrome_color: "#222"
 
 If you want to hide sticky headers and color the menu bar on Safari (iOS / macOS), you can set `safari_rainbow` to `true`. More information here: [rainbowsafari](https://github.com/koole/rainbowsafari).
 
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 safari_rainbow: true
-{% endcode %}
+```
 
 ### Custom Scrollbar Support
 
 NexT supports the scrollbar personalization.
 
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 custom_scrollbar: true
-{% endcode %}
+```
 
 {% note danger %}
 Only works on webkit based browsers.
@@ -152,9 +152,9 @@ NexT supports the site logo personalization.
 
 You can enable it by adding images's url to `custom_logo` in {% label primary@theme config file %}.
 
-{% codeblock lang:yml next/_config.yml %}
+```yml next/_config.yml
 custom_logo: /uploads/custom-logo.jpg
-{% endcodeblock %}
+```
 
 {% note danger %}
 Scheme Mist does not support custom logo setting.
@@ -181,13 +181,13 @@ Default style is white (`normal`) and there are 8 styles to choose:
 
 Change the value of `highlight_theme` to choose the highlight style you like, for example:
 
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 codeblock:
   # Code Highlight theme
   # Available values: normal | night | night eighties | night blue | night bright | solarized | solarized dark | galactic
   # https://github.com/chriskempson/tomorrow-theme
   highlight_theme: night
-{% endcode %}
+```
 <!-- endtab -->
 
 <!-- tab <code>copy_button</code> -->
@@ -197,30 +197,30 @@ NexT supports the copy-and-paste functionality of codeblock.
 <!-- tab <code>enable</code> -->
 You can enable it by setting value `copy_button.enable` to `true` in {% label primary@theme config file %}.
 
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 codeblock:
   copy_button:
     enable: true
-{% endcode %}
+```
 <!-- endtab -->
 <!-- tab <code>show_result</code> -->
 By default NexT doesn't show copy results of the copy-and-paste functionality. You can also enable it by setting value `copy_button.show_result` to `true` in {% label primary@theme config file %}.
 
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 codeblock:
   copy_button:
     show_result: true
-{% endcode %}
+```
 <!-- endtab -->
 <!-- tab <code>style</code> -->
 With `style` option, you can change your copy button style.
 There are three style available currently: `default`(Just leave it empty), `flat` and `mac`.
 
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 codeblock:
   copy_button:
     style: flat
-{% endcode %}
+```
 <!-- endtab -->
 {% endsubtabs %}
 
@@ -234,12 +234,12 @@ NexT supports the page scroll reading progress indicator.
 
 You can enable it by setting value `reading_progress.enable` to `true` in {% label primary@theme config file %}.
 
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 reading_progress:
   enable: true
   color: "#37c6c0"
   height: 2px
-{% endcode %}
+```
 
 ### Bookmark
 
@@ -247,7 +247,7 @@ Bookmark is a plugin that allow the users save their reading progress. Users cou
 
 You can enable it by setting value `bookmark.enable` to `true` in {% label primary@theme config file %}.
 
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 bookmark:
   enable: false
   # Customize the color of the bookmark.
@@ -255,7 +255,7 @@ bookmark:
   # If auto, save the reading progress when closing the page or clicking the bookmark-icon.
   # If manual, only save it by clicking the bookmark-icon.
   save: auto
-{% endcode %}
+```
 
 ### GitHub Banner
 

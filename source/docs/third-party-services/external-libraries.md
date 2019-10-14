@@ -13,19 +13,19 @@ It allows you to completely transform the user experience of standard websites (
 <!-- tab Installation → -->
 Change dir to NexT directory, and install module to `source/lib` directory.
 
-{% code lang:bash %}
+```bash
 $ cd themes/next
 $ git clone https://github.com/theme-next/theme-next-pjax source/lib/pjax
-{% endcode %}
+```
 
 {% note info %}
 If you want to use the CDN instead of clone this repo, then need to **set vendors** in {% label primary@theme config file %}:
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 vendors:
   ...
   pjax: //cdn.jsdelivr.net/gh/theme-next/theme-next-pjax@0/pjax.min.js
   ...
-{% endcode %}
+```
 {% endnote %}
 
 <!-- endtab -->
@@ -34,12 +34,12 @@ vendors:
 
 After the plugin installed, you can enable it by setting value `pjax` to `true` in {% label primary@theme config file %}.
 
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 # Easily enable fast Ajax navigation on your website.
 # Dependencies: https://github.com/theme-next/theme-next-pjax
 # For moreinformation: https://github.com/MoOx/pjax
 pjax: true
-{% endcode %}
+```
 
 <!-- endtab -->
 {% endtabs %}
@@ -58,23 +58,23 @@ There is support for old version 2 and new version 3. Please, choose only any on
 If you want to use a different version from CDN, please follow the instructions below.
 
 You need to **set vendors** in {% label primary@theme config file %}:
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 vendors:
   ...
   jquery: //cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js
   fancybox: //cdn.jsdelivr.net/npm/fancybox@2/dist/js/jquery.fancybox.pack.js
   fancybox_css: //cdn.jsdelivr.net/npm/fancybox@2/dist/css/jquery.fancybox.min.css
   ...
-{% endcode %}
+```
 
 <!-- endtab -->
 
 <!-- tab NexT Config -->
 After the plugin installed, you can enable it by setting value `fancybox` to `true` in {% label primary@theme config file %}.
 
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 fancybox: true
-{% endcode %}
+```
 <!-- endtab -->
 {% endsubtabs %}
 
@@ -87,23 +87,23 @@ fancybox: true
 If you want to use a different version from CDN, please follow the instructions below.
 
 You need to **set vendors** in {% label primary@theme config file %}:
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 vendors:
   ...
   jquery: //cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js
   fancybox: //cdn.jsdelivr.net/npm/fancybox@3/dist/js/jquery.fancybox.pack.js
   fancybox_css: //cdn.jsdelivr.net/npm/fancybox@3/dist/css/jquery.fancybox.min.css
   ...
-{% endcode %}
+```
 
 <!-- endtab -->
 
 <!-- tab NexT Config -->
 After the plugin installed, you can enable it by setting value `fancybox` to `true` in {% label primary@theme config file %}.
 
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 fancybox: true
-{% endcode %}
+```
 <!-- endtab -->
 {% endsubtabs %}
 
@@ -120,12 +120,12 @@ fancybox: true
 If you want to use a different version from CDN, please follow the instructions below.
 
 You need to **set vendors** in {% label primary@theme config file %}:
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 vendors:
   ...
   mediumzoom: https://cdn.jsdelivr.net/npm/medium-zoom@1/dist/medium-zoom.min.js
   ...
-{% endcode %}
+```
 
 <!-- endtab -->
 
@@ -133,10 +133,10 @@ vendors:
 
 After the plugin installed, you can enable it by setting value `mediumzoom` to `true` in {% label primary@theme config file %}.
 
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 # A JavaScript library for zooming images like Medium.
 mediumzoom: true
-{% endcode %}
+```
 
 {% note warning %}
 Do not enable both `fancybox` and `mediumzoom`.
@@ -154,12 +154,12 @@ Do not enable both `fancybox` and `mediumzoom`.
 If you want to use a different version from CDN, please follow the instructions below.
 
 You need to **set vendors** in {% label primary@theme config file %}:
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 vendors:
   ...
   lazyload: //cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js
   ...
-{% endcode %}
+```
 
 <!-- endtab -->
 
@@ -167,10 +167,10 @@ vendors:
 
 After the plugin installed, you can enable it by setting value `lazyload` to `true` in {% label primary@theme config file %}.
 
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 # Vanilla JavaScript plugin for lazyloading images.
 lazyload: true
-{% endcode %}
+```
 
 <!-- endtab -->
 {% endtabs %}
@@ -184,23 +184,23 @@ lazyload: true
 If you want to use a different version from CDN, please follow the instructions below.
 
 You need to **set vendors** in {% label primary@theme config file %}:
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 vendors:
   ...
   # https://github.com/vinta/pangu.js
   pangu: //cdn.jsdelivr.net/npm/pangu@4/dist/browser/pangu.min.js
   ...
-{% endcode %}
+```
 
 <!-- endtab -->
 
 <!-- tab NexT Config -->
 After the plugin installed, you can enable it by setting value `pangu` to `true` in {% label primary@theme config file %}.
 
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 # Pangu Support
 pangu: true
-{% endcode %}
+```
 <!-- endtab -->
 {% endtabs %}
 
@@ -213,12 +213,12 @@ pangu: true
 If you want to use a different version from CDN, please follow the instructions below.
 
 You need to **set vendors** in {% label primary@theme config file %}:
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 vendors:
   ...
   quicklink: //cdn.jsdelivr.net/npm/quicklink@1/dist/quicklink.umd.js
   ...
-{% endcode %}
+```
 
 <!-- endtab -->
 
@@ -226,7 +226,7 @@ vendors:
 
 After the plugin installed, you can enable it by setting value `quicklink.enable` to `true` in {% label primary@theme config file %}.
 
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 ...
 quicklink:
   enable: true
@@ -237,7 +237,7 @@ quicklink:
   priority: true
   ignores:
 ...
-{% endcode %}
+```
 
 <!-- endtab -->
 {% endtabs %}
@@ -278,20 +278,20 @@ Pace will automatically monitor your Ajax requests, event loop lag, document rea
 <!-- tab Installation → -->
 Change dir to NexT directory, and install module to `source/lib` directory.
 
-{% code lang:bash %}
+```bash
 $ cd themes/next
 $ git clone https://github.com/theme-next/theme-next-pace source/lib/pace
-{% endcode %}
+```
 
 {% note info %}
 If you want to use the CDN instead of clone this repo, then need to **set vendors** in {% label primary@theme config file %}:
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 vendors:
   ...
   pace: //cdn.jsdelivr.net/npm/pace-js@1/pace.min.js
   pace_css: //cdn.jsdelivr.net/npm/pace-js@1/themes/blue/pace-theme-minimal.css
   ...
-{% endcode %}
+```
 {% endnote %}
 
 <!-- endtab -->
@@ -302,10 +302,10 @@ vendors:
 <!-- tab <code>pace</code> -->
 After the plugin installed, you can enable it by setting value `pace.enable` to `true` in {% label primary@theme config file %}.
 
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 pace:
   enable: true
-{% endcode %}
+```
 <!-- endtab -->
 <!-- tab <code>theme</code> -->
 Pace includes a bunch of [themes](http://github.hubspot.com/pace/docs/welcome/) to get you started. Just include the appropriate css file.
@@ -328,19 +328,19 @@ Pace includes a bunch of [themes](http://github.hubspot.com/pace/docs/welcome/) 
 
 By default NexT uses `minimal` theme (pace-theme-minimal). You can configure it by editing values in `pace.theme` section in {% label primary@theme config file %}.
 
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 pace:
   theme: minimal
-{% endcode %}
+```
 
 {% note info %}
 If you want to use the CDN, then need to **set vendors** in {% label primary@theme config file %}:
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 vendors:
   ...
   pace_css: //cdn.jsdelivr.net/npm/pace-js@1/themes/blue/pace-theme-minimal.css
   ...
-{% endcode %}
+```
 {% endnote %}
 
 <!-- endtab -->
@@ -359,14 +359,14 @@ The aim of [JavaScript 3D library](https://github.com/mrdoob/three.js) is to cre
 <!-- tab Installation → -->
 Change dir to NexT directory, and install module to `source/lib` directory.
 
-{% code lang:bash %}
+```bash
 $ cd themes/next
 $ git clone https://github.com/theme-next/theme-next-three source/lib/three
-{% endcode %}
+```
 
 {% note info %}
 If you want to use the CDN instead of clone this repo, then need to **set vendors** in {% label primary@theme config file %}:
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 vendors:
   ...
   # three
@@ -382,7 +382,7 @@ vendors:
   canvas_sphere: //cdn.jsdelivr.net/gh/theme-next/theme-next-three@1/canvas_sphere.min.js
 
   ...
-{% endcode %}
+```
 {% endnote %}
 
 <!-- endtab -->
@@ -391,7 +391,7 @@ vendors:
 
 After the plugin installed, you can enable it by setting value `three.enable` and `three.three_waves` or `three.canvas_lines` or `three.canvas_sphere` to `true` in {% label primary@theme config file %}.
 
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 # JavaScript 3D library.
 # Dependencies: https://github.com/theme-next/theme-next-three
 three:
@@ -399,7 +399,7 @@ three:
   three_waves: false
   canvas_lines: false
   canvas_sphere: false
-{% endcode %}
+```
 
 <!-- endtab -->
 {% endtabs %}
@@ -412,20 +412,20 @@ three:
 <!-- tab Installation → -->
 Change dir to NexT directory, and install module to `source/lib` directory.
 
-{% code lang:bash %}
+```bash
 $ cd themes/next
 $ git clone https://github.com/theme-next/theme-next-canvas-nest source/lib/canvas-nest
-{% endcode %}
+```
 
 {% note info %}
 If you want to use the CDN instead of clone this repo, then need to **set vendors** in {% label primary@theme config file %}:
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 vendors:
   ...
   # https://github.com/hustcc/canvas-nest.js
   canvas_nest: //cdn.jsdelivr.net/npm/canvas-nest.js@1/dist/canvas-nest.min.js
   ...
-{% endcode %}
+```
 {% endnote %}
 
 <!-- endtab -->
@@ -434,11 +434,11 @@ vendors:
 
 After the plugin installed, you can enable it by setting value `canvas_nest` to `true` in {% label primary@theme config file %}.
 
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 # Canvas-nest
 # Dependencies: https://github.com/theme-next/theme-next-canvas-nest
 canvas_nest: true
-{% endcode %}
+```
 
 <!-- endtab -->
 {% endtabs %}
@@ -451,20 +451,20 @@ canvas_nest: true
 <!-- tab Installation → -->
 Change dir to NexT directory, and install module to `source/lib` directory.
 
-{% code lang:bash %}
+```bash
 $ cd themes/next
 $ git clone https://github.com/theme-next/theme-next-canvas-ribbon source/lib/canvas-ribbon
-{% endcode %}
+```
 
 {% note info %}
 If you want to use the CDN instead of clone this repo, then need to **set vendors** in {% label primary@theme config file %}:
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 vendors:
   ...
   # https://github.com/zproo/canvas-ribbon
   canvas_ribbon: //cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-ribbon@1/canvas-ribbon.js
   ...
-{% endcode %}
+```
 {% endnote %}
 
 <!-- endtab -->
@@ -477,13 +477,13 @@ After the plugin installed, you can enable it by setting value `canvas_ribbon` t
 * alpha: The transparency of the ribbon.
 * zIndex: The display level of the ribbon.
 
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 canvas_ribbon:
   enable: true
   size: 300
   alpha: 0.6
   zIndex: -1
-{% endcode %}
+```
 
 <!-- endtab -->
 {% endtabs %}

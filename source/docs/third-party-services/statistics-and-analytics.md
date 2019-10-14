@@ -44,10 +44,10 @@ Copy the script ID after `hm.js?`, like the following picture:
 
 <!-- tab NexT Config -->
 Edit {% label primary@theme config file %} and change section `baidu_analytics` to your script ID.
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 # Baidu Analytics ID
 baidu_analytics: your_id
-{% endcode %}
+```
 <!-- endtab -->
 {% endtabs %}
 
@@ -96,13 +96,13 @@ Login to [Firebase](https://console.firebase.google.com/u/0/) to get apiKey and 
 
 <!-- tab NexT Config -->
 Edit {% label primary@theme config file %} and add or change `firestore` section:
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 firestore:
   enable: true
   collection: articles #required, a string collection name to access firestore database
   apiKey: #required
   projectId: #required
-{% endcode %}
+```
 <!-- endtab -->
 {% endtabs %}
 
@@ -117,29 +117,29 @@ When `enable: true`, global setting is enabled. If `total_visitors`, `total_view
 
 <!-- tab Site UV Settings → -->
 When `total_visitors: true`, it will show site UV in footer. You can also use font-awesome by setting `total_visitors_icon` to the name of the icon.
-{% codeblock lang:yml next/_config.yml %}
+```yml next/_config.yml
 busuanzi_count:
   total_visitors: true
   total_visitors_icon: user
-{% endcodeblock %}
+```
 <!-- endtab -->
 
 <!-- tab Site PV Settings → -->
 When `total_views: true`, it will show site UV in footer. You can also use font-awesome by setting `total_views_icon` to the name of the icon.
-{% codeblock lang:yml next/_config.yml %}
+```yml next/_config.yml
 busuanzi_count:
   total_views: true
   total_views_icon: user
-{% endcodeblock %}
+```
 <!-- endtab -->
 
 <!-- tab Per-page PV Settings -->
 When `post_views: true`, it will show page PV in post meta. You can also use font-awesome by setting `post_views_icon` to the name of the icon.
-{% codeblock lang:yml next/_config.yml %}
+```yml next/_config.yml
 busuanzi_count:
   post_views: true
   post_views_icon: user
-{% endcodeblock %}
+```
 <!-- endtab -->
 {% endtabs %}
 
@@ -157,19 +157,19 @@ Install `hexo-leancloud-counter-security` by run following command in {% label i
 
 <!-- tab Hexo Config → -->
 Edit {% label info@site config file %} and add following content:
-{% code lang:yml hexo/_config.yml %}
+```yml hexo/_config.yml
 leancloud_counter_security:
   enable_sync: true
   app_id: <<your app id>>
   app_key: <<your app key>>
   username: <<your username>> # Will be asked while deploying if is left blank
   password: <<your password>> # Recommmended to be left blank. Will be asked while deploying if is left blank
-{% endcode %}
+```
 <!-- endtab -->
 
 <!-- tab NexT Config -->
 Edit {% label primary@theme config file %} and fill options under `leancloud_visitors` section.
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 # Show number of visitors to each article.
 # You can visit https://leancloud.cn get AppID and AppKey.
 leancloud_visitors:
@@ -181,6 +181,6 @@ leancloud_visitors:
   # (without hexo-leancloud-counter-security plugin), set the `security` to `false`.
   security: true
   betterPerformance: false
-{% endcode %}
+```
 <!-- endtab -->
 {% endtabs %}

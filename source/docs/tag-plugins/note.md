@@ -150,11 +150,11 @@ Welcome to [Hexo!](https://hexo.io)
 {% note info no-icon %}
 #### No icon note
 Note **without** icon: `note info no-icon`
-{% code %}
+```
 code block in note tag
 code block in note tag
 code block in note tag
-{% endcode %}
+```
 {% endnote %}
 ```
 
@@ -170,21 +170,21 @@ note info, note info, note info
 ```md
 {% note success %}
 #### Codeblock in note
-{% code %}
+```
 code block in note tag
 code block in note tag
 code block in note tag
-{% endcode %}
+```
 {% endnote %}
 ```
 
 {% note success %}
 #### Codeblock in note
-{% code %}
+```
 code block in note tag
 code block in note tag
 code block in note tag
-{% endcode %}
+```
 {% endnote %}
 
 ```md

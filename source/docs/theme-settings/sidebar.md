@@ -18,21 +18,21 @@ Set up sidebar position by changing the value of `sidebar.position`, which can b
 * **`left`** → Place at the left of the screen.
 * `right` → Place at the right of the screen.
 
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 sidebar:
   position: left
   #position: right
-{% endcode %}
+```
 
 <!-- endtab -->
 
 <!-- tab <code>width</code> -->
 You can change sidebar width by specify `sidebar.width` setting in pixels, for example:
 
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 sidebar:
   width: 300
-{% endcode %}
+```
 
 {% note warning %}
 This option commented out by default and values are:
@@ -56,22 +56,22 @@ Set up conditions under which sidebar will show by editing `sidebar.display` val
 * `hide` → Hide it in all pages (but can be opened by user manually).
 * `remove` → Remove sidebar totally.
 
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 sidebar:
   display: post
   #display: always
   #display: hide
   #display: remove
-{% endcode %}
+```
 <!-- endtab -->
 
 <!-- tab <code>offset</code> -->
 Set up sidebar offset from top menubar in pixels by changing the value of `sidebar.offset`, which can be one of following:
 
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 sidebar:
   offset: 12
-{% endcode %}
+```
 
 {% note danger %}
 For now only Pisces / Gemini Schemes supports `offset` setting under **6.0.x** version or higher.
@@ -81,10 +81,10 @@ For now only Pisces / Gemini Schemes supports `offset` setting under **6.0.x** v
 <!-- tab <code>onmobile</code> -->
 Set the value `sidebar.onmobile` to `true` to enable sidebar on narrow view for mobile device as following:
 
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 sidebar:
   onmobile: true
-{% endcode %}
+```
 
 {% note danger %}
 For now only Muse / Mist Schemes supports `onmobile` setting under **6.0.x** version or higher.
@@ -129,28 +129,28 @@ By default NexT shows the icons of social links in sidebar.
 <!-- tab <code>enable</code> -->
 You can configure it by editing values in `social_icons.enable` section in {% label primary@theme config file %}.
 
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 social_icons:
   enable: true
-{% endcode %}
+```
 <!-- endtab -->
 
 <!-- tab <code>icons_only</code> -->
 Set the value `icons_only` to `true` to display social icons without description in `social_icons` section in {% label primary@theme config file %} as following:
 
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 social_icons:
   icons_only: true
-{% endcode %}
+```
 <!-- endtab -->
 
 <!-- tab <code>transition</code> -->
 Set the value `transition` to `true` to display social icons with transition effects in `social_icons` section in {% label primary@theme config file %} as following:
 
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 social_icons:
   transition: true
-{% endcode %}
+```
 <!-- endtab -->
 
 {% endtabs %}
@@ -163,34 +163,34 @@ You can add blog rolls within sidebar in NexT.
 <!-- tab <code>links_settings</code> -->
 By default NexT shows the `link` icon {% btn #,, link %} before `title`. The name of icon can be found in [Font Awesome](https://fontawesome.com) site. You can configure it by editing values in `links_settings` section in {% label primary@theme config file %}.
 
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 links_settings:
   icon: link
-{% endcode %}
+```
 
 By default NexT uses `Links` as the name of blogroll. You can configure it by editing values in `links_settings` section in {% label primary@theme config file %}.
 
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 links_settings:
   title: Links
-{% endcode %}
+```
 
 By default all blogrolls are displayed in block. You can configure it to `inline` by editing values in `links_settings` section in {% label primary@theme config file %}.
 
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 links_settings:
   layout: block
-{% endcode %}
+```
 <!-- endtab -->
 
 <!-- tab <code>links</code> -->
 Edit the `links` section in {% label primary@theme config file %} and add your favorite links:
 
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 links:
   Title1: http://example1.com/
   Title2: http://example2.com/
-{% endcode %}
+```
 <!-- endtab -->
 
 {% endtabs %}
@@ -201,45 +201,45 @@ links:
 <!-- tab <code>enable</code> -->
 By default NexT shows `Table Of Contents (TOC)` in the Sidebar. You can disable it by setting `toc.enable` to `false` in {% label primary@theme config file %}.
 
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 toc:
   enable: true
-{% endcode %}
+```
 <!-- endtab -->
 
 <!-- tab <code>number</code> -->
 By default NexT adds list number to TOC automatically. You can disable it by setting `toc.number` to `false` in {% label primary@theme config file %}.
 
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 toc:
   number: true
-{% endcode %}
+```
 <!-- endtab -->
 
 <!-- tab <code>wrap</code> -->
 If the post header width longer than sidebar width, you can wrap the header words in next lines by setting `toc.wrap` to `true` in {% label primary@theme config file %}.
 
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 toc:
   wrap: true
-{% endcode %}
+```
 <!-- endtab -->
 
 <!-- tab <code>expand_all</code> -->
 If you want all level of TOC in a post to be displayed, rather than the activated part of it, you can set `toc.expand_all` to `true` in {% label primary@theme config file %}.
 
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 toc:
   expand_all: true
-{% endcode %}
+```
 <!-- endtab -->
 
 <!-- tab <code>max_depth</code> -->
 By default maximum heading depth of generated toc is 6. You can set it by setting `toc.max_depth` to `another number` in {% label primary@theme config file %}.
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 toc:
   max_depth: 3
-{% endcode %}
+```
 <!-- endtab -->
 {% endtabs %}
 
@@ -247,29 +247,29 @@ toc:
 
 {% tabs b2t %}
 <!-- tab <code>enable</code> -->
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 back2top:
   enable: true
-{% endcode %}
+```
 Set the value `back2top.enable` to `true` to display `Back to top` button.
 <!-- endtab -->
 
 <!-- tab <code>enable</code> -->
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 back2top:
   # Back to top in sidebar.
   sidebar: true
-{% endcode %}
+```
 
 Set the value `back2top.sidebar` to `true` to put the button in sidebar.
 <!-- endtab -->
 
 <!-- tab <code>scrollpercent</code> -->
-{% code lang:yml next/_config.yml %}
+```yml next/_config.yml
 back2top:
   # Scroll percent label in b2t button.
   scrollpercent: true
-{% endcode %}
+```
 
 Set the value `back2top.scrollpercent` to `true` to display scroll percent label in `Back to top` button.
 <!-- endtab -->

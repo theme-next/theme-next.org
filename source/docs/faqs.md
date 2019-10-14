@@ -59,41 +59,41 @@ You can change content width by editing CSS style file. Edit `source/css/_variab
 <!-- tab Muse / Mist schemes -->
 Default variables for both Muse and Mist schemes are located in `source/css/_variables/base.styl` and defined as:
 
-{% code lang:styl next/source/css/_variables/base.styl %}
+```styl next/source/css/_variables/base.styl
 $content-desktop         = 700px
 $content-desktop-large   = 800px
 $content-desktop-largest = 900px
-{% endcode %}
+```
 
 For example, you want wider content width. You may redefine this variables with percentage width:
 
-{% code lang:styl next/source/css/_variables/custom.styl %}
+```styl next/source/css/_variables/custom.styl
 $content-desktop         = 90%
 $content-desktop-large   = 90%
 $content-desktop-largest = 90%
-{% endcode %}
+```
 
 {% note warning %}
 If values will in percents, during opening sidebar will dynamically decrease content width to defined by you percent.
 But in standard behaviour, sidebar must displace content from yourself.
 To around it, you can to specify content width in `em`:
 
-{% code lang:styl next/source/css/_variables/custom.styl %}
+```styl next/source/css/_variables/custom.styl
 $content-desktop         = 50em
 $content-desktop-large   = 55em
 $content-desktop-largest = 60em
-{% endcode %}
+```
 {% endnote %}
 <!-- endtab -->
 
 <!-- tab Pisces / Gemini schemes -->
 Default variables for Pisces (and Gemini) scheme are located in `source/css/_variables/Pisces.styl` and defined as:
 
-{% code lang:styl next/source/css/_variables/Pisces.styl %}
+```styl next/source/css/_variables/Pisces.styl
 $content-desktop         = 'calc(100% - %s)' % unit($content-desktop-padding / 2, 'px')
 $content-desktop-large   = 1160px
 $content-desktop-largest = 73%
-{% endcode %}
+```
 
 {% note warning %}
 `$content-desktop` value in this schemes is auto-responsive by default. It can be changed to any value too, but for better content visibility recommended to stay it as is.
@@ -101,10 +101,10 @@ $content-desktop-largest = 73%
 
 In this schemes content width was defined on maximum and already balanced: if desktop width will be wider – content width will more narrowed for easier reading. But if you want to make more narrow content width in wider desktops, here is example:
 
-{% code lang:styl next/source/css/_variables/custom.styl %}
+```styl next/source/css/_variables/custom.styl
 $content-desktop-large   = 65em
 $content-desktop-largest = 65%
-{% endcode %}
+```
 
 {% note info %}
 In fact, Gemini scheme is just fork of Pisces scheme with some style improvements.
