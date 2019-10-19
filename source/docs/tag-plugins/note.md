@@ -39,25 +39,28 @@ It's wrong to write this tag with 1 line if you don't want to see possible bugs.
 
 For example, here is wrong syntax to write content like that:
 
-<pre><code>{% note danger %}note text, note text, note text{% endnote %}
-</code></pre>
+```
+{% note danger %}note text, note text, note text{% endnote %}
+```
 
 Or like that:
 
-<pre><code>{% note danger %}note text
+```
+{% note danger %}note text
 note text
 note text
 {% endnote %}
-</code></pre>
+```
 
 Need to write content at new line, like this:
 
-<pre><code>{% note danger %}
+```
+{% note danger %}
 note text, note text, note text
 note text, note text, note text
 note text, note text, note text
 {% endnote %}
-</code></pre>
+```
 {% endnote %}
 
 ### Examples
@@ -146,7 +149,7 @@ Welcome to [Hexo!](https://hexo.io)
 **Welcome** to [Hexo!](https://hexo.io)
 {% endnote %}
 
-```md
+{% code lang:md %}
 {% note info no-icon %}
 #### No icon note
 Note **without** icon: `note info no-icon`
@@ -156,7 +159,7 @@ code block in note tag
 code block in note tag
 ```
 {% endnote %}
-```
+{% endcode %}
 
 {% note info no-icon %}
 #### No icon note
@@ -167,7 +170,7 @@ note info, note info, note info
 note info, note info, note info
 {% endnote %}
 
-```md
+{% code lang:md %}
 {% note success %}
 #### Codeblock in note
 ```
@@ -176,7 +179,7 @@ code block in note tag
 code block in note tag
 ```
 {% endnote %}
-```
+{% endcode %}
 
 {% note success %}
 #### Codeblock in note

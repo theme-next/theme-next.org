@@ -14,7 +14,7 @@ date: 2019-05-01 02:30:04
 ## 🐞 Bug Fixes
 
 - CSS bug in Codeblock if string longer than viewport ([#803](https://github.com/theme-next/hexo-theme-next/pull/803))
-- Option `onmoble` for sidebar wasn't worked ([#808](https://github.com/theme-next/hexo-theme-next/pull/808))
+- Option `onmoble` for sidebar does not work ([#808](https://github.com/theme-next/hexo-theme-next/pull/808))
 - Fixes with `mobile_layout_economy` option:
   - List items appeared correctly  ([#817](https://github.com/theme-next/hexo-theme-next/pull/817))
   - Wrong top padding ([#828](https://github.com/theme-next/hexo-theme-next/pull/828))

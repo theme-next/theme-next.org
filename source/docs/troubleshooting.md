@@ -43,7 +43,7 @@ scheme: Gemini
 Here will nothing happen because indentation not keeped up. Hexo just can't see these parameters because subparameters (children parameters of `theme_config` parameter) are not exists. Let's see [same configuration with indents](#2-spaces-indents-2).
 <!-- endtab -->
 
-<!-- tab {% label success@Worked Fine %}-->
+<!-- tab {% label success@Working Normally %}-->
 ```yml hexo/_config.yml
 theme_config:
 
@@ -53,7 +53,7 @@ theme_config:
   scheme: Gemini
 ```
 
-And here Hexo can read these parameters as `theme_config.scheme: Gemini` in same way, as NexT can read `scheme: Gemini` parameter. So, with 2 spaces indents from parent option(s) Hexo must loaded any NexT parameters and worked fine.
+And here Hexo can read these parameters as `theme_config.scheme: Gemini` in same way, as NexT can read `scheme: Gemini` parameter. So, with 2 spaces indents from parent option(s) Hexo will load all NexT parameters and work fine.
 <!-- endtab -->
 {% endsubtabs %}
 
