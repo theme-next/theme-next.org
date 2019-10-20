@@ -149,18 +149,7 @@ Welcome to [Hexo!](https://hexo.io)
 **Welcome** to [Hexo!](https://hexo.io)
 {% endnote %}
 
-{% code lang:md %}
-{% note info no-icon %}
-#### No icon note
-Note **without** icon: `note info no-icon`
-```
-code block in note tag
-code block in note tag
-code block in note tag
-```
-{% endnote %}
-{% endcode %}
-
+```md
 {% note info no-icon %}
 #### No icon note
 Note **without** icon: `note info no-icon`
@@ -169,25 +158,15 @@ note info, note info, note info
 note info, note info, note info
 note info, note info, note info
 {% endnote %}
+```
 
-{% code lang:md %}
-{% note success %}
-#### Codeblock in note
-```
-code block in note tag
-code block in note tag
-code block in note tag
-```
-{% endnote %}
-{% endcode %}
+{% note info no-icon %}
+#### No icon note
+Note **without** icon: `note info no-icon`
 
-{% note success %}
-#### Codeblock in note
-```
-code block in note tag
-code block in note tag
-code block in note tag
-```
+note info, note info, note info
+note info, note info, note info
+note info, note info, note info
 {% endnote %}
 
 ```md
