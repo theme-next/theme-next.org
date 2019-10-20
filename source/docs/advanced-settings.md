@@ -19,12 +19,12 @@ anime: //cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js
 
 You can set it to a proper CDN URL, which can make static assets (JavaScript Third-party Library) load faster. Now NexT contains following third-party library:
 
-| Name               | Original Link                                                                | NexT Internal Version |
-| ------------------ | ---------------------------------------------------------------------------- | --------------------- |
-| Anime.js           | [animejs.com](https://animejs.com)                                           | 3.1.0                 |
-| FontAwesome        | [fontawesome.io](http://fontawesome.io)                                      | 4.7.0                 |
-| VelocityJS         | [velocityjs.org](http://velocityjs.org)                                      | 1.2.1                 |
-| VelocityJS UI Pack | [velocityjs.org/#uiPack](http://velocityjs.org/#uiPack)                      | 1.2.1                 |
+| Name               | Original Link                                            | Internal Version      |
+| ------------------ | -------------------------------------------------------- | --------------------- |
+| Anime.js           | [animejs.com](https://animejs.com)                       | 3.1.0                 |
+| FontAwesome        | [fontawesome.io](http://fontawesome.io)                  | 4.7.0                 |
+| VelocityJS         | [velocityjs.org](http://velocityjs.org)                  | 1.2.1                 |
+| VelocityJS UI Pack | [velocityjs.org/#uiPack](http://velocityjs.org/#uiPack)  | 1.2.1                 |
 
 NexT use the [jsDelivr](https://www.jsdelivr.com/) as the default CDN service provider. The reason that jsDelivr is chosen is because it is fast everywhere, and jsDelivr has the valid ICP license issued by the Chinese government, it can be accessed in China pretty well.
 

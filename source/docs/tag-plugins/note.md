@@ -170,6 +170,26 @@ note info, note info, note info
 {% endnote %}
 
 ```md
+{% note success %}
+#### Codeblock in note
+{% code %}
+code block in note tag
+code block in note tag
+code block in note tag
+{% endcode %}
+{% endnote %}
+```
+
+{% note success %}
+#### Codeblock in note
+{% code %}
+code block in note tag
+code block in note tag
+code block in note tag
+{% endcode %}
+{% endnote %}
+
+```md
 {% note default %}
 #### Lists in note
 * ul
