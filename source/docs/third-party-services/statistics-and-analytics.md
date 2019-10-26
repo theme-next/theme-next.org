@@ -21,15 +21,6 @@ description: NexT User Docs – Third-party Service Integration – Statistics a
 4. When field `only_pageview` is set to true, NexT will only send `pageview` event to Google Analytics.
 The benefit of using this instead of `only_pageview: false` is reduce a external script on your site, which will give you better performance but no complete analytics function.
 
-#### Azure Application Insights
-
-1. Create an account and log into [Application Insights](https://portal.azure.com/). [More detailed documentation](https://docs.microsoft.com/en-us/azure/application-insights/app-insights-create-new-resource)
-2. Edit {% label primary@theme config file %} and change section `application_insights` to your instrumentation key.
-    ```yml next/_config.yml
-    # Application Insights
-    application_insights:
-    ```
-
 #### Baidu Analytics (China)
 
 {% tabs baidu-analytics %}

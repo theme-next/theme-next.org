@@ -134,18 +134,6 @@ If you want to hide sticky headers and color the menu bar on Safari (iOS / macOS
 safari_rainbow: true
 ```
 
-### Custom Scrollbar Support
-
-NexT supports the scrollbar personalization.
-
-```yml next/_config.yml
-custom_scrollbar: true
-```
-
-{% note danger %}
-Only works on webkit based browsers.
-{% endnote %}
-
 ### Custom Logo Support
 
 NexT supports the site logo personalization.

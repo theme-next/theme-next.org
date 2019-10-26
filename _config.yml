@@ -176,30 +176,30 @@ theme_config:
       Theme Settings:
         default: /theme-settings/ || star
         Footer: /footer.html || sun-o
-        SEO: /seo.html || external-link-square
-        Custom Pages: /custom-pages.html || file-o
-        Posts: /posts.html || pencil-square-o
         Sidebar: /sidebar.html || bars
+        Posts: /posts.html || pencil-square-o
+        Custom Pages: /custom-pages.html || file-o
+        SEO: /seo.html || external-link-square
 
       Third Party Services:
         default: /third-party-services/ || plug
+        Math Equations: /math-equations.html || superscript
         Comment Systems: /comments.html || comments-o
         Statistics and Analytics: /statistics-and-analytics.html || bar-chart
         Post Widgets: /post-widgets.html || share-square
         Search Services: /search-services.html || search-plus
-        External Libraries: /external-libraries.html || puzzle-piece
-        Math Equations: /math-equations.html || superscript
         Chat Services: /chat-services.html || comment
+        External Libraries: /external-libraries.html || puzzle-piece
 
       Tag Plugins:
         default: /tag-plugins/ || rocket
-        PDF: /pdf.html || file-pdf-o
-        Tabs: /tabs.html || columns
         Note: /note.html || comment
+        Tabs: /tabs.html || columns
+        PDF: /pdf.html || file-pdf-o
+        Mermaid: /mermaid.html || tasks
         Label: /label.html || font
         Video: /video.html || video-camera
         Button: /button.html || square
-        Mermaid: /mermaid.html || tasks
         Caniuse: /caniuse.html || signal
         Group Pictures: /group-pictures.html || file-image-o
 
@@ -302,7 +302,6 @@ theme_config:
   # ============================================================= #
 
   math:
-    enable: true
     per_page: true
     mathjax:
       enable: true

@@ -13,8 +13,6 @@ If you choose to use this feature, you don't need to manually import any JS or C
 ```yml next/_config.yml
 # Math Formulas Render Support
 math:
-  enable: true
-
   # Default (true) will load mathjax / katex script on demand.
   # That is it only render those page which has `mathjax: true` in Front-matter.
   # If you set it to false, it will load mathjax / katex srcipt EVERY PAGE.
@@ -116,11 +114,10 @@ If you use MathJax to render Math Equations, you can choose one of renderers bel
    $ npm i hexo-renderer-kramed # or hexo-renderer-pandoc
    ```
 
-2. In {% label primary@theme config file %}, turn on `enable` option of `math` and choose `mathjax` as render engine.
+2. In {% label primary@theme config file %}, choose `mathjax` as render engine.
 
    ```yml
    math:
-     enable: true
      ...
      mathjax:
        enable: true
@@ -187,11 +184,10 @@ markdown:
    $ npm i hexo-renderer-markdown-it-plus # or hexo-renderer-markdown-it
    ```
 
-2. In {% label primary@theme config file %}, turn on `enable` option of `math` and choose `katex` as render engine.
+2. In {% label primary@theme config file %}, choose `katex` as render engine.
 
    ```yml
    math:
-     enable: true
      ...
      katex:
        enable: true

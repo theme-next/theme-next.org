@@ -26,7 +26,6 @@ If you want to disable comment in some page/post, just add `comments: false` to 
 ### Statistics and Analytics
 
 * [Google Analytics](/docs/third-party-services/statistics-and-analytics#Google-Analytics)
-* [Azure Application Insights](/docs/third-party-services/statistics-and-analytics#Azure-Application-Insights)
 * [Baidu Analytics (China)](/docs/third-party-services/statistics-and-analytics#Baidu-Analytics-China)
 * [Tencent Analytics (China)](/docs/third-party-services/statistics-and-analytics#Tencent-Analytics-China)
 * [CNZZ Analytics (China)](/docs/third-party-services/statistics-and-analytics#CNZZ-Analytics-China)
@@ -37,8 +36,6 @@ If you want to disable comment in some page/post, just add `comments: false` to 
 
 ### Post Widgets
 
-* [Facebook Comments](/docs/third-party-services/post-widgets#Facebook-Comments)
-* [VKontakte Comments and Likes](/docs/third-party-services/post-widgets#VKontakte-Comments-and-Likes)
 * [Widgetpack Rating](/docs/third-party-services/post-widgets#Widgetpack-Rating)
 * [AddThis](/docs/third-party-services/post-widgets#AddThis)
 

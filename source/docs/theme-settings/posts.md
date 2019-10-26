@@ -227,20 +227,6 @@ If you prefer icon instead of symbol, edit {% label primary@theme config file %}
   tag_icon: true
   ```
 
-#### WeChat Subscribing
-
-Show your WeChat public account QRcode after each article, subscribing blog by simply scanning.
-
-1. Download your QRcode from WeChat Public Platform, and save it under `source/uploads/` {% label info@site directory %}.
-2. Edit {% label primary@theme config file %} like following:
-
-  ```yml next/_config.yml
-  wechat_subscriber:
-    enable: true
-    qcode: /uploads/wechat-qcode.jpg
-    description: Welcome to scan the WeChat Public Account QRcode and subscribe my blog!
-  ```
-
 #### Reward (Donate)
 
 More and more platform (WeChat public accounts, Weibo, Jianshu, Baidu Reward) supports reward (donate). To catch paid reading trends, we added reward feature, supports WeChat Pay, Alipay and Bitcoin. What you need is:
