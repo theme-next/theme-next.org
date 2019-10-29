@@ -5,14 +5,6 @@ description: NexT User Docs – Theme Settings – Posts
 
 ### Post Settings
 
-#### Page Scroll
-
-By default NexT scrolls page automatically to section which is under <!-- more --> mark. You can disable it by setting value `scroll_to_more` to `false` in {% label primary@theme config file %}.
-
-```yml next/_config.yml
-scroll_to_more: true
-```
-
 #### Preamble Text
 
 It's a common need to show some part of article in home page and then give a link to full article. NexT gives 3 ways to control how article is shown in home page. In other words, you can use following ways to show summary of articles and a **Read More** button.

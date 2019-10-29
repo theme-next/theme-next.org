@@ -27,12 +27,12 @@ If you want to disable comment in some page/post, just add `comments: false` to 
 
 * [Google Analytics](/docs/third-party-services/statistics-and-analytics#Google-Analytics)
 * [Baidu Analytics (China)](/docs/third-party-services/statistics-and-analytics#Baidu-Analytics-China)
-* [Tencent Analytics (China)](/docs/third-party-services/statistics-and-analytics#Tencent-Analytics-China)
 * [CNZZ Analytics (China)](/docs/third-party-services/statistics-and-analytics#CNZZ-Analytics-China)
+* [Tencent Analytics (China)](/docs/third-party-services/statistics-and-analytics#Tencent-Analytics-China)
 * [Tencent Mobile Analytics (China)](/docs/third-party-services/statistics-and-analytics#Tencent-Mobile-Analytics-China)
 * [LeanCloud (China)](/docs/third-party-services/statistics-and-analytics#LeanCloud-China)
-* [Busuanzi Counting](/docs/third-party-services/statistics-and-analytics#Busuanzi-Counting-China)
 * [Firebase](/docs/third-party-services/statistics-and-analytics#Firebase)
+* [Busuanzi Counting](/docs/third-party-services/statistics-and-analytics#Busuanzi-Counting-China)
 
 ### Post Widgets
 

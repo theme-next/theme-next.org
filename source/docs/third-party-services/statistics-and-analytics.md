@@ -42,6 +42,19 @@ baidu_analytics: your_id
 <!-- endtab -->
 {% endtabs %}
 
+#### CNZZ Analytics (China)
+
+1. Create an account and log into [CNZZ Analytics](http://www.umeng.com/). [More detailed documentation](https://developer.umeng.com/docs/67963/detail/68609)
+2. Set the value of section `cnzz_siteid` in {% label primary@theme config file %} to your CNZZ site ID. You can find this ID in link or the auto-generated script.
+    ```yml next/_config.yml
+    # CNZZ count
+    #cnzz_siteid:
+    ```
+
+{% note info %}
+The script will show «Webmaster Statistics» and it's ugly, so we used a `display: none;` to hide it.
+{% endnote %}
+
 #### Tencent Analytics (China)
 
 1. Please login to [Tencent Analytics](http://ta.qq.com) and get your ID.
@@ -61,20 +74,49 @@ baidu_analytics: your_id
     tencent_mta: your-tencent-mta-id
     ```
 
-#### CNZZ Analytics (China)
-
-1. Create an account and log into [CNZZ Analytics](http://www.umeng.com/). [More detailed documentation](https://developer.umeng.com/docs/67963/detail/68609)
-2. Set the value of section `cnzz_siteid` in {% label primary@theme config file %} to your CNZZ site ID. You can find this ID in link or the auto-generated script.
-    ```yml next/_config.yml
-    # CNZZ count
-    #cnzz_siteid:
-    ```
-
-{% note info %}
-The script will show «Webmaster Statistics» and it's ugly, so we used a `display: none;` to hide it.
-{% endnote %}
-
 ### Counting Tools
+
+#### LeanCloud (China)
+
+Adding article reading times counting to NexT theme. Documentation how to set the counter up and running safely aviable in [hexo-leancloud-counter-security](https://github.com/theme-next/hexo-leancloud-counter-security).
+
+{% tabs leanCloud-counter %}
+<!-- tab Installation → -->
+Install `hexo-leancloud-counter-security` by run following command in {% label info@site root dir %}:
+
+    $ npm install hexo-leancloud-counter-security
+
+<!-- endtab -->
+
+<!-- tab Hexo Config → -->
+Edit {% label info@site config file %} and add following content:
+```yml hexo/_config.yml
+leancloud_counter_security:
+  enable_sync: true
+  app_id: <<your app id>>
+  app_key: <<your app key>>
+  username: <<your username>> # Will be asked while deploying if is left blank
+  password: <<your password>> # Recommmended to be left blank. Will be asked while deploying if is left blank
+```
+<!-- endtab -->
+
+<!-- tab NexT Config -->
+Edit {% label primary@theme config file %} and fill options under `leancloud_visitors` section.
+```yml next/_config.yml
+# Show number of visitors to each article.
+# You can visit https://leancloud.cn get AppID and AppKey.
+leancloud_visitors:
+  enable: true
+  app_id: #<app_id>
+  app_key: #<app_key>
+  # Dependencies: https://github.com/theme-next/hexo-leancloud-counter-security
+  # If you don't care about security in lc counter and just want to use it directly
+  # (without hexo-leancloud-counter-security plugin), set the `security` to `false`.
+  security: true
+  betterPerformance: false
+```
+<!-- endtab -->
+{% endtabs %}
 
 #### Firebase
 
@@ -130,48 +172,6 @@ When `post_views: true`, it will show page PV in post meta. You can also use fon
 busuanzi_count:
   post_views: true
   post_views_icon: user
-```
-<!-- endtab -->
-{% endtabs %}
-
-#### LeanCloud (China)
-
-Adding article reading times counting to NexT theme. Documentation how to set the counter up and running safely aviable in [hexo-leancloud-counter-security](https://github.com/theme-next/hexo-leancloud-counter-security).
-
-{% tabs leanCloud-counter %}
-<!-- tab Installation → -->
-Install `hexo-leancloud-counter-security` by run following command in {% label info@site root dir %}:
-
-    $ npm install hexo-leancloud-counter-security
-
-<!-- endtab -->
-
-<!-- tab Hexo Config → -->
-Edit {% label info@site config file %} and add following content:
-```yml hexo/_config.yml
-leancloud_counter_security:
-  enable_sync: true
-  app_id: <<your app id>>
-  app_key: <<your app key>>
-  username: <<your username>> # Will be asked while deploying if is left blank
-  password: <<your password>> # Recommmended to be left blank. Will be asked while deploying if is left blank
-```
-<!-- endtab -->
-
-<!-- tab NexT Config -->
-Edit {% label primary@theme config file %} and fill options under `leancloud_visitors` section.
-```yml next/_config.yml
-# Show number of visitors to each article.
-# You can visit https://leancloud.cn get AppID and AppKey.
-leancloud_visitors:
-  enable: true
-  app_id: #<app_id>
-  app_key: #<app_key>
-  # Dependencies: https://github.com/theme-next/hexo-leancloud-counter-security
-  # If you don't care about security in lc counter and just want to use it directly
-  # (without hexo-leancloud-counter-security plugin), set the `security` to `false`.
-  security: true
-  betterPerformance: false
 ```
 <!-- endtab -->
 {% endtabs %}
