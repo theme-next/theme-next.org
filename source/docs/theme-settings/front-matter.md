@@ -25,11 +25,14 @@ Next extends and provide more variables. It allows users to configure a single p
 
 # Settings & Their Default Values
 
-Setting | Description | Default
---- | --- | ---
-`toc` | Table of Contents in the Sidebar | From theme `_config.yml`
-`reward_settings` | Reward settings | From theme `_config.yml`
-`quicklink` | Quicklink Support | From theme `_config.yml`
+Setting | Type | Description | Default
+--- | --- | --- | ---
+`mathjax` | `boolean` | MathJax support | `!math.per_page` in `_config.yml`
+`toc` | `object` (1) | Table of Contents in the Sidebar | From `_config.yml`
+`reward_settings` | `object` (1) | Reward settings | From `_config.yml`
+`quicklink` | `object` (1) | Quicklink Support | From `_config.yml`
+
+(1): they have same structure with the configuration file.
 
 **Example**
 
