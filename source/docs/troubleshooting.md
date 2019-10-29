@@ -76,7 +76,7 @@ In this case you can't add code syntax highlighting.
 <!-- endtab -->
 
 <!-- tab Bugfix for Backtick -->
-Here is the [PR with bugfix for use backtick code block inside tags](https://github.com/hexojs/hexo/pull/2321) (Submitted in 2016, merged three years later).
+Here is the [PR with bugfix for backtick code block inside tags](https://github.com/hexojs/hexo/pull/2321) (Submitted in 2016, merged three years later).
 So, upgrade to Hexo 4.0 or higher, if you need to use backtick code block inside tags.
 
 {% note danger %}
@@ -123,3 +123,4 @@ If you are using `hexo-renderer-markdown-it`, it's recommended to install `markd
 npm install markdown-it-named-headings
 ```
 See: https://github.com/theme-next/hexo-theme-next/issues/1168
+Here is the [PR with bugfix for default config](https://github.com/hexojs/hexo-renderer-markdown-it/pull/90) of `hexo-renderer-markdown-it` plugin.

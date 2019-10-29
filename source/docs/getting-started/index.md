@@ -229,7 +229,6 @@ Value before `||` delimeter (`/link/`) → is the target link to relative url in
 
 <!-- tab <code>icon</code> -->
 Value after `||` delimeter (`icon`) → is the name of FontAwesome icon.
-If icon (with or without delimeter) is not specified, question icon will be loaded.
 Names of that icons can be found in [Font Awesome](https://fontawesome.com) site.
 <!-- endtab -->
 {% endtabs %}
