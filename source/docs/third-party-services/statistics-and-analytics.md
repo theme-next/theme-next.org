@@ -42,6 +42,10 @@ baidu_analytics: your_id
 <!-- endtab -->
 {% endtabs %}
 
+#### Growingio Analytics
+
+Official documentation: https://docs.growingio.com/sdk-integration/sdk-2.x-docs/
+
 #### CNZZ Analytics (China)
 
 1. Create an account and log into [CNZZ Analytics](http://www.umeng.com/). [More detailed documentation](https://developer.umeng.com/docs/67963/detail/68609)
