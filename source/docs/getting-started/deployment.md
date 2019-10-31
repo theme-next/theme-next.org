@@ -68,7 +68,7 @@ Deploy key is a SSH key set in your repo to grant client read-only (as well as r
 <!-- endtab -->
 <!-- tab Configure <code>.travis.yml</code> -->
 
-```yml hexo/.travis.yml 
+```yml hexo/.travis.yml
 dist: trusty
 sudo: required
 

@@ -1,6 +1,6 @@
 ---
 title: NexT 6.1.0 Released
-date: 2018-04-01 04:59:41 
+date: 2018-04-01 04:59:41
 ---
 
 ## Breaking Changes
@@ -26,7 +26,7 @@ footer:
   # If not defined, current year will be used.
   # since: 2015
    # Icon between year and copyright info.
-+  icon: 
++  icon:
 +    # Icon name in fontawesome, see: https://fontawesome.com/v4.7.0/icons
 +    # `heart` is recommended with animation in red (#ff0000).
 +    name: user
@@ -45,7 +45,7 @@ footer:
   +# Manual define the border radius in codeblock, using a space indent.
   +# Leave it empty for the default 1
   +codeblock:
-  +  border_radius: 
+  +  border_radius:
   +
   ```
 - Added `backlog` label to exclude labels. (2a841a9904962cd4d1d55689c4b0a0449cb18b3a)

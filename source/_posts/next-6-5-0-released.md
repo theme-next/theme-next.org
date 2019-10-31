@@ -1,6 +1,6 @@
 ---
 title: NexT 6.5.0 Released
-date: 2018-11-01 02:25:05 
+date: 2018-11-01 02:25:05
 ---
 
 ## Breaking Changes
@@ -10,7 +10,7 @@ date: 2018-11-01 02:25:05
 #### Old configuration:
 
 ```diff
--canvas_nest: false 
+-canvas_nest: false
 ```
 #### New configuration:
 

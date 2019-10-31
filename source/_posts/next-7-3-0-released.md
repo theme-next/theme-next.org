@@ -77,7 +77,7 @@ codeblock:
 +  highlight_theme: normal
 ```
 
-#### Refactor option and parameters for page loading progress bar 
+#### Refactor option and parameters for page loading progress bar
 
 ```diff
 -pace: false

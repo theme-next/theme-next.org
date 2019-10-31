@@ -1,6 +1,6 @@
 ---
 title: NexT 6.6.0 Released
-date: 2018-12-01 10:01:55 
+date: 2018-12-01 10:01:55
 ---
 
 ## Breaking Changes

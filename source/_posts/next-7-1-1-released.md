@@ -1,6 +1,6 @@
 ---
 title: NexT 7.1.1 Released
-date: 2019-05-01 02:30:04 
+date: 2019-05-01 02:30:04
 ---
 
 > Happy International Workers' Day! \\(^_^)/

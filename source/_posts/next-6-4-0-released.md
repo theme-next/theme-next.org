@@ -1,6 +1,6 @@
 ---
 title: NexT 6.4.0 Released
-date: 2018-08-01 15:52:48 
+date: 2018-08-01 15:52:48
 ---
 
 ## Breaking Changes
@@ -12,26 +12,26 @@ date: 2018-08-01 15:52:48
 #### Old configuration:
 
 ```diff
--# Manual define the max content width 
--# !!Only available for Gemini Scheme currently 
--# Leave it empty for the default 75% (suggest not less than 1000px) 
--#max_content_width: 1000px 
- 
--# Manual define the sidebar width 
--# !!Only available for Gemini Scheme currently 
--# Leave it empty for the default 240 
--sidebar_width: 
+-# Manual define the max content width
+-# !!Only available for Gemini Scheme currently
+-# Leave it empty for the default 75% (suggest not less than 1000px)
+-#max_content_width: 1000px
+
+-# Manual define the sidebar width
+-# !!Only available for Gemini Scheme currently
+-# Leave it empty for the default 240
+-sidebar_width:
 ```
 
 #### New configuration:
 
 ```yml
 sidebar:
-  # Manual define the sidebar width. 
-  # If commented, will be default for: 
-  # Muse | Mist: 320 
-  # Pisces | Gemini: 240 
-  width: 300 
+  # Manual define the sidebar width.
+  # If commented, will be default for:
+  # Muse | Mist: 320
+  # Pisces | Gemini: 240
+  width: 300
 ```
 
 ## Features

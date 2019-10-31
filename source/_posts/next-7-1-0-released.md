@@ -1,6 +1,6 @@
 ---
 title: NexT 7.1.0 Released
-date: 2019-04-01 11:19:46 
+date: 2019-04-01 11:19:46
 ---
 
 > Happy April Fools' Day Guys \\(^_^)/
@@ -15,7 +15,7 @@ date: 2019-04-01 11:19:46
 
 ```diff
 quicklink:
-  enable: true 
+  enable: true
 - per_page: true
 + home: true # enable or disable quicklink on home page
 + archive: true # enable or disable quicklink on archive page

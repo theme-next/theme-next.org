@@ -1,6 +1,6 @@
 ---
 title: NexT 7.0.0 Released
-date: 2019-02-01 14:25:34 
+date: 2019-02-01 14:25:34
 ---
 
 ## Optimizations

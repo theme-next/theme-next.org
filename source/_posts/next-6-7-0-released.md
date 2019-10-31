@@ -1,6 +1,6 @@
 ---
 title: NexT 6.7.0 Released
-date: 2019-01-01 07:59:33 
+date: 2019-01-01 07:59:33
 ---
 
 > \\(^_^)/ Happy New Year!

@@ -1,6 +1,6 @@
 ---
 title: NexT 6.4.2 Released
-date: 2018-09-30 18:59:42 
+date: 2018-09-30 18:59:42
 ---
 
 ## Improvements

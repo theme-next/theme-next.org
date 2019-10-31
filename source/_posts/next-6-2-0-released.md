@@ -1,6 +1,6 @@
 ---
 title: NexT 6.2.0 Released
-date: 2018-04-16 14:06:52 
+date: 2018-04-16 14:06:52
 ---
 
 ## Breaking Changes
@@ -10,8 +10,8 @@ date: 2018-04-16 14:06:52
 It's not actually breaking changes, just after this version **highly recommend** to use NexT with at least **Hexo v3.5.0 or higher** for avoid all possible bugs.
 
 **[Hexo v3.5.0 also](https://github.com/hexojs/hexo/releases/tag/3.5.0)** provides:
- 
-* Replaced `swig` by `swig-templates` to mitigate `uglifyjs` 2.4 security vulnerability: hexojs/hexo[#294](https://github.com/theme-next/hexo-theme-next/pull/294)9
+
+* Replaced `swig` by `swig-templates` to mitigate `uglifyjs` 2.4 security vulnerability: [hexojs/hexo#2949](https://github.com/hexojs/hexo/pull/2949)
 * Additional templates support which will be used in next NexT releases.
 
 **P.S.** You can still use old Hexo versions, but NexT will not guarantee in future releases for correct rendering.

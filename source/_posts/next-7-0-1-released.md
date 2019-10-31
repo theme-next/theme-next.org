@@ -1,6 +1,6 @@
 ---
 title: NexT 7.0.1 Released
-date: 2019-03-01 05:27:11 
+date: 2019-03-01 05:27:11
 ---
 
 ## Features
