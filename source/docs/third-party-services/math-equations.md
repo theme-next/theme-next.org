@@ -6,7 +6,11 @@ mathjax: true
 
 NexT provides two render engines for displaying Math Equations.
 
-If you choose to use this feature, you don't need to manually import any JS or CSS. You just need to turn on `enable` of `math` and define a render engine in {% label primary@theme config file %} for it.
+If you choose to use this feature, you don't need to manually import any JS or CSS. You just need to choose a render engine and turn on `enable` for it (located in {% label primary@theme config file %}).
+
+{% note warning %}
+Only turning on `enable` **cannot let you see the displayed equations correctly**, you need to install the **corresponding Hexo Renderer** to fully support the display of Math Equations. The corresponding Hexo Renderer per engine will be [provided below](#Render-Engines).
+{% endnote %}
 
 ### Settings
 
@@ -31,23 +35,7 @@ math:
     copy_tex: false
 ```
 
-{% note danger %}
-Don't forget to keep up [double spaces indents](/docs/troubleshooting/#Keep-up-indentation)!
-{% endnote %}
-
 {% tabs mathjax-settings %}
-<!-- tab <code>enable</code> -->
-
-* `true` → turn on Math Equations render.
-* **`false`** → totally disable Math Equations render.
-
-{% note warning %}
-Only turning on `enable` of `math` cannot let you see the displayed equations correctly.
-You need to install the corresponding Hexo Renderer to fully support the display of Math Equations.
-The corresponding renderers per engine will be [provided below](#Render-Engines).
-{% endnote %}
-<!-- endtab -->
-
 <!-- tab <code>per_page</code> -->
 This option is to control whether to render Math Equations every page.
 
