@@ -66,12 +66,6 @@ echo "=============================================================="
 
 echo
 echo "=============================================================="
-echo " ${yellow}Checking Hexo version...${norm}"
-echo "=============================================================="
-    hexo -v
-
-echo
-echo "=============================================================="
 echo " ${lred}Removing unneeded Hexo files...${norm}"
 echo "=============================================================="
     rm -vf _config.yml
@@ -94,6 +88,13 @@ echo "=============================================================="
     npm i hexo-symbols-count-time --silent
     npm i hexo-generator-searchdb --silent
     npm i hexo-generator-feed --silent
+
+echo
+echo "=============================================================="
+echo " ${yellow}Checking Hexo version...${norm}"
+echo "=============================================================="
+    hexo -v
+    cat package.json
 
 echo
 echo "=============================================================="
@@ -122,7 +123,7 @@ echo "=============================================================="
     hexo config theme_config.back2top.sidebar false
     echo "${yellow}Setted back2top in sidebar:${norm} ${lcyan}`hexo config theme_config.back2top.sidebar`${norm}"
 
-    hexo clean && hexo g
+    hexo clean && hexo g --silent
     echo "${lred}`mv -v public schemes/muse`${norm}"
 
 echo
@@ -144,7 +145,7 @@ echo "=============================================================="
     hexo config theme_config.back2top.sidebar false
     echo "${yellow}Setted back2top in sidebar:${norm} ${lcyan}`hexo config theme_config.back2top.sidebar`${norm}"
 
-    hexo clean && hexo g
+    hexo clean && hexo g --silent
     echo "${lred}`mv -v public schemes/mist`${norm}"
 
 echo
@@ -166,7 +167,7 @@ echo "=============================================================="
     hexo config theme_config.back2top.sidebar true
     echo "${yellow}Setted back2top in sidebar:${norm} ${lcyan}`hexo config theme_config.back2top.sidebar`${norm}"
 
-    hexo clean && hexo g
+    hexo clean && hexo g --silent
     echo "${lred}`mv -v public schemes/pisces`${norm}"
 
 echo
@@ -188,7 +189,7 @@ echo "=============================================================="
     hexo config theme_config.back2top.sidebar true
     echo "${yellow}Setted back2top in sidebar:${norm} ${lcyan}`hexo config theme_config.back2top.sidebar`${norm}"
 
-    hexo clean && hexo g
+    hexo clean && hexo g --silent
 
     echo "${yellow}robots.txt:${norm}"
     echo "User-agent: *
