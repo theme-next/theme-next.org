@@ -180,6 +180,7 @@ theme_config:
         Posts: /posts.html || pencil-square-o
         Custom Pages: /custom-pages.html || file-o
         SEO: /seo.html || external-link-square
+        Front Matter: /front-matter.html || header
 
       Third Party Services:
         default: /third-party-services/ || plug
