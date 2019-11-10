@@ -6,7 +6,6 @@ description: NexT User Docs – NexT Supported Tags
 Tag Plugin is a way to make special style contents supported by Hexo. For example, we cannot show a image with custom size in standard Markdown. And then we can use tag plugins to solve it. [Hexo has a lot of tags](https://hexo.io/docs/tag-plugins) which can help user. And Hexo also have interfaces to themes which make themes able to create their own tags. Following tags is provided by NexT:
 
 * [Centered Quote](#Centered-Quote)
-* [Include Raw](#Include-Raw)
 * [Note](/docs/tag-plugins/note)
 * [Tabs](/docs/tag-plugins/tabs)
 * [PDF](/docs/tag-plugins/pdf)
@@ -36,29 +35,3 @@ This tag will make a quote with two lines before and after it, and text quoted w
 ```
 
 {% cq %}Elegant in code, simple in core{% endcq %}
-
-### Include Raw
-
-This tag include any raw content into your posts. Path is relative to your site source directory.
-
-#### Usage
-
-```html include-raw.js
-{% include_raw '_data/path/to/file.html' %}
-```
-
-#### Example
-
-Let's create `include-raw.html` file in `_data` directory under {% label info@site root directory %} with following content:
-
-```html
-Any <strong>raw content</strong> may be included with this tag.
-```
-
-Then in any post we can use this content with `include_raw` tag:
-
-```md
-{% include_raw '_data/path/to/include-raw.html' %}
-```
-
-{% include_raw '_data/include-raw.html' %}
