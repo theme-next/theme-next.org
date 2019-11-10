@@ -122,7 +122,7 @@ echo "=============================================================="
     hexo config theme_config.back2top.sidebar false
     echo "${yellow}Setted back2top in sidebar:${norm} ${lcyan}`hexo config theme_config.back2top.sidebar`${norm}"
 
-    hexo clean && hexo g --silent
+    hexo clean && hexo g
     echo "${lred}`mv -v public schemes/muse`${norm}"
 
 echo
@@ -144,7 +144,7 @@ echo "=============================================================="
     hexo config theme_config.back2top.sidebar false
     echo "${yellow}Setted back2top in sidebar:${norm} ${lcyan}`hexo config theme_config.back2top.sidebar`${norm}"
 
-    hexo clean && hexo g --silent
+    hexo clean && hexo g
     echo "${lred}`mv -v public schemes/mist`${norm}"
 
 echo
@@ -166,7 +166,7 @@ echo "=============================================================="
     hexo config theme_config.back2top.sidebar true
     echo "${yellow}Setted back2top in sidebar:${norm} ${lcyan}`hexo config theme_config.back2top.sidebar`${norm}"
 
-    hexo clean && hexo g --silent
+    hexo clean && hexo g
     echo "${lred}`mv -v public schemes/pisces`${norm}"
 
 echo
@@ -188,7 +188,7 @@ echo "=============================================================="
     hexo config theme_config.back2top.sidebar true
     echo "${yellow}Setted back2top in sidebar:${norm} ${lcyan}`hexo config theme_config.back2top.sidebar`${norm}"
 
-    hexo clean && hexo g --silent
+    hexo clean && hexo g
 
     echo "${yellow}robots.txt:${norm}"
     echo "User-agent: *
