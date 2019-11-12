@@ -155,5 +155,4 @@ sidebar:
 
 For full changes, see the [comparison between 7.0.1 and 7.1.0](https://github.com/theme-next/hexo-theme-next/compare/v7.0.1...v7.1.0)
 
-
 [Detailed changes for NexT v7.1.0](https://github.com/theme-next/hexo-theme-next/releases/tag/v7.1.0)

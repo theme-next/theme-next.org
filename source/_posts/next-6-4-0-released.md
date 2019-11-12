@@ -60,5 +60,4 @@ sidebar:
 
 For full changes, see the [comparison between 6.3.0 and 6.4.0](https://github.com/theme-next/hexo-theme-next/compare/v6.3.0...v6.4.0)
 
-
 [Detailed changes for NexT v6.4.0](https://github.com/theme-next/hexo-theme-next/releases/tag/v6.4.0)

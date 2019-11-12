@@ -29,5 +29,4 @@ date: 2019-03-01 05:27:11
 
 For full changes, see the [comparison between 7.0.0 and 7.0.1](https://github.com/theme-next/hexo-theme-next/compare/v7.0.0...v7.0.1)
 
-
 [Detailed changes for NexT v7.0.1](https://github.com/theme-next/hexo-theme-next/releases/tag/v7.0.1)

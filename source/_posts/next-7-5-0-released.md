@@ -16,11 +16,11 @@ date: 2019-11-01 11:23:23
 - New canonical tag helper ([#1143](https://github.com/theme-next/hexo-theme-next/pull/1143))
 - Code style update ([#732](https://github.com/theme-next/hexo-theme-next/pull/732))
 
-## :beetle: Bug Fixes
+## 🐞 Bug Fixes
 
 - Fix known issues ([#1213](https://github.com/theme-next/hexo-theme-next/pull/1213))
 
-## :book: Documentation
+## 📖 Documentation
 
 - Update Contributors part in README ([#1222](https://github.com/theme-next/hexo-theme-next/pull/1222))
 

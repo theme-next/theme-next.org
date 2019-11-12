@@ -18,5 +18,4 @@ date: 2018-08-31 16:01:02
 
 For full changes, see the [comparison between 6.4.0 and 6.4.1](https://github.com/theme-next/hexo-theme-next/compare/v6.4.0...v6.4.1)
 
-
 [Detailed changes for NexT v6.4.1](https://github.com/theme-next/hexo-theme-next/releases/tag/v6.4.1)

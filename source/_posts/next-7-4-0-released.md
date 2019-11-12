@@ -11,7 +11,6 @@ Redesigned the sequential configuration of the multi-comment system, which was o
 
 <details><summary>Click to see configuration's changes</summary><p>
 
-
 ```diff
 # Multiple Comment System Support
 comments:
@@ -98,7 +97,6 @@ vendors:
 ```
 
 </p></details>
-
 
 ### Remove full-image tag ([#1053](https://github.com/theme-next/hexo-theme-next/pull/1053))
 

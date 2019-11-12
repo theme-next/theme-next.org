@@ -11,7 +11,6 @@ date: 2019-02-01 14:25:34
 - Fix [#271](https://github.com/theme-next/hexo-theme-next/pull/271): Add comment_count option ([#559](https://github.com/theme-next/hexo-theme-next/pull/559))
 - Code style update (formatting) ([#563](https://github.com/theme-next/hexo-theme-next/pull/563))
 
-
 ## Bug Fixes
 
 - Revert using template literals in client side scripts. ([#590](https://github.com/theme-next/hexo-theme-next/pull/590))

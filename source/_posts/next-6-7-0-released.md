@@ -46,7 +46,6 @@ vendors:
 - Refactored post navigation styles. ([#509](https://github.com/theme-next/hexo-theme-next/pull/509))
 - Conditional import Han style. ([#507](https://github.com/theme-next/hexo-theme-next/pull/507))
 
-
 ## Bug Fixes
 
 - Bug fix in scripts/tags/tabs.js ([#558](https://github.com/theme-next/hexo-theme-next/pull/558))
