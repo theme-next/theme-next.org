@@ -59,25 +59,6 @@ Official documentation: https://docs.growingio.com/sdk-integration/sdk-2.x-docs/
 The script will show «Webmaster Statistics» and it's ugly, so we used a `display: none;` to hide it.
 {% endnote %}
 
-#### Tencent Analytics (China)
-
-1. Please login to [Tencent Analytics](http://ta.qq.com) and get your ID.
-2. Then put it into `tencent_analytics` section of {% label primary@theme config file %}.
-
-    ```yml next/_config.yml
-    # Tencent analytics ID
-    tencent_analytics: your_id
-    ```
-
-#### Tencent Mobile Analytics (China)
-
-1. Create an account and log into [Tencent Mobile Analytics](https://mta.qq.com/). [More detailed documentation](http://docs.developer.qq.com/mta/register_start.html)
-2. Edit {% label primary@theme config file %} and fill section `tencent_mta`.
-    ```yml next/_config.yml
-    # Tencent MTA ID
-    tencent_mta: your-tencent-mta-id
-    ```
-
 ### Counting Tools
 
 #### LeanCloud (China)

@@ -368,3 +368,11 @@ post_edit:
 <!-- endtab -->
 
 {% endtabs %}
+
+#### Post Navigation
+
+Show previous post and next post in post footer if exists.
+
+```yml next/_config.yml
+post_navigation: left
+```
