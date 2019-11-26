@@ -11,13 +11,6 @@ It's a common need to show some part of article in home page and then give a lin
 
 1. Use `<!-- more -->` in your article to break your article manually, which is recommended by Hexo. {% label success@Recommended %}
 2. Add `description` and set its value to your article summary in [Front-matter](https://hexo.io/docs/front-matter).
-3. Generate summary automatically by adding following section in {% label primary@theme config file%}:
-   ```yml next/_config.yml
-   auto_excerpt:
-     enable: true
-     length: 150
-   ```
-   By default it cuts `150` characters from article header, you can set the number by yourself.
 
 {% note info %}
 It is recommended to use `<!-- more -->` (the first way) which can not only control what you want to show better, but also let Hexo's plugins use it easily.

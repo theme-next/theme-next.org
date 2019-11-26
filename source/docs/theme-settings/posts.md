@@ -26,18 +26,6 @@ Use `<!-- more -->` in your article to break your article manually, which is rec
 
 <!-- endtab -->
 
-<!-- tab {% label warning@auto_excerpt %} -->
-Next would use `150` characters from article header automatically as preamble text by setting value `auto_excerpt.enable` to `true`.
-
-You can configure it by editing value in `auto_excerpt` section in {% label primary@theme config file %}.
-
-```yml next/_config.yml
-auto_excerpt:
-  enable: true
-  length: 150
-```
-<!-- endtab -->
-
 {% endtabs %}
 
 {% note info %}

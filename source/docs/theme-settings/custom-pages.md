@@ -188,14 +188,6 @@ calendar:
 <!-- endtab -->
 {% endtabs %}
 
-#### Cheers Archive Page
-
-By default NexT shows the cheers characters from `ok` to `excellent` according to the numbers of your posts. You can disable it by setting value `cheers` to `false` in {% label primary@theme config file %}.
-
-```yml next/_config.yml
-cheers: false
-```
-
 #### Custom 404 Page
 
 {% tabs custom-404-page %}
