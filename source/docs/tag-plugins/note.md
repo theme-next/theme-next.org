@@ -14,7 +14,6 @@ note:
   #  - disabled  disable all CSS styles import of note tag.
   style: simple
   icons: false
-  border_radius: 3
   # Offset lighter of background in % for modern and flat styles (modern: -12 | 12; flat: -18 | 6).
   # Offset also applied to label tag variables. This option can work with disabled note tag.
   light_bg_offset: 0

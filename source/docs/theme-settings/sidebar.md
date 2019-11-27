@@ -121,6 +121,7 @@ social:
   YouTube: https://youtube.com/yourname || youtube
   Instagram: https://instagram.com/yourname || instagram
   Skype: skype:yourname?call|chat || skype
+  RSS: /atom.xml || rss
 ```
 
 By default NexT shows the icons of social links in sidebar.

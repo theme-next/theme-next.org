@@ -7,11 +7,9 @@ description: NexT User Docs – NexT Supported Tags – Tabs
 
 ```yml next/_config.yml
 tabs:
-  enable: true
   transition:
     tabs: false
     labels: true
-  border_radius: 0
 ```
 
 ### Usage

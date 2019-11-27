@@ -59,15 +59,6 @@ custom_file_path:
   #style: source/_data/styles.styl
 ```
 
-### RSS Support
-
-There are three RSS options in NexT to fit different cases.
-Edit {% label primary@theme config file %} and set the value of `rss`:
-
-* `false`: Disable RSS, which won't show links on page.
-* Leave Blank: Use Hexo to generate feed and insert links automatically. You may need to install [hexo-generator-feed](https://github.com/hexojs/hexo-generator-feed) plugin with npm firstly.
-* Concrete URL: This means you have generate Feed in advance.
-
 ### Creative Commons
 
 NexT supports the display of [Creative Commons 4.0 International License](http://creativecommons.org/) in sidebar and post including `by`, `by-nc`, `by-nc-nd`, `by-nc-sa`, `by-nd`, `by-sa`, `zero`. These licenses allow creators to communicate which rights they reserve, and which rights they waive for the benefit of recipients or other creators.

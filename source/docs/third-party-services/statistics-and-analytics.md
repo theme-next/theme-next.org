@@ -8,18 +8,20 @@ description: NexT User Docs – Third-party Service Integration – Statistics a
 #### Google Analytics
 
 1. Create an account and log into [Google Analytics](https://analytics.google.com). [More detailed documentation](https://support.google.com/analytics/?hl=en#topic=3544906)
-2. Edit {% label primary@theme config file %} and fill `tracking_id` under  section `google_analytics` with your Google track ID. Google track ID always starts with `UA-`.
+2. Edit {% label primary@theme config file %} and fill `tracking_id` under section `google_analytics` with your Google track ID. Google track ID always starts with `UA-`.
     ```yml next/_config.yml
     # Google Analytics
     google_analytics:
       tracking_id: UA-XXXXXXXX-X
-      localhost_ignored: true
       only_pageview: false
     ```
-3. When field `localhost_ignore` is set to true, NexT will not send record to Google Analytics, as long as page request has "localhost" as its host name. This will prevent local debugging from polluting analytics. Set `localhost_ignore` to disable it.
 
-4. When field `only_pageview` is set to true, NexT will only send `pageview` event to Google Analytics.
+3. When field `only_pageview` is set to true, NexT will only send `pageview` event to Google Analytics.
 The benefit of using this instead of `only_pageview: false` is reduce a external script on your site, which will give you better performance but no complete analytics function.
+
+{% note info %}
+NexT will not send record to Google Analytics as long as page request has "localhost" as its host name. This will prevent local debugging from polluting analytics.
+{% endnote %}
 
 #### Baidu Analytics (China)
 

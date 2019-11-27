@@ -116,7 +116,7 @@ theme_config:
   reminder: true
 
   custom_file_path:
-    style: source/_data/styles.styl
+    variable: source/_data/variables.styl
     footer: source/_data/footer.swig
     sidebar: source/_data/sidebar.swig
 
@@ -234,6 +234,7 @@ theme_config:
   social:
     GitHub: https://github.com/theme-next || github
     E-Mail: mailto:support@theme-next.org || envelope
+    RSS: /atom.xml || rss
 
     Gitter: https://gitter.im/theme-next || github-alt
     Riot: https://riot.im/app/#/room/#NexT:matrix.org || bullhorn
@@ -346,15 +347,12 @@ theme_config:
   note:
     style: simple
     icons: true
-    border_radius: 0
     light_bg_offset: -3
 
   tabs:
-    enable: true
     transition:
       tabs: true
       labels: true
-    border_radius: 0
 
 
   # ============================================================= #
