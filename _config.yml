@@ -79,12 +79,6 @@ deploy:
 server:
   port: 4000
 
-marked:
-  # For preserve original quotes in code blocks.
-  smartypants: false
-  # For disable links in code blocks.
-  autolink: false
-
 kramed:
   # For preserve original quotes in code blocks.
   smartypants: false
@@ -110,9 +104,6 @@ theme_config:
   # ============= Theme Core Configuration Settings ============= #
   # ============================================================= #
 
-  cache:
-    enable: true
-
   reminder: true
 
   custom_file_path:
@@ -132,18 +123,16 @@ theme_config:
       animated: true
       color: "#808080"
     copyright: NexT
-    # -------------------------------------------------------------
     powered:
-      enable: true
-      version: true
+      enable: false
+      version: false
     theme:
-      enable: true
-      version: true
+      enable: false
+      version: false
 
   creative_commons:
     license: by-nc-sa
     sidebar: true
-    post: false
 
 
   # ============================================================= #
@@ -229,7 +218,6 @@ theme_config:
   avatar:
     url: /images/apple-touch-icon-next.png
     rounded: true
-    rotated: false
 
   social:
     GitHub: https://github.com/theme-next || github

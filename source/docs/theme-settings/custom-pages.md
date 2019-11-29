@@ -83,7 +83,7 @@ Edit the new page and change the type to `"tags"`, theme will show tags cloud au
 ```md
 title: Tags
 date: 2014-12-22 12:39:04
-type: "tags"
+type: tags
 ---
 ```
 <!-- endtab -->
@@ -140,8 +140,9 @@ In your terminal emulator, change to Hexo site dir. Use `hexo new page schedule`
 Front-matter is a block of YAML or JSON at the beginning of the file that is used to configure settings for your writings. Settings Front-matter values and more detailed can be found in [Front-matter](https://hexo.io/docs/front-matter). You can also add contents in `schedule/index.md` if you like.
 
 ```md
-title: schedule
+title: Schedule
 date: 2014-12-22 12:39:04
+type: schedule
 ---
 ```
 <!-- endtab -->
