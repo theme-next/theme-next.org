@@ -65,8 +65,21 @@ sidebar:
 ```
 <!-- endtab -->
 
+<!-- tab <code>padding</code> -->
+Set up sidebar paddingin pixels by changing the value of `sidebar.padding`:
+
+```yml next/_config.yml
+sidebar:
+  padding: 18
+```
+
+{% note danger %}
+For now only Pisces / Gemini Schemes supports `offset` setting under **6.0.x** version or higher.
+{% endnote %}
+<!-- endtab -->
+
 <!-- tab <code>offset</code> -->
-Set up sidebar offset from top menubar in pixels by changing the value of `sidebar.offset`, which can be one of following:
+Set up sidebar offset from top menubar in pixels by changing the value of `sidebar.offset`:
 
 ```yml next/_config.yml
 sidebar:
