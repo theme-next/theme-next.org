@@ -10,7 +10,7 @@ description: NexT User Docs
 
 By using different styles in NexT (also called Scheme), you simply change what your blog looks like, and nearly all options can be used in all schemes.
 
-![NexT Schemes](/images/docs/next-schemes.png)
+![NexT Schemes](https://user-images.githubusercontent.com/16272760/63487983-da41b080-c4df-11e9-951c-64883a8a5e9b.png)
 
 ### Multilingual Support
 
