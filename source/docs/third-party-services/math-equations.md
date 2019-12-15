@@ -263,8 +263,8 @@ The famous matter-energy equation $\eqref{eq1}$ proposed by Einstein...
 For multi-line equations, inside the `equation` environment, you can use the `aligned` environment to split it into multiple lines:
 
 ```latex
-$$\begin{equation}
-\begin{aligned} \label{eq2}
+$$\begin{equation} \label{eq2}
+\begin{aligned}
 a &= b + c \\
   &= d + e + f + g \\
   &= h + i
@@ -272,8 +272,8 @@ a &= b + c \\
 \end{equation}$$
 ```
 
-$$\begin{equation}
-\begin{aligned} \label{eq2}
+$$\begin{equation} \label{eq2}
+\begin{aligned}
 a &= b + c \\
   &= d + e + f + g \\
   &= h + i
