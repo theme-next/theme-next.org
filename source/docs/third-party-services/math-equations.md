@@ -241,14 +241,14 @@ In general, to make the automatic equation numbering work, you have to wrap your
 For simple equations, use the following form to give a tag,
 
 ```latex
-$$\begin{equation}
+$$\begin{equation} \label{eq1}
 e=mc^2
-\end{equation}\label{eq1}$$
+\end{equation}$$
 ```
 
-$$\begin{equation}
+$$\begin{equation} \label{eq1}
 e=mc^2
-\end{equation}\label{eq1}$$
+\end{equation}$$
 
 Then, you can refer to this equation in your text easily by using something like:
 
@@ -263,22 +263,22 @@ The famous matter-energy equation $\eqref{eq1}$ proposed by Einstein...
 For multi-line equations, inside the `equation` environment, you can use the `aligned` environment to split it into multiple lines:
 
 ```latex
-$$\begin{equation}
+$$\begin{equation} \label{eq2}
 \begin{aligned}
 a &= b + c \\
   &= d + e + f + g \\
   &= h + i
 \end{aligned}
-\end{equation}\label{eq2}$$
+\end{equation}$$
 ```
 
-$$\begin{equation}
+$$\begin{equation} \label{eq2}
 \begin{aligned}
 a &= b + c \\
   &= d + e + f + g \\
   &= h + i
 \end{aligned}
-\end{equation}\label{eq2}$$
+\end{equation}$$
 
 ```latex
 Equation $\eqref{eq2}$ is a multi-line equation.
