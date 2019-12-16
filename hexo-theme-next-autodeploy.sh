@@ -111,14 +111,8 @@ echo "=============================================================="
     hexo config url https://muse.theme-next.org
     echo "${yellow}Setted url:${norm} ${lcyan}`hexo config url`${norm}"
 
-    hexo config theme_config.scheme Muse
-    echo "${yellow}Setted scheme:${norm} ${lcyan}`hexo config theme_config.scheme`${norm}"
-
-    hexo config theme_config.sidebar.position right
-    echo "${yellow}Setted sidebar position:${norm} ${lcyan}`hexo config theme_config.sidebar.position`${norm}"
-
-    hexo config theme_config.back2top.sidebar false
-    echo "${yellow}Setted back2top in sidebar:${norm} ${lcyan}`hexo config theme_config.back2top.sidebar`${norm}"
+    cp source/_data/muse.yml source/_data/next.yml
+    echo "${yellow}Setted configuration:${norm} ${lcyan}`muse.yml -> next.yml`${norm}"
 
     hexo clean && hexo g --silent
     echo "${lred}`mv -v public schemes/muse`${norm}"
@@ -130,14 +124,8 @@ echo "=============================================================="
     hexo config url https://mist.theme-next.org
     echo "${yellow}Setted url:${norm} ${lcyan}`hexo config url`${norm}"
 
-    hexo config theme_config.scheme Mist
-    echo "${yellow}Setted scheme:${norm} ${lcyan}`hexo config theme_config.scheme`${norm}"
-
-    hexo config theme_config.sidebar.position right
-    echo "${yellow}Setted sidebar position:${norm} ${lcyan}`hexo config theme_config.sidebar.position`${norm}"
-
-    hexo config theme_config.back2top.sidebar false
-    echo "${yellow}Setted back2top in sidebar:${norm} ${lcyan}`hexo config theme_config.back2top.sidebar`${norm}"
+    cp source/_data/mist.yml source/_data/next.yml
+    echo "${yellow}Setted configuration:${norm} ${lcyan}`mist.yml -> next.yml`${norm}"
 
     hexo clean && hexo g --silent
     echo "${lred}`mv -v public schemes/mist`${norm}"
@@ -149,14 +137,8 @@ echo "=============================================================="
     hexo config url https://pisces.theme-next.org
     echo "${yellow}Setted url:${norm} ${lcyan}`hexo config url`${norm}"
 
-    hexo config theme_config.scheme Pisces
-    echo "${yellow}Setted scheme:${norm} ${lcyan}`hexo config theme_config.scheme`${norm}"
-
-    hexo config theme_config.sidebar.position left
-    echo "${yellow}Setted sidebar position:${norm} ${lcyan}`hexo config theme_config.sidebar.position`${norm}"
-
-    hexo config theme_config.back2top.sidebar true
-    echo "${yellow}Setted back2top in sidebar:${norm} ${lcyan}`hexo config theme_config.back2top.sidebar`${norm}"
+    cp source/_data/pisces.yml source/_data/next.yml
+    echo "${yellow}Setted configuration:${norm} ${lcyan}`pisces.yml -> next.yml`${norm}"
 
     hexo clean && hexo g --silent
     echo "${lred}`mv -v public schemes/pisces`${norm}"
@@ -168,14 +150,8 @@ echo "=============================================================="
     hexo config url https://theme-next.org
     echo "${yellow}Setted url:${norm} ${lcyan}`hexo config url`${norm}"
 
-    hexo config theme_config.scheme Gemini
-    echo "${yellow}Setted scheme:${norm} ${lcyan}`hexo config theme_config.scheme`${norm}"
-
-    hexo config theme_config.sidebar.position left
-    echo "${yellow}Setted sidebar position:${norm} ${lcyan}`hexo config theme_config.sidebar.position`${norm}"
-
-    hexo config theme_config.back2top.sidebar true
-    echo "${yellow}Setted back2top in sidebar:${norm} ${lcyan}`hexo config theme_config.back2top.sidebar`${norm}"
+    cp source/_data/gemini.yml source/_data/next.yml
+    echo "${yellow}Setted configuration:${norm} ${lcyan}`gemini.yml -> next.yml`${norm}"
 
     hexo clean && hexo g --silent
 
