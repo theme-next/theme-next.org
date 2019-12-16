@@ -114,9 +114,6 @@ echo "=============================================================="
     hexo config theme_config.scheme Muse
     echo "${yellow}Setted scheme:${norm} ${lcyan}`hexo config theme_config.scheme`${norm}"
 
-    hexo config theme_config.minify true
-    echo "${yellow}Setted minify:${norm} ${lcyan}`hexo config theme_config.minify`${norm}"
-
     hexo config theme_config.sidebar.position right
     echo "${yellow}Setted sidebar position:${norm} ${lcyan}`hexo config theme_config.sidebar.position`${norm}"
 
@@ -135,9 +132,6 @@ echo "=============================================================="
 
     hexo config theme_config.scheme Mist
     echo "${yellow}Setted scheme:${norm} ${lcyan}`hexo config theme_config.scheme`${norm}"
-
-    hexo config theme_config.minify true
-    echo "${yellow}Setted minify:${norm} ${lcyan}`hexo config theme_config.minify`${norm}"
 
     hexo config theme_config.sidebar.position right
     echo "${yellow}Setted sidebar position:${norm} ${lcyan}`hexo config theme_config.sidebar.position`${norm}"
@@ -158,9 +152,6 @@ echo "=============================================================="
     hexo config theme_config.scheme Pisces
     echo "${yellow}Setted scheme:${norm} ${lcyan}`hexo config theme_config.scheme`${norm}"
 
-    hexo config theme_config.minify true
-    echo "${yellow}Setted minify:${norm} ${lcyan}`hexo config theme_config.minify`${norm}"
-
     hexo config theme_config.sidebar.position left
     echo "${yellow}Setted sidebar position:${norm} ${lcyan}`hexo config theme_config.sidebar.position`${norm}"
 
@@ -179,9 +170,6 @@ echo "=============================================================="
 
     hexo config theme_config.scheme Gemini
     echo "${yellow}Setted scheme:${norm} ${lcyan}`hexo config theme_config.scheme`${norm}"
-
-    hexo config theme_config.minify true
-    echo "${yellow}Setted minify:${norm} ${lcyan}`hexo config theme_config.minify`${norm}"
 
     hexo config theme_config.sidebar.position left
     echo "${yellow}Setted sidebar position:${norm} ${lcyan}`hexo config theme_config.sidebar.position`${norm}"

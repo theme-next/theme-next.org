@@ -106,6 +106,8 @@ theme_config:
 
   reminder: true
 
+  minify: true
+
   custom_file_path:
     variable: source/_data/variables.styl
     footer: source/_data/footer.swig
@@ -212,6 +214,7 @@ theme_config:
   sidebar:
     position: left
     display: post
+    padding: 18
     offset: 12
     onmobile: true
 
