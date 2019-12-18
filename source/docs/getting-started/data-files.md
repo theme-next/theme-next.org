@@ -9,9 +9,7 @@ Currently, it is not smooth to update NexT theme from pulling or downloading new
 1. Configurations are splitted into two pieces
 2. Users may be confused which place should be for options
 
-In order to resolve this issue, NexT will take advantage of [Hexo Data files](https://hexo.io/docs/data-files). Because Data files is introduced in Hexo 3, so you need upgrade Hexo to 3.0 (or above) to use this feature.
-
-If you prefer Hexo 2.x, you can still use the old approach for configurations. NexT is still compatible with Hexo 2.x (but errors are possible).
+In order to resolve this issue, NexT provides the following two solutions.
 
 {% tabs option %}
 <!-- tab {% label success@Hexo-Way %} -->
@@ -21,6 +19,10 @@ But you need to **[keep up indentation](/docs/troubleshooting/#Keep-up-indentati
 
 {% note info %}
 If there are any new options in new releases, you just need to copy those options from {% label primary@theme config file %}, paste into {% label info@site config file %} and set their values to whatever you want.
+{% endnote %}
+
+{% note warning %}
+Hexo's implementation of `theme_config` has changed several times. To avoid problems, you need upgrade Hexo to 4.2.0 (or above) to use this feature.
 {% endnote %}
 
 **Usage**
@@ -44,6 +46,10 @@ But option may not accurately procces all hexo external libraries with their add
 
 {% note info %}
 If there are any new options in new releases, you just need to copy those options from {% label primary@theme config file %}, paste into `hexo/source/_data/next.yml` and set their values to whatever you want.
+{% endnote %}
+
+{% note warning %}
+This method relies on Hexo [Data files](https://hexo.io/docs/data-files.html). Because Data files is introduced in Hexo 3, so you need upgrade Hexo to 3.0 (or above) to use this feature.
 {% endnote %}
 
 **Usage**
