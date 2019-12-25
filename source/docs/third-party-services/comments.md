@@ -81,6 +81,11 @@ Gitalk is a modern comment component based on Github Issue and Preact.
       language:
     ```
 
+{% note warning %}
+Hexo has encode URLs by default since version 4.0: [PR 3708](https://github.com/hexojs/hexo/pull/3708).
+Gitalk relies on the md5 value of the page path for tagging, and this may cause issues. It's recommended to upgrade Hexo to 4.0 (or above), NexT to 7.7.0 (or above) to use Gitalk.
+{% endnote %}
+
 ### Valine (China)
 
 Valine is a fast, simple & efficient Leancloud based no back end comment system.
