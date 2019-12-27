@@ -262,7 +262,7 @@ You can set `enable` to `true` and add your own GitHub link.
 
 ### Fonts Customization
 
-To solve the unstable of [Google Fonts API](https://www.google.com/fonts) in some countries, NexT supports setting fonts. By using this feature you can assign URL of fonts library. And NexT gives you 5 specific font settings, they are:
+NexT gives you 5 specific font settings, they are:
 
 * Global Font: Font used in the whole site.
 * Title Font: Font used by site title.
@@ -277,6 +277,12 @@ Each font will be used as the first font of this class, NexT will fallback to in
 
 Plus each section has a `external` attribute, this controls whether to use the font library CDN.
 Use this can help you to use fonts installed in system and reduce unnecessary requests.
+
+{% note info %}
+To solve the unstable of [Google Fonts API](https://www.google.com/fonts) in some countries, NexT supports custom URL of fonts library by setting `font.host`.
+In addition, we noticed that for requests from certain websites, Google Fonts will return 403. At this time, it is necessary to use `font.host` to set up a mirror site.
+Related issues: [#613](https://github.com/theme-next/hexo-theme-next/issues/613), [#1333](https://github.com/theme-next/hexo-theme-next/issues/1333)
+{% endnote %}
 
 ```yml next/_config.yml
 font:
