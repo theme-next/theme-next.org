@@ -21,13 +21,9 @@ But you need to **[keep up indentation](/docs/troubleshooting/#Keep-up-indentati
 If there are any new options in new releases, you just need to copy those options from {% label primary@theme config file %}, paste into {% label info@site config file %} and set their values to whatever you want.
 {% endnote %}
 
-{% note warning %}
-Hexo's implementation of `theme_config` has changed several times. To avoid problems, you need upgrade Hexo to 4.2.0 (or above) to use this feature.
-{% endnote %}
-
 **Usage**
 
-1. Check for no exists `hexo/source/_data/next.yml` file (delete it if exists).
+1. Please confirm that the `/source/_data/next.yml` file does not exist (delete it if exists).
 2. Copy needed NexT theme options from {% label primary@theme config file %} into {% label info@site config file %}, then
    2.1. Move all this settings to the right with two spaces (in Visual Studio Code: select all strings, <kbd>CTRL</kbd> + <kbd>]</kbd>).
    2.2. Add `theme_config:` parameter above all this settings.
