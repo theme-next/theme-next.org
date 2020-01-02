@@ -4,39 +4,39 @@ ID = "Theme-Next"
 # ================ #
 #       Muse       #
 # ================ #
-[[redirects]]
-  from = "https://muse.theme-next.org/*"
-  to = "https://theme-next.org/schemes/muse/:splat"
-  status = 200
-  force = true
+#[[redirects]]
+#  from = "https://muse.theme-next.org/*"
+#  to = "https://theme-next.org/schemes/muse/:splat"
+#  status = 200
+#  force = true
 
 
 # ================ #
 #       Mist       #
 # ================ #
-[[redirects]]
-  from = "https://mist.theme-next.org/*"
-  to = "https://theme-next.org/schemes/mist/:splat"
-  status = 200
-  force = true
+#[[redirects]]
+#  from = "https://mist.theme-next.org/*"
+#  to = "https://theme-next.org/schemes/mist/:splat"
+#  status = 200
+#  force = true
 
 
 # ================ #
 #      Pisces      #
 # ================ #
 
-[[redirects]]
-  from = "https://pisces.theme-next.org/*"
-  to = "https://theme-next.org/schemes/pisces/:splat"
-  status = 200
-  force = true
+#[[redirects]]
+#  from = "https://pisces.theme-next.org/*"
+#  to = "https://theme-next.org/schemes/pisces/:splat"
+#  status = 200
+#  force = true
 
 
 # ================ #
 # Gemini (Default) #
 # ================ #
-[[redirects]]
-  from = "https://theme-next.netlify.com/*"
-  to = "https://theme-next.org/:splat"
-  status = 301
-  force = true
+#[[redirects]]
+#  from = "https://theme-next.netlify.com/*"
+#  to = "https://theme-next.org/:splat"
+#  status = 301
+#  force = true
