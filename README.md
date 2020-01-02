@@ -7,10 +7,10 @@
 
 ## Schemes
 
-* :heart_decoration: [Muse](https://muse.theme-next.org)
-* :six_pointed_star: [Mist](https://mist.theme-next.org)
-* :pisces: [Pisces](https://pisces.theme-next.org)
-* :gemini: [Gemini](https://theme-next.org) (**Default**)
+* :heart_decoration: [Muse](https://theme-next.org/schemes/muse/)
+* :six_pointed_star: [Mist](https://theme-next.org/schemes/mist/)
+* :pisces: [Pisces](https://theme-next.org/schemes/pisces/)
+* :gemini: [Gemini](https://theme-next.netlify.com/) (**Default**)
 
 ## Autoinstall Hexo & NexT & NexT Website Source on Localhost
 
