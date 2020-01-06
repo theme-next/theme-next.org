@@ -27,7 +27,7 @@ type : type of the mermaid chart, visit https://github.com/knsv/mermaid for more
 ```md
 {% mermaid graph TD %}
 A[Christmas] -->|Get money| B(Go shopping)
-B --> C{Let me thinksssss<br/>ssssssssssssssssssssss<br/>sssssssssssssssssssssssssss}
+B --> C{Let me thinksssss<br>ssssssssssssssssssssss<br>sssssssssssssssssssssssssss}
 C -->|One| D[Laptop]
 C -->|Two| E[iPhone]
 C -->|Three| F[Car]
@@ -130,12 +130,12 @@ c0102290_1ec3_e711_8c5a_005056ad0002-->71082290_1ec3_e711_8c5a_005056ad0002
 {% mermaid sequenceDiagram %}
 participant Alice
 participant Bob
-participant John as John<br/>Second Line
+participant John as John<br>Second Line
 Alice ->> Bob: Hello Bob, how are you?
 Bob-->>John: How about you John?
 Bob--x Alice: I am good thanks!
 Bob-x John: I am good thanks!
-Note right of John: Bob thinks a long<br/>long time, so long<br/>that the text does<br/>not fit on a row.
+Note right of John: Bob thinks a long<br>long time, so long<br>that the text does<br>not fit on a row.
 Bob-->Alice: Checking with John...
 alt either this
 Alice->>John: Yes

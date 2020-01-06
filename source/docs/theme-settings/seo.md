@@ -77,7 +77,7 @@ Set the verification string of [Google Webmaster Tools](https://www.google.com/w
 <!-- tab Get Verification Code → -->
 Login to Google Webmaster Tools and go to verification methods and choose `HTML Tag`, you will get some code:
 ```html
-<meta name="google-site-verification" content="XXXXXXXXXXXXXXXXXXXXXXX" />
+<meta name="google-site-verification" content="XXXXXXXXXXXXXXXXXXXXXXX">
 ```
 <!-- endtab -->
 
@@ -98,7 +98,7 @@ Set the verification string of [Bing Webmaster Tools](https://www.bing.com/webma
 <!-- tab Get Verification Code → -->
 Login to Bing Webmaster Tools and go to verification methods and choose `HTML Tag`, you will get some code:
 ```html
-<meta name="msvalidate.01" content="XXXXXXXXXXXXXXXXXXXXXXX" />
+<meta name="msvalidate.01" content="XXXXXXXXXXXXXXXXXXXXXXX">
 ```
 <!-- endtab -->
 
@@ -119,7 +119,7 @@ Set the verification string of [Yandex Webmaster Tools](https://webmaster.yandex
 <!-- tab Get Verification Code → -->
 Login to Yandex Webmaster Tools and go to verification methods and choose `Meta Tag`, you will get some code:
 ```html
-<meta name="yandex-verification" content="XXXXXXXXXXXXXXXXXXXXXXX" />
+<meta name="yandex-verification" content="XXXXXXXXXXXXXXXXXXXXXXX">
 ```
 <!-- endtab -->
 
@@ -140,7 +140,7 @@ Set the verification string of [Baidu Webmaster Tools](https://ziyuan.baidu.com/
 <!-- tab Get Verification Code → -->
 Login to Baidu Webmaster Tools and go to verification methods and choose `HTML Tag`, you will get some code:
 ```html
-<meta name="baidu-site-verification" content="XXXXXXXXXXXXXXXXXXXXXXX" />
+<meta name="baidu-site-verification" content="XXXXXXXXXXXXXXXXXXXXXXX">
 ```
 <!-- endtab -->
 
