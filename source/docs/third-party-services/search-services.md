@@ -14,13 +14,14 @@ Register at [Algolia](https://www.algolia.com), you can log in directly using Gi
 
 <!-- tab Algolia Config → -->
 1. If a tutorial pops up, you can skip it. Go straight to create an `Index` which will be used later.
-![Algolia Create Index](/images/docs/algolia-2.png)
+![Algolia Create Index](https://user-images.githubusercontent.com/16272760/73673892-68a29b00-46ea-11ea-90c5-916b4b11fc7a.png)
 
 2. Go to the `API Keys` page and find your credentials. You will need the `Application ID` and the `Search-only API key` in the following sections. The `Admin API key` need to keep confidential. Never store your Admin API Key as `apiKey` in {% label primary@theme config file %}: it would give full control of your Algolia index to others and you don't want to face the consequences.
-![Algolia API Keys](/images/docs/algolia-4.png)
+![Algolia API Keys](https://user-images.githubusercontent.com/16272760/73673895-693b3180-46ea-11ea-8f50-8bae850b50d0.png)
 
-3. In the `API Keys` page, click the `ALL API KEYS` and the `edit` option in the created APIKEY to activate a pop-up box where you can setup authorizations and restrictions with a great level of precision. Check `Add records`, `Delete records`, `List indices`, `Delete index` features in ACL permissions that will be allowed for the given API key. And then click the `Update` button.
-![Algolia API Keys 2](/images/docs/algolia-5.png) ![Algolia Configuring Records](/images/docs/algolia-5-2.png)
+3. In the `API Keys` page, click the `All API Keys` button to switch to the corresponding tab. Then click the `New API Key` button to activate a pop-up box where you can setup authorizations and restrictions with a great level of precision. Enter `addObject`, `deleteObject`, `listIndexes`, `deleteIndex` features in ACL permissions that will be allowed for the given API key. And then click the `Create` button. Copy this newly created key to the clipboard, we call it a `High-privilege API key`.
+![Algolia API Keys 2](https://user-images.githubusercontent.com/16272760/73673902-6b04f500-46ea-11ea-9c80-4e5c5002e07b.png)
+![Algolia Configuring Records](https://user-images.githubusercontent.com/16272760/73673905-6b9d8b80-46ea-11ea-9e01-702ec2a8a297.png)
 <!-- endtab -->
 
 <!-- tab Hexo Config → -->
@@ -45,24 +46,13 @@ algolia:
 2. Run the following command to upload index data, keep a weather eye out the output of the command.
 
    ```bash
-   $ export HEXO_ALGOLIA_INDEXING_KEY=Search-Only API key # Use Git Bash
-   # set HEXO_ALGOLIA_INDEXING_KEY=Search-Only API key # Use Windows command line
+   $ export HEXO_ALGOLIA_INDEXING_KEY=High-privilege API key # Use Git Bash
+   # set HEXO_ALGOLIA_INDEXING_KEY=High-privilege API key # Use Windows command line
    $ hexo clean
    $ hexo algolia
    ```
 
    ![Reload Index](/images/docs/algolia-7.png)
-
-3. If you want to use a different version from CDN, please follow the instructions below.
-
-   You need to **set vendors** in {% label primary@theme config file %}:
-   ```yml next/_config.yml
-   vendors:
-     ...
-     algolia_instant_js: https://cdn.jsdelivr.net/npm/instantsearch.js@2/dist/instantsearch.js
-     algolia_instant_css: https://cdn.jsdelivr.net/npm/instantsearch.js@2/dist/instantsearch.min.css
-     ...
-   ```
 <!-- endtab -->
 
 <!-- tab NexT Config -->
@@ -78,6 +68,20 @@ algolia_search:
     hits_empty: "We didn't find any results for the search: ${query}"
     hits_stats: "${hits} results found in ${time} ms"
 ```
+
+If you want to use a different version from CDN, please follow the instructions below.
+
+   You need to **set vendors** in {% label primary@theme config file %}:
+   ```yml next/_config.yml
+   vendors:
+     ...
+     # Algolia Search
+     # algolia_search: //cdn.jsdelivr.net/npm/algoliasearch@4/dist/algoliasearch-lite.umd.js
+     # instant_search: //cdn.jsdelivr.net/npm/instantsearch.js@4/dist/instantsearch.production.min.js
+     algolia_search: //cdn.jsdelivr.net/npm/algoliasearch@4/dist/algoliasearch-lite.umd.js
+     instant_search: //cdn.jsdelivr.net/npm/instantsearch.js@4/dist/instantsearch.production.min.js
+     ...
+   ```
 <!-- endtab -->
 {% endtabs %}
 
