@@ -13,7 +13,7 @@ index_generator:
   order_by: -date
 
 archive_generator:
-  per_page: 8
+  per_page: 12
   yearly: true
   monthly: true
   daily: false
