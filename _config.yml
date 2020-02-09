@@ -79,7 +79,7 @@ deploy:
 server:
   port: 4000
 
-kramed:
+marked:
   # For preserve original quotes in code blocks.
   smartypants: false
 

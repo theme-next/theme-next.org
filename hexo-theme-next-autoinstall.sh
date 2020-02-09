@@ -61,8 +61,6 @@ echo
 echo "=============================================================="
 echo " Replacing default renderer & Installing needed plugins..."
 echo "=============================================================="
-    npm un hexo-renderer-marked
-    npm i hexo-renderer-kramed
     npm i hexo-deployer-git
     npm i hexo-symbols-count-time
 
