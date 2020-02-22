@@ -223,7 +223,7 @@ Copy-tex extension for KaTeX modifes the copy/paste behavior in any browser supp
 ### Examples
 
 {% note info %}
-For examples below (and for all other examples in this domain) NexT uses `hexo-renderer-kramed` renderer with `mathjax` engine.
+For examples below (and for all other examples in this domain) NexT uses `hexo-renderer-marked` renderer with `mathjax` engine.
 {% endnote %}
 
 {% note danger %}

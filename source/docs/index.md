@@ -6,6 +6,16 @@ description: NexT User Docs
 
 ### Elegant and Powerful Theme for Hexo
 
+Theme NexT has the following features:
+
+* No jQuery
+* Supports native dark mode
+* Support Pjax to deliver a fast browsing experience
+* Integrated KaTeX and MathJax mathematical formula rendering
+* Supports Gitalk, Valley and Disqus comment systems
+* Support a large number of third-party statistics and content sharing services
+* Easy to customize content or modify style
+
 ### Four Schemes in One
 
 By using different styles in NexT (also called Scheme), you simply change what your blog looks like, and nearly all options can be used in all schemes.
