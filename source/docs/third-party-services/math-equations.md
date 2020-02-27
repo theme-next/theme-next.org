@@ -203,9 +203,9 @@ markdown:
 {% endnote %}
 
 {% note info %}
-We currently use KaTeX 0.7.1, some of those bugs might be caused by the outdated version of KaTeX we use.
+We currently use KaTeX 0.11.1, some of those bugs might be caused by the outdated version of KaTeX we use.
 
-But, as what is described in the beginning, the render of Math Equations relies on Hexo Renderer. Currently, KaTeX-related renderers only support KaTeX version until 0.7.1.
+But, as what is described in the beginning, the render of Math Equations relies on Hexo Renderer. Currently, KaTeX-related renderers only support KaTeX version until 0.11.1.
 
 We will continuously monitor the updates of corresponding renderers, if there is a renderer which supports newer version of KaTeX, we will update the KaTeX we use.
 {% endnote %}
