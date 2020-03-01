@@ -94,7 +94,7 @@ Now you have installed NexT theme, next we will verify whether it is enabled cor
 
 First start Hexo local server, and enable debug parameter (by adding `--debug`), the whole command is `hexo s --debug`. You can see the output while running, and if you find problem, you can use the output to help others locate error better. When it prints:
 
-    INFO  Hexo is running at http://0.0.0.0:4000/. Press Ctrl+C to stop.
+    INFO  Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.
 
 Now you can open `http://localhost:4000` in your browser, and check whether the site works correctly.
 
@@ -165,13 +165,21 @@ Scheme is a feature supported by NexT, by using Scheme NexT gives you different 
 * `Pisces` → Double-column Scheme, fresh like your neighbor's daughter.
 * `Gemini` → Looks like Pisces, but have distinct column blocks with shadow to appear more sensitive to view.
 
-You can change Scheme by editing {% label primary@theme config file %}, searching scheme keyword. You'll see 4 lines of scheme settings and can enable one of them by removing it's `#` and added `#` to previous.
+You can change Scheme by editing {% label primary@theme config file %}, searching `scheme` keyword. You'll see 4 lines of scheme settings and can enable one of them by removing it's `#` and added `#` to previous.
 
 ```yml next/_config.yml
 #scheme: Muse
 #scheme: Mist
 #scheme: Pisces
 scheme: Gemini
+```
+
+#### Dark Mode
+
+You can enable Dark Mode by editing {% label primary@theme config file %}, searching `darkmode` keyword. Theme NexT automatically shows Dark Mode if the OS prefered theme is dark. CSS `mix-blend-mode` is used the to bring Dark Mode to all 4 schemes above, make sure your browser supports this property.
+
+```yml next/_config.yml
+darkmode: true
 ```
 
 #### Choosing Language
