@@ -12,7 +12,7 @@ Theme NexT has the following features:
 * Supports native dark mode
 * Support Pjax to deliver a fast browsing experience
 * Integrated KaTeX and MathJax mathematical formula rendering
-* Supports Gitalk, Valley and Disqus comment systems
+* Supports Gitalk, Valine and Disqus comment systems
 * Support a large number of third-party statistics and content sharing services
 * Easy to customize content or modify style
 
