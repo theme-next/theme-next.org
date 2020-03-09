@@ -18,9 +18,9 @@ It is recommended to use `<!-- more -->` (the first way) which can not only cont
 
 ### How to Change Fonts
 
-NexT provided a [Fonts Customization](/docs/theme-settings#Fonts-Customization) function. If you still need more customization, following change will cover Fonts Customization function. Edit `source/css/_variables/custom.styl` in NexT theme dir and add two varibles:
+NexT provided a [Fonts Customization](/docs/theme-settings#Fonts-Customization) function. If you still need more customization, following change will cover Fonts Customization function. Edit `source/_data/variables.styl` in {% label primary@Hexo root directory %} and add two varibles:
 
-```styl source/css/_custom/custom.styl
+```styl hexo/source/_data/variables.styl
 // Title Font, set it to font family you want.
 $font-family-headings = Georgia, sans
 
@@ -37,6 +37,8 @@ $font-size-base = 16px
 $code-font-size = 13px
 ```
 
+Then uncomment `variable` under the `custom_file_path` section in {% label primary@theme config file %}.
+
 ### How to Change Content Width
 
 By default NexT has following setting of content width:
@@ -46,7 +48,7 @@ By default NexT has following setting of content width:
 * 900px → when screen width >= 1600px.
 * In mobile / tablet devices it will use responsive width.
 
-You can change content width by editing CSS style file. Edit `source/css/_variables/custom.styl` in {% label primary@theme root directory %} and add varibles:
+You can change content width by editing CSS style file. Edit `source/_data/variables.styl` in {% label primary@Hexo root directory %} and add varibles:
 
 {% tabs change-content-width %}
 <!-- tab Muse / Mist schemes -->
@@ -60,7 +62,7 @@ $content-desktop-largest = 900px
 
 For example, you want wider content width. You may redefine this variables with percentage width:
 
-```styl next/source/css/_variables/custom.styl
+```styl hexo/source/_data/variables.styl
 $content-desktop         = 90%
 $content-desktop-large   = 90%
 $content-desktop-largest = 90%
@@ -71,7 +73,7 @@ If values will in percents, during opening sidebar will dynamically decrease con
 But in standard behaviour, sidebar must displace content from yourself.
 To around it, you can to specify content width in `em`:
 
-```styl next/source/css/_variables/custom.styl
+```styl hexo/source/_data/variables.styl
 $content-desktop         = 50em
 $content-desktop-large   = 55em
 $content-desktop-largest = 60em
@@ -94,7 +96,7 @@ $content-desktop-largest = 73%
 
 In this schemes content width was defined on maximum and already balanced: if desktop width will be wider – content width will more narrowed for easier reading. But if you want to make more narrow content width in wider desktops, here is example:
 
-```styl next/source/css/_variables/custom.styl
+```styl hexo/source/_data/variables.styl
 $content-desktop-large   = 65em
 $content-desktop-largest = 65%
 ```
@@ -106,6 +108,8 @@ So, if you want to add any variables or styles to both Pisces and Gemini schemes
 {% endnote %}
 <!-- endtab -->
 {% endtabs %}
+
+Then uncomment `variable` under the `custom_file_path` section in {% label primary@theme config file %}.
 
 ### Wrong Number of Tags/Categories
 
