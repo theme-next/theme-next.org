@@ -404,45 +404,6 @@ three:
 <!-- endtab -->
 {% endtabs %}
 
-#### Canvas Nest
-
-[canvas-nest.js](https://github.com/hustcc/canvas-nest.js) is a nest backgroud of website draw on canvas.
-
-{% tabs canvas_nest %}
-<!-- tab Installation → -->
-Change dir to NexT directory, and install module to `source/lib` directory.
-
-```bash
-$ cd themes/next
-$ git clone https://github.com/theme-next/theme-next-canvas-nest source/lib/canvas-nest
-```
-
-{% note info %}
-If you want to use the CDN instead of clone this repo, then need to **set vendors** in {% label primary@theme config file %}:
-```yml next/_config.yml
-vendors:
-  ...
-  # https://github.com/hustcc/canvas-nest.js
-  canvas_nest: //cdn.jsdelivr.net/npm/canvas-nest.js@1/dist/canvas-nest.min.js
-  ...
-```
-{% endnote %}
-
-<!-- endtab -->
-
-<!-- tab NexT Config -->
-
-After the plugin installed, you can enable it by setting value `canvas_nest` to `true` in {% label primary@theme config file %}.
-
-```yml next/_config.yml
-# Canvas-nest
-# Dependencies: https://github.com/theme-next/theme-next-canvas-nest
-canvas_nest: true
-```
-
-<!-- endtab -->
-{% endtabs %}
-
 #### Canvas Ribbon
 
 [canvas-ribbon.js](https://github.com/zproo/canvas-ribbon) is a ribbon backgroud of website draw on canvas.

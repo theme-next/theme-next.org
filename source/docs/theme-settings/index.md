@@ -117,14 +117,6 @@ android_chrome_color: "#222"
 
 {% endtabs %}
 
-### Rainbow Safari
-
-If you want to hide sticky headers and color the menu bar on Safari (iOS / macOS), you can set `safari_rainbow` to `true`. More information here: [rainbowsafari](https://github.com/koole/rainbowsafari).
-
-```yml next/_config.yml
-safari_rainbow: true
-```
-
 ### Custom Logo Support
 
 NexT supports the site logo personalization.
