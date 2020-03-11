@@ -51,7 +51,7 @@ This method relies on Hexo [Data files](https://hexo.io/docs/data-files.html). B
 **Usage**
 
 1. Please ensure you are using Hexo 3 (or above).
-2. Create a file named `next.yml` in `hexo/source/_data` directory (create `_data` directory if it did not exists).
+2. Create a file named `next.yml` in `hexo/source/_data` directory (create `_data` directory if it does not exist).
 
    {% note warning %}
    After that steps there are **2 variants**, need to **choose only one** of them and **resume next steps**.

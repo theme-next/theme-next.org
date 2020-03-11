@@ -8,13 +8,15 @@ description: NexT User Docs
 
 Theme NexT has the following features:
 
-* No jQuery
-* Supports native dark mode
-* Support Pjax to deliver a fast browsing experience
-* Integrated KaTeX and MathJax mathematical formula rendering
-* Supports Gitalk, Valine and Disqus comment systems
-* Support a large number of third-party statistics and content sharing services
-* Easy to customize content or modify style
+* No jQuery.
+* Support native dark mode.
+* Support Pjax to deliver a fast browsing experience.
+* Integrated KaTeX and MathJax mathematical formula rendering.
+* Integrated PDF.js and mermaid diagram.
+* Support Disqus, Gitalk and Valine comment systems.
+* Support a large number of third-party statistics and content sharing services.
+* Easy to customize content or modify style.
+* Visit the [Awesome NexT][https://github.com/theme-next/awesome-next] list for more plugins.
 
 ### Four Schemes in One
 
