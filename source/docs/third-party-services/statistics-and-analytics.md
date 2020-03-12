@@ -3,6 +3,10 @@ title: Statistics and Analytics
 description: NexT User Docs – Third-party Service Integration – Statistics and Analytics
 ---
 
+{% note warning %}
+Make sure you have configured `url` correctly in {% label info@site config file %}, otherwise these statistics tools may not work. This is to prevent access impact statistics from other domain names, such as `localhost:4000`.
+{% endnote %}
+
 ### Analytics Tools
 
 #### Google Analytics

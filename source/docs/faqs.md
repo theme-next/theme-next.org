@@ -7,10 +7,12 @@ Here is a collection of frequently asked questions in NexT Issues. If you can't 
 
 ### How to Set «Read More»
 
-It's a common need to show some part of article in home page and then give a link to full article. NexT gives 3 ways to control how article is shown in home page. In other words, you can use following ways to show summary of articles and a **Read More** button:
+It's a common need to show some part of article in home page and then give a link to full article. NexT gives two ways to control how article is shown in home page. In other words, you can use following ways to show summary of articles and a **Read More** button:
 
 1. Use `<!-- more -->` in your article to break your article manually, which is recommended by Hexo. {% label success@Recommended %}
 2. Add `description` and set its value to your article summary in [Front-matter](https://hexo.io/docs/front-matter).
+
+In order for these settings to take effect, you need to execute `hexo clean`.
 
 {% note info %}
 It is recommended to use `<!-- more -->` (the first way) which can not only control what you want to show better, but also let Hexo's plugins use it easily.
@@ -110,16 +112,6 @@ So, if you want to add any variables or styles to both Pisces and Gemini schemes
 {% endtabs %}
 
 Then uncomment `variable` under the `custom_file_path` section in {% label primary@theme config file %}.
-
-### Wrong Number of Tags/Categories
-
-Because Hexo has cache, sometimes the nubmer in Tags or Categories page is wrong. If you find this question you can re-generate site's content as following:
-
-1. Delete `db.json` in site dir.
-2. Run command `hexo clean` in site dir to clean cache.
-3. Run command `hexo generate` in site dir to re-generte.
-
-After doing those you can run local server to see if the problem was solved.
 
 ### How to Disable Comments on Page
 

@@ -104,10 +104,6 @@ theme_config:
   # ============= Theme Core Configuration Settings ============= #
   # ============================================================= #
 
-  reminder: true
-
-  minify: true
-
   custom_file_path:
     variable: source/_data/variables.styl
     footer: source/_data/footer.swig
@@ -145,6 +141,8 @@ theme_config:
   #scheme: Mist
   #scheme: Pisces
   scheme: Gemini
+
+  darkmode: true
 
 
   # ============================================================= #
@@ -230,8 +228,7 @@ theme_config:
     Gitter: https://gitter.im/theme-next || github-alt
     Riot: https://riot.im/app/#/room/#NexT:matrix.org || bullhorn
 
-    Telegram [Chat]: https://t.me/joinchat/GUNHXA-vZkgSMuimL1VmMw || telegram
-    Telegram [News]: https://t.me/theme_next || paper-plane
+    Telegram: https://t.me/theme_next || telegram
 
   social_icons:
     enable: true
@@ -299,6 +296,8 @@ theme_config:
     mathjax:
       enable: true
 
+  pjax: true
+
   mediumzoom: true
 
   lazyload: true
@@ -308,11 +307,13 @@ theme_config:
   # =================== Comments and Widgets ==================== #
   # ============================================================= #
 
+  comments:
+    lazyload: true
+
   disqus:
     enable: true
     shortname: theme-next
     count: true
-    lazyload: true
 
 
   # ============================================================= #
@@ -328,7 +329,6 @@ theme_config:
     enable: true
     trigger: auto
     top_n_per_article: 1
-    preload: true
 
 
   # ============================================================= #
@@ -352,3 +352,7 @@ theme_config:
 
   motion:
     enable: false
+
+  vendors:
+    fontawesome: //cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css
+    pjax: //cdn.jsdelivr.net/gh/theme-next/theme-next-pjax@0/pjax.min.js
