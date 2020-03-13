@@ -7,9 +7,14 @@ description: NexT User Docs – Theme Settings – Posts
 
 #### Preamble Text
 
-It's a common need to show some part of article in home page and then give a link to full article. NexT gives 3 ways to control how article is shown in home page. In other words, you can use following ways to show summary of articles and a **Read More** button.
+It's a common need to show some part of article in home page and then give a link to full article. NexT gives two ways to control how article is shown in home page. In other words, you can use following ways to show summary of articles and a **Read More** button.
 
 {% tabs preamble %}
+<!-- tab {% label success@Tag more %} -->
+Use `<!-- more -->` in your article to break your article manually, which is recommended by Hexo.
+
+<!-- endtab -->
+
 <!-- tab <code>excerpt_description</code> -->
 If you have added `description` and set its value to your article summary in [Front-matter](https://hexo.io/docs/front-matter), NexT excerpts `description` as preamble text in homepage by default. Without `description`, the full contents would be the preamble text in homepage.
 
@@ -20,16 +25,10 @@ excerpt_description: true
 ```
 
 <!-- endtab -->
-
-<!-- tab {% label success@Tag more %} -->
-Use `<!-- more -->` in your article to break your article manually, which is recommended by Hexo.
-
-<!-- endtab -->
-
 {% endtabs %}
 
 {% note info %}
-It is recommended to use `<!-- more -->` which can not only control what you want to show better, but also let Hexo's plugins use it easily.
+It is recommended to use `<!-- more -->` (the first way) which can not only control what you want to show better, but also let Hexo's plugins use it easily.
 {% endnote %}
 
 #### Post Meta Display

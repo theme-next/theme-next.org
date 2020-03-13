@@ -77,7 +77,7 @@ You also can read [detailed installation instructions](/docs/getting-started/ins
 {% endnote %}
 
 {% note warning %}
-If you still use NexT version 5, you can read [instructions for update from v5 to v6](/docs/getting-started/update-from-v5).
+If you are still using NexT version 5, you can read [instructions for update from v5 to v6](/docs/getting-started/update-from-v5).
 {% endnote %}
 
 #### Enabling NexT
@@ -109,12 +109,11 @@ Now you've installed and enabled NexT. In next steps we will change some setting
 
 There are 2 variants to hook up NexT plugins:
 
-* Local installation (plugins scripts will loaded from your site).
-* CDN links (plugins scripts will loaded from remote hosts).
+* Local installation (plugins scripts will be loaded from your site).
+* CDN links (plugins scripts will be loaded from remote CDN hosts).
 
 {% note info %}
-If your site hosted on VPS (or any other) with NGINX configuration, recommended to use local installation.
-And if your files deployed to any free hosting service (Github, Gitlab, etc.), recommended to use CDN links.
+If your site is deployed to any free hosting service (Github, Gitlab, etc.), CDN links is recommended. CDN usually have faster speeds and no traffic restrictions.
 {% endnote %}
 
 {% tabs adding-plugins %}

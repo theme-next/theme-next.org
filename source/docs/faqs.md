@@ -7,16 +7,7 @@ Here is a collection of frequently asked questions in NexT Issues. If you can't 
 
 ### How to Set «Read More»
 
-It's a common need to show some part of article in home page and then give a link to full article. NexT gives two ways to control how article is shown in home page. In other words, you can use following ways to show summary of articles and a **Read More** button:
-
-1. Use `<!-- more -->` in your article to break your article manually, which is recommended by Hexo. {% label success@Recommended %}
-2. Add `description` and set its value to your article summary in [Front-matter](https://hexo.io/docs/front-matter).
-
-In order for these settings to take effect, you need to execute `hexo clean`.
-
-{% note info %}
-It is recommended to use `<!-- more -->` (the first way) which can not only control what you want to show better, but also let Hexo's plugins use it easily.
-{% endnote %}
+See [Post Settings - Preamble Text](/docs/theme-settings/posts/#Preamble-Text).
 
 ### How to Change Fonts
 
@@ -126,7 +117,7 @@ comments: false
 
 ### How to Set Number of Articles in Each Page
 
-Set following in {% label info@site config file %}:
+Find and configure these options in {% label info@site config file %}:
 
 ```yml next/_config.yml
 index_generator:
@@ -141,13 +132,7 @@ tag_generator:
   per_page: 10
 ```
 
-{% note info %}
 `per_page` is the number of articles per page.
-{% endnote %}
-
-{% note warning %}
-Please note that Hexo 3.2 doesn't allow to have duplicated same options. You'd better check weither {% label info@site config file %} already has same config. If has, make them together.
-{% endnote %}
 
 ### How to Optimize NexT Theme
 

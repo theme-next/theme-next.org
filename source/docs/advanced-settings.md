@@ -209,6 +209,10 @@ hexo.extend.filter.register('theme_inject', function(injects) {
 });
 ```
 
+{% note warning %}
+You have to note `filePath`, it must be absolute path or relative to `hexo_dir`.
+{% endnote %}
+
 For inject style:
 ```js
 hexo.extend.filter.register('theme_inject', function(injects) {
@@ -226,10 +230,6 @@ module.exports = {
 ```
 
 `custom_file_path` also uses this API, see [default-injects.js](https://github.com/theme-next/hexo-theme-next/blob/master/scripts/filters/default-injects.js). It will consume `custom` name in view inject points. So if you use `custom_file_path`, please not use `custom`.
-
-{% note warning %}
-You have to note path, it must absolute or relative to `hexo_dir`.
-{% endnote %}
 
 #### Examples
 

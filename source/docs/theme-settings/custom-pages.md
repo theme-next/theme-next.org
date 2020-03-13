@@ -38,10 +38,7 @@ menu:
 {% endtabs %}
 
 If you want to add Tags or Categories page, please continue reading.
-
-#### Adding «Tags» Page
-
-Adding «Tags» page and show «Tags» link in menu. «Tags» page will show all tags of site. If no article has tags, this page will leave blank.
+Please read [Hexo's Docs of Categories & Tags](https://hexo.io/docs/front-matter#Categories-amp-Tags) to know how to add tags or categories for articles.
 Following code shows you a example of article with tags:
 
 {% tabs tags-variants %}
@@ -64,9 +61,9 @@ tags:
 <!-- endtab -->
 {% endtabs %}
 
-{% note info %}
-Please read [Hexo's Docs of Categories & Tags](https://hexo.io/docs/front-matter#Categories-amp-Tags) to know how to add tags or categories for articles.
-{% endnote %}
+#### Adding «Tags» Page
+
+Adding «Tags» page and show «Tags» link in menu. «Tags» page will show all tags of site. If no article has tags, this page will leave blank.
 
 {% tabs adding-tags-page %}
 <!-- tab Adding New Page → -->

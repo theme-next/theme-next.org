@@ -4,7 +4,7 @@ description: NexT User Docs – Third-party Service Integration – Statistics a
 ---
 
 {% note warning %}
-Make sure you have configured `url` correctly in {% label info@site config file %}, otherwise these statistics tools may not work. This is to prevent access impact statistics from other domain names, such as `localhost:4000`.
+NexT will not send record to analytics service provider as long as the page's host name does not match `url` option set in {% label info@site config file %}. This will prevent local debugging from polluting analytics. Make sure you have configured `url` correctly, otherwise these statistics tools may not work as expected.
 {% endnote %}
 
 ### Analytics Tools
@@ -22,10 +22,6 @@ Make sure you have configured `url` correctly in {% label info@site config file 
 
 3. When field `only_pageview` is set to true, NexT will only send `pageview` event to Google Analytics.
 The benefit of using this instead of `only_pageview: false` is reduce a external script on your site, which will give you better performance but no complete analytics function.
-
-{% note info %}
-NexT will not send record to Google Analytics as long as page request has "localhost" as its host name. This will prevent local debugging from polluting analytics.
-{% endnote %}
 
 #### Baidu Analytics (China)
 
@@ -62,7 +58,7 @@ Official documentation: https://docs.growingio.com/sdk-integration/sdk-2.x-docs/
     ```
 
 {% note info %}
-The script will show «Webmaster Statistics» and it's ugly, so we used a `display: none;` to hide it.
+The script will show «Webmaster Statistics» and it's not elegant, so we used a `display: none;` to hide it.
 {% endnote %}
 
 ### Counting Tools
