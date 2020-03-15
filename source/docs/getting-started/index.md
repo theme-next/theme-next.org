@@ -214,7 +214,7 @@ NexT now supports following languages:
 | 🇻🇳 Vietnamese                        | Tiếng Việt            | `vi`    |
 
 {% note primary %}
-If you want to add or improve language for NexT theme, you can do it easily with [crowdin](https://crwd.in/theme-next) service.
+If you want to add or improve language for NexT theme, you can do it easily with [crowdin](https://i18n.theme-next.org) service.
 {% endnote %}
 
 #### Configuring Menu Items

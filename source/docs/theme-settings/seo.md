@@ -7,20 +7,16 @@ description: NexT User Docs – Theme Settings – SEO
 
 Next provides useful options for better Search Engine Optimization (SEO).
 
+{% note info %}
+By default a canonical link tag is created in Hexo after you have set up your URL `url: http://yoursite.com` in {% label info@site config file %}. More detailed information can be found in [Consolidate duplicate URLs](https://support.google.com/webmasters/answer/139066).
+{% endnote %}
+
 {% tabs SEO %}
 <!-- tab <code>disable_baidu_transformation</code> -->
 By default China's search engine Baidu will cache and rewrite your site to provide a webpage snapshot for mobile users. You can disable this by setting the value `disable_baidu_transformation` to `true` in {% label primary@theme config file %}.
 
 ```yml next/_config.yml
 disable_baidu_transformation: true
-```
-<!-- endtab -->
-
-<!-- tab <code>canonical</code> -->
-By default a canonical link tag is created in Hexo by setting the value `canonical` to `true` in {% label primary@theme config file %} after you have set up your URL `url: http://yoursite.com` in {% label info@site config file %}. More detailed information can be found in [Consolidate duplicate URLs](https://support.google.com/webmasters/answer/139066).
-
-```yml next/_config.yml
-canonical: true
 ```
 <!-- endtab -->
 

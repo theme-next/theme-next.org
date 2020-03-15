@@ -14,7 +14,7 @@ footer:
   # Specify the date when the site was setup.
   # If not defined, current year will be used.
   # since: 2015
-   # Icon between year and copyright info.
+  # Icon between year and copyright info.
 -  icon: user
 ```
 
@@ -25,7 +25,7 @@ footer:
   # Specify the date when the site was setup.
   # If not defined, current year will be used.
   # since: 2015
-   # Icon between year and copyright info.
+  # Icon between year and copyright info.
 +  icon:
 +    # Icon name in fontawesome, see: https://fontawesome.com/v4.7.0/icons
 +    # `heart` is recommended with animation in red (#ff0000).

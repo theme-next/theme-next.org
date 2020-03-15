@@ -4,12 +4,12 @@ description: NexT User Docs – Third-party Service Integration – Math Equatio
 mathjax: true
 ---
 
-NexT provides two render engines for displaying Math Equations.
+NexT provides two render engines for displaying Math Equations: MathJax and KaTeX.
 
-If you choose to use this feature, you don't need to manually import any JS or CSS. You just need to choose a render engine and turn on `enable` for it (located in {% label primary@theme config file %}).
+To use this feature, you just need to choose a render engine and turn on `enable` for it (located in {% label primary@theme config file %}). Then you need to install the **corresponding Hexo Renderer** to fully support the display of Math Equations - Only turn on `enable` **may not let you see the displayed equations correctly**. The corresponding Hexo Renderer engine will be [provided below](#Render-Engines).
 
 {% note warning %}
-Only turning on `enable` **cannot let you see the displayed equations correctly**, you need to install the **corresponding Hexo Renderer** to fully support the display of Math Equations. The corresponding Hexo Renderer per engine will be [provided below](#Render-Engines).
+Except for the required renderer, any other Hexo plugins are unnecessary and there is no need to manually import any JS or CSS files. If you have installed plugins such as `hexo-math`, they may conflict with the built-in render engine of NexT.
 {% endnote %}
 
 ### Settings
@@ -35,9 +35,8 @@ math:
     copy_tex: false
 ```
 
-{% tabs mathjax-settings %}
-<!-- tab <code>per_page</code> -->
-This option is to control whether to render Math Equations every page.
+{% note info %}
+The `per_page` option is to control whether to render Math Equations every page.
 
 * **`true`** → Equations will be processed on demand. It will only render those posts which have `mathjax: true` in their Front-matter.
 * `false` → Equations will be processed on every page. Even if they not exists on one or another page.
@@ -71,9 +70,7 @@ title: Not Render Math Either
 ....
 ```
 {% endnote %}
-<!-- endtab -->
-
-{% endtabs %}
+{% endnote %}
 
 ### Render Engines
 
@@ -87,8 +84,8 @@ For now, NexT provides two Render Engines: [MathJax](https://www.mathjax.org) an
 
 If you use MathJax to render Math Equations, you can choose one of renderers below:
 
-* [hexo-renderer-kramed](https://github.com/sun11/hexo-renderer-kramed)
-* [hexo-renderer-pandoc](https://github.com/wzpan/hexo-renderer-pandoc)
+* [hexo-renderer-pandoc](https://github.com/wzpan/hexo-renderer-pandoc) (Need to install [pandoc](https://github.com/jgm/pandoc))
+* [hexo-renderer-kramed](https://github.com/sun11/hexo-renderer-kramed) (Deprecated, not recommended)
 
 {% endnote %}
 
@@ -99,7 +96,7 @@ If you use MathJax to render Math Equations, you can choose one of renderers bel
 
    ```bash
    $ npm un hexo-renderer-marked
-   $ npm i hexo-renderer-kramed # or hexo-renderer-pandoc
+   $ npm i hexo-renderer-pandoc # or hexo-renderer-kramed
    ```
 
 2. In {% label primary@theme config file %}, choose `mathjax` as render engine.
