@@ -92,6 +92,8 @@ symbols_count_time:
   time: false
   total_symbols: false
   total_time: false
+  awl: 4
+  wpm: 275
 
 
 #################################################################
@@ -245,12 +247,14 @@ theme_config:
   # ======================= Post Settings ======================= #
   # ============================================================= #
 
+  post_meta:
+    updated_at:
+      enable: false
+
   symbols_count_time:
     separated_meta: true
     item_text_post: true
     item_text_total: true
-    awl: 4
-    wpm: 275
 
   post_edit:
     enable: true
@@ -354,5 +358,6 @@ theme_config:
     enable: false
 
   vendors:
+    anime: //cdn.jsdelivr.net/npm/animejs@3/lib/anime.min.js
     fontawesome: //cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css
     pjax: //cdn.jsdelivr.net/gh/theme-next/theme-next-pjax@0/pjax.min.js
