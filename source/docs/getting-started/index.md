@@ -191,27 +191,28 @@ language: en
 
 NexT now supports following languages:
 
-| Language                             | Example               | Code    |
-| ------------------------------------ | --------------------- | ------- |
-| 🇨🇳 Chinese (Simplified)              | 简体中文               | `zh-CN` |
-| 🇹🇼 Chinese (Traditional)             | 繁體中文               | `zh-TW` |
-| 🇭🇰 Chinese (Hong Kong)               | 繁體中文-香港           | `zh-HK` |
-| 🇧🇶 Dutch                             | Niederländisch        | `nl`    |
-| 🇺🇸 English                           | English               | `en`    |
-| 🇹🇫 French                            | Français              | `fr`    |
-| 🇩🇪 German                            | Deutsch               | `de`    |
-| 🇮🇩 Indonesian                        | Indonesia             | `id`    |
-| 🇮🇹 Italian                           | Italiano              | `it`    |
-| 🇯🇵 Japanese                          | 日本語                 | `ja`    |
-| 🇰🇷 Korean                            | 한국어                 | `ko`    |
-| 🇮🇷 Persian                           | فارسی                 | `fa`    |
-| 🇵🇹 Portuguese                        | Português             | `pt`    |
-| 🇧🇷 Portuguese (Brazilian)            | Português (Brazilian) | `pt-BR` |
-| 🇷🇺 Russian                           | Русский               | `ru`    |
-| 🇪🇸 Spanish                           | Español               | `es`    |
-| 🇹🇷 Turkish                           | Türk                  | `tr`    |
-| 🇺🇦 Ukrainian                         | Український           | `uk`    |
-| 🇻🇳 Vietnamese                        | Tiếng Việt            | `vi`    |
+| Language                    | Example               | Code    |
+| --------------------------- | --------------------- | ------- |
+| Arabic                      | عربي                  | `ar`    |
+| Chinese (Simplified)        | 简体中文               | `zh-CN` |
+| Chinese (Traditional)       | 繁體中文               | `zh-TW` |
+| Chinese (Hong Kong)         | 繁體中文-香港           | `zh-HK` |
+| Dutch                       | Niederländisch        | `nl`    |
+| English                     | English               | `en`    |
+| French                      | Français              | `fr`    |
+| German                      | Deutsch               | `de`    |
+| Indonesian                  | Indonesia             | `id`    |
+| Italian                     | Italiano              | `it`    |
+| Japanese                    | 日本語                 | `ja`    |
+| Korean                      | 한국어                 | `ko`    |
+| Persian                     | فارسی                 | `fa`    |
+| Portuguese                  | Português             | `pt`    |
+| Portuguese (Brazilian)      | Português (Brazilian) | `pt-BR` |
+| Russian                     | Русский               | `ru`    |
+| Spanish                     | Español               | `es`    |
+| Turkish                     | Türk                  | `tr`    |
+| Ukrainian                   | Український           | `uk`    |
+| Vietnamese                  | Tiếng Việt            | `vi`    |
 
 {% note primary %}
 If you want to add or improve language for NexT theme, you can do it easily with [crowdin](https://i18n.theme-next.org) service.

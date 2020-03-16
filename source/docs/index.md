@@ -16,7 +16,7 @@ Theme NexT has the following features:
 * Support Disqus, Gitalk and Valine comment systems.
 * Support a large number of third-party statistics and content sharing services.
 * Easy to customize content or modify style.
-* Visit the [Awesome NexT][https://github.com/theme-next/awesome-next] list for more plugins.
+* Visit the [Awesome NexT](https://github.com/theme-next/awesome-next) list for more plugins.
 
 ### Four Schemes in One
 
@@ -26,7 +26,7 @@ By using different styles in NexT (also called Scheme), you simply change what y
 
 ### Multilingual Support
 
-Thanks to the [contribution of our users and developers](https://github.com/theme-next/hexo-theme-next/pulls?utf8=%E2%9C%93&q=is%3Apr+label%3A%22%F0%9F%8C%8D+i18n%22+), [NexT now supports over 15 languages](/docs/getting-started/#Choosing-Language).
+Thanks to the contribution of our users and developers, [NexT now supports over 20 languages](/docs/getting-started/#Choosing-Language).
 
 ### Five Code Highlighting Themes
 
