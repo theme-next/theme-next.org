@@ -18,6 +18,7 @@ In any time you can extend needed functions by using third-party services suppor
 * [Gitalk](/docs/third-party-services/comments#Gitalk)
 * [Valine (China)](/docs/third-party-services/comments#Valine)
 * [Changyan (China)](/docs/third-party-services/comments#Changyan)
+* [MiniValine (China Modified from Valine)](/docs/third-party-services/comments#MiniValine)
 
 {% note info %}
 If you want to disable comment in some page/post, just add `comments: false` to [Front-matter](https://hexo.io/docs/front-matter) in your markdown file.

@@ -116,7 +116,7 @@ Valine is a fast, simple & efficient Leancloud based no back end comment system.
       serverURLs: # When the custom domain name is enabled, fill it in here (it will be detected automatically by default, no need to fill in)
     ```
 
-### MiniValine (China)
+### MiniValine (China Modified from Valine)
 
 MiniValine is a simple and minimalist comment system based on Leancloud.
 
