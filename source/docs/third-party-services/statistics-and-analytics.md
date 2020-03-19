@@ -80,10 +80,10 @@ Edit {% label info@site config file %} and add following content:
 ```yml hexo/_config.yml
 leancloud_counter_security:
   enable_sync: true
-  app_id: <<your app id>>
-  app_key: <<your app key>>
-  username: <<your username>> # Will be asked while deploying if is left blank
-  password: <<your password>> # Recommmended to be left blank. Will be asked while deploying if is left blank
+  app_id: <your app id>
+  app_key: <your app key>
+  username: <your username> # Will be asked while deploying if is left blank
+  password: <your password> # Recommmended to be left blank. Will be asked while deploying if is left blank
 ```
 <!-- endtab -->
 
@@ -96,11 +96,12 @@ leancloud_visitors:
   enable: true
   app_id: #<app_id>
   app_key: #<app_key>
+  # Required for apps from CN region
+  server_url: # <your server url>
   # Dependencies: https://github.com/theme-next/hexo-leancloud-counter-security
   # If you don't care about security in lc counter and just want to use it directly
   # (without hexo-leancloud-counter-security plugin), set the `security` to `false`.
   security: true
-  betterPerformance: false
 ```
 <!-- endtab -->
 {% endtabs %}

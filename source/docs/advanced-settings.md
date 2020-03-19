@@ -135,12 +135,6 @@ vendors:
   algolia_instant_js:
   algolia_instant_css:
 
-  # PDF
-  # Example:
-  # pdfobject: //cdn.jsdelivr.net/npm/pdfobject@2/pdfobject.min.js
-  # pdfobject: //cdnjs.cloudflare.com/ajax/libs/pdfobject/2.1.1/pdfobject.min.js
-  pdfobject:
-
   # Mermaid
   # Example:
   # mermaid: //cdn.jsdelivr.net/npm/mermaid@8/dist/mermaid.min.js
