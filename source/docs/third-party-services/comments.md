@@ -116,6 +116,48 @@ Valine is a fast, simple & efficient Leancloud based no back end comment system.
       serverURLs: # When the custom domain name is enabled, fill it in here (it will be detected automatically by default, no need to fill in)
     ```
 
+### MiniValine (China Modified from Valine)
+
+MiniValine is a simple and minimalist comment system based on Leancloud.
+
+MiniValine is modified from [Valine-Ex](https://github.com/DesertsP/Valine),and Valine-Ex is modified from [Valine](https://github.com/xCss/Valine).
+
+Therefore, the configuration method of MiniValine can refer to [Valine](https://valine.js.org/) and [Valine-Ex](https://deserts.io/diy-a-comment-system/).
+
+For more information: [MiniValine Repo](https://github.com/MiniValine/MiniValine),[hexo-next-minivaline Repo](https://github.com/MiniValine/hexo-next-minivaline), [Valine-Ex configuration document](https://deserts.io/diy-a-comment-system/),[Valine configuration document](https://valine.js.org/quickstart.html)
+
+Valine Admin : Configure background management, email notification and other functions, please go to [Valine Admin configuration document](https://deserts.io/valine-admin-document/)
+
+1. Create an account or log into [LeanCloud](https://leancloud.cn/dashboard/login.html#/signin), and then click on the bottom left corner to [create the application](https://leancloud.cn/dashboard/applist.html#/newapp) in [dashboard](https://leancloud.cn/dashboard/applist.html#/apps).
+
+2. Go to the application you just created, select `Settings -> Apply Key` in the lower left corner, and you will see your APP ID and APP Key.
+
+3. Enter the hexo home directory. Install hexo-next-minivaline using npm.
+
+	```bash
+	npm install hexo-next-minivaline
+	```
+
+4. Set the value `enable` to `true`, add the obtained APP ID (`appid`) and APP Key (`appkey`), and edit other configurations in `minivaline` section in the {% label primary@hexo config file %} as following:
+
+    ```yml hexo/_config.yml
+	minivaline:
+	  enable: false
+	  appid:  # Your leancloud application appid
+	  appkey:  # Your leancloud application appkey
+	  placeholder: Write a Comment O(∩_∩)O~~ # Comment box placeholder
+	  maxNest: 3 # Nest size
+	  pageSize: 6 # Pagination size
+	  adminEmailMd5: # The MD5 of Admin Email to show Admin Flag.
+	  math: true # Support MathJax.
+	  # MiniValine's display language depends on user's browser or system environment
+	  # If you want everyone visiting your site to see a uniform language, you can set a force language value
+	  # Available values: en | es-ES | fr | ru | zh-CN | zh-TW
+	  language:
+	  lazyload: false
+	  cdn: # https://cdn.jsdelivr.net/gh/MiniValine/MiniValine/dist/MiniValine.min.js
+    ```
+
 ### Changyan (China)
 
 Changyan is the industry's leading social commenting system, supporting both PC and mobile access methods, providing a new way of commenting on websites. Changyan has a variety of common account login, triple filtering mechanism, real-time data statistics, fast data export, comprehensive support for mobile and other leading functions. It fully satisfies the needs of major websites for user login, comment, sharing, and review.
