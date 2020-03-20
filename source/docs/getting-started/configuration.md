@@ -1,6 +1,6 @@
 ---
-title: Data Files
-description: NexT User Docs – Starting to Use – Data Files
+title: Configuration
+description: NexT User Docs – Starting to Use – Configuration
 ---
 
 Currently, it is not smooth to update NexT theme from pulling or downloading new releases. It is quite often running into conflict status when updating NexT theme via `git pull`, or need to merge configurations manually when upgrading to new releases.
@@ -45,7 +45,7 @@ If there are any new options in new releases, you just need to copy those option
 {% endnote %}
 
 {% note warning %}
-This method relies on Hexo [Data files](https://hexo.io/docs/data-files.html). Because Data files is introduced in Hexo 3, so you need upgrade Hexo to 3.0 (or above) to use this feature.
+This method relies on Hexo [Data files](https://hexo.io/docs/configuration.html). Because Data files is introduced in Hexo 3, so you need upgrade Hexo to 3.0 (or above) to use this feature.
 {% endnote %}
 
 **Usage**

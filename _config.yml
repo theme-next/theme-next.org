@@ -161,7 +161,7 @@ theme_config:
         default: /getting-started/ || flag
         Installation: /installation.html || download
         Deployment: /deployment.html || upload
-        Data Files: /data-files.html || wrench
+        Configuration: /configuration.html || wrench
         Update from 5.x: /update-from-v5.html || retweet
 
       Theme Settings:

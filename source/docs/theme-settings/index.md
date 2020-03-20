@@ -40,7 +40,7 @@ minify: true
 
 ### Custom Style Support
 
-Like [Next Data files](/docs/getting-started/data-files), you can put all your custom styles into one place (`hexo/source/_data`). Add your custom files in `hexo/source/_data` and uncomment needed files under the `custom_file_path` section in {% label primary@theme config file %} as following:
+Like [Next Data files](/docs/getting-started/configuration), you can put all your custom styles into one place (`hexo/source/_data`). Add your custom files in `hexo/source/_data` and uncomment needed files under the `custom_file_path` section in {% label primary@theme config file %} as following:
 
 ```yml next/_config.yml
 # For example, you want to put your custom styles file

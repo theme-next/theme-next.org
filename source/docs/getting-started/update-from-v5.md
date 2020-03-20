@@ -12,7 +12,7 @@ There are no hard breaking changes between 5.1.x and 6.0.x versions. It's change
 So, NexT suggest to update from version 5 to version 6 in this way:
 
 1. You don't touch old `next` dir and just do some copies of NexT files:
-   1.1. `_config.yml` or `next.yml` (if you used [data-files](/docs/getting-started/data-files)).
+   1.1. `_config.yml` or `next.yml` (if you used [configuration](/docs/getting-started/configuration)).
    1.2. Custom CSS styles what placed in `next/source/css/_custom/*` and `next/source/css/_variables/*` directories.
    1.3. Custom layout styles what placed in `next/layout/_custom/*`.
    1.4. Any another possible custom additions which can be finded by compare tools between repositories.
