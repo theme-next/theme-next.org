@@ -20,14 +20,6 @@ disable_baidu_transformation: true
 ```
 <!-- endtab -->
 
-<!-- tab <code>seo</code> -->
-Set the value `enable` to `true` in `seo` section to change headers hierarchy on `subtitle` in {% label info@site config file %} and on all post/pages titles for better SEO in {% label primary@theme config file %} as following:
-
-```yml next/_config.yml
-seo: true
-```
-<!-- endtab -->
-
 <!-- tab <code>index_with_subtitle</code> -->
 Set the value `enable` to `true` in `index_with_subtitle` section to add `subtitle` information in {% label info@site config file %} to index page.
 

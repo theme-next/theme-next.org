@@ -66,64 +66,12 @@ footer:
 
 #### Site Platform Information
 
-By default NexT shows Hexo and Theme & scheme information like `Powered by Hexo v3.7.1 | Theme — NexT.Muse v6.3.0`. You can configure it by editing values in `powered` and `theme` section in {% label primary@theme config file %}.
-
-{% tabs platform %}
-<!-- tab <code>powered</code> -->
-
-{% subtabs platform1 %}
-<!-- tab <code>enable</code> -->
-* **`true`** → Displaying `Powered by Hexo` Information.
-* `false` → Not Displaying `Powered by Hexo` Information.
+By default NexT shows Hexo and Theme & scheme information like `Powered by Hexo & NexT.Muse`. You can configure it by editing `powered` section in {% label primary@theme config file %}.
 
 ```yml next/_config.yml
 footer:
-  powered:
-    enable: true
+  powered: true
 ```
-<!-- endtab -->
-
-<!-- tab <code>version</code> -->
-* **`true`** → Displaying Hexo Version Information.
-* `false` → Not Displaying Hexo Version Information.
-
-```yml next/_config.yml
-footer:
-  powered:
-    version: true
-```
-<!-- endtab -->
-{% endsubtabs %}
-<!-- endtab -->
-
-<!-- tab <code>theme</code> -->
-
-{% subtabs platform2 %}
-<!-- tab <code>enable</code> -->
-* **`true`** → Displaying Theme & Scheme Information.
-* `false` → Not Displaying Theme & Scheme Information.
-
-```yml next/_config.yml
-footer:
-  theme:
-    enable: true
-```
-<!-- endtab -->
-
-<!-- tab <code>version</code> -->
-* **`true`** → Displaying Theme NexT Version Information.
-* `false` → Not Displaying Theme NexT Version Information.
-
-```yml next/_config.yml
-footer:
-  theme:
-    version: true
-```
-<!-- endtab -->
-{% endsubtabs %}
-<!-- endtab -->
-
-{% endtabs %}
 
 #### Site Beian Information
 
@@ -138,4 +86,3 @@ footer:
     gongan_num: 京公网安备 1234567890号
     gongan_icon_url: /uploads/beian.png
 ```
-

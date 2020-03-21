@@ -123,12 +123,7 @@ theme_config:
       animated: true
       color: "#808080"
     copyright: NexT
-    powered:
-      enable: false
-      version: false
-    theme:
-      enable: false
-      version: false
+    powered: false
 
   creative_commons:
     license: by-nc-sa
@@ -281,8 +276,6 @@ theme_config:
   # ============================================================= #
   # ======================= SEO Settings ======================== #
   # ============================================================= #
-
-  seo: true
 
   index_with_subtitle: true
 
