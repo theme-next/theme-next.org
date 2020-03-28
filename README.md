@@ -15,7 +15,7 @@
 ## Autoinstall Hexo & NexT & NexT Website Source on Localhost
 
 ```bash
-cd /your-sites-dir
-wget https://raw.githubusercontent.com/theme-next/theme-next.org/source/hexo-theme-next-autoinstall.sh
+git clone https://github.com/theme-next/theme-next.org
+cd theme-next.org
 sh ./hexo-theme-next-autoinstall.sh
 ```

@@ -24,18 +24,6 @@ white='\033[1;37m'
 norm='\033[0m'
 bold='\033[1m'
 
-column=50
-alignment="\\033[${column}G"
-
-# Status variables.
-C_OK="$alignment [ ${green} OK ${norm} ]\n"
-C_OK_BOLD="$alignment ${green}[ ${bold} OK ${green} ]${norm}\n"
-C_NO="$alignment [ ${red} NO ${norm} ]\n"
-C_NO_BOLD="$alignment ${red}[ ${bold} NO ${red} ]${norm}\n"
-
-# Arguments.
-EXPECTED_ARGS=1
-
 # NexT website repo directory
 DIR_NAME="next-source"
 
@@ -49,57 +37,35 @@ echo "=============================================================="
 
 echo
 echo "=============================================================="
-echo " ${lgreen}Installing 'hexo-cli'...${norm}"
+echo " ${lgreen}Checking Node.js & NPM version...${norm}"
 echo "=============================================================="
-     echo "${yellow}Node version:${norm} ${lcyan}`node -v`${norm}"
-     echo "${yellow}NPM version:${norm} ${lcyan}`npm -v`${norm}"
-     npm install hexo-cli -g --silent
+    echo "${yellow}Node version:${norm} ${lcyan}`node -v`${norm}"
+    echo "${yellow}NPM version:${norm} ${lcyan}`npm -v`${norm}"
 
 echo
 echo "=============================================================="
 echo " ${lgreen}Installing Hexo & NPM modules...${norm}"
 echo "=============================================================="
-    mkdir -vp $DIR_NAME
-    cd $DIR_NAME
-    curl --silent -L https://api.github.com/repos/hexojs/hexo-starter/tarball | tar -zxv -C ./ --strip-components=1
     npm install --silent
-
-echo
-echo "=============================================================="
-echo " ${lred}Removing unneeded Hexo files...${norm}"
-echo "=============================================================="
-    rm -vf _config.yml
-    rm -vf .gitmodules
-    rm -vfr source
-    rm -vfr themes/landscape
 
 echo
 echo "=============================================================="
 echo " ${lgreen}Updating or Installing NexT theme & Needed modules...${norm}"
 echo "=============================================================="
-echo "${yellow}NexT:${norm} ${lcyan}`git -C themes/next pull || git clone https://github.com/theme-next/hexo-theme-next themes/next`${norm}"
-
-echo
-echo "=============================================================="
-echo " ${lgreen}Replacing default renderer & Installing needed plugins...${norm}"
-echo "=============================================================="
-    npm i hexo-symbols-count-time --silent
-    npm i hexo-generator-searchdb --silent
-    npm i hexo-generator-feed --silent
+    echo "${yellow}NexT:${norm} ${lcyan}`git -C themes/next pull || git clone https://github.com/theme-next/hexo-theme-next themes/next`${norm}"
 
 echo
 echo "=============================================================="
 echo " ${yellow}Checking Hexo version...${norm}"
 echo "=============================================================="
+    alias hexo="npx hexo"
     hexo -v
     cat package.json
 
 echo
 echo "=============================================================="
-echo " ${lpurple}Creating symlinks & Schemes directory...${norm}"
+echo " ${lpurple}Creating Schemes directory...${norm}"
 echo "=============================================================="
-    ln -sv ../source source
-    ln -sv ../_config.yml _config.yml
     mkdir -v schemes
 
 echo
@@ -195,7 +161,6 @@ echo
 echo "=============================================================="
 echo " ${yellow}Checking 'repo' directory structure...${norm}"
 echo "=============================================================="
-    cd ../
     echo "${lcyan}`pwd`${norm}"
     du -sh
     du -sh *
@@ -204,6 +169,8 @@ echo
 echo "=============================================================="
 echo " ${yellow}Checking '$DIR_NAME' directory structure...${norm}"
 echo "=============================================================="
+    mkdir -vp $DIR_NAME
+    echo "${lred}`mv -v public $DIR_NAME`${norm}"
     cd $DIR_NAME
     echo "${lcyan}`pwd`${norm}"
     du -sh

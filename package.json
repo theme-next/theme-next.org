@@ -1,0 +1,42 @@
+{
+  "name": "theme-next-site",
+  "version": "0.0.1",
+  "private": true,
+  "hexo": {
+    "version": "4.2.0"
+  },
+  "description": "Elegant and powerful theme for Hexo.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theme-next/theme-next.org.git"
+  },
+  "keywords": [
+    "hexo",
+    "theme",
+    "next"
+  ],
+  "author": "NexT <support@theme-next.org> (https://theme-next.org)",
+  "license": "AGPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/theme-next/theme-next.org/issues"
+  },
+  "homepage": "https://theme-next.org",
+  "dependencies": {
+    "hexo": "4.2.0",
+    "hexo-cli": "^3.1.0",
+    "hexo-deployer-git": "2.1.0",
+    "hexo-generator-archive": "1.0.0",
+    "hexo-generator-category": "1.0.0",
+    "hexo-generator-feed": "^2.2.0",
+    "hexo-generator-index": "1.0.0",
+    "hexo-generator-searchdb": "1.2.0",
+    "hexo-generator-tag": "1.0.0",
+    "hexo-renderer-marked": "2.0.0",
+    "hexo-renderer-stylus": "1.1.0",
+    "hexo-server": "1.0.0",
+    "hexo-symbols-count-time": "0.7.1"
+  },
+  "engines": {
+    "node": ">=10.9.0"
+  }
+}
