@@ -6,6 +6,9 @@
     "version": "4.2.0"
   },
   "description": "Elegant and powerful theme for Hexo.",
+  "scripts": {
+    "update": "node update.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/theme-next/theme-next.org.git"
@@ -23,11 +26,11 @@
   "homepage": "https://theme-next.org",
   "dependencies": {
     "hexo": "4.2.0",
-    "hexo-cli": "^3.1.0",
+    "hexo-cli": "3.1.0",
     "hexo-deployer-git": "2.1.0",
     "hexo-generator-archive": "1.0.0",
     "hexo-generator-category": "1.0.0",
-    "hexo-generator-feed": "^2.2.0",
+    "hexo-generator-feed": "2.2.0",
     "hexo-generator-index": "1.0.0",
     "hexo-generator-searchdb": "1.2.0",
     "hexo-generator-tag": "1.0.0",
