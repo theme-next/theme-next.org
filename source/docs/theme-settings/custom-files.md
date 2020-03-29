@@ -27,10 +27,10 @@ custom_file_path:
   #style: source/_data/styles.styl
 ```
 
-You can also to rename all items in `next/languages` files or metas related in your favorite languages using [Data files](https://hexo.io/docs/configuration.html).
+You can also to rename all items in `next/languages` files or metas related in your favorite languages using [Data files](/docs/getting-started/configuration).
 
 1. creat a `languages.yml` in `source\_data`.
-2. insert following codes: (be carefully about the two-space indent)
+2. insert following codes: (be careful about the two-space indent)
 
     ```yaml
     # language
@@ -42,10 +42,12 @@ You can also to rename all items in `next/languages` files or metas related in y
           author: 本文博主
     ```
 
-This situation is also available for items off the language files. For example, Next uses [Theme Inject](/docs/advanced-settings#Injects) to introduce the commments systems. We can rename the returned value in chinese as followed:
+This situation is also available for off-list items. For example, Next uses [Theme Inject](/docs/advanced-settings#Injects) to introduce the commments systems. You can rename the returned value in chinese as followed:
 
 ```yaml
+# language
 zh-CN:
+  # items
   post:
     comments:
       valine:  评论
