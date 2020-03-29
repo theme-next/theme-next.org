@@ -38,27 +38,6 @@ NexT allows to minify hexo generation. Set the value `minify` to `true` in {% la
 minify: true
 ```
 
-### Custom Style Support
-
-Like [Next Data files](/docs/getting-started/configuration), you can put all your custom styles into one place (`hexo/source/_data`). Add your custom files in `hexo/source/_data` and uncomment needed files under the `custom_file_path` section in {% label primary@theme config file %} as following:
-
-```yml next/_config.yml
-# For example, you want to put your custom styles file
-# outside theme directory in root `source/_data`, set
-# `styles: source/_data/styles.styl`
-custom_file_path:
-  #head: source/_data/head.swig
-  #header: source/_data/header.swig
-  #sidebar: source/_data/sidebar.swig
-  #postMeta: source/_data/post-meta.swig
-  #postBodyEnd: source/_data/post-body-end.swig
-  #footer: source/_data/footer.swig
-  #bodyEnd: source/_data/body-end.swig
-  #variable: source/_data/variables.styl
-  #mixin: source/_data/mixins.styl
-  #style: source/_data/styles.styl
-```
-
 ### Creative Commons
 
 NexT supports the display of [Creative Commons 4.0 International License](http://creativecommons.org/) in sidebar and post including `by`, `by-nc`, `by-nc-nd`, `by-nc-sa`, `by-nd`, `by-sa`, `zero`. These licenses allow creators to communicate which rights they reserve, and which rights they waive for the benefit of recipients or other creators.
