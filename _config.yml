@@ -164,7 +164,8 @@ theme_config:
         Footer: /footer.html || sun-o
         Sidebar: /sidebar.html || bars
         Posts: /posts.html || pencil-square-o
-        Custom Pages: /custom-pages.html || file-o
+        Custom Pages: /custom-pages.html || file-text-o
+        Custom Files: /custom-files.html || file-o
         SEO: /seo.html || external-link-square
         Front Matter: /front-matter.html || header
 
