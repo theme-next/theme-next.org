@@ -48,20 +48,20 @@ footer:
   +  border_radius:
   +
   ```
-- Added `backlog` label to exclude labels. (2a841a9904962cd4d1d55689c4b0a0449cb18b3a)
+- Added `backlog` label to exclude labels. ([2a841a9](http://github.com/theme-next/hexo-theme-next/commit/2a841a9904962cd4d1d55689c4b0a0449cb18b3a))
 - Added English document for LeanCloud Counter Security Plugin. ([#174](https://github.com/theme-next/hexo-theme-next/pull/174))
 - Added English and Chinese document for contributing.md. ([#192](https://github.com/theme-next/hexo-theme-next/pull/192))
 - Added English and Chinese document for code-of-couduct.md. ([#198](https://github.com/theme-next/hexo-theme-next/pull/198))
 
 ## Improvements
 
-- Reverted the beta version of LeanCloud Counter Security Plugin. The option `leancloud_visitors.security: true` by default at present. (d297cf55c16c902420f4b28798ff0f1463489f95)
+- Reverted the beta version of LeanCloud Counter Security Plugin. The option `leancloud_visitors.security: true` by default at present. ([d297cf5](http://github.com/theme-next/hexo-theme-next/commit/d297cf55c16c902420f4b28798ff0f1463489f95))
 - Updated English document for LeanCloud Counter Security Plugin. ([#175](https://github.com/theme-next/hexo-theme-next/pull/175), [#177](https://github.com/theme-next/hexo-theme-next/pull/177), [#204](https://github.com/theme-next/hexo-theme-next/pull/204))
 - Updated Chinese document for LeanCloud Counter Security Plugin. ([#177](https://github.com/theme-next/hexo-theme-next/pull/177), [#204](https://github.com/theme-next/hexo-theme-next/pull/204))
 - Optimized symbol colon in item text of post meta. ([#188](https://github.com/theme-next/hexo-theme-next/pull/188))
-- Updated translations for core languages. (c6aaa426078a8b3c2925f2c0736914cc069ab9b7, [#189](https://github.com/theme-next/hexo-theme-next/pull/189))
-- Updated links in README.md. (bd6c789c43945c318b6913300f3da666d4a9445e)
-- Updated CDN instructions in Chinese README.md. (ca2554bcfe766a01def2cb723c52a020d94a2060)
+- Updated translations for core languages. ([c6aaa42](http://github.com/theme-next/hexo-theme-next/commit/c6aaa426078a8b3c2925f2c0736914cc069ab9b7), [#189](https://github.com/theme-next/hexo-theme-next/pull/189))
+- Updated links in README.md. ([bd6c789](http://github.com/theme-next/hexo-theme-next/commit/bd6c789c43945c318b6913300f3da666d4a9445e))
+- Updated CDN instructions in Chinese README.md. ([ca2554b](http://github.com/theme-next/hexo-theme-next/commit/ca2554bcfe766a01def2cb723c52a020d94a2060))
 
 ## Bug Fixes
 

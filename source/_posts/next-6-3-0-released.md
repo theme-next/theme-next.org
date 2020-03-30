@@ -58,7 +58,7 @@ date: 2018-05-16 12:28:16
 
 - Fixed text font of the Mist scheme on mobile. ([#262](https://github.com/theme-next/hexo-theme-next/pull/262))
 - Fixed logic bug in Han. ([#260](https://github.com/theme-next/hexo-theme-next/pull/260))
-- Fixed the incorrect URL decoding of `more` with `scroll_to_more`. ([#293](https://github.com/theme-next/hexo-theme-next/pull/293), 4cacb103b1350b8e3805f343d2c86932a9de383d)
+- Fixed the incorrect URL decoding of `more` with `scroll_to_more`. ([#293](https://github.com/theme-next/hexo-theme-next/pull/293), [4cacb10](http://github.com/theme-next/hexo-theme-next/commit/4cacb103b1350b8e3805f343d2c86932a9de383d))
 
 ***
 

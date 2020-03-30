@@ -6,6 +6,10 @@ date: 2019-11-01 11:23:23
 ## ⭐ Features
 
 - Extract some features to plugins ([#1232](https://github.com/theme-next/hexo-theme-next/pull/1232))
+  ```diff
+  -  # Automatically scroll page to section which is under <!-- more --> mark.
+  -  scroll_to_more: true
+  ```
 - Migrate to Nunjucks ([#1215](https://github.com/theme-next/hexo-theme-next/pull/1215), [#1218](https://github.com/theme-next/hexo-theme-next/pull/1218), [#1220](https://github.com/theme-next/hexo-theme-next/pull/1220), [#1226](https://github.com/theme-next/hexo-theme-next/pull/1226))
 - Delete query strings ([#963](https://github.com/theme-next/hexo-theme-next/pull/963))
 

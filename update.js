@@ -1,4 +1,5 @@
 const https = require('https');
+const path = require('path');
 const fs = require('fs');
 
 https.get('https://api.github.com/repos/theme-next/hexo-theme-next/releases', {
@@ -16,17 +17,16 @@ https.get('https://api.github.com/repos/theme-next/hexo-theme-next/releases', {
     }
   });
 }).on('error', err => {
-  console.error('Failded to download Github emojis.');
+  console.error('Failded to download release messages.');
   console.log(err);
 });
 
 function parse(data) {
-  data = JSON.parse(data);
-  for (let release of data) {
+  JSON.parse(data).forEach(release => {
     let version = release.html_url.replace('https://github.com/theme-next/hexo-theme-next/releases/tag/v', '');
-    let filename = `source/_posts/next-${version.split('.').join('-')}-released.md`;
-    console.log('Processing %s', filename);
-    if (fs.existsSync(filename)) continue;
+    console.log('Processing version %s', version);
+    let filename = path.join(__dirname, `source/_posts/next-${version.split('.').join('-')}-released.md`);
+    if (fs.existsSync(filename)) return;
     let time = release.published_at.replace('T', ' ').replace('Z', '');
     let body = release.body
       .replace(/#(\d{1,4})/g, '[#$1](https://github.com/theme-next/hexo-theme-next/pull/$1)')
@@ -42,5 +42,5 @@ ${body}
 [Detailed changes for NexT v${version}](https://github.com/theme-next/hexo-theme-next/releases/tag/v${version})
 `;
     fs.writeFileSync(filename, content);
-  }
+  });
 }

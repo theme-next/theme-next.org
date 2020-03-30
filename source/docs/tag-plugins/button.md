@@ -104,6 +104,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 {% btn #, Text & Icon, home fa-fw %}
 
 {% btn #,, home, Title %}{% btn #, Text %}
+
 [Link](#)
 {% endnote %}
 ```
@@ -111,6 +112,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 {% btn #, Text & Icon, home fa-fw fa-lg %}
 
 {% btn #,, home fa-lg, Title %}{% btn #, Text %}
+
 [Link](#)
 {% endnote %}
 

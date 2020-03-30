@@ -18,7 +18,7 @@ date: 2018-09-30 18:59:42
 - Fix alignments for `exturl` with `mobile_layout_economy` option. ([#411](https://github.com/theme-next/hexo-theme-next/pull/411))
 - Fix disqus lazyload not working in Safari ([#406](https://github.com/theme-next/hexo-theme-next/pull/406))
 - Fix TOC displayed in Overview ([#408](https://github.com/theme-next/hexo-theme-next/pull/408))
-- Sidebar affix not work when set display to always [fix added] ([#328](https://github.com/theme-next/hexo-theme-next/pull/328), 3bd5ab508df9f8749808b8832cdacbc0f31db2a4)
+- Sidebar affix not work when set display to always [fix added] ([#328](https://github.com/theme-next/hexo-theme-next/pull/328), [3bd5ab5](http://github.com/theme-next/hexo-theme-next/commit/3bd5ab508df9f8749808b8832cdacbc0f31db2a4))
 
 ***
 

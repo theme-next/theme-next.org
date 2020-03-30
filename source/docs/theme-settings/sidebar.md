@@ -268,7 +268,7 @@ back2top:
 Set the value `back2top.enable` to `true` to display `Back to top` button.
 <!-- endtab -->
 
-<!-- tab <code>enable</code> -->
+<!-- tab <code>sidebar</code> -->
 ```yml next/_config.yml
 back2top:
   # Back to top in sidebar.

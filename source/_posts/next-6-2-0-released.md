@@ -16,7 +16,7 @@ It's not actually breaking changes, just after this version **highly recommend**
 
 **P.S.** You can still use old Hexo versions, but NexT will not guarantee in future releases for correct rendering.
 
-### Added `footer.powered.version` option to display Hexo version in footer. ([#214](https://github.com/theme-next/hexo-theme-next/pull/214), 8c139bef2ce84e86d7cbf791d286e02243629642)
+### Added `footer.powered.version` option to display Hexo version in footer. ([#214](https://github.com/theme-next/hexo-theme-next/pull/214), [8c139be](http://github.com/theme-next/hexo-theme-next/commit/8c139bef2ce84e86d7cbf791d286e02243629642))
 
 #### Old configuration:
 
@@ -68,22 +68,22 @@ post_meta:
 
 ## Features
 
-- Added post edit button ([#208](https://github.com/theme-next/hexo-theme-next/pull/208), 30bccfc87578510c55774064b3e7994df90e019b)
+- Added post edit button ([#208](https://github.com/theme-next/hexo-theme-next/pull/208), [30bccfc](http://github.com/theme-next/hexo-theme-next/commit/30bccfc87578510c55774064b3e7994df90e019b))
 - Added support for [`hexo-symbols-count-time` v0.4.0](https://github.com/theme-next/hexo-symbols-count-time/releases/tag/v0.4.0) ([#233](https://github.com/theme-next/hexo-theme-next/pull/233))
 - Added copy codeblock button ([#234](https://github.com/theme-next/hexo-theme-next/pull/234), [#238](https://github.com/theme-next/hexo-theme-next/pull/238))
 
 ## Improvements
 
 - Update guide for creating releases in CONTRIBUTING.MD ([#213](https://github.com/theme-next/hexo-theme-next/pull/213))
-- Remove unused language files. (1d89f8f779affa71ff576657c944f99260be8a68)
+- Remove unused language files. ([1d89f8f](http://github.com/theme-next/hexo-theme-next/commit/1d89f8f779affa71ff576657c944f99260be8a68))
 - Updated translations for core languages. ([#211](https://github.com/theme-next/hexo-theme-next/pull/211), [#235](https://github.com/theme-next/hexo-theme-next/pull/235))
 
 ## Bug Fixes
 
-- Increase page loading performance by refactor `menu-item-active` class. (6f787af30855c34a8f1c1d06124baf57c7459371)
+- Increase page loading performance by refactor `menu-item-active` class. ([6f787af](http://github.com/theme-next/hexo-theme-next/commit/6f787af30855c34a8f1c1d06124baf57c7459371))
   Refactored files hierarchy for header components. ([#221](https://github.com/theme-next/hexo-theme-next/pull/221))
 - Fix for default language if no `language` in Hexo config defined. ([#210](https://github.com/theme-next/hexo-theme-next/pull/210))
-  Renamed back `_en.yml` on `en.yml` and setted `default.yml` to link it. (adc76b799fc16996b117d8c81b34127a4149fb34)
+  Renamed back `_en.yml` on `en.yml` and setted `default.yml` to link it. ([adc76b7](http://github.com/theme-next/hexo-theme-next/commit/adc76b799fc16996b117d8c81b34127a4149fb34))
 - Refactored menu items & badges.
   Fixed bug with appear dot in submenu with disabled badges in Pisces/Gemini schemes. ([#229](https://github.com/theme-next/hexo-theme-next/pull/229))
 

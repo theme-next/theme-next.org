@@ -1,6 +1,6 @@
 ---
 title: NexT 7.7.0 Released
-date: 2020-01-01 06:23:21 
+date: 2020-01-01 06:23:21
 ---
 
 ## 💥 Breaking Changes

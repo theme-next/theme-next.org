@@ -5,13 +5,15 @@ description: NexT User Docs – Theme Settings - Custom Files
 
 ### Custom File Support
 
-PR [# 868](https://github.com/theme-next/hexo-theme-next/pull/868) has adjusted the way of customizing the layout or style, canceling the custom files (such as `_custom/custom.styl`) in the original theme directory, and only retaining the way of specifying the custom file in the configuration file.
+PR [#868](https://github.com/theme-next/hexo-theme-next/pull/868) has adjusted the way of customizing the layout or style, canceling the custom files (such as `_custom/custom.styl`) in the original theme directory, and only retaining the way of specifying the custom file in the configuration file.
 
 It is a good practice to separate the custom files from the theme files, so that you can add custom content without modifying the original source code of the theme, and avoid conflicts due to `git merge`.
 
 As with "Next Data files", you can place all custom layouts or styles in a specific location (for example: `hexo/source/_data`). Add the custom file to `hexo/source/_data` and uncomment the content under the `custom_file_path` section in the {% label primary@theme config file %} (`next/_config.yml`)
 
-<div class="note warning"><p>The file name and path must be the same in `custom_file_path`.</p></div>
+{% note warning %}
+The file name and path must be the same in `custom_file_path`.
+{% endnote %}
 
 ```
 custom_file_path:
