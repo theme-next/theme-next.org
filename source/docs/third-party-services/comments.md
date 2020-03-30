@@ -86,7 +86,7 @@ Hexo has encode URLs by default since version 4.0: [PR 3708](https://github.com/
 Gitalk relies on the md5 value of the page path for tagging, and this may cause issues. It's recommended to upgrade Hexo to 4.0 (or above), NexT to 7.7.0 (or above) to use Gitalk.
 {% endnote %}
 
-### Valine (China)
+### Valine
 
 Valine is a fast, simple & efficient Leancloud based no back end comment system.
 
@@ -116,7 +116,7 @@ Valine is a fast, simple & efficient Leancloud based no back end comment system.
       serverURLs: # When the custom domain name is enabled, fill it in here (it will be detected automatically by default, no need to fill in)
     ```
 
-### MiniValine (China Modified from Valine)
+### MiniValine
 
 MiniValine is a simple and minimalist comment system based on Leancloud.
 
@@ -158,7 +158,7 @@ Valine Admin : Configure background management, email notification and other fun
 	  cdn: # https://cdn.jsdelivr.net/gh/MiniValine/MiniValine/dist/MiniValine.min.js
     ```
 
-### Changyan (China)
+### Changyan
 
 Changyan is the industry's leading social commenting system, supporting both PC and mobile access methods, providing a new way of commenting on websites. Changyan has a variety of common account login, triple filtering mechanism, real-time data statistics, fast data export, comprehensive support for mobile and other leading functions. It fully satisfies the needs of major websites for user login, comment, sharing, and review.
 
