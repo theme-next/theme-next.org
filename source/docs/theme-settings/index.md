@@ -261,7 +261,7 @@ font:
   # Depended options: `external` and `family`.
   enable: true
 
-  # Uri of fonts host, e.g. //fonts.googleapis.com (Default).
+  # Uri of fonts host, e.g. https://fonts.googleapis.com (Default).
   host:
 
   # Font options:

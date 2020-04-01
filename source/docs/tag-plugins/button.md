@@ -119,14 +119,14 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 #### Button margin
 
 ```md
-<div class="text-center"><div>{% btn #,, header %}{% btn #,, edge %}{% btn #,, times %}{% btn #,, circle-o %}</div>
-<div>{% btn #,, italic %}{% btn #,, scribd %}</div>
-<div>{% btn #,, google %}{% btn #,, chrome %}{% btn #,, opera %}{% btn #,, diamond fa-rotate-270 %}</div></div>
+<div class="text-center"><div>{% btn #,, heading %}{% btn #,, fab fa-edge %}{% btn #,, times %}{% btn #,, far fa-circle %}</div>
+<div>{% btn #,, italic %}{% btn #,, fab fa-scribd %}</div>
+<div>{% btn #,, fab fa-google %}{% btn #,, fab fa-chrome %}{% btn #,, fab fa-opera %}{% btn #,, gem fa-rotate-270 %}</div></div>
 ```
 
-<div class="text-center"><div>{% btn #,, header %}{% btn #,, edge %}{% btn #,, times %}{% btn #,, circle-o %}</div>
-<div>{% btn #,, italic %}{% btn #,, scribd %}</div>
-<div>{% btn #,, google %}{% btn #,, chrome %}{% btn #,, opera %}{% btn #,, diamond fa-rotate-270 %}</div></div>
+<div class="text-center"><div>{% btn #,, heading %}{% btn #,, fab fa-edge %}{% btn #,, times %}{% btn #,, far fa-circle %}</div>
+<div>{% btn #,, italic %}{% btn #,, fab fa-scribd %}</div>
+<div>{% btn #,, fab fa-google %}{% btn #,, fab fa-chrome %}{% btn #,, fab fa-opera %}{% btn #,, gem fa-rotate-270 %}</div></div>
 
 #### Button with relative URL
 
@@ -139,7 +139,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 #### Button with absolute URL
 
 ```md
-<div class="text-center">{% btn https://github.com/theme-next/hexo-theme-next, NexT, github fa-fw fa-lg, NexT source code %}</div>
+<div class="text-center">{% btn https://github.com/theme-next/hexo-theme-next, NexT, fab fa-github fa-fw fa-lg, NexT source code %}</div>
 ```
 
-<div class="text-center">{% btn https://github.com/theme-next/hexo-theme-next, NexT, github fa-fw fa-lg, NexT source code %}</div>
+<div class="text-center">{% btn https://github.com/theme-next/hexo-theme-next, NexT, fab fa-github fa-fw fa-lg, NexT source code %}</div>

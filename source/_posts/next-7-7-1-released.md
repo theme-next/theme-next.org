@@ -8,11 +8,11 @@ date: 2020-02-01 10:13:44
 - Follow me through various channels ([#1360](https://github.com/theme-next/hexo-theme-next/pull/1360))
 ```yml
 # Subscribe through Telegram Channel, Twitter, etc.
-# Usage: `Key: permalink || icon (Font Awesome)
+# Usage: `Key: permalink || icon` (Font Awesome)
 follow_me:
   #Twitter: https://twitter.com/username || twitter
   #Telegram: https://t.me/channel_name || telegram
-  #Wechat: /images/wechat_channel.jpg || wechat
+  #WeChat: /images/wechat_channel.jpg || wechat
   #RSS: /atom.xml || rss
 ```
 

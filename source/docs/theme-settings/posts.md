@@ -143,6 +143,22 @@ symbols_count_time:
 ```
 <!-- endtab -->
 
+<!-- tab <code>awl</code> -->
+`awl` means the average Word Length (chars count in word). You can check this [here](https://charactercounttool.com/).
+```yml next/_config.yml
+symbols_count_time:
+  awl: 4
+```
+<!-- endtab -->
+
+<!-- tab <code>wpm</code> -->
+`wpm` means the average words per minute. You can check this [here](https://wordcounter.net/).
+```yml next/_config.yml
+symbols_count_time:
+  wpm: 275
+```
+<!-- endtab -->
+
 {% endsubtabs %}
 
 <!-- endtab -->
@@ -172,22 +188,6 @@ By default NexT doesn't shows the text description of the words counts and estim
 ```yml next/_config.yml
 symbols_count_time:
   item_text_total: true
-```
-<!-- endtab -->
-
-<!-- tab <code>awl</code> -->
-`awl` means the average Word Length (chars count in word). You can check this [here](https://charactercounttool.com/).
-```yml next/_config.yml
-symbols_count_time:
-  awl: 4
-```
-<!-- endtab -->
-
-<!-- tab <code>wpm</code> -->
-`wpm` means the average words per minute. You can check this [here](https://wordcounter.net/).
-```yml next/_config.yml
-symbols_count_time:
-  wpm: 275
 ```
 <!-- endtab -->
 

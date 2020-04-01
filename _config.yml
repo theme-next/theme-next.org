@@ -107,9 +107,10 @@ theme_config:
   # ============================================================= #
 
   custom_file_path:
-    variable: source/_data/variables.styl
-    footer: source/_data/footer.swig
     sidebar: source/_data/sidebar.swig
+    footer: source/_data/footer.swig
+    variable: source/_data/variables.styl
+    style: source/_data/styles.styl
 
 
   # ============================================================= #
