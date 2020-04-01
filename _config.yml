@@ -119,7 +119,7 @@ theme_config:
   footer:
     since: 2014
     icon:
-      name: heart
+      name: fa fa-heart
       animated: true
       color: "#808080"
     copyright: NexT
@@ -147,56 +147,56 @@ theme_config:
   # ============================================================= #
 
   menu:
-    home: / || bullhorn
+    home: / || fa fa-bullhorn
 
     Docs:
-      default: /docs/ || book
+      default: /docs/ || fa fa-book
 
       Getting Started:
-        default: /getting-started/ || flag
-        Installation: /installation.html || download
-        Deployment: /deployment.html || upload
-        Configuration: /configuration.html || wrench
-        Update from 5.x: /update-from-v5.html || retweet
+        default: /getting-started/ || fa fa-flag
+        Installation: /installation.html || fa fa-download
+        Deployment: /deployment.html || fa fa-upload
+        Configuration: /configuration.html || fa fa-wrench
+        Update from 5.x: /update-from-v5.html || fa fa-retweet
 
       Theme Settings:
-        default: /theme-settings/ || star
-        Footer: /footer.html || sun-o
-        Sidebar: /sidebar.html || bars
-        Posts: /posts.html || pencil-square-o
-        Custom Pages: /custom-pages.html || file-text-o
-        Custom Files: /custom-files.html || file-o
-        SEO: /seo.html || external-link-square
-        Front Matter: /front-matter.html || header
+        default: /theme-settings/ || fa fa-star
+        Footer: /footer.html || far fa-sun
+        Sidebar: /sidebar.html || fa fa-bars
+        Posts: /posts.html || far fa-edit
+        Custom Pages: /custom-pages.html || far fa-file-alt
+        Custom Files: /custom-files.html || far fa-file
+        SEO: /seo.html || fa fa-external-link-square-alt
+        Front Matter: /front-matter.html || fa fa-heading
 
       Third Party Services:
-        default: /third-party-services/ || plug
-        Math Equations: /math-equations.html || superscript
-        Comment Systems: /comments.html || comments-o
-        Statistics and Analytics: /statistics-and-analytics.html || bar-chart
-        Post Widgets: /post-widgets.html || share-square
-        Search Services: /search-services.html || search-plus
-        Chat Services: /chat-services.html || comment
-        External Libraries: /external-libraries.html || puzzle-piece
+        default: /third-party-services/ || fa fa-plug
+        Math Equations: /math-equations.html || fa fa-superscript
+        Comment Systems: /comments.html || far fa-comments
+        Statistics and Analytics: /statistics-and-analytics.html || fa fa-chart-bar
+        Post Widgets: /post-widgets.html || fa fa-share-square
+        Search Services: /search-services.html || fa fa-search-plus
+        Chat Services: /chat-services.html || fa fa-comment
+        External Libraries: /external-libraries.html || fa fa-puzzle-piece
 
       Tag Plugins:
-        default: /tag-plugins/ || rocket
-        Note: /note.html || comment
-        Tabs: /tabs.html || columns
-        PDF: /pdf.html || file-pdf-o
-        Mermaid: /mermaid.html || tasks
-        Label: /label.html || font
-        Video: /video.html || video-camera
-        Button: /button.html || square
-        Caniuse: /caniuse.html || signal
-        Group Pictures: /group-pictures.html || file-image-o
+        default: /tag-plugins/ || fa fa-rocket
+        Note: /note.html || fa fa-comment
+        Tabs: /tabs.html || fa fa-columns
+        PDF: /pdf.html || far fa-file-pdf
+        Mermaid: /mermaid.html || fa fa-tasks
+        Label: /label.html || fa fa-font
+        Video: /video.html || fa fa-video
+        Button: /button.html || fa fa-square
+        Caniuse: /caniuse.html || fa fa-signal
+        Group Pictures: /group-pictures.html || far fa-file-image
 
-      Advanced Settings: /advanced-settings.html || cogs
-      FAQ's: /faqs.html || life-ring
-      Troubleshooting: /troubleshooting.html || bug
-    archives: /archives/ || archive
-    #sitemap: /sitemap.xml || sitemap
-    #commonweal: /404/ || heartbeat
+      Advanced Settings: /advanced-settings.html || fa fa-cogs
+      FAQ's: /faqs.html || fa fa-life-ring
+      Troubleshooting: /troubleshooting.html || fa fa-bug
+    archives: /archives/ || fa fa-archive
+    #sitemap: /sitemap.xml || fa fa-sitemap
+    #commonweal: /404/ || fa fa-heartbeat
 
   menu_settings:
     icons: true
@@ -219,14 +219,14 @@ theme_config:
     rounded: true
 
   social:
-    GitHub: https://github.com/theme-next || github
-    E-Mail: mailto:support@theme-next.org || envelope
-    RSS: /atom.xml || rss
+    GitHub: https://github.com/theme-next || fab fa-github
+    E-Mail: mailto:support@theme-next.org || fa fa-envelope
+    RSS: /atom.xml || fa fa-rss
 
-    Gitter: https://gitter.im/theme-next || github-alt
-    Riot: https://riot.im/app/#/room/#NexT:matrix.org || bullhorn
+    Gitter: https://gitter.im/theme-next || fab fa-github-alt
+    Riot: https://riot.im/app/#/room/#NexT:matrix.org || fa fa-bullhorn
 
-    Telegram: https://t.me/theme_next || telegram
+    Telegram: https://t.me/theme_next || fab fa-telegram
 
   social_icons:
     enable: true
@@ -353,5 +353,5 @@ theme_config:
 
   vendors:
     anime: //cdn.jsdelivr.net/npm/animejs@3/lib/anime.min.js
-    fontawesome: //cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css
+    fontawesome: //cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css
     pjax: //cdn.jsdelivr.net/gh/theme-next/theme-next-pjax@0/pjax.min.js

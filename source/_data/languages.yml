@@ -1,12 +1,10 @@
 en:
   name: English
-  disqus: en
   subtitle: Theme for Hexo
   author: Theme NexT
   description: Stay Simple. Stay NexT.
 ru:
   name: Русский
-  disqus: ru
   subtitle: Тема для Hexo
   author: Тема NexT
   description: Ставь просто. Ставь NexT.
