@@ -25,14 +25,14 @@ social:
 ### Remove cheers and auto_excerpt ([#1284](https://github.com/theme-next/hexo-theme-next/pull/1284))
 
 ```diff
-- # Automatically excerpt (Not recommend).
-- # Use <!-- more --> in the post to control excerpt accurately.
-- auto_excerpt:
--   enable: false
--   length: 150
+-# Automatically excerpt (Not recommend).
+-# Use <!-- more --> in the post to control excerpt accurately.
+-auto_excerpt:
+-  enable: false
+-  length: 150
 ...
-- # Enable \"cheers\" for archive page.
-- cheers: true
+-# Enable \"cheers\" for archive page.
+-cheers: true
 ```
 ### Drop NodeJs 8 support & Require NodeJs >= 10 ([#1269](https://github.com/theme-next/hexo-theme-next/pull/1269))
 
@@ -56,10 +56,10 @@ quicklink:
   ignores:
 
 # Some deprecated
-- toc_max_depth: 4
-- toc_number: true
-- reward: true
-- quicklink: true
+-  toc_max_depth: 4
+-  toc_number: true
+-  reward: true
+-  quicklink: true
 ```
 
 In theme's **_config.yml**:
