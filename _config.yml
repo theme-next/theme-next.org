@@ -224,7 +224,7 @@ theme_config:
     RSS: /atom.xml || fa fa-rss
 
     Gitter: https://gitter.im/theme-next || fab fa-github-alt
-    Riot: https://riot.im/app/#/room/#NexT:matrix.org || fa fa-bullhorn
+    Riot: https://riot.im/app/#/room/#NexT:matrix.org || fa fa-comment-dots
 
     Telegram: https://t.me/theme_next || fab fa-telegram
 

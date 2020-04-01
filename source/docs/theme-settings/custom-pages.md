@@ -150,7 +150,7 @@ Add `schedule` to `menu` by editing {% label primary@theme config file %}:
 menu:
   home: / || fa fa-home
   archives: /archives/ || fa fa-archive
-  schedule: /schedule/ || far fa-calendar
+  schedule: /schedule/ || fa fa-calendar
 ```
 <!-- endtab -->
 

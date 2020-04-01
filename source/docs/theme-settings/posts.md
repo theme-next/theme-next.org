@@ -234,6 +234,18 @@ paypal: /images/paypal.png
 monero: /images/monero.png
 ```
 
+#### Follow me
+
+```yml next/_config.yml
+# Subscribe through Telegram Channel, Twitter, etc.
+# Usage: `Key: permalink || icon` (Font Awesome)
+follow_me:
+  #Twitter: https://twitter.com/username || fab fa-twitter
+  #Telegram: https://t.me/channel_name || fab fa-telegram
+  #WeChat: /images/wechat_channel.jpg || fab fa-weixin
+  #RSS: /atom.xml || fa fa-rss
+```
+
 #### Related popular posts (REDOCS)
 
 NexT supports the related posts functionality according to [hexo-related-popular-posts](https://github.com/tea3/hexo-related-popular-posts).
