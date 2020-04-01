@@ -30,9 +30,9 @@ date: 2014-12-22 12:39:04
 Add `custom_name` to `menu` by editing {% label primary@theme config file %}, like adding `about` page:
 ```yml next/_config.yml
 menu:
-  home: / || home
-  archives: /archives/ || archive
-  about: /about/ || user
+  home: / || fa fa-home
+  archives: /archives/ || fa fa-archive
+  about: /about/ || fa fa-user
 ```
 <!-- endtab -->
 {% endtabs %}
@@ -89,9 +89,9 @@ type: tags
 Add `tags` to `menu` by editing {% label primary@theme config file %}, like following:
 ```yml next/_config.yml
 menu:
-  home: / || home
-  archives: /archives/ || archive
-  tags: /tags/ || tags
+  home: / || fa fa-home
+  archives: /archives/ || fa fa-archive
+  tags: /tags/ || fa fa-tags
 ```
 <!-- endtab -->
 {% endtabs %}
@@ -148,9 +148,9 @@ type: schedule
 Add `schedule` to `menu` by editing {% label primary@theme config file %}:
 ```yml next/_config.yml
 menu:
-  home: / || home
-  archives: /archives/ || archive
-  schedule: /schedule/ || calendar
+  home: / || fa fa-home
+  archives: /archives/ || fa fa-archive
+  schedule: /schedule/ || far fa-calendar
 ```
 <!-- endtab -->
 
@@ -216,10 +216,9 @@ You can also add any content you want to it.
 Add `404` to `menu` by editing {% label primary@theme config file %}:
 ```yml next/_config.yml
 menu:
-  home: / || home
-  archives: /archives/ || archive
-  schedule: /schedule/ || calendar
-  commonweal: /404/ || heartbeat
+  home: / || fa fa-home
+  archives: /archives/ || fa fa-archive
+  commonweal: /404/ || fa fa-heartbeat
 ```
 <!-- endtab -->
 {% endtabs %}

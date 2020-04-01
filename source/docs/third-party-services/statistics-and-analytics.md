@@ -141,7 +141,7 @@ When `total_visitors: true`, it will show site UV in footer. You can also use fo
 ```yml next/_config.yml
 busuanzi_count:
   total_visitors: true
-  total_visitors_icon: user
+  total_visitors_icon: fa fa-user
 ```
 <!-- endtab -->
 
@@ -150,7 +150,7 @@ When `total_views: true`, it will show site UV in footer. You can also use font-
 ```yml next/_config.yml
 busuanzi_count:
   total_views: true
-  total_views_icon: user
+  total_views_icon: fa fa-user
 ```
 <!-- endtab -->
 
@@ -159,7 +159,7 @@ When `post_views: true`, it will show page PV in post meta. You can also use fon
 ```yml next/_config.yml
 busuanzi_count:
   post_views: true
-  post_views_icon: user
+  post_views_icon: fa fa-user
 ```
 <!-- endtab -->
 {% endtabs %}

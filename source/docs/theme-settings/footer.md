@@ -25,7 +25,7 @@ The name of footer icon can be founded in [Font Awesome](https://fontawesome.com
 ```yml next/_config.yml
 footer:
   icon:
-    name: user
+    name: fa fa-user
 ```
 
 <!-- endtab -->

@@ -249,27 +249,27 @@ All custom pages which commented by default under `menu` section need to create 
 
 ```yml next/_config.yml
 menu:
-  home: / || home
-  #about: /about/ || user
-  #tags: /tags/ || tags
-  #categories: /categories/ || th
-  archives: /archives/ || archive
-  #schedule: /schedule/ || calendar
-  #sitemap: /sitemap.xml || sitemap
-  #commonweal: /404/ || heartbeat
+  home: / || fa fa-home
+  #about: /about/ || fa fa-user
+  #tags: /tags/ || fa fa-tags
+  #categories: /categories/ || fa fa-th
+  archives: /archives/ || fa fa-archive
+  #schedule: /schedule/ || far fa-calendar
+  #sitemap: /sitemap.xml || fa fa-sitemap
+  #commonweal: /404/ || fa fa-heartbeat
 ```
 
 Dynamic sub-menu within hierarchy structure is also supported. Add your sub-menu items in `menu` section in {% label primary@theme config file %} as following:
 
 ```yml next/_config.yml
 menu:
-  home: / || home
-  archives: /archives/ || archive
+  home: / || fa fa-home
+  archives: /archives/ || fa fa-archive
   Docs:
-    default: /docs/ || book
+    default: /docs/ || fa fa-book
     Third Party Services:
-      default: /third-party-services/ || plug
-      Algolia Search: /algolia-search/ || adn
+      default: /third-party-services/ || fa fa-plug
+      Algolia Search: /algolia-search/ || fa fa-search-plus
 ```
 
 {% note info %}

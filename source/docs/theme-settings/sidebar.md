@@ -124,17 +124,16 @@ Edit the `social` section in {% label primary@theme config file %} as following:
 
 ```yml next/_config.yml
 social:
-  GitHub: https://github.com/yourname || github
-  E-Mail: mailto:yourname@gmail.com || envelope
-  Google: https://plus.google.com/yourname || google
-  Twitter: https://twitter.com/yourname || twitter
-  FB Page: https://www.facebook.com/yourname || facebook
-  VK Group: https://vk.com/yourname || vk
-  StackOverflow: https://stackoverflow.com/yourname || stack-overflow
-  YouTube: https://youtube.com/yourname || youtube
-  Instagram: https://instagram.com/yourname || instagram
-  Skype: skype:yourname?call|chat || skype
-  RSS: /atom.xml || rss
+  GitHub: https://github.com/yourname || fab fa-github
+  E-Mail: mailto:yourname@gmail.com || fa fa-envelope
+  Weibo: https://weibo.com/yourname || fab fa-weibo
+  Google: https://plus.google.com/yourname || fab fa-google
+  Twitter: https://twitter.com/yourname || fab fa-twitter
+  FB Page: https://www.facebook.com/yourname || fab fa-facebook
+  StackOverflow: https://stackoverflow.com/yourname || fab fa-stack-overflow
+  YouTube: https://youtube.com/yourname || fab fa-youtube
+  Instagram: https://instagram.com/yourname || fab fa-instagram
+  Skype: skype:yourname?call|chat || fab fa-skype
 ```
 
 By default NexT shows the icons of social links in sidebar.
@@ -179,7 +178,7 @@ By default NexT shows the `link` icon {% btn #,, link %} before `title`. The nam
 
 ```yml next/_config.yml
 links_settings:
-  icon: link
+  icon: fa fa-link
 ```
 
 By default NexT uses `Links` as the name of blogroll. You can configure it by editing values in `links_settings` section in {% label primary@theme config file %}.
