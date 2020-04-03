@@ -118,7 +118,7 @@ Valine is a fast, simple & efficient Leancloud based no back end comment system.
 
 ### MiniValine (China)
 
-MiniValine is a simple, lightweight(10.79 KB gzipped) and minimalist comment system based on Leancloud.
+MiniValine is a simple, lightweight(<img style="margin:0 0;display:inline;cursor:pointer;vertical-align:middle;" onclick="window.open('https://unpkg.com/minivaline@latest/dist/MiniValine.min.js','_blank')"  src="https://img.badgesize.io/https://unpkg.com/minivaline@latest/dist/MiniValine.min.js?compression=gzip&style=flat-square"/>) and minimalist comment system based on Leancloud.
 
 MiniValine is modified from [Valine-Ex](https://github.com/DesertsP/Valine),and Valine-Ex is modified from [Valine](https://github.com/xCss/Valine).
 
@@ -157,7 +157,7 @@ Valine Admin : Configure background management, email notification and other fun
 	  # More i18n info: https://github.com/MiniValine/minivaline-i18n
 	  language:
 	  lazyload: false
-	  cdn: # https://cdn.jsdelivr.net/gh/MiniValine/MiniValine/dist/MiniValine.min.js
+	  cdn: # https://unpkg.com/minivaline/dist/MiniValine.min.js
     ```
 
 ### Changyan (China)
