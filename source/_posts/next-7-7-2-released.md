@@ -7,7 +7,7 @@ date: 2020-03-01 04:14:55
 
 - Native Dark Mode support ([#1386](https://github.com/theme-next/hexo-theme-next/pull/1386))
 ```diff
-+ darkmode: true
++darkmode: true
 ```
 
 ## ⭐ Features

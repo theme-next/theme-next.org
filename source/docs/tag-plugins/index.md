@@ -3,7 +3,7 @@ title: Tag Plugins
 description: NexT User Docs – NexT Supported Tags
 ---
 
-Tag Plugin is a way to make special style contents supported by Hexo. For example, we cannot show a image with custom size in standard Markdown. And then we can use tag plugins to solve it. [Hexo has a lot of tags](https://hexo.io/docs/tag-plugins) which can help user. And Hexo also have interfaces to themes which make themes able to create their own tags. Following tags is provided by NexT:
+Tag Plugin is a way to make special style contents supported by Hexo. For example, we cannot show a image with custom size in standard Markdown. And then we can use tag plugins to solve it. [Hexo has a lot of tags](https://hexo.io/docs/tag-plugins) which can help user. And Hexo also have interfaces to themes which make themes able to create their own tags. Following tags are provided by NexT:
 
 * [Centered Quote](#Centered-Quote)
 * [Note](/docs/tag-plugins/note)
@@ -15,6 +15,8 @@ Tag Plugin is a way to make special style contents supported by Hexo. For exampl
 * [Button](/docs/tag-plugins/button)
 * [Caniuse](/docs/tag-plugins/caniuse)
 * [Group Pictures](/docs/tag-plugins/group-pictures)
+
+These tag plugins are only available in the theme NexT. If you switch to other Hexo themes, they may cause rendering errors.
 
 ### Centered Quote
 

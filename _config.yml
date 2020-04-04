@@ -41,7 +41,7 @@ code_dir: downloads/code
 i18n_dir: :lang
 
 skip_render:
-- 'robots.txt'
+  - 'robots.txt'
 
 new_post_name: :title.md
 default_layout: post
@@ -263,6 +263,13 @@ theme_config:
   # ============================================================= #
 
   mobile_layout_economy: true
+
+  codeblock:
+  highlight_theme: galactic
+  copy_button:
+    enable: true
+    show_result: true
+    style: default
 
   back2top:
     enable: true
