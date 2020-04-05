@@ -265,11 +265,11 @@ theme_config:
   mobile_layout_economy: true
 
   codeblock:
-  highlight_theme: galactic
-  copy_button:
-    enable: true
-    show_result: true
-    style: default
+    highlight_theme: night bright
+    copy_button:
+      enable: true
+      show_result: true
+      style: default
 
   back2top:
     enable: true
