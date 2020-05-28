@@ -12,6 +12,19 @@ By default a canonical link tag is created in Hexo after you have set up your UR
 {% endnote %}
 
 {% tabs SEO %}
+<!-- tab <code>robots & noindex</code> -->
+[Robots meta directives](https://moz.com/learn/seo/robots-meta-directives) (sometimes called "meta tags") are pieces of code that provide crawlers instructions for how to crawl or index web page content. You can tell the search engines to don't index the page by setting the value `noindex` to `true` in [Front-matter](./custom-pages.html#adding-custom-page-2).
+You can also specify a certain value of robots directive by setting the `robots` in Front-matter.
+
+```md
+title: custom_name
+date: 2014-12-22 12:39:04
+robots: noimageindex, nofollow, nosnippet
+noindex: true # This will be ignored if you've set the robots.
+---
+```
+<!-- endtab -->
+
 <!-- tab <code>disable_baidu_transformation</code> -->
 By default China's search engine Baidu will cache and rewrite your site to provide a webpage snapshot for mobile users. You can disable this by setting the value `disable_baidu_transformation` to `true` in {% label primary@theme config file %}.
 
