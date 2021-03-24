@@ -75,6 +75,7 @@ Gitalk is a modern comment component based on Github Issue and Preact.
       client_secret:  # Github Application Client Secret
       admin_user:  # GitHub repo owner and collaborators, only these guys can initialize github issues
       distraction_free_mode: true # Facebook-like distraction free mode
+      create_issue_manually: true # Manually create issue, please refer to https://github.com/gitalk/gitalk/issues/440 for details
       # Gitalk's display language depends on user's browser or system environment
       # If you want everyone visiting your site to see a uniform language, you can set a force language value
       # Available value: en, es-ES, fr, ru, zh-CN, zh-TW
